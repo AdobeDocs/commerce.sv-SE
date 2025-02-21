@@ -1,14 +1,17 @@
 ---
-cloud: Experience Cloud
 solution: Commerce
-product: commerce
+solution-title: Commerce
+product: magento
 type: Documentation
+audience: end-user
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce.sv-SE
-hide: true
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+index: y
+role: User
+feature-set: Commerce
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -16,6 +19,21 @@ ht-degree: 0%
 
 # Metadata för intern användning
 
-Filen metadata.md innehåller metadata på postnivå som skickas till TOC.md-filer för användarhandboken i svaret. Om du vill ändra metadata.md-innehåll för en användarhandbok gör du det i en TOC.md-fil.
+Filen `metadata.md` innehåller metadata på postnivå som skickas till `TOC.md`-filer i svaret. Om du vill ändra metadata.md-innehåll för en användarhandbok gör du det i en `TOC.md`-fil.
 
-I [Metadata](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html) finns en lista över giltiga värden för **solution**, **product** och **type**.
+| metadata | vad den gör |
+|--- |--- |
+| solution-title | Används i artikelrubriken som länk |
+| solution-hub-url | Öppnar navet för hjälpfunktioner |
+| solution-icon | Visar lösningsikonen bredvid lösningsrubriken. Inte implementerat ännu |
+| getting-started-url | Länk till hjälpsidan Komma igång |
+| tutorials-url | Länka till videosjälvstudiekurser - antingen hjälpstudiekurser eller självstudiekurser på engelska |
+| mini-toc-nivåer | Anger antalet rubriknivåer som visas i den högra listen. standard är 2 |
+| git-repo | Anger platsen för huvudrapporten för intern användning |
+
+I filen TOC.md
+
+| metadata | vad den gör |
+|--- |--- |
+| user-guide-title | Används i artikelrubriken som länk |
+| user-guide-url | Öppnar navet för hjälpfunktioner |

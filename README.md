@@ -1,57 +1,53 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 5%
+source-wordcount: '403'
+ht-degree: 6%
 
 ---
-# Contribute-artikel
+# Användardokumentation för Adobe Commerce
 
-Vi välkomnar bidrag från både vår community och från Adobe anställda utanför dokumentationsteamen.
+Vi välkomnar bidrag från både vår community och från Adobe-anställda utanför dokumentationsteamen.
 
-## Adobe Öppna Source uppförandekod
+## Adobe Open Source - uppförandekod
 
 Detta projekt har antagit [Adobe Open Source Code of Conduct](code-of-conduct.md) eller [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct). Mer information finns i artikeln [Contributing](contributing.md).
 
-## Så här bidrar du till Adobe
+## Om dina bidrag till Adobe-innehåll
 
-**Om du inte är Adobe-anställd** kan du skicka in ett externt community-bidrag. Gemenskapens bidrag importeras till våra interna system och redigeras och slås samman i den offentliga rapporten. Den offentliga rapporten synkroniseras sedan med de senaste ändringarna och sammanfogas i den privata databasen.
+Se [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
-**Om du är en Adobe-anställd** kan du bidra direkt till den privata [Adobe GitHub-databasen](https://git.corp.adobe.com/AdobeDocs/). Mer information finns i Adobe Experience League Authoring Guide för Adobe.
-
-## Externa medverkande
+Hur du bidrar beror på vem du är och vilken typ av ändringar du vill bidra med:
 
 ### Mindre ändringar
 
-Om du bidrar med en mindre uppdatering:
+Om du bidrar med mindre uppdateringar av ditt hjärta kan du gå till artikeln och klicka på länken **Redigera** i artikeln som går till artikelns GitHub-källa. Använd sedan bara GitHub-gränssnittet för att göra uppdateringarna. Mer information finns i den allmänna [Adobe Docs Contributor-guiden](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
-1. Navigera till det ämne som du vill redigera.
-1. I&quot;Var det här innehållet till hjälp?&quot; bannern som visas längst ned i webbläsarfönstret klickar på **Detaljerade alternativ för feedback**.
-1. Klicka på **Föreslå en redigering** och skicka en pull-begäran (PR) med ändringarna i GitHub-gränssnittet.
+Mindre korrigeringar och förtydliganden som du lämnar in för dokumentation och kodexempel i den här rapporten omfattas av Adobe användarvillkor.
 
-   Mer information finns i den allmänna handboken [Adobe Docs Contributor](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+### Större ändringar eller nya artiklar från communitymedlemmar
 
-Mindre korrigeringar och förtydliganden som du lämnar in för dokumentation och kodexempel i den här rapporten omfattas av Adobe användarvillkoren.
+Om du är en del av Adobe-communityn och vill skapa en ny artikel eller skicka större ändringar använder du fliken Problem i Git-databasen för att skicka in ett problem för att starta en konversation med dokumentationsteamet. När du har gått med på en plan måste du arbeta med en anställd för att få in det nya innehållet genom en kombination av arbete i det offentliga och privata arkivet.
 
-### Större förändringar eller nya ämnen från communityn
+<!--
+If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
+-->
 
-Om du är en del av Adobe-communityn och vill skapa ett nytt ämne eller skicka större ändringar använder du fliken **Problem** i Git-databasen för att skicka ett problem för att starta en konversation med dokumentationsteamet. När man kommit överens om en plan kommer man att arbeta tillsammans med en Adobe-författare för att publicera ändringarna.
+### Större förändringar för Adobe-anställda
 
-**Obs!** Om du skickar en pull-begäran med betydande ändringar av dokumentation och kodexempel visas ett meddelande i pull-begäran där du ombeds skicka ett licensavtal för onlinesändning (CLA). Du måste fylla i onlineformuläret innan vi kan granska din begäran.
+Om du är teknikskribent, programchef eller utvecklare för en Adobe Experience Cloud-lösning och det är ditt jobb att bidra till eller skapa tekniska artiklar, bör du använda den privata databasen på `https://git.corp.adobe.com/AdobeDocs`.
 
-### verktyg
+<!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+
+## Verktyg och inställningar
 
 Deltagare i communityn kan använda GitHub-gränssnittet för grundläggande redigering eller förgrena rapporten för att göra större insatser.
 
 Mer information finns i [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
-## Interna medarbetare
+## Så här använder du kod för att formatera ämnet
 
-Om du är teknikskribent, programchef eller utvecklare för en Adobe Experience Cloud-lösning och det är ditt jobb att bidra till eller skriva tekniska artiklar använder du den [privata databasen](https://git.corp.adobe.com/AdobeDocs).
-
-## Formatera ditt ämne
-
-Alla artiklar i den här databasen använder GitHub-smaksatt Markdown. Om du inte känner till Markdown kan du läsa:
+Alla artiklar i den här databasen använder smaksatt GitHub-kod. Om du inte är van vid att markera något läser du:
 
 * [Grunderna för markeringar](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Utskrivbart kalkylblad för markering](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '273'
 ht-degree: 3%
 
 ---
@@ -23,22 +23,21 @@ Se [Contributor-handboken](https://experienceleague.adobe.com/docs/contributor/c
 
 ## Har du en fråga?
 
-Börja med att lämna in ett ärende. Befintliga committers i det här projektet arbetar för att nå
-konsensus om projektriktning och skicka ut lösningar inom problemtrådar
-(i tillämpliga fall).
+Börja med att lämna in ett ärende. Befintliga medverkande på det här projektet ska nå
+konsensus om projektriktning och utfärda lösningar inom problemtrådar när så är lämpligt.
 
 ## Licensavtal för deltagare
 
 Alla bidrag från tredje part till detta projekt måste åtföljas av en undertecknad bidragsgivare
 licensavtal. Detta ger Adobe tillstånd att återdistribuera dina bidrag
-som en del av projektet. [Underteckna vårt CLA](http://opensource.adobe.com/cla.html). Du
-behöver bara skicka ett Adobe CLA en gång, så om du har skickat in ett tidigare,
+som en del av projektet. [Underteckna vårt CLA](https://opensource.adobe.com/cla.html). Du
+behöver bara skicka in en Adobe CLA en gång. Om du har skickat in en tidigare,
 Du är redo att gå!
 
 ## Kodgranskningar
 
 Alla inlagor ska lämnas in i form av en begäran om utlysning och behöver granskas
-efter projektcommitters. Läs dokumentationen för [GitHub-begäran](https://help.github.com/articles/about-pull-requests/)
+efter projektmedverkande. Läs dokumentationen för [GitHub-begäran](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 om du vill ha mer information om hur du skickar pull-begäranden.
 
 <!--
@@ -50,11 +49,11 @@ submitting a pull request!
 
 Vi älskar bidrag från vår community! Om du vill gå ett steg längre än medverkande
 och bli en committer med fullständig skrivåtkomst och en medarbetare i projektet, måste du
-bli inbjuden till projektet. Befintliga committers använder en intern nominering
+bli inbjuden till projektet. Befintliga medverkande har en intern nominering
 processer som måste uppnå lat samförstånd (tystnad innebär godkännande) före inbjudningar
 utfärdas. Om du känner att du är kvalificerad och vill bli mer involverad,
-Jag kan kontakta befintliga committers för att diskutera det.
+Jag kan kontakta befintliga medarbetare och diskutera det.
 
 ## Säkerhetsproblem
 
-Säkerhetsproblem ska inte rapporteras i den här felspåraren. [Rapportera i stället ett problem till våra säkerhetsexperter](https://helpx.adobe.com/security/alertus.html)
+Om du vill rapportera ett säkerhetsproblem [kontaktar du våra säkerhetsexperter](https://helpx.adobe.com/security/alertus.html).
