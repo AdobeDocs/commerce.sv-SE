@@ -2,9 +2,9 @@
 title: Kom igång med  [!DNL Live Search]
 description: Lär dig systemkraven och installationsstegen för  [!DNL Live Search] från Adobe Commerce.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 039f04814c4e0b0c31f160446c67b2689f687818
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3122'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ På en hög nivå kräver introduktionen av [!DNL Live Search] att du:
 >[!NOTE]
 >
 >Från och med [!DNL Live Search] 3.0.2 paketeras tillägget [!DNL Catalog Service] i med installationen av [!DNL Live Search].
+
+>[!IMPORTANT]
+>
+>Från och med [!DNL Live Search] 4.0.0 är sökkortet föråldrat. Framöver kommer sökadaptern endast att uppdateras för att åtgärda säkerhetsproblem.
 
 1. Bekräfta att [cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) och [indexerare](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) körs.
 
