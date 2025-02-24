@@ -2,9 +2,9 @@
 title: Versionsinformation för [!DNL Payment Services]
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 feature: Payments, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3392'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,24 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [rapporten om betalningsstatus](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [utbetalningsrapporten](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen Kolumninställningar.
 
 +++
+
+## v2.10.3
+
+_24 februari 2025_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Korrigerat problem](../assets/fix.svg)<!-- PAY-xxxx --> Förbättrad övergripande stabilitet och prestanda.
+
+![Åtgärdat problem](../assets/fix.svg)<!-- PAY-xxxx --> Allmänna förbättringar och optimeringar. Korrigerade kritiska fel från v2.10.2.
+
+## v2.10.2
+
+_21 februari 2025_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Känt fel](../assets/bug.svg)<!-- PAY-xxxx --> innehåller viktiga fel som kan påverka stabilitet och prestanda. Adobe rekommenderar att du uppgraderar till v2.10.3 i stället för att använda den här versionen (v2.10.2).
 
 ## v2.10.1
 

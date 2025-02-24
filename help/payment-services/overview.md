@@ -4,9 +4,9 @@ description: Lär dig hur du installerar och använder  [!DNL Payment Services] 
 role: User
 level: Intermediate
 feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 95d86654ad185b2c37a59777a29f6de1b0091ad7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,6 @@ Oavsett om du är ett litet, medelstort eller stort företag hjälper denna beta
 * Komplett i administratören
 
 ## Funktioner
-
->[!NOTE]
->
->Vissa av funktionerna som nämns här kanske inte är tillgängliga för den allmänna versionen (General Availability).
 
 [!DNL Payment Services] är din enda butik för onlineutcheckning (från kvittning och återbetalning till betalning). Det innehåller kraftfulla verktyg som ger er den insikt och kontroll som behövs för att skapa den bästa upplevelsen för era köpare.
 
