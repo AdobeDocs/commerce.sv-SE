@@ -2,9 +2,10 @@
 title: Gränser och begränsningar
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -64,7 +65,6 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 ## Synonymer
 
 - [!DNL Live Search] kan hantera upp till 200 [synonymer](synonyms.md) per butiksvy.
-- Det är inte säkert att flerordssynonymer alltid fungerar som förväntat. Testa dessa synonymer i testmiljön innan du använder dem i produktionen, eftersom de kan ha en negativ effekt på relevansen.
 
 ## Kategoriförsäljning
 

@@ -2,9 +2,10 @@
 title: Versionsinformation för [!DNL Live Search]
 description: Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce.
 feature: Services, Search, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,10 @@ Bland uppdateringarna finns:
 ## Uppdateringar av värdtjänster
 
 Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionshanteringsversion eller förbättringar av värdtjänsten.
+
+_20 februari 2025_
+
+![Nytt](../assets/new.svg) Commerce har stöd för synonymer med flera ord. [Läs mer](synonyms-type.md#multi-word-synonym-behavior). Stöd för synonymer med flera ord är endast tillgängligt efter den 20 februari-utgåvan. Alla befintliga synonymer med flera ord kräver ett fullständigt indexvärde för att fungera, vilket du kan begära genom att [skapa en supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 _31 januari 2025_
 
