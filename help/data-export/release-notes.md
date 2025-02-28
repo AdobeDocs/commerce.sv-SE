@@ -3,9 +3,10 @@ title: Versionsinformation för [!DNL SaaS Data Export Extension]
 description: Den senaste versionsinformationen för  [!DNL Data Export Extension]  för Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
+source-git-commit: 7e19d42f4e064cfc4efd7c275546725795b60310
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -27,6 +28,10 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
+## 103.3.20 Utgåva
+
+![Åtgärda](../assets/fix.svg) ej spårbara `BulkException` fel i `cron.log` genom att förbättra meddelanden för fel relaterade till kronijobbsfel för export av katalogdata.<!--MDEE-966-->
+![ Korrigera ](../assets/fix.svg) Förbättrade prestanda för produktsynkroniseringsprocessen på instanser med ett stort antal butiksvyer. <!--MDEE-974-->
 
 ## 103.3.19 Utgåva
 
