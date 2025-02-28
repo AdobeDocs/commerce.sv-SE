@@ -1,9 +1,10 @@
 ---
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -81,6 +82,10 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
    * **Spara som utkast** om du vill redigera rekommendationsenheten senare. Du kan inte ändra sidtypen eller rekommendationstypen för en rekommendationsenhet i ett utkastläge.
 
    * **Aktivera** om du vill aktivera rekommendationsenheten på din butik.
+
+>[!IMPORTANT]
+>
+>Vissa webbläsare kan blockera viktiga skript som förhindrar att produktrekommendationer fungerar som de ska.
 
 ## Beredskapsindikatorer
 

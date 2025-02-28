@@ -1,9 +1,10 @@
 ---
 title: Placering och etiketter
 description: Lär dig var du kan placera rekommendationer på olika sidor på din webbplats och förslag på etiketter som används ofta för varje rekommendationstyp.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -51,8 +52,8 @@ _Rekommendation överst i sökresultatet_
 
 I följande tabell visas de butikssidor där du kan placera rekommendationer och de rekommendationstyper som är tillåtna på varje sida.
 
-| Sida | Placeringsrekommendationer |
-|---|---|
+| Sida | Placeringsrekommendationer | Typer |
+|---|---|---|
 | Startsida | Högst upp i huvudinnehållet<br>Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagda i kundvagnen<br>Rekommenderas för dig<br>Trending |
 | Kategori | Högst upp i huvudinnehållet<br>Längst ned i huvudinnehållet (standard) | Mest visade<br>Mest köpta<br>Mest tillagda i kundvagnen<br>Rekommenderas för dig<br>Trending |
 | Produktinformation | Längst ned i huvudinnehållet (standard) | De mest visade<br>Mest köpta<br>Mest tillagda i kundvagnen<br>Visade det här och<br>Visade det här, köpte det<br>köpta programmet och köpte <br>Mer som den här<br>Trending<br>Visuell likhet |
