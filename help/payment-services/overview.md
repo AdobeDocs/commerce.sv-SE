@@ -4,9 +4,10 @@ description: Lär dig hur du installerar och använder  [!DNL Payment Services] 
 role: User
 level: Intermediate
 feature: Payments, Checkout
-source-git-commit: 95d86654ad185b2c37a59777a29f6de1b0091ad7
+exl-id: 1d41f86a-f874-48df-9173-9cf9f07e6d79
+source-git-commit: 62b708f79ac011ef33b37f67384df7c94571ced2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,6 +52,12 @@ Betalningstjänster ger [Express Checkout-funktioner](../payment-services/paymen
 
 Se [Livscykelprincip](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer information om release och version.
 
+### Vilket [!DNL Payment Services]-alternativ passar dig?
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
+
+Mer information om hur du konfigurerar tillägget [!DNL Payment Services] finns i [Anslut](connect.md).
+
 ### Godkända kreditkort och valutor
 
 [!DNL Payment Services] accepterar valutorna för de länder [där den är tillgänglig](#availability). Mer information finns i [Valutakonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html).
@@ -71,9 +78,3 @@ Onboarding och setting up [!DNL Payment Services] är klar i några få steg:
 1. Aktivera [!DNL Payment Services] i live-läge för att börja bearbeta livebetalningar.
 
 Mer information om hur du får de fullständiga instruktionerna och startar introduktionsprocessen finns i [Onboard [!DNL Payment Services]](onboard.md).
-
-## [!DNL Payment Services] demo
-
-Titta på den här videon om du vill veta mer om [!DNL Payment Services]:
-
->[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)
