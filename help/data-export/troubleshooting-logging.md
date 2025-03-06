@@ -2,9 +2,10 @@
 title: Granska loggar och felsök
 description: Lär dig hur du felsöker [!DNL data export] fel med hjälp av loggarna för dataexport och saas-export.
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d022756f-6e75-4c2a-9601-31958698dc43
+source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Loggar är tillgängliga i katalogen `var/log` på Commerce programserver.
 
 | loggnamn | filnamn | description |
 |-----------------| ----------| -------------|
-| SaaS dataexportlogg | `commerce-data-export.log` | Tillhandahåller information om dataexportaktiviteter som entitetshändelser och fullständiga omsynkroniseringsutlösare.  Varje loggpost har en särskild struktur och innehåller information om feed, operation, status, förfluten tid, process-id och anroparen. |
+| SaaS dataexportlogg | `commerce-data-export.log` | Tillhandahåller information om dataexportaktiviteter, som entitetshändelser och fullständiga omsynkroniseringsutlösare.  Varje loggpost har en särskild struktur och innehåller information om feed, operation, status, förfluten tid, process-id och anroparen. |
 | fellogg för SaaS-dataexport | `data-export-errors.log` | Visar felmeddelanden och stackspårningar för fel som inträffar under datasynkroniseringsprocessen. |
 | SaaS-exportlogg | `saas-export.log` | Tillhandahåller information om data som skickas till Commerce SaaS-tjänster. |
 | SaaS-exportfellogg | `saas-export-errors.log` | Innehåller information om fel som inträffar när data skickas till Commerce SaaS-tjänster. |
@@ -36,8 +37,8 @@ Varje loggpost har följande struktur.
    "feed": "<feed name>",
    "operation": "<executed operation>",
    "status": "<status of operation>",
-   "elapsed": "<time elaspsed from script run>",
-   "pid": "<proccess id who executed `operation`>",
+   "elapsed": "<time elapsed from script run>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -50,10 +51,10 @@ I följande tabell beskrivs de åtgärdstyper som kan registreras i loggarna.
 
 | Åtgärd | Beskrivning | Exempel på anropare |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| fullständig synkronisering | Fullständig synkronisering samlar in och skickar alla data till SaaS för en given feed. | `bin/magento saas:resync --feed=products` |
-| partiell omindexering | Delvis synkronisering samlar in och skickar data till SaaS endast för uppdaterade enheter i en given feed. Den här loggen finns bara om det finns uppdaterade entiteter. | `bin/magento cron:run --group=index` |
-| försök igen med misslyckade objekt | Skickar om objekt för en given feed till SaaS om den tidigare synkroniseringsåtgärden misslyckades på grund av ett Commerce-program eller serverfel. Den här loggen finns bara om det finns misslyckade objekt. | `bin/magento cron:run --group=saas_data_exporter` (alla cron-grupper av typen &quot;*_data_exporter&quot;) |
-| fullständig synkronisering (äldre) | Fullständig synkronisering för en given feed i äldre exportläge. | `bin/magento saas:resync --feed=categories` |
+| fullständig synkronisering | Samlar in och skickar alla data till SaaS för en given feed. | `bin/magento saas:resync --feed=products` |
+| partiell omindexering | Samlar in och skickar data till SaaS endast för uppdaterade enheter i en given feed. Den här loggen finns bara om det finns uppdaterade entiteter. | `bin/magento cron:run --group=index` |
+| försök igen med misslyckade objekt | Skicka om objekt för en viss feed till SaaS om den tidigare synkroniseringsåtgärden misslyckades på grund av ett Commerce-program eller serverfel. Den här loggen finns bara om det finns misslyckade objekt. | `bin/magento cron:run --group=saas_data_exporter` (alla cron-grupper av typen &quot;*_data_exporter&quot;) |
+| fullständig synkronisering (äldre) | Samlar in och skickar alla data till SaaS för en given feed i äldre exportläge. | `bin/magento saas:resync --feed=categories` |
 | partiell omindexering (äldre) | Skickar uppdaterade entiteter till SaaS för en given feed i äldre exportläge. Den här loggen finns bara om det finns uppdaterade entiteter. | `bin/magento cron:run --group=index` |
 | partiell synkronisering (äldre) | Skickar uppdaterade entiteter till SaaS för en given feed i äldre exportläge. Den här loggen finns bara om det finns uppdaterade entiteter. | `bin/magento cron:run --group=saas_data_exporter` (alla cron-grupper av typen &quot;*_data_exporter&quot;) |
 
@@ -123,12 +124,12 @@ I det här exemplet läggs en regel till som gör att du kan söka efter New Rel
 
 ## Felsökning
 
-Om data saknas eller är felaktiga i Commerce Services bör du kontrollera om ett problem uppstod under synkroniseringen från Adobe Commerce-instansen till Commerce Service-plattformen. Använd vid behov utökad loggning för att lägga till ytterligare information i loggarna för felsökning.
+Om data saknas eller är felaktiga i Commerce Services bör du kontrollera om loggarna innehåller meddelanden om fel som uppstod under synkroniseringen från Adobe Commerce till Commerce Services-plattformen. Använd vid behov utökad loggning för att lägga till ytterligare information i loggarna för felsökning.
 
-- commerce-data-export-errors.log - om ett fel inträffade under insamlingsfasen
-- saas-export-errors.log - om ett fel inträffade under överföringsfasen
+- Felloggen för dataexport (`commerce-data-export-errors.log`) fångar upp fel som inträffar under insamlingsfasen.
+- SaaS-exportfelloggen (`saas-export-errors.log`) fångar upp fel som inträffar under överföringsfasen.
 
-Om du ser fel som inte är relaterade till konfiguration eller tillägg från tredje part skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) med så mycket information som möjligt.
+Om du ser fel som inte är relaterade till konfiguration eller tillägg från tredje part skickar du en [supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) med så mycket information som möjligt.
 
 ### Lös problem med katalogsynkronisering {#resolvesync}
 
@@ -143,22 +144,15 @@ När du utlöser en omsynkronisering av data kan det ta upp till en timme innan 
 
 #### Synkronisering körs inte
 
-Om synkroniseringen inte körs enligt ett schema eller inget synkroniseras, se den här [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html)-artikeln.
+Om synkroniseringen inte körs enligt ett schema eller inget synkroniseras, se den här [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)-artikeln.
 
 #### Synkroniseringen misslyckades
 
-Om katalogsynkroniseringen har statusen **Misslyckades** skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Om katalogsynkroniseringen har statusen **Misslyckades** skickar du en [supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Utökad loggning
 
-Om du vill ha mer logginformation kan du använda miljövariabler för att utöka loggar med ytterligare data för spårning och felsökning.
-
-Det finns två loggfiler i katalogen `var/log/`:
-
-- commerce-data-export-errors.log - om ett fel inträffade under insamlingsfasen
-- saas-export-errors.log - om ett fel inträffade under överföringsfasen
-
-Du kan använda miljövariabler för att utöka loggar med ytterligare data för spårning och felsökning.
+Använd miljövariabler för att utöka loggar med ytterligare data för spårning och felsökning. Lägg till miljövariabeln på kommandoraden när du kör CLI-kommandon för dataexport enligt följande exempel.
 
 ### Kontrollera flödets nyttolast
 
