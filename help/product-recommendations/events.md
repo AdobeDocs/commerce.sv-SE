@@ -2,7 +2,8 @@
 title: Samla in data
 description: Lär dig hur händelser samlar in data för  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
+source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -118,14 +119,14 @@ I den här tabellen beskrivs de händelser som används av varje rekommendations
 | Rekommendationstyp | Händelser | Sida |
 | --- | --- | --- |
 | Mest visade | `page-view`<br>`product-view` | Produktinformationssida |
-| Mest köpta | `page-view`<br>`complete-checkout` | Kassa/kassa |
+| Mest köpta | `page-view`<br>`place-order` | Kassa/kassa |
 | Mest tillagt i kundvagn | `page-view`<br>`add-to-cart` | Produktinformationssida<br>Produktlistsida<br>Kundlista<br>Önskad lista |
 | Visade det här, såg du att | `page-view`<br>`product-view` | Produktinformationssida |
 | En titt på det här, köpte det | Produktrecept | `page-view`<br>`product-view` | Produktinformationssida<br>Kopia/utcheckning |
 | Köpte den här, köpte den där | Produktrecept | `page-view`<br>`product-view` | Produktinformationssida |
 | Trender | `page-view`<br>`product-view` | Produktinformationssida |
 | Konvertering: Visa för köp | Produktrecept | `page-view`<br>`product-view` | Produktinformationssida |
-| Konvertering: Visa för köp | Produktrecept | `page-view`<br>`complete-checkout` | Kassa/kassa |
+| Konvertering: Visa för köp | Produktrecept | `page-view`<br>`place-order` | Kassa/kassa |
 | Konvertering: Visa i kundvagn | Produktrecept | `page-view`<br>`product-view` | Produktinformationssida |
 | Konvertering: Visa i kundvagn | Produktrecept | `page-view`<br>`add-to-cart` | Produktinformationssida<br>Produktlistsida<br>Kart<br>Önskslista |
 
