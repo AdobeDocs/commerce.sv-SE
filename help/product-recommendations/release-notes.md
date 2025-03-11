@@ -2,9 +2,10 @@
 title: Versionsinformation för [!DNL Product Recommendations]
 description: Den senaste versionsinformationen för  [!DNL Product Recommendations] från Adobe Commerce.
 feature: Services, Recommendations, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
+source-git-commit: 615fa2967680c16ec123d41c20019f72cfeddc60
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1442'
 ht-degree: 0%
 
 ---
@@ -49,6 +50,16 @@ _25 april 2023_
 
 ## Aktuell huvudversion
 
+### 6.1.0 of magento/product-recommendations
+
+_11 mars 2025_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg) Stöd för PHP 8.4 har lagts till.
+
+### Tidigare versioner
+
 ### 6.0.3 of magento/product-recommendations
 
 _6 november 2024_
@@ -66,8 +77,6 @@ _9 maj 2024_
 
 ![Korrigera](../assets/fix.svg) Ett fel har korrigerats där användaren omdirigerades till hemsidan i stället för att stanna kvar på den aktuella sidan genom att klicka på knappen **[!DNL Add to Cart]** på en enkel produkt i en produktrekommendationsenhet.
 ![Fel](../assets/bug.svg) Det finns ett valideringsfel som orsakas av elementet `referenceBlock` i XML-filen `ProductRecommendations Layout`.
-
-### Tidigare versioner
 
 ### 6.0.1 of magento/product-recommendations
 

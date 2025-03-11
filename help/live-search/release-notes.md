@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Live Search]
 description: Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,15 @@ _27 oktober 2023_
 
 ![Nytt](../assets/new.svg) PLP-widgeten [!DNL Live Search] har nu stöd för färgrutor.
 
+## [!DNL Live Search] 4.3.0
+
+_11 mars 2025_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Korrigera](../assets/fix.svg) [!DNL Live Search] har nu stöd för PHP 8.4 för installationer som kör Adobe Commerce 2.4.8-beta2.
+![Korrigera](../assets/fix.svg) Ett fel har korrigerats där sökadaptern inte var kompatibel med `psr/http-message:2.0`.
+
 ## [!DNL Live Search] 4.2.3
 
 _13 februari 2025_
@@ -130,7 +139,7 @@ _19 mars 2024_
 
 ## [!DNL Live Search] 4.1.0
 
-_22 feb 2024_
+_22 februari 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
@@ -146,7 +155,7 @@ _22 feb 2024_
 
 ## [!DNL Live Search] 4.0.0
 
-_13 nov 2023_
+_13 november 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
@@ -173,13 +182,11 @@ Efter installation av version 3.1.1 eller senare aktiverar du de nya indexerarna
 
 När du har uppgraderat testar du den uppdaterade konfigurationen i QA eller Staging innan du överför ändringarna till produktionen.
 
-## Tidigare versioner
-
 +++3.1.1 och tidigare
 
-## [!DNL Live Search] 3.1.1
+### [!DNL Live Search] 3.1.1
 
-_15 sept 2023_
+_15 september 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
@@ -194,7 +201,7 @@ _15 sept 2023_
 ![Ny](../assets/new.svg) kategoriförhandsvisning visar bara den valda kategorin.
 ![Med komponenterna ](../assets/new.svg) AEM CIF [Positionwidget](https://github.com/adobe/aem-cif-guides-venia/pull/319) och [PLP-widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) kan AEM webbplatser dra nytta av [!DNL Live Search].
 
-### Uppdateringar
+#### Uppdateringar
 
 ![Korrigera](../assets/fix.svg) Tabellstorleken för produkt- och prisfeeds har reducerats avsevärt. Tabellerna `catalog_data_exporter_products` och `catalog_data_exporter_product_prices` bör se en betydande storleksminskning.
 ![Korrigera](../assets/fix.svg) Fliken Regler har bytt namn till Sökregler
@@ -206,23 +213,23 @@ _15 sept 2023_
 ![Korrigera ](../assets/fix.svg) rankningstyp har bytt namn till Intelligent ranking
 ![Korrigera ](../assets/fix.svg) Mindre felkorrigeringar
 
-## [!DNL Live Search] 3.1.0
+### [!DNL Live Search] 3.1.0
 
 _1 september 2023_
 
 [!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
-### Uppdateringar
+#### Uppdateringar
 
-![Korrigera](../assets/fix.svg) Produktlistwidgeten har uppdaterats för att använda [katalogtjänstens API ](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
+![Korrigera](../assets/fix.svg) Produktlistwidgeten har uppdaterats för att använda [katalogtjänstens API ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/).
 
-## [!DNL Live Search] 3.0.2
+### [!DNL Live Search] 3.0.2
 
 _7 augusti 2023_
 
 [!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
-### Nya funktioner
+#### Nya funktioner
 
 ![Nytt](../assets/new.svg) Följande värden har lagts till i objektet `storeDetails`:
 
@@ -232,7 +239,7 @@ _7 augusti 2023_
 - &quot;Produkter per sida på standardvärde för stödraster&quot;
 - Butiksspråk
 
-### Uppdateringar
+#### Uppdateringar
 
 ![Korrigera](../assets/fix.svg) katalogtjänstmoduler har lagts till i metapaketet för att ge stöd för avancerad datahämtning.
 ![Åtgärda](../assets/fix.svg) Sidnavigeringen **Mitt konto** försvinner inte längre när du använder widgeten Produktlistsida.
@@ -241,17 +248,17 @@ Merchants måste uppgradera tilläggsversionen [!DNL Live Search] >= 3.0.2 för 
 
 Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Överväg att uppgradera produktionsmiljön under tider med låg belastning efter att ha verifierat testmiljöresultaten.
 
-### Begränsningar
+#### Begränsningar
 
 När du använder widgeten Listsida för produkter i Live Search misslyckas Google Tag Manager. Använd standardsökkortet om Google Tag Manager behövs.
 
-## [!DNL Live Search] 3.0.1
+### [!DNL Live Search] 3.0.1
 
 _14 mars 2023_
 
 [!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
-### Nya funktioner
+#### Nya funktioner
 
 ![Nytt](../assets/new.svg) produktartikelkort i regelförhandsgranskning
 ![Nytt](../assets/new.svg) [Widgeten Produktlistsida](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
@@ -265,7 +272,7 @@ _14 mars 2023_
 ![Nytt](../assets/new.svg) [Intelligent rankning av regler](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
 ![Nytt](../assets/new.svg) [!DNL Live Search] har nu stöd för alla [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) -funktioner i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständigt stöd måste du [uppdatera](install.md#update) beroendemodulen `commerce-data-export` till version 102.2.0+.
 
-### Uppdateringar
+#### Uppdateringar
 
 ![Korrigera](../assets/fix.svg) Konfigurera regler sorterar nu positioner automatiskt
 ![Korrigera ](../assets/fix.svg) Om du tar bort en befintlig händelse uppdateras nu förhandsvisningen
@@ -273,7 +280,7 @@ _14 mars 2023_
 ![Korrigera](../assets/fix.svg) Ta bort funktionsväljaren Välj typ
 ![Korrigera](../assets/fix.svg) Ny redigeringsstatus för osparade regler har lagts till
 
-### Korrigeringar
+#### Korrigeringar
 
 ![Korrigera](../assets/fix.svg) Serverfel har korrigerats när en oavslutad händelse inträffar när filen sparades
 ![Korrigera ](../assets/fix.svg) En korrekt borttagning av en specifik händelse när det finns flera händelser har åtgärdats
@@ -281,16 +288,14 @@ _14 mars 2023_
 ![Korrigera ](../assets/fix.svg) Korrigerad vid andra&quot;Redigera&quot;-klickning från detaljer, [!DNL Live Search] sidan måste läsas in igen
 ![Korrigera](../assets/fix.svg) synonymer: Ett problem har korrigerats när en användare klickade bort från indata, men det gick inte att returnera fokus till fältet
 ![ Åtgärda ](../assets/fix.svg) Andra mindre felkorrigeringar och prestandauppdateringar
-
-
-![Fel](../assets/bug.svg) - Rankning efter &quot;Rekommenderas för dig&quot; stöds endast i Live Search-widgetarna. Det stöds inte med standardsökfunktionerna för Luma och PWA.
+![Fel ](../assets/bug.svg) - Rankning med &quot;Rekommenderas för dig&quot; stöds bara i Live Search-widgetarna. Det stöds inte med standardsökfunktionerna för Luma och PWA.
 ![Fel](../assets/bug.svg) - Egna prisattributsaspekter återges inte korrekt i Luma, men API:t filtrerar dem korrekt.
 
 Merchants måste uppgradera tilläggsversionen [!DNL Live Search] >= 3.0.1 för att få tillgång till dessa funktioner.
 
 Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Överväg att uppgradera produktionsmiljön under tider med låg belastning efter att ha verifierat testmiljöresultaten.
 
-## [!DNL Live Search] 2.0.5
+### [!DNL Live Search] 2.0.5
 
 [!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
 
@@ -355,7 +360,7 @@ Befintliga [!DNL Live Search]-installationer måste uppgraderas till [!DNL Live 
 ![Nytt](../assets/new.svg) [!DNL Live Search] [Store Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) ger åtkomst till ett gemensamt datalager med händelsepublicerings- och prenumerationstjänster samt mätvärden.
 ![Korrigera](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) har en ny `active`-klass för behållaren `.search-autocomplete` som styr synligheten.
 ![Korrigera](../assets/fix.svg) I butiken tas sidfotslänken [Sökvillkor](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) bort och dess cache inaktiveras för [!DNL Live Search]-installationer.
-![Bug](../assets/bug.svg) Patch for Search adapter hanterar dubblettprodukter.
+![Bug](../assets/bug.svg) Patch for Search Adapter hanterar dubblettprodukter.
 ![Fel](../assets/bug.svg) [!DNL Live Search] stöder [enskilda lagerplatser (fysiska)](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) med flera (virtuella) [stockar](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage). Flera lagerkällor stöds inte nu.
 
 ### [!DNL Live Search] 1.2.0
