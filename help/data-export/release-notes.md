@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 7e19d42f4e064cfc4efd7c275546725795b60310
+source-git-commit: e30210e6aac469929e4767e3747bd819bc10b9f4
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '987'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ Bland uppdateringarna finns:
 >SaaS-tillägget för dataexport är en samling moduler som installeras automatiskt med Live Search, Produktrekommendationer och katalogtjänsten. Du kan kontrollera vilken version som är installerad på datorn med Composer. I vissa fall kanske du vill uppgradera dataexporttillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 103.3.21 Utgåva
+
+![Korrigera](../assets/new.svg) Funktioner som delvis synkroniserar `product`, `productOverrides` och `productAttributes` feeds baserat på en angiven lista med produkt-SKU:er. Använd den nya funktionen genom att lägga till alternativet `--by-ids` i CLI-kommandot `bin/magento saas:resync --feed=<FEED_NAME>`. <!--MDEE-606-->
+![ Åtgärda ](../assets/fix.svg) Minskade potentiella kompatibilitetsproblem med PHP 8.4 genom borttagning av inaktuell funktionalitet. <!--MDEE-1002-->
 
 ## 103.3.20 Utgåva
 
