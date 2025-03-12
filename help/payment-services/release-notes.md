@@ -2,13 +2,13 @@
 title: Versionsinformation för [!DNL Payment Services]
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 feature: Payments, Release Notes
-source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
+exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
+source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
-
 
 # Versionsinformation
 
@@ -89,6 +89,33 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [rapporten om betalningsstatus](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [utbetalningsrapporten](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen Kolumninställningar.
 
 +++
+
+## v2.11.0
+
+_13 mars 2025_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+
+![Nytt](../assets/new.svg)<!-- PAY-5938 --> Nu, [!DNL Payment Services] tillåter handlare att hantera betalningsinställningar för att maximera flexibiliteten i sin verksamhet. Den här versionen förbättrar möjligheten att bifoga [flera PayPal-konton](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) för de regioner och varumärken som en handlare stöder. Vårt säljteam kan tillhandahålla en startlänk för att konfigurera din webbplats och lagra visningsomfattningar.
+
+![Nytt](../assets/new.svg)<!-- PAY-5968 --> Nu [!DNL Payment Services] uppdaterar Admin-konfigurationen med värdena **PayPal Merchant ID** och **PayPal Merchant Status** . Dessa värden ger säljarna bättre synlighet för deras PayPal-kontostatus.
+
+![Ett problem som orsakade fel i alla orderplaceringar med version v2.9.0 har åtgärdats.](../assets/fix.svg)<!-- PAY-5816 --> Normal ordningsfunktionalitet återställdes i [!DNL Payment Services].
+
+![Korrigerat problem](../assets/fix.svg)<!-- PAY-5825 --> Ett problem där Apple Pay mini-cart använde felaktig URL för beräknade summor för inloggade kunder har korrigerats. Nu säkerställer [!DNL Payment Services] korrekta totalberäkningar.
+
+![Korrigerat problem](../assets/fix.svg)<!-- PAY-5826 --> Förbättrad tillförlitlighet för orderhantering genom att lösa ett problem som orsakade ett HTTP 500-fel när offertstatusen ändrades till `inactive`.
+
+![Ett problem har korrigerats där ](../assets/fix.svg)<!-- PAY-5849 --> orsakade undantag för decimalkvantiteter under 1. `LineItemProvider` [!DNL Payment Services] har nu bättre stöd för bråkkvantiteter.
+
+![Korrigerat problem](../assets/fix.svg)<!-- PAY-5868 --> Korrigerade ett fel på presentkortsbeloppet vid utcheckning. [!DNL Payment Services] garanterar nu korrekta värden under en utcheckningsprocess.
+
+![Korrigerat problem](../assets/fix.svg)<!-- PAY-5911 --> Korrigerade fel när leveranser skapades för beställningar som gjorts med icke-[!DNL Payment Services] onlinebetalningsmetoder, vilket förbättrar den övergripande tillförlitligheten.
+
+![Korrigerat problem](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services] erbjuder nu en smidigare utcheckning genom att lösa ett problem där Apple Pay inte kunde göra en beställning när ett annat kreditkort valdes i plånboken.
+
+![Korrigerat problem](../assets/fix.svg)<!-- PAY-5971 --> [!DNL Payment Services] dirigerar inte längre om kunder till ordergranskningssidan när Apple Pay misslyckas, vilket förhindrar onödiga avbrott i utcheckningen.
 
 ## v2.10.3
 
