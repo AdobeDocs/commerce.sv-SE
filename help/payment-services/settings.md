@@ -4,9 +4,10 @@ description: Efter installationen kan du konfigurera  [!DNL Payment Services]  i
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 793bc59d-1581-4c78-bafe-a43b9e5fb1bc
+source-git-commit: 00ba1ec70a3042780071003f5c0b8d1cc29c49ed
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2420'
 ht-degree: 0%
 
 ---
@@ -302,5 +303,7 @@ Mer information finns i [3DS i säkerhet](security.md#3ds).
 I [!UICONTROL Payment Services] kan du använda flera PayPal-konton i **one**-handelskontot på webbplatsnivå. Om du till exempel har butik(er) i flera länder (som använder olika [valutor](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency)) eller vill använda Adobe Commerce för vissa delar av din verksamhet, men inte _alla_, kan du konfigurera ditt handlarkonto så att du använder flera PayPal-konton.
 
 Mer information om hierarkin för webbplatser, butiker och vyer ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) finns i [Webbplats, Lagra och Vyområde.
+
+Mer information om hur du konfigurerar scope för flera PayPal-konton via CLI finns i [Kommandoradskonfiguration](configure-cli.md#configure-scope-via-cli).
 
 Säljaren kan skapa ett nytt [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) för ditt handlarkonto och lägga till ytterligare en webbplats med PayPal så att alla PayPal-knappar som du konfigurerar visas på din webbplats. Kontakta din säljare för att få hjälp med att använda flera PayPal-konton för dina webbplatser.

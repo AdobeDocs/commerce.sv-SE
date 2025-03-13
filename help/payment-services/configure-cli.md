@@ -1,17 +1,18 @@
 ---
-title: Konfiguration av kommandorad
+title: Kommandoradskonfiguration
 description: Efter installationen kan du konfigurera  [!DNL Payment Services] med kommandoradsgränssnittet (CLI).
 role: Admin, Developer
 level: Intermediate
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
-# Konfiguration av kommandorad
+# Kommandoradskonfiguration
 
 När du har installerat [!DNL Payment Services] kan du enkelt konfigurera det från [ i hemmet ](payments-home.md) eller via kommandoradsgränssnittet (CLI).
 
@@ -88,6 +89,32 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Mer information om omindexering och indexering finns i avsnittet [Hantera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) i utvecklardokumentationen.
+
+## Konfigurera scope via CLI
+
+[!DNL Payment Services] tillåter handlare att använda [flera PayPal-konton](settings.md#use-multiple-paypal-accounts). Nu kan ni ändra omfång för dessa konton via CLI.
+
+Om du vill ange omfånget till nivån `website` kör du:
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level website
+```
+
+Om du vill ange omfånget till nivån `store` använder du:
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level store
+```
+
+>[!TIP]
+>
+> Om du vill ändra omfånget till butiksnivå kontaktar du din [!DNL Payment Services]-säljare.
+
+När omfånget ändras rensas cachen så att ändringarna visas:
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
 
 ## Konfigurera L2/L3-bearbetning
 

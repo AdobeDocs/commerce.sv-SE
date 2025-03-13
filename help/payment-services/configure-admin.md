@@ -4,9 +4,10 @@ description: Efter installationen kan du konfigurera  [!DNL Payment Services]  i
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: a4da36e2-4316-42d5-ae30-cf078f440444
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -34,6 +35,7 @@ Du kan aktivera [!DNL Payment Services] för din butik och din _[!UICONTROL Merc
    >
    > Om du behöver ändra ditt dataområdes-ID i Commerce Services Connector måste du återställa ditt [!DNL Payment Services]-ID. Klicka på **Återställ betalnings-ID** om du vill återställa din sandlåda eller dina produktions-ID. Om du återställer dina [!DNL Payment Services] ID:n måste du registrera dig igen.
 
+1. Dina **[!UICONTROL PayPal Merchant ID]**- och **[!UICONTROL PayPal Merchant Status]**-värden tillhandahålls automatiskt av PayPal när du för första gången besöker kontrollpanelen [!DNL Payment Services].
 1. För **mjuk beskrivning** (anpassade värden som visas i kundtransaktionsbankutdrag för att skilja butiker/varumärken/kataloger åt) lägger du till din anpassade text (upp till 22 tecken) i textfältet och ersätter `Soft descriptor` eller det befintliga värdet.
 1. Klicka på **[!UICONTROL Save Config]** om du vill spara ändringarna.
 1. Navigera till **[!UICONTROL System]** > **[!UICONTROL Cache Management]** och klicka sedan på **[!UICONTROL Flush Cache]** för att uppdatera alla ogiltiga cacheminnen.
@@ -48,6 +50,8 @@ Du kan aktivera [!DNL Payment Services] för din butik och din _[!UICONTROL Merc
 | [!UICONTROL Method] | butiksvy | Ange metod, eller miljö, för din butik. Alternativ: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | butiksvy | Ditt handlar-ID för sandlådan, som genereras automatiskt vid introduktion av sandlådor. |
 | [!UICONTROL Payment Services Production ID] | butiksvy | Ditt handlar-ID för produktion, som genereras automatiskt under introduktionen av produktionen (live). |
+| [!UICONTROL PayPal Merchant ID] | butiksvy | Ditt unika konto-ID för PayPal Merchant som genereras när du skapar ditt PayPal-konto. |
+| [!UICONTROL PayPal Merchant Status] | butiksvy | Status för ditt PayPal-handels-ID. |
 | [!UICONTROL Soft Descriptor] | webbplats eller butiksvy | Lägg till en mjuk beskrivning till webbplatserna och butiksvyn för att lägga till information till kundtransaktioner som avgränsar varumärken, butiker eller produktrader. |
 
 ## [!UICONTROL Credit Card Fields]
