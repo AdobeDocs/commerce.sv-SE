@@ -2,7 +2,8 @@
 title: Beräkna datavolym och överföringstid
 description: Lär dig att uppskatta datavolymen och överföringstiden som krävs för verktyget  [!DNL data export] för att synkronisera feed-data mellan Adobe Commerce och anslutna tjänster.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 787d05d6-fc2f-4f23-8ea7-ef54330e1f37
+source-git-commit: 86f7473e994348d81c0a8f71548bb7a8d3923a21
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%

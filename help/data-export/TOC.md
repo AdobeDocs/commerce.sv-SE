@@ -4,9 +4,9 @@ user-guide-description: Den här guiden innehåller detaljerade anvisningar om h
 breadcrumb-title: '[!DNL Data Export]-guide för SaaS-tjänster'
 role: Admin
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 54474408897c2b8462a064400fa53a2e9040db47
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '78'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 - Exportera schemaläggning och prestanda {#performance}
    - [Beräkna datavolym och överföringstid](estimate-data-volume-sync-time.md)
    - [Förbättra exportprestanda](customize-export-processing.md)
-- [CLI-kommandoreferens](data-export-cli-commands.md)
+- [Synkronisera feeds med Commerce CLI](data-export-cli-commands.md)
 - [Granska loggar och felsök](troubleshooting-logging.md)
 - [Hantera SaaS-dataexporttillägget](manage-extension.md)
 - Utbyggbarhet {#extensibility}

@@ -2,9 +2,10 @@
 title: Synkronisera data med SaaS-dataexport
 description: Lär dig hur  [!DNL SaaS Data Export] samlar in och synkroniserar data mellan Adobe Commerce-instanser och anslutna SaaS-tjänster.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
+source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -79,7 +80,7 @@ De flesta synkroniseringsaktiviteter bearbetas automatiskt baserat på programko
 
 - Administratörsanvändare kan visa och spåra synkroniseringsförloppet och få information om data från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
-- Utvecklare, systemintegratörer och administratörer med tillgång till Commerce programserver kan hantera synkroniseringsprocessen och dataflöden med Adobe Commerce kommandoradsverktyg (CLI). Se [Kommandoreferens för dataexport](data-export-cli-commands.md).
+- Utvecklare, systemintegratörer och administratörer med tillgång till Commerce programserver kan hantera synkroniseringsprocessen och dataflöden med Adobe Commerce kommandoradsverktyg (CLI). Se [Hantera synkroniseringsåtgärder med Commerce CLI](data-export-cli-commands.md).
 
 ### Verifiera Commerce programkonfiguration
 
