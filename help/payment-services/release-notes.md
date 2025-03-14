@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Payment Services]
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
+source-git-commit: 0098e5bab2ea72f9abd7c846d49d5ee4d523ad73
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,14 @@ _28 juni 2021_
 ![Nytt](../assets/new.svg)<!-- Issue PAY-2761 --> Nu kan du anpassa de data som visas i [rapporten om betalningsstatus](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) och [utbetalningsrapporten](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) genom att visa eller dölja kolumner med hjälp av kontrollen Kolumninställningar.
 
 +++
+
+## v2.11.1
+
+_14 mars 2025_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Korrigerat problem](../assets/fix.svg)<!-- PAY-5849 --> Ett problem som påverkade [Radobjekt](line-items.md) under utcheckningen har korrigerats. [!DNL Payment Services] har nu förbättrat tillförlitligheten i utcheckningsprocessen för **Radobjekt**. Om du stöter på ett liknande problem kontaktar du din [!DNL Payment Services]-säljare för att få hjälp.
 
 ## v2.11.0
 
