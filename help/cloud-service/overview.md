@@ -1,0 +1,144 @@
+---
+title: Adobe Commerce as a Cloud Service - översikt
+description: Läs om de viktigaste funktionerna och fördelarna med Adobe Commerce as a Cloud Service.
+feature: App Builder, GraphQL, Integration, Saas
+role: Admin, Architect, Developer, User
+source-git-commit: 0a112b1dab0113eb910e2ecdcca21e7e2814e761
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 0%
+
+---
+
+
+# Adobe Commerce as a Cloud Service - översikt
+
+Adobe Commerce as a Cloud Service erbjuder flexibilitet, skalbarhet och effektivitet genom att företag kan leverera och snabbt skala digitala operationer och snabba upp innovationen. Adobe molnbaserade infrastruktur anpassar automatiskt resurser för att möta de höga kraven på trafik, beställningar och kataloghantering.
+
+Följande bild visar vilka produkter som används i Adobe Commerce as a Cloud Service:
+
+![Adobe Commerce as a Cloud Service produktgrupp](./assets/product-stack.svg){align="center" zoomable="yes"}
+
+>[!BEGINSHADEBOX]
+
+![info](assets/Smock_InfoOutline_18_N.svg) Om du vill delta i programmet för tidig åtkomst till Adobe Commerce as a Cloud Service fyller du i [det här formuläret](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5URFZXTE5TUk9PMUw0OFdOWTBNNlI3UTlNMS4u&amp;route=shorturl).
+
+>[!ENDSHADEBOX]
+
+## Arkitektur
+
+I följande video visas en kort introduktion till Adobe Commerce as a Cloud Service-arkitekturen. Bilder som illustrerar arkitekturen visas nedanför videon.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
+
+Bilden visar dataflödet mellan Adobe Commerce as a Cloud Service och alla Adobe Experience Cloud lösningar.
+
+![Adobe Commerce as a Cloud Service - arkitekturdiagram](./assets/data-flow.svg){zoomable="yes"}
+
+## Commerce Storefront
+
+Använd Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) från Edge Delivery Services för att skapa avancerade upplevelser på några minuter med enkel dokumentbaserad redigering eller visuell redigering med Storefront Builder.
+
+Commerce Storefront är helt headless med en frikopplad arkitektur som ger alla marknadsföringstjänster och data via ett GraphQL API-lager. Med denna arkitektur kan teamen utveckla sina gränser oberoende av Commerce Foundation, vilket gör det enkelt att skapa och testa nya kontaktytor med ny teknik.
+
+>[!NOTE]
+>
+>Adobe Commerce as a Cloud Service stöder inte Luma storefront. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) för mer information om övergångar.
+
+## Marknadsföringstjänster och betaltjänster
+
+Adobe erbjuder en mängd intelligenta, sammanställningsbara marknadsföringstjänster som hjälper er att uppnå era affärsmål. Dessa tjänster tillhandahåller även API:er som är viktiga för att optimera prestanda i stor skala.
+
+- [Livesökning](../live-search/overview.md) - Få smartare, snabbare och relevanta resultat för kunderna med det här AI-baserade sökverktyget.
+- [Produktrekommendationer](../product-recommendations/overview.md) - Lägg till AI-baserade rekommendationer baserat på kundbeteende, populära trender, produktlikhet med mera.
+- [Merchandising Services med stöd för kanaler och principer](../merchandising-services/overview.md) - Hantera stora och komplexa produktkataloger med flexibel datamodellering för att leverera högpresterande, flexibla e-handelskataloger som är anpassade efter affärsstruktur och go-to-market-strategier. Använd med [Commerce Optimizer](../optimizer/overview.md) för att optimera katalogens prestanda och förbättra konverteringsgraden.
+- [Betalningstjänster](../payment-services/overview.md) - Öka kundnöjdheten genom att erbjuda olika betalningsmetoder, inklusive räntefria betalningar, och en enda vy över betalningshantering, order och fakturor.
+
+## Produktbilder
+
+Förenkla materialhanteringen med ett robust DAM-system (Digital Asset Management) som är integrerat med Adobe Experience Manager för hantering av multimediematerial. Den inbyggda mini-DAM-modulen innehåller också grundläggande verktyg för att lagra och hantera digitala resurser.
+
+Mer information finns i [Resurshantering](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration).
+
+## Developer Platform
+
+Adobe erbjuder utvecklare omfattande tilläggspunkter och verktyg för att bygga applikationer som utökar funktionerna i Commerce Foundation och kan integreras med tredjepartssystem (som CRM, ERPS och PIMS). Med dessa verktyg minskar du den totala ägandekostnaden för plattformen på följande sätt:
+
+- **Skalbarhet** - Program kan skalas separat från kärnprogramvaran, vilket ger ökad effektivitet och förenklar uppgraderingar.
+- **Isolering** - En isolerad miljö innebär att utvecklare kan uppgradera eller ändra sina tillägg efter eget gottfinnande utan att förlita sig på en kärnversion.
+- **Tekniskt oberoende**-Utvecklare kan välja vilket teknikläge och vilka kodningsspråk som passar deras behov.
+
+>[!TIP]
+>
+>Leverantörsbyggda appar är också tillgängliga för installation på [Adobe Exchange](https://exchange.adobe.com/).
+
+Adobe tillhandahåller följande utvecklingsverktyg för att bygga integreringar och anpassningar:
+
+- [**API-nät för Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/) - Koordinera och kombinera flera API:er, GraphQL, REST och andra källor till en enda frågningsbar slutpunkt för GraphQL.
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/) - Bygg och distribuera säkra och skalbara webbprogram som utökar Commerce funktionalitet och integreras med tredjepartslösningar.
+- [**Händelser**](https://developer.adobe.com/commerce/extensibility/events/) - Använd anpassade händelseutlösare för att interagera med andra utökningsbara utvecklingsverktyg.
+- [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) - Använd webhooks för att automatiskt aktivera interaktion mellan Commerce och tredjepartssystem.
+- [**Administratörsgränssnitt SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) - Anpassa och förbättra Commerce Admin med nya sidor och funktioner för era handlare.
+- [**Integration Starter Kit**](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) - Snabba upp integreringen med referensintegreringar, introduktionsskript och en standardiserad arkitektur.
+
+## Commerce Foundation
+
+Commerce Foundation är en säker automatiserad värdplattform och självbetjäningsfunktioner för hantering av dina Commerce-program i en molnbaserad miljö. Viktiga funktioner:
+
+- Förenklad introduktion
+- Smidiga uppgraderingar
+
+### Förenklad introduktion
+
+Starta sandlåda och produktionsinstanser på några minuter med självbetjäningsportalen för Commerce Cloud Manager. Allt ni behöver, inklusive Merchandising Services, Commerce Storefront och App Builder, konfigureras och integreras automatiskt med era instanser.
+
+Se [Komma igång](getting-started.md) om du vill veta mer om hur du skapar och hanterar Commerce-instanser.
+
+### Smidiga uppgraderingar
+
+Få tillgång till de senaste funktionerna och förbättringarna utan att behöva uppgradera manuellt. Den kontinuerliga leveransen av nya funktioner och uppdateringar eliminerar behovet av manuell korrigering, vilket säkerställer att du alltid har tillgång till de senaste funktionerna med en låg total ägandekostnad.
+
+Den typiska uppgraderingsprocessen för Adobe Commerce i Cloud innefattar att skapa säkerhetskopior, klona instanser, köra kompatibilitetsverktyg och åtgärda kodkonflikter. Det behövs inte längre med Adobe Commerce som molntjänst. Adobe skickar meddelanden i appen när nya funktioner och säkerhetsuppdateringar har släppts. Du har en 30-dagars period på dig att utvärdera de nya funktionerna i dina sandlådeinstanser innan uppdateringarna automatiskt tillämpas i dina produktionsmiljöer.
+
+>[!NOTE]
+>
+>Adobe garanterar bakåtkompatibilitet för alla uppdateringar. Det innebär att när uppdateringar tillämpas bryts inte befintliga funktioner eller anpassningar som följer [API-första utökningsmodellen](https://developer.adobe.com/commerce/extensibility/).
+
+## Integrering med Experience Cloud
+
+Adobe Commerce as a Cloud Service integreras med alla Experience Cloud lösningar för att leverera [personaliserade e-handelsupplevelser i stor skala](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+
+[Dataanslutning](../data-connection/overview.md) låser upp insikter om kundernas köpbeteende så att ni kan skapa personaliserade shoppingupplevelser i alla kanaler med andra Adobe Digital Experience-produkter.
+
+## Fördelar
+
+Följande avsnitt innehåller information om de fördelar som Adobe Commerce as a Cloud Service ger företag och IT-chefer.
+
+### Företagsledare
+
+- **Öka intäkterna**: Kör organisk trafik med en högpresterande butik som ökar SEO. Skapa personaliserade upplevelser som genererar konverteringar med hjälp av omfattande data.
+- **Skalningsåtgärder**: Tjänster för automatisk skalförändring uppfyller verksamhetens höga krav med 99,9 % tillgänglighet. Utnyttja flera varumärken och regioner och ha stöd för B2B och B2C från en enda instans. Stöd för stora och komplexa produktkataloger med flexibel datamodellering.
+- **Öka säljarens produktivitet**: Använd AI-baserade marknadsföringstjänster för att förbättra konverteringen. Experimentera direkt i butiken. Hantera butiksupplevelsen och skapa multimedieupplevelser på några minuter med enkel dokumentbaserad redigering eller en visuell redigerare.
+- **Lägre total ägandekostnad (TCO) och snabbare innovation**: Alltid uppdaterade tjänster ger dig direkt tillgång till nya funktioner. Aktivera nya funktioner genom att enkelt installera appar från marknadsplatsen. Frigör resurser från tidsödande underhåll och fokusera på att bygga nya funktioner.
+
+### IT-ledare
+
+- **Snabb etablering**: Kom igång snabbt med självbetjäning på några minuter. Alla tjänster är förkonfigurerade för att fungera smidigt tillsammans för att komma igång snabbare. Tillhandahåll sandlådor för utvecklingsexperiment efter behov.
+- **Låg ägandekostnad**: Inga fler uppgraderingar med alltid uppdaterade tjänster. Håll dig trygg och följ de senaste säkerhetspatcharna som automatiskt tillämpas åt dig. Skala automatiskt för de mest krävande arbetsbelastningarna.
+- **Högpresterande butiker**: Skapa rika upplevelser på några minuter med enkel dokumentbaserad redigering eller en visuell redigerare. Använd AI-baserade marknadsföringstjänster för att öka konverteringsgraden. Inbyggda experiment i butiken.
+- **Snabbare innovation**: Frigör resurser från tidsödande underhåll och fokusera på att bygga nya funktioner som ger affärsvärde. Använd omfattande utbyggbarhet och standardbaserade tekniker (JavaScript, HTML, CSS och lågkodsverktyg) för att skapa differentierade upplevelser. Installera appar från tredje part med ett klick för att lägga till nya funktioner på handelsplattformen.
+
+## Nya funktionslösningar
+
+[Administratörsgränssnittet](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) är det primära gränssnittet för att komma åt funktioner för att hantera backend-butiksåtgärder, lager, priser, kampanjer och kundinteraktioner. Adobe Commerce as a Cloud Service erbjuder dock unika lösningar som ersätter några av de välkända funktionerna i Adobe Commerce i molnet och lokala projekt. I följande tabell beskrivs de funktioner och ersättningslösningar som finns i Adobe Commerce as a Cloud Service:
+
+| Funktion | Lösning | Tillgänglighet | Information |
+|---------|----------|--------------|--------|
+| [Digital resurshantering](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Produktvisningar](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) eller mini-DAM | Tillgänglig | Ett robust DAM-system (Digital Asset Management) som kan integreras med Adobe Experience Manager för hantering av multimediematerial. Ett alternativ är mini-DAM med grundläggande verktyg för att lagra och hantera digitala resurser. |
+| [Innehållshanteringssystem (CMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
+| [Mellanlagring av innehåll](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Katalogtjänst](../catalog-service/overview.md) | Vägkarta | Ett kataloghanteringsverktyg som är kopplat till Adobe Experience Platform och möjliggör hantering av stora kataloger. |
+| [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
+| [Betalningar](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Betalningstjänster för Adobe Commerce](../payment-services/overview.md) | Tillgänglig | En integrerad betalningstjänst som underlättar säkra och effektiva transaktioner. |
+| [Delad katalog](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) | [Prisindexeringstjänst](../price-index/price-indexing.md) | Vägkarta | Analyserar prisuppgifter och föreslår optimala prisstrategier för produkter baserat på olika faktorer. |
+| [URL-omskrivningar](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
+| [Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Katalogtjänst](../catalog-service/overview.md) | Vägkarta | Ett kataloghanteringsverktyg som är kopplat till Adobe Experience Platform och möjliggör hantering av stora kataloger. |
