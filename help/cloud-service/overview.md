@@ -1,39 +1,41 @@
 ---
-title: Adobe Commerce as a Cloud Service - översikt
-description: Läs om de viktigaste funktionerna och fördelarna med Adobe Commerce as a Cloud Service.
+title: '[!DNL Adobe Commerce as a Cloud Service] - översikt'
+description: Läs om de viktigaste funktionerna och fördelarna med  [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 27d08ed9c01923f2144b071ed7418a399b3126eb
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce as a Cloud Service - översikt
+# [!DNL Adobe Commerce as a Cloud Service] - översikt
 
-Adobe Commerce as a Cloud Service erbjuder flexibilitet, skalbarhet och effektivitet genom att företag kan leverera och snabbt skala digitala operationer och snabba upp innovationen. Adobe molnbaserade infrastruktur anpassar automatiskt resurser för att möta de höga kraven på trafik, beställningar och kataloghantering.
+{{accs-early-access}}
 
-Följande bild visar vilka produkter som används i Adobe Commerce as a Cloud Service:
+[!DNL Adobe Commerce as a Cloud Service] erbjuder flexibilitet, skalbarhet och effektivitet genom att göra det möjligt för företag att leverera och snabbt skala digitala operationer och snabba upp innovationer. Adobe molnbaserade infrastruktur anpassar automatiskt resurser för att möta de höga kraven på trafik, beställningar och kataloghantering.
 
-![Adobe Commerce as a Cloud Service produktgrupp](./assets/product-stack.svg){align="center" zoomable="yes"}
+I följande bild visas vilka produkter som är kraftfulla för [!DNL Adobe Commerce as a Cloud Service]:
+
+![[!DNL Adobe Commerce as a Cloud Service] produktstack](./assets/product-stack.svg){align="center" zoomable="yes"}
 
 >[!BEGINSHADEBOX]
 
-![info](assets/Smock_InfoOutline_18_N.svg) Om du vill delta i programmet för tidig åtkomst till Adobe Commerce as a Cloud Service fyller du i [det här formuläret](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5URFZXTE5TUk9PMUw0OFdOWTBNNlI3UTlNMS4u&amp;route=shorturl).
+![info](assets/Smock_InfoOutline_18_N.svg) Om du vill delta i programmet för tidig åtkomst i [!DNL Adobe Commerce as a Cloud Service] fyller du i [det här formuläret](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5URFZXTE5TUk9PMUw0OFdOWTBNNlI3UTlNMS4u&amp;route=shorturl).
 
 >[!ENDSHADEBOX]
 
 ## Arkitektur
 
-I följande video visas en kort introduktion till Adobe Commerce as a Cloud Service-arkitekturen. Bilder som illustrerar arkitekturen visas nedanför videon.
+I följande video visas en kort introduktion till arkitekturen [!DNL Adobe Commerce as a Cloud Service]. Bilder som illustrerar arkitekturen visas nedanför videon.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
-Bilden visar dataflödet mellan Adobe Commerce as a Cloud Service och alla Adobe Experience Cloud lösningar.
+I det här diagrammet visas dataflödet mellan [!DNL Adobe Commerce as a Cloud Service] och alla Adobe Experience Cloud-lösningar.
 
-![Adobe Commerce as a Cloud Service - arkitekturdiagram](./assets/data-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service]-arkitekturdiagram ](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce Storefront
 
@@ -43,7 +45,7 @@ Commerce Storefront är helt headless med en frikopplad arkitektur som ger alla 
 
 >[!NOTE]
 >
->Adobe Commerce as a Cloud Service stöder inte Luma storefront. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) för mer information om övergångar.
+>[!DNL Adobe Commerce as a Cloud Service] har inte stöd för Luma-butiker. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) för mer information om övergångar.
 
 ## Marknadsföringstjänster och betaltjänster
 
@@ -101,7 +103,7 @@ Se [Komma igång](getting-started.md) om du vill veta mer om hur du skapar och h
 
 Få tillgång till de senaste funktionerna och förbättringarna utan att behöva uppgradera manuellt. Den kontinuerliga leveransen av nya funktioner och uppdateringar eliminerar behovet av manuell korrigering, vilket säkerställer att du alltid har tillgång till de senaste funktionerna med en låg total ägandekostnad.
 
-Den typiska uppgraderingsprocessen för Adobe Commerce i Cloud innefattar att skapa säkerhetskopior, klona instanser, köra kompatibilitetsverktyg och åtgärda kodkonflikter. Det behövs inte längre med Adobe Commerce som molntjänst. Adobe skickar meddelanden i appen när nya funktioner och säkerhetsuppdateringar har släppts. Du har en 30-dagars period på dig att utvärdera de nya funktionerna i dina sandlådeinstanser innan uppdateringarna automatiskt tillämpas i dina produktionsmiljöer.
+Den typiska uppgraderingsprocessen för Adobe Commerce i Cloud innefattar att skapa säkerhetskopior, klona instanser, köra kompatibilitetsverktyg och åtgärda kodkonflikter. Det behövs inte längre med [!DNL Adobe Commerce as a Cloud Service]. Adobe skickar meddelanden i appen när nya funktioner och säkerhetsuppdateringar har släppts. Du har en 30-dagars period på dig att utvärdera de nya funktionerna i dina sandlådeinstanser innan uppdateringarna automatiskt tillämpas i dina produktionsmiljöer.
 
 >[!NOTE]
 >
@@ -113,13 +115,13 @@ Utvecklare kan använda omfattande [GraphQL- och REST-API:er](https://developer.
 
 ## Integrering med Experience Cloud
 
-Adobe Commerce as a Cloud Service integreras med alla Experience Cloud lösningar för att leverera [personaliserade e-handelsupplevelser i stor skala](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integreras med alla Experience Cloud-lösningar för att leverera [personaliserade e-handelsupplevelser i stor skala](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Dataanslutning](../data-connection/overview.md) låser upp insikter om kundernas köpbeteende så att ni kan skapa personaliserade shoppingupplevelser i alla kanaler med andra Adobe Digital Experience-produkter.
 
 ## Fördelar
 
-Följande avsnitt innehåller information om de fördelar som Adobe Commerce as a Cloud Service ger företag och IT-chefer.
+Följande avsnitt innehåller information om de fördelar som [!DNL Adobe Commerce as a Cloud Service] ger företag och IT-chefer.
 
 ### Företagsledare
 
@@ -137,7 +139,7 @@ Följande avsnitt innehåller information om de fördelar som Adobe Commerce as 
 
 ## Nya funktionslösningar
 
-[Administratörsgränssnittet](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) är det primära gränssnittet för att komma åt funktioner för att hantera backend-butiksåtgärder, lager, priser, kampanjer och kundinteraktioner. Adobe Commerce as a Cloud Service erbjuder dock unika lösningar som ersätter några av de välkända funktionerna i Adobe Commerce i molnet och lokala projekt. I följande tabell beskrivs de funktioner och ersättningslösningar som finns i Adobe Commerce as a Cloud Service:
+[Administratörsgränssnittet](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) är det primära gränssnittet för att komma åt funktioner för att hantera backend-butiksåtgärder, lager, priser, kampanjer och kundinteraktioner. [!DNL Adobe Commerce as a Cloud Service] erbjuder dock unika lösningar som ersätter några av de välkända funktionerna i Adobe Commerce i molnet och lokala projekt. I följande tabell beskrivs de funktioner och ersättningslösningar som finns i [!DNL Adobe Commerce as a Cloud Service]:
 
 | Funktion | Lösning | Tillgänglighet | Information |
 |---------|----------|--------------|--------|

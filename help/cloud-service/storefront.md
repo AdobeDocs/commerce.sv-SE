@@ -1,16 +1,18 @@
 ---
 title: Konfigurera din butik
-description: Lär dig hur du använder verktyget för att ställa in din Adobe Commerce as a Cloud Service-butik.
+description: Lär dig hur du kör byggnadsverktyget för att konfigurera  [!DNL Adobe Commerce as a Cloud Service] butiken.
 role: Developer
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-
 # Konfigurera din butik
+
+{{accs-early-access}}
 
 Följande steg visar hur du snabbt konfigurerar din Adobe Commerce Storefront som drivs av Edge Delivery med kommandot `aio commerce init`. I den här processen ställs följande in:
 

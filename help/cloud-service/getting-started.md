@@ -1,18 +1,20 @@
 ---
-title: Komma igång med Adobe Commerce as a Cloud Service
-description: Lär dig hur du kommer igång med Adobe Commerce as a Cloud Service.
+title: Komma igång med  [!DNL Adobe Commerce as a Cloud Service]
+description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
 
-
 # Komma igång
 
-Adobe Commerce as a Cloud Service har de flesta konfigurationer som finns färdiga. När du har slutfört några grundläggande installationsprocesser kommer din butik att vara igång på nolltid. Den här guiden hjälper dig att skapa och arbeta med en instans.
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service] tillhandahåller de flesta konfigurationer som finns i paketet. När du har slutfört några grundläggande installationsprocesser kommer din butik att vara igång på nolltid. Den här guiden hjälper dig att skapa och arbeta med en instans.
 
 Klicka på flikarna nedan om du vill se arbetsflödesöversikter på hög nivå för följande användartyper:
 
@@ -24,27 +26,27 @@ Klicka på flikarna nedan om du vill se arbetsflödesöversikter på hög nivå 
 
 >[!TAB Administratörs- och säljarbetsflöde]
 
-Bilden ger en översikt över hur administratörer och handlare använder och hanterar instanser av Adobe Commerce as a Cloud Service. Mer information om administratörsarbetsflöden finns i [Adobe Admin Console-handboken](https://helpx.adobe.com/enterprise/admin-guide.html).
+Bilden ger en översikt på hög nivå över hur administratörer och handlare får åtkomst till och hanterar [!DNL Adobe Commerce as a Cloud Service] instanser. Mer information om administratörsarbetsflöden finns i [Adobe Admin Console-handboken](https://helpx.adobe.com/enterprise/admin-guide.html).
 
-![Adobe Commerce as a Cloud Service - flödesdiagram](./assets/merchant-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service] handelsflödesdiagram](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB Arbetsflöde för utvecklare]
 
-Bilden ger en översikt över hur utvecklare skapar integreringar för Adobe Commerce as a Cloud Service med App Builder. Mer information finns i [API-dokumentationen](https://developer.adobe.com/commerce/services/cloud/).
+I det här diagrammet ges en översikt på hög nivå över hur utvecklare skapar integreringar för [!DNL Adobe Commerce as a Cloud Service] med App Builder. Mer information finns i [API-dokumentationen](https://developer.adobe.com/commerce/services/cloud/).
 
-![Adobe Commerce as a Cloud Service-utvecklarflödesdiagram](./assets/developer-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service] utvecklarflödesdiagram](./assets/developer-flow.svg){zoomable="yes"}
 
 >[!ENDTABS]
 
 ## Skapa en instans
 
-Adobe Commerce as a Cloud Service-instanser använder ett kreditbaserat system. Du kan skapa flera instanser, men varje instans kräver en relativ mängd krediter. Hur många krediter du har från början beror på prenumerationen.
+[!DNL Adobe Commerce as a Cloud Service] instanser använder ett kreditbaserat system. Du kan skapa flera instanser, men varje instans kräver en relativ mängd krediter. Hur många krediter du har från början beror på prenumerationen.
 
 1. Logga in på ditt [Adobe Experience Cloud](https://experience-stage.adobe.com/)-konto.
 
 1. Under [!UICONTROL Quick access] klickar du på [!UICONTROL **Commerce**] för att öppna [!UICONTROL Commerce Cloud Manager].
 
-   [!UICONTROL Commerce Cloud Manager] visar en lista över Adobe Commerce as a Cloud Service-instanser som är tillgängliga i din Adobe IMS-organisation.
+   [!UICONTROL Commerce Cloud Manager] visar en lista med [!DNL Adobe Commerce as a Cloud Service] instanser som är tillgängliga i din Adobe IMS-organisation.
 
 1. Klicka på [!UICONTROL **Lägg till instans**] i skärmens övre högra hörn.
 
@@ -62,7 +64,7 @@ Adobe Commerce as a Cloud Service-instanser använder ett kreditbaserat system. 
 
 1. Välj [!UICONTROL **miljötyp**] för din instans. Du kan välja mellan följande alternativ:
 
-   * [!UICONTROL **Sandbox**] - Perfekt för design- och testningsändamål. Du bör påbörja din Adobe Commerce as a Cloud Service-resa med sandlådemiljön.
+   * [!UICONTROL **Sandbox**] - Perfekt för design- och testningsändamål. Du bör påbörja din [!DNL Adobe Commerce as a Cloud Service]-resa med sandlådemiljön.
    * [!UICONTROL **Produktion**] - För livebutiker och kundorienterade webbplatser.
 
    >[!NOTE]
@@ -93,9 +95,9 @@ När du har skapat en instans kan du komma åt den från [!UICONTROL Commerce Cl
 
 ## Importera katalogen
 
-Som standard innehåller Adobe Commerce as a Cloud Service-instanser inga produktdata. Du kan välja att ta med exempelproduktdata när du skapar en instans i testnings- och utbildningssyfte innan du importerar din egen katalog.
+Som standard innehåller [!DNL Adobe Commerce as a Cloud Service] instanser inga produktdata. Du kan välja att ta med exempelproduktdata när du skapar en instans i testnings- och utbildningssyfte innan du importerar din egen katalog.
 
-Det finns två sätt att importera katalogen till Adobe Commerce as a Cloud Service:
+Det finns två sätt att importera katalogen till [!DNL Adobe Commerce as a Cloud Service]:
 
 * [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Ett användarvänligt gränssnitt där du kan importera katalogdata med bara några klick.
 * [**Importera JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - ett REST API som gör att du kan importera katalogdata programmatiskt.

@@ -1,33 +1,35 @@
 ---
-title: Migrera till Adobe Commerce as a Cloud Service
-description: Lär dig migrera till Adobe Commerce as a Cloud Service.
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+title: Migrera till  [!DNL Adobe Commerce as a Cloud Service]
+description: Lär dig hur du migrerar till  [!DNL Adobe Commerce as a Cloud Service].
+exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
 
+# Migrera till [!DNL Adobe Commerce as a Cloud Service]
 
-# Migrera till Adobe Commerce as a Cloud Service
+{{accs-early-access}}
 
-Adobe Commerce as a Cloud Service har de flesta konfigurationer som finns färdiga. Om du migrerar från en befintlig Adobe Commerce i molnet eller en lokal instans måste du utföra olika migreringsåtgärder beroende på din konfiguration.
+[!DNL Adobe Commerce as a Cloud Service] tillhandahåller de flesta konfigurationer som finns i paketet. Om du migrerar från en befintlig Adobe Commerce i molnet eller en lokal instans måste du utföra olika migreringsåtgärder beroende på din konfiguration.
 
 ## Migreringssökvägar
 
-Adobe Commerce as a Cloud Service har stöd för flera migreringsvägar, beroende på tidslinjen, butiken och anpassningar.
+[!DNL Adobe Commerce as a Cloud Service] har stöd för flera migreringssökvägar, beroende på tidslinjen, butiken och anpassningar.
 
-Som ett alternativ till en fullständig migrering stöder Adobe Commerce as a Cloud Service en stegvis migrering med Commerce Optimizer eller en stegvis metod.
+Som ett alternativ till en fullständig migrering stöder [!DNL Adobe Commerce as a Cloud Service] en stegvis migrering med Commerce Optimizer eller en stegvis metod.
 
-* **Inkrementell migrering** - Detta innebär att migrera data, anpassningar och integreringar stegvis. Detta är idealiskt för stora handlare med många anpassningar som gradvis vill övergå sina komplexa anpassningar och data till Adobe Commerce as a Cloud Service i sin egen takt.
+* **Inkrementell migrering** - Detta innebär att migrera data, anpassningar och integreringar stegvis. Den här metoden är idealisk för stora handlare med många anpassningar som gradvis vill övergå sina komplexa anpassningar och data till [!DNL Adobe Commerce as a Cloud Service] i sin egen takt.
 
 ![inkrementell migrering](./assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer** - Med den här metoden kan du migrera iterativt genom att använda Commerce Optimizer som en övergångsfas för att flytta komplexa anpassningar och data till Adobe Commerce as a Cloud Service i din egen takt. Commerce Optimizer ger tillgång till Merchandising Services som drivs av Catalog Channels and Policies, Commerce Storefront från Edge Delivery samt produktvisualer från AEM Assets.
+* **Commerce Optimizer** - Med den här metoden kan du migrera iterativt genom att använda Commerce Optimizer som en övergångsfas för att flytta komplexa anpassningar och data till [!DNL Adobe Commerce as a Cloud Service] i din egen takt. Commerce Optimizer ger tillgång till Merchandising Services som drivs av Catalog Channels and Policies, Commerce Storefront från Edge Delivery samt produktvisualer från AEM Assets.
 
 ![iterativ migrering](./assets/optimizer.png){width="600" zoomable="yes"}
 
-* **Fullständig migrering** - Detta innebär att migrera alla data, anpassningar och integreringar samtidigt. Den här metoden är perfekt för mindre handlare med få anpassningar som snabbt vill gå över till Adobe Commerce as a Cloud Service.
+* **Fullständig migrering** - Detta innebär att migrera alla data, anpassningar och integreringar samtidigt. Den här metoden är perfekt för mindre handlare med få anpassningar som snabbt vill övergå till [!DNL Adobe Commerce as a Cloud Service].
 
 I följande tabell visas en översikt över migreringsprocessen för olika butiker och konfigurationer:
 
@@ -43,17 +45,17 @@ I följande tabell visas en översikt över migreringsprocessen för olika butik
 
 Som framgår av tabellen kommer åtgärderna för varje migrering att bestå av:
 
-* **Datamigrering** - Använder tillhandahållna migreringsverktyg för att migrera data från din befintliga instans till Adobe Commerce as a Cloud Service.
+* **Datamigrering** - Använder tillhandahållna migreringsverktyg för att migrera data från din befintliga instans till [!DNL Adobe Commerce as a Cloud Service].
 * **Storefront** - Befintliga EDS-filer och headless-butiker kräver inte reducering, men LUMA-butiker kräver migrering till Commerce Storefront från Edge Delivery. PWA Studio butiker kan migreras till Commerce Storefront från Edge Delivery eller underhållas i sitt nuvarande skick. Adobe kommer att tillhandahålla acceleratorer för att underlätta migrering av butiker.
 * **[API-nät](https://developer.adobe.com/graphql-mesh-gateway)** - Skapa ett nytt nät eller ändra det befintliga. Adobe kommer att tillhandahålla förkonfigurerade nät som hjälp i den här processen.
-* **Integrationer** - Alla integreringar måste utnyttja antingen [startsatsen för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) eller [Adobe Commerce as a Cloud Service REST API](https://developer.adobe.com/commerce/services/reference/cloud-service/core-admin/).
+* **Integrationer** - Alla integreringar måste utnyttja antingen [startsatsen för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) eller [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/services/reference/cloud-service/core-admin/).
 * **Anpassningar** - Alla anpassningar måste flyttas till App Builder och API Mesh.
 * **Assets Management** - All resurshantering kräver migrering. Om du redan använder AEM Assets behöver du inte migrera.
-* **Tillägg** - Alla pågående tillägg måste återskapas som obearbetade tillägg. I slutet av 2025 kommer Adobe att tillhandahålla 100 av våra populäraste tillägg förinstallerade och klara att använda för att minimera byggtider.
+* **Tillägg** - Alla pågående tillägg måste återskapas som obearbetade tillägg. I slutet av 2025 kommer Adobe att ge åtkomst till våra populäraste tillägg för att minimera byggtider.
 
 ## Migreringsfaser
 
-Att migrera från din nuvarande Adobe Commerce-instans till en ny Adobe Commerce as a Cloud Service-instans inbegriper i första hand följande faser:
+Migrering från din nuvarande Adobe Commerce-instans till en ny [!DNL Adobe Commerce as a Cloud Service]-instans omfattar i första hand följande faser:
 
 * **[Beredskap](#readiness-phase)** - Börja med att kontrollera om distributionen är klar att flyttas till ACCS. I den här fasen bör du också bekanta dig med de ändringar som ACCS har gjort. &#x200B;
 * **[Implementering](#implementation-phase)** - Därefter förbereder du kod, storeFront, tillägg och integreringar för migrering. För att underlätta övergången tillåter Adobe både [kortsiktiga och långsiktiga iterativa strategier](#migration-paths). &#x200B;
@@ -62,7 +64,7 @@ Att migrera från din nuvarande Adobe Commerce-instans till en ny Adobe Commerce
 
 ### Beredskapsfas
 
-1. Börja med att titta på Adobe Commerce as a Cloud Service-arkitektur, utbyggbarhetsramverk och butiksfunktioner:
+1. Börja med att granska [!DNL Adobe Commerce as a Cloud Service]-arkitekturen, utökningsramverket och storefront-funktionerna:
 
    * [Adobe Commerce på Cloud Services-arkitekturen](./overview.md) - Granska plattformsarkitekturen och hur den skiljer sig från din nuvarande Adobe Commerce-instans.
    * [Adobe Commerce Extensibility Framework](https://developer.adobe.com/commerce/extensibility/) - Identifiera hur du vill ändra de aktuella anpassningarna.
@@ -76,15 +78,15 @@ Att migrera från din nuvarande Adobe Commerce-instans till en ny Adobe Commerce
 
 1. Bekräfta dina butikskrav och se till att de är i linje med Adobe Edge Delivery-funktionerna.
 
-1. Granska era integreringar från tredje part och bekräfta API-kompatibiliteten med Adobe Commerce as a Cloud Service.
+1. Granska dina aktuella tredjepartsintegreringar och bekräfta API-kompatibiliteten med plattformen [!DNL Adobe Commerce as a Cloud Service].
 
 ### Implementeringsfas
 
 Följande steg beskriver hur migreringen ska utvecklas och köras:
 
-1. Skapa en ny Adobe Commerce as a Cloud Service-instans i [Commerce Cloud Manager](./getting-started.md#create-an-instance).
+1. Skapa en ny [!DNL Adobe Commerce as a Cloud Service]-instans i [Commerce Cloud Manager](./getting-started.md#create-an-instance).
 
-1. Installera nödvändiga program och anpassningar. Adobe Commerce as a Cloud Service är förinstallerat med 100 av de populäraste programmen. Om du behöver ytterligare program eller anpassningar kan du implementera dem på nytt med App Builder.
+1. Installera nödvändiga program och anpassningar. [!DNL Adobe Commerce as a Cloud Service] har tillgång till våra populäraste appar. Om du behöver ytterligare program eller anpassningar kan du implementera dem på nytt med App Builder.
 
 1. Ställ in någon av följande GraphQL-baserade butiker:
 
@@ -100,7 +102,7 @@ Följande steg beskriver hur migreringen ska utvecklas och köras:
 
 ### GoLive-fas
 
-Innan du startar, validerar och testar du din nya instans av Adobe Commerce as a Cloud Service:
+Innan du startar validerar och testar du den nya [!DNL Adobe Commerce as a Cloud Service]-instansen med en sandlådemiljö:
 
 * **Funktionstestning** - Se till att migrerade data, butiksfunktioner och anpassningar fungerar sömlöst.
 
@@ -108,11 +110,13 @@ Innan du startar, validerar och testar du din nya instans av Adobe Commerce as a
 
 * **Säkerhetsgranskning** - Granska säkerhetsåtgärder, inklusive API-åtkomstkontroll och eventuella säkerhetsluckor.
 
+När du har validerat och testat din nya [!DNL Adobe Commerce as a Cloud Service]-sandlådeinstans kan du starta din produktionsinstans.
+
 ### Post GoLive phase
 
-När du har validerat och testat din nya sandlådeinstans i Adobe Commerce as a Cloud Service kan du starta din produktionsinstans:
+Utför följande efter lanseringen:
 
-1. Go live
+1. Gå live följning
 
    * Omdirigera trafik till den nya plattformen och övervaka prestandan.
    * Inaktivera din gamla Adobe Commerce-instans.

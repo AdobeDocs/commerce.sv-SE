@@ -1,18 +1,20 @@
 ---
 title: Delat ansvar
-description: Läs mer om säkerhetsansvar för alla parter som deltar i ditt Adobe Commerce as a Cloud Service-projekt.
+description: Lär dig mer om säkerhetsansvarsområdena för alla parter som deltar i ditt [!DNL Adobe Commerce as a Cloud Service] projekt.
 role: Admin, Architect, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-
 # Delat ansvar, säkerhet och operativ modell
 
-Adobe Commerce as a Cloud Service är en on demand-tjänst som bygger på en säkerhetsmodell med delat ansvar och en driftsmodell. Dessa ansvarsområden delas mellan Adobe och kunderna. Varje part har ett tydligt ansvar för att skydda och köra Adobe Commerce-programmet.
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service] är en on demand-tjänst som är beroende av en säkerhetsmodell för delat ansvar och en driftsmodell. Dessa ansvarsområden delas mellan Adobe och kunderna. Varje part har ett tydligt ansvar för att skydda och köra Adobe Commerce-programmet.
 
 >[!BEGINSHADEBOX]
 
@@ -33,8 +35,8 @@ I följande sammanfattande tabeller används RACI-modellen för att visa säkerh
 | Definiera CDN WAF-regler för serverdel | RA | |
 | Distribuera WAF-regler för serverdelsplattform | RA | |
 | Distribuera CDN WAF-regler för serverdel | RA | |
-| Åtgärda kärnfel i Adobe Commerce as a Cloud Service | RA | I |
-| Släpp Adobe Commerce as a Cloud Service infrastrukturkorrigeringar | RA | |
+| Åtgärdar kärnfel i [!DNL Adobe Commerce as a Cloud Service] | RA | I |
+| Släpper infrastrukturkorrigeringar för [!DNL Adobe Commerce as a Cloud Service] | RA | |
 | Skalning (infrastruktur) | RA | |
 | Skalning (core application) | RA | |
 | Integrera externa program | | RA |

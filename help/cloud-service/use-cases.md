@@ -1,18 +1,20 @@
 ---
 title: Användningsexempel
-description: Lär dig hur ni kan uppnå praktiska användningsexempel och affärsscenarier som stöds med Adobe Commerce as a Cloud Service.
+description: Lär dig hur du kan uppnå praktiska användningsfall och affärsscenarier som stöds med  [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
 
-
 # Användningsexempel
 
-I följande exempel visas de viktigaste funktionerna och affärsscenarierna som stöds av Adobe Commerce as a Cloud Service, så att du kan snabba upp utvecklingen och lansera slagkraftiga upplevelser.
+{{accs-early-access}}
+
+I följande användningsexempel demonstreras kärnfunktioner och affärsscenarier som stöds av [!DNL Adobe Commerce as a Cloud Service], vilket gör att du kan snabba upp utvecklingen och lansera slagkraftiga upplevelser.
 
 Om du råkar ut för några problem kan du få hjälp i avsnittet [Felsökning](#troubleshooting).
 
