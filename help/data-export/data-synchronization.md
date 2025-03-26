@@ -3,9 +3,9 @@ title: Synkronisera data med SaaS-dataexport
 description: Lär dig hur  [!DNL SaaS Data Export] samlar in och synkroniserar data mellan Adobe Commerce-instanser och anslutna SaaS-tjänster.
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
+source-git-commit: 291babe5dbdabb7d626ae744335b94e44ba6a6f5
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ De viktigaste komponenterna i SaaS dataexportflöde är:
 - SaaS-moduler för dataexport som samlar in data för flöden från Adobe Commerce, samlar ihop flödesobjekt, lyssnar efter uppdateringar och behåller feedstatus.
 - SaaS exporterar moduler som exporterar data, konfigurerar routning och publicerar flöden till anslutna tjänster.
 - Adobe Commerce-tjänsten hanterar dataöverföringsprocessen för att validera inkommande flöden och bevarar uppdateringar av anslutna tjänster.
+
+>[OBS!]
+>
+>För att säkerställa smidig schemaläggning och undvika avbrott i webbplatsåtgärder rekommenderar Adobe att du beräknar datavolym och synkroniseringstid innan du startar synkroniseringen av dataflöden. Denna uppskattning är viktig när du planerar för inledande synkroniseringar eller storskaliga kataloguppdateringar, till exempel massprisförändringar. Mer information finns i [Beräkna datavolym och överföringstid för datasynkronisering](estimate-data-volume-sync-time.md)
 
 ## Synkroniseringslägen
 
