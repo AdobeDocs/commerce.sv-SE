@@ -3,9 +3,9 @@ title: Konfigurera din butik
 description: Lär dig hur du kör byggnadsverktyget för att konfigurera  [!DNL Adobe Commerce as a Cloud Service] butiken.
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -102,13 +102,11 @@ Om du kör följande kommando skapas en ställningar för din Commerce-butik. De
 
 1. Ange namnet på den databas som du vill skapa.
 
-1. Välj den mall som ska användas, till exempel `adobe-commerce/adobe-demo-store`.
-
 1. Välj något av följande alternativ:
 
-   * **Använd Adobe demoinstans (standardslutpunkter)** - Använd Commerce-instans med Adobe-exempel.
+   * **Använd demo-Adobe Commerce-klienten** - Använd en demoklient.
       * Om du väljer det här alternativet uppmanas du att installera AEM Code Sync-roboten i ett webbläsarfönster. Du måste ange den databas du skapade och auktorisera roboten. Återgå till CLI och ange `y` för att bekräfta installationen av AEM Code Sync-roboten.
-   * **Välj ett tillgängligt API (Nät -> SaaS)** - Välj en befintlig Commerce-instans i den valda organisationen.
+   * **Välj en tillgänglig Adobe Commerce-klient** - Välj en befintlig Commerce-klient i den valda organisationen.
       * Om du väljer det här alternativet måste du markera projektet och arbetsytan för att skapa ett nät i.
 
    >[!NOTE]
