@@ -2,9 +2,10 @@
 title: Kategorimarknadsföring
 description: Använd [!DNL Live Search] Kategorimarknadsföring för en snabbare shoppingupplevelse.
 gourl: ls_catalog_merchandising
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
+source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -140,3 +141,7 @@ Så här lägger du till en händelse manuellt:
 1. Klicka på menyn **Välj en händelse** under Manuell rankning och välj en händelse som ska äga rum när de associerade villkoren uppfylls.
 1. Ange namnet på den produkt som du vill påverka. Produkter föreslås när du skriver.
 1. För flera händelser väljer du andra händelser som du vill ska utlösas när villkoren uppfylls.
+
+>[!NOTE]
+>
+>Regler tillämpas när en viss kategori öppnas i butiken och det finns en regel för den kategorin. För regler för kategorimarknadsföring är standardsorteringsordningen&quot;Sortera efter: Position&quot;. Om en kund ändrar sorteringsordningen sorteras inte längre alla dolda, fasta och dolda produkter.

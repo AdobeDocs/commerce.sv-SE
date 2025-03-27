@@ -3,9 +3,9 @@ title: Gränser och begränsningar
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,12 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 - Det högsta antalet resultat per sida är 500.
 - Det går inte att filtrera resultat med ett datumtypsattribut.
 
-## Regler
+## Söka efter marknadsföring
 
 - Det högsta antalet [regler](rules.md) för sökmarknadsföring per butiksvy är 50.
-- Kategorimarknadsföring kan ha en regel per kategori.
 - Det högsta antalet villkor per regel är 10.
 - Det högsta antalet händelser per regel är 25.
+- Regler och manuellt rankade produkter tillämpas på sökresultaten när standardsorteringsordningen, &quot;Sortera efter: mest relevant&quot; har valts. Om en kund ändrar sorteringsordningen till något som att sortera efter namn eller pris gäller inte längre regler och manuella rankningar.
 - För att undvika oförutsägbara resultat i sidnumrerade svar bör antalet fästa produkter inte överskrida den begärda sidstorleken.
 
 ## Synonymer
@@ -68,9 +68,10 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 
 ## Kategoriförsäljning
 
-- En regel per kategori kan skapas för varje butiksvy. Varje regel kan ha:
-   - Upp till tio villkor
-   - Upp till 25 händelser
+- Du kan skapa en regel per kategori för varje butiksvy.
+- Det högsta antalet villkor per regel är 10.
+- Det högsta antalet händelser per regel är 25.
+- Regler tillämpas när en viss kategori öppnas i butiken och det finns en regel för den kategorin. För regler för kategorimarknadsföring är standardsorteringsordningen&quot;Sortera efter: Position&quot;. Om en kund ändrar sorteringsordningen sorteras inte längre alla dolda, fasta och dolda produkter.
 
 ## B2B- och kategoribehörigheter
 
