@@ -1,9 +1,10 @@
 ---
 title: '[!DNL Product Recommendations] Workspace'
 description: Lär dig hur du konfigurerar, hanterar och övervakar prestandan för produktrekommendationer.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -18,6 +19,19 @@ Arbetsytan [!DNL Product Recommendations] visar en lista med tidigare konfigurer
 
 ![Arbetsytan Rekommendationer](assets/workspace.png)
 _Rekommendationer Workspace_
+
+## Datainsamling
+
+För att säkerställa att alla funktionsområden på arbetsytan innehåller rätt data måste du konfigurera datainsamling baserat på den valda butiksimplementeringen:
+
+1. Luma - Datainsamling är tillgänglig direkt.
+1. Headless - Datainsamlingen måste konfigureras manuellt, beroende på butiksimplementering.
+
+Om du använder en headless-butik kan du läsa följande dokumentation för att få mer information om vilka händelser som behöver läggas till:
+
+- [Nödvändiga händelser](events.md) för kontrollpanelen för produktrekommendationer.
+- [Storefront-händelseinsamlaren](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) som måste läggas till som en förutsättning.
+- [Exempel](https://github.com/adobe/commerce-events/tree/main/examples) på händelsestrukturen.
 
 ## Ange omfånget
 

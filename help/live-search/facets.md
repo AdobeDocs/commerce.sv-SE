@@ -1,9 +1,10 @@
 ---
 title: Fasetter
 description: '[!DNL Live Search] facets använder flera dimensioner av attributvärden som sökvillkor.'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -15,6 +16,8 @@ Faceting är en metod för högpresterande filtrering som använder flera dimens
 [!DNL Live Search] använder `productSearch`-frågan, som returnerar faceting och andra data som är specifika för [!DNL Live Search]. Se [`productSearch` fråga ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) i utvecklardokumentationen för kodexempel.
 
 ![Filtrerade sökresultat](assets/storefront-search-results-run.png)
+
+Inom en aspekt kan kunderna välja flera alternativ, till exempel&quot;Grundläggande&quot; och&quot;Snug&quot; under&quot;Format&quot; och sökresultaten uppdateras så att endast dessa format visas. På samma sätt gäller att om en kund väljer alternativ i olika aspekter, till exempel&quot;Grundläggande&quot; under&quot;Format&quot; och&quot;Inomhus&quot; under&quot;Klimatteknik&quot;, uppdateras sökresultaten så att den valda stilen och det valda klimatet visas.
 
 Alla definierade aspekter kan användas som URL-parametrar och resultaten filtreras baserat på parametervärdena: `http://yourstore.com?brand=acme&color=red`.
 
