@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: c7073ddbc1d0559edb691595515e569e4b4595e7
+source-git-commit: e41b6c1c51ccb77e10406aaa9e8a5b7840b4ce55
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1009'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Bland uppdateringarna finns:
 >SaaS-tillägget för dataexport är en samling moduler som installeras automatiskt med Live Search, Produktrekommendationer och katalogtjänsten. Du kan kontrollera vilken version som är installerad på datorn med Composer. I vissa fall kanske du vill uppgradera dataexporttillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 103.4.0-utgåvan
+
+![Korrigera](../assets/fix.svg) Produkten åsidosätter feed och skickar inte längre behörigheter om produkten inte har tilldelats en kategori.<!--MDEE-449-->
 
 ## 103.3.21 Utgåva
 
