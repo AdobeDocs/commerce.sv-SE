@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Product Recommendations]
 description: Den senaste versionsinformationen för  [!DNL Product Recommendations] från Adobe Commerce.
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
-source-git-commit: 615fa2967680c16ec123d41c20019f72cfeddc60
+source-git-commit: ea7618805596ac4100f5080efe32793feea001df
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,16 @@ _25 april 2023_
 
 ## Aktuell huvudversion
 
+### 6.2.0 of magento/product-recommendations
+
+_4 april 2025_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+
+![Nytt](../assets/new.svg) Uppdaterade CDN-URL:er för `recommendations-admin-ui` till domänen `adobe.io`.
+
+### Tidigare versioner
+
 ### 6.1.0 of magento/product-recommendations
 
 _11 mars 2025_
@@ -57,8 +67,6 @@ _11 mars 2025_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
 ![Nytt](../assets/new.svg) Stöd för PHP 8.4 har lagts till.
-
-### Tidigare versioner
 
 ### 6.0.3 of magento/product-recommendations
 
