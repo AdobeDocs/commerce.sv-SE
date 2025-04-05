@@ -3,7 +3,7 @@ title: Komma igång med  [!DNL Adobe Commerce as a Cloud Service]
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: a1b825a819b25d9374eef169c633d54fb94ee26c
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
@@ -42,7 +42,7 @@ I det här diagrammet ges en översikt på hög nivå över hur utvecklare skapa
 
 [!DNL Adobe Commerce as a Cloud Service] instanser använder ett kreditbaserat system. Du kan skapa flera instanser, men varje instans kräver en relativ mängd krediter. Hur många krediter du har från början beror på prenumerationen.
 
-1. Logga in på ditt [Adobe Experience Cloud](https://experience-stage.adobe.com/)-konto.
+1. Logga in på ditt [Adobe Experience Cloud](https://experience.adobe.com/)-konto.
 
 1. Under [!UICONTROL Quick access] klickar du på [!UICONTROL **Commerce**] för att öppna [!UICONTROL Commerce Cloud Manager].
 
