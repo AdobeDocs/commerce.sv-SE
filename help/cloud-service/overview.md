@@ -4,9 +4,9 @@ description: Läs om de viktigaste funktionerna och fördelarna med  [!DNL Adobe
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Viktiga funktioner:
 
 ### Förenklad introduktion
 
-Starta sandlåda och produktionsinstanser på några minuter med självbetjäningsportalen för Commerce Cloud Manager. Allt ni behöver, inklusive Merchandising Services, Commerce Storefront och App Builder, konfigureras och integreras automatiskt med era instanser.
+Starta sandlådan och produktionsinstanser på några minuter med självbetjäningsportalen [!UICONTROL Commerce Cloud Manager]. Allt ni behöver, inklusive Merchandising Services, en headless Commerce-instans och App Builder, konfigureras och integreras automatiskt med era instanser.
 
 Se [Komma igång](getting-started.md) om du vill veta mer om hur du skapar och hanterar Commerce-instanser.
 

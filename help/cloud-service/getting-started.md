@@ -3,9 +3,9 @@ title: Komma igång med  [!DNL Adobe Commerce as a Cloud Service]
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-source-git-commit: a1b825a819b25d9374eef169c633d54fb94ee26c
+source-git-commit: 9b90e6f79a394ec0941c9e48aee3859f0bcdedd5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ I det här diagrammet ges en översikt på hög nivå över hur utvecklare skapa
 >[!ENDTABS]
 
 ## Skapa en instans
+
+>[!NOTE]
+>
+>Innan du kan skapa en instans måste din organisations produktadministratör eller systemadministratör lägga till dig som användare av produkten [!DNL Adobe Commerce as a Cloud Service]. Mer information finns i [Lägg till användare och administratörer](./user-management.md#add-users-and-admins).
 
 [!DNL Adobe Commerce as a Cloud Service] instanser använder ett kreditbaserat system. Du kan skapa flera instanser, men varje instans kräver en relativ mängd krediter. Hur många krediter du har från början beror på prenumerationen.
 
