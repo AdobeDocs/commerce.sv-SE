@@ -3,9 +3,9 @@ title: Gränser och begränsningar
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 
 - Produkter visas inte om de inte har lagts till i en delad standardkatalog.
 - Så här begränsar du kundgrupper med [kategoribehörigheter](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions):
-   - Produkter måste tilldelas till rotkategorin.
+   - Produkter måste tilldelas till rotkategorin. (**Obs!** Du kan ta bort den här begränsningen genom att uppdatera tillägget SaaS-dataexport till version 103.4.0+. Se [Hantera dataexporttillägget](../data-export/manage-extension.md).
    - Kundgruppen &quot;Inte inloggad&quot; måste ha behörigheten &quot;Tillåt&quot; för bläddring.
    - Om du vill begränsa produkter till kundgruppen Inte inloggad går du till varje kategori och anger behörigheter för varje [kundgrupp](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - Det finns för närvarande inget stöd för B2B med PLP-widgeten i PWA Studio. Du kan [använda API](install.md#pwa-support) för att implementera den här funktionen.

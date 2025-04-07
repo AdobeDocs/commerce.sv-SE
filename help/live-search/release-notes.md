@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Live Search]
 description: Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Bland uppdateringarna finns:
 ## Uppdateringar av värdtjänster
 
 Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionshanteringsversion eller förbättringar av värdtjänsten.
+
+_3 april 2025_
+
+![Korrigera](../assets/fix.svg) Tillägget SaaS-dataexport har uppdaterats för att ta bort&quot;Produkterna måste tilldelas till rotkategorin&quot; [begränsning](boundaries-limits.md#b2b-and-category-permissions) för B2B-handlare. Se [Hantera tillägget för dataexport](../data-export/manage-extension.md) om du vill veta mer om hur du uppdaterar tillägget SaaS-dataexport till version 103.4.0+.
 
 _20 februari 2025_
 

@@ -2,7 +2,8 @@
 title: Kom igång med  [!DNL Live Search]
 description: Lär dig systemkraven och installationsstegen för  [!DNL Live Search] från Adobe Commerce.
 role: Admin, Developer
-source-git-commit: 039f04814c4e0b0c31f160446c67b2689f687818
+exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
+source-git-commit: 8ebb28641e8db3b88d8f9d818da6301558ed186b
 workflow-type: tm+mt
 source-wordcount: '3122'
 ht-degree: 0%
@@ -470,7 +471,7 @@ När Live Search är aktiverat synkroniserar dataexporttillägget Commerce-data 
 
 ### Inventory management
 
-[!DNL Live Search] har stöd för [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)-funktioner i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständigt stöd måste du [uppdatera](install.md#update) beroendemodulen `commerce-data-export` till version 102.2.0+.
+[!DNL Live Search] har stöd för [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)-funktioner i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständigt stöd måste du [uppdatera](install.md#updating-live-search) beroendemodulen `commerce-data-export` till version 102.2.0+.
 
 [!DNL Live Search] returnerar ett booleskt meddelande som anger om en produkt är tillgänglig i Inventory management, men inte innehåller information om vilken källa som har aktien.
 
