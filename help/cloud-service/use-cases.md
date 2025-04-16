@@ -3,9 +3,9 @@ title: Användningsexempel
 description: Lär dig hur du kan uppnå praktiska användningsfall och affärsscenarier som stöds med  [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: d5935f4d080c3be1f51bf8916575a3b2f357ee22
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Skapa, redigera och publicera material direkt i butiken.
 
 1. Öppna [storefront](./storefront.md) som du skapade i förutsättningarna.
 
-1. Öppna Dokumentredigering. Genom att navigera till `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`.
+1. Öppna Storefront Builder. Genom att navigera till `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`.
 
 1. Öppna sidan [!UICONTROL **Index**].
 
@@ -110,7 +110,7 @@ Med Adobe Commerce kontextuella experimenteringsfunktion kan du skapa och hanter
 
 * Installera [AEM Sidekick-tillägget](https://www.aem.live/docs/sidekick)
 
-1. I dokumentredigeringsvyn i butiken markerar du indexsidan och klickar på [!UICONTROL **Kopiera**].
+1. Markera indexsidan i Storefront Builder och klicka på [!UICONTROL **Kopiera**].
 
 1. Skapa en [!UICONTROL **experimentmapp**] under huvudmappen genom att klicka på knappen [!UICONTROL **Nytt**] och välja [!UICONTROL **Mapp**].
 
