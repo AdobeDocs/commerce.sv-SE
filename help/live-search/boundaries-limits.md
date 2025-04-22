@@ -3,9 +3,9 @@ title: Gränser och begränsningar
 description: Lär dig mer om gränserna och gränserna för  [!DNL Live Search] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
+source-git-commit: eaea7d847be04956299a80ba3bccd90be527c482
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 - [Nivåpris](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) stöds inte i fältet [!DNL Live Search] och i widgeten Produktlistsida.
 - Priserna inkluderar inte moms.
 - Innehållssökning (CMS-sidor och -block) stöds inte.
-- Det finns en gräns på 10 000 produkter som kan sidnumreras. Även om den här gränsen kan höjas kan den påverka prestandan. Se till att ni kan filtrera produkter på meningsfulla sätt om en kategori eller ett sökresultat har ett stort antal produkter så att kunderna inte behöver använda djup sidnumrering.
+- Det maximala antalet resultat som kan sidnumreras är 10 000. För att säkerställa att kunderna inte behöver använda djup sidnumrering när en kategori eller sökresultat innehåller ett stort antal produkter, kan du erbjuda användbara sätt att filtrera produkter.
 - Det finns en hård gräns på 1 MB per attribut, inklusive beskrivning och anpassade attribut.
 - Sökadaptern stöder inte produktattribut som har skapats med en anpassad källmodell och används som facets. Om du vill ha stöd för den här funktionen måste du använda [widgeten Produktlistsida](plp-styling.md).
 - Anpassade produkttyper stöds inte.

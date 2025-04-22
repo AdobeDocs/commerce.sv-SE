@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Live Search]
 description: Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
+source-git-commit: 5c34bf61ee441ef20a680a4f071308d17379f49d
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2399'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Bland uppdateringarna finns:
 ## Uppdateringar av värdtjänster
 
 Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionshanteringsversion eller förbättringar av värdtjänsten.
+
+_21 april 2025_
+
+![Korrigera](../assets/fix.svg) Ett problem med intervallfiltret för priser har korrigerats så att produkter som är lika med det övre intervallet inte tas med i resultatet. Den här ändringen anpassas till hur prisintervall definieras för facets.
 
 _3 april 2025_
 
@@ -82,7 +86,7 @@ _27 oktober 2023_
 
 _11 mars 2025_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Korrigera](../assets/fix.svg) [!DNL Live Search] har nu stöd för PHP 8.4 för installationer som kör Adobe Commerce 2.4.8-beta2.
 ![Korrigera](../assets/fix.svg) Ett fel har korrigerats där sökadaptern inte var kompatibel med `psr/http-message:2.0`.
@@ -91,7 +95,7 @@ _11 mars 2025_
 
 _13 februari 2025_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Korrigera](../assets/fix.svg) Ett problem där orderdetaljsidan saknade ordernummer, datum och knappen **[!UICONTROL Reorder]** har åtgärdats.
 
@@ -99,7 +103,7 @@ _13 februari 2025_
 
 _6 januari 2025_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Åtgärda](../assets/fix.svg) Ett fel som orsakade ett fel med `categoryList` GraphqL-frågan i Adobe Commerce version 2.4.5 och tidigare har korrigerats.
 
@@ -107,7 +111,7 @@ _6 januari 2025_
 
 _31 juli 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Korrigera](../assets/fix.svg) Ett fel har korrigerats där vissa skript inte lästes in på utcheckningssidan.
 ![Korrigera](../assets/fix.svg) Korrigerade en beroendeversion i filen `composer.json`.
@@ -116,7 +120,7 @@ _31 juli 2024_
 
 _31 maj 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Nytt](../assets/new.svg) Uppdaterat Live Search-tillägg för att använda PLP-widgetar version 2.0.0.
 
@@ -124,7 +128,7 @@ _31 maj 2024_
 
 _16 maj 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ### Uppdateringar
 
@@ -134,7 +138,7 @@ _16 maj 2024_
 
 _19 mars 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ### Nya funktioner
 
@@ -145,7 +149,7 @@ _19 mars 2024_
 
 _22 februari 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ### Nya funktioner
 
@@ -161,7 +165,7 @@ _22 februari 2024_
 
 _13 november 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ### Nya funktioner
 
@@ -192,7 +196,7 @@ När du har uppgraderat testar du den uppdaterade konfigurationen i QA eller Sta
 
 _15 september 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Ny](../assets/new.svg) Ny flik för kategorimarknadsföring har lagts till. Nu kan man lägga in intelligenta rankningar och manuella rankningar (stift, boost, bury, hide) per kategori
 ![Nya](../assets/new.svg) användare kan lägga till en enskild kategoriregel med intelligent eller manuell rankning
@@ -221,7 +225,7 @@ _15 september 2023_
 
 _1 september 2023_
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 #### Uppdateringar
 
@@ -231,7 +235,7 @@ _1 september 2023_
 
 _7 augusti 2023_
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 #### Nya funktioner
 
@@ -260,7 +264,7 @@ När du använder widgeten Listsida för produkter i Live Search misslyckas Goog
 
 _14 mars 2023_
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 #### Nya funktioner
 
@@ -301,7 +305,7 @@ Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Ö
 
 ### [!DNL Live Search] 2.0.5
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Korrigera](../assets/fix.svg) - Direktsökning genererar ett fel när SDK-resurser inte är tillgängliga på grund av nätverksproblem. Det här felet har åtgärdats.
 
@@ -311,7 +315,7 @@ Vi rekommenderar att du uppgraderar och testar innan du går till produktion. Ö
 
 ### [!DNL Live Search] 2.0.4
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Nytt](../assets/new.svg) Live Search har nu stöd för filtrering med inställningen Visa utanför Stock-produkter i administratören. Om Visa utanför Stock-produkter är inställt på false läggs `inStock = true` till i filtret.
 ![Åtgärda](../assets/fix.svg) För att förbättra prestanda har blocket Förslag tagits bort från popup-fönstret Live Search. Data skickas fortfarande via GraphQL om du vill ersätta funktionen.
@@ -325,7 +329,7 @@ Man rekommenderar att man uppgraderar och testar innan man går till produktion.
 
 ### [!DNL Live Search] 2.0.3
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Nytt](../assets/new.svg) Live Search har nu stöd för B2B-funktioner genom att hantera kategoribehörigheter, delade kataloger och kundgruppsspecifika priser.
 
@@ -335,7 +339,7 @@ Man rekommenderar att man uppgraderar och testar innan man går till produktion.
 
 ### [!DNL Live Search] 2.0
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 Befintliga [!DNL Live Search]-installationer måste uppgraderas till [!DNL Live Search] 2.0.0 för att kunna utnyttja följande nya funktioner, korrigeringar och förbättringar:
 
@@ -350,7 +354,7 @@ Befintliga [!DNL Live Search]-installationer måste uppgraderas till [!DNL Live 
 
 ### [!DNL Live Search] 1.3.1
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Korrigera](../assets/fix.svg) [Eget prisattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) returnerar inte längre ett fel när det konfigureras som en [facet](facets-add.md).
 ![Åtgärda](../assets/fix.svg) Ett fel som orsakade att ett fel uppstod när ingen [valutasymbol](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`) är tillgänglig har åtgärdats.
@@ -358,7 +362,7 @@ Befintliga [!DNL Live Search]-installationer måste uppgraderas till [!DNL Live 
 
 ### [!DNL Live Search] 1.3.0
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Ny](../assets/new.svg) [Performance](performance.md)-rapportinstrumentpanel ger insikt i söktermer som kunderna använder.
 ![Nytt](../assets/new.svg) [!DNL Live Search] [Store Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) ger åtkomst till ett gemensamt datalager med händelsepublicerings- och prenumerationstjänster samt mätvärden.
@@ -369,7 +373,7 @@ Befintliga [!DNL Live Search]-installationer måste uppgraderas till [!DNL Live 
 
 ### [!DNL Live Search] 1.2.0
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Nytt](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) visar föreslagna produkter och miniatyrbilder av de bästa sökresultaten som typfrågor för shoppare i sökrutan.
 ![Ny](../assets/new.svg) Commerce *Admin*-session förblir öppen under utökad inaktivitet på tangentbordet
@@ -382,7 +386,7 @@ Befintliga [!DNL Live Search]-installationer måste uppgraderas till [!DNL Live 
 
 ### [!DNL Live Search] 1.1.0
 
-[!BADGE Stöds]{type="Informativ" tooltip="Stöds"}
+[!BADGE Stöds]{type="Informative" tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Fel](../assets/bug.svg) Tjänsten [!DNL Live Search] stöder endast [basvalutan](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) i Adobe Commerce-installationen.
 ![Fel](../assets/bug.svg) När du lägger till en fasett uppdateras inte produktattributsmatningen korrekt när värdet är `Update on Save`. Du undviker det här problemet genom att gå till [Indexhantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) och ange produktattributsfeed till `Update by Schedule`.
