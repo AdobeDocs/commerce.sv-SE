@@ -5,13 +5,13 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
 hidefromtoc: true
-source-git-commit: 1e73f4dd45114cfdcd2fef87ae0d9b2504214c6b
+exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
+source-git-commit: 79d1b862c5cc307daf93f93c03f1993dbd45aa09
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce produktlösningar
 
@@ -39,13 +39,9 @@ I följande tabell definieras de emblem som visas i Adobe Commerce-dokumentation
 
 Det här märket identifierar endast dokumentation för [Adobe Commerce as a Cloud Service](../cloud-service/overview.md) - och [Adobe Commerce Optimizer](../optimizer/overview.md) -projekt. Dessa projekt ligger hos en molnbaserad, fullt hanterad SaaS-lösning (Software as a-service) där Adobe ansvarar för de flesta operativa aspekter - som kontinuerliga uppdateringar, säkerhetsövervakning och skalbarhet - så att kunderna kan fokusera på e-handel snarare än infrastruktur.
 
-#### [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."}
+#### [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 
-Det här märket identifierar endast dokumentation som rör [Adobe Commerce i molnprojekt](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview). Dessa projekt ligger på en molnbaserad, fullt hanterad lösning för plattformen som en tjänst (PaaS) med alla Adobe Commerce kärnfunktioner i en förprovisionerad miljö.
-
->[!NOTE]
->
->Om inget annat anges omfattar detta även lokala projekt.
+Det här märket identifierar endast dokumentation som rör [Adobe Commerce i molnet](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) och lokala projekt. Adobe Commerce i Cloud-projekt ligger på en molnbaserad, fullt hanterad lösning för plattformen som en tjänst (PaaS) med alla Adobe Commerce kärnfunktioner i en förprovisionerad miljö. Lokala projekt ligger i kundhanterad infrastruktur.
 
 ### Regler
 
