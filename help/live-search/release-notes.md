@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Live Search]
 description: Den senaste versionsinformationen för  [!DNL Live Search] från Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 5c34bf61ee441ef20a680a4f071308d17379f49d
+source-git-commit: bf36d522b45218a10bde7a383feca99bdba62aa6
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,12 @@ Bland uppdateringarna finns:
 ## Uppdateringar av värdtjänster
 
 Dessa anteckningar beskriver uppdateringar som publicerats utanför en versionshanteringsversion eller förbättringar av värdtjänsten.
+
+_29 april 2025_
+
+![Korrigera](../assets/fix.svg) Ett fel har korrigerats där rapporten **Exportera till CSV** på fliken [**Prestanda**](./performance.md) inte innehöll alla data som angavs i datumintervallet.
+![Korrigera](../assets/fix.svg) Ett fel har korrigerats där du inte kunde spara en [försäljningsregel](./rules.md) om sökfrågefiltret användes.
+![Åtgärda](../assets/fix.svg) Ett problem har korrigerats där [fästa produkter](./facets-manage.md#pinunpin-facet) inte fanns med överst på resultatsidan.
 
 _21 april 2025_
 
