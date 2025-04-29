@@ -4,9 +4,9 @@ description: Läs om de viktigaste funktionerna och fördelarna med  [!DNL Adobe
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
+source-git-commit: 4cd5847eee52ff43e2fae27080a5971ceb939875
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -148,6 +148,5 @@ Följande avsnitt innehåller information om de fördelar som [!DNL Adobe Commer
 | [Mellanlagring av innehåll](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Katalogtjänst](../catalog-service/overview.md) | Vägkarta | Ett kataloghanteringsverktyg som är kopplat till Adobe Experience Platform och möjliggör hantering av stora kataloger. |
 | [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
 | [Betalningar](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Betalningstjänster för Adobe Commerce](../payment-services/overview.md) | Tillgänglig | En integrerad betalningstjänst som underlättar säkra och effektiva transaktioner. |
-| [Delad katalog](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) | [Prisindexeringstjänst](../price-index/price-indexing.md) | Vägkarta | Analyserar prisuppgifter och föreslår optimala prisstrategier för produkter baserat på olika faktorer. |
 | [URL-omskrivningar](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
 | [Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Katalogtjänst](../catalog-service/overview.md) | Vägkarta | Ett kataloghanteringsverktyg som är kopplat till Adobe Experience Platform och möjliggör hantering av stora kataloger. |
