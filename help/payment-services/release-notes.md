@@ -3,9 +3,9 @@ title: Versionsinformation för [!DNL Payment Services]
 description: Läs versionsinformationen om du vill ha information om alla  [!DNL Payment Services] releaser.
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 359143c4f48ff911d6dbe9105f364615525fab8c
+source-git-commit: eb2e99dc3a0dbe1e27524c554886a57a4c8a1c30
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ I versionsinformationen beskrivs funktionsändringar och korrigeringar som har g
 
 +++Värdbaserade tjänstuppdateringar
 
+_25 april 2025_
+
+![Nytt problem](../assets/new.svg)<!-- Issue PAY-6051 --> Nu visar kontrollpanelen [!DNL Payment Services] både den aktuella tilläggsversionen och instrumentpanelsversionen.
+
 _30 augusti 2024_
 
 ![Nytt problem](../assets/new.svg)<!-- Issue PAY-5658 --> Nu kan handlare filtrera transaktioner med betalningsinformationen i [transaktionsrapporten](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/transactions.html) för mer detaljerade och korrekta betalningsmetoder.
@@ -42,7 +46,7 @@ _9 juli 2024_
 
 _5 mars 2024_
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-5252 --> Nu kan handlare kopiera data från Dashboard-rutnätet genom att markera innehållet i en enskild cell.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-5252 --> Nu kan handlare kopiera data från instrumentpanelsrutnätet genom att markera innehållet i en enskild cell.
 
 _10 oktober 2023_
 
