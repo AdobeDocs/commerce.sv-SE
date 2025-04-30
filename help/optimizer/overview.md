@@ -4,14 +4,18 @@ description: Lär dig hur du kan använda  [!DNL Adobe Commerce Optimizer] för 
 hide: true
 recommendations: noCatalog
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 67a9d89a6f50818cdef0108c66e6c8dcb76bb29c
+source-git-commit: 425c801a852de566120504563e256b0351df588e
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 # Vad är [!DNL Adobe Commerce Optimizer]?
+
+>[!NOTE]
+>
+>I den här dokumentationen beskrivs en produkt vid utveckling av tidig åtkomst och den återspeglar inte alla funktioner som är avsedda för allmän tillgänglighet.
 
 [!DNL Adobe Commerce Optimizer] förbättrar e-handelsupplevelsen med en högpresterande butik som ökar den organiska trafiken, kundengagemanget och intäkterna.
 
@@ -39,7 +43,7 @@ I följande video visas en översikt över [!DNL Adobe Commerce Optimizer] på h
 
 - Handlare som vill behålla sitt befintliga bakomliggande handelssystem och endast omvandla butiksupplevelser.
 - Företag där ett tredjepartssystem hanterar livscykeln för kundvagn och utcheckning.
-- AEM-kunder som för närvarande inte använder Adobe Commerce söker ett enkelt sätt att hantera produktkatalogen.
+- AEM-kunder som vill ha ett enkelt sätt att hantera sin produktkatalog från en e-handelsmotor från tredje part.
 
 ## Snabbdemo
 
@@ -49,7 +53,7 @@ När du startar [!DNL Adobe Commerce Optimizer] första gången visas följande:
 >
 >Den här bilden är ett exempel på hur [!DNL Adobe Commerce Optimizer] kan se ut och kan komma att ändras.
 
-![[!DNL Adobe Commerce Optimizer]-gränssnitt](assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer]-gränssnitt](./assets/user-interface.png)
 
 >[!BEGINTABS]
 
@@ -61,7 +65,7 @@ Förgranska nyckeltal och aktiviteter för din butik.
 
 Skapa personaliserade upplevelser för era kunder genom produktupptäckt och rekommendationer.
 
-- **Produktidentifiering** - Förbättrar sökfunktionen på webbplatsen och ger en smidig och effektiv shoppingupplevelse som maximerar konverteringsgraden. Det gör det möjligt för handlarna att se till att kunderna får rätt produkter vid rätt tidpunkt.
+- **Produktidentifiering** - Förbättrar sökfunktionen på webbplatsen och ger en smidig och effektiv shoppingupplevelse som maximerar konverteringsgraden. Det gör det möjligt för handlare att se till att kunderna får rätt produkter vid rätt tidpunkt.
 - **Rekommendationer** - Använder artificiell intelligens och algoritmer för maskininlärning för att utföra en djupanalys av aggregerade besökardata. När dessa data kombineras med din katalog blir upplevelsen mycket engagerande, relevant och personaliserad. Rekommendationer visas i butiken som enheter med etiketter, t.ex.&quot;Kunder som tittade på den här produkten också&quot;. Du kan skapa, hantera och distribuera rekommendationer direkt från [!DNL Adobe Commerce Optimizer].
 
 >[!TAB Katalog]
@@ -84,9 +88,9 @@ Få värdefulla insikter om tillgängligheten av produktdata för butiken så at
 
 Viktiga funktioner:
 
-- **Tredjepartskatalogimport** - Infoga katalogdata från en tredjepartskälla (PIM, ERP osv.). Katalogdata hämtas direkt in i lagret för marknadsföringstjänster, som är en SaaS-komponent som kallas Merchandising Services som drivs av kanaler och policyer (kanaler och policyer).
-- **Marknadsföringstjänster som drivs av kanaler och principer** - Den här lösningen är grundstenen i [!DNL Adobe Commerce Optimizer]. Merchandising Services med stöd av Channels and Policies är en mycket skalbar, flexibel katalogdatamodell som frigör fall av användning för flera varumärken, flera affärsenheter och flera språk. Dessa marknadsföringstjänster tillhandahåller byggstenar som handlare kan använda för att skapa och hantera kataloger i stor skala. Inom [!DNL Adobe Commerce Optimizer] kan du hantera din katalog genom att skapa kanaler och profiler som bäst definierar dina affärsmål. Dessutom kan handlaren tillhandahålla personaliserade upplevelser som driver trafik och engagemang med hjälp av &#x200B;, produktrekommendationer &#x200B; och intelligent varuexponering. Läs mer om [Merchandising Services powered by Channels and Policies](https://experienceleague.adobe.com/en/docs/commerce/merchandising-services/overview).
-- **Framgångsstatistik** - Tillhandahåller realtidsinsikter om hur era affärsinitiativ fungerar. Du kan visa resultatet före och efter specifika KPI:er och utvärdera effekten av ändringarna och optimera för bättre resultat.
+- **Tredjepartskatalogimport** - Infoga katalogdata från en tredjepartskälla (din befintliga Commerce-katalog, PIM, ERP och så vidare). Katalogdata hämtas direkt in i lagret för marknadsföringstjänster, som är en SaaS-komponent som kallas Merchandising Services som drivs av kanaler och policyer (kanaler och policyer).
+- **Marknadsföringstjänster som drivs av kanaler och principer** - Den här lösningen är grundstenen i [!DNL Adobe Commerce Optimizer]. Merchandising Services med stöd av Channels and Policies är en mycket skalbar, flexibel katalogdatamodell som frigör fall av användning för flera varumärken, flera affärsenheter och flera språk. Dessa marknadsföringstjänster tillhandahåller byggstenar som handlare kan använda för att skapa och hantera kataloger i stor skala. Inom [!DNL Adobe Commerce Optimizer] kan du hantera din katalog genom att skapa kanaler och profiler som bäst definierar dina affärsmål. Dessutom kan handlaren tillhandahålla personaliserade upplevelser som driver trafik och engagemang med hjälp av &#x200B;, produktrekommendationer &#x200B; och intelligent varuexponering. Läs mer om [Merchandising Services powered by Channels and Policies](./merchandising/overview.md).
+- **Före- och efterhandsmått (PDF)** - Tillhandahåller realtidsinsikter om hur era affärsinitiativ fungerar. Du kan visa resultatet före och efter specifika KPI:er och utvärdera effekten av ändringarna och optimera för bättre resultat. Resultaten levereras i en PDF.
 - **Commerce storefront från Edge Delivery** - Med Edge kan du lansera webbplatsen snabbt med fördefinierade butikskomponenter med integrerad e-handelsfunktionalitet - inklusive produktlistningssidor, produktinformationssidor, kundvagn och utcheckning.
 - **Kundvagn och utcheckning från tredje part** - Använd API-nät och App Builder för att integrera med kundvagn- och utcheckningssystem från tredje part.
 
@@ -94,4 +98,4 @@ Viktiga funktioner:
 
 I följande diagram beskrivs den grundläggande arkitekturen för [!DNL Adobe Commerce Optimizer], från inmatning av katalogdata till relationen mellan marknadsföringstjänster, din butik och integreringen med en kundvagn- och utcheckningsprocess från tredje part.
 
-![[!DNL Adobe Commerce Optimizer]-arkitektur](assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer]-arkitektur](./assets/architecture.png)

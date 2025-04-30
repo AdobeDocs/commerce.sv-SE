@@ -6,13 +6,33 @@ hide: true
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 7d9dc53a210c80590b544cafc4e9771e187d69fd
+source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
 workflow-type: tm+mt
-source-wordcount: '8'
-ht-degree: 25%
+source-wordcount: '39'
+ht-degree: 5%
 
 ---
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [Vad är  [!DNL Adobe Commerce Optimizer]?](overview.md)
+- [Ökning](overview.md)
+- [Kom igång](get-started.md)
+- [Gränser och begränsningar](boundaries-limits.md)
+- Merchandising {#merchandising}
+   - [Ökning](./merchandising/overview.md)
+   - [Produktidentifiering](./merchandising/product-discovery.md)
+   - [Rekommendationer](./merchandising/recommendations.md)
+- Katalog {#catalog}
+   - [Ökning](./catalog/overview.md)
+   - [Kanaler](./catalog/channels.md)
+   - [Profiler](./catalog/policies.md)
+- Datainsikter {#data-insights}
+   - [Ökning](./data-insights/overview.md)
+   - [Datasynkronisering](./data-insights/data-sync.md)
+   - [Eventing](./data-insights/eventing.md)
+   - [Felsökning](./data-insights/troubleshooting.md)
+- [Storefront](storefront.md)
+- Användningsfall {#use-case}
+   - [Ökning](./use-case/overview.md)
+   - [Handläggaren Storefront och katalogadministratören - från början till slut](./use-case/admin-use-case.md)
+
