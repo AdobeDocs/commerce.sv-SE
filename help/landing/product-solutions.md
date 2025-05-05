@@ -6,16 +6,16 @@ recommendations: noDisplay, noCatalog
 hide: true
 hidefromtoc: true
 exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
-source-git-commit: 79d1b862c5cc307daf93f93c03f1993dbd45aa09
+source-git-commit: 7b59d3a3c7d3cdc875e3329c7949eccc3a6c9fdc
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce produktlösningar
 
-Adobe erbjuder flera lösningar som uppfyller behoven i ert e-handelsföretag. Adobe Commerce-dokumentationen för [Experience League](https://experienceleague.adobe.com/sv/docs/commerce) och webbplatsen [Adobe Developer](https://developer.adobe.com/commerce/docs/) ger kunderna självbetjäningsresurser som stöder alla lösningar. Det kan dock vara svårt att navigera i så stora mängder innehåll utan vägledning.
+Adobe erbjuder flera lösningar som uppfyller behoven i ert e-handelsföretag. Adobe Commerce-dokumentationen för [Experience League](https://experienceleague.adobe.com/en/docs/commerce) och webbplatsen [Adobe Developer](https://developer.adobe.com/commerce/docs/) ger kunderna självbetjäningsresurser som stöder alla lösningar. Det kan dock vara svårt att navigera i så stora mängder innehåll utan vägledning.
 
 ## Badges
 
@@ -41,7 +41,11 @@ Det här märket identifierar endast dokumentation för [Adobe Commerce as a Clo
 
 #### [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 
-Det här märket identifierar endast dokumentation som rör [Adobe Commerce i molnet](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/overview) och lokala projekt. Adobe Commerce i Cloud-projekt ligger på en molnbaserad, fullt hanterad lösning för plattformen som en tjänst (PaaS) med alla Adobe Commerce kärnfunktioner i en förprovisionerad miljö. Lokala projekt ligger i kundhanterad infrastruktur.
+Det här märket identifierar endast dokumentation som rör [Adobe Commerce i molnet](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) och lokala projekt. Adobe Commerce i Cloud-projekt ligger på en molnbaserad, fullt hanterad lösning för plattformen som en tjänst (PaaS) med alla Adobe Commerce kärnfunktioner i en förprovisionerad miljö. Lokala projekt ligger i kundhanterad infrastruktur.
+
+>[!NOTE]
+>
+>Om inget annat anges inkluderar detta även självhanterade projekt som baseras på Magento Open Source kodbas.
 
 ### Regler
 
