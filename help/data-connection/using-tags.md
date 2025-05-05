@@ -27,7 +27,7 @@ Så här samlar du in händelsedata för Commerce:
 
   >[!NOTE]
   >
-  > Konfigurera **inte** [](connect-data.md) organisations-ID och dataström-ID.
+  > Konfigurera **inte** [&#128279;](connect-data.md) organisations-ID och dataström-ID.
 
 ## Mappa Commerce storefront-data till Adobe Experience Platform
 

@@ -70,7 +70,7 @@ Vyn för visualisering av orderbetalningsstatus innehåller följande informatio
 
 Vyn för orderbetalningsstatus är tillgänglig i vyn Hem för Betalningstjänster. Den innehåller detaljerade statusvärden - betalning, fakturering, leverans, återbetalning, tvist med mera - för alla transaktioner.
 
-På sidofältet _Admin_ går du till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**för att visa den detaljerade rapportvyn för orderbetalningsstatus i tabellformat.
+På sidofältet _Admin_ går du till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;för att visa den detaljerade rapportvyn för orderbetalningsstatus i tabellformat.
 
 ![Beställa transaktioner för betalningsstatus i administratören](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -143,7 +143,7 @@ I rapportvyn Orderbetalningsstatus kan du välja datakälla - **[!UICONTROL Live
 
 ![Val av datakällor](assets/datasource.png){width="300" zoomable="yes"}
 
-Om _[!UICONTROL Live]_är den valda datakällan kan du visa rapportinformation för dina butiker som använder [!DNL Payment Services] i produktionsläge. Om_[!UICONTROL Sandbox]_ är den valda datakällan kan du visa rapportinformation för sandlådeläge.
+Om _[!UICONTROL Live]_&#x200B;är den valda datakällan kan du visa rapportinformation för dina butiker som använder [!DNL Payment Services] i produktionsläge. Om&#x200B;_[!UICONTROL Sandbox]_ är den valda datakällan kan du visa rapportinformation för sandlådeläge.
 
 Datakällmarkeringar fungerar så här:
 
@@ -154,7 +154,7 @@ Datakällmarkeringar fungerar så här:
 Så här väljer du datakälla för din [!UICONTROL Order Payment Status]-rapport:
 
 1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]** på sidofältet _Admin_.
-1. Klicka på väljarfiltret _[!UICONTROL Data source]_och välj **[!UICONTROL Live]**eller **[!UICONTROL Sandbox]**.
+1. Klicka på väljarfiltret _[!UICONTROL Data source]_&#x200B;och välj **[!UICONTROL Live]**&#x200B;eller **[!UICONTROL Sandbox]**.
 
    Rapportresultaten genereras om baserat på den valda datakällan.
 
@@ -162,7 +162,7 @@ Så här väljer du datakälla för din [!UICONTROL Order Payment Status]-rappor
 
 I rapportvyn Orderbetalningsstatus kan du anpassa tidsramen för statusresultaten genom att välja specifika datum. Som standard visas 30 dagars betalningsstatus i rutnätet.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Klicka på kalenderväljarfiltret _[!UICONTROL Order dates]_.
 1. Välj tillämpligt datumintervall.
 1. Visa orderbetalningsstatus för angivna datum i rutnätet.
@@ -171,17 +171,17 @@ I rapportvyn Orderbetalningsstatus kan du anpassa tidsramen för statusresultate
 
 I rapportvyn Orderbetalningsstatus kan du filtrera statusresultaten som du vill visa genom att välja filtervillkor.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Klicka på väljaren **[!UICONTROL Filter]**.
 1. Växla alternativen för _Lönestatus_ om du vill visa rapportresultat för endast valda orderbetalningsstatusar.
-1. Visa rapportresultat inom ett orderbeloppsintervall genom att ange en _[!UICONTROL Min Order Amount]_eller _[!UICONTROL Max Order Amount_].
+1. Visa rapportresultat inom ett orderbeloppsintervall genom att ange en _[!UICONTROL Min Order Amount]_&#x200B;eller _[!UICONTROL Max Order Amount_].
 1. Klicka på **[!UICONTROL Hide filters]** om du vill dölja filtret.
 
 ### Visa och dölja kolumner
 
 I rapporten Orderbetalningsstatus visas alla tillgängliga informationskolumner som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Klicka på ikonen _Kolumninställningar_ (![ikonen för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Om du vill anpassa vilka kolumner som ska visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
 
@@ -211,7 +211,7 @@ I rapportvyn över orderbetalningsstatus visas en _[!UICONTROL Last updated]_-ti
 
 Du kan också manuellt framtvinga en uppdatering av rapportdata för orderbetalningsstatus för att se den senaste rapportinformationen.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Klicka på ikonen _Uppdatera_ (![uppdateringsikonen](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Rapportdata för orderbetalningsstatus uppdateras, en *[!UICONTROL Update complete]*-bekräftelse visas och den senaste informationen finns i rutnätet.
@@ -220,7 +220,7 @@ Du kan också manuellt framtvinga en uppdatering av rapportdata för orderbetaln
 
 Du kan visa eventuella tvister om dina beställningar och navigera till PayPal Resolution Center och vidta åtgärder för dem i rapporten om status för beställningsbetalning.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Navigera till **[!UICONTROL Disputes column]**.
 1. Visa eventuella tvister om en viss order och se [tvistens status](#order-payment-status-information).
 1. Granska tvistinformation från [PayPal Resolution Center](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) genom att klicka på den tvist-ID-länk som börjar med _PP-D-_.
@@ -232,7 +232,7 @@ Du kan visa eventuella tvister om dina beställningar och navigera till PayPal R
 
 Du kan hämta en CSV-fil med alla statusvärden synliga i vystödrastret för orderbetalningsstatus, oavsett om du visar standardstatusvärdena för 30 dagar eller en anpassad tidsram.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Om du vill se statusvärden för en annan tidsram än de senaste 30 dagarna [anpassar du tidsramen för datumintervallet för statusvärdena](#customize-dates-timeframe).
 1. Klicka på ikonen _Hämta_ (![hämtningsikonen](assets/icon-download.png){width="20" zoomable="yes"}).
 

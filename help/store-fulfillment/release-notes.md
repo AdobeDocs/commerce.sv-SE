@@ -50,9 +50,9 @@ Den här versionen innehåller följande uppdateringar:
 
 ![Ett problem har åtgärdats](../assets/fix.svg) Installationsuppdateringar:
 
-- <!-- WMTP-880--> Ett problem som orsakade att en felaktig webbplatskod returnerades när tillägget [!DNL Store Fulfillment] installerades har åtgärdats.
+- &#x200B;<!-- WMTP-880--> Ett problem som orsakade att en felaktig webbplatskod returnerades när tillägget [!DNL Store Fulfillment] installerades har åtgärdats.
 
-- <!-- WMTP-878--> Korrigerade ett problem för SKU-heltal som krävde att datatypen skulle konverteras till strängtyp under installationen.
+- &#x200B;<!-- WMTP-878--> Korrigerade ett problem för SKU-heltal som krävde att datatypen skulle konverteras till strängtyp under installationen.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- WMTP-915--> Korrigerade ett fel som orsakats av en felkod för incheckning som saknas.
 

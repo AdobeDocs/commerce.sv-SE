@@ -1,6 +1,6 @@
 ---
 title: Inställningar för Check-In Experience
-description: Konfigurera bilfabrikat och modell]-val som är tillgängliga för att hindra kunder som hämtar bilar när de fyller i formuläret för hämtningsorder.
+description: Konfigurera bilfabrikat och modell&rbrack;-val som är tillgängliga för att hindra kunder som hämtar bilar när de fyller i formuläret för hämtningsorder.
 role: Admin
 level: Intermediate
 source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1

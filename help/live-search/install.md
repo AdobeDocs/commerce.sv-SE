@@ -248,7 +248,7 @@ När du installerar [!DNL Live Search] 4.0.0+ aktiveras widgetar för produktlis
 
 Om du har en [!DNL Live Search]-version som är äldre än 4.0.0+ måste du aktivera produktlistwidgeten manuellt.
 
-1. Gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**från* Admin *.
+1. Gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;från* Admin *.
 1. Välj **[!UICONTROL Storefront Features]** under **[!UICONTROL Live Search]**.
 1. Ange **[!UICONTROL Enable Product Listing Widgets]** till `Yes`.
 
@@ -259,7 +259,7 @@ När du ändrar den här konfigurationen visas meddelandet `Page cache is invali
 1. Gå till sidan [Cachehantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) genom att göra något av följande:
 
    - Klicka på länken **[!UICONTROL Cache Management]** i meddelandet ovanför arbetsytan.
-   - Gå till **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**på sidofältet_ Admin _.
+   - Gå till **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**&#x200B;på sidofältet_ Admin _.
 
 1. Välj **Konfiguration** [!UICONTROL Cache Type] och klicka på **[!UICONTROL Flush Magento Cache]**.
 

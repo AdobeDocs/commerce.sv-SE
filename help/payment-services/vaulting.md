@@ -73,7 +73,7 @@ Du kan bara använda kort i säkert läge i administratören om kunden har både
 Så här skapar du en beställning i Admin för en kund som använder sitt kreditkort som säkerhet:
 
 1. [Skapa en beställning och lägg till produkter](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. I _[!UICONTROL Payment & Shipping Information]_väljer du **[!UICONTROL Stored Cards]**som betalningsmetod.
+1. I _[!UICONTROL Payment & Shipping Information]_&#x200B;väljer du **[!UICONTROL Stored Cards]**&#x200B;som betalningsmetod.
 1. Välj önskad betalningsmetod för bankkort.
 1. När du har slutfört eventuella andra nödvändiga steg för beställningen [skickar du den](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 

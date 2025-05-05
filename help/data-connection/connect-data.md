@@ -128,7 +128,7 @@ Mer information om [storefront](events.md#storefront-events), [back office](even
 
 1. För att säkerställa att data för händelser på back office uppdateras baserat på ett schema enligt ett [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) -jobb, måste du ändra `Sales Orders Feed`-indexet till `Update by Schedule`.
 
-   1. Gå till **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**på sidofältet_ Admin _.
+   1. Gå till **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**&#x200B;på sidofältet_ Admin _.
 
    1. Markera kryssrutan för indexeraren `Sales Orders Feed`.
 

@@ -40,12 +40,12 @@ Eftersom Signified utför en åtgärd på dina beställningar är det nödvändi
 
 De här konfigurationsalternativen är inte kompatibla med betaltjänster och signeringsintegrering:
 
-* När [!DNL Payment Services] har konfigurerats med `Authorize` betalningsåtgärden _och_ Signifyd är i läget `PostAuth` med alternativet _[!UICONTROL Decline Guarantees]_inställt på&#x200B;**Skapa kreditnota**.
+* När [!DNL Payment Services] har konfigurerats med `Authorize` betalningsåtgärden _och_ Signifyd är i läget `PostAuth` med alternativet _[!UICONTROL Decline Guarantees]_&#x200B;inställt på&#x200B;**Skapa kreditnota**.
 
   Orsak: [!DNL Payment Services] skapar en auktoriseringstransaktion som Signify sedan försöker återbetala.
 
 
-* [!DNL Payment Services] har konfigurerats med `Authorize and Capture` betalningsåtgärd _och_ Signifyd är i `PostAuth`-läge med alternativet _[!UICONTROL Decline Guarantees]_inställt på&#x200B;**Avbryt order**.
+* [!DNL Payment Services] har konfigurerats med `Authorize and Capture` betalningsåtgärd _och_ Signifyd är i `PostAuth`-läge med alternativet _[!UICONTROL Decline Guarantees]_&#x200B;inställt på&#x200B;**Avbryt order**.
 
   Orsak: [!DNL Payment Services] skapar en hämtningstransaktion som Signified sedan försöker annullera.
 
