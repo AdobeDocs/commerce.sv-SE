@@ -2,9 +2,9 @@
 title: Synkronisera feeds med Commerce CLI
 description: Lär dig hur du använder kommandoradskommandon för att hantera feeds och processer för  [!DNL data export extension] for Adobe Commerce SaaS-tjänster.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 6f578dfaf3d3e77d7b541714de613025b8c789a4
+source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Med kommandot `saas:resync` i paketet `magento/saas-export` kan du hantera datas
 Adobe rekommenderar inte att du använder kommandot `saas:resync` regelbundet. Vanliga scenarier för kommandot är:
 
 - Inledande synkronisering
-- Synkronisera data till det nya dataområdet efter ändring av [SaaS-dataområdes-ID](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/services/saas)
+- Synkronisera data till ett nytt datautrymme efter ändring av [SaaS-dataområdes-ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Felsökning
 
 Övervaka synkroniseringsåtgärder i filen `var/log/saas-export.log`.
@@ -68,7 +68,7 @@ I följande avsnitt finns exempel på alternativbeskrivningar.
 
 Delvis synkronisera om specifika enheter med deras ID:n. Stöder feeds för `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` och `categoryPermissions`.
 
-Som standard anges enheter i en kommaavgränsad lista efter produkt-SKU. Lägg till alternativet `--id-type=ProductID` om du vill använda produkt-ID i stället.
+När du använder alternativet `--by-ids` anger du som standard värden med SKU-värden för produkten. Lägg till alternativet `--id-type=ProductID` om du vill använda produkt-ID i stället.
 
 **Exempel:**
 
@@ -81,13 +81,13 @@ bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-Rensa matningstabellen i tabellen för flödesindexering innan du indexerar om och skickar data till SaaS. Stöds endast för `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` och `categoryPermissions`.
+Rensa flödesindexerartabellen innan du indexerar om och skickar data till SaaS. Stöds endast för `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` och `categoryPermissions`.
 
 Om den används med alternativet `--dry-run` utför åtgärden en omsynkroniseringsåtgärd med torr körning för alla objekt.
 
 >[!IMPORTANT]
 >
->Använd endast efter miljörensning eller med alternativet `--dry-run`. Om den används i andra fall leder rensningsåtgärden till problem med förlorade data och datasynkronisering, där objekt som måste tas bort i Adobe Commerce inte tas bort från SaaS-datautrymmet.
+>Använd endast efter miljörensning eller med alternativet `--dry-run`. Om den används i andra fall kan rensningsåtgärden orsaka dataförlust och problem med datasynkronisering.
 
 **Exempel:**
 
@@ -124,7 +124,7 @@ Testa specifika feed-objekt genom att lägga till alternativet `--by-ids` med de
 **Exempel:**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='ADB102,ADB111,ADB112'
 ```
 
 ### Testa alla feed-objekt
