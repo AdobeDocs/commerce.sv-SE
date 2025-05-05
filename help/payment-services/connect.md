@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] drivs av Commerce Services och distribueras som SaaS (programvara som tjänst). Du ansluter din Commerce-instans med en API-nyckel och en privat nyckel, och anger datautrymmet i konfigurationen med [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html). **Du konfigurerar den här anslutningen endast en gång.**
 
->[!VIDEO](https://video.tv.adobe.com/v/3447835)
+>[!VIDEO](https://video.tv.adobe.com/v/3448021?captions=swe)
 
 >[!INFO]
 >

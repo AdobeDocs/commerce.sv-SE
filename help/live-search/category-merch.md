@@ -16,7 +16,7 @@ Med kategorimarknadsföring kan butiksägare tillämpa [!DNL Live Search] Intell
 
 Den här videon är en introduktion till Category Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424617)
+>[!VIDEO](https://video.tv.adobe.com/v/3448855?captions=swe)
 
 Funktionen finns i Admin på **Marknadsföring** > SEO &amp; Search > **[!DNL Live Search]** > **Kategorimarknadsföring**.
 

@@ -54,7 +54,7 @@ Se [Livscykelprincip](https://experienceleague.adobe.com/docs/commerce-operation
 
 ### Vilket [!DNL Payment Services]-alternativ passar dig?
 
->[!VIDEO](https://video.tv.adobe.com/v/3447811)
+>[!VIDEO](https://video.tv.adobe.com/v/3447922?captions=swe)
 
 Mer information om hur du konfigurerar tillägget [!DNL Payment Services] finns i [Anslut](connect.md).
 
