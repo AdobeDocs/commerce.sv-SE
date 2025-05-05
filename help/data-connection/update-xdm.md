@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Uppdatera händelsescheman för tidsserie för Commerce-datainmatning
 
-Ett av [startstegen](overview.md#onboarding-steps) för att använda tillägget [!DNL Data Connection] är att få åtkomst till arbetsytan för datastream och [skapa ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) som är specifikt för Adobe Commerce. När du skapar den dataströmmen måste du också välja ett schema som beskriver de data som du planerar att importera. Schemat måste innehålla handelsspecifika fältgrupper.
+Ett av [startstegen](overview.md#onboarding-steps) för att använda tillägget [!DNL Data Connection] är att få åtkomst till arbetsytan för datastream och [skapa ett datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=sv-SE) som är specifikt för Adobe Commerce. När du skapar den dataströmmen måste du också välja ett schema som beskriver de data som du planerar att importera. Schemat måste innehålla handelsspecifika fältgrupper.
 
 I den här artikeln finns de fältgrupper som schemat måste innehålla för att följande tidsseriedata från Adobe Commerce-händelserna ska kunna samlas in:
 
@@ -21,7 +21,7 @@ I den här artikeln finns de fältgrupper som schemat måste innehålla för att
 
 Läs mer om [tidsseriedata](data-ingestion.md).
 
-Läs mer om [grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html).
+Läs mer om [grunderna för schemakomposition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=sv-SE).
 
 ## Uppdatera schema med tidsseriens beteendedata och händelsedata för back office
 
@@ -31,9 +31,9 @@ I det här avsnittet får du lära dig hur du uppdaterar ditt befintliga schema 
 >
 >Information om hur du lägger till profilspecifika fält finns i [händelsedata för tidsserieprofiler](#time-series-profile-event-data).
 
-1. Om du inte redan har ett schema [skapar](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) med klassen inställd på **Experience Event**.
+1. Om du inte redan har ett schema [skapar](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#create) med klassen inställd på **Experience Event**.
 
-1. [Lägg till](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) följande Commerce-specifika fältgrupper (eller redigera ditt befintliga schema och lägg till dessa fältgrupper):
+1. [Lägg till](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#add-field-groups) följande Commerce-specifika fältgrupper (eller redigera ditt befintliga schema och lägg till dessa fältgrupper):
 
    - Webbplatssökning
    - Besök webbsidan
@@ -50,15 +50,15 @@ I det här avsnittet får du lära dig hur du uppdaterar ditt befintliga schema 
 
    Schemat innehåller nu Commerce-specifika fältgrupper så att tidsseriedata som samlats in från Commerce-händelserna [behavior](events.md) och [back office](events-backoffice.md) visas i schemat.
 
-1. [Aktivera](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) schemat för profilen.
+1. [Aktivera](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#profile) schemat för profilen.
 
    När ett schema är aktiverat för profilen, deltar alla datauppsättningar som skapats från det här schemat i Real-Time CDP, som sammanfogar data från olika källor för att skapa en fullständig bild av varje kund.
 
-1. [Skapa en datauppsättning](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) baserat på schemat som du skapade eller uppdaterade.
+1. [Skapa en datauppsättning](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=sv-SE#create-a-dataset) baserat på schemat som du skapade eller uppdaterade.
 
    En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell som innehåller ett schema (kolumner) och fält (rader). Datauppsättningar innehåller också metadata som beskriver olika aspekter av de data som lagras.
 
-1. [Skapa en datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) och markera schemat som innehåller de Commerce-specifika fältgrupperna och motsvarande datamängd.
+1. [Skapa en datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=sv-SE) och markera schemat som innehåller de Commerce-specifika fältgrupperna och motsvarande datamängd.
 
    Datastream skickar insamlade data till datauppsättningen. Data representeras i datauppsättningen baserat på det valda schemat.
 
@@ -96,24 +96,24 @@ När fältgruppen `Demographic Details` har lagts till i ditt befintliga Commerc
 
 Om du vill lägga till [data för profilevenemang på serversidan](events-backoffice.md#customer-profile-events-server-side) i ett nytt profilspecifikt datastream och schema utför du följande steg.
 
-1. [Skapa](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) ett schema och ställ in klassen på **Experience Event**.
+1. [Skapa](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#create) ett schema och ställ in klassen på **Experience Event**.
 
-1. [Lägg till](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) följande profilspecifika fältgrupper:
+1. [Lägg till](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#add-field-groups) följande profilspecifika fältgrupper:
 
    - Demografiska detaljer
    - Kontaktinformation, privat
    - Kanalinformation
    - Information om Commerce
 
-1. [Aktivera](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) schemat för profilen.
+1. [Aktivera](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE#profile) schemat för profilen.
 
    När ett schema är aktiverat för profilen, deltar alla datauppsättningar som skapats från det här schemat i Real-Time CDP, som sammanfogar data från olika källor för att skapa en fullständig bild av varje kund.
 
-1. [Skapa en datauppsättning](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) baserat på det schema du skapade.
+1. [Skapa en datauppsättning](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=sv-SE#create-a-dataset) baserat på det schema du skapade.
 
    En datauppsättning är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell som innehåller ett schema (kolumner) och fält (rader). Datauppsättningar innehåller också metadata som beskriver olika aspekter av de data som lagras.
 
-1. [Skapa en datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) och välj det XDM-schema som innehåller de Commerce-specifika fältgrupperna och motsvarande datamängd.
+1. [Skapa en datastream](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=sv-SE) och välj det XDM-schema som innehåller de Commerce-specifika fältgrupperna och motsvarande datamängd.
 
    Datastream skickar insamlade data till datauppsättningen. Data representeras i datauppsättningen baserat på det valda schemat.
 

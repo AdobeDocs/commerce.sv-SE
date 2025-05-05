@@ -26,9 +26,9 @@ Innan du installerar eller uppgraderar bör du läsa versionsinformationen och A
 
 - [Lagra versionsinformation för uppfyllelse](release-notes.md)
 
-- [Versionsinformation för Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) i *versionsinformationen för Adobe Commerce*.
+- [Versionsinformation för Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=sv-SE) i *versionsinformationen för Adobe Commerce*.
 
-- [Adobe Commerce systemkrav](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) i *Adobe Commerce installationshandbok*.
+- [Adobe Commerce systemkrav](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=sv-SE) i *Adobe Commerce installationshandbok*.
 
 
 ## Appkrav för Store Assist

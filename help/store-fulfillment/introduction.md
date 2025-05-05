@@ -34,7 +34,7 @@ Store Fulfillment-lösningen stöder och förbättrar inbyggda Adobe Commerce-fu
 
 * Stöder de flesta typer av produkter: enkla, konfigurerbara, grupperade, paketerade och virtuella
 
-* Integreras med [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)
+* Integreras med [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/basics/sources-stocks)
 
 * Integreras med POS-system (Point of Sales) för lagerhantering som ERP, OMS och WMS
 
@@ -76,6 +76,6 @@ Store Fulfillment förbättrar Adobe Commerce genom att lägga till funktioner f
 
 >[!TIP]
 >
-> En kort demonstration av hur du kan uppfylla kraven för Store finns i [Översikt över uppfyllelse av arkiv](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) som finns i _Adobe Commerce videor och självstudiekurser_.
+> En kort demonstration av hur du kan uppfylla kraven för Store finns i [Översikt över uppfyllelse av arkiv](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html?lang=sv-SE) som finns i _Adobe Commerce videor och självstudiekurser_.
 
 

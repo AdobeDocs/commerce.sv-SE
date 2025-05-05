@@ -37,4 +37,4 @@ ht-degree: 10%
    - [Verifiera](verify.md)
    - [Anpassa](customize.md)
    - [Hantera cookie-begränsningar](setting-cookie.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)

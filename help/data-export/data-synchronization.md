@@ -14,7 +14,7 @@ ht-degree: 0%
 
 När du installerar en Commerce-tjänst som kräver dataexport, t.ex. katalogtjänsten, Live Search eller Produktrekommendationer, installeras en samling Saas-moduler för dataexport för att hantera datainsamling och synkroniseringsprocessen.
 
-SaaS-dataexport flyttar kontinuerligt produktdata från en Adobe Commerce-instans till Commerce Services-plattformen för att hålla informationen uppdaterad. Produktrekommendationer kräver till exempel aktuell kataloginformation för att korrekt kunna returnera rekommendationer med rätt namn, pris och tillgänglighet. Använd [Instrumentpanelen för datahantering](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) för att observera och hantera synkroniseringsprocessen, eller kommandoradsgränssnittet för att utlösa en synkronisering och indexera om produktdata för användning i Commerce Services.
+SaaS-dataexport flyttar kontinuerligt produktdata från en Adobe Commerce-instans till Commerce Services-plattformen för att hålla informationen uppdaterad. Produktrekommendationer kräver till exempel aktuell kataloginformation för att korrekt kunna returnera rekommendationer med rätt namn, pris och tillgänglighet. Använd [Instrumentpanelen för datahantering](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/data-services/catalog-sync) för att observera och hantera synkroniseringsprocessen, eller kommandoradsgränssnittet för att utlösa en synkronisering och indexera om produktdata för användning i Commerce Services.
 
 I följande diagram visas dataexportflödet i SaaS.
 
@@ -65,7 +65,7 @@ Dessa jobb utförs varje minut.
 
 För att partiell synkronisering ska fungera krävs följande konfiguration för Commerce-programmet:
 
-- [Schemaläggning av aktivitet har aktiverats via cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
+- [Schemaläggning av aktivitet har aktiverats via cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=sv-SE)
 
 - Alla SaaS-dataexportindexerare har konfigurerats i `Update by Schedule`-läge.
 
@@ -82,7 +82,7 @@ Synkroniseringen av objekt som misslyckats med försök använder en separat pro
 
 De flesta synkroniseringsaktiviteter bearbetas automatiskt baserat på programkonfigurationen. SaaS-dataexport innehåller dock även verktyg för att hantera processen.
 
-- Administratörsanvändare kan visa och spåra synkroniseringsförloppet och få information om data från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+- Administratörsanvändare kan visa och spåra synkroniseringsförloppet och få information om data från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
 - Utvecklare, systemintegratörer och administratörer med tillgång till Commerce programserver kan hantera synkroniseringsprocessen och dataflöden med Adobe Commerce kommandoradsverktyg (CLI). Se [Hantera synkroniseringsåtgärder med Commerce CLI](data-export-cli-commands.md).
 
@@ -90,11 +90,11 @@ De flesta synkroniseringsaktiviteter bearbetas automatiskt baserat på programko
 
 Delvis synkronisering och Försök igen misslyckades. Objekten synkroniseras bara om Commerce-instansen har konfigurerats korrekt. Konfigurationen slutförs vanligtvis när du konfigurerar Commerce-tjänsten. Kontrollera följande konfiguration om dataexporten inte fungerar som den ska.
 
-- [Bekräfta att seriejobben körs](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Bekräfta att seriejobben körs](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 
-- Verifiera att indexerarna körs från [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) eller genom att använda Commerce CLI-kommandot `bin/magento indexer:info`.
+- Verifiera att indexerarna körs från [Admin](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management) eller genom att använda Commerce CLI-kommandot `bin/magento indexer:info`.
 
-- Kontrollera att indexerarna för följande feeds är inställda på `Update by Schedule`: Katalogattribut, Produkt, Produktåsidosättningar och Produktvariant. Du kan kontrollera indexerare från [Indexhantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) i Admin eller med CLI (`bin/magento indexer:show-mode | grep -i feed`).
+- Kontrollera att indexerarna för följande feeds är inställda på `Update by Schedule`: Katalogattribut, Produkt, Produktåsidosättningar och Produktvariant. Du kan kontrollera indexerare från [Indexhantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management) i Admin eller med CLI (`bin/magento indexer:show-mode | grep -i feed`).
 
 ### Meddelanden från händelsehanteraren om dataöverföringsloggning
 

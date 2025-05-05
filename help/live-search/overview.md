@@ -36,11 +36,11 @@ Med fokus på hastighet, relevans och användarvänlighet är [!DNL Live Search]
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-En mer ingående video om hur du använder och konfigurerar Live Search finns i avsnittet [Fullständig demonstration om  [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
+En mer ingående video om hur du använder och konfigurerar Live Search finns i avsnittet [Fullständig demonstration om  [!DNL Live Search]](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Sök medan du skriver
 
-[!DNL Live Search] svarar med föreslagna produkter och en miniatyrbild av de bästa sökresultaten i en [pover](storefront-popover.md) som typfrågor för kunder i rutan [Sök](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search). Sidan [produktinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) visas när kunderna klickar på en föreslagen eller aktuell produkt. Sökresultatsidan visas om du har en _Visa alla_-länk i popoverns sidfot.
+[!DNL Live Search] svarar med föreslagna produkter och en miniatyrbild av de bästa sökresultaten i en [pover](storefront-popover.md) som typfrågor för kunder i rutan [Sök](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search). Sidan [produktinformation](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/storefront/storefront) visas när kunderna klickar på en föreslagen eller aktuell produkt. Sökresultatsidan visas om du har en _Visa alla_-länk i popoverns sidfot.
 
 [!DNL Live Search] returnerar sökresultatet när du skriver för en fråga med två eller flera tecken. För en partiell matchning är det maximala antalet tecken per ord 20. Det går inte att konfigurera antalet tecken i frågan. Leveransen innehåller fälten `name`, `sku` och `category_ids`.
 
@@ -68,7 +68,7 @@ Marknadsföring av [regler](rules.md) formar shoppingupplevelsen med if-then-sat
 
 ### Stöd för söktermer
 
-[!DNL Live Search] stöder Commerce [omdirigering av söktermer](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Användarna kan t.ex. söka efter en term som &quot;Fraktsatser&quot; och direkt till sidan Leveransavgifter.
+[!DNL Live Search] stöder Commerce [omdirigering av söktermer](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search-terms). Användarna kan t.ex. söka efter en term som &quot;Fraktsatser&quot; och direkt till sidan Leveransavgifter.
 
 ## Live Search-komponenter
 
@@ -88,4 +88,4 @@ Marknadsföring av [regler](rules.md) formar shoppingupplevelsen med if-then-sat
 
 Om du inte skickar en sökfråga för katalogdata i testmiljön under 90 dagar i följd, ställs katalogdata in på viloläge och inga data returneras för sökfrågor. Katalogdata i produktionsmiljön påverkas inte av den här principen.
 
-Om du vill återaktivera katalogdata i din testmiljö skickar [du en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) med titeln:&quot;Återaktivera [!DNL Live Search]&quot; och inkluderar miljö-ID:n. Katalogdata i testmiljön bör återställas inom några timmar.
+Om du vill återaktivera katalogdata i din testmiljö skickar [du en supportförfrågan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) med titeln:&quot;Återaktivera [!DNL Live Search]&quot; och inkluderar miljö-ID:n. Katalogdata i testmiljön bör återställas inom några timmar.

@@ -68,7 +68,7 @@ Migrering från din nuvarande Adobe Commerce-instans till en ny [!DNL Adobe Comm
 
    * [Adobe Commerce på Cloud Services-arkitekturen](./overview.md) - Granska plattformsarkitekturen och hur den skiljer sig från din nuvarande Adobe Commerce-instans.
    * [Adobe Commerce Extensibility Framework](https://developer.adobe.com/commerce/extensibility/) - Identifiera hur du vill ändra de aktuella anpassningarna.
-   * [Commerce Storefront från Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/) - Granska den rekommenderade lösningen för Store.
+   * [Commerce Storefront från Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE) - Granska den rekommenderade lösningen för Store.
 
 1. Granska din anpassningskompatibilitet:
 
@@ -90,7 +90,7 @@ Följande steg beskriver hur migreringen ska utvecklas och köras:
 
 1. Ställ in någon av följande GraphQL-baserade butiker:
 
-   * [Skapa en Commerce-butik](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+   * [Skapa en Commerce-butik](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE)
    * [Använd PWA Studio för att skapa en anpassad GraphQL-baserad butik](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. Migrera data från din tidigare Commerce-instans till ACCS:

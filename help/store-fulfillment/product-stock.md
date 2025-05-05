@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Product Stock Management
 
-Som handlare kan du använda lager- och källalternativen för Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction). Du kan också använda lösningen för att uppfylla kraven för butiker för att kontrollera andra alternativ för lagertillgänglighet som är relaterade till butiksverksamheten.
+Som handlare kan du använda lager- och källalternativen för Adobe Commerce [Inventory management](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/introduction). Du kan också använda lösningen för att uppfylla kraven för butiker för att kontrollera andra alternativ för lagertillgänglighet som är relaterade till butiksverksamheten.
 
 - Leveransalternativ i hemmet från Merchant Store
 

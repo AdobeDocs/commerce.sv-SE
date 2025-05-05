@@ -35,7 +35,7 @@ Se [Inställningar](settings.md) för att konfigurera prisfaktablad och grupperi
 
 1. Gör något av följande om du vill redigera ansiktsetiketten:
 
-   * Redigera [attributetiketten](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) för en [!DNL Commerce]-butik.
+   * Redigera [attributetiketten](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=sv-SE) för en [!DNL Commerce]-butik.
    * För en headless-implementering klickar du på värdet i den första kolumnen och redigerar texten efter behov.
 
    ![Redigera etikett](assets/facet-edit-label.png)

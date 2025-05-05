@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # Lagringsplats och mappningsinställningar
 
-Aktivera butikens plats och mappningsfunktioner för arkivuppfyllelse genom att konfigurera en [distansleverantör](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) för att söka efter butiksplatser.
+Aktivera butikens plats och mappningsfunktioner för arkivuppfyllelse genom att konfigurera en [distansleverantör](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) för att söka efter butiksplatser.
 
 **Krav**
 
-Under konfigurationsprocessen anger du en Google API-nyckel för Google Maps-plattformen. Om du inte har någon [genererar du en från Google Maps-plattformen](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
+Under konfigurationsprocessen anger du en Google API-nyckel för Google Maps-plattformen. Om du inte har någon [genererar du en från Google Maps-plattformen](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 Så här konfigurerar du distansprovidern:
 

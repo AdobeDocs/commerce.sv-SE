@@ -20,7 +20,7 @@ På en hög nivå kan ni med Merchandising Services:
 - Lås upp katalogsyndikering och leverera rätt innehåll genom att designa din produktkatalog så att den återspeglar din verksamhet, inklusive produkter, kunder, priser och distribution.
 - Importera och uppdatera katalogdata snabbt och leverera snabbt uppdateringar till butiken för era kampanjer och kampanjbehov.
 - Få perfekta fyrar med färdiga, blixtsnabba användargränssnittskomponenter som bygger på Edge Delivery Services för smidig bläddring och rekommendationer.
-- Använd en modern sammansättningsbar arkitektur med hjälp av Adobe utbyggbarhetsarkitektur ([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) för att importera produktdata och driva headless-butiker med Adobe [API Mesh](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh).
+- Använd en modern sammansättningsbar arkitektur med hjälp av Adobe utbyggbarhetsarkitektur ([App Builder](https://experienceleague.adobe.com/sv/playlists/commerce-get-started-app-builder-development)) för att importera produktdata och driva headless-butiker med Adobe [API Mesh](https://experienceleague.adobe.com/sv/playlists/commerce-get-started-app-builder-and-api-mesh).
 
 >[!INFO]
 >

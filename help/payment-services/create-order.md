@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Du kan anpassa betalningstjänsterna efter dina behov med [[!DNL Payment Services] inställningar](settings.md).
 
-Med [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] kan du utföra en beställning direkt från administratören av en handlare för kunder som behöver hjälp. Formuläret **[!UICONTROL Create New Order]** innehåller all information som krävs för att slutföra den normala utcheckningsprocessen, inklusive värdfält med kreditkortsinformation. Se [Skapa en order](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} om du vill ha mer information om stegen som krävs.
+Med [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] kan du utföra en beställning direkt från administratören av en handlare för kunder som behöver hjälp. Formuläret **[!UICONTROL Create New Order]** innehåller all information som krävs för att slutföra den normala utcheckningsprocessen, inklusive värdfält med kreditkortsinformation. Se [Skapa en order](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} om du vill ha mer information om stegen som krävs.
 
 ## Värdbaserade kreditkortsfält
 
@@ -21,6 +21,6 @@ Med [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open So
 
 1. Expandera **[!UICONTROL Sales]** på sidofältet _Admin_ och välj **[!UICONTROL Orders]**.
 1. Klicka på **[!UICONTROL Create New Order]**.
-1. Slutför avsnitt efter behov för ordern (mer information finns i [Skapa en order](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}).
+1. Slutför avsnitt efter behov för ordern (mer information finns i [Skapa en order](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}).
 1. I avsnittet _[!UICONTROL Payment Method]_&#x200B;bör du kunna använda [!DNL Payment Services] som betalningsmetod.
 1. Klicka på **[!UICONTROL Submit Order]**.

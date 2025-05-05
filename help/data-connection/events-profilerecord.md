@@ -24,7 +24,7 @@ Nedan beskrivs de data som hämtas för en profilpost.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Innehåller information om kunden. |
@@ -59,6 +59,6 @@ Nedan beskrivs de data som hämtas för en profilpost.
 
 >[!NOTE]
 >
->Varje profilpost innehåller även fältet [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap), som innehåller det systemgenererade Commerce-kund-ID:t som primär identifierare för profilen och ett e-post-ID som används som en sekundär identifierare.
+>Varje profilpost innehåller även fältet [`identityMap`](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/profile/identitymap), som innehåller det systemgenererade Commerce-kund-ID:t som primär identifierare för profilen och ett e-post-ID som används som en sekundär identifierare.
 
 Lär dig hur du [skapar ett profilpostspecifikt schema](profile-data.md) som kan importera data från dina profilposter.

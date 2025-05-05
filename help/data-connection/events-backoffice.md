@@ -14,13 +14,13 @@ ht-degree: 0%
 
 Följande visar vilka Commerce-händelser för backoffice som är tillgängliga när du installerar tillägget [!DNL Data Connection]. De data som dessa händelser samlar in skickas till Adobe Experience Platform. Du kan också skapa [anpassade händelser](custom-events.md) för att samla in ytterligare data som inte anges i kartongen.
 
-Förutom de data som samlas in av följande händelser, får du även [andra data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) från Adobe Experience Platform Web SDK.
+Förutom de data som samlas in av följande händelser, får du även [andra data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=sv-SE) från Adobe Experience Platform Web SDK.
 
 Back office-händelser innehåller data på serversidan. Dessa data omfattar [orderstatus](#order-status), t.ex. om en order har placerats, annullerats, återbetalats, levererats eller slutförts. Data på serversidan innehåller även information om [kundprofilshändelser](#customer-profile-events), t.ex. om ett konto har skapats, uppdaterats eller tagits bort.
 
 >[!NOTE]
 >
->Alla back office-händelser innehåller fältet [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), som innehåller kundens e-postadress, om den är tillgänglig, och ECID.
+>Alla back office-händelser innehåller fältet [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=sv-SE), som innehåller kundens e-postadress, om den är tillgänglig, och ECID.
 
 ## Orderstatus
 
@@ -407,7 +407,7 @@ Profilhändelser som hämtats från serversidan innehåller kontoinformation, so
 
 >[!NOTE]
 >
->Varje kundprofilhändelse innehåller även fältet [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), som innehåller det systemgenererade Commerce-kund-ID:t som primär identifierare för profilen och ett e-post-ID som används som en sekundär identifierare.
+>Varje kundprofilhändelse innehåller även fältet [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=sv-SE), som innehåller det systemgenererade Commerce-kund-ID:t som primär identifierare för profilen och ett e-post-ID som används som en sekundär identifierare.
 
 ### accountCreated
 

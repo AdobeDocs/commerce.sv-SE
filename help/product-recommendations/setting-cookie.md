@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # Hantera cookie-begränsningar
 
-Både Adobe Commerce och Magento Open Source ber om samtycke innan data lagras i webbläsarcookies. Mer information finns i [Begränsningsläge för cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
+Både Adobe Commerce och Magento Open Source ber om samtycke innan data lagras i webbläsarcookies. Mer information finns i [Begränsningsläge för cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=sv-SE).
 
 När du distribuerar modulen `magento/product-recommendations` till produktionen börjar den samla in interaktionshändelser för kunderna på din butik. Eftersom data för de här händelserna kan lagras i webbläsarcookies eller lokal lagring stöder funktionen läget för begränsning av cookies genom att inte samla in händelser förrän kunden har gett sitt samtycke till cookies.
 

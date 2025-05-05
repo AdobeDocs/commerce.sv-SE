@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Samla in Commerce-data med Adobe Experience Platform-taggar
 
-Du kan använda tillägget [!DNL Data Connection] för att publicera och prenumerera på butikshändelser, men vissa handlare kanske redan använder en datainsamlingslösning, till exempel [Adobe Experience Platform-taggarna](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). För dessa handlare tillhandahåller Adobe Commerce ett alternativ för enbart publicering i tillägget [!DNL Data Connection] som använder Adobe Commerce Event SDK.
+Du kan använda tillägget [!DNL Data Connection] för att publicera och prenumerera på butikshändelser, men vissa handlare kanske redan använder en datainsamlingslösning, till exempel [Adobe Experience Platform-taggarna](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=sv-SE). För dessa handlare tillhandahåller Adobe Commerce ett alternativ för enbart publicering i tillägget [!DNL Data Connection] som använder Adobe Commerce Event SDK.
 
 ![[!DNL Data Connection]-tilläggsdataflöde ](assets/tags-data-flow.png)
 _[!DNL Data Connection]Tilläggsdataflöde med taggar_
@@ -33,15 +33,15 @@ Så här samlar du in händelsedata för Commerce:
 
 Om du vill mappa Commerce storefront-data till Adobe Experience Platform konfigurerar och installerar du följande inifrån Adobe Experience Platform-taggar:
 
-1. [Konfigurera en taggegenskap](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) i Adobe Experience Platform Data Collection.
+1. [Konfigurera en taggegenskap](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=sv-SE) i Adobe Experience Platform Data Collection.
 
 1. Under **Redigering** väljer du **Tillägg** och installerar och konfigurerar följande tillägg:
 
-   - [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)
+   - [Adobe Client Data Layer](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=sv-SE)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=sv-SE)
 
-1. [Publicera tagg](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) i din utvecklingsmiljö.
+1. [Publicera tagg](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=sv-SE) i din utvecklingsmiljö.
 
 1. Följ **händelsemappningen** nedan för att konfigurera dataelement och regler för specifika händelser.
 
@@ -57,7 +57,7 @@ Eftersom datainsamling med hjälp av taggar skiljer sig från användning av Ado
 
 När du uppdaterar dataelementen och reglerna i Adobe Experience Platform-taggar med Adobe Commerce-specifika händelsedata, finns det några vanliga åtgärder som du kommer att vidta.
 
-Låt oss till exempel lägga till händelsen Adobe Commerce `signOut` i Adobe Experience Platform-taggar. Stegen som beskrivs nedan beskriver, förutom de specifika värden som du anger, hur du lägger till [dataelement](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) och [regler](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule) som gäller för alla Adobe Commerce-händelser som du lägger till i taggar.
+Låt oss till exempel lägga till händelsen Adobe Commerce `signOut` i Adobe Experience Platform-taggar. Stegen som beskrivs nedan beskriver, förutom de specifika värden som du anger, hur du lägger till [dataelement](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=sv-SE#data-element) och [regler](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=sv-SE#create-a-rule) som gäller för alla Adobe Commerce-händelser som du lägger till i taggar.
 
 1. Skapa ett dataelement:
 
@@ -1411,7 +1411,7 @@ return IdentityMap;
 
 ## Ange samtycke
 
-När du installerar tillägget [!DNL Data Connection] i Adobe Commerce aktiveras datainsamlingsmedgivande som standard. Avanmäl dig hanteras via [`mg_dnt`-cookien](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Du kan följa stegen som beskrivs här om du väljer att använda `mg_dnt` för att hantera samtycke. [Adobe Experience Platform Web SDK-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) har flera alternativ för att hantera samtycke.
+När du installerar tillägget [!DNL Data Connection] i Adobe Commerce aktiveras datainsamlingsmedgivande som standard. Avanmäl dig hanteras via [`mg_dnt`-cookien](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=sv-SE). Du kan följa stegen som beskrivs här om du väljer att använda `mg_dnt` för att hantera samtycke. [Adobe Experience Platform Web SDK-dokumentationen](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=sv-SE) har flera alternativ för att hantera samtycke.
 
 1. Skapa ett **Core Custom Code**-dataelement (`%do not track cookie%`) för `mg_dnt`-cookien:
 

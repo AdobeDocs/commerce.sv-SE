@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # Verifiera händelsesamling
 
-När du har [installerat och konfigurerat](install-configure.md) modulen `magento/product-recommendations` kan du verifiera att beteendedata skickas till Adobe Commerce. Du kan använda utvecklarverktygen i Chrome eller installera tillägget Snowplow Chrome. Om du behöver mer hjälp kan du läsa [Felsök [!DNL Product Recommendations] modulen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) i kunskapsbasen med supportfrågor.
+När du har [installerat och konfigurerat](install-configure.md) modulen `magento/product-recommendations` kan du verifiera att beteendedata skickas till Adobe Commerce. Du kan använda utvecklarverktygen i Chrome eller installera tillägget Snowplow Chrome. Om du behöver mer hjälp kan du läsa [Felsök [!DNL Product Recommendations] modulen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html?lang=sv-SE) i kunskapsbasen med supportfrågor.
 
 ## Verifiera med utvecklarverktygen i Chrome
 
@@ -50,7 +50,7 @@ Installera felsökningstillägget [Snowplow Analytics för Chrome](https://chrom
 
 1. Bläddra nedåt tills du ser **kontextdata _n_**. Leta efter storefront-instansen i **Schema**.
 
-1. Kontrollera att [SaaS-datamrådets ID ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) är rätt inställt.
+1. Kontrollera att [SaaS-datamrådets ID ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html?lang=sv-SE) är rätt inställt.
 
 ![Snöpfilter](assets/snowplow-filter.png)
 _Snöpfilter_
@@ -61,8 +61,8 @@ _Snöpfilter_
 
 ## Verifiera att händelser utlöses korrekt
 
-Kontrollera att händelserna som används för mätvärden utlöses korrekt genom att leta efter händelserna `impression-render`, `view` och `rec-click` i Felsökning för Snowplow Analytics. Se den fullständiga listan [med händelser](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html).
+Kontrollera att händelserna som används för mätvärden utlöses korrekt genom att leta efter händelserna `impression-render`, `view` och `rec-click` i Felsökning för Snowplow Analytics. Se den fullständiga listan [med händelser](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=sv-SE).
 
 >[!NOTE]
 >
-> Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden godkänner det. Om läget för cookie-begränsning är inaktiverat samlas beteendedata in som standard.
+> Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=sv-SE) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden godkänner det. Om läget för cookie-begränsning är inaktiverat samlas beteendedata in som standard.

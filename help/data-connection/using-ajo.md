@@ -21,7 +21,7 @@ Bygg en övergiven kundvagn, bläddra i e-post eller meddelanden med data från 
 | Datatyper | data från Storefront (beteendehändelser) | Back office-data (händelser på serversidan) |
 |---|---|---|
 | **Definition** | Klicka på eller vidta de åtgärder som kunderna ska vidta på er webbplats. | Information om livscykeln och detaljer för varje order (tidigare och aktuell). |
-| **Händelser som hämtats av Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Orderhistorik](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| **Händelser som hämtats av Adobe Commerce** | [pageView](https://experienceleague.adobe.com/sv/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/sv/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/sv/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/sv/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/sv/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/sv/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/sv/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Orderhistorik](https://experienceleague.adobe.com/sv/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### Vad har andra kunder gjort?
 
@@ -47,7 +47,7 @@ Det här användningsfallet fokuserar på att skapa ett övergivet kundvagnsmedd
 
 ### Vad är Adobe Journey Optimizer?
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) hjälper dig att anpassa e-handelsupplevelsen för dina kunder. Du kan till exempel använda Journey Optimizer för att skapa och leverera schemalagda marknadsföringskampanjer, till exempel veckokampanjer för en butik, eller generera ett övergivet kundvagnsmeddelande om kunden har lagt till en produkt i en kundvagn men sedan inte slutfört utcheckningsprocessen.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=sv-SE) hjälper dig att anpassa e-handelsupplevelsen för dina kunder. Du kan till exempel använda Journey Optimizer för att skapa och leverera schemalagda marknadsföringskampanjer, till exempel veckokampanjer för en butik, eller generera ett övergivet kundvagnsmeddelande om kunden har lagt till en produkt i en kundvagn men sedan inte slutfört utcheckningsprocessen.
 
 I det här avsnittet får du lära dig att skapa ett övergivet kundvagnsmeddelande genom att lyssna på en `checkout`-händelse som genereras från din [!DNL Commerce]-instans och svara på den händelsen i Journey Optimizer.
 
@@ -83,7 +83,7 @@ Skapa en användare i sandlådemiljön och bekräfta att användarkontoinformati
 
 I din [!DNL Commerce]-sandlådemiljö kan du utlösa händelser på din butik genom att visa produktsidor, lägga till objekt i en kundvagn och slutföra olika andra aktiviteter som en kund skulle utföra. Bekräfta sedan att dessa händelser skickas till Journey Optimizer.
 
-1. Starta [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Starta [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=sv-SE).
 1. Välj **[!UICONTROL Profiles]**.
 1. Ange **[!UICONTROL Identity namespace]** till `Email`.
 1. Ange **[!UICONTROL Identity value]** som din e-postadress.
@@ -112,7 +112,7 @@ Konfigurera två händelser i Journey Optimizer: en händelse avlyssnar händels
 
 ### Skapa en avlyssnarhändelse
 
-1. Starta [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Starta [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=sv-SE).
 
 1. Klicka på **[!UICONTROL Configurations]** under avsnittet **[!UICONTROL Administration]** i den vänstra rutan.
 
@@ -185,7 +185,7 @@ Skapa en övergiven kundvagn som skickas när en övergiven kundvagn identifiera
 
 1. Dubbelklicka på ikonen **[!UICONTROL Email]** på arbetsytan under den resa du skapade ovan.
 
-1. Följ [stegen](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) i Journey Optimizer-guiden för att skapa det övergivna e-postmeddelandet.
+1. Följ [stegen](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=sv-SE#configure-email) i Journey Optimizer-guiden för att skapa det övergivna e-postmeddelandet.
 
 Du har nu en resa i Journey Optimizer som lyssnar efter händelsen `commerce.checkouts` från din [!DNL Commerce]-butik och ett övergivet kundvagnsmeddelande som skickas efter en tidsperiod. I nästa avsnitt visas hur du testar resan.
 

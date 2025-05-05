@@ -26,7 +26,7 @@ Klicka på flikarna nedan om du vill se arbetsflödesöversikter på hög nivå 
 
 >[!TAB Administratörs- och säljarbetsflöde]
 
-Bilden ger en översikt på hög nivå över hur administratörer och handlare får åtkomst till och hanterar [!DNL Adobe Commerce as a Cloud Service] instanser. Mer information om administratörsarbetsflöden finns i [Adobe Admin Console-handboken](https://helpx.adobe.com/enterprise/admin-guide.html).
+Bilden ger en översikt på hög nivå över hur administratörer och handlare får åtkomst till och hanterar [!DNL Adobe Commerce as a Cloud Service] instanser. Mer information om administratörsarbetsflöden finns i [Adobe Admin Console-handboken](https://helpx.adobe.com/se/enterprise/admin-guide.html).
 
 ![[!DNL Adobe Commerce as a Cloud Service] handelsflödesdiagram](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -103,7 +103,7 @@ Som standard innehåller [!DNL Adobe Commerce as a Cloud Service] instanser inga
 
 Det finns två sätt att importera katalogen till [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Ett användarvänligt gränssnitt där du kan importera katalogdata med bara några klick.
+* [**Commerce Admin**](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/import/data-import) - Ett användarvänligt gränssnitt där du kan importera katalogdata med bara några klick.
 * [**Importera JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - ett REST API som gör att du kan importera katalogdata programmatiskt.
 
 <!-- TODO

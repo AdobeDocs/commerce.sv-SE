@@ -35,4 +35,4 @@ ht-degree: 3%
 - Användningsexempel {#use-cases}
    - [Använd Adobe Journey Optimizer för att skicka ett övergivet kundvagnsmeddelande](using-ajo.md)
    - [Skapa en publik i Real-Time CDP med Commerce Event Data](create-audience.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)

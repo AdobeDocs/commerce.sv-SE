@@ -22,7 +22,7 @@ Ett felmeddelande visas på utcheckningssidan för kunden. Meddelandet kan varie
 
 ![Fel vid utcheckning](assets/user-checkout-error.png "Fel vid utcheckning"){width="600" zoomable="yes"}
 
-En kommentar om den annullerade ordningen visas också i administratören för en specifik [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
+En kommentar om den annullerade ordningen visas också i administratören för en specifik [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=sv-SE).
 
 ![Avbruten orderkommentar i Admin för order](assets/admin-checkout-error.png "Avbruten orderkommentar i Admin för order"){width="600" zoomable="yes"}
 

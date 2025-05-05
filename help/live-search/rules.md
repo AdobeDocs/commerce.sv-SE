@@ -74,4 +74,4 @@ Begäran som gjorts i Admin fungerar något annorlunda. När du förhandsgranska
 ## Kategoriförsäljning och produkttilldelningar för kategorier
 
 Med [!DNL Live Search] kan du filtrera efter kategorier. Mer information finns i [Kategorimarknadsföring](category-merch.md).
-I Adobe Commerce kan du dock skapa en virtuell kategori med [Kategoriprodukttilldelningar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Den här typen av kategori skapas vid körning och finns inte i kategoridatabasen. Därför kan [!DNL Live Search] inte läsa eller använda den här kategoritypen.
+I Adobe Commerce kan du dock skapa en virtuell kategori med [Kategoriprodukttilldelningar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=sv-SE). Den här typen av kategori skapas vid körning och finns inte i kategoridatabasen. Därför kan [!DNL Live Search] inte läsa eller använda den här kategoritypen.

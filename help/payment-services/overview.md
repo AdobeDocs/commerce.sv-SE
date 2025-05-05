@@ -34,7 +34,7 @@ Oavsett om du är ett litet, medelstort eller stort företag hjälper denna beta
 * [**Betalningsalternativ**](payments-options.md) - Ange betalningsalternativ för att anpassa de metoder som är tillgängliga för butikskunder (eller kunder i flera butiker).
 * **Ekonomisk rapportering för kassaflödeshantering** - Synkronisera [betalningsinformation](order-payment-status.md) med order för att få fullständig genomskinlighet för den bearbetade volymen, betalningssaldot, [utbetalningar](payouts.md) och detaljerade [transaktionsnivårapporter](transactions.md) för finansiell avstämning och största möjliga synlighet för transaktioner.
 * **Transparent prissättning** - Priset är tydligt och direkt; det du ser är det du får.
-* **Effektiv utcheckning** - Ta bort alla hinder för en snabb och enkel utcheckning och skapa lojala kunder med [kortvalsfunktioner](vaulting.md) och [direktköp](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (aktiverat som standard för Adobe Commerce).
+* **Effektiv utcheckning** - Ta bort alla hinder för en snabb och enkel utcheckning och skapa lojala kunder med [kortvalsfunktioner](vaulting.md) och [direktköp](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html?lang=sv-SE) (aktiverat som standard för Adobe Commerce).
 
 ## Tillgänglighet
 
@@ -50,7 +50,7 @@ För närvarande ger [!DNL Payment Services] fullständigt stöd (via [Avancerad
 
 Betalningstjänster ger [Express Checkout-funktioner](../payment-services/payments-options.md) (delmängd av betalningsalternativ) för andra [tillgängliga länder under introduktionen](../payment-services/production.md#complete-merchant-onboarding).
 
-Se [Livscykelprincip](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer information om release och version.
+Se [Livscykelprincip](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=sv-SE) och [[!DNL Payment Services] versionsinformation](release-notes.md) sidor för mer information om release och version.
 
 ### Vilket [!DNL Payment Services]-alternativ passar dig?
 
@@ -60,7 +60,7 @@ Mer information om hur du konfigurerar tillägget [!DNL Payment Services] finns 
 
 ### Godkända kreditkort och valutor
 
-[!DNL Payment Services] accepterar valutorna för de länder [där den är tillgänglig](#availability). Mer information finns i [Valutakonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html).
+[!DNL Payment Services] accepterar valutorna för de länder [där den är tillgänglig](#availability). Mer information finns i [Valutakonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=sv-SE).
 
 Information om vilka valutor PayPal stöder finns i [Dokumentation om valutor som stöds](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 

@@ -14,6 +14,6 @@ Synonymer expanderar sökfrågan så att den innehåller ord som kunderna kan an
 
 >[!IMPORTANT]
 >
->För Adobe Commerce-installationer där [!DNL Live Search] är installerat ersätter [!DNL Live Search] Synonymer Adobe Commerce standardfunktion för [söksynonymer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms), även om båda visas i avsnittet *SEO &amp; Search* på Marknadsföring-menyn. Om du använder [!DNL Live Search] följer du instruktionerna i det här avsnittet.
+>För Adobe Commerce-installationer där [!DNL Live Search] är installerat ersätter [!DNL Live Search] Synonymer Adobe Commerce standardfunktion för [söksynonymer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=sv-SE#search-synonyms), även om båda visas i avsnittet *SEO &amp; Search* på Marknadsföring-menyn. Om du använder [!DNL Live Search] följer du instruktionerna i det här avsnittet.
 
-[!DNL Live Search] har även stöd för [omdirigeringar av söktermer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
+[!DNL Live Search] har även stöd för [omdirigeringar av söktermer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=sv-SE).

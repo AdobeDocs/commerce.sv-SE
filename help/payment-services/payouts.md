@@ -26,7 +26,7 @@ Du kan [hämta utbetalningstransaktioner](#download-transactions) i ett CSV-filf
 
 >[!NOTE]
 >
->Utbetalningsrapporter visar endast order som har hämtats (betalningsåtgärden är inställd på [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html#set-payment-services-as-payment-method)) eller [markerats som `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Utbetalningsrapporter visar endast order som har hämtats (betalningsåtgärden är inställd på [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html?lang=sv-SE#set-payment-services-as-payment-method)) eller [markerats som `Invoiced`](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Vy över visualisering av betaldata
 
@@ -154,7 +154,7 @@ Utbetalningsrapporter innehåller följande information.
 | [!UICONTROL Code] | Transaktionskod som anger antingen kredit (*CR*) eller debet (*DR*) |
 | [!UICONTROL Reference ID] | Ursprungligt transaktions-ID som den här händelsen är relaterad till |
 | [!UICONTROL Invoice] | Faktura-ID (en per order) för transaktionen |
-| [!UICONTROL Commerce order] | Commerce order-ID <br> <br>Om du vill visa relaterad [orderinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) klickar du på ID:t. |
+| [!UICONTROL Commerce order] | Commerce order-ID <br> <br>Om du vill visa relaterad [orderinformation](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/orders) klickar du på ID:t. |
 | [!UICONTROL Commerce trans] | Commerce transaktions-ID |
 | [!UICONTROL Pay method] | Kreditkortstyp -*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]* - och associerad kortleverantör (till exempel *Visa* eller *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Transaktionens belopp |

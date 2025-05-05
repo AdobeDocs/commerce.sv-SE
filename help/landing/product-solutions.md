@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Adobe Commerce produktlösningar
 
-Adobe erbjuder flera lösningar som uppfyller behoven i ert e-handelsföretag. Adobe Commerce-dokumentationen för [Experience League](https://experienceleague.adobe.com/en/docs/commerce) och webbplatsen [Adobe Developer](https://developer.adobe.com/commerce/docs/) ger kunderna självbetjäningsresurser som stöder alla lösningar. Det kan dock vara svårt att navigera i så stora mängder innehåll utan vägledning.
+Adobe erbjuder flera lösningar som uppfyller behoven i ert e-handelsföretag. Adobe Commerce-dokumentationen för [Experience League](https://experienceleague.adobe.com/sv/docs/commerce) och webbplatsen [Adobe Developer](https://developer.adobe.com/commerce/docs/) ger kunderna självbetjäningsresurser som stöder alla lösningar. Det kan dock vara svårt att navigera i så stora mängder innehåll utan vägledning.
 
 ## Badges
 
@@ -41,7 +41,7 @@ Det här märket identifierar endast dokumentation för [Adobe Commerce as a Clo
 
 #### [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 
-Det här märket identifierar endast dokumentation som rör [Adobe Commerce i molnet](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) och lokala projekt. Adobe Commerce i Cloud-projekt ligger på en molnbaserad, fullt hanterad lösning för plattformen som en tjänst (PaaS) med alla Adobe Commerce kärnfunktioner i en förprovisionerad miljö. Lokala projekt ligger i kundhanterad infrastruktur.
+Det här märket identifierar endast dokumentation som rör [Adobe Commerce i molnet](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/overview) och lokala projekt. Adobe Commerce i Cloud-projekt ligger på en molnbaserad, fullt hanterad lösning för plattformen som en tjänst (PaaS) med alla Adobe Commerce kärnfunktioner i en förprovisionerad miljö. Lokala projekt ligger i kundhanterad infrastruktur.
 
 ### Regler
 

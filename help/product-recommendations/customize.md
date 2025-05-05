@@ -112,7 +112,7 @@ Om din butik till exempel säljer vissa ekologiska produkter kan du ha ett anpas
 
 ![Lägg till märke](assets/unit-custom.png)
 
-Om du vill vara säker på att ett anpassat produktattribut är tillgängligt när du återger rekommendationsenheten på sidan anger du egenskapen `Used in Product Listing` till `Yes` på sidan [Produktattribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) i Admin.
+Om du vill vara säker på att ett anpassat produktattribut är tillgängligt när du återger rekommendationsenheten på sidan anger du egenskapen `Used in Product Listing` till `Yes` på sidan [Produktattribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=sv-SE) i Admin.
 
 När den här egenskapen anges innehåller JSON-nyttolasten ett `attributes`-objekt som innehåller en array med attributkoder och värden. Du kan sedan använda en anpassad storefront-formatering som baseras på dessa attributvärden, som att lägga till speciella visuella behandlingar eller emblem som nämns ovan.
 

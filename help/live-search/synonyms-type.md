@@ -55,4 +55,4 @@ Om ingen synonym skapas och en kund söker efter **kökstabell** söker Commerce
 
 När du har skapat en synonym ändras sökbeteendet så att det söker efter den exakta frasen **kökstabell**. Detta kan minska antalet resultat eftersom endast produkter med den exakta frasen visas.
 
-Om du vill att villkoren ska genomsökas separat som tidigare kan du [skapa en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Om efterfrågan är tillräcklig kommer Commerce att överväga att lägga till den här funktionaliteten i produkten i en kommande release.
+Om du vill att villkoren ska genomsökas separat som tidigare kan du [skapa en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Om efterfrågan är tillräcklig kommer Commerce att överväga att lägga till den här funktionaliteten i produkten i en kommande release.

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Live Search] händelser
 
-[!DNL Live Search] använder händelser för att driva sökalgoritmer som&quot;Mest visade&quot; och&quot;Viewed This, Viewed That&quot;. [Commerce Lumatema](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) är inte alltid tillgängligt, men headless-implementeringar och andra anpassade implementeringar måste implementera händelser för sina egna behov.
+[!DNL Live Search] använder händelser för att driva sökalgoritmer som&quot;Mest visade&quot; och&quot;Viewed This, Viewed That&quot;. [Commerce Lumatema](https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) är inte alltid tillgängligt, men headless-implementeringar och andra anpassade implementeringar måste implementera händelser för sina egna behov.
 
 Den här tabellen beskriver de händelser som används av [!DNL Live Search] [rankningsstrategier](rules-add.md#intelligent-ranking).
 
@@ -68,4 +68,4 @@ mse.publish.searchRequestSent("search-bar");
 
 >[!NOTE]
 >
->Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.
+>Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=sv-SE) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.

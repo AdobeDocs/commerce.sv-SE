@@ -18,19 +18,19 @@ Dessa versionsinformation beskriver den första versionen av [!DNL Store Fulfill
 ![ Åtgärdat problem ](../assets/fix.svg) Korrigeringar och förbättringar
 ![Kända fel](../assets/bug.svg)
 
-Läs [Kommande releaser](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om du vill veta mer om releasescheman och support.
+Läs [Kommande releaser](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=sv-SE) om du vill veta mer om releasescheman och support.
 
-Se [Produkttillgänglighet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) om du vill veta vilka Adobe Commerce-versioner som stöder det här tillägget.
+Se [Produkttillgänglighet](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=sv-SE) om du vill veta vilka Adobe Commerce-versioner som stöder det här tillägget.
 
 ## v1.5.0
 
 *3 augusti 2023*
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}[Adobe Commerce 2.4.4 till 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), inklusive säkerhetsuppdateringarna 2.4.6-p1, 2.4.5-p3 och 2.4.4-p4
+[!BADGE Stöds]{type=Informative tooltip="Stöds"}[Adobe Commerce 2.4.4 till 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=sv-SE), inklusive säkerhetsuppdateringarna 2.4.6-p1, 2.4.5-p3 och 2.4.4-p4
 
 Den här versionen innehåller följande uppdateringar:
 
-![Nytt](../assets/fix.svg) Tillägget har uppdaterats med stöd för [Adobe Commerce säkerhetsuppdateringar](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1, 2.4.5-p3 och 2.4.4-p4.
+![Nytt](../assets/fix.svg) Tillägget har uppdaterats med stöd för [Adobe Commerce säkerhetsuppdateringar](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html?lang=sv-SE) 2.4.6-p1, 2.4.5-p3 och 2.4.4-p4.
 
 ![Nytt](../assets/new.svg)<!-- WMTP-918 --> Stöd har lagts till för konfigurationsalternativet [Asynkron sändning](sales-emails.md) för försäljningsmeddelanden. Handlare som uppgraderar till version 1.5.0 kan skicka e-postmeddelanden direkt (standard) eller asynkront.
 
@@ -68,7 +68,7 @@ Den här versionen innehåller följande uppdateringar:
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"}
 
-![Nytt](../assets/fix.svg) [!DNL Store Fulfillment] är nu [kompatibelt med  [!DNL Adobe Commerce]  2.4.4 till 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![Nytt](../assets/fix.svg) [!DNL Store Fulfillment] är nu [kompatibelt med  [!DNL Adobe Commerce]  2.4.4 till 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=sv-SE).
 
 
 ## v1.3.0
@@ -89,7 +89,7 @@ Den här versionen innehåller följande uppdatering:
 
 Den här versionen innehåller följande uppdatering:
 
-![Nytt](../assets/fix.svg) [!DNL Store Fulfillment] är nu [kompatibelt med  [!DNL Adobe Commerce]  2.4.4 till 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![Nytt](../assets/fix.svg) [!DNL Store Fulfillment] är nu [kompatibelt med  [!DNL Adobe Commerce]  2.4.4 till 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=sv-SE).
 
 
 ## v1.1.0

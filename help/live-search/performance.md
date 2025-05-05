@@ -18,7 +18,7 @@ Arbetsytan *Prestanda* ger insikt i de söktermer som kunderna använder. Inform
 
 ![Prestanda](assets/performance-unique-searches.png)
 
-Du kan även gå till [Dashboard för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) om du vill ha mer information om datasynkronisering.
+Du kan även gå till [Dashboard för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=sv-SE) om du vill ha mer information om datasynkronisering.
 
 >[!NOTE]
 >

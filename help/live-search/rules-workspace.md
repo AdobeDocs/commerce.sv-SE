@@ -22,7 +22,7 @@ På arbetsytan *Sök marknadsföring* visas det aktuella urvalet av regler och d
 
 ## Ange omfånget
 
-Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Scope** till den [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där reglerna gäller.
+Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Scope** till den [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE#scope-settings) där reglerna gäller.
 
 ## Visa/dölj kolumner
 

@@ -25,5 +25,5 @@ ht-degree: 10%
    - [productSearch-fråga](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
    - [refineProduct-fråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
 

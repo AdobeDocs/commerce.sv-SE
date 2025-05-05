@@ -26,7 +26,7 @@ I den här artikeln får du lära dig:
 
 ## Installation
 
-Om du har köpt tillägget för hälsovård för Adobe [!DNL Commerce] har du troligen redan installerat tillägget [HIPAA-Ready](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation). Om du vill vara säker på att dina [!DNL Commerce]-data för back office-händelser är HIPAA-klara måste du även installera [!DNL Data Connection]-tillägget med det extra **Data Services HIPAA**-tillägget. Tillägget **Data Services HIPAA** ser till att alla backoffice-data som du skickar till Experience Platform är HIPAA-klara. Lär dig [installera tillägget](install.md#install-the-data-services-hipaa-extension).
+Om du har köpt tillägget för hälsovård för Adobe [!DNL Commerce] har du troligen redan installerat tillägget [HIPAA-Ready](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation). Om du vill vara säker på att dina [!DNL Commerce]-data för back office-händelser är HIPAA-klara måste du även installera [!DNL Data Connection]-tillägget med det extra **Data Services HIPAA**-tillägget. Tillägget **Data Services HIPAA** ser till att alla backoffice-data som du skickar till Experience Platform är HIPAA-klara. Lär dig [installera tillägget](install.md#install-the-data-services-hipaa-extension).
 
 >[!IMPORTANT]
 >
@@ -36,15 +36,15 @@ Om du har köpt tillägget för hälsovård för Adobe [!DNL Commerce] har du tr
 
 Alla data för back office-händelser som skickas av tillägget [!DNL Data Connection] till Experience Platform anses vara känsliga inom [!DNL Commerce]. Det är emellertid handlarens ansvar att tillämpa dataanvändningsetiketter på sitt [!DNL Commerce]-schema i Experience Platform för att explicit identifiera vissa data som känsliga. När du använder dataanvändningsetiketter direkt på ett schema, sprids dessa etiketter till alla befintliga och framtida datauppsättningar som baseras på det schemat.
 
-En översikt över dataanvändningsetiketter och deras roll i ramverket för datastyrning finns i [översikten över dataanvändningsetiketter](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) i Experience Platform-dokumentationen.
+En översikt över dataanvändningsetiketter och deras roll i ramverket för datastyrning finns i [översikten över dataanvändningsetiketter](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview) i Experience Platform-dokumentationen.
 
 ### Använd dataanvändningsetiketter på [!DNL Commerce] fält
 
-Följ stegen i självstudiekursen [Hantera dataanvändningsetiketter för ett schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) för att lära dig hur du använder etiketter i ditt [!DNL Commerce]-schema.
+Följ stegen i självstudiekursen [Hantera dataanvändningsetiketter för ett schema](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/labels) för att lära dig hur du använder etiketter i ditt [!DNL Commerce]-schema.
 
-Läs [ordlistan med känsliga etiketter](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive) om du vill veta mer om de tillgängliga etiketterna som du kan använda i fälten i [!DNL Commerce]-schemat. Etiketten `RHD` identifierar till exempel PHI (Protected Health Information) eller information om en patient som Adobe enligt avtal tillåter att du överför.
+Läs [ordlistan med känsliga etiketter](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/reference#sensitive) om du vill veta mer om de tillgängliga etiketterna som du kan använda i fälten i [!DNL Commerce]-schemat. Etiketten `RHD` identifierar till exempel PHI (Protected Health Information) eller information om en patient som Adobe enligt avtal tillåter att du överför.
 
-När dina [!DNL Commerce]-data är märkta som känsliga kan du tillämpa principer för att förhindra dataåtgärder som utgör policyöverträdelser. Läs mer om [policytillämpning](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) i Experience Platform.
+När dina [!DNL Commerce]-data är märkta som känsliga kan du tillämpa principer för att förhindra dataåtgärder som utgör policyöverträdelser. Läs mer om [policytillämpning](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/enforcement/overview) i Experience Platform.
 
 ## Datakryptering i Commerce
 
@@ -56,7 +56,7 @@ Adobe [!DNL Commerce] använder kryptering på blocknivå. För lagring använde
 
 ### Datakryptering i Experience Platform
 
-När handlare skickar data till Experience Platform skickas dessa med HTTPS TLS v1.2. Läs mer om hur [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption) krypterar data.
+När handlare skickar data till Experience Platform skickas dessa med HTTPS TLS v1.2. Läs mer om hur [Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/encryption) krypterar data.
 
 ## Hur [!DNL Commerce] hanterar sekretessförfrågningar
 

@@ -63,7 +63,7 @@ De alternativ som anges på kommandoraden åsidosätter den dataexportkonfigurat
 
 Om du vill bearbeta alla dataexportåtgärder med hjälp av multi-threading kan systemintegratörer eller utvecklare ändra antalet trådar och batchstorleken för varje feed i Commerce-programkonfigurationen.
 
-Dessa ändringar kan tillämpas genom att lägga till anpassade värden i [systemavsnittet](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) i konfigurationsfilen, `app/etc/config.php`.
+Dessa ändringar kan tillämpas genom att lägga till anpassade värden i [systemavsnittet](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) i konfigurationsfilen, `app/etc/config.php`.
 
 **Exempel: Konfigurera flertrådning för produkter och priser**
 

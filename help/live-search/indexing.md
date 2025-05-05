@@ -20,7 +20,7 @@ Egenskaper för produktattribut (metadata) bestämmer:
 
 Omfånget för attributmetadata är `website/store/store view`.
 
-Med API:t [!DNL Live Search] kan en klient sortera efter vilket produktattribut som helst som har egenskapen [ storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` inställd på `Yes` i Adobe Commerce Admin. När det är aktiverat kan `Search Weight` anges för attributet.
+Med API:t [!DNL Live Search] kan en klient sortera efter vilket produktattribut som helst som har egenskapen [ storefront](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` inställd på `Yes` i Adobe Commerce Admin. När det är aktiverat kan `Search Weight` anges för attributet.
 
 [!DNL Live Search] indexerar inte borttagna produkter eller produkter som är inställda på `Not Visible Individually`.
 
@@ -32,7 +32,7 @@ Med API:t [!DNL Live Search] kan en klient sortera efter vilket produktattribut 
 
 Klienten anropar söktjänsten från butiken för att hämta (filterbara, sorterbara) indexmetadata. Det går endast att anropa sökbara produktattribut med egenskapen *Använd i lagernavigering* inställd på `Filterable (with results)` och *Använd för sortering i produktlista* inställd på `Yes`.
 
-Om du vill skapa en dynamisk fråga måste söktjänsten känna till vilka attribut som är sökbara och deras [vikt](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respekterar Adobe Commerce sökvikter (1-10, där 10 är den högsta prioriteten). Listan med data som synkroniseras och delas med katalogtjänsten finns i schemat, som definieras i:
+Om du vill skapa en dynamisk fråga måste söktjänsten känna till vilka attribut som är sökbara och deras [vikt](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respekterar Adobe Commerce sökvikter (1-10, där 10 är den högsta prioriteten). Listan med data som synkroniseras och delas med katalogtjänsten finns i schemat, som definieras i:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -89,7 +89,7 @@ I följande tabell beskrivs olika ändringar och den ungefärliga väntetiden in
 
 ## Klientsökning
 
-Med API:t [!DNL Live Search] kan en klient sortera efter ett sorterbart produktattribut genom att ställa in egenskapen [storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes), *Används för sortering i produktlistor* på `Yes`. Beroende på temat gör den här inställningen att attributet inkluderas som ett alternativ i sidnumreringskontrollen [Sortera efter](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) på katalogsidor. Upp till 200 produktattribut kan indexeras av [!DNL Live Search], med [storefront-egenskaper](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) som är sökbara och filterbara.
+Med API:t [!DNL Live Search] kan en klient sortera efter ett sorterbart produktattribut genom att ställa in egenskapen [storefront](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/product-attributes), *Används för sortering i produktlistor* på `Yes`. Beroende på temat gör den här inställningen att attributet inkluderas som ett alternativ i sidnumreringskontrollen [Sortera efter](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/navigation/navigation) på katalogsidor. Upp till 200 produktattribut kan indexeras av [!DNL Live Search], med [storefront-egenskaper](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/product-attributes) som är sökbara och filterbara.
 
 Indexmetadata lagras i indexeringsflödet och är tillgängliga för söktjänsten.
 

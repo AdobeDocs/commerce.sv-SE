@@ -76,7 +76,7 @@ Slutför installationen baserat på distributionstyp: Adobe Commerce i molninfra
 
 #### On Cloud-infrastruktur
 
-Aktivera den globala variabeln `ENABLE_EVENTING` i `.magento.env.yaml` i Adobe Commerce på Cloud-infrastrukturen. [Läs mer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+Aktivera den globala variabeln `ENABLE_EVENTING` i `.magento.env.yaml` i Adobe Commerce på Cloud-infrastrukturen. [Läs mer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=sv-SE#enable_eventing).
 
 ```bash
 stage:
@@ -164,4 +164,4 @@ Om du vill uppdatera till en större version, till exempel från 2.0.0 till 3.0.
 
 ## Avinstallera tillägget [!DNL Data Connection] {#uninstall}
 
-Information om hur du avinstallerar tillägget [!DNL Data Connection] finns i [avinstallationsmoduler](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+Information om hur du avinstallerar tillägget [!DNL Data Connection] finns i [avinstallationsmoduler](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=sv-SE).

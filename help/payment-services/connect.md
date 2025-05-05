@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!INFO]
 >
-> Mer information finns i videon [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en).
+> Mer information finns i videon [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=sv-SE).
 
-* Om du redan har *anslutit din instans* kan du fortsätta med att [konfigurera din testsandlåda](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/sandbox.html) genom att hämta och använda dina API-autentiseringsuppgifter och konfigurera Commerce Services.
+* Om du redan har *anslutit din instans* kan du fortsätta med att [konfigurera din testsandlåda](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/sandbox.html?lang=sv-SE) genom att hämta och använda dina API-autentiseringsuppgifter och konfigurera Commerce Services.
 * Om du fortfarande *behöver ansluta din instans* läser du informationen i det här avsnittet om hur du [hämtar API-autentiseringsuppgifter](#obtain-api-credentials) och [konfigurerar Commerce Services](#configure-commerce-services).
 * Om du är *osäker på om din instans är ansluten* navigerar du till **System** > Tjänster > **Commerce Services Connector** och visar offentliga och privata API-nyckelvärden i avsnitten [!UICONTROL Sandbox Keys] och [!UICONTROL Production Keys] samt fälten *Projekt* och *Data Space* i avsnittet [!UICONTROL SaaS Identifier] . Om dessa värden finns är instansen ansluten.
 
@@ -30,19 +30,19 @@ ht-degree: 0%
 
 ## Hämta API-autentiseringsuppgifter
 
-Om du vill använda en Commerce SaaS-tjänst måste du använda instansens API-nycklar (Commerce publika API-nyckel och en privat nyckel) för både sandlådan och produktionen, som skapas och hanteras i [Min kontoinstrumentpanel](https://account.magento.com/customer/account/login). [Nyckelparet](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) kan skapas för ett Commerce-konto - ett för sandlådan och ett för produktion - men bara ett par kan användas aktivt åt gången.
+Om du vill använda en Commerce SaaS-tjänst måste du använda instansens API-nycklar (Commerce publika API-nyckel och en privat nyckel) för både sandlådan och produktionen, som skapas och hanteras i [Min kontoinstrumentpanel](https://account.magento.com/customer/account/login). [Nyckelparet](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/services/saas) kan skapas för ett Commerce-konto - ett för sandlådan och ett för produktion - men bara ett par kan användas aktivt åt gången.
 
 >[!NOTE]
 >
->Behöver du hjälp med att komma åt din [!UICONTROL My Account]-instrumentpanel? Se [Skapa ett Commerce-konto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
+>Behöver du hjälp med att komma åt din [!UICONTROL My Account]-instrumentpanel? Se [Skapa ett Commerce-konto](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 När en offentlig API-nyckel har skapats är den alltid tillgänglig på instrumentpanelen för Mitt konto. Den kan kopieras eller tas bort efter behov. Den privata API-nyckeln blir synlig när du skapar en offentlig API-nyckel för antingen sandlåda eller produktion. Den är bara tillgänglig för kopiering eller sparande från den efterföljande dialogrutan och kan inte nås senare.
 
 Ett givet API-nyckelpar är giltigt för alla Commerce-tjänster i en miljö, så om du redan har konfigurerat Commerce Services för din instans finns API-nyckelparet redan i Commerce Services Connector.
 
-Om API-nyckeln förloras måste ett nytt API-nyckelpar [genereras](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) och [tillämpas](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html#configure-saas-project) på Commerce Services Connector-konfigurationen i Admin. Om fel nycklar är konfigurerade eller om det inte finns några i konfigurationen visas en dialogruta med kontoverifieringsfel i Betalningstjänster som meddelar dig om att kontot inte har verifierats.
+Om API-nyckeln förloras måste ett nytt API-nyckelpar [genereras](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html?lang=sv-SE#generate-an-api-key-and-private-key) och [tillämpas](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html?lang=sv-SE#configure-saas-project) på Commerce Services Connector-konfigurationen i Admin. Om fel nycklar är konfigurerade eller om det inte finns några i konfigurationen visas en dialogruta med kontoverifieringsfel i Betalningstjänster som meddelar dig om att kontot inte har verifierats.
 
-Visa en [lista över tillgängliga Commerce-tjänster som använder API:t ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices).
+Visa en [lista över tillgängliga Commerce-tjänster som använder API:t ](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/integration-services/saas#availableservices).
 
 Mer information om hur du genererar en API-nyckel för antingen sandbox- eller produktionsmiljöer finns i [Referenser](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html#apikey).
 
@@ -67,11 +67,11 @@ Nu när du har fått dina inloggningsuppgifter kan du konfigurera ditt SaaS-proj
 
    Du dirigeras till konfigurationsområdet i Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, för att konfigurera Commerce Services Connector.
 
-1. Följ stegen som beskrivs i [SaaS-konfigurationen](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html#saasenv) för att konfigurera dina Commerce-tjänster.
+1. Följ stegen som beskrivs i [SaaS-konfigurationen](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=sv-SE#saasenv) för att konfigurera dina Commerce-tjänster.
 
    >[!INFO]
    >
-   > Mer information finns i videon [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs).
+   > Mer information finns i videon [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=sv-SE#configuration-faqs).
 
 ## Slutpunkt
 

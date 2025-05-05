@@ -58,7 +58,7 @@ Du kan lägga till ett produktattribut från Commerce Admin eller programmässig
 
 1. Lägg till attributet i en attributuppsättning efter behov.
 
-Se [Skapa produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) i *Adobe Commerce Admin Guide*.
+Se [Skapa produktattribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) i *Adobe Commerce Admin Guide*.
 
 #### Skapa produktattributet programmatiskt
 

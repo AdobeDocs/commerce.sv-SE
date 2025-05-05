@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [Dataanslutningstillägget](overview.md) ansluter dina Commerce-data till Experience Platform. Data som är avsedda att användas i Experience Platform är grupperade i två beteendetyper: tidsseriedata, som tillhör klassen **Experience Event**, och registerdata, som tillhör klassen **Individual Profile** .
 
-Läs mer om [databeteende](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) och [klasser](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) i Experience Platform.
+Läs mer om [databeteende](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=sv-SE#data-behaviors) och [klasser](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=sv-SE#class) i Experience Platform.
 
 ## Tidsseriedata
 
@@ -30,7 +30,7 @@ Lär dig hur du [skapar ett schema](update-xdm.md) som kan importera händelseda
 
 ## Registrera data
 
-Postdata innehåller information om attributen för ett ämne. Ett ämne kan vara en organisation eller individ. En kund på er webbplats skapar till exempel ett konto som genererar postdata. Dessa data importeras till Experience Platform med ett schema som har klassen inställd på **Individual Profile**. Du kan skicka postdata till Adobe profilhanterings- och segmenteringstjänst: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Postdata innehåller information om attributen för ett ämne. Ett ämne kan vara en organisation eller individ. En kund på er webbplats skapar till exempel ett konto som genererar postdata. Dessa data importeras till Experience Platform med ett schema som har klassen inställd på **Individual Profile**. Du kan skicka postdata till Adobe profilhanterings- och segmenteringstjänst: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=sv-SE).
 
 ### Insamlade profilpostdata
 

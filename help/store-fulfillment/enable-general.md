@@ -150,7 +150,7 @@ Eftersom programloggfilen kan växa snabbt bör du bara aktivera loggning för p
 
 >[!TIP]
 >
->För Adobe Commerce lokala installationer ber du systemadministratören att konfigurera loggrotation för filen `var/log/walmart-bopis.log` för att minimera storleken. Information om lokala Adobe Commerce-installationer finns i [Loggrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) i _Adobe Commerce installationshandbok_. Information om projekt för molninfrastruktur finns i [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>För Adobe Commerce lokala installationer ber du systemadministratören att konfigurera loggrotation för filen `var/log/walmart-bopis.log` för att minimera storleken. Information om lokala Adobe Commerce-installationer finns i [Loggrotation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=sv-SE#server-settings) i _Adobe Commerce installationshandbok_. Information om projekt för molninfrastruktur finns i [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=sv-SE).
 
 <table>
 <thead>
@@ -355,7 +355,7 @@ Konfigurera inställningarna från administratören genom att välja <strong>[!U
 
 >[!NOTE]
 >
->Mer information om hur du konfigurerar alternativ för leverans i butik finns i [Leverans i butik](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) i _Adobe Commerce användarhandbok_.
+>Mer information om hur du konfigurerar alternativ för leverans i butik finns i [Leverans i butik](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) i _Adobe Commerce användarhandbok_.
 
 
 ### Konfiguration av leveransmetoder

@@ -100,7 +100,7 @@ Rekommenderade användningsexempel för att konfigurera sökomdirigeringar:
 
 Testa alltid sökomdirigeringar för att kontrollera att de fungerar som de ska och leder till de mest relevanta sidorna. Övervaka kontinuerligt deras prestanda och gör justeringar efter behov.
 
-Lär dig hur du [hanterar sökomdirigeringar](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
+Lär dig hur du [hanterar sökomdirigeringar](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Förbättra relevansen i sökresultatet
 
@@ -154,7 +154,7 @@ Se till att varje produkt har relevant innehåll inom varje sökbart attribut. D
 Läs mer om produktattribut för sökning:
 
 - [Ange attribut som sökbara](workspace.md#set-attributes-as-searchable)
-- [Tilldela bredd till attribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Tilldela bredd till attribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Övervaka sökresultat
 

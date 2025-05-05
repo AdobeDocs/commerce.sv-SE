@@ -31,12 +31,12 @@ Den här guiden täcker inte kärnfunktionerna i Adobe Commerce.
 
 | Guide | Beskrivning |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Adobe Commerce 2.4 Användarhandbok](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Handlingar för Adobe Commerce |
+| [Adobe Commerce 2.4 Användarhandbok](https://experienceleague.adobe.com/sv/docs/commerce-admin/user-guides/home) | Handlingar för Adobe Commerce |
 | [Adobe Commerce 2.4 Developer Guide](https://developer.adobe.com/commerce/docs/) | Dokumentation för utvecklare som används för att skapa och anpassa Adobe Commerce |
 
 ## Support
 
 Om du behöver information eller har frågor som inte ingår i den här handboken använder du följande resurser:
 
-* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - Se de [!DNL Store Fulfillment] relaterade felsökningsartiklarna.
-* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - Skicka in en biljett för att få ytterligare hjälp.
+* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#submit-ticket){target="_blank"} - Se de [!DNL Store Fulfillment] relaterade felsökningsartiklarna.
+* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#submit-ticket){target="_blank"} - Skicka in en biljett för att få ytterligare hjälp.

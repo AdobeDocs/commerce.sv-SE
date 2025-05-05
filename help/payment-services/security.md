@@ -18,13 +18,13 @@ Säkerhet är mycket viktigt i [!DNL Payment Services] och ingen privat eller PC
 
 [!DNL Adobe Commerce] och [!DNL Magento Open Source] innehåller stöd för flera säkerhetsfunktioner.
 
-Se [Säkerhet](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} i användarhandboken för att läsa om bästa säkerhetspraxis och lära dig hur du hanterar administratörssessioner och autentiseringsuppgifter, implementerar CAPTCHA och hanterar webbplatsbegränsningar.
+Se [Säkerhet](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/security){target="_blank"} i användarhandboken för att läsa om bästa säkerhetspraxis och lära dig hur du hanterar administratörssessioner och autentiseringsuppgifter, implementerar CAPTCHA och hanterar webbplatsbegränsningar.
 
 ## PCI-kompatibilitet
 
 Betalkortsbranschen (PCI) har fastställt en uppsättning krav för företag som tar emot betalningar via kreditkort via Internet. Förutom att upprätthålla en säker miljö är handlare som hanterar kundens kreditkortsinformation ansvariga för att följa vissa standardriktlinjer.
 
-Mer information finns i [Riktlinjer för efterlevnad av PCI](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}.
+Mer information finns i [Riktlinjer för efterlevnad av PCI](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}.
 
 Handlare kan fylla i ett [självutvärderingsfrågeformulär (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, som är ett självvalideringsverktyg för att utvärdera säkerheten för kortinnehavardata.
 

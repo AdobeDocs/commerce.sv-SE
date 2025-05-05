@@ -644,4 +644,4 @@ Driftsättning och testning varierar beroende på din infrastruktur och dina fun
 
 >[!TIP]
 >
->Distributionsriktlinjer, checklistor och metodtips för Adobe Commerce i molninfrastrukturprojekt finns i [Distribuera din butik](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) i dokumentationen för Adobe Commerce Developer.
+>Distributionsriktlinjer, checklistor och metodtips för Adobe Commerce i molninfrastrukturprojekt finns i [Distribuera din butik](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) i dokumentationen för Adobe Commerce Developer.

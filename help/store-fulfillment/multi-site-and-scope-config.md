@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Konfiguration av flera webbplatser och omfattningar
 
-Du kan ange [scopet](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) för ett fåtal element så att du kan hantera flera olika vyer för webbplatser, butiker och arkiv:
+Du kan ange [scopet](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) för ett fåtal element så att du kan hantera flera olika vyer för webbplatser, butiker och arkiv:
 
-- [Hantera Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) per scope
+- [Hantera Stock](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/stocks/stocks-manage) per scope
 
 - Hantera [!DNL Delivery Methods] per scope
 

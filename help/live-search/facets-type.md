@@ -34,7 +34,7 @@ Ansikten som återges för [!DNL Commerce]-butiken bearbetas av sökadaptern, so
 
 ### Fasettetiketter
 
-För [!DNL Commerce] butiker bestäms ansiktsetiketten av [*Attributegenskaper*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). För butiker med flera vyer kan ytterligare etiketter definieras under *Hantera etiketter*. För headless-implementeringar redigeras etiketter från [faceting-arbetsytan](faceting-workspace.md).
+För [!DNL Commerce] butiker bestäms ansiktsetiketten av [*Attributegenskaper*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=sv-SE). För butiker med flera vyer kan ytterligare etiketter definieras under *Hantera etiketter*. För headless-implementeringar redigeras etiketter från [faceting-arbetsytan](faceting-workspace.md).
 
 ### Sorteringstyp
 

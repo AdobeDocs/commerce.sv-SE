@@ -16,7 +16,7 @@ På arbetsytan *Motstående* visas alla aspekter som för närvarande är tillg�
 
 ## Ange omfånget
 
-Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Scope** till [butiksvyn](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där dina facet-inställningar gäller.
+Om din Adobe Commerce-installation innehåller flera butiksvyer anger du **Scope** till [butiksvyn](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE#scope-settings) där dina facet-inställningar gäller.
 
 ## Filtrera listan
 

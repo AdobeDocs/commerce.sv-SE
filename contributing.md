@@ -19,7 +19,7 @@ du förväntas behålla den här koden. Rapportera oacceptabla beteenden till
 
 ## Dokumentation för Contributor-handboken
 
-Se [Contributor-handboken](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Se [Contributor-handboken](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv-SE).
 
 ## Har du en fråga?
 
@@ -56,4 +56,4 @@ Jag kan kontakta befintliga medarbetare och diskutera det.
 
 ## Säkerhetsproblem
 
-Om du vill rapportera ett säkerhetsproblem [kontaktar du våra säkerhetsexperter](https://helpx.adobe.com/security/alertus.html).
+Om du vill rapportera ett säkerhetsproblem [kontaktar du våra säkerhetsexperter](https://helpx.adobe.com/se/security/alertus.html).

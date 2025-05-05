@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Genom att integrera [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) med Commerce mobilapp kan handlare skicka Commerce [händelsedata](events.md) till Experience Platform.
 
-När händelsedata från Commerce finns tillgängliga i kanten kan de nås av andra Adobe Experience Cloud-program. Du kan till exempel använda data för att skapa målgrupper i Real-Time CDP och sedan [använda dessa målgrupper](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) för att anpassa din Commerce-mobilapp.
+När händelsedata från Commerce finns tillgängliga i kanten kan de nås av andra Adobe Experience Cloud-program. Du kan till exempel använda data för att skapa målgrupper i Real-Time CDP och sedan [använda dessa målgrupper](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=sv-SE) för att anpassa din Commerce-mobilapp.
 
 ## Konfiguration
 
@@ -26,7 +26,7 @@ Installera och konfigurera SDK i Experience Platform för att komma igång med A
 
 ### Experience Platform
 
-1. Läs mer om mobilappsfunktioner i självstudiekursen [Adobe Experience Cloud i mobilappar](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html).
+1. Läs mer om mobilappsfunktioner i självstudiekursen [Adobe Experience Cloud i mobilappar](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=sv-SE).
 
 1. [Installera och konfigurera](https://developer.adobe.com/client-sdks/documentation/getting-started/) SDK i Experience Platform.
 
@@ -162,4 +162,4 @@ Alla [händelser](events.md) innehåller fältet `channel`. Fältet `channel` in
 
 ## Nästa steg
 
-Mer information om hur du hämtar Real-Time CDP-målgrupper från din Commerce-mobilapp för att informera om kundvagnsregler, dynamiska block och relaterade produktregler finns i [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+Mer information om hur du hämtar Real-Time CDP-målgrupper från din Commerce-mobilapp för att informera om kundvagnsregler, dynamiska block och relaterade produktregler finns i [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=sv-SE#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

@@ -21,24 +21,24 @@ Använd följande tabell för att hitta versionsinformation och viktig informati
       <td><strong>Commerce-tjänster</strong>
         <p>Läs om de senaste förbättringarna av innovativa Commerce-tjänster som finns som tillägg.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">[!DNL Catalog Service]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">[!DNL Live Search]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">[!DNL Payment Services]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Produktrekommendationer</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=sv-SE">[!DNL Catalog Service]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=sv-SE">[!DNL Live Search]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=sv-SE">[!DNL Payment Services]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=sv-SE">Produktrekommendationer</a></li>
           </ul>
         </td>
       <td><strong>Integreringstjänster</strong>
         <p>Läs om de senaste förbättringarna av integreringstjänsterna som gör det möjligt för våra Commerce-tjänster att ansluta till andra tjänster och tillägg och produkter från Adobe.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html?lang=sv-SE">[!DNL Data Connection]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong>Datatjänster</strong>
         <p>Läs om de senaste förbättringarna av datatjänsten som gör det möjligt för våra Commerce-tjänster att hantera produktdata.</p>
           <ul>
-           <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">SaaS-tillägg för dataexport</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/data-services/catalog-sync.html">Katalogsynkronisering</a></li>
+           <li><a href="https://experienceleague.adobe.com/sv/docs/commerce/saas-data-export/release-notes">SaaS-tillägg för dataexport</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/data-services/catalog-sync.html?lang=sv-SE">Katalogsynkronisering</a></li>
           </ul>
       </td>
     </tr>

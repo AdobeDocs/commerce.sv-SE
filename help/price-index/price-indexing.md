@@ -14,7 +14,7 @@ ht-degree: 0%
 
 SaaS prisindexering optimerar webbplatsens prestanda genom att avlasta resurskrävande uppgifter - som indexering och prisberäkning - från Commerce till Adobe Cloud-infrastrukturen. Med den här metoden kan handlare snabbt skala resurser för att snabba upp prisindexeringstiderna och leverera prisuppdateringar till butiken och anslutna Commerce-tjänster snabbare.
 
-I följande diagram visas indexeringsdataflödet till SaaS-tjänster när Commerce använder den [prisindexeringsprocess](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) som ingår i Commerce-programmet:
+I följande diagram visas indexeringsdataflödet till SaaS-tjänster när Commerce använder den [prisindexeringsprocess](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers) som ingår i Commerce-programmet:
 
 ![Standarddataflöde](assets/old_way.png)
 

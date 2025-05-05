@@ -37,7 +37,7 @@ Den här guiden täcker inte kärnfunktionerna i [!DNL Adobe Commerce] och [!DNL
 
 | Guide | Beskrivning |
 |------ | ----------- |
-| [[!DNL Adobe Commerce] 2.4 Användarhandbok](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Handlingar med affärsinriktning för både [!DNL Adobe Commerce] och [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 Användarhandbok](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=sv-SE) | Handlingar med affärsinriktning för både [!DNL Adobe Commerce] och [!DNL Magento Open Source] |
 | [[!DNL Adobe Commerce] 2.4 Utvecklarhandbok](https://developer.adobe.com/commerce/docs) | Dokumentation som fokuserats på utvecklare och som används för att skapa och anpassa [!DNL Adobe Commerce] eller [!DNL Magento Open Source] |
 
 ## Support
@@ -48,5 +48,5 @@ Om du behöver information eller har frågor som inte ingår i den här handboke
 
 Se [Tillgänglighet](overview.md#availability) för att kontrollera vilket [!DNL Payment Services]-alternativ som är rätt för dig.
 
-* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - Sök efter [!DNL Payment Services] relaterade felsökningsartiklar i kunskapsbasen.
-* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Commerce-kunder kan skicka in en biljett för att få ytterligare hjälp.
+* [Help center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=sv-SE) - Sök efter [!DNL Payment Services] relaterade felsökningsartiklar i kunskapsbasen.
+* [Supportärenden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#submit-ticket) - Commerce-kunder kan skicka in en biljett för att få ytterligare hjälp.

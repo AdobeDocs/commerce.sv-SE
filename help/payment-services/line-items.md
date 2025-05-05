@@ -126,7 +126,7 @@ Mer information om de här fälten och deras begränsningar finns i [dokumentati
 
 ## Hantera radartiklar
 
-Adobe Commerce [beräknar moms baserat på det totala beloppet för varje rad ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, vilket kan orsaka avrundningsproblem om flera kvantiteter av samma objekt beställs eller om taxinkluderade priser visas i katalogen. I sådana fall kan den totala kvantiteten delas upp i två rader, men kvantiteten motsvarar den totala beställda artikeln.
+Adobe Commerce [beräknar moms baserat på det totala beloppet för varje rad ](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, vilket kan orsaka avrundningsproblem om flera kvantiteter av samma objekt beställs eller om taxinkluderade priser visas i katalogen. I sådana fall kan den totala kvantiteten delas upp i två rader, men kvantiteten motsvarar den totala beställda artikeln.
 
 > Exempel på radobjekt med avrundningsproblem i kontrollpanelen för handlare
 

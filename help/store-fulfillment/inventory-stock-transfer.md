@@ -22,27 +22,27 @@ ht-degree: 0%
 
 Dessa konfigurationsändringar hjälper dig att uppnå tre saker:
 
-1. [Överför lager till källan](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) för att flytta lager från standardlagret/standardkällan till den nya lagret/källan.
+1. [Överför lager till källan](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/quantities/inventory-transfer) för att flytta lager från standardlagret/standardkällan till den nya lagret/källan.
 
-1. [Tilldela källor](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) gruppvis för att lägga till nya källor för alla dina produkter.
+1. [Tilldela källor](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/quantities/bulk-assignment) gruppvis för att lägga till nya källor för alla dina produkter.
 
-1. [Slutför satsvisa uppdateringar för produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) för att lägga till attributen `Allow Store Pickup` och `Allow Home Delivery` i befintliga produkter. När lösningen är installerad har attributen de optimala *standardvärdena*. Dessa attribut tillämpas dock inte på befintliga produkter förrän du slutför den satsvisa uppdateringsprocessen.
+1. [Slutför satsvisa uppdateringar för produktattribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) för att lägga till attributen `Allow Store Pickup` och `Allow Home Delivery` i befintliga produkter. När lösningen är installerad har attributen de optimala *standardvärdena*. Dessa attribut tillämpas dock inte på befintliga produkter förrän du slutför den satsvisa uppdateringsprocessen.
 
-Lager dras av från den valda källan (butiksplats eller handelslager). Källor som används som e-handelslager måste tilldelas samma lager som butiksupphämtningsplatsen och prioriteras före butiksplatserna. Mer information finns i [Prioritera källor för en Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
+Lager dras av från den valda källan (butiksplats eller handelslager). Källor som används som e-handelslager måste tilldelas samma lager som butiksupphämtningsplatsen och prioriteras före butiksplatserna. Mer information finns i [Prioritera källor för en Stock](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Mer information om hur du hanterar lager, lager och källor finns i Adobe Commerce användardokumentation:
 
-- [Hantera lager](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
+- [Hantera lager](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/introduction)
 
-- [Hantera lagerkvantiteter](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
+- [Hantera lagerkvantiteter](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Hantera Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
+- [Hantera Stock](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Hantera källor](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
+- [Hantera källor](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Prioriterar källor för en Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
+- [Prioriterar källor för en Stock](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [Massuppdateringar för produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
+- [Massuppdateringar för produktattribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]
