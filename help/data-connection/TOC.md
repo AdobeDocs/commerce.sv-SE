@@ -5,12 +5,14 @@ breadcrumb-title: '[!DNL Data Connection]-tillägg för Adobe Commerce'
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+source-git-commit: 98a7ea9ff7d741bd7333b44618e7287da9d66353
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 3%
+source-wordcount: '146'
+ht-degree: 2%
 
 ---
+
 
 # [!DNL Data Connection]-tillägg för Adobe Commerce {#data-connection}
 
@@ -35,4 +37,4 @@ ht-degree: 3%
 - Användningsexempel {#use-cases}
    - [Använd Adobe Journey Optimizer för att skicka ett övergivet kundvagnsmeddelande](using-ajo.md)
    - [Skapa en publik i Real-Time CDP med Commerce Event Data](create-audience.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
