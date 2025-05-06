@@ -3,9 +3,9 @@ title: Konfigurera din butik
 description: Lär dig hur du kör byggnadsverktyget för att konfigurera  [!DNL Adobe Commerce as a Cloud Service] butiken.
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
+source-git-commit: 022e3474b8f2839d2501c46def21733a8d4ad9cc
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Följande steg visar hur du snabbt konfigurerar din Adobe Commerce Storefront som drivs av Edge Delivery med kommandot `aio commerce init`. I den här processen ställs följande in:
 
-* [Commerce Storefront från Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE) - En prestanda, skalbar och säker lagringsplats från Adobe Edge Delivery Services.
+* [Commerce Storefront från Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) - En prestanda, skalbar och säker lagringsplats från Adobe Edge Delivery Services.
 * [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/) - en API-plattform där utvecklare kan kombinera flera datakällor till en enda GraphQL-slutpunkt. API Mesh koordinerar tredjeparts-API med Adobe API via en enda gateway. En fråga till en enda GraphQL-slutpunkt kan returnera resultat från flera källor.
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) - En samling utvecklarverktyg med tillgång till API:er, händelser, körningsfunktioner och plugin-program, som du kan använda för att skapa projekt för Adobe-program.
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) - En serverlös motor för att distribuera anpassad kod som svarar på händelser och kör funktioner i molnet.
@@ -89,7 +89,7 @@ Innan du kör kommandot `aio commerce init` måste du uppfylla följande krav:
 
 ## Kör kommandot `aio commerce init`
 
-Om du kör följande kommando skapas en ställningar för din Commerce-butik. Den här byggnadsställningen är en bra startpunkt för att bygga upp och förstå din butiksplats. Mer information om hur du arbetar med butiken finns i [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE).
+Om du kör följande kommando skapas en ställningar för din Commerce-butik. Den här byggnadsställningen är en bra startpunkt för att bygga upp och förstå din butiksplats. Mer information om hur du arbetar med butiken finns i [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 
 1. Kör kommandot `init`:
@@ -108,6 +108,7 @@ Om du kör följande kommando skapas en ställningar för din Commerce-butik. De
       * Om du väljer det här alternativet uppmanas du att installera AEM Code Sync-roboten i ett webbläsarfönster. Du måste ange den databas du skapade och auktorisera roboten. Återgå till CLI och ange `y` för att bekräfta installationen av AEM Code Sync-roboten.
    * **Välj en tillgänglig Adobe Commerce-klient** - Välj en befintlig Commerce-klient i den valda organisationen.
       * Om du väljer det här alternativet måste du markera projektet och arbetsytan för att skapa ett nät i.
+   * **Ange en egen URL för Adobe Commerce-klientorganisations-API** - Välj det här alternativet om du är en deltagare i programmet för tidig åtkomst. Ange API-URL:en som finns i ditt e-postmeddelande om Adobe-introduktion.
 
    >[!NOTE]
    >
@@ -121,4 +122,4 @@ Om du kör följande kommando skapas en ställningar för din Commerce-butik. De
    * Förhandsgranska din butik: `https://main--<repo name>--<username or org>.aem.page/`
    * Kör lokalt: `aio commerce:dev`
 
-Mer information om hur du anpassar din butik finns i [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE).
+Mer information om hur du anpassar din butik finns i [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
