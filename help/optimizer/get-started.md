@@ -3,9 +3,10 @@ title: Kom igång med  [!DNL Adobe Commerce Optimizer]
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce Optimizer].
 hide: true
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
+source-git-commit: ac79c8aa43ced017743fbef1f181b4eaf8e0a754
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Den här guiden hjälper dig att skapa och arbeta med en [!DNL Adobe Commerce Op
 
 >[!TAB Administrator and merchant workflow]
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/se/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
 NEED DIAGRAM
 
@@ -50,6 +51,10 @@ När [!DNL Adobe Commerce Optimizer]-instanserna är klara får du följande slu
 | [!DNL Adobe Commerce Optimizer]-gränssnitt | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | Använd Commerce Optimizer-gränssnittet för att hantera din katalog över:<br>1. Marknadsföringsregler (produktupptäckt, produktrekommendationer).<br>2. Kataloghantering (skapa kanaler och principer).<br>3. Data Insights (Visa din status för att hämta katalogdata). |
 | Storefront-API:er | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | Få tillgång till de API:er som behövs för att konfigurera din Commerce Store som drivs av Edge Delivery Services. |
 | API:er för inhämtning av katalogdata | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | Få tillgång till de API:er som behövs för att importera katalogdata. |
+
+>[!NOTE]
+>
+>Läs [utvecklardokumentationen](https://developer-stage.adobe.com/commerce/services/composable-catalog/) om du vill veta mer om de API:er som behövs för konfiguration av butiker och katalogoperation.
 
 Som deltagare för tidig åtkomst får du ett e-postmeddelande med en säker länk som tillsammans med din IMS-token låter dig logga in på [!DNL Adobe Commerce Optimizer] eller göra API-anrop.
 

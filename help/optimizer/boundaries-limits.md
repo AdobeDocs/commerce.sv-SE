@@ -2,9 +2,10 @@
 title: Gränser och begränsningar
 description: Lär dig mer om gränserna och gränserna för  [!DNL Adobe Commerce Optimizer] så att du kan vara säker på att det uppfyller behoven i din verksamhet.
 role: Admin, Developer
-source-git-commit: 45a43fe2ada206515c512a04aa6e9072e08844cc
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -28,10 +29,7 @@ Följande innehåller gränser och begränsningar för Adobe Commerce Optimizer.
 
 ## Priser
 
-- Det högsta antalet prislistor är 30 000. Basskiktets antal prisböcker får inte överstiga 100 och bör följa regeln där (antalet prisböcker) x (antalet kanaler) måste vara mindre än eller lika med 100.
-- Det garanterade priset för foderintag är 5000 poster per minut.
-- En prispost får inte ha fler än 10 rabatter.
-- Basantalet prisuppdateringar per dag är 5 000 000.
+- Det högsta antalet prislistor är 1 000.
 
 ## Sökning och butik
 
@@ -53,6 +51,6 @@ Följande innehåller gränser och begränsningar för Adobe Commerce Optimizer.
 - För produktupptäckt stöds inte attributbaserad marknadsföring och prisinställningar.
 - Rekommendationer:
 
-   - ACO har stöd för rekommendationstypen _Senast visade_ för EA
+   - [!DNL Adobe Commerce Optimizer] stöder rekommendationstypen _Senast visade_ för tidig åtkomst.
    - Det finns inget stöd för inkludering eller uteslutning av kategorier eller attribut.
    - Du kan inte förhandsgranska rekommendationer i [!DNL Adobe Commerce Optimizer].

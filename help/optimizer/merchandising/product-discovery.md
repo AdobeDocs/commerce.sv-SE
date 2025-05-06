@@ -2,9 +2,10 @@
 title: Produktidentifiering
 description: Product Discovery ger en snabb, relevant och intuitiv sökupplevelse.
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: b9429ccb-947b-462c-8b34-63fb53d015f6
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -37,3 +38,7 @@ Huvudsidan för **Product Discovery** innehåller följande flikar:
 - [Synonymer](../../live-search/synonyms.md)
 - [Search Merchandising](../../live-search/rules.md)
 - [Inställningar](../../live-search/settings.md)
+
+## Begränsning
+
+För produktupptäckt stöds inte attributbaserad marknadsföring och prisinställningar.

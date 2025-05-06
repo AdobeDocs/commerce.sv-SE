@@ -3,9 +3,10 @@ title: Profiler
 description: Lär dig hur du använder principer för att filtrera data i en kanal för att se till att data skickas till rätt mål.
 hide: true
 recommendations: noCatalog
-source-git-commit: 425c801a852de566120504563e256b0351df588e
+exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
+source-git-commit: a731d978aa180633431b0dd9dde5439c286461a2
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -32,12 +33,12 @@ Ett filter består av följande delar:
 |---|---|---|
 | **Attribut** | Det produktattribut som används för filtrering. | `part_category` |
 | **Operator** | Villkoret som används i attributet. | `IN`, `EQUALS`, `CONTAINS` |
-| **Värdekälla** | Anger om värdena är `STATIC` eller `TRIGGER`. | `STATIC` |
+| **Värdekälla** | Anger om värdena är `STATIC` eller `TRIGGER`. | `STATIC` [Läs mer](#value-source-types) |
 | **Värde** | De specifika värden som uppfyller villkoret. | `brakes, suspension` |
 
 ### Exempel
 
-Ett filter med attributet `part_category`, en operator för `IN` och värden `brakes, suspension` säkerställer att endast produkter som kategoriserats som bromsar och suspension inkluderas i principen.
+Ett filter med attributet `part_category`, operatorn `IN` och värdena `brakes, suspension` säkerställer att endast produkter med attributet `part_category` som har värdet `brake` eller `suspension` filtreras och visas av principen.
 
 ### Värdekälltyper
 

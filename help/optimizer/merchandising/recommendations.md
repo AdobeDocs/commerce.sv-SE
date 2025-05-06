@@ -2,9 +2,10 @@
 title: Rekommendationer
 description: Rekommendationer är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang.
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: 04228203-37a3-4535-ad61-d5e586e57d63
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -31,3 +32,11 @@ Från arbetsytan kan du:
 - [Redigera](../../product-recommendations/edit.md) en befintlig rekommendation.
 
 Du kan visa dessa produktrekommendationer i din butik med hjälp av rekommendationerna storefront.
+
+## Begränsningar
+
+Nedan visas begränsningar för rekommendationer för tidig åtkomst.
+
+- [!DNL Adobe Commerce Optimizer] stöder rekommendationstypen _Senast visade_.
+- Det finns inget stöd för inkludering eller uteslutning av kategorier eller attribut.
+- Du kan inte förhandsgranska rekommendationer i [!DNL Adobe Commerce Optimizer].
