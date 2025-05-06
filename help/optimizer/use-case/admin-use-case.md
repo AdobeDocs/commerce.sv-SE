@@ -270,7 +270,7 @@ Den sista delen av den här självstudien är att uppdatera butiken som [du reda
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
-+++
+   +++
 
 1. Ersätt värdet `ac-channel-id` med det Celerport-kanal-ID som du kopierade tidigare.
 1. Ersätt värdet `ac-environment-id` med klientorganisations-ID:t för din [!DNL Adobe Commerce Optimizer]-instans. Du kan hitta ID:t i e-postmeddelandet om introduktion för programmet för tidig åtkomst, eller genom att kontakta din Adobe-kontorepresentant.
