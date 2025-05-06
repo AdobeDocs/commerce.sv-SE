@@ -249,7 +249,7 @@ När du installerar [!DNL Live Search] 4.0.0+ aktiveras widgetar för produktlis
 
 Om du har en [!DNL Live Search]-version som är äldre än 4.0.0+ måste du aktivera produktlistwidgeten manuellt.
 
-1. Gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**från* Admin *.
+1. Gå till **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;från* Admin *.
 1. Välj **[!UICONTROL Storefront Features]** under **[!UICONTROL Live Search]**.
 1. Ange **[!UICONTROL Enable Product Listing Widgets]** till `Yes`.
 
@@ -260,7 +260,7 @@ När du ändrar den här konfigurationen visas meddelandet `Page cache is invali
 1. Gå till sidan [Cachehantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) genom att göra något av följande:
 
    - Klicka på länken **[!UICONTROL Cache Management]** i meddelandet ovanför arbetsytan.
-   - Gå till **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**på sidofältet_ Admin _.
+   - Gå till **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**&#x200B;på sidofältet_ Admin _.
 
 1. Välj **Konfiguration** [!UICONTROL Cache Type] och klicka på **[!UICONTROL Flush Magento Cache]**.
 
@@ -361,7 +361,7 @@ Tillägget [!DNL Live Search] består av följande paket:
 | Paket | Beskrivning |
 |--- |--- |
 | `module-live-search` | Gör att handlare kan konfigurera sina sökinställningar för ansikten, synonymer, frågeregler och så vidare, och ger åtkomst till en skrivskyddad GraphQL-spelningsmiljö för att testa frågor från *Admin*. |
-| `module-live-search-adapter` | Dirigerar sökbegäranden från butiken till [!DNL Live Search] tjänsten och återger resultatet i butiken. <br />- Kategoribläddring – Dirigerar begäranden från den övre navigeringen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) i skyltfönstret [till söktjänsten.<br />- Global sökning – Dirigerar förfrågningar från [snabbsökrutan](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) längst upp till höger i butiken till tjänsten [!DNL Live Search] . |
+| `module-live-search-adapter` | Dirigerar sökbegäranden från butiken till [!DNL Live Search] tjänsten och återger resultatet i butiken. <br />- Kategoribläddring – Dirigerar begäranden från den övre navigeringen[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) i skyltfönstret till söktjänsten.<br />- Global sökning – Dirigerar förfrågningar från [snabbsökrutan](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) längst upp till höger i butiken till tjänsten [!DNL Live Search] . |
 | `module-live-search-storefront-popover` | Ett popover-fönster med texten &quot;sök medan du skriver&quot; ersätter den vanliga snabbsökningen och returnerar data och miniatyrer av de bästa sökresultaten. |
 
 ## [!DNL Live Search] beroenden
@@ -468,7 +468,7 @@ Utvecklare som har tillgång till koden kan helt anpassa hur den fungerar och se
 
 ### Dataexporttillägg
 
-När Live Search är aktiverat synkroniserar dataexporttillägget Commerce-data mellan Commerce-programmet och Live Search. Detta säkerställer att de senaste Commerce-uppgifterna finns tillgängliga i butiken. I Admin kan du kontrollera synkroniseringsstatus med hjälp av kontrollpanelen för datahantering. Du kan hantera och felsöka dataexportprocessen med Commerce CLI och loggar. Mer information finns i guiden](../data-export/overview.md) för [dataexport.
+När Live Search är aktiverat synkroniserar dataexporttillägget Commerce-data mellan Commerce-programmet och Live Search. Detta säkerställer att de senaste Commerce-uppgifterna finns tillgängliga i butiken. I Admin kan du kontrollera synkroniseringsstatus med hjälp av kontrollpanelen för datahantering. Du kan hantera och felsöka dataexportprocessen med Commerce CLI och loggar. Mer information finns i guiden[&#128279;](../data-export/overview.md) för dataexport.
 
 ### Inventory management
 
