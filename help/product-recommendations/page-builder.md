@@ -3,7 +3,7 @@ title: Integrering av [!DNL Page Builder]
 description: Lär dig hur du använder  [!DNL Product Recommendations] enheter i Page Builder.
 feature: Services, Recommendations, Page Builder
 exl-id: 001e8e1d-3590-4b44-b5f8-dd8b9b61f370
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
 source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
 source-wordcount: '272'

@@ -3,7 +3,7 @@ title: Installera och konfigurera
 description: Läs mer om hur du installerar, uppdaterar och avinstallerar [!DNL Product Recommendations].
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce on Cloud-projekt (PaaS-infrastruktur som hanteras av Adobe) och lokala projekt."
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce on Cloud-projekt (PaaS-infrastruktur som hanteras av Adobe) och lokala projekt."
 source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
 source-wordcount: '582'
@@ -42,7 +42,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Genom att aktivera [!DNL Product Recommendations] i Page Builder kan du lägga till en befintlig, aktiv [rekommendationsenhet](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) i allt innehåll som skapas i Page Builder, till exempel sidor, block och dynamiska block.
+Genom att aktivera [!DNL Product Recommendations] i Page Builder kan du lägga till en befintlig, aktiv [rekommendationsenhet](https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/add-content/recommendations) i allt innehåll som skapas i Page Builder, till exempel sidor, block och dynamiska block.
 
 Mer information finns [i Använda [!DNL Product Recommendations] med Page Builder-innehåll](page-builder.md) .
 
@@ -60,13 +60,13 @@ composer require magento/module-visual-product-recommendations
 
    Genom att konfigurera den här anslutningen kan du synkronisera data och kommunicera mellan Commerce-instansen, katalogtjänsten och andra stödtjänster. Datasynkronisering hanteras av [SaaS-tillägget](../data-export/overview.md) för dataexport.
 
-1. Om du vill vara säker på att katalogexporten kan köras korrekt kontrollerar du att [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) -jobben och [indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) körs och att `Product Feed`-indexeraren är inställd på `Update by Schedule`.
+1. Om du vill vara säker på att katalogexporten kan köras korrekt kontrollerar du att [cron](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) -jobben och [indexers](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers) körs och att `Product Feed`-indexeraren är inställd på `Update by Schedule`.
 
 När du har länkat Commerce-programmet till Commerce Services och angett [SaaS-datautrymmet](../landing/saas.md#saas-configuration) påbörjas katalogsynkroniseringen. Du kan sedan [verifiera](verify.md) att beteendedata skickas till din butik.
 
 ## Övervaka och felsöka datasynkronisering
 
-Från Commerce Admin kan du övervaka synkroniseringsprocessen med [Dashboard för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Använd [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) och loggar för att hantera och felsöka processen.
+Från Commerce Admin kan du övervaka synkroniseringsprocessen med [Dashboard för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard). Använd [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) och loggar för att hantera och felsöka processen.
 
 Du kan sedan [verifiera](verify.md) att beteendedata skickas till din butik.
 
@@ -120,4 +120,4 @@ Om du vill släppa igenom Product Recommendations genom en brandvägg lägger du
 
 ## Avinstallera [!DNL Product Recommendations] {#uninstall}
 
-Om det behövs kan du [avinstallera](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) produktrekommendationsmodulen.
+Om det behövs kan du [avinstallera](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) produktrekommendationsmodulen.
