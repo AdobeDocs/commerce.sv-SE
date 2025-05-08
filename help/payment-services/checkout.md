@@ -1,8 +1,9 @@
 ---
 title: Checka ut i  [!DNL Payment Services]
 description: Anpassa [!DNL Payment Services] utcheckningen efter kundens behov.
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Checkout, Paas, Saas
+exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Ett felmeddelande visas på utcheckningssidan för kunden. Meddelandet kan varie
 
 ![Fel vid utcheckning](assets/user-checkout-error.png "Fel vid utcheckning"){width="600" zoomable="yes"}
 
-En kommentar om den annullerade ordningen visas också i administratören för en specifik [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=sv-SE).
+En kommentar om den annullerade ordningen visas också i administratören för en specifik [order](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
 ![Avbruten orderkommentar i Admin för order](assets/admin-checkout-error.png "Avbruten orderkommentar i Admin för order"){width="600" zoomable="yes"}
 

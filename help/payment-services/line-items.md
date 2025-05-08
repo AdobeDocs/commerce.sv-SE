@@ -1,9 +1,10 @@
 ---
 title: Radobjekt för  [!DNL Payment Services]
 description: Lär dig mer om radobjekt för  [!DNL Payment Services]  och hur du visar radobjekt på kontrollpanelen för handlare.
-feature: Payments
+feature: Payments, Paas, Saas
 role: User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -126,7 +127,7 @@ Mer information om de här fälten och deras begränsningar finns i [dokumentati
 
 ## Hantera radartiklar
 
-Adobe Commerce [beräknar moms baserat på det totala beloppet för varje rad ](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, vilket kan orsaka avrundningsproblem om flera kvantiteter av samma objekt beställs eller om taxinkluderade priser visas i katalogen. I sådana fall kan den totala kvantiteten delas upp i två rader, men kvantiteten motsvarar den totala beställda artikeln.
+Adobe Commerce [beräknar moms baserat på det totala beloppet för varje rad ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, vilket kan orsaka avrundningsproblem om flera kvantiteter av samma artikel beställs eller om taxinkluderade priser visas i katalogen. I sådana fall kan den totala kvantiteten delas upp i två rader, men kvantiteten motsvarar den totala beställda artikeln.
 
 > Exempel på radobjekt med avrundningsproblem i kontrollpanelen för handlare
 

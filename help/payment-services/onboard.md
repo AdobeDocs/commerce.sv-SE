@@ -1,54 +1,57 @@
 ---
-title: Inbyggt [!DNL Payment Services]
+title: Startar [!DNL Payment Services] arbete
 description: Koppla instansen till  [!DNL Payment Services] funktionaliteten genom att slutföra några introduktionssteg.
 role: User
 level: Intermediate
-feature: Payments, Checkout, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
+feature: Payments, Checkout, Integration, Paas, Saas
+source-git-commit: 9f7690ae325853b9b4a590b3d1cd538909a26462
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
 
-# Inbyggt [!DNL Payment Services]
+# Startar [!DNL Payment Services]-flöde
 
-Om du vill komma igång med att använda [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] måste du slutföra några startsteg för att ansluta instansen med betalningsfunktionen.
+Om du vill börja använda [!DNL Payment Services] måste du slutföra några startsteg. Om du vill ha mer detaljerad vägledning väljer du det Adobe Commerce-alternativ nedan som bäst passar organisationens instans och version.
 
-## Startflöde
+Det här flödesdiagrammet visar den allmänna processen för introduktion av [!DNL Payment Services] i alla versioner:
 
-Det här flödesdiagrammet visar den allmänna processen för introduktion av [!DNL Payment Services].
+![Startflöde](assets/flow-payment-services.png){width="700" zoomable="yes"}
 
-![Startflöde](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
+Se nedan för din specifika Adobe Commerce-version som du kan använda med [!DNL Payment Services].
 
->[!NOTE]
->
-> För Adobe Commerce version 2.4.7 eller senare kan du hoppa över Marketplace-tillägget eftersom [!DNL Payment Services] är tillgängligt direkt.
+## Hjälp mig att hitta min instans och version
 
-När du är klar med introduktionen av sandlådan eller livebetalningar är ekonomisk rapportering tillgänglig från [!DNL Payment Services] i Admin.
+### Adobe Commerce eller Magento Open Source | v2.4.7+
 
-Om både sandlåda och live-betalningar är aktiverade kan du enkelt växla mellan dessa lägen från startsidan för [!DNL Payment Services].
+Dessa flödesdiagram visar den allmänna processen för att komma igång med [!DNL Payment Services] med en Adobe Commerce eller Magento Open Source som är nyare än v2.4.7.
 
-## Förutsättningar
+>[!BEGINTABS]
 
-Om du vill använda [!DNL Payment Services] måste alla beroende moduler vara aktiverade och följande tillgängliga för din instans:
+>[!TAB Sandbox]
 
-* Modulen Services Connector
-* Tjänster-ID-modul
-* API-nycklar
+I det här flödesdiagrammet visas processen för introduktionssandlådan med en Adobe Commerce eller Magento Open Source som är nyare än v2.4.7, där [!DNL Payment Services] är körklar med Adobe Commerce.
 
-Services Connector- och Services ID-modulerna installeras automatiskt under [installationen av [!DNL Payment Services]](install.md).
+![Startflöde](assets/flow-sandbox-configuration-onboarding-2.4.7.png){width="700" zoomable="yes"}
 
-När installationen är klar visas ett nytt avsnitt i konfigurationsinställningarna (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) om du expanderar **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
+**Startsteg för version 2.4.7+ Del 1: Sandbox**
 
-Mer information om hur du skapar eller kommer åt API-nycklar finns i [API-autentiseringsuppgifter](#obtain-api-credentials).
-
-## Onboarding-steg
-
-1. [Installera  [!DNL Payment Services] tillägget](install.md#get-payment-services).
-1. [Hämta API-autentiseringsuppgifter](connect.md#obtain-api-credentials).
-1. [Anslut instansen](connect.md#configure-commerce-services) till Commerce Services. Anslutningen får endast göras en gång per Commerce-instans.
+1. [Anslut instansen](connect.md#configure-commerce-services) till Commerce Services. Anslutningen får endast göras en gång per Commerce-instans. [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."}
 1. [Konfigurera sandlådetjänsten](sandbox.md#enable-sandbox-testing) (eller, alternativt, fortsätta till [aktivera live-betalningar](sandbox.md#enable-live-payments) om du har testat funktioner i en annan miljö) med ett PayPal-betalningshanteringskonto.
+1. Testa betalningar i en [sandlådemiljö](sandbox.md#test-in-sandbox-environment).
+
+[![läs mer](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+
+>[!TAB Produktion]
+
+Det här flödesdiagrammet visar de produktionssteg som krävs för att aktivera [!DNL Payment Services].
+
+![Startflöde](assets/flow-production-payment-services.png){width="700" zoomable="yes"}
+
+**Startsteg för version 2.4.7+ del 2: Produktion**
+
 1. [Ange [!DNL Payment Services] som betalningsmetod](production.md#set-payment-services-as-payment-method), i sandlådeläge, för att börja bearbeta testbetalningar.
 1. [Begär betalningsberättigande](production.md#request-payments-entitlement-from-adobe) för att aktivera liveintroduktion.
 1. [Fullständig registrering av handlare](production.md#complete-merchant-onboarding) för att aktivera livebetalningar för dina Commerce-webbplatser.
@@ -56,13 +59,58 @@ Mer information om hur du skapar eller kommer åt API-nycklar finns i [API-auten
 1. [Aktivera [!DNL Payment Services] i direktläge](production.md#enable-live-payments) för att börja bearbeta direktbetalningar.
 1. Testa betalningar i både [sandbox](sandbox.md#test-in-sandbox-environment)- och [production](production.md#test-in-production)-miljöer.
 
+[![läs mer](assets/learn-more-button.svg)](production.md)
+
+>[!ENDTABS]
+
+### Adobe Commerce eller Magento Open Source | v2.4.0-2.4.6 [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."}
+
+Dessa flödesdiagram visar den allmänna processen för att komma igång med [!DNL Payment Services] med Adobe Commerce eller Magento Open Source version 2.4.0 till 2.4.6. Du måste hämta och installera [!DNL Payment Services] för att kunna börja prenumerera.
+
+>[!BEGINTABS]
+
+>[!TAB Sandbox]
+
+I det här flödesdiagrammet visas de sandlådesteg som krävs för att starta [!DNL Payment Services] med Adobe Commerce eller Magento Open Source version 2.4.0 till 2.4.6.
+
+![Startflöde](assets/flow-sandbox-installation-configuration-onboarding-2.4.0.png){width="700" zoomable="yes"}
+
+**Startsteg för versionerna v2.4.0-2.4.6 del 1: Sandbox**
+
+1. [Installera  [!DNL Payment Services] tillägget](install.md#get-payment-services) om det behövs.
+1. [Hämta API-autentiseringsuppgifter](connect.md#obtain-api-credentials).
+1. [Anslut instansen](connect.md#configure-commerce-services) till Commerce Services. Anslutningen får endast göras en gång per Commerce-instans.
+1. [Konfigurera sandlådetjänsten](sandbox.md#enable-sandbox-testing) (eller, alternativt, fortsätta till [aktivera live-betalningar](sandbox.md#enable-live-payments) om du har testat funktioner i en annan miljö) med ett PayPal-betalningshanteringskonto.
+1. Testa betalningar i en [sandlådemiljö](sandbox.md#test-in-sandbox-environment).
+
+[![läs mer](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+
+>[!TAB Produktion]
+
+I det här flödesdiagrammet visas den allmänna processen för att aktivera [!DNL Payment Services] i en produktionsmiljö med Adobe Commerce eller Magento Open Source version 2.4.0 till 2.4.6.
+
+![Startflöde](assets/flow-production-payment-services.png){width="700" zoomable="yes"}
+
+**Startsteg för versionerna v2.4.0-2.4.6 Part 2: Production**
+
+1. [Ange [!DNL Payment Services] som betalningsmetod](production.md#set-payment-services-as-payment-method), i sandlådeläge, för att börja bearbeta testbetalningar.
+1. [Begär betalningsberättigande](production.md#request-payments-entitlement-from-adobe) för att aktivera liveintroduktion.
+1. [Fullständig registrering av handlare](production.md#complete-merchant-onboarding) för att aktivera livebetalningar för dina Commerce-webbplatser.
+1. [Hämta ditt  [!DNL Payment Services] handels-ID](production.md#configure-pricing-tier) och skicka det till Försäljning för att konfigurera rätt prisnivå.
+1. [Aktivera [!DNL Payment Services] i direktläge](production.md#enable-live-payments) för att börja bearbeta direktbetalningar.
+1. Testa betalningar i både [sandbox](sandbox.md#test-in-sandbox-environment)- och [production](production.md#test-in-production)-miljöer.
+
+[![läs mer](assets/learn-more-button.svg)](onboard.md)
+
+>[!ENDTABS]
+
 >[!NOTE]
 >
->Om du inte konfigurerar dina Commerce-tjänster i Admin (steg 3) kan du inte konfigurera sandlådor eller livesändningar.
+>Om du inte konfigurerar dina Commerce-tjänster i Admin (del 1) kan du inte konfigurera sandlådor eller direktbetalningar.
 
-## Felsökning
-
-* [Felsök [!DNL Payment Services] installationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=sv-SE)
-* [PayPal-sandlådekontot har inte verifierats](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=sv-SE)
-* [Fördröjd [!DNL Payment Services] rapportdata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=sv-SE)
-* [Testkreditkortet fungerar inte med PayPal när betalningar bearbetas i sandlådemiljö](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=sv-SE)
+>[!MORELIKETHIS]
+>
+> * [Felsök [!DNL Payment Services] installationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+> * [PayPal-sandlådekontot har inte verifierats](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+> * [Fördröjd [!DNL Payment Services] rapportdata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+> * [Testkreditkortet fungerar inte med PayPal när betalningar bearbetas i sandlådemiljö](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

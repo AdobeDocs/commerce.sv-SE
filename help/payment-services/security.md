@@ -1,9 +1,10 @@
 ---
 title: Säkerhet och efterlevnad
 description: Granska säkerhets- och efterlevnadskrav för er webbplats.
+exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce/payment-services/security.html
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: 9f7690ae325853b9b4a590b3d1cd538909a26462
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
@@ -18,13 +19,13 @@ Säkerhet är mycket viktigt i [!DNL Payment Services] och ingen privat eller PC
 
 [!DNL Adobe Commerce] och [!DNL Magento Open Source] innehåller stöd för flera säkerhetsfunktioner.
 
-Se [Säkerhet](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/security){target="_blank"} i användarhandboken för att läsa om bästa säkerhetspraxis och lära dig hur du hanterar administratörssessioner och autentiseringsuppgifter, implementerar CAPTCHA och hanterar webbplatsbegränsningar.
+Se [Säkerhet](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} i huvudanvändarhandboken för att läsa om bästa säkerhetspraxis och lära dig hur du hanterar administratörssessioner och autentiseringsuppgifter, implementerar CAPTCHA och hanterar webbplatsbegränsningar.
 
 ## PCI-kompatibilitet
 
 Betalkortsbranschen (PCI) har fastställt en uppsättning krav för företag som tar emot betalningar via kreditkort via Internet. Förutom att upprätthålla en säker miljö är handlare som hanterar kundens kreditkortsinformation ansvariga för att följa vissa standardriktlinjer.
 
-Mer information finns i [Riktlinjer för efterlevnad av PCI](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}.
+Mer information finns i [Riktlinjer för PCI-kompatibilitet](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}.
 
 Handlare kan fylla i ett [självutvärderingsfrågeformulär (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, som är ett självvalideringsverktyg för att utvärdera säkerheten för kortinnehavardata.
 

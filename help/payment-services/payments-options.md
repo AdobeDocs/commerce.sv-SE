@@ -1,10 +1,11 @@
 ---
 title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
-feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
+feature: Payments, Checkout, Configuration, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,8 @@ Det finns olika beteenden för varje betalningsmetod beroende på var du befinne
 
 [!DNL Payment Services] innehåller betalningsalternativ för **Avancerat** (stöds fullt ut) och **Standard** (Express Checkout) samt startflöden, beroende på vilket land du arbetar i.
 
-* **Avancerat** - Alla tillgängliga [betalningsalternativ](../payment-services/payments-options.md) är tillgängliga för aktuella [länder med fullt stöd](../payment-services/overview.md#availability). Under introduktionen för att aktivera livebetalningar väljer du alternativet [Avancerad introduktion](../payment-services/production.md#advanced-onboarding).
+* **Avancerat** - Alla tillgängliga [betalningsalternativ](../payment-services/payments-options.md) är tillgängliga för aktuella [länder med fullt stöd](../payment-services/introduction.md#availability). Under introduktionen för att aktivera livebetalningar väljer du alternativet [Avancerad introduktion](../payment-services/production.md#advanced-onboarding).
+
 * **Standard** - En delmängd av betalningsalternativ (Express Checkout) - PayPal-kort för kredit och debitering - finns för andra tillgängliga länder som stöds. [Kreditkortsfälten](#credit-card-fields) och [Apple Pay](#apple-pay-button) är inte tillgängliga för det här startalternativet. Under introduktionen för att aktivera livebetalningar väljer du alternativet [Standard onboarding](../payment-services/production.md#standard-onboarding).
 
 Se [Aktivera [!DNL Payment Services] för produktion](../payment-services/production.md#complete-merchant-onboarding) för information om hur du slutför avancerad introduktion och standardintroduktion.
@@ -41,47 +43,33 @@ Se [Aktivera [!DNL Payment Services] för produktion](../payment-services/produc
 
 ![Kreditkortsfält i kassan](assets/credit-card-fields.png){width="500" zoomable="yes"}
 
-Aktivera [kreditkortsvalveringen](#vaulting) för dina butiker så att kunderna kan vault (save) sin kreditkortsinformation för en snabb utcheckning senare.
+## [!UICONTROL Digital Wallets]
 
-Du kan konfigurera [!UICONTROL Credit Card Fields] i butikskonfigurationen eller startsidan för [!DNL Payment Services]. Mer information finns i [Inställningar](settings.md#credit-card-fields).
+### [!DNL Apple Pay]-knapp
 
-Du kan också ändra layout, bredd, höjd och yttre format för kreditkortsfälten. Mer information finns i [PayPal-dokumentation](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/).
-
-## [!DNL Apple Pay]-knapp
-
-Kunder kan använda [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), som använder kreditkortsbetalningsreferenser som lagras på en iOS- eller macOS-enhet, för att göra inköp.
-
-[!DNL Apple Pay] är bara tillgängligt i webbläsaren Safari. Handlare kan lägga till upp till 99 domäner per handelskonto.
+Med [!DNL Apple Pay] kan handlare tillhandahålla en säker och smidig utcheckningsupplevelse i Safari (för upp till 99 domäner per handlarkonto), vilket kan öka konverteringarna. Knappen [!DNL Apple Pay] fyller automatiskt i information om lagrade betalningar, kontaktuppgifter och leveranser från kundernas iOS- eller macOS-enheter, vilket ger en snabb, enkel utcheckning.
 
 ![Apple Pay-knappen i minikorgen](assets/applepay-button.png){width="500" zoomable="yes"}
 
-Knappen [!DNL Apple Pay] visas på produktsidan, i minikundvagnen, i kundvagnen och i kassan.
+När det här alternativet är aktiverat visas knappen [!DNL Apple Pay] på produktsidan, i minikundvagnen, i kundvagnen och i kassan. Du kan konfigurera [!DNL Apple Pay] i butikskonfigurationen eller tilläggets Hem.
 
-Om du vill använda [!DNL Apple Pay] för dina butiker fyller du i [självregistrering med  [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registrera endast din livedomän_) och [konfigurerar den för dina butiker i [!DNL Payment Services]](settings.md#payment-buttons).
+Mer information finns i [Inställningar](settings.md#apple-pay).
 
->[!NOTE]
->
-> Se [avancerad utcheckning](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953){target=_blank} i dokumentationen för PayPal-utvecklare för att kontrollera hur du gör det möjligt för köpare att betala med Apple Pay på din webbplats.
+### [!DNL Google Pay]-knapp
 
-Du kan konfigurera [!UICONTROL Apple Pay] i butikskonfigurationen eller startsidan för betalningstjänsterna. Mer information finns i [Inställningar](settings.md#apple-pay).
-
-## [!DNL Google Pay]-knapp
-
-Kunder kan använda [[!DNL Google Pay]](https://pay.google.com/about/) genom att lägga till betalningsinformation till sitt Google-konto, där de lagras säkert för en smidig utcheckning.
+Genom att integrera [!DNL Google Pay] i utcheckningsupplevelsen kan handlare samla in sparad betalnings-, kontakt- och leveransinformation från kundens Google-konto, vilket ger en bekväm och smidig utcheckning i olika webbläsare och appar som stöds.
 
 [!DNL Google Pay] är bara tillgängligt i vissa länder eller regioner och på vissa enheter. Mer information finns i [[!DNL Google Pay] dokumentationen](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration).
 
 ![Knappen Google Pay (Betala) i kassan](assets/google-pay-button.png){width="500" zoomable="yes"}
 
-Knappen [!DNL Google Pay] visas på produktsidan, i minikundvagnen, i kundvagnen och i kassan.
-
-Du kan konfigurera [!UICONTROL Google Pay] i butikskonfigurationen eller startsidan för betalningstjänsterna. Mer information finns i [Inställningar](configure-admin.md).
+När det här alternativet är aktiverat visas knappen [!DNL Google Pay] på produktsidan, i minikundvagnen, i kundvagnen och i kassan. Mer information finns i [Inställningar](configure-admin.md).
 
 >[!NOTE]
 >
 > API:t [!DNL Google Pay] kan bara användas på webbplatser i en säker kontext. Mer information finns i [Felsökning](https://developers.google.com/pay/api/web/support/troubleshooting) -dokumentationen.
 
-## [!DNL PayPal Payment Buttons]
+### [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons], som använder PayPal för att slutföra ett köp, lagrar kundens leveransadress, faktureringsadresser och betalningsinformation för senare bruk. Köpare kan använda vilken betalningsmetod som helst som tidigare lagrats eller erbjuds av PayPal.
 
@@ -91,19 +79,19 @@ Du kan konfigurera [!UICONTROL PayPal payment buttons] i butikskonfigurationen e
 
 Lär dig mer om tillgängligheten för betalningsmetoder per land i PayPals [dokumentation om betalningsmetoder](https://developer.paypal.com/docs/checkout/payment-methods/).
 
-### [!DNL PayPal]-knapp
+#### [!DNL PayPal]-knapp
 
 Med PayPal-knappen kan kunderna enkelt och säkert kolla in resultatet.
 
 Knappen [!DNL PayPal] visas på produktsidan, i minikundvagnen, i kundvagnen och i kassan.
 
-### [!DNL Venmo]-knapp
+#### [!DNL Venmo]-knapp
 
 Kunder kan checka ut med knappen [Venmo](https://venmo.com/).
 
 Knappen [!DNL Venmo] visas på produktsidan, i minikundvagnen, i kundvagnen och i kassan.
 
-### PayPal Debit eller kreditkortsknapp
+#### PayPal Debit eller kreditkortsknapp
 
 Kunder kan checka ut med PayPal Debit- eller kreditkortsknappen.
 
@@ -111,7 +99,7 @@ Knappen PayPal Debit eller Kreditkort visas på utcheckningssidan.
 
 Det här alternativet kan användas för att visa kunderna ett betalnings- eller kreditkortsalternativ med en PayPal-värdbaserad knapp som ett alternativ till en kreditkortsintegrering.
 
-### [!DNL Pay Later]-knapp
+#### [!DNL Pay Later]-knapp
 
 Erbjud dina kunder kortfristiga räntefria betalningar och andra finansieringsalternativ så att de kan köpa nu och betala senare med knappen [!DNL Pay Later].
 
@@ -121,7 +109,7 @@ Mer information om erbjudandet om Betala senare finns i [PayPals Betala senare e
 
 Lär dig hur du inaktiverar eller aktiverar meddelandet [!DNL Pay Later] genom att uppdatera konfigurationen för [Inställningar](settings.md#payment-buttons).
 
-## Använd endast PayPal-betalningsknappar
+### Använd endast PayPal-betalningsknappar
 
 Om du snabbt vill försätta din butik i produktionsläge kan du konfigurera _endast_ betalningsknappar för PayPal (Venmo, PayPal osv.)- i stället för att också använda betalningsalternativet PayPal-kreditkort.
 
@@ -142,9 +130,23 @@ Så här **tar du emot betalningar med din befintliga kreditkortsleverantör _oc
 1. Kontrollera att din butik är [i produktionsläge](settings.md#enable-payment-services).
 1. [Konfigurera önskade PayPal-betalningsknappar](settings.md#payment-buttons).
 1. Stäng av _Av_, alternativet **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** i avsnittet _[!UICONTROL Payment buttons]_.
-1. Aktivera alternativet _Av_ **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** i avsnittet _[!UICONTROL Credit card fields]_&#x200B;och använd ditt [befintliga kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=sv-SE#payments).
+1. Aktivera alternativet _Av_ **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** i avsnittet _[!UICONTROL Credit card fields]_och använd ditt [befintliga kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
-## Orderomberäkning
+## Utcheckningsalternativ
+
+Med [!DNL Payment Services] kan du konfigurera utcheckningen för Adobe Commerce så att den passar dina kunders preferenser och beteenden. Funktioner som kreditkort [vaulting](vaulting.md) och automatisk annullering av beställningar säkerställer en smidig, problemfri transaktion för dina kunder.
+
+Med Adobe Commerce och Magento Open Source [!DNL Payment Services] har du tillgång till flera utcheckningsupplevelser. Det finns olika beteenden för varje betalningsmetod beroende på var du befinner dig i utcheckningsprocessen:
+
+* Produktsida - - - produktsidan för en artikel
+
+* Mini cart - Tillgänglig när du klickar på varukorgen när en produkt har lagts till i varukorgen
+
+* Kundvagn - Tillgänglig när du klickar på Visa och redigerar vagnen i minivagnen
+
+* Utcheckningsvy - - Tillgängligt när du klickar på Gå till kassan från mini-kundvagnen eller kundvagnen
+
+### Orderomberäkning
 
 När en kund går in i kassan från minikorgen, kundvagnen eller produktsidan dirigeras de till en ordergranskningssida där de kan se den valda leveransadressen i ett popup-fönster i PayPal. När kunden har valt leveranssätt beräknas orderbeloppet om på lämpligt sätt och kunden kan se fraktkostnader och skatter.
 
@@ -152,12 +154,4 @@ När en kund går in i utcheckningsflödet från utcheckningssidan är systemet 
 
 Skattehelgdagar, fraktkostnader och moms kan variera mycket mellan olika platser. När [!DNL Payment Services] har tagit emot leveransadressen och fraktkostnaden beräknas alla tillämpliga kostnader snabbt om och visas korrekt under de sista stegen i utcheckningen.
 
-## Kreditkortssäkringar
-
-Köpare kan vault - eller&quot;save&quot; - deras kreditkortsinformation för framtida inköp på webbplatsnivå (vilken butik som helst på samma handlares konto).
-
-Mer information finns i [Kreditkortssäkringar](vaulting.md).
-
-## Säkerhet
-
-Mer information finns i [PCI-kompatibilitet](security.md#pci-compliance).
+Lär dig mer om tillgängliga betalningsmetoder per land i dokumentationen för [PayPals betalningsmetoder](https://developer.paypal.com/docs/checkout/payment-methods/){target=_blank}.

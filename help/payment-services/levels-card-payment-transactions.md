@@ -2,41 +2,44 @@
 title: Bearbetning på nivå 2 och nivå 3
 description: Bearbetningsnivåer för kortbetalningar inom  [!DNL Payment Services] transaktioner.
 role: Admin
-feature: Payments
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Paas, Saas
+exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
 # Bearbetning på nivå 2 och nivå 3
 
-Det finns tre nivåer av kortbearbetning tillgängliga via [!DNL Payment Services]:
+[!DNL Payment Services] har avancerade kortbearbetningsfunktioner som hjälper handlarna att optimera sina betalningstransaktioner och sänka utbytesavgifterna. Det finns tre nivåer av kortbearbetning tillgängliga, var och en med olika krav på transaktionsdata.
 
-* Nivå 1 är den vanligaste, kräver mindre information och medför därför i allmänhet högre förmedlingsavgifter jämfört med transaktioner som behandlas med data på Nivå 2 eller Nivå 3, som vanligtvis är kopplade till kreditkort för företag och inköp.
+## Uppgiftskrav per bearbetningsnivå
 
-* Med nivå 2 och nivå 3 kan [!DNL Payment Services] kunder med utbytesavtal plus (IC++)-priser som accepterar många köp- eller visitkortstransaktioner eventuellt få en lägre bearbetningshastighet genom att tillåta [!DNL Payment Services] att skicka mer information om en transaktion. Om transaktionen uppfyller kraven kan handlaren få en lägre handläggningsfrekvens för en viss transaktion enligt kraven för kortnätverk.
-
->[!NOTE]
->
->Prisnivå 2 och nivå 3 gäller endast för Visa- och MasterCard-transaktioner. American Express erbjuder endast nivå 2-pris. Upptäck priser på nivå 2 och 3. Mer information finns i [betalningshantering](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} i dokumentationen för PayPal-utvecklare.
-
-Se [Vad är IC++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} i dokumentationen för PayPal-utvecklare om du vill ha mer information.
-
-Bearbetningsdata på nivå 2 och nivå 3 gör det möjligt för handlare att sänka sina IC++-priser om de ger ytterligare information om köpet som minskar processorriskerna och ger fördelar:
-
-* Stora kunder betalar mindre genom att tillhandahålla dessa bearbetningsdata.
-
-* Kunderna är mindre benägna att hamna i bedrägliga situationer eftersom beställningarna har mer information.
-
-Kortnäten, som Visa och Mastercard, avgör dock i slutändan om en transaktion uppfyller kraven för nivå 2 eller nivå 3:
-
-* Data på nivå 2 innehåller ytterligare information, t.ex. orderns momsbelopp eller kundkoden eller inköpsordernumret.
-
-* Data på nivå 3 är mer detaljerad information om försäljningen, vilket gör det lättare att kvalificera sig för ännu lägre utbytesfrekvenser jämfört med nivå 2. Data på nivå 3 innehåller information som en beskrivning av den köpta artikeln, antalet köpta enheter, måttenhet för beställda artiklar och annan specifik information.
+![Transaktionsrapport](assets/level-processing-details.png){width="500" zoomable="yes"}
 
 [!DNL Payment Services] samlar in dessa data och tillhandahåller detaljerad rapportering av dina betalningstransaktioner.
+
+## Tillgängliga bearbetningsnivåer per kortnätverk
+
+![Kortinformation](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
+
+Mer information finns i [betalningshantering](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} i dokumentationen för PayPal-utvecklare.
+
+### Nivå 1
+
+Nivå 1 är den vanligaste, kräver mindre information och medför därför i allmänhet högre förmedlingsavgifter jämfört med transaktioner som behandlas med data på Nivå 2 eller Nivå 3, som vanligtvis är kopplade till kreditkort för företag och inköp.
+
+### Nivå 2 och nivå 3
+
+[!DNL Payment Services] handlare på Interchange Plus (IC++) kan kvalificera sig för nivå 2/nivå 3-bearbetning om de tillhandahåller ytterligare transaktionsinformation till kortnätverk och uppfyller särskilda kvalificeringskriterier. Dessa nivåer är särskilt fördelaktiga för handlare som hanterar stora inköp eller större företagskortvolymer, eftersom de kan ge betydande kostnadsbesparingar. Detaljerade data för nivå 2 eller nivå 3 kan:
+
+* Sänk handläggningsavgifterna och optimera de totala kostnaderna
+* Förebygga bedrägerier och minska processorriskerna
+* Förbättra transaktionssäkerheten
+
+Se [Vad är IC++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} i dokumentationen för PayPal-utvecklare om du vill ha mer information.
 
 ## Betalningstransaktioner för nivå 2 och nivå 3 i [!DNL Payment Services]
 

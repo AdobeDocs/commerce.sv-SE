@@ -1,8 +1,9 @@
 ---
 title: Testa och validera
 description: Testning och validering säkerställer att  [!DNL Payment Services] funktioner fungerar som förväntat och ger de bästa betalningsalternativen för dina kunder
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
+feature: Payments, Checkout, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -18,7 +19,7 @@ Innan du visar [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Mage
 Testning av [!DNL Payment Services] i en sandlådemiljö är ett viktigt valideringssteg, även om det är en simulerad miljö som bara är ansluten till PayPal-sandlådan, inte till riktiga banker och handlare.
 
 1. Slutför en utcheckning från din butik, antingen med [Kreditkortsfält](payments-options.md#credit-card-fields) eller någon av [betalningsknapparna för PayPal](payments-options.md#paypal-smart-buttons). Mer information om hur du använder falska kreditkort för testning finns i [Testa autentiseringsuppgifter](#testing-credentials).
-1. Fånga (när din betalningsåtgärd är [inställd på `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [återbetalning](refunds.md) eller [void](voids.md) den senast slutförda ordern. Du kan också [skapa en faktura](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} för en order om betalningsåtgärden är inställd på `Authorize` i stället för `Authorize and Capture`.
+1. Fånga (när din betalningsåtgärd är [inställd på `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [återbetalning](refunds.md) eller [void](voids.md) den senast slutförda ordern. Du kan också [skapa en faktura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} för en order om betalningsåtgärden är inställd på `Authorize` i stället för `Authorize and Capture`.
 1. Visa transaktionen och annan information i [Utbetalningsrapporten](payouts.md) inom 24-48 timmar.
 1. Se information om ordern i rapporten [Status för orderbetalning](order-payment-status.md).
 

@@ -3,8 +3,9 @@ title: Statusrapport för orderbetalning
 description: Använd rapporten Orderbetalningsstatus för att få en bättre överblick över betalningsstatusen för dina order och identifiera eventuella problem.
 role: User
 level: Intermediate
-feature: Payments, Checkout, Orders
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
+feature: Payments, Checkout, Orders, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Statusrapport för orderbetalning
 
-[!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] erbjuder omfattande rapportering så att du kan få en tydlig bild av butikens [transaktioner](transactions.md), order och betalningar.
+[!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] erbjuder omfattande rapportering så att du kan få en tydlig bild av butikens [transaktioner](reporting.md), order och betalningar.
 
 Det finns två tillgängliga rapportvyer över orderbetalningsstatus som gör att du snabbt kan visa betalningsstatus för dina order:
 
@@ -70,7 +71,7 @@ Vyn för visualisering av orderbetalningsstatus innehåller följande informatio
 
 Vyn för orderbetalningsstatus är tillgänglig i vyn Hem för Betalningstjänster. Den innehåller detaljerade statusvärden - betalning, fakturering, leverans, återbetalning, tvist med mera - för alla transaktioner.
 
-På sidofältet _Admin_ går du till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;för att visa den detaljerade rapportvyn för orderbetalningsstatus i tabellformat.
+På sidofältet _Admin_ går du till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**för att visa den detaljerade rapportvyn för orderbetalningsstatus i tabellformat.
 
 ![Beställa transaktioner för betalningsstatus i administratören](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -105,7 +106,7 @@ Identifiera när en väntande hämtningstransaktion anger statusen `Completed` s
 
 För att processen ska fungera som förväntat måste säljarna konfigurera ett nytt cron-jobb. När jobbet har konfigurerats att köras automatiskt förväntas inga andra åtgärder från handlaren.
 
-Se [Konfigurera cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=sv-SE). När det nya jobbet har konfigurerats körs det var 30:e minut för att hämta uppdateringar för order som har statusen `Payment Review`.
+Se [Konfigurera cron-jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). När det nya jobbet har konfigurerats körs det var 30:e minut för att hämta uppdateringar för order som har statusen `Payment Review`.
 
 Handlare kan kontrollera den uppdaterade betalningsstatusen via rapportvyn för orderbetalningsstatus.
 
@@ -113,11 +114,11 @@ Handlare kan kontrollera den uppdaterade betalningsstatusen via rapportvyn för 
 
 [!DNL Payment Services] använder orderdata och kombinerar dem med aggregerade betalningsdata från andra källor (inklusive PayPal) för att skapa meningsfulla och användbara rapporter.
 
-Orderdata exporteras och sparas i betaltjänsten. När du [ändrar eller lägger till orderstatus](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) eller [redigerar en butiksvy](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [store](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/setup/store-details#store-information) eller webbplatsnamn kombineras dessa data med betalningsdata och rapporten om orderbetalningsstatus fylls i med den kombinerade informationen.
+Orderdata exporteras och sparas i betaltjänsten. När du [ändrar eller lägger till orderstatus](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) eller [redigerar en butiksvy](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [store](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) eller webbplatsnamn kombineras dessa data med betalningsdata och rapporten om orderbetalningsstatus fylls i med den kombinerade informationen.
 
 Det finns två steg:
 
-1. Indexet ändras antingen `ON SAVE` (varje gång orderinformation eller butiksinformation ändras) eller `BY SCHEDULE` (enligt ett förkonfigurerat kundschema), beroende på hur det har konfigurerats i [Indexhantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management) i Admin.
+1. Indexet ändras antingen `ON SAVE` (varje gång orderinformation eller butiksinformation ändras) eller `BY SCHEDULE` (enligt ett förkonfigurerat kundschema), beroende på hur det har konfigurerats i [Indexhantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) i Admin.
 
    Som standard sker dataindexeringen `ON SAVE`, vilket innebär att omindexeringsprocessen sker omedelbart varje gång något ändras i ordningen, i ordningen, i butiksvyn, i butiken eller på webbplatsen.
 
@@ -133,7 +134,7 @@ De enda data som exporteras och sorteras för rapportändamål är data som anv�
 
 Även om omindexering som standard sker i läget `ON SAVE` rekommenderar vi att du indexerar i läget `BY SCHEDULE`. Indexet `BY SCHEDULE` körs med ett cron-schema på en minut och alla ändrade data visas i din orderstatusrapport inom två minuter efter dataändringen. Denna schemalagda omindexering hjälper dig att minska eventuella påfrestningar i din butik, särskilt om du har ett stort antal inkommande order, eftersom den inträffar enligt ett schema (inte efter varje beställning).
 
-Du kan ändra indexläget -`ON SAVE` eller `BY SCHEDULE` -[ - i Admin](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Du kan ändra indexläget -`ON SAVE` eller `BY SCHEDULE` -[ - i Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Mer information om hur du konfigurerar dataexporten finns i [Kommandoradskonfiguration](configure-cli.md#configure-data-export).
 
@@ -143,7 +144,7 @@ I rapportvyn Orderbetalningsstatus kan du välja datakälla - **[!UICONTROL Live
 
 ![Val av datakällor](assets/datasource.png){width="300" zoomable="yes"}
 
-Om _[!UICONTROL Live]_&#x200B;är den valda datakällan kan du visa rapportinformation för dina butiker som använder [!DNL Payment Services] i produktionsläge. Om&#x200B;_[!UICONTROL Sandbox]_ är den valda datakällan kan du visa rapportinformation för sandlådeläge.
+Om _[!UICONTROL Live]_är den valda datakällan kan du visa rapportinformation för dina butiker som använder [!DNL Payment Services] i produktionsläge. Om_[!UICONTROL Sandbox]_ är den valda datakällan kan du visa rapportinformation för sandlådeläge.
 
 Datakällmarkeringar fungerar så här:
 
@@ -154,7 +155,7 @@ Datakällmarkeringar fungerar så här:
 Så här väljer du datakälla för din [!UICONTROL Order Payment Status]-rapport:
 
 1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]** på sidofältet _Admin_.
-1. Klicka på väljarfiltret _[!UICONTROL Data source]_&#x200B;och välj **[!UICONTROL Live]**&#x200B;eller **[!UICONTROL Sandbox]**.
+1. Klicka på väljarfiltret _[!UICONTROL Data source]_och välj **[!UICONTROL Live]**eller **[!UICONTROL Sandbox]**.
 
    Rapportresultaten genereras om baserat på den valda datakällan.
 
@@ -162,7 +163,7 @@ Så här väljer du datakälla för din [!UICONTROL Order Payment Status]-rappor
 
 I rapportvyn Orderbetalningsstatus kan du anpassa tidsramen för statusresultaten genom att välja specifika datum. Som standard visas 30 dagars betalningsstatus i rutnätet.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
 1. Klicka på kalenderväljarfiltret _[!UICONTROL Order dates]_.
 1. Välj tillämpligt datumintervall.
 1. Visa orderbetalningsstatus för angivna datum i rutnätet.
@@ -171,17 +172,17 @@ I rapportvyn Orderbetalningsstatus kan du anpassa tidsramen för statusresultate
 
 I rapportvyn Orderbetalningsstatus kan du filtrera statusresultaten som du vill visa genom att välja filtervillkor.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
 1. Klicka på väljaren **[!UICONTROL Filter]**.
 1. Växla alternativen för _Lönestatus_ om du vill visa rapportresultat för endast valda orderbetalningsstatusar.
-1. Visa rapportresultat inom ett orderbeloppsintervall genom att ange en _[!UICONTROL Min Order Amount]_&#x200B;eller _[!UICONTROL Max Order Amount_].
+1. Visa rapportresultat inom ett orderbeloppsintervall genom att ange en _[!UICONTROL Min Order Amount]_eller _[!UICONTROL Max Order Amount_].
 1. Klicka på **[!UICONTROL Hide filters]** om du vill dölja filtret.
 
 ### Visa och dölja kolumner
 
 I rapporten Orderbetalningsstatus visas alla tillgängliga informationskolumner som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
 1. Klicka på ikonen _Kolumninställningar_ (![ikonen för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Om du vill anpassa vilka kolumner som ska visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
 
@@ -211,7 +212,7 @@ I rapportvyn över orderbetalningsstatus visas en _[!UICONTROL Last updated]_-ti
 
 Du kan också manuellt framtvinga en uppdatering av rapportdata för orderbetalningsstatus för att se den senaste rapportinformationen.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
 1. Klicka på ikonen _Uppdatera_ (![uppdateringsikonen](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Rapportdata för orderbetalningsstatus uppdateras, en *[!UICONTROL Update complete]*-bekräftelse visas och den senaste informationen finns i rutnätet.
@@ -220,7 +221,7 @@ Du kan också manuellt framtvinga en uppdatering av rapportdata för orderbetaln
 
 Du kan visa eventuella tvister om dina beställningar och navigera till PayPal Resolution Center och vidta åtgärder för dem i rapporten om status för beställningsbetalning.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
 1. Navigera till **[!UICONTROL Disputes column]**.
 1. Visa eventuella tvister om en viss order och se [tvistens status](#order-payment-status-information).
 1. Granska tvistinformation från [PayPal Resolution Center](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) genom att klicka på den tvist-ID-länk som börjar med _PP-D-_.
@@ -232,7 +233,7 @@ Du kan visa eventuella tvister om dina beställningar och navigera till PayPal R
 
 Du kan hämta en CSV-fil med alla statusvärden synliga i vystödrastret för orderbetalningsstatus, oavsett om du visar standardstatusvärdena för 30 dagar eller en anpassad tidsram.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
 1. Om du vill se statusvärden för en annan tidsram än de senaste 30 dagarna [anpassar du tidsramen för datumintervallet för statusvärdena](#customize-dates-timeframe).
 1. Klicka på ikonen _Hämta_ (![hämtningsikonen](assets/icon-download.png){width="20" zoomable="yes"}).
 
@@ -244,10 +245,10 @@ Rapporter om orderbetalningsstatus innehåller följande information.
 
 | Kolumn | Beskrivning |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce order-ID<br> <br>Om du vill visa relaterad [orderinformation](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klickar du på ID:t. |
+| [!UICONTROL Order ID] | Commerce order-ID<br> <br>Om du vill visa relaterad [orderinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klickar du på ID:t. |
 | [!UICONTROL Order Date] | Tidsstämpel för orderdatum |
 | [!UICONTROL Authorized Date] | Tidsstämpel för betalningsauktorisering |
-| [!UICONTROL Order Status] | Aktuell Commerce [orderstatus](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | Aktuell beställningsstatus för Commerce [](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | Fakturastatus för ordern -*[!UICONTROL No]*, *[!UICONTROL Partial]* eller *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Leveransstatus för ordern -*[!UICONTROL No]*, *[!UICONTROL Partial]* eller *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Orderns totalbelopp |

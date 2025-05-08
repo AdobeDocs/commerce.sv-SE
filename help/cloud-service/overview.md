@@ -4,7 +4,7 @@ description: Läs om de viktigaste funktionerna och fördelarna med  [!DNL Adobe
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 7ce77ae1ed7cc6c1008d4ee22375c949298946b3
+source-git-commit: 9f7690ae325853b9b4a590b3d1cd538909a26462
 workflow-type: tm+mt
 source-wordcount: '1475'
 ht-degree: 0%
@@ -31,7 +31,7 @@ I följande bild visas vilka produkter som är kraftfulla för [!DNL Adobe Comme
 
 I följande video visas en kort introduktion till arkitekturen [!DNL Adobe Commerce as a Cloud Service]. Bilder som illustrerar arkitekturen visas nedanför videon.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443271?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 I det här diagrammet visas dataflödet mellan [!DNL Adobe Commerce as a Cloud Service] och alla Adobe Experience Cloud-lösningar.
 
@@ -39,13 +39,13 @@ I det här diagrammet visas dataflödet mellan [!DNL Adobe Commerce as a Cloud S
 
 ## Commerce Storefront
 
-Använd Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=sv-SE) från Edge Delivery Services för att skapa avancerade upplevelser på några minuter med enkel dokumentbaserad redigering eller visuell redigering med Storefront Builder.
+Använd Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) från Edge Delivery Services för att skapa avancerade upplevelser på några minuter med enkel dokumentbaserad redigering eller visuell redigering med Storefront Builder.
 
 Commerce Storefront är helt headless med en frikopplad arkitektur som ger alla marknadsföringstjänster och data via ett GraphQL API-lager. Med denna arkitektur kan teamen utveckla sina gränser oberoende av Commerce Foundation, vilket gör det enkelt att skapa och testa nya kontaktytor med ny teknik.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] har inte stöd för Luma-butiker. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=sv-SE#existing-storefronts) för mer information om övergångar.
+>[!DNL Adobe Commerce as a Cloud Service] har inte stöd för Luma-butiker. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) för mer information om övergångar.
 
 ## Marknadsföringstjänster och betaltjänster
 
@@ -53,14 +53,14 @@ Adobe erbjuder en mängd intelligenta, sammanställningsbara marknadsföringstj�
 
 - [Livesökning](../live-search/overview.md) - Få smartare, snabbare och relevanta resultat för kunderna med det här AI-baserade sökverktyget.
 - [Produktrekommendationer](../product-recommendations/overview.md) - Lägg till AI-baserade rekommendationer baserat på kundbeteende, populära trender, produktlikhet med mera.
-- [Merchandising Services med stöd för kanaler och principer](../optimizer/catalog/overview.md) - Hantera stora och komplexa produktkataloger med flexibel datamodellering för att leverera högpresterande, flexibla e-handelskataloger som är anpassade efter affärsstruktur och go-to-market-strategier. Använd med [Commerce Optimizer](../optimizer/overview.md) för att optimera katalogens prestanda och förbättra konverteringsgraden.
-- [Betalningstjänster](../payment-services/overview.md) - Öka kundnöjdheten genom att erbjuda olika betalningsmetoder, inklusive räntefria betalningar, och en enda vy över betalningshantering, order och fakturor.
+- [Merchandising Services med stöd för kanaler och principer](../catalog-service/guide-overview.md) - Hantera stora och komplexa produktkataloger med flexibel datamodellering för att leverera högpresterande, flexibla e-handelskataloger som är anpassade efter affärsstruktur och go-to-market-strategier. Använd med [Commerce Optimizer](../optimizer/overview.md) för att optimera katalogens prestanda och förbättra konverteringsgraden.
+- [Betalningstjänster](../payment-services/guide-overview.md) - Öka kundnöjdheten genom att erbjuda olika betalningsmetoder, inklusive räntefria betalningar, och en enda vy över betalningshantering, order och fakturor.
 
 ## Produktbilder
 
 Förenkla materialhanteringen med ett robust DAM-system (Digital Asset Management) som är integrerat med Adobe Experience Manager för hantering av multimediematerial. Den inbyggda mini-DAM-modulen innehåller också grundläggande verktyg för att lagra och hantera digitala resurser.
 
-Mer information finns i [Resurshantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration).
+Mer information finns i [Resurshantering](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration).
 
 ## Developer Platform
 
@@ -115,7 +115,7 @@ Utvecklare kan använda omfattande [GraphQL- och REST-API:er](https://developer.
 
 ## Integrering med Experience Cloud
 
-[!DNL Adobe Commerce as a Cloud Service] integreras med alla Experience Cloud-lösningar för att leverera [personaliserade e-handelsupplevelser i stor skala](https://experienceleague.adobe.com/sv/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integreras med alla Experience Cloud-lösningar för att leverera [personaliserade e-handelsupplevelser i stor skala](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Dataanslutning](../data-connection/overview.md) låser upp insikter om kundernas köpbeteende så att ni kan skapa personaliserade shoppingupplevelser i alla kanaler med andra Adobe Digital Experience-produkter.
 
@@ -139,14 +139,14 @@ Följande avsnitt innehåller information om de fördelar som [!DNL Adobe Commer
 
 ## Nya funktionslösningar
 
-[Administratörsgränssnittet](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/guide-overview) är det primära gränssnittet för att komma åt funktioner för att hantera backend-butiksåtgärder, lager, priser, kampanjer och kundinteraktioner. [!DNL Adobe Commerce as a Cloud Service] erbjuder dock unika lösningar som ersätter några av de välkända funktionerna i Adobe Commerce i molnet och lokala projekt. I följande tabell beskrivs de funktioner och ersättningslösningar som finns i [!DNL Adobe Commerce as a Cloud Service]:
+[Administratörsgränssnittet](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) är det primära gränssnittet för att komma åt funktioner för att hantera backend-butiksåtgärder, lager, priser, kampanjer och kundinteraktioner. [!DNL Adobe Commerce as a Cloud Service] erbjuder dock unika lösningar som ersätter några av de välkända funktionerna i Adobe Commerce i molnet och lokala projekt. I följande tabell beskrivs de funktioner och ersättningslösningar som finns i [!DNL Adobe Commerce as a Cloud Service]:
 
 | Funktion | Lösning | Tillgänglighet | Information |
 |---------|----------|--------------|--------|
-| [Digital resurshantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Produktvisningar](https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) eller mini-DAM | Tillgänglig | Ett robust DAM-system (Digital Asset Management) som kan integreras med Adobe Experience Manager för hantering av multimediematerial. Ett alternativ är mini-DAM med grundläggande verktyg för att lagra och hantera digitala resurser. |
-| [Innehållshanteringssystem (CMS)](https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
-| [Mellanlagring av innehåll](https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/staging/content-staging) | [Katalogtjänst](../catalog-service/overview.md) | Vägkarta | Ett kataloghanteringsverktyg som är kopplat till Adobe Experience Platform och möjliggör hantering av stora kataloger. |
-| [Page Builder](https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
-| [Betalningar](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/payments/payments) | [Betalningstjänster för Adobe Commerce](../payment-services/overview.md) | Tillgänglig | En integrerad betalningstjänst som underlättar säkra och effektiva transaktioner. |
-| [URL-omskrivningar](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
-| [Visual Merchandiser](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Katalogtjänst](../catalog-service/overview.md) | Vägkarta | Ett kataloghanteringsverktyg som är kopplat till Adobe Experience Platform och möjliggör hantering av stora kataloger. |
+| [Digital resurshantering](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Produktvisningar](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) eller mini-DAM | Tillgänglig | Ett robust DAM-system (Digital Asset Management) som kan integreras med Adobe Experience Manager för hantering av multimediematerial. Ett alternativ är mini-DAM med grundläggande verktyg för att lagra och hantera digitala resurser. |
+| [Innehållshanteringssystem (CMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
+| [Mellanlagring av innehåll](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Katalogtjänst](../catalog-service/overview.md) | Vägkarta | Ett kataloghanteringsverktyg som är kopplat till Adobe Experience Platform och möjliggör hantering av stora kataloger. |
+| [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
+| [Betalningar](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Betalningstjänster för Adobe Commerce](../payment-services/guide-overview.md) | Tillgänglig | En integrerad betalningstjänst som underlättar säkra och effektiva transaktioner. |
+| [URL-omskrivningar](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Tillgänglig | En grundläggande CMS som gör det enkelt att skapa och hantera dokument och webbmaterial med hjälp av dokumentbaserad redigering. Ett alternativ är en universell redigerare som ger mer avancerad innehållshantering och anpassning på flera plattformar. |
+| [Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Katalogtjänst](../catalog-service/overview.md) | Vägkarta | Ett kataloghanteringsverktyg som är kopplat till Adobe Experience Platform och möjliggör hantering av stora kataloger. |

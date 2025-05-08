@@ -3,8 +3,9 @@ title: Skydd mot signering av bedrägeri
 description: Aktivera automatiskt bedrägeriskydd för  [!DNL Payment Services] med signering.
 role: Admin, User
 level: Intermediate
-feature: Payments, Checkout, Configuration, Security
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Checkout, Configuration, Security, Paas, Saas
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -40,12 +41,12 @@ Eftersom Signified utför en åtgärd på dina beställningar är det nödvändi
 
 De här konfigurationsalternativen är inte kompatibla med betaltjänster och signeringsintegrering:
 
-* När [!DNL Payment Services] har konfigurerats med `Authorize` betalningsåtgärden _och_ Signifyd är i läget `PostAuth` med alternativet _[!UICONTROL Decline Guarantees]_&#x200B;inställt på&#x200B;**Skapa kreditnota**.
+* När [!DNL Payment Services] har konfigurerats med `Authorize` betalningsåtgärden _och_ Signifyd är i läget `PostAuth` med alternativet _[!UICONTROL Decline Guarantees]_inställt på&#x200B;**Skapa kreditnota**.
 
   Orsak: [!DNL Payment Services] skapar en auktoriseringstransaktion som Signify sedan försöker återbetala.
 
 
-* [!DNL Payment Services] har konfigurerats med `Authorize and Capture` betalningsåtgärd _och_ Signifyd är i `PostAuth`-läge med alternativet _[!UICONTROL Decline Guarantees]_&#x200B;inställt på&#x200B;**Avbryt order**.
+* [!DNL Payment Services] har konfigurerats med `Authorize and Capture` betalningsåtgärd _och_ Signifyd är i `PostAuth`-läge med alternativet _[!UICONTROL Decline Guarantees]_inställt på&#x200B;**Avbryt order**.
 
   Orsak: [!DNL Payment Services] skapar en hämtningstransaktion som Signified sedan försöker annullera.
 

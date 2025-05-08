@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: eba63e5a0086689ae254545c1ad9a1430fc8a524
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '109'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,8 @@ ht-degree: 1%
 # [!DNL Payment Services] för Commerce {#payment-services}
 
 - [Guide overview](guide-overview.md)
-- [Introduktion till  [!DNL Payment Services]](overview.md)
+- [Introduktion till  [!DNL Payment Services]](introduction.md)
+- [Kompatibilitet för  [!DNL Payment Services]](compatibility.md)
 - [Versionsinformation](release-notes.md)
 - Inbyggt [!DNL Payment Services] {#get-started}
    - [Översikt över introduktion](onboard.md)
@@ -41,13 +42,13 @@ ht-degree: 1%
       - [Voids](voids.md)
    - [Skapa en order i administratören](create-order.md)
    - [Spåra dina leveranser i  [!DNL Payment Services]](track-shipment.md)
-- Ekonomisk rapportering {#reporting}
-   - [Transaktionsrapport](transactions.md)
+- Ekonomisk rapportering {#financial-reports}
+   - [Rapportering](reporting.md)
    - [Statusrapport för orderbetalning](order-payment-status.md)
    - [Utbetalningsrapport](payouts.md)
    - [Tillgängliga data](data.md)
    - [Bearbetning på nivå 2 och nivå 3](levels-card-payment-transactions.md)
-- Säkerhet och kompatibilitet {#security-compliance}
+- Säkerhet och efterlevnad {#security-compliance}
    - [Säkerhet](security.md)
    - [Skydd mot bedrägeri](fraud-protection.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

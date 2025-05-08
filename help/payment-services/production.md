@@ -1,10 +1,11 @@
 ---
 title: Aktivera [!DNL Payment Services] för produktion
 description: Slutför introduktionsprocessen genom att aktivera  [!DNL Payment Services]  för produktion.
-feature: Payments, Checkout, Configuration, Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
+feature: Payments, Checkout, Configuration, Install, Paas, Saas
+source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -13,8 +14,8 @@ ht-degree: 0%
 
 Du kan sätta igång tjänsten och slutföra [introduktionsprocessen](onboard.md) enligt stegen i det här avsnittet efter att du:
 
-* [Installera](install.md) tillägget Betalningstjänster
-* [Konfigurera och ansluta](connect.md) din instans
+* [!BADGE PaaS endast]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."} [Installera](install.md) tillägget Betalningstjänster
+* [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."} [Konfigurera och ansluta](connect.md) din instans
 * [Konfigurera](sandbox.md) och [testa](test-validate.md) din sandlåda
 
 ## Ange [!DNL Payment Services] som betalningsmetod
@@ -26,10 +27,10 @@ När du har [konfigurerat dina Commerce-tjänster](connect.md#configure-commerce
 
    Det här alternativet är synligt om du ännu inte har konfigurerat [!DNL Payment Services] som betalningsmetod för en eller flera av dina webbplatser.
 
-   Du dirigeras till inställningsområdet i hemvyn med de relevanta alternativen utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services]-alternativen som [betalningsmetod](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
+   Du dirigeras till inställningsområdet i hemvyn med de relevanta alternativen utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services]-alternativen som [betalningsmetod](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
-1. I _[!UICONTROL General Configuration]_&#x200B;anger du **[!UICONTROL Enable]**&#x200B;till `Yes`.
-1. Ange **[!UICONTROL Payment Action]** för både _[!UICONTROL Credit Card Fields]_&#x200B;och&#x200B;_[!UICONTROL PayPal payment buttons]_ till något av följande:
+1. I _[!UICONTROL General Configuration]_anger du **[!UICONTROL Enable]**till `Yes`.
+1. Ange **[!UICONTROL Payment Action]** för både _[!UICONTROL Credit Card Fields]_och_[!UICONTROL PayPal payment buttons]_ till något av följande:
 
    | Inställning | Beskrivning |
    |---|---|
@@ -42,7 +43,7 @@ När du har [konfigurerat dina Commerce-tjänster](connect.md#configure-commerce
 
 1. Klicka på **[!UICONTROL Save]**.
 1. Klicka på **[!UICONTROL Go to Payment Services]** om du vill gå tillbaka till startsidan för [!DNL Payment Services].
-1. [Rensa cachen](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=sv-SE).
+1. [Rensa cachen](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    Rensning bör göras efter varje konfigurationsändring.
 
@@ -61,7 +62,7 @@ Betalningstjänster tillhandahåller [**avancerade** (stöds fullt ut) och **Sta
 
 1. I _Välj land_ väljer du det land du arbetar från.
 
-   Betalningstjänster ger fullständigt stöd för alla betalningsalternativ i [fem länder](../payment-services/overview.md#availability) för närvarande. Betalningstjänster erbjuder funktioner för Express Checkout (en deluppsättning av betalningsalternativ) för alla andra länder som finns representerade i landslistan.
+   Betalningstjänster ger fullständigt stöd för alla betalningsalternativ i [fem länder](../payment-services/introduction.md#availability) för närvarande. Betalningstjänster erbjuder funktioner för Express Checkout (en deluppsättning av betalningsalternativ) för alla andra länder som finns representerade i landslistan.
 
    Det land du väljer i listan avgör vilka betalningsalternativ och vilket introduktionsflöde -[Avancerat](#advanced-onboarding) (stöds fullt ut) eller [Standard](#standard-onboarding) (Express Checkout) - som är tillgängliga för dig.
 
@@ -71,7 +72,7 @@ Betalningstjänster tillhandahåller [**avancerade** (stöds fullt ut) och **Sta
 
 ### Avancerad introduktion
 
-Det här introduktionsflödet är tillgängligt för handlare i [länder som stöds fullt ut](../payment-services/overview.md#availability).
+Det här introduktionsflödet är tillgängligt för handlare i [länder som stöds fullt ut](../payment-services/introduction.md#availability).
 
 När landet har valts:
 
@@ -88,7 +89,7 @@ När landet har valts:
 
 ### Standard onboarding
 
-Det här standardintroduktionsflödet är tillgängligt för handlare i tillgängliga länder där [endast support för Express Checkout ](../payment-services/overview.md#availability) tillhandahålls.
+Det här standardintroduktionsflödet är tillgängligt för handlare i tillgängliga länder där [endast support för Express Checkout ](../payment-services/introduction.md#availability) tillhandahålls.
 
 När landet har valts:
 
@@ -104,7 +105,7 @@ När landet har valts:
 
 1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** på sidlisten Admin
 
-   Knappen _[!UICONTROL Live onboarding]_&#x200B;visas inte längre och du ser textrutan [!UICONTROL Live payments pending].
+   Knappen _[!UICONTROL Live onboarding]_visas inte längre och du ser textrutan [!UICONTROL Live payments pending].
 
    I den textrutan kan du också bli ombedd att bekräfta din e-postadress hos PayPal för att slutföra introduktionen.
 
@@ -154,9 +155,9 @@ Aktivera direktbetalningar:
 
 1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** på sidofältet _Admin_.
 1. Klicka på **[!UICONTROL Settings]** längst upp till höger på sidan på Hem. Mer information finns i [Hem](payments-home.md).
-1. I avsnittet _[!UICONTROL General Configuration]_&#x200B;ställer du in **[!UICONTROL Payment mode]**&#x200B;på `Production`.
+1. I avsnittet _[!UICONTROL General Configuration]_ställer du in **[!UICONTROL Payment mode]**på `Production`.
 1. Klicka på **[!UICONTROL Save]**.
-1. [Rensa cachen](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
+1. [Rensa cachen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

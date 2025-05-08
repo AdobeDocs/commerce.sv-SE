@@ -1,8 +1,9 @@
 ---
 title: Kreditkortsvarning
 description: Köpare kan vault (save) their credit card details for future purchasing.
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+feature: Payments, Checkout, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -31,7 +32,7 @@ Inloggade kunder kan välja en betalningsmetod på kontrollpanelen **Mitt konto*
 
 1. Navigerar till **[!UICONTROL Stored Payment Methods]** i den vänstra navigeringen för att se alla deras lagrade betalningsmetoder.
 
-   Mer information finns i [Lagrade betalningsmetoder](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/payments/stored-payment-methods).
+   Mer information finns i [Lagrade betalningsmetoder](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods).
 
 1. Kunden klickar på **[!UICONTROL Add New Card]** för att lagra ett nytt kort.
 
@@ -72,10 +73,10 @@ Du kan bara använda kort i säkert läge i administratören om kunden har både
 
 Så här skapar du en beställning i Admin för en kund som använder sitt kreditkort som säkerhet:
 
-1. [Skapa en beställning och lägg till produkter](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=sv-SE).
-1. I _[!UICONTROL Payment & Shipping Information]_&#x200B;väljer du **[!UICONTROL Stored Cards]**&#x200B;som betalningsmetod.
+1. [Skapa en beställning och lägg till produkter](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. I _[!UICONTROL Payment & Shipping Information]_väljer du **[!UICONTROL Stored Cards]**som betalningsmetod.
 1. Välj önskad betalningsmetod för bankkort.
-1. När du har slutfört eventuella andra nödvändiga steg för beställningen [skickar du den](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=sv-SE#step-3%3A-submit-the-order).
+1. När du har slutfört eventuella andra nödvändiga steg för beställningen [skickar du den](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
    ![Använd kreditkort i betal i Admin för kund](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
