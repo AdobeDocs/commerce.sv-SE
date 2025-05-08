@@ -29,7 +29,7 @@ Så här slutför du introduktionen av sandlådor:
       Om du skapade ett PayPal-sandlådekonto under PayPal-introduktionsprocessen i sandlådan måste du [återställa din introduktionssandlåda](#reset-your-sandbox-account) eftersom du inte kan verifiera din e-post.
 
    1. Välj **[!UICONTROL Business]** som kontotyp och klicka på **[!UICONTROL Create]**.
-   1. Klicka i avsnittet _[!UICONTROL Sandbox Accounts]_på de tre punkterna i kolumnen_[!UICONTROL Manage accounts]_ för sandlådekontot som du skapade.
+   1. Klicka i avsnittet _[!UICONTROL Sandbox Accounts]_&#x200B;på de tre punkterna i kolumnen&#x200B;_[!UICONTROL Manage accounts]_ för sandlådekontot som du skapade.
    1. Klicka på **[!UICONTROL View/edit account]**.
 
       ![PayPal - Visa/redigera sandlådekonto](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}

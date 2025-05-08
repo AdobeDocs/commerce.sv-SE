@@ -33,7 +33,7 @@ Du kan hämta Transactions-rapporten i ett CSV-filformat och använda den i befi
 
 Rapportvyn Transaktioner är tillgänglig i vyn Transaktioner för Betalningstjänster. Den innehåller all tillgänglig information om transaktioner för din butik.
 
-På sidofältet _Admin_ går du till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**för att visa rapportvyn i tabellform för transaktioner.
+På sidofältet _Admin_ går du till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;för att visa rapportvyn i tabellform för transaktioner.
 
 ![Rapportvy för transaktioner](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
@@ -55,7 +55,7 @@ I rapportvyn Transaktioner kan du välja datakälla -**[!UICONTROL Live]** eller
 
 ![Val av datakällor](assets/datasource.png){width="300" zoomable="yes"}
 
-Om _[!UICONTROL Live]_är den valda datakällan kan du visa rapportinformation för dina butiker som använder [!DNL Payment Services] i produktionsläge. Om_[!UICONTROL Sandbox]_ är den valda datakällan kan du visa rapportinformation för sandlådeläget.
+Om _[!UICONTROL Live]_&#x200B;är den valda datakällan kan du visa rapportinformation för dina butiker som använder [!DNL Payment Services] i produktionsläge. Om&#x200B;_[!UICONTROL Sandbox]_ är den valda datakällan kan du visa rapportinformation för sandlådeläget.
 
 Datakällmarkeringar fungerar så här:
 
@@ -65,7 +65,7 @@ Datakällmarkeringar fungerar så här:
 
 Så här väljer du datakälla för din [!UICONTROL Transactions]-rapport:
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Klicka på **[!UICONTROL Data source]** och välj **[!UICONTROL Live]** eller **[!UICONTROL Sandbox]**.
 
    Rapportresultaten genereras om baserat på den valda datakällan.
@@ -74,7 +74,7 @@ Så här väljer du datakälla för din [!UICONTROL Transactions]-rapport:
 
 I rapportvyn Transaktioner kan du anpassa tidsramen för de transaktioner som du vill visa genom att välja specifika datum. Som standard visas 30 dagars transaktioner i rutnätet.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Klicka på kalenderväljarfiltret **[!UICONTROL Transaction dates]**.
 1. Välj tillämpligt datumintervall.
 1. Visa transaktionerna för de angivna datumen i rutnätet.
@@ -83,23 +83,23 @@ I rapportvyn Transaktioner kan du anpassa tidsramen för de transaktioner som du
 
 I rapportvyn Transaktioner kan du filtrera de statusresultat du vill visa genom att välja filtervillkor.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Klicka på väljaren **[!UICONTROL Filter]**.
 1. Växla _[!UICONTROL Transaction Result]_-alternativen för att visa rapportresultat för endast valda ordertransaktioner.
 1. Växla _[!UICONTROL Payment Method]_-alternativen för att visa rapportresultat för den typ av betalning som används för transaktionen.
-1. Växla mellan alternativen för _[!UICONTROL Payment Detail]_om du vill se ytterligare information om vilken typ av betalning som används, när det är tillgängligt.
+1. Växla mellan alternativen för _[!UICONTROL Payment Detail]_&#x200B;om du vill se ytterligare information om vilken typ av betalning som används, när det är tillgängligt.
 1. Ange ett _minimiorderbelopp_ eller _Max orderbelopp_ om du vill visa rapportresultat inom det orderbeloppsintervallet.
-1. Ange en _[!UICONTROL Order ID]_om du vill söka efter en specifik transaktion.
-1. Introducera _[!UICONTROL Card Last Four]_om du vill söka efter ett visst kredit- eller betalkort.
-1. Ange en _[!UICONTROL Customer ID]_om du vill visa alla transaktioner för en viss kund.
-1. Ange _[!UICONTROL Customer Email]_om du vill filtrera transaktioner för det e-postmeddelandet.
+1. Ange en _[!UICONTROL Order ID]_&#x200B;om du vill söka efter en specifik transaktion.
+1. Introducera _[!UICONTROL Card Last Four]_&#x200B;om du vill söka efter ett visst kredit- eller betalkort.
+1. Ange en _[!UICONTROL Customer ID]_&#x200B;om du vill visa alla transaktioner för en viss kund.
+1. Ange _[!UICONTROL Customer Email]_&#x200B;om du vill filtrera transaktioner för det e-postmeddelandet.
 1. Klicka på **[!UICONTROL Hide filters]** om du vill dölja filtret.
 
 ### Visa och dölja kolumner
 
 I rapporten Transaktioner visas alla tillgängliga informationskolumner som standard. Du kan dock anpassa vilka kolumner som visas i rapporten.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Klicka på ikonen **[!UICONTROL Column settings]** ![för kolumninställningar](assets/column-settings.png){width="20" zoomable="yes"}.
 1. Om du vill anpassa vilka kolumner som visas i rapporten markerar eller avmarkerar du kolumnerna i listan.
 
@@ -111,7 +111,7 @@ I rapportvyn Transaktioner visas en _[!UICONTROL Last updated]_-tidsstämpel som
 
 Du kan även framtvinga en uppdatering av rapportdata manuellt för att se den senaste rapportinformationen.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**på sidofältet_ Admin _.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;på sidofältet_ Admin _.
 1. Klicka på ikonen _Uppdatera_ (![uppdateringsikonen](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Transaktionsrapportens data uppdateras, en *[!UICONTROL Update complete]*-bekräftelse visas och den senaste informationen finns i rutnätet.

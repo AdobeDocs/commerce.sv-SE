@@ -23,5 +23,5 @@ Med [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open So
 1. Expandera **[!UICONTROL Sales]** på sidofältet _Admin_ och välj **[!UICONTROL Orders]**.
 1. Klicka på **[!UICONTROL Create New Order]**.
 1. Slutför avsnitt efter behov för ordern (mer information finns i [Skapa en order](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}).
-1. I avsnittet _[!UICONTROL Payment Method]_bör du kunna använda [!DNL Payment Services] som betalningsmetod.
+1. I avsnittet _[!UICONTROL Payment Method]_&#x200B;bör du kunna använda [!DNL Payment Services] som betalningsmetod.
 1. Klicka på **[!UICONTROL Submit Order]**.
