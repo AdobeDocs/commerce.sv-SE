@@ -44,7 +44,7 @@ Om du vill använda [!DNL Payment Services] måste du först ansluta din Commerc
 
 ### Vilket [!DNL Payment Services]-alternativ passar dig?
 
->[!VIDEO](https://video.tv.adobe.com/v/3447811)
+>[!VIDEO](https://video.tv.adobe.com/v/3447922?captions=swe)
 
 Mer information om hur du konfigurerar tillägget [!DNL Payment Services] finns i [Anslut](connect.md).
 

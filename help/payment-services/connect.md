@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Du ansluter din Commerce-instans med en API-nyckel och en privat nyckel, och anger datautrymmet i konfigurationen med [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=sv-SE). **Du konfigurerar den här anslutningen endast en gång.**
 
->[!VIDEO](https://video.tv.adobe.com/v/3447835)
+>[!VIDEO](https://video.tv.adobe.com/v/3448021?captions=swe)
 
 >[!INFO]
 >
