@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] gör att handlare kan se spårningsinformationen för en leverans i sin PayPal Merchant Dashboard.
 
-Mer information om leveransrutnätet för Adobe Commerce finns i avsnittet [försändelser](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}.
+Mer information om leveransrutnätet för Adobe Commerce finns i avsnittet [försändelser](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}.
 
 ## Hur spårning av leveransen fungerar
 

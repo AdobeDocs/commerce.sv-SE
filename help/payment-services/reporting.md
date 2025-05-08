@@ -132,9 +132,9 @@ Transaktionsrapporter innehåller följande information.
 
 | Kolumn | Beskrivning |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce order-ID (innehåller endast värden för slutförda transaktioner och är tomt för avvisade transaktioner)<br> <br>Om du vill visa relaterad [orderinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klickar du på ID:t. |
+| [!UICONTROL Order ID] | Commerce order-ID (innehåller endast värden för slutförda transaktioner och är tomt för avvisade transaktioner)<br> <br>Om du vill visa relaterad [orderinformation](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} klickar du på ID:t. |
 | [!UICONTROL PayPal Transaction ID] | Transaktions-ID som tillhandahålls av betalningsförmedlaren. Innehåller endast värden för genomförda transaktioner och innehåller ett bindestreck för avvisade transaktioner. Du kan klicka på det här ID:t för att komma åt sidan PayPals transaktionsinformation. |
-| [!UICONTROL Customer ID] | Commerce kund-ID för en order <br> <br>Mer information finns i avsnittet [Kundinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}. |
+| [!UICONTROL Customer ID] | Commerce kund-ID för en order <br> <br>Mer information finns i avsnittet [Kundinformation](https://experienceleague.adobe.com/sv/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"}. |
 | [!UICONTROL Transaction Date] | Tidsstämpel för transaktionsdatum |
 | [!UICONTROL Payment Method] | Typ av betalning som används för transaktionen med information om varumärke och korttyp. Se [korttyper](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) för mer information, tillgänglig för Payment Services version 1.6.0 och senare |
 | [!UICONTROL Payment Detail] | Tillhandahåller ytterligare information om vilken typ av betalning som används för transaktionen, om sådan finns. |

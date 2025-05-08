@@ -42,7 +42,7 @@ I det här flödesdiagrammet visas processen för introduktionssandlådan med en
 1. [Konfigurera sandlådetjänsten](sandbox.md#enable-sandbox-testing) (eller, alternativt, fortsätta till [aktivera live-betalningar](sandbox.md#enable-live-payments) om du har testat funktioner i en annan miljö) med ett PayPal-betalningshanteringskonto.
 1. Testa betalningar i en [sandlådemiljö](sandbox.md#test-in-sandbox-environment).
 
-[![läs mer](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![läs mer](assets/learn-more-button.svg)](https://helpx.adobe.com/se/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Produktion]
 
@@ -83,7 +83,7 @@ I det här flödesdiagrammet visas de sandlådesteg som krävs för att starta [
 1. [Konfigurera sandlådetjänsten](sandbox.md#enable-sandbox-testing) (eller, alternativt, fortsätta till [aktivera live-betalningar](sandbox.md#enable-live-payments) om du har testat funktioner i en annan miljö) med ett PayPal-betalningshanteringskonto.
 1. Testa betalningar i en [sandlådemiljö](sandbox.md#test-in-sandbox-environment).
 
-[![läs mer](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![läs mer](assets/learn-more-button.svg)](https://helpx.adobe.com/se/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Produktion]
 
@@ -110,7 +110,7 @@ I det här flödesdiagrammet visas den allmänna processen för att aktivera [!D
 
 >[!MORELIKETHIS]
 >
-> * [Felsök [!DNL Payment Services] installationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
-> * [PayPal-sandlådekontot har inte verifierats](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
-> * [Fördröjd [!DNL Payment Services] rapportdata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
-> * [Testkreditkortet fungerar inte med PayPal när betalningar bearbetas i sandlådemiljö](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+> * [Felsök [!DNL Payment Services] installationen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=sv-SE)
+> * [PayPal-sandlådekontot har inte verifierats](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=sv-SE)
+> * [Fördröjd [!DNL Payment Services] rapportdata](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=sv-SE)
+> * [Testkreditkortet fungerar inte med PayPal när betalningar bearbetas i sandlådemiljö](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=sv-SE)

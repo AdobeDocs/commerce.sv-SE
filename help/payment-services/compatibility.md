@@ -26,7 +26,7 @@ Om du vill använda [!DNL Payment Services] måste du först ansluta din Commerc
 
    >[!TIP]
    >
-   > Mer information finns i videon [Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector).
+   > Mer information finns i videon [Adobe Commerce Services Connector](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector).
 
 1. Om du redan har anslutit din instans går du till sidan [onboarding](onboard.md) för nästa steg.
 
@@ -96,13 +96,13 @@ Mer information om hur du konfigurerar tillägget [!DNL Payment Services] finns 
 
 >[!ENDTABS]
 
-Se sidorna för [Livscykelprincipen](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) och [[!DNL Payment Services] versionsinformationen](release-notes.md) för mer information om version och version.
+Se sidorna för [Livscykelprincipen](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=sv-SE) och [[!DNL Payment Services] versionsinformationen](release-notes.md) för mer information om version och version.
 
 Mer information om hur du får de fullständiga instruktionerna och startar introduktionsprocessen finns i [Kom igång med [!DNL Payment Services]](onboard.md).
 
 ### Godkända kreditkort och valutor
 
-[!DNL Payment Services] accepterar valutorna för de länder [där den är tillgänglig](#availability). Mer information om hur du ställer in valutakurser finns i [Valutakonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html).
+[!DNL Payment Services] accepterar valutorna för de länder [där den är tillgänglig](#availability). Mer information om hur du ställer in valutakurser finns i [Valutakonfiguration](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=sv-SE).
 
 Mer information om valutor och betalningsmetoder för PayPal-produkter och -tjänster finns på följande sidor:
 

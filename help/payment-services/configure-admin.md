@@ -29,7 +29,7 @@ Du kan aktivera [!DNL Payment Services] för din butik och din _[!UICONTROL Merc
 1. Expandera avsnittet _[!UICONTROL General Configuration]_&#x200B;i avsnittet&#x200B;_[!UICONTROL [!DNL Payment Services]]_.
 1. För **Aktivera** anger du det till `Yes` för att aktivera [!DNL Payment Services] för din butik.
 1. För **Metod** anger du `Sandbox` om du fortfarande testar [!DNL Payment Services] för din butik eller `Production` om du är redo att aktivera livebetalningar.
-1. Dina **[!UICONTROL Payment Services Sandbox ID]**- och **[!UICONTROL Payment Services Production ID]**-värden fylls i automatiskt när du har konfigurerat [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} och går till [!DNL Payment Services]-instrumentpanelen för första gången. Gör detta för att slutföra introduktionen av din sandlåda och/eller produktionsmiljö. Dessa värden kopplar ditt SaaS-ID till [!DNL Payment Services].
+1. Dina **[!UICONTROL Payment Services Sandbox ID]**- och **[!UICONTROL Payment Services Production ID]**-värden fylls i automatiskt när du har konfigurerat [Commerce Services Connector](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} och går till [!DNL Payment Services]-instrumentpanelen för första gången. Gör detta för att slutföra introduktionen av din sandlåda och/eller produktionsmiljö. Dessa värden kopplar ditt SaaS-ID till [!DNL Payment Services].
 
    >[!WARNING]
    >
@@ -80,7 +80,7 @@ Mer information finns i [Betalningsalternativ](payments-options.md#paypal-smart-
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=sv-SE) för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | butiksvy | Sorteringsordningen för den angivna betalningsmetoden på utcheckningssidan. `Numeric Only` värde |
 | [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera kreditkortsfält på utcheckningssidan. Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | butiksvy | Aktivera eller inaktivera [kreditkortssäkringen](vaulting.md). Alternativ: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -114,7 +114,7 @@ Mer information finns i [Betalningsalternativ](payments-options.md#apple-pay-but
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=sv-SE) för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera [!DNL Apple Pay] på utcheckningssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | butiksvy | Sorteringsordningen för den angivna betalningsmetoden på utcheckningssidan. `Numeric Only` värde |
 | [!UICONTROL Show buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL Apple Pay] på produktinformationssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -151,7 +151,7 @@ Mer information finns i [Betalningsalternativ](payments-options.md#google-pay-bu
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Anger textetiketten som visas för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: `[!UICONTROL text field]` |
-| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) för den angivna betalningsmetoden. Alternativ: `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
+| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=sv-SE) för den angivna betalningsmetoden. Alternativ: `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
 | [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera [!DNL Google Pay] på utcheckningssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | butiksvy | Sorteringsordningen för den angivna betalningsmetoden på utcheckningssidan. `Numeric Only` värde |
 | [!UICONTROL Show buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL Google Pay] på produktinformationssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -199,7 +199,7 @@ Du kan aktivera och konfigurera betalningsalternativen för betalningsknapparna 
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: textfält |
-| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | webbplats | Aktivera eller inaktivera meddelandet Betala senare i kundvagnen, på produktsidan, i minikundvagnen och under kassaflödet. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on checkout page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal payment buttons] på utcheckningssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal payment buttons] på produktinformationssidan. Alternativ: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
