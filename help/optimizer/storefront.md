@@ -278,7 +278,7 @@ Lägg till projektkonfigurationen för Sidekick-tillägget. Med den här konfigu
 
    Mer information finns i [dokumentationen för Sidekick-biblioteket](https://www.aem.live/docs/sidekick-library).
 
-+++
+   +++
 
 1. Uppdatera nyckelvärdena för `url` med värdena för din GitHub-databas.
 
@@ -318,7 +318,7 @@ Lägg till projektkonfigurationen för Sidekick-tillägget. Med den här konfigu
    }
    ```
 
-+++
+   +++
 
 1. Spara filen.
 
