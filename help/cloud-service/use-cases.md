@@ -3,9 +3,9 @@ title: Användningsexempel
 description: Lär dig hur du kan uppnå praktiska användningsfall och affärsscenarier som stöds med  [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-source-git-commit: d5935f4d080c3be1f51bf8916575a3b2f357ee22
+source-git-commit: f01e9ae84830ab265c8b6557ec81e5594179fb10
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ I det här arbetsflödet visas utcheckningsprocessen för en kund som köper en 
 
 ### Aktivera betaltjänster
 
-1. Gå till [!UICONTROL **Inställningar**] > [!UICONTROL **Betalningsmetoder**] i Commerce Admin.
+1. Gå till [!UICONTROL **Lager**] > [!UICONTROL Settings] > [!UICONTROL **Konfiguration**] > [!UICONTROL **Betalningsmetoder**] i Commerce Admin.
 
 1. Ange `Payment Services Sandbox ID` och `Payment Services Sandbox Key` i avsnittet [!UICONTROL **Allmän konfiguration**]. Du kan få dessa ID:n genom att följa stegen som beskrivs i [Sandbox-introduktion](../payment-services/sandbox.md#sandbox-onboarding)
 
@@ -199,7 +199,7 @@ Tänk dig ett scenario där du snabbt vill ändra bakgrunden i en produktbild. M
 
 #### Lägg till bilden i Commerce AEM Assets
 
-1. På [navigeringspanelen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) i AEM as a Cloud Service väljer du **Assets** > **Filer** > **Commerce** och klickar på resursen som du skapade i föregående avsnitt.
+1. På [navigeringspanelen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) i AEM as a Cloud Service väljer du **Assets** > **Filer** > **Commerce** och klickar på resursen som du skapade i föregående avsnitt.
 
    ![e-handelsmapp](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -249,7 +249,7 @@ Adobe Commerce Generate Variations använder generativ AI för att automatisera 
 
 ### Generera text
 
-1. Öppna din butiksplats med [Universal Editor](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Öppna din butiksplats med [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Markera det textblock som du vill redigera.
 
@@ -263,7 +263,7 @@ Adobe Commerce Generate Variations använder generativ AI för att automatisera 
 
 ### Generera innehåll och bilder
 
-1. Öppna [Generera variationer](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Öppna [Generera variationer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Välj mallen [!UICONTROL **Hero Banner**].
 
