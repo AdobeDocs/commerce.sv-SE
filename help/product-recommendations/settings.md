@@ -1,9 +1,10 @@
 ---
 title: Inställningar
 description: Lär dig hur du ändrar källan för dina [!DNL Product Recommendations] -data och hur du aktiverar visuella rekommendationer.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
+source-git-commit: c11e3fbc871600f413867e0c5c0b75ad705cf115
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Mellanlagringsorder spelas in med mellanlagring `environmentId`. Det påverkar i
 
 >[!NOTE]
 >
->När du använder Produktrekommendationer via REST kan parametern `alternateEnvironmentId` användas för att ange andra dataspaces. När du använder produktrekommendationer via GraphQL är den här parametern inte tillgänglig.
+>När du använder Produktrekommendationer via REST kan parametern `alternateEnvironmentId` användas för att ange andra dataspaces. Den här parametern är inte tillgänglig när produktrekommendationer används via [GraphQL](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/).
 
 ## Välj rekommendationskälla
 

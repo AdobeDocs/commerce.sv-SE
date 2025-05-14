@@ -1,9 +1,10 @@
 ---
 title: Headless
 description: Lär dig hur du integrerar  [!DNL Product Recommendations]  i en headlessbutik.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
+source-git-commit: 45bf78cb4ed975e0803e5ab2701d444fed16d2bb
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ Du kan integrera [!DNL Product Recommendations] i ett headless-lager med antinge
 
 Anpassade och headless-integratörer bör referera till dessa Luma- och PWA-instruktioner som en föreslagen implementering. Det finns många sätt att implementera produktrekommendationer i headless-lösningar och den här dokumentationen täcker inte alla scenarier. Integratörerna måste omfatta händelser, design och testning för sina implementeringar.
 
-[!DNL Product Recommendations] kräver [beteendedata och katalogdata](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=sv-SE) för att fungera. Synkroniseringsprocessen för katalogdata förblir oförändrad i en headless-implementering, men ändringar krävs för att samla in beteendedata.
+[!DNL Product Recommendations] kräver [beteendedata och katalogdata](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) för att fungera. Synkroniseringsprocessen för katalogdata förblir oförändrad i en headless-implementering, men ändringar krävs för att samla in beteendedata.
 
 >[!NOTE]
 >
@@ -30,7 +31,7 @@ Du kan utföra båda dessa åtgärder med de tillgängliga SDK:erna enligt följ
 
 1. [Installera](install-configure.md) modulen [!DNL Product Recommendations].
 
-1. Installera och använd [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) för att utlösa [beteendehändelserna](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=sv-SE).
+1. Installera och använd [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) för att utlösa [beteendehändelserna](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html).
 
    Det minsta antal händelser som krävs för att returnera [!DNL Product Recommendations] resultat:
 
@@ -54,3 +55,5 @@ Du kan utföra båda dessa åtgärder med de tillgängliga SDK:erna enligt följ
 1. När beteendedata har samlats in kan du [skapa](create.md) [!DNL Product Recommendations] i Admin.
 
 1. Använd [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) för att hämta rekommendationsenheterna på butiken. SDK returnerar nödvändiga produktdata för att kunna återge rekommendationsenheter på en sida.
+
+1. Lär dig hur du använder [`recommendations` GraphQL-frågan ](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) för att returnera information om produktrekommendationsblock för en viss SKU med mera.
