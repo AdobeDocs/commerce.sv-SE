@@ -3,9 +3,10 @@ title: Kategorimarknadsföring
 description: Använd [!DNL Live Search] Kategorimarknadsföring för en snabbare shoppingupplevelse.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Med kategorimarknadsföring kan butiksägare tillämpa [!DNL Live Search] Intell
 
 Den här videon är en introduktion till Category Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448855?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 Funktionen finns i Admin på **Marknadsföring** > SEO &amp; Search > **[!DNL Live Search]** > **Kategorimarknadsföring**.
 
