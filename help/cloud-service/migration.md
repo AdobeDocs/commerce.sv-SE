@@ -2,7 +2,7 @@
 title: Migrera till  [!DNL Adobe Commerce as a Cloud Service]
 description: Lär dig hur du migrerar till  [!DNL Adobe Commerce as a Cloud Service].
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
 source-wordcount: '1001'
@@ -69,7 +69,7 @@ Migrering från din nuvarande Adobe Commerce-instans till en ny [!DNL Adobe Comm
 
    * [Adobe Commerce på Cloud Services-arkitekturen](./overview.md) - Granska plattformsarkitekturen och hur den skiljer sig från din nuvarande Adobe Commerce-instans.
    * [Adobe Commerce Extensibility Framework](https://developer.adobe.com/commerce/extensibility/) - Identifiera hur du vill ändra de aktuella anpassningarna.
-   * [Commerce Storefront från Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/) - Granska den rekommenderade lösningen för Store.
+   * [Commerce Storefront från Edge Delivery](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE) - Granska den rekommenderade lösningen för Store.
 
 1. Granska din anpassningskompatibilitet:
 
@@ -91,7 +91,7 @@ Följande steg beskriver hur migreringen ska utvecklas och köras:
 
 1. Ställ in någon av följande GraphQL-baserade butiker:
 
-   * [Skapa en Commerce-butik](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+   * [Skapa en Commerce-butik](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE)
    * [Använd PWA Studio för att skapa en anpassad GraphQL-baserad butik](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. Migrera data från din tidigare Commerce-instans till ACCS:
