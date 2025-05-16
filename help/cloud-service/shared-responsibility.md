@@ -3,9 +3,10 @@ title: Delat ansvar
 description: Lär dig mer om säkerhetsansvarsområdena för alla parter som deltar i ditt [!DNL Adobe Commerce as a Cloud Service] projekt.
 role: Admin, Architect, Leader
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
