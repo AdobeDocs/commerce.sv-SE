@@ -42,7 +42,7 @@ De logiska operatorerna `AND` och `OR` används för att koppla flera villkor. O
 
 ### Kategori
 
-[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 
 Filtrerar produkter baserat på deras kategori. Kategorifiltret använder direkta kategoritilldelningar och deras underkategorier. Om du till exempel aktiverar ett exkluderingsvillkor för kategorin `Gear` utesluts produkter som tilldelats `Gear` och alla dess underkategorier, till exempel `Gear/Bags` eller `Gear/Fitness Equipment`. Detsamma gäller för ett inkluderingsfilter för en kategori. Om du t.ex. aktiverar ett inkluderingsvillkor för kategorin `Gear` omfattar det produkter som har tilldelats `Gear` och alla dess underkategorier som `Gear/Bags` eller `Gear/Fitness Equipment`.
 
@@ -50,7 +50,7 @@ Kategorifältet visar kategorier som tillhör den aktuella butiksgranskningen.
 
 >[!NOTE]
 >
->För B2B-handlare följer kategorifiltret de [kundspecifika produktkategorier](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) som du har konfigurerat.
+>För B2B-handlare följer kategorifiltret de [kundspecifika produktkategorier](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=sv-SE) som du har konfigurerat.
 
 Adobe Commerce rekommenderar att du använder följande kategorifilterkonfiguration när du distribuerar rekommendationer till dina sidtyper:
 
@@ -72,23 +72,23 @@ Produktfiltren anger vilka specifika produkter som kan visas i rekommendationern
 
 ### Typ
 
-[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 
 Ett filter baserat på produkttyp innehåller eller utesluter antingen alla produkter av en viss typ. Typer som stöds är _simple_, _configurable_, _virtual_, _downloadable_ eller _presentcard_. _Paket_, _grupperad_ och anpassade produkttyper stöds inte.
 
 ### Synlighet
 
-[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 
 Filtrerar produkter baserat på synlighet, till exempel: _Katalog_, _Sök_ eller båda.
 
 ### Pris
 
-Ett filter baserat på produktpriset använder det slutliga priset för att göra jämförelsen. Slutpriset inkluderar rabatter eller specialpriser som är tillgängliga för anonyma kunder. För B2B-handlare återspeglar det pris som visas de [kundspecifika grupppriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) som du har konfigurerat.
+Ett filter baserat på produktpriset använder det slutliga priset för att göra jämförelsen. Slutpriset inkluderar rabatter eller specialpriser som är tillgängliga för anonyma kunder. För B2B-handlare återspeglar det pris som visas de [kundspecifika grupppriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=sv-SE) som du har konfigurerat.
 
 ### Lagerstatus
 
 Följande exkluderingsfilter kan användas för att filtrera produkter baserat på lagerstatus:
 
 - Slut på lager - (endast undantag) Exkluderar produkter som inte finns i lager.
-- Låga lagernivåer - (endast undantag) Exkluderar produkter med låga lagernivåer. Låg lagerstatus baseras på värdet _Endast X vänster tröskelvärde_ i [lagerkonfigurationen](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- Låga lagernivåer - (endast undantag) Exkluderar produkter med låga lagernivåer. Låg lagerstatus baseras på värdet _Endast X vänster tröskelvärde_ i [lagerkonfigurationen](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=sv-SE).
