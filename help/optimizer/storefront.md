@@ -3,9 +3,9 @@ title: Konfigurera din butik
 description: Lär dig hur du konfigurerar din  [!DNL Adobe Commerce Optimizer] butik.
 role: Developer
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: f1aa8439d6322e5278ab787f5cd096e16b7813a2
+source-git-commit: 645e2636182f5c9a3b198161d62d5cf2bf7123b4
 workflow-type: tm+mt
-source-wordcount: '2150'
+source-wordcount: '2137'
 ht-degree: 0%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 0%
 >
 >I den här dokumentationen beskrivs en produkt vid utveckling av tidig åtkomst och den återspeglar inte alla funktioner som är avsedda för allmän tillgänglighet.
 
-I den här självstudiekursen visas hur du konfigurerar och använder [Adobe Commerce Storefront från Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE) för att skapa en prestanda, skalbar och säker Commerce Storefront som drivs av data från din [!DNL Adobe Commerce Optimizer]-instans.
+I den här självstudiekursen visas hur du konfigurerar och använder [Adobe Commerce Storefront från Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) för att skapa en prestanda, skalbar och säker Commerce Storefront som drivs av data från din [!DNL Adobe Commerce Optimizer]-instans.
 
 
 ## Förutsättningar
 
 * Se till att du har ett GitHub-konto (github.com) som kan skapa databaser och är konfigurerat för lokal utveckling.
 
-* Lär dig mer om begreppen och arbetsflödet för att utveckla Commerce-butiker på Adobe Edge Delivery Services genom att läsa [Översikt](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=sv-SE) i dokumentationen för Adobe Commerce Storefront.
+* Lär dig mer om begreppen och arbetsflödet för att utveckla Commerce-butiker på Adobe Edge Delivery Services genom att läsa [Översikt](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) i dokumentationen för Adobe Commerce Storefront.
 * Konfigurera utvecklingsmiljön
 
 
@@ -59,7 +59,7 @@ Installera Node Version Manager (NVM) och den nödvändiga Node.js-versionen (22
 
 >[!TIP]
 >
->Den här konfigurationsprocessen för butiken är att använda [!DNL Adobe Commerce Optimizer] med Adobe Commerce Edge Delivery Service Storefront. Ytterligare resurser för att utöka och anpassa din [!DNL Adobe Commerce Optimizer]-lösning finns tillgängliga via [App Builder för Adobe Commerce](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) och [API Mesh för Adobe Developer App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Kontakta din Adobe-representant om du vill ha information om åtkomst och användning.
+>Den här konfigurationsprocessen för butiken är att använda [!DNL Adobe Commerce Optimizer] med Adobe Commerce Edge Delivery Service Storefront. Ytterligare resurser för att utöka och anpassa din [!DNL Adobe Commerce Optimizer]-lösning finns tillgängliga via [App Builder för Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) och [API Mesh för Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Kontakta din Adobe-representant om du vill ha information om åtkomst och användning.
 
 #### Installera Sidekick
 
@@ -68,7 +68,7 @@ Installera Sidekick webbläsartillägg om du vill redigera, förhandsgranska och
 
 ## Skapa en butik
 
-I butiken som du skapar för ditt [!DNL Adobe Commerce Optimizer]-projekt används en anpassad version av Adobe Commerce på Edge Delivery Services Storefront-mallsidan. Mallen är en uppsättning filer och mappar som utgör en startpunkt för utveckling av butiker. Den här installationsprocessen skiljer sig från standardkonfigurationsprocessen för en [Adobe Commerce på Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE).
+I butiken som du skapar för ditt [!DNL Adobe Commerce Optimizer]-projekt används en anpassad version av Adobe Commerce på Edge Delivery Services Storefront-mallsidan. Mallen är en uppsättning filer och mappar som utgör en startpunkt för utveckling av butiker. Den här installationsprocessen skiljer sig från standardkonfigurationsprocessen för en [Adobe Commerce på Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 >[!NOTE]
 >
@@ -78,27 +78,19 @@ I butiken som du skapar för ditt [!DNL Adobe Commerce Optimizer]-projekt använ
 
 Följ de här stegen för att konfigurera en butiksplats som ska användas med [!DNL Adobe Commerce Optimizer].
 
-1. **[Skapa en innehållsmapp](#step-1-create-a-content-folder)**-Skapa en delad innehållsmapp i Google Drive eller Sharepoint. Den här mappen innehåller exempelinnehåll och resurser för din butik.
-
-1. **[Skapa en koddatabas](#step-2-create-a-code-repository)**-Skapa en GitHub-databas från standardmallen Adobe Commerce + Edge Delivery Services. Inkludera alla grenar från källdatabasen.
-1. **[Uppdatera storefront-mallsidan](#step-3-update-the-storefront-boilerplate)**-Uppdatera den anpassade mallmallen på grenen `aco` för att ansluta innehållsmappen till butiken.
-1. **[Ladda upp den uppdaterade butiksskyltkoden](#step-4-upload-the-updated-boilerplate-code)**-Skriv över koden i grenen `main` med den uppdaterade koden från grenen `aco`.
-1. **[Lägg till appen CodeSync](#step-5-add-the-aem-code-sync-app)**-Anslut din databas till Edge Delivery-tjänsten. Anslut inte appen Code Sync förrän du har slutfört anpassningen av källkoden och är redo att skicka koden till grenen `main`.
-1. **[Förhandsgranska och publicera ditt innehåll](#step-6-preview-and-publish-your-content)**-Använd Sidekick-tillägget för att förhandsgranska och publicera webbplatsinnehållet från innehållsmappen till butiken.
-1. **[Förhandsgranska webbplatsen och visa exempeldata](#step-7-preview-your-site)**-Anslut till din butiksplats för att visa exempelinnehåll och data från demoinstansen [!DNL Adobe Commerce Optimizer].
-1. **[Utveckla butiken i den lokala miljön](#step-8-develop-the-storefront-in-your-local-environment)**-Installera de nödvändiga beroendena. Starta den lokala utvecklingsservern och uppdatera butikskonfigurationen för att ansluta till [!DNL Adobe Commerce Optimizer]-instansen som Adobe har etablerat åt dig.
+1. **[Skapa en koddatabas](#step-1%3A-create-site-code-repository)**-Skapa en GitHub-databas från standardmallen Adobe Commerce + Edge Delivery Services. Inkludera alla grenar från källdatabasen.
+1. **[Uppdatera storefront-mallsidan](#step-2%3A-update-the-storefront-boilerplate)**-Uppdatera den anpassade mallmallen på grenen `aco` för att ansluta innehållsmappen till butiken.
+1. **[Ladda upp den uppdaterade butiksskyltkoden](#step-3%3A-upload-the-updated-boilerplate-code)**-Skriv över koden i grenen `main` med den uppdaterade koden från grenen `aco`.
+1. **[Lägg till appen CodeSync](#step-5%3A-add-the-aem-code-sync-app)**-Anslut din databas till Edge Delivery-tjänsten. Anslut inte appen Kodsynkronisering förrän du har slutfört anpassningen av källkoden och överfört koden till grenen `main`.
+1. **[Lägg till innehållsdokument i din butik](#step-6%3A-add-content-documents-for-your-storefront)**-Använd klonverktyget för demoinnehåll för att skapa och initiera ditt butiksinnehåll i dokumentförfattarmiljön som finns på `https://da.live`.
+1. **[Förhandsgranska webbplatsen och visa exempeldata](#step-7%3A-preview-your-site)**-Anslut till din butiksplats för att visa exempelinnehåll och data från demoinstansen [!DNL Adobe Commerce Optimizer].
+1. **[Utveckla butiken i den lokala miljön](#step-8%3A-develop-the-storefront-in-your-local-environment)**-Installera de nödvändiga beroendena. Starta den lokala utvecklingsservern och uppdatera butikskonfigurationen för att ansluta till [!DNL Adobe Commerce Optimizer]-instansen som Adobe har etablerat åt dig.
 1. **[Nästa steg](#next-steps)**-Lär dig mer om att hantera och visa innehåll och data i butiken.
 
-### Steg 1: Skapa en innehållsmapp
 
-Följ instruktionerna i dokumentationen för Adobe Commerce Storefront för att lägga till en delad innehållsmapp i Google Drive eller Sharepoint och lägga till exempelinnehållet. Exempelinnehållet innehåller bilder, text och andra resurser som utgör din plats.
+### Steg 1: Skapa platskoddatabas
 
-* [Skapa och dela en Google Drive- eller Sharepoint-mapp](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE#create-and-share-folder)
-* [Läs in exempelinnehållet](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE#add-sample-content) i din mapp.
-
-### Steg 2: Skapa en koddatabas
-
-Skapa en lagringsplats för mallkod i GitHub med Edge Delivery Services + Adobe Commerce-mallen för mallsidor.
+Skapa en GitHub-databas för webbplatsens mallkod för butiken med hjälp av mallen Edge Delivery Services + Adobe Commerce-standardmall.
 
 1. Logga in på ditt GitHub-konto.
 
@@ -127,7 +119,7 @@ Skapa en lagringsplats för mallkod i GitHub med Edge Delivery Services + Adobe 
 
    Ignorera meddelanden om pull-begäran som visas i GitHub-användargränssnittet.
 
-### Steg 3: Uppdatera storefront-mallsidan
+### Steg 2: Uppdatera storefront-skylten
 
 Du behöver följande information för att kunna uppdatera koden för skyltplattan för butiken:
 
@@ -141,7 +133,7 @@ Du behöver följande information för att kunna uppdatera koden för skyltplatt
 
   `{YOUR_FOLDER_ID}` är ID:t för mappen som du skapade med exempelinnehållsdata.
 
-#### Uppdatera mallkoden för att ansluta till innehållsmappen
+#### Länka databasen till dokumentförfattarmiljön
 
 1. Klona databasen till din lokala dator.
 
@@ -167,30 +159,34 @@ Du behöver följande information för att kunna uppdatera koden för skyltplatt
 
 1. Uppdatera monteringspunkten i butikskonfigurationsfilen så att den pekar på innehålls-URL:en.
 
-   1. Öppna konfigurationsfilen [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE#vocabulary).
+   1. Öppna konfigurationsfilen [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary).
 
-      ```json
+      ```yaml
       mountpoints:
-       /: {YOUR_MOUNTPOINT_URL}
+        /:
+          url: https://content.da.live/{org}/{site}/
+          type: markup
       
       folders:
        /products/: /products/default
       ```
 
-   1. Ersätt `{YOUR_MOUNTPOINT_URL}` med URL:en för din innehållsmapp.
+   1. Ersätt strängarna `{ORG}` och `{SITE}` med värdena för GitHub-databasen som du skapade för din standardkod.
 
-      Om du till exempel använder Google Drive bör den uppdaterade koden se ut så här.
+      Den uppdaterade koden ska till exempel se ut så här.
 
-      ```json
-       mountpoints:
-        /: https://drive.google.com/drive/folders/1HXPWdQT-EK09IxVQV5HBSHN4QCA1a56Y
+      ```yaml
+      mountpoints:
+        /:
+          url: https://content.da.live/owner-name/aco-storefront/
+          type: markup
       ```
 
    1. Spara filen.
 
-#### Granska dataanslutningskonfigurationen
+#### Granska standardkonfigurationen för dataanslutning
 
-Dataanslutningskonfigurationen upprättar kommunikation mellan storefront och den angivna [!DNL Adobe Commerce Optimizer]-instansen. Med den här anslutningen kan katalogdata flöda till butiken och fylla i olika butiksgränssnitt, inklusive sökkomponenten, produktlistan och produktinformationssidor.
+Standardkonfigurationsfilen (`config.json`) i rotkatalogen för butikens mallkod upprättar kommunikation mellan storefront och den angivna [!DNL Adobe Commerce Optimizer]-instansen. Med den här anslutningen kan katalogdata flöda till butiken och fylla i olika butiksgränssnitt, inklusive sökkomponenten, produktlistan och produktinformationssidor.
 
 Du ansluter till standardinstansen [!DNL Adobe Commerce Optimizer] med exempeldata för den första konfigurationen av butiken.
 
@@ -224,7 +220,7 @@ Du ansluter till standardinstansen [!DNL Adobe Commerce Optimizer] med exempelda
 }
 ```
 
-I den här filen anger följande nyckelvärden den [!DNL Adobe Commerce Optimizer]-instans som ska anslutas till och avgör vilka data som flödar till butiken:
+I filen `config.json` anger följande nyckelvärden den [!DNL Adobe Commerce Optimizer]-instans som ska anslutas till och avgör vilka data som flödar till butiken:
 
 * `commerce-endpoint` anger instansen som ska anslutas. Den är inställd på att använda standardinstansen [!DNL Adobe Commerce Optimizer]. Den här slutpunkten används för att hämta katalogdata.
 * `ac-environment-id` är klientorganisations-ID för instansen [!DNL Adobe Commerce Optimizer].
@@ -238,7 +234,7 @@ Dessa värden anger kanal-ID, språk och prisboks-ID för att skicka katalogdata
 
 #### Konfigurera Sidekick-tillägget
 
-Lägg till projektkonfigurationen för Sidekick-tillägget. Med den här konfigurationen kan du vara säker på att Sidekick är tillgängligt för att hantera innehåll för ditt butiksprojekt.
+1. Lägg till projektkonfigurationen för Sidekick-tillägget. Med den här konfigurationen kan du vara säker på att Sidekick är tillgängligt för att hantera innehåll för ditt butiksprojekt.
 
 >[!NOTE]
 >
@@ -278,7 +274,7 @@ Lägg till projektkonfigurationen för Sidekick-tillägget. Med den här konfigu
 
    Mer information finns i [dokumentationen för Sidekick-biblioteket](https://www.aem.live/docs/sidekick-library).
 
-   +++
++++
 
 1. Uppdatera nyckelvärdena för `url` med värdena för din GitHub-databas.
 
@@ -318,11 +314,11 @@ Lägg till projektkonfigurationen för Sidekick-tillägget. Med den här konfigu
    }
    ```
 
-   +++
++++
 
 1. Spara filen.
 
-### Steg 4: Överför den uppdaterade mallkoden
+### Steg 3: Överför den uppdaterade mallkoden
 
 Om du vill använda den anpassade mallkoden för butiksskylt skriver du över koden på grenen `main` med dina uppdateringar.
 
@@ -369,53 +365,65 @@ Anslut databasen till Edge Delivery-tjänsten genom att lägga till appen AEM Co
 
 1. Välj **Konfigurera** och autentisera sedan med det **företag** eller **konto** som innehåller databasen som du skapade.
 
-1. Välj **Markera endast databaser** i formuläret och välj den databas du skapade.
+1. Välj **Markera endast databaser** i formuläret och välj sedan den databas som du skapade.
 
 1. Välj **Installera** om du vill lägga till appen AEM Code Sync i din databas.
 
    Du bör se ett meddelande om att appen har installerats.
 
-### Steg 6: Förhandsgranska och publicera ditt innehåll
+### Steg 6: Lägg till innehållsdokument i butiken
 
-Om du vill lägga till innehåll i butiken förhandsgranskar och publicerar du butiksinnehållet med Sidekick-tillägget.
+Skapa och initiera ditt butiksinnehåll i dokumentförfattarmiljön på `https://da.live` med hjälp av klonverktyget för demoplatsen. Det här verktyget importerar exempelinnehållet till dokumentförfattarmiljön och slutför innehållsförhandsgranskningen och publiceringsprocessen för alla dokument i exempelinnehållet. Exempelinnehållet innehåller sidlayouter, banderoller, etiketter och andra element som fyller i butiken.
 
-1. Öppna innehållsmappen i Google Drive eller Sharepoint.
+1. Öppna [provinnehållsklonverktyget](https://da.live/app/hlxsites/aem-boilerplate-commerce/tools/site-creator/site-creator).
 
-1. Aktivera Sidekick genom att klicka på ikonen Sidekick i webbläsarens verktygsfält.
+   ![[!DNL AEM demo content clone tool]](./assets/storefront-demo-content-clone-tool.png){width="700" zoomable="yes"}
 
-   ![[!DNL Turn on Sidekick from browser toolbar]](./assets/storefront-enable-sidekick-toolbar.png){width="700" zoomable="yes"}
+1. Klistra in GitHub-URL:en för ditt storefront-mallprojekt i fältet [!UICONTROL **Project GitHub URL**] .
 
-   Om du inte ser ikonen Sidekick kontrollerar du att Sidekick konfigurationsfil `tools/Sidekick/config.json` i `main`-grenen i din GitHub-databas är [korrekt konfigurerad](#configure-the-sidekick-extension).
 
-1. Använd Sidekick verktygsfält för att förhandsgranska och publicera ditt innehåll.
+1. Importera, förhandsgranska och publicera innehållet i dokumentförfattarmiljön och välj **Skapa plats**.
 
-   ![[Välj filer som ska förhandsgranskas och publiceras]](./assets/storefront-content-preview-publish.png){width="700" zoomable="yes"}
+   När webbplatsen har skapats kan du använda länkarna i avsnittet [!UICONTROL Edit content] för att öppna dokumentförfattarmiljön och utforska innehållet och webbplatsen.
 
-   Markera filerna i respektive mapp separat och använd verktygsfältet i Sidekick för att förhandsgranska och publicera alla filer.
+   ![[!DNL AEM demo content clone tool]](./assets/storefront-document-author-environment.png){width="700" zoomable="yes"}
 
-   * **Förhandsgranska**-Överför innehåll till mellanlagringsmiljön. Lagringsutrymmet för mellanlagrings-URL:er avslutas med `.aem.page`.
+   Huvudlänkarna till ditt innehåll och din webbplats har följande format:
 
-   * **Publicera**-Överför innehåll till produktionsmiljön. Produktions-URL:er avslutas med `aem.live`.
+   * **Rotinnehållsmapp**— `https://da.live/#/{ORG}/{SITE}`
+   * **Förhandsgranskning av webbplats**—   `https://main--{SITE}--{ORG}.aem.page/`
+   * **Platsproduktion:**— `https:/main--{SITE}--{ORG}.ae.live/`
 
-Mer information finns i dokumentationen för Adobe Experience Manager [Sidekick](https://www.aem.live/docs/sidekick).
+1. Öppna länken till rotinnehållsmappen för att visa innehållet.
 
-### Steg 7: Förhandsgranska webbplatsen
+   ![[!DNL Storefront Document Author environment]](./assets/storefront-document-author-environment.png){width="700" zoomable="yes"}
+
+   >[!TIP]
+   >
+   >Använd länkarna [!UICONTROL **Lär dig**] och [!UICONTROL **Upptäck**] för att komma åt utbildningsresurser för att hantera din webbplats och ditt webbplatsinnehåll.
+
+### Steg 7: Förhandsgranska webbplatsen och visa exempeldata
 
 Kontrollera att exempelinnehållet och data från Adobe Commerce Optimizer demoinstans visas korrekt.
 
-* **Exempelinnehåll** hämtas från din delade innehållsmapp. Det innehåller sidlayouter, banners och annat innehåll som du publicerat med Sidekick.
+* **Exempelinnehåll** hämtas från din delade innehållsmapp. Den innehåller sidlayouter, banners och etiketter för din webbplats.
 * **Exempeldata** skickas från demoinstansen [!DNL Adobe Commerce Optimizer]. Data innehåller produktdata med produktattribut, bilder, produktbeskrivningar och priser ifyllda baserat på rubrikvärdena som anges i konfigurationsfilen för butiken, `config.json`.
 
 
 #### Anslut till webbplatsen för att visa exempelinnehåll och data
 
-1. Anslut till din webbplats genom att navigera till `https://main--{SITE}--{ORG}.aem.live`.
+1. Visa din webbplats genom att navigera till `https://main--{SITE}--{ORG}.aem.live`.
 
    Ersätt `{ORG}` och `{SITE}` med organisationen och namnet för din standarddatabas.
 
    ![[!DNL ACO storefront site with boilerplate]](./assets/aco-storefront-site-boilerplate.png){width="700" zoomable="yes"}
 
-   Om sidan returnerar 404 kontrollerar du att du har publicerat innehållet med Sidekick-tillägget. Dubbelkontrollera också att monteringspunkten i den uppdaterade `fstab.yaml`-filen pekar på innehållsmappen som du skapade.
+   Om sidan returnerar 404 kontrollerar du följande:
+
+   * [Monteringspunkten i `fstab.yaml`-filen pekar på rätt innehålls-URL](#link-the-repository-to-the-document-author-environment): `https://content.da.live/{ORG}/{SITE}/`
+   * [Du har konfigurerat appen Kodsynkronisering för att ansluta till din GitHub-databas](#step-5%3A-add-the-aem-code-sync-app).
+   * [Du har publicerat innehållet i dokumentförfattarmiljön med hjälp av klonverktyget för demoinnehåll](#step-6%3A-add-content-documents-for-your-storefront).
+
 
 1. Visa exempelkatalogdata som kommer från Commerce Optimizer standardinstans.
 
@@ -431,7 +439,7 @@ Kontrollera att exempelinnehållet och data från Adobe Commerce Optimizer demoi
 
    1. Visa en produktinformationssida genom att välja en däckprodukt på sidan.
 
-      Lägg märke till att vissa komponenter inte fungerar om du utforskar butiken. Om du till exempel lägger till en produkt i kundvagnen returneras ett fel och kontohanteringskomponenterna fungerar inte. Dessa problem uppstår eftersom de här komponenterna inte har konfigurerats för att ta emot data från en Commerce-backend. Data från instansen [!DNL Adobe Commerce Optimizer] fyller bara i sidorna för sökkomponenten, produktlistan och produktinformationen.
+      Lägg märke till att vissa komponenter inte fungerar om du utforskar butiken. Om du till exempel lägger till en produkt i kundvagnen returneras ett fel och kontohanteringskomponenterna fungerar inte. Dessa problem uppstår eftersom de här komponenterna inte har konfigurerats för att ta emot data från en Commerce-backend. Data från instansen [!DNL Adobe Commerce Optimizer] fyller bara i sidorna för sökresultat och produktinformation.
 
    1. När du har utforskat butiken fortsätter du med självstudiekursen.
 
@@ -471,7 +479,6 @@ I det här avsnittet uppdaterar du butikskonfigurationen från den lokala utveck
 #### Uppdatera butikskonfigurationen
 
 Uppdatera konfigurationsfilen för butiken och förhandsgranska ändringarna i den lokala utvecklingsmiljön.
-
 
 1. I din IDE ska du uppdatera butikskonfigurationen så att den ansluter till [!DNL Adobe Commerce Optimizer]-instansen som Adobe har etablerat åt dig.
 
@@ -517,6 +524,6 @@ Se [Handboken för Storefront och katalogadministratören från början till slu
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE) om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med dina klientkomponenter och backend-data för Commerce.
+>* [Adobe Experience Manager storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/) om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med dina klientkomponenter och backend-data för Commerce.
 ></br></br>
->* [Adobe Commerce Storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE) om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med Adobe Commerce klientkomponenter och backend-data.
+>* [Adobe Commerce Storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/) om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med Adobe Commerce klientkomponenter och backend-data.
