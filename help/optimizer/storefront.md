@@ -274,7 +274,7 @@ Dessa värden anger kanal-ID, språk och prisboks-ID för att skicka katalogdata
 
    Mer information finns i [dokumentationen för Sidekick-biblioteket](https://www.aem.live/docs/sidekick-library).
 
-+++
+   +++
 
 1. Uppdatera nyckelvärdena för `url` med värdena för din GitHub-databas.
 
@@ -314,7 +314,7 @@ Dessa värden anger kanal-ID, språk och prisboks-ID för att skicka katalogdata
    }
    ```
 
-+++
+   +++
 
 1. Spara filen.
 
