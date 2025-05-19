@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5e5b3340f45b5db7a6a01ed1b89c42f6399f66b9
+source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,14 @@ Bland uppdateringarna finns:
 >SaaS-tillägget för dataexport är en samling moduler som installeras automatiskt med Live Search, Produktrekommendationer och katalogtjänsten. Du kan kontrollera vilken version som är installerad på datorn med Composer. I vissa fall kanske du vill uppgradera dataexporttillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 103.4.4 Utgåva
+
+![Nytt](../assets/new.svg) har lagt till ett varningsmeddelande som visas när argumentet `cleanup-feed` läggs till i CLI-kommandot `saas:resync`. Alternativet `--cleanup-feed` bör användas med försiktighet och endast i specifika scenarier som efter miljörensning eller med alternativet `--dry-run`. Om du använder den i andra fall kan det leda till dataförlust och synkroniseringsproblem. <!--MDEE-1047-->
+![ Korrigera ](../assets/fix.svg) `x-request-id` har lagts till från serversvaret för förbättrad spårbarhet. <!--MDEE-1041-->
+![ Korrigera ](../assets/fix.svg) Ett problem där synkroniseringsstatusen inte sparades för hela feed-batchen har korrigerats, vilket ledde till onödig omsynkronisering. <!--MDEE-1049-->
+![ Korrigera ](../assets/fix.svg) Ett fel har korrigerats där alla feeds i feed-batchen hoppades över under synkroniseringen om en feed innehöll ett fel. <!--MDEE-976-->
+![ Korrigera ](../assets/fix.svg) Stöd för dimensioner har lagts till i kategoribehörighetsindexeraren. <!--MDEE-654-->
 
 ## 103.4.3 Utgåva
 
