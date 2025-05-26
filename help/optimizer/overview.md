@@ -35,7 +35,7 @@ Om du vill veta mer om programmet [!DNL Adobe Commerce Optimizer] för tidig åt
 
 I följande video visas en översikt över [!DNL Adobe Commerce Optimizer] på hög nivå:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450467?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Vem har störst nytta av [!DNL Adobe Commerce Optimizer]?
 
