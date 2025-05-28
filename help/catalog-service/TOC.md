@@ -5,10 +5,10 @@ breadcrumb-title: '[!DNL Catalog Service] Användarhandbok'
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 3d76363c2dcbd65a5b54b2b958e23e495460d26d
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 10%
+source-wordcount: '47'
+ht-degree: 12%
 
 ---
 
@@ -17,13 +17,11 @@ ht-degree: 10%
 - [Översikt över användarhandbok](guide-overview.md)
 - [Introduktion till  [!DNL Catalog Service]](overview.md)
 - [Onboarding och installation](installation.md)
-- [Katalogtjänst och API-nät](mesh.md)
-- [Visa taxerade priser med API-nät](taxes.md)
-- GraphQL-frågor {#graphql}
-   - [kategorifråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
-   - [produktfråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/)
-   - [productSearch-fråga](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
-   - [refineProduct-fråga](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
+- [Hämta katalogdata](graphql-queries.md)
+- Integrera med andra program {#integration}
+   - [Katalogtjänst och API-nät](mesh.md)
+   - [Användningsfall: Visa taxerade priser](taxes.md)
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+
 
