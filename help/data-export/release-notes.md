@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
+source-git-commit: c9a87df4aa64081b51fd52d84d97fe3949045e31
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ Bland uppdateringarna finns:
 >SaaS-tillägget för dataexport är en samling moduler som installeras automatiskt med Live Search, Produktrekommendationer och katalogtjänsten. Du kan kontrollera vilken version som är installerad på datorn med Composer. I vissa fall kanske du vill uppgradera dataexporttillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 103.4.5 Utgåva
+
+![Ny](../assets/new.svg) SaaS-dataexport har nu stöd för produkttypen Adobe Commerce `giftcard`. I dataflödet exporteras presentkortsprodukter som enkla produkter med produktattributtypen `ac_giftcard`. <!--MDEE-1042-->
+![ Korrigera ](../assets/fix.svg) Förbättrad felrapportering vid dataexport. Loggarna innehåller nu mer detaljerade felmeddelanden, inklusive den ursprungliga tekniska informationen som gör det enklare att felsöka och spåra fel. <!--MDEE-1064-->
 
 ## 103.4.4 Utgåva
 
