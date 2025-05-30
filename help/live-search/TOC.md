@@ -1,13 +1,12 @@
 ---
 user-guide-title: '[!DNL Live Search] Användarhandbok'
 user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Live Search] från Adobe Commerce.
-breadcrumb-title: '[!DNL Live Search] Användarhandbok'
 role: Admin
 feature: Services, Search
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 5%
+source-wordcount: '75'
+ht-degree: 4%
 
 ---
 
@@ -36,7 +35,7 @@ ht-degree: 5%
       - [Typer av synonymer](synonyms-type.md)
       - [Lägg till synonymer](synonyms-add.md)
       - [Hantera synonymer](synonyms-manage.md)
-   - Söka efter marknadsföring {#rules}
+   - Search Merchandising {#rules}
       - [Ökning](rules.md)
       - [Workspace](rules-workspace.md)
       - [Lägg till regler](rules-add.md)
@@ -46,4 +45,4 @@ ht-degree: 5%
    - [GraphQL](graphql.md)
    - [Inställningar](settings.md)
 - [Händelser](events.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

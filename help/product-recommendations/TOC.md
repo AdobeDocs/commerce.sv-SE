@@ -1,13 +1,12 @@
 ---
 user-guide-title: '[!DNL Product Recommendations] Användarhandbok'
 user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Product Recommendations] från Adobe Commerce.
-breadcrumb-title: '[!DNL Product Recommendations] Användarhandbok'
 role: Admin
 feature: Services, Recommendations
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 10%
+source-wordcount: '57'
+ht-degree: 8%
 
 ---
 
@@ -24,17 +23,17 @@ ht-degree: 10%
    - [Inställningar](settings.md)
    - [Mellanlagringsmiljö](staging-environment.md)
    - [Integrering med Page Builder](page-builder.md)
-- [!DNL Product Recommendations] Admin {#admin}
+- [!DNL Product Recommendations]-administratör {#admin}
    - [Workspace](workspace.md)
    - [Skapa](create.md)
    - [Redigera](edit.md)
    - [Rekommendationstyper](type.md)
    - [Filter](filters.md)
    - [Placering och etiketter](placement.md)
-- [!DNL Product Recommendations] Developer {#developer}
+- [!DNL Product Recommendations]-utvecklare {#developer}
    - [Ökning](development-overview.md)
    - [Samla in data](events.md)
    - [Verifiera](verify.md)
    - [Anpassa](customize.md)
    - [Hantera cookie-begränsningar](setting-cookie.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

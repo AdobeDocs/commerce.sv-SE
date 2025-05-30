@@ -1,14 +1,13 @@
 ---
 user-guide-title: '[!DNL Catalog Service] Användarhandbok'
 user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Catalog Service] för Adobe Commerce.
-breadcrumb-title: '[!DNL Catalog Service] Användarhandbok'
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 3d76363c2dcbd65a5b54b2b958e23e495460d26d
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 12%
+source-wordcount: '46'
+ht-degree: 10%
 
 ---
 
@@ -22,6 +21,6 @@ ht-degree: 12%
    - [Katalogtjänst och API-nät](mesh.md)
    - [Användningsfall: Visa taxerade priser](taxes.md)
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 

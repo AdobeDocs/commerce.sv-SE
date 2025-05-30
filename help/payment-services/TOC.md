@@ -1,15 +1,14 @@
 ---
 user-guide-title: '[!DNL Payment Services] Användarhandbok'
 user-guide-description: Den här guiden innehåller detaljerad information om hur du installerar och konfigurerar [!DNL Payment Services] för din [!DNL Adobe Commerce] eller [!DNL Magento Open Source] butik.
-breadcrumb-title: '[!DNL Payment Services] Användarhandbok'
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: eba63e5a0086689ae254545c1ad9a1430fc8a524
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 1%
+source-wordcount: '108'
+ht-degree: 0%
 
 ---
 
@@ -51,4 +50,4 @@ ht-degree: 1%
 - Säkerhet och efterlevnad {#security-compliance}
    - [Säkerhet](security.md)
    - [Skydd mot bedrägeri](fraud-protection.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=sv-SE)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

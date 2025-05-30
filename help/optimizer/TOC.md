@@ -1,15 +1,14 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce Optimizer] Användarhandbok'
 user-guide-description: Dokumentation och resurser för  [!DNL Adobe Commerce Optimizer].
-breadcrumb-title: '[!DNL Adobe Commerce Optimizer] Användarhandbok'
 hide: true
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 5%
+source-wordcount: '38'
+ht-degree: 2%
 
 ---
 
