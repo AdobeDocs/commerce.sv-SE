@@ -2,23 +2,23 @@
 title: Lägg till synonymer
 description: Lägg till  [!DNL Live Search] synonymer för att förbättra svar på sökbegäranden.
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 6dcfd0a54e6a6814b7f5708e0c221452b8af4537
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # Lägg till synonymer
 
-Öka kundengagemanget genom att lägga till en egen strukturerad lista med [!DNL Live Search] synonymer. [!DNL Live Search] kan hantera upp till 200 synonymer per `Data Space ID`.
+Öka kundengagemanget genom att lägga till en egen strukturerad lista med [!DNL Live Search] synonymer. [!DNL Live Search] kan hantera upp till 200 synonymer per butiksvy.
 
 ![[!DNL Live Search] synonymer](assets/synonym-workspace.png)
 
 ## Steg 1: Lägg till en synonym
 
 1. Gå till **Markering** > SEO &amp; Search > **[!DNL Live Search]** i Admin.
-1. För flera arkiv anger du **Scope** till den [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE#scope-settings) där synonyminställningarna gäller.
+1. För flera arkiv anger du **Scope** till den [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där synonyminställningarna gäller.
 1. Klicka på fliken **Synonymer**.
 1. Klicka på knappen **Lägg till synonymer**.
 
