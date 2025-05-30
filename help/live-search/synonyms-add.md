@@ -18,7 +18,7 @@ ht-degree: 0%
 ## Steg 1: Lägg till en synonym
 
 1. Gå till **Markering** > SEO &amp; Search > **[!DNL Live Search]** i Admin.
-1. För flera arkiv anger du **Scope** till den [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där synonyminställningarna gäller.
+1. För flera arkiv anger du **Scope** till den [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE#scope-settings) där synonyminställningarna gäller.
 1. Klicka på fliken **Synonymer**.
 1. Klicka på knappen **Lägg till synonymer**.
 
