@@ -17,4 +17,4 @@ ht-degree: 6%
 - Katalogadapter {#catalog-adapter}
    - [Ökning](catalog-adapter.md)
    - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)
