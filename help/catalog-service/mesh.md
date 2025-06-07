@@ -3,9 +3,10 @@ title: '[!DNL Catalog Service and API Mesh]'
 description: '[!DNL API Mesh] för Adobe Commerce erbjuder ett sätt att integrera flera datakällor via en gemensam GraphQL-slutpunkt.'
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
+source-git-commit: ca0b2b2a158b9a376724b30c80a6bf9a60e3d1ba
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -16,26 +17,31 @@ Med [API-nät för Adobe Developer App Builder](https://developer.adobe.com/grap
 
 ![Katalogarkitekturdiagram](assets/catalog-service-architecture-mesh.png)
 
-Det första steget för att använda API-nät med katalogtjänst är att ansluta API-nät till din instans. Mer information finns i [Skapa ett nät](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+Om du vill använda API-nät med katalogtjänsten måste du ansluta API-nät till din instans och sedan lägga till API-nätkällan [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/) som tillhandahåller konfigurationen för anslutning till katalogtjänsten.
 
-Installera [Adobe Developer CLI-paketet](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) om du vill slutföra installationen.
+## Anslut och konfigurera API-nät.
 
-När Nät har konfigurerats på Adobe I/O Runtime kör du följande kommando som lägger till en `CommerceCatalogServiceGraph`-källa i nätet.
+1. Anslut API-nät till din Adobe Commerce-instans genom att följa instruktionerna för att [skapa ett nät](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) i _API Mesh Developer Guide_.
 
-```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
-```
+   Om det här är första gången du använder API-nät slutför du [Komma igång-processen](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) innan du skapar nätet.
 
-Där `variables.json` är en separat fil som lagrar värden som används ofta för Adobe I/O Runtime.
-API-nyckeln kan till exempel sparas i filen:
+1. Skapa en JSON-fil, till exempel `variables.json`, som innehåller katalogtjänstens API-nyckel för ditt projekt med följande format.
 
-```json
-{
-    "CATALOG_SERVICE_API_KEY":"your_api_key"
-}
-```
+   ```json
+   {
+       "CATALOG_SERVICE_API_KEY":"your_api_key"
+   }
+   ```
 
-När du har kört det här kommandot bör katalogtjänsten köras via API-nätet. Du kan köra kommandot `aio api-mesh:get` om du vill visa konfigurationen för det uppdaterade nätet.
+1. Lägg till `CommerceCatalogServiceGraph`-källan i ditt nät med [Adobe I/O Extensible CLI](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli).
+
+   ```bash
+   aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json
+   ```
+
+   Alternativet `-f variables.json` anger det nyckelvärde för katalogtjänstens API som krävs för att uppdatera konfigurationen.
+
+När du har kört det här kommandot bör katalogtjänsten köras via API-nätet. Använd kommandot `aio api-mesh get` för att visa konfigurationen för det uppdaterade nätet.
 
 ## Exempel på API-nät
 

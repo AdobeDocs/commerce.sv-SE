@@ -2,9 +2,10 @@
 title: Utöka och anpassa dataexportdata för SaaS
 description: Lär dig hur du utökar och anpassar  [!DNL SaaS Data Export] feed-data.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
+source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ Utvecklare kan lägga till produktattribut som är tillgängliga från fältet [
 
 ### Lägg till attributet i Adobe Commerce
 
-Du kan lägga till ett produktattribut från Commerce Admin eller programmässigt använda en anpassad PHP-modul för att definiera attributet och uppdatera Adobe Commerce. Det här är den enklaste metoden att lägga till ett produktattribut eftersom du kan lägga till attributet och alla metadata som krävs. Det nya attributet och dess metadataegenskaper exporteras automatiskt till SaaS-tjänsterna under nästa schemalagda synkronisering.
+Du kan lägga till ett produktattribut från Commerce Admin eller programmässigt använda en anpassad PHP-modul för att definiera attributet och uppdatera Adobe Commerce. Att lägga till attributet från Commerce Admin är den enklaste metoden eftersom du kan lägga till attributet och alla metadata som krävs samtidigt. Det nya attributet och dess metadataegenskaper exporteras automatiskt till SaaS-tjänsterna under nästa schemalagda synkronisering.
 
 #### Skapa produktattributet från administratören
 
@@ -58,19 +59,19 @@ Du kan lägga till ett produktattribut från Commerce Admin eller programmässig
 
 1. Lägg till attributet i en attributuppsättning efter behov.
 
-Se [Skapa produktattribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) i *Adobe Commerce Admin Guide*.
+Se [Skapa produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) i *Adobe Commerce Admin Guide*.
 
 #### Skapa produktattributet programmatiskt
 
 Lägg till ett produktattribut programmatiskt genom att skapa en datakorrigering som implementerar `DataPatchInterface` och initiera en kopia av klassen `EavSetup Factory` i konstruktorn för att konfigurera attributalternativen.
 
-När du definierar attributalternativen är alla attributparametrar utom `type`, `label` och `input` valfria. Definiera följande ytterligare alternativ och andra alternativ som skiljer sig från standardinställningarna.
+När du definierar attributalternativen är alla attributparametrar utom `type`, `label` och `input` valfria. Definiera följande ytterligare parametrar och eventuella andra som skiljer sig från standardinställningarna.
 
-- Kontrollera att egenskapen exporteras till butikstjänster under datasynkronisering genom att ange `user_defined` = `1`
-- Ange `used_in_product_listing` = `1` för att säkerställa att attributet är tillgängligt i produktlistans databasfråga.
+- **`user_defined`=`1`** - Exportera attributet till butikstjänster under datasynkronisering
+- **`used_in_product_listing`=`1`** - Gör attributet tillgängligt i produktlistans databasfråga
 
 Mer information om hur du skapar datakatchar finns i [Utveckla data och schemapatchar](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) i *Utvecklarhandbok för PHP*.
 
 ### Lägg till produktattributet dynamiskt
 
-Mer information om hur du skapar produktattribut dynamiskt utan att införa nya Eav-attribut finns i [Lägg till attribut dynamiskt](add-attribute-dynamically.md).
+Mer information om hur du skapar produktattribut dynamiskt utan att införa nya EAV-attribut finns i [Lägg till attribut dynamiskt](add-attribute-dynamically.md).
