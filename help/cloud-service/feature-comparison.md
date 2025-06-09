@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Adobe Commerce erbjuder tre driftsättningsmodeller:
 
-- [!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
-- [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} [Adobe Commerce i molnet](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
-- [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (lokal)
+- [!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
+- [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} [Adobe Commerce i molnet](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/overview) (PaaS)
+- [Adobe Commerce](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/overview) (lokal)
 
 Jämförelsen fokuserar på skillnaderna mellan SaaS (software-as-a-service) och PaaS-modeller (platform-as-a-service) som erbjuder olika nivåer av anpassning, utbyggbarhet och kontroll över implementeringen av din e-handel.
 
@@ -28,45 +28,45 @@ Jämförelsen fokuserar på skillnaderna mellan SaaS (software-as-a-service) och
 
 ## Funktioner för butikshantering
 
-[Commerce Admin-gränssnittet](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) är det primära gränssnittet för att komma åt funktioner för att hantera backend-butiksåtgärder, lager, priser, kampanjer och kundinteraktioner. [!DNL Adobe Commerce as a Cloud Service] erbjuder dock unika lösningar som ersätter några av de välkända funktionerna i Adobe Commerce i molnet och lokala projekt.
+[Commerce Admin-gränssnittet](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/guide-overview) är det primära gränssnittet för att komma åt funktioner för att hantera backend-butiksåtgärder, lager, priser, kampanjer och kundinteraktioner. [!DNL Adobe Commerce as a Cloud Service] erbjuder dock unika lösningar som ersätter några av de välkända funktionerna i Adobe Commerce i molnet och lokala projekt.
 
 I följande tabell beskrivs de funktioner och ersättningslösningar som finns i [!DNL Adobe Commerce as a Cloud Service]:
 
 <table>
     <thead>
         <tr>
-            <th>PaaS-modellen [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}</th>
-            <th>SaaS-modellen [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast för Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (Adobe-hanterad SaaS-infrastruktur)."}</th>
+            <th>PaaS-modellen [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}</th>
+            <th>SaaS-modellen [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast för Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (Adobe-hanterad SaaS-infrastruktur)."}</th>
             <th>Information</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Digital resurshantering</a></td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">Produktbilder</a></td>
+            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Digital resurshantering</a></td>
+            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration">Produktbilder</a></td>
             <td>Ett robust DAM-system (Digital Asset Management) som kan integreras med Adobe Experience Manager för hantering av multimediematerial. Standardfunktionen för hantering av digitala filer och resurser innehåller också grundläggande verktyg för hantering av digitala resurser.</td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">Content Management System (CMS)</a></td>
-            <td rowspan="3"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">Storefront Builder</a></td>
+            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/guide-overview">Content Management System (CMS)</a></td>
+            <td rowspan="3"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/?lang=sv-SE">Storefront Builder</a></td>
             <td rowspan="3">En CMS som gör det möjligt för användare att enkelt skapa och hantera butiksinnehåll med hjälp av dokumentredigering eller en Visual Editor och som har inbyggda experimenteringsfunktioner.</td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">Page Builder</a></td>
+            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/guide-overview">Page Builder</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL-omskrivningar</a></td>
+            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL-omskrivningar</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">Mellanlagring av innehåll</a></td>
+            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/staging/content-staging">Mellanlagring av innehåll</a></td>
             <td rowspan="2"><a href="../catalog-service/overview.md">Katalogtjänst</a></td>
             <td rowspan="2">En tjänst för avancerad visningsmodell (skrivskyddad) som hanterar katalogdata och återger produktrelaterade butiksupplevelser.</td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
+            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">Betalningar</a></td>
+            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/payments/payments">Betalningar</a></td>
             <td><a href="../payment-services/guide-overview.md">Betalningstjänster</a></td>
             <td>En integrerad betalningstjänst som underlättar säkra och effektiva transaktioner.</td>
         </tr>
@@ -81,8 +81,8 @@ I följande tabell jämförs plattformsfunktioner och utökningsfunktioner för 
     <thead>
         <tr>
             <th>Funktion</th>
-            <th>PaaS-modellen [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}</th>
-            <th>SaaS-modellen [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast för Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (Adobe-hanterad SaaS-infrastruktur)."}</th>
+            <th>PaaS-modellen [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}</th>
+            <th>SaaS-modellen [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast för Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (Adobe-hanterad SaaS-infrastruktur)."}</th>
         </tr>
     </thead>
     <tbody>
@@ -172,7 +172,7 @@ I följande tabell jämförs plattformsfunktioner och utökningsfunktioner för 
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup> Core <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B-funktioner</a>, som företagsledning och offert, finns tillgängliga i SaaS. Branschspecifika anpassningar kan dock kräva ytterligare implementeringsåtgärder.
+                <sup>1</sup> Core <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/b2b/guide-overview">B2B-funktioner</a>, som företagsledning och offert, finns tillgängliga i SaaS. Branschspecifika anpassningar kan dock kräva ytterligare implementeringsåtgärder.
                 <br><br>
                 <sup> 2</sup> Datamodellens utbyggbarhet i SaaS har stöd för <a href="https://developer.adobe.com/commerce/services/cloud/guides/custom-attributes/">utökning av kärnenheter</a> utöver produkt och kund, inklusive B2B-enheter. Branschspecifika datamodeller (till exempel attribut som är specifika för återförsäljare) kan dock kräva ytterligare arkitektoniska överväganden.
                 <br><br>
