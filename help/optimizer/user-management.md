@@ -48,7 +48,7 @@ Du kan tilldela användare till någon av följande roller:
 
 >[!BEGINSHADEBOX &quot;Förutsättningar&quot;]
 >
-Följande etablering krävs för användarhantering:
+>Följande etablering krävs för användarhantering:
 
 * IMS-organisation har etablerats för [!DNL Adobe Commerce Optimizer]
 * Ett Adobe Experience Cloud-konto i samma IMS-organisation med system- eller produktadministratörsroll
