@@ -30,7 +30,7 @@ Integreringen av Adobe Commerce och produktvisuellt löser detta problem genom a
 
 För att utnyttja integreringen måste företagen uppfylla följande krav:
 
-* Aktiva licenser för Adobe Commerce, Adobe Experience Manager Assets och [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
+* Aktiva licenser för Adobe Commerce, Adobe Experience Manager Assets och [AEM Dynamic Media](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
 
 * Adobe Commerce 2.4.5+
 
@@ -38,9 +38,9 @@ För att utnyttja integreringen måste företagen uppfylla följande krav:
 
    * Disposition 2.x
 
-* Adobe Experience Manager etableras med [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
+* Adobe Experience Manager etableras med [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/overview)
 
-* Den Adobe Commerce-användare som konfigurerar integreringen måste ha tillgång till den [IMS-organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) där AEM Assets-projektet etableras.
+* Den Adobe Commerce-användare som konfigurerar integreringen måste ha tillgång till den [IMS-organisation](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) där AEM Assets-projektet etableras.
 
 >[!BEGINSHADEBOX]
 
@@ -70,4 +70,4 @@ Att möjliggöra Commerce-integrering med Experience Manager Assets är en trest
 
 ## Support
 
-Om du behöver information eller har frågor som inte ingår i den här guiden kontaktar du din AEM Assets Integration-säljare eller skapar en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) för att få ytterligare hjälp.
+Om du behöver information eller har frågor som inte ingår i den här guiden kontaktar du din AEM Assets Integration-säljare eller skapar en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#submit-ticket) för att få ytterligare hjälp.

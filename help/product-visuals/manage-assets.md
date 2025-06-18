@@ -145,7 +145,7 @@ När du har konfigurerat [AEM Resursväljare](synchronize/asset-selector-integra
 
 1. Klicka på **[!UICONTROL Save]** och fortsätt.
 
-   Mer information om hur du skapar en kategori finns i [Slutför kategoriinnehållet](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) i **Commerce Catalog Management Guide**.
+   Mer information om hur du skapar en kategori finns i [Slutför kategoriinnehållet](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) i **Commerce Catalog Management Guide**.
 
 ## Uppdatera en resurs
 
@@ -153,6 +153,6 @@ När du har uppdaterat och godkänt en mediefil i AEM Assets skickas uppdatering
 
 Mer information finns i följande AEM Assets-dokumentation.
 
-* [Bearbetar digitala resurser](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Bearbetar digitala resurser](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Godkänn en resurs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Godkänn en resurs](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

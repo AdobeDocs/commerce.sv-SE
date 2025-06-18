@@ -20,7 +20,7 @@ I versionsinformationen beskrivs den första versionen av produktvisuellt materi
 
 Om du vill se funktionsändringar och korrigeringar som släppts utanför den vanliga versionen av funktionen går du igenom avsnitten _Uppdateringar för värdtjänsten_.
 
-Läs mer om kommande releaser, produktsupport och vilka Adobe Commerce-versioner som stöder tillägget AEM Assets Integration i Adobe Commerce [Releasedatum](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) och [Produkttillgänglighet](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) .
+Läs mer om kommande releaser, produktsupport och vilka Adobe Commerce-versioner som stöder tillägget AEM Assets Integration i Adobe Commerce [Releasedatum](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/planning/schedule) och [Produkttillgänglighet](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/product-availability) .
 
 ## Uppdateringar av värdtjänster
 

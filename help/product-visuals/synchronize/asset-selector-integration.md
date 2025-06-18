@@ -22,7 +22,7 @@ När integreringen av **AEM Resursväljare** har konfigurerats kan marknadsföra
 
 >[!NOTE]
 >
-> AEM Resursväljare är en komponent i AEM som utgör en integrerad komponent för redigering av AEM Assets. Mer information om den här komponenten finns i [Micro-Front Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} i *AEM as a Cloud Service användarhandbok*.
+> AEM Resursväljare är en komponent i AEM som utgör en integrerad komponent för redigering av AEM Assets. Mer information om den här komponenten finns i [Micro-Front Asset Selector](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} i *AEM as a Cloud Service användarhandbok*.
 
 ## Viktiga fördelar
 
