@@ -2,7 +2,8 @@
 title: '[!DNL Manage the Data Export extension]'
 description: Lär dig hur du uppgraderar  [!DNL Data Export] tillägget och tar bort eller inaktiverar dataexporttjänster som inte behövs.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 94702995-d272-47b9-9560-198eee3250a6
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -20,7 +21,7 @@ som [Live Search](/help/live-search/overview.md), [Produktrekommendationer](/hel
 
 Om du inte behöver någon av de installerade exportmodulerna för handelsdata kan du inaktivera det med kommandot `magento:module:disable` CLI.
 
-Det finns till exempel ett [Kategorier-API](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) som använder kategorierna för behörighet att skicka data internt. Om du inte använder detta API kan du inaktivera dataexporten för kategoribehörighetsflödet.
+Det finns till exempel ett [Kategorier-API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) som använder kategorierna för behörighet att skicka data internt. Om du inte använder detta API kan du inaktivera dataexporten för kategoribehörighetsflödet.
 
 ```shell script
 bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCategoryPermissions
@@ -38,4 +39,4 @@ Du kan uppdatera alla installerade exportmoduler för handelsdata med Composer. 
    composer require magento/module-saas-price:103.3.1 --with-all-dependencies
    ```
 
-Om Commerce-instansen distribueras i molninfrastrukturen ska du uppdatera tillägget från din molnprojektkatalog. Se [Uppgradera ett tillägg](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) i _Adobe Commerce on Cloud Infrastructure Guide_.
+Om Commerce-instansen distribueras i molninfrastrukturen ska du uppdatera tillägget från din molnprojektkatalog. Se [Uppgradera ett tillägg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) i _Adobe Commerce on Cloud Infrastructure Guide_.

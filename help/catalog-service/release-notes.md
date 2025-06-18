@@ -2,9 +2,10 @@
 title: Versionsinformation för [!DNL Catalog Service]
 description: Den senaste versionsinformationen för  [!DNL Catalog Service]  för Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
+source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ Bland uppdateringarna finns:
 
 _22 oktober 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Nytt](../assets/new.svg) GraphQL-schemat innehåller nu attributet `lastModifiedAt` i produktinformationen. Den exakta tidsstämpeln hjälper kunderna att säkerställa att webbplatskartorna korrekt återspeglar de senaste uppdateringarna av deras produkter. Det hjälper även sökmotorer som Google att avgöra när omindexering är nödvändig, att optimera crawlningsprocessen och förhindra problem med aggressiva ändringsdatum som används när exakt information inte finns tillgänglig. <!--DATA-6209-->
 
@@ -37,7 +38,7 @@ _22 oktober 2024_
 
 _22 augusti 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Korrigera](../assets/fix.svg) Du kan nu hämta produktinformation utan produktåsidosättningsdata (priser). I tidigare versioner returnerade dessa frågor följande fel:
 `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
@@ -46,28 +47,28 @@ _22 augusti 2024_
 
 _13 augusti 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Nytt](../assets/new.svg) Stöd har lagts till för att hämta alla varianter efter produkt-SKU. Se [API-referens för katalogtjänst](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
+![Nytt](../assets/new.svg) Stöd har lagts till för att hämta alla varianter efter produkt-SKU. Se [API-referens för katalogtjänst](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). <!--DATA-6067-->
 
 ### Version V1.22
 
 _13 augusti 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Nytt](../assets/new.svg) Stöd har lagts till för att hämta alla varianter efter produkt-SKU. Se [API-referens för katalogtjänst](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
+![Nytt](../assets/new.svg) Stöd har lagts till för att hämta alla varianter efter produkt-SKU. Se [API-referens för katalogtjänst](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). <!--DATA-6067-->
 
 ### Version V1.19
 
 _23 maj 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 
 ![Korrigera](../assets/fix.svg) <!--DATA-5033-->Flaggan `InStock` för alternativvärden tar nu hänsyn till produktvariantens omfångsstatus `enabled` .
 
-![Korrigera](../assets/fix.svg) <!--DATA-5888-->Lägg till stöd för produktpriser som kräver stora tal (upp till 16 siffror) och större decimalprecision (upp till 4 decimaler). Om du vill tillämpa priskonfigurationsuppdateringarna på din befintliga katalog synkroniserar du om katalogdata från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard), eller genom att använda kommandoradsgränssnittet [Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+![Korrigera](../assets/fix.svg) <!--DATA-5888-->Lägg till stöd för produktpriser som kräver stora tal (upp till 16 siffror) och större decimalprecision (upp till 4 decimaler). Om du vill tillämpa priskonfigurationsuppdateringarna på din befintliga katalog synkroniserar du om katalogdata från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), eller genom att använda kommandoradsgränssnittet [Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
 
 #### Kända begränsningar
 
@@ -89,25 +90,25 @@ Mer information och exempel finns i [Katalogtjänst och API-nät](mesh.md)
 
 _11 april 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Nytt](../assets/new.svg) Stöd för PHP 8.3 har lagts till.
 
-![Nytt](../assets/new.svg) [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) - och [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)-frågorna returnerar nu anpassningsbara alternativdata för både enkla och komplexa produkter.<!--DATA-5538-->
+![Nytt](../assets/new.svg) [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) - och [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)-frågorna returnerar nu anpassningsbara alternativdata för både enkla och komplexa produkter.<!--DATA-5538-->
 
 ### Version V1.17
 
 _22 februari 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Nytt](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=sv-SE) är nu tillgängligt. Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search] och [!DNL Catalog Service]. Stöd för den här funktionen introducerades i v3.1.0 i metapaketet `catalog-service`.
+![Nytt](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) är nu tillgängligt. Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search] och [!DNL Catalog Service]. Stöd för den här funktionen introducerades i v3.1.0 i metapaketet `catalog-service`.
 
 ### Version V1.16
 
 _13 februari 2024_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Nya](../assets/new.svg) produktvideor stöds nu av katalogtjänstens API.
 ![Korrigera](../assets/fix.svg) Utmediefiler visas nu i PDP-widgeten.
@@ -129,7 +130,7 @@ Följande begränsningar kan åtgärdas med API Mesh och Core GraphQL API:
 
 _12 oktober 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Ny](../assets/new.svg) katalogtjänst stöder flaggan `inStock` för produktvarianter.
 ![Nytt](../assets/new.svg) Fälten `urlKey` och `externalId` har lagts till i GraphQL-schemat.
@@ -139,7 +140,7 @@ _12 oktober 2023_
 
 _19 september 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Ny](../assets/new.svg) katalogtjänst använder nu [SaaS-prisindexering](../price-index/price-indexing.md).
 ![Korrigera](../assets/fix.svg) Den här versionen innehåller felkorrigeringar och förbättringar på tjänstsidan.
@@ -148,15 +149,15 @@ _19 september 2023_
 
 _18 juli 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Ny](../assets/new.svg) katalogtjänst har nu stöd för GraphQL-frågan [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) för produktrekommendationer.
+![Ny](../assets/new.svg) katalogtjänst har nu stöd för GraphQL-frågan [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/recommendations/) för produktrekommendationer.
 
 ### Version V1.10
 
 _27 juni 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Nytt](../assets/new.svg) Katalogtjänstens API har nu stöd för `related products`.
 
@@ -164,7 +165,7 @@ _27 juni 2023_
 
 _12 april 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
 ![Ny](../assets/new.svg) katalogtjänst rensar nu bort produktvarianter som tagits bort.
 ![Korrigera](../assets/fix.svg) Infrastrukturskalbarhet och prestandaförbättringar.
@@ -173,25 +174,25 @@ _12 april 2023_
 
 _28 mars 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Nya](../assets/new.svg) tillagda färgrutor i frågan [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/).
+![Nya](../assets/new.svg) tillagda färgrutor i frågan [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/).
 ![Nytt](../assets/new.svg) har lagt till möjligheten att hämta `entityId` med [API-nät](mesh.md).
 
 ### Version V1.5
 
 _6 mars 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Ny](../assets/new.svg) tillagd [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) GraphQL-funktionalitet.
+![Ny](../assets/new.svg) tillagd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-funktionalitet.
 ![Korrigera](../assets/fix.svg) Förbättrade prestanda och API-skalbarhet.
 
 ### Version V1.4
 
 _7 februari 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Nytt](../assets/new.svg) Katalogtjänstmetapaket har publicerats för att förenkla installationsstegen.
 ![Åtgärda](../assets/fix.svg) API-skalbarhet och prestandaförbättringar.
@@ -200,7 +201,7 @@ _7 februari 2023_
 
 _17 januari 2023_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Nytt](../assets/new.svg) Förenklat och förbättrat startupplevelsen.
 ![Nya](../assets/new.svg) slutpunkter för kundsandlådan är tillgängliga för testning före produktion.
@@ -211,7 +212,7 @@ _17 januari 2023_
 
 _18 november 2022_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Ny](../assets/new.svg) katalogtjänst har nu stöd för Adobe [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Korrigera](../assets/fix.svg) Förbättrad API-skalbarhet och övergripande prestanda.
@@ -220,7 +221,7 @@ _18 november 2022_
 
 _4 oktober 2022_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Nytt](../assets/new.svg) Nu stöd för paketerade och grupperade produkter.
 ![Ny](../assets/new.svg) har lagt till åsidosättningar av B2B-synlighet. Produkterna är nu sökbara och kan läggas till i kundvagnen för specifika kundgrupper.
@@ -230,7 +231,7 @@ _4 oktober 2022_
 
 _12 september 2022_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Nya](../assets/new.svg) bilder för variantstöd: produktbilder returneras baserat på de valda alternativen
 ![Nytt](../assets/new.svg) Roller för prissupport: Tillåt endast medlemmar i specifika kundgrupper att se priset på produkter
@@ -241,7 +242,7 @@ _12 september 2022_
 
 _9 augusti 2022_
 
-[!BADGE Stöds]{type=Informative tooltip="Stöds"}
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Nya](../assets/new.svg) `products` - och `refineProduct`-frågor returnerar följande data:
 

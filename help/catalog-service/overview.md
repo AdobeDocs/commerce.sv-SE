@@ -4,7 +4,7 @@ description: '[!DNL Catalog Service] för Adobe Commerce erbjuder ett sätt att 
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Komplexa produktalternativ förenas och särskiljs utifrån deras beteende, inte
 
 #### Produktvyattribut
 
-Både enkla och komplexa produkter har kunddefinierade attribut som kan visas i butiken. Dessa attribut returneras som [ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type). I Adobe Commerce definieras de tillgängliga attributen när produkten skapas. Du kan lägga till ytterligare attribut från Adobe Commerce backend eller programmatiskt. Se [Utöka och anpassa SaaS-dataexportfeed-data](../data-export/extensibility-and-customizations.md).
+Både enkla och komplexa produkter har kunddefinierade attribut som kan visas i butiken. Dessa attribut returneras som [ProductViewAttributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type). I Adobe Commerce definieras de tillgängliga attributen när produkten skapas. Du kan lägga till ytterligare attribut från Adobe Commerce backend eller programmatiskt. Se [Utöka och anpassa SaaS-dataexportfeed-data](../data-export/extensibility-and-customizations.md).
 
 >[!TIP]
 >
@@ -85,6 +85,6 @@ Katalogtjänsten säkerställer korrekta prisuppdateringar och beräkningar geno
 
 ## Implementering
 
-[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 
 Installationsprocessen kräver att [Commerce Services Connector](../landing/saas.md) konfigureras. När det är klart är nästa steg att en systemintegratör ska uppdatera storefront-koden så att den innehåller [!DNL Catalog Service]-frågorna. Alla [!DNL Catalog Service]-frågor dirigeras till GraphQL gateway. URL:en anges under introduktionsprocessen.

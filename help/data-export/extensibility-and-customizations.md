@@ -3,7 +3,7 @@ title: Utöka och anpassa dataexportdata för SaaS
 description: Lär dig hur du utökar och anpassar  [!DNL SaaS Data Export] feed-data.
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
-source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Tillägget [!DNL Commerce Data Export] erbjuder ett sätt att exportera data från programmet [!DNL Commerce] till Commerce Services som Live Search, Catalog Service och Produktrekommendationer. Vid behov kan du utöka och anpassa flödesuppgifterna för att inkludera ytterligare attributdata eller ändra de insamlade uppgifterna.
 
-När du har lagt till attributdata är den tillgänglig från [attributfältet](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type) i GraphQL-schemat för storefront-tjänsten.
+När du har lagt till attributdata är den tillgänglig från [attributfältet](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) i GraphQL-schemat för storefront-tjänsten.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Lägg till attributen i produktattributfrågan (`Magento\CatalogDataExporter\Mod
 
 ## Lägg till produktattribut i Adobe Commerce
 
-Utvecklare kan lägga till produktattribut som är tillgängliga från fältet [produktattribut](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#output-fields) på något av följande sätt:
+Utvecklare kan lägga till produktattribut som är tillgängliga från fältet [produktattribut](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields) på något av följande sätt:
 
 - Lägg till attributet i Adobe Commerce för inkludering i `products`-feed-data som exporteras till Commerce storefront-tjänster.
 - Lägg till attributet dynamiskt under feed-synkroniseringsprocessen med ett plugin-program.
@@ -59,7 +59,7 @@ Du kan lägga till ett produktattribut från Commerce Admin eller programmässig
 
 1. Lägg till attributet i en attributuppsättning efter behov.
 
-Se [Skapa produktattribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) i *Adobe Commerce Admin Guide*.
+Se [Skapa produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) i *Adobe Commerce Admin Guide*.
 
 #### Skapa produktattributet programmatiskt
 
