@@ -56,7 +56,7 @@ För att utnyttja integreringen måste företagen uppfylla följande krav:
 
 I den här videon lär du dig hur Adobe Commerce och AEM Assets samarbetar för att effektivisera arbetsflödena:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447887?captions=swe)
 
 ## Nästa steg
 
