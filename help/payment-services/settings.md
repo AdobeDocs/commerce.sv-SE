@@ -40,7 +40,7 @@ Du kan aktivera [!DNL Payment Services] för din webbplats och aktivera antingen
 
 1. Om du fortfarande testar [!DNL Payment Services] för din butik anger du **Betalningsläge** till `Sandbox`. Om du är redo att aktivera livebetalningar anger du det till `Production`.
 
-1. Dina **[!UICONTROL Payment Services Sandbox ID]**- och **[!UICONTROL Payment Services Production ID]**-värden fylls i automatiskt när du har konfigurerat [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} och går till [!DNL Payment Services]-instrumentpanelen för första gången. Gör detta för att slutföra introduktionen av din sandlåda och/eller produktionsmiljö. Dessa värden kopplar ditt SaaS-ID till [!DNL Payment Services].
+1. Dina **[!UICONTROL Payment Services Sandbox ID]**- och **[!UICONTROL Payment Services Production ID]**-värden fylls i automatiskt när du har konfigurerat [Commerce Services Connector](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} och går till [!DNL Payment Services]-instrumentpanelen för första gången. Gör detta för att slutföra introduktionen av din sandlåda och/eller produktionsmiljö. Dessa värden kopplar ditt SaaS-ID till [!DNL Payment Services].
 
    >[!WARNING]
    >
@@ -120,7 +120,7 @@ Mer information finns i [Betalningsalternativ](payments-options.md#credit-card-f
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | butiksvy | Sorteringsordningen för den angivna betalningsmetoden på utcheckningssidan. `Numeric Only` värde |
 | [!UICONTROL 3DS Secure authentication] | webbplats | Aktivera eller inaktivera [3DS-säker autentisering](security.md#3ds). Alternativ: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera kreditkortsfält som ska visas på utcheckningssidan. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
@@ -158,7 +158,7 @@ Du kan aktivera och konfigurera betalningsalternativet för knappen [!UICONTROL 
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Checkout title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions) för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions) för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera Apple Pay-knappen för att visa på utcheckningssidan. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on checkout page] | webbplats | Aktivera eller inaktivera Apple Pay-knappen så att den visas på produktinformationssidan. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on mini cart preview] | webbplats | Aktivera eller inaktivera Apple Pay-knappen för att visa i minikundvagnen. Alternativ: [!UICONTROL Off] / [!UICONTROL On] |
@@ -205,7 +205,7 @@ Du kan aktivera och konfigurera betalningsalternativen för betalningsknapparna 
 | Fält | Omfång | Beskrivning |
 |---|---|---|
 | [!UICONTROL Title] | butiksvy | Lägg till texten som ska visas som rubrik för det här betalningsalternativet i vyn Betalningsmetod vid utcheckning. Alternativ: textfält |
-| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | webbplats | [betalningsåtgärden](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} för den angivna betalningsmetoden. Alternativ: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | butiksvy | Sorteringsordningen för den angivna betalningsmetoden på utcheckningssidan. `Numeric Only` värde |
 | [!UICONTROL Show PayPal buttons on checkout page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal payment buttons] på utcheckningssidan. Alternativ: [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | butiksvy | Aktivera eller inaktivera [!DNL PayPal payment buttons] på produktinformationssidan. Alternativ: [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
@@ -262,7 +262,7 @@ Du kan konfigurera betalningsknappsformatet [ i den äldre konfigurationen i Adm
 
 Om du vill vara säker på att administratörsanvändare kan skapa och hantera order i Commerce Admin aktiverar du [!DNL Payment Services]-specifika resurser för användarroller.
 
-Mer information om hur du hanterar roller finns i [Användarroller](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html).
+Mer information om hur du hanterar roller finns i [Användarroller](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html?lang=sv-SE).
 
 När du tilldelar resurser till rollen måste du välja:
 
@@ -280,7 +280,7 @@ Om du ändrar konfigurationen i _Inställningar_, till exempel genom att växla 
 
 Om en cachetyp i cacheminneshanteringstabellen har statusen `INVALIDATED` kanske arkivet inte visar den senaste konfigurationen för det objektet. Töm cacheminnet för att uppdatera butiken så att den senaste konfigurationen visas.
 
-Om du vill vara säker på att rätt konfiguration visas på din butik [tömmer du cachen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) med jämna mellanrum.
+Om du vill vara säker på att rätt konfiguration visas på din butik [tömmer du cachen](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/cache-management) med jämna mellanrum.
 
 ## Kortsäkring
 
@@ -302,10 +302,10 @@ Mer information finns i [3DS i säkerhet](security.md#3ds).
 
 ## Använd flera PayPal-konton
 
-I [!UICONTROL Payment Services] kan du använda flera PayPal-konton i **one**-handelskontot på webbplatsnivå. Om du till exempel har butik(er) i flera länder (som använder olika [valutor](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency)) eller vill använda Adobe Commerce för vissa delar av din verksamhet, men inte _alla_, kan du konfigurera ditt handlarkonto så att du använder flera PayPal-konton.
+I [!UICONTROL Payment Services] kan du använda flera PayPal-konton i **one**-handelskontot på webbplatsnivå. Om du till exempel har butik(er) i flera länder (som använder olika [valutor](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/currency/currency)) eller vill använda Adobe Commerce för vissa delar av din verksamhet, men inte _alla_, kan du konfigurera ditt handlarkonto så att du använder flera PayPal-konton.
 
-Mer information om hierarkin för webbplatser, butiker och vyer [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) finns i Webbplats, Lagra och Vyområde.
+Mer information om hierarkin för webbplatser, butiker och vyer [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE) finns i Webbplats, Lagra och Vyområde.
 
 Mer information om hur du konfigurerar scope för flera PayPal-konton via CLI finns i [Kommandoradskonfiguration](configure-cli.md#configure-scope-via-cli).
 
-Säljaren kan skapa ett nytt [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) för ditt handlarkonto och lägga till ytterligare en webbplats med PayPal så att alla PayPal-knappar som du konfigurerar visas på din webbplats. Kontakta din säljare för att få hjälp med att använda flera PayPal-konton för dina webbplatser.
+Säljaren kan skapa ett nytt [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE#scope-settings) för ditt handlarkonto och lägga till ytterligare en webbplats med PayPal så att alla PayPal-knappar som du konfigurerar visas på din webbplats. Kontakta din säljare för att få hjälp med att använda flera PayPal-konton för dina webbplatser.
