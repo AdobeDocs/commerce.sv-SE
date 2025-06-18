@@ -85,6 +85,6 @@ Katalogtjänsten säkerställer korrekta prisuppdateringar och beräkningar geno
 
 ## Implementering
 
-[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 
 Installationsprocessen kräver att [Commerce Services Connector](../landing/saas.md) konfigureras. När det är klart är nästa steg att en systemintegratör ska uppdatera storefront-koden så att den innehåller [!DNL Catalog Service]-frågorna. Alla [!DNL Catalog Service]-frågor dirigeras till GraphQL gateway. URL:en anges under introduktionsprocessen.
