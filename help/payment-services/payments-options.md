@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,10 @@ Med [!DNL Apple Pay] kan handlare tillhandahålla en säker och smidig utcheckni
 ![Apple Pay-knappen i minikorgen](assets/applepay-button.png){width="500" zoomable="yes"}
 
 När det här alternativet är aktiverat visas knappen [!DNL Apple Pay] på produktsidan, i minikundvagnen, i kundvagnen och i kassan. Du kan konfigurera [!DNL Apple Pay] i butikskonfigurationen eller tilläggets Hem.
+
+>[!NOTE]
+>
+>  Verifieringscertifikatet för domänen Apple Pay ingår redan i koden för betaltjänster. Kontrollera att sökvägen `/.well-known/apple-developer-merchantid-domain-association` returnerar en 200-svarskod. Mer information om **Apple Pay Domain-verifieringscertifikatet** finns i [dokumentationen för PayPal-utvecklare om hur du integrerar med Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file).
 
 Mer information finns i [Inställningar](settings.md#apple-pay).
 
@@ -130,7 +134,7 @@ Så här **tar du emot betalningar med din befintliga kreditkortsleverantör _oc
 1. Kontrollera att din butik är [i produktionsläge](settings.md#enable-payment-services).
 1. [Konfigurera önskade PayPal-betalningsknappar](settings.md#payment-buttons).
 1. Stäng av _Av_, alternativet **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** i avsnittet _[!UICONTROL Payment buttons]_.
-1. Aktivera alternativet _Av_ **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** i avsnittet _[!UICONTROL Credit card fields]_&#x200B;och använd ditt [befintliga kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=sv-SE#payments).
+1. Aktivera alternativet _Av_ **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** i avsnittet _[!UICONTROL Credit card fields]_och använd ditt [befintliga kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Utcheckningsalternativ
 
