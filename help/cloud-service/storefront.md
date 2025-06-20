@@ -3,10 +3,10 @@ title: Konfigurera din butik
 description: Lär dig hur du kör byggnadsverktyget för att konfigurera  [!DNL Adobe Commerce as a Cloud Service] butiken.
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 72e1dca161c0e3b2898cd48eb3d17b5c50db7066
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: c9869e45ed9eb8f04cf3e1bfb3542a42bbf97c0f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Följande steg visar hur du snabbt konfigurerar din Adobe Commerce Storefront som drivs av Edge Delivery med kommandot `aio commerce init`. I den här processen ställs följande in:
 
-* [Commerce Storefront från Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE) - En prestanda, skalbar och säker lagringsplats från Adobe Edge Delivery Services.
+* [Commerce Storefront från Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) - En prestanda, skalbar och säker lagringsplats från Adobe Edge Delivery Services.
 * [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/) - en API-plattform där utvecklare kan kombinera flera datakällor till en enda GraphQL-slutpunkt. API Mesh koordinerar tredjeparts-API med Adobe API via en enda gateway. En fråga till en enda GraphQL-slutpunkt kan returnera resultat från flera källor.
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) - En samling utvecklarverktyg med tillgång till API:er, händelser, körningsfunktioner och plugin-program, som du kan använda för att skapa projekt för Adobe-program.
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) - En serverlös motor för att distribuera anpassad kod som svarar på händelser och kör funktioner i molnet.
@@ -72,6 +72,8 @@ Innan du kör kommandot `aio commerce init` måste du uppfylla följande krav:
    aio login
    ```
 
+   Om kommandot `aio login` inte startar ett webbläsarfönster kan du läsa avsnittet [Felsökning](#troubleshooting) .
+
 1. Välj IMS-organisation, projekt och arbetsyta. Använd piltangenterna och tryck på **Retur** för att göra ditt val. Mer information om `aio`-kommandon finns i [Adobe I/O CLI-dokumentationen](https://github.com/adobe/aio-cli-plugin-console?tab=readme-ov-file#commands).
 
    ```bash
@@ -90,7 +92,7 @@ Innan du kör kommandot `aio commerce init` måste du uppfylla följande krav:
 
 ## Kör kommandot `aio commerce init`
 
-Om du kör följande kommando skapas en ställningar för din Commerce-butik. Den här byggnadsställningen är en bra startpunkt för att bygga upp och förstå din butiksplats. Mer information om hur du arbetar med butiken finns i [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE).
+Om du kör följande kommando skapas en ställningar för din Commerce-butik. Den här byggnadsställningen är en bra startpunkt för att bygga upp och förstå din butiksplats. Mer information om hur du arbetar med butiken finns i [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 
 1. Kör kommandot `init`:
@@ -123,4 +125,30 @@ Om du kör följande kommando skapas en ställningar för din Commerce-butik. De
    * Förhandsgranska din butik: `https://main--<repo name>--<username or org>.aem.page/`
    * Kör lokalt: `aio commerce:dev`
 
-Mer information om hur du anpassar din butik finns i [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE).
+Mer information om hur du anpassar din butik finns i [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
+
+## Felsökning
+
+Om du stöter på problem med kommandot `aio login` rekommenderar Adobe att du loggar ut helt från CLI och webbläsaren och sedan loggar in igen.
+
+1. Kör följande för att logga ut från CLI:
+
+   ```bash
+   aio logout
+   ```
+
+1. Gå till [Adobe Developer Console](https://developer.adobe.com/console) i webbläsaren, klicka på din profilikon i det övre högra hörnet och välj **Logga ut**.
+
+1. Återgå till CLI och kör kommandot `aio login` igen, som startar ett webbläsarfönster för att logga in. Sedan kan du fortsätta att välja organisation, projekt och arbetsyta.
+
+   ```bash
+   aio console org select
+   ```
+
+   ```bash
+   aio console workspace select
+   ```
+
+   ```bash
+   aio console project select
+   ```
