@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: c9a87df4aa64081b51fd52d84d97fe3949045e31
+source-git-commit: 597cdd929f7abed24a68f1347a214b46664b1c75
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ Bland uppdateringarna finns:
 >SaaS-tillägget för dataexport är en samling moduler som installeras automatiskt med Live Search, Produktrekommendationer och katalogtjänsten. Du kan kontrollera vilken version som är installerad på datorn med Composer. I vissa fall kanske du vill uppgradera dataexporttillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 103.4.6 Utgåva
+
+![Korrigera](../assets/fix.svg) Exportera Adobe Commerce nedladdningsbara produktdata med attributet `ac_downloadable` för användning med Adobe Commerce Optimizer. <!--MDEE-1043-->
+![ Åtgärda ](../assets/fix.svg) Allvarliga installationsfel för Adobe Commerce version 2.4.4. <!--MDEE-1074-->
 
 ## 103.4.5 Utgåva
 
