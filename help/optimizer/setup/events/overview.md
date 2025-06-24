@@ -173,4 +173,4 @@ I den här tabellen beskrivs de händelser som används av varje rekommendations
 
 ## Support
 
-Om du märker att det finns avvikelser i data eller om rekommendationer och sökresultat inte fungerar som förväntat, [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Om du märker att det finns avvikelser i data eller om rekommendationer och sökresultat inte fungerar som förväntat, [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

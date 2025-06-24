@@ -3,7 +3,7 @@ title: Kom igång
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
 source-wordcount: '753'
@@ -45,7 +45,7 @@ Varje roll spelar en viktig roll för att du ska kunna komma igång med och star
 
 Administratörer ansvarar för att konfigurera instanser, hantera användare, grupper och berättiganden för din organisation.
 
-- **[Få tillgång till Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** - Hantera Adobe-berättiganden i hela organisationen. Mer information om hur du eller organisationens produktadministratör eller systemadministratör kan lägga till användare i produkten [!DNL Adobe Commerce Optimizer] finns i [användarhantering](./user-management.md).
+- **[Få tillgång till Adobe Admin Console](https://helpx.adobe.com/se/enterprise/admin-guide.html)** - Hantera Adobe-berättiganden i hela organisationen. Mer information om hur du eller organisationens produktadministratör eller systemadministratör kan lägga till användare i produkten [!DNL Adobe Commerce Optimizer] finns i [användarhantering](./user-management.md).
 
 - **Skapa en instans** - [!DNL Adobe Commerce Optimizer] instanser använder ett kreditbaserat system. Du kan skapa flera sandbox- och Production-instanser där varje instans kräver en motsvarande kredit. Hur många krediter du har från början beror på prenumerationen. [Läs mer](#create-an-instance).
 

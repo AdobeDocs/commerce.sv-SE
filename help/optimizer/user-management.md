@@ -1,7 +1,7 @@
 ---
 title: Användarhantering
 description: Lär dig hantera användare i  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: 02758aa5cc14af6d46bfc4bb7865fa37a787d4cb
 workflow-type: tm+mt
 source-wordcount: '458'
@@ -17,10 +17,10 @@ Du kan tilldela användare till någon av följande roller:
 
 - **Användare** - Användare har tillgång till användargränssnittet i [!DNL Adobe Commerce Optimizer] för att visa och hantera katalogvyer och försäljningsregler samt spåra prestandamått.
 
-- [**Utvecklare**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Utvecklare har användarbehörigheter och åtkomst till Adobe Developer Console. Det innebär att de kan skapa projekt och konfigurera autentiseringsuppgifter för att använda utvecklarverktyg som [!DNL Adobe Commerce Optimizer] API:er och SDK:er tillsammans med Adobe utökningsverktyg som App Builder och API Mesh.
+- [**Utvecklare**](https://helpx.adobe.com/se/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Utvecklare har användarbehörigheter och åtkomst till Adobe Developer Console. Det innebär att de kan skapa projekt och konfigurera autentiseringsuppgifter för att använda utvecklarverktyg som [!DNL Adobe Commerce Optimizer] API:er och SDK:er tillsammans med Adobe utökningsverktyg som App Builder och API Mesh.
 
 - **Admin** - Det finns tre olika typer av administratörsroller:
-   - [Systemadministratörer](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - Systemadministratören har åtkomst till alla produkter och produktprofiler i organisationen via Adobe Admin Console.
+   - [Systemadministratörer](https://helpx.adobe.com/se/enterprise/using/admin-roles.html){target="_blank"} - Systemadministratören har åtkomst till alla produkter och produktprofiler i organisationen via Adobe Admin Console.
    - [Produktadministratörer](#add-a-product-admin) - Produktadministratörer kan [hantera användare, roller och behörigheter för produkten](#add-users-and-admins) i [!DNL Adobe Admin Console].
    - [Administratörer för produktprofiler](#add-users-developers-and-product-profile-admins) - Administratörer för produktprofiler kan hantera användare för produkten i [!DNL Adobe Admin Console].
 
@@ -75,6 +75,6 @@ Följ de här instruktionerna för att lägga till användare och utvecklare i [
 
 Du kan lägga till flera användare effektivare med någon av följande metoder:
 
-- Använd funktionen **Lägg till användare via CSV** i Adobe Admin Console för att utföra en [massöverföring via CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
-- Lägg till flera användare i en roll genom att skapa en [användargrupp](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Lägg sedan till [!UICONTROL **Adobe Commerce as a Cloud Service - serverdel**] i användargruppen.
+- Använd funktionen **Lägg till användare via CSV** i Adobe Admin Console för att utföra en [massöverföring via CSV](https://helpx.adobe.com/se/enterprise/using/bulk-upload-users.html){target="_blank"}.
+- Lägg till flera användare i en roll genom att skapa en [användargrupp](https://helpx.adobe.com/se/enterprise/using/user-groups.html){target="_blank"}. Lägg sedan till [!UICONTROL **Adobe Commerce as a Cloud Service - serverdel**] i användargruppen.
 
