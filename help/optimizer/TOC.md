@@ -1,38 +1,60 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce Optimizer] Användarhandbok'
 user-guide-description: Dokumentation och resurser för  [!DNL Adobe Commerce Optimizer].
-hide: true
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 06fc665062703422a3f9afde03cb7ffcc873ef4a
+source-git-commit: d74665a7f321394c88acc243217aa2adbd290064
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 2%
+source-wordcount: '90'
+ht-degree: 1%
 
 ---
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [Ökning](overview.md)
+- [Vad är Adobe Commerce Optimizer?](overview.md)
 - [Kom igång](get-started.md)
 - [Användarhantering](user-management.md)
+- [Delat ansvar](shared-responsibility.md)
 - [Gränser och begränsningar](boundaries-limits.md)
+- Hantera resultat {#manage-results}
+   - [Rapporten Success Metrics](./manage-results/success-metrics.md)
+   - [Sökprestanda](./manage-results/search-performance.md)
+   - [Rekommendationsprestanda](./manage-results/recommendation-performance.md)
 - Merchandising {#merchandising}
    - [Ökning](./merchandising/overview.md)
-   - [Produktidentifiering](./merchandising/product-discovery.md)
-   - [Rekommendationer](./merchandising/recommendations.md)
-- Katalog {#catalog}
-   - [Ökning](./catalog/overview.md)
-   - [Kanaler](./catalog/channels.md)
-   - [Profiler](./catalog/policies.md)
-- Datainsikter {#data-insights}
-   - [Ökning](./data-insights/overview.md)
-   - [Datasynkronisering](./data-insights/data-sync.md)
-   - [Eventing](./data-insights/eventing.md)
-   - [Felsökning](./data-insights/troubleshooting.md)
+   - Rekommendationer {#recommendations}
+      - [Ökning](./merchandising/recommendations/overview.md)
+      - [Skapa och hantera](./merchandising/recommendations/create.md)
+      - [Filter](./merchandising/recommendations/filters.md)
+      - [Typer](./merchandising/recommendations/types.md)
+      - [Bästa praxis](./merchandising/recommendations/best-practice.md)
+   - Marknadsföringsregler {#rules}
+      - [Ökning](./merchandising/rules/overview.md)
+      - [Workspace](./merchandising/rules/workspace.md)
+      - [Skapa och hantera](./merchandising/rules/add.md)
+      - [Bästa praxis](./merchandising/rules/best-practice.md)
+   - Fasetter {#facets}
+      - [Ökning](./merchandising/facets/overview.md)
+      - [Workspace](./merchandising/facets/workspace.md)
+      - [Skapa och hantera](./merchandising/facets/add.md)
+      - [Typer](./merchandising/facets/type.md)
+      - [Bästa praxis](./merchandising/facets/best-practice.md)
+   - Synonymer {#synonyms}
+      - [Ökning](./merchandising/synonyms/overview.md)
+      - [Skapa och hantera](./merchandising/synonyms/add.md)
+      - [Typer](./merchandising/synonyms/type.md)
+      - [Bästa praxis](./merchandising/synonyms/best-practice.md)
+- Butiksinställning {#setup}
+   - [Katalogvyer](./setup/catalog-view.md)
+   - [Profiler](./setup/policies.md)
+   - [Prisböcker](./setup/pricebooks.md)
+   - [Datasynkronisering](./setup/data-sync.md)
+   - Händelser {#events}
+      - [Ökning](./setup/events/overview.md)
 - [Storefront](storefront.md)
+- [Inställningar](settings.md)
 - Användningsfall {#use-case}
-   - [Ökning](./use-case/overview.md)
    - [Handläggaren Storefront och katalogadministratören - från början till slut](./use-case/admin-use-case.md)
-
+- [Utvecklarhandbok](https://developer-stage.adobe.com/commerce/services/composable-catalog/)

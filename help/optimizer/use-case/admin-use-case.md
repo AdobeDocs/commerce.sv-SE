@@ -1,44 +1,68 @@
 ---
-title: Carvelo - användningsfall
-description: Lär dig hur du använder  [!DNL Adobe Commerce Optimizer] för att hantera din katalog med hjälp av kanaler och principer och hur du konfigurerar din butik baserat på din katalogkonfiguration.
-hide: true
+title: Handläggaren Storefront och katalogadministratören - från början till slut
+description: Lär dig hur du använder  [!DNL Adobe Commerce Optimizer] för att hantera din katalog med hjälp av katalogvyer och principer och hur du konfigurerar din butik baserat på din katalogkonfiguration.
 role: Admin, Developer
 feature: Personalization, Integration
-exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '2211'
 ht-degree: 0%
 
 ---
 
-# Carvelo - användningsfall
+# Handläggaren Storefront och katalogadministratören - från början till slut
 
->[!NOTE]
->
->I den här dokumentationen beskrivs en produkt vid utveckling av tidig åtkomst och den återspeglar inte alla funktioner som är avsedda för allmän tillgänglighet.
+Detta användningsexempel bygger på ett fiktivt bilkonglomerat som kallas Carvelo Automobilis, som har en komplex driftskonfiguration. Det visar hur du använder [!DNL Adobe Commerce Optimizer] för att hantera en katalog som stöder flera varumärken, återförsäljare och prisböcker samtidigt som du levererar en anpassad butiksupplevelse.
 
-Följande exempel visar hur du kan använda [!DNL Adobe Commerce Optimizer] för att ordna din katalog så att den matchar butiksåtgärder med en enda baskatalog. Det visar också hur man skapar en butik som drivs av Edge Delivery Services.
+## Förutsättningar
 
-## Förutsättning
+Det här användningsexemplet är utformat för administratörer och utvecklare som vill lära sig hur du konfigurerar en butik och hanterar en katalog med [!DNL Adobe Commerce Optimizer]. Du förutsätts ha en grundläggande förståelse för [!DNL Adobe Commerce Optimizer] och dess funktioner.
 
-Innan du går igenom det här användningsexemplet bör du kontrollera att du har [konfigurerat din butik](../storefront.md).
+**Beräknad tid för slutförande:** 45-60 minuter
+
+### Nödvändig konfiguration
+
+Innan du börjar den här självstudiekursen måste du se till att du har följande krav:
+
+- **Adobe Commerce Optimizer Instance**
+   - Åtkomst till en testinstans i Cloud Manager
+   - Se [Kom igång](../get-started.md) för installationsanvisningar
+
+- **Användarbehörigheter**
+   - Administratörsåtkomst till Adobe Admin Console
+   - Se [Användarhantering](../user-management.md) för kontokonfiguration
+   - Om du inte har åtkomst kontaktar du Adobe eller fyller i formuläret [Tidig åtkomst till program](https://experienceleague.adobe.com/go/aco-early-access-program)
+
+- **Exempeldata**
+   - Carvelo Automomobile-katalogdata som har lästs in i din instans
+   - Följ instruktionerna i [databasen för datainhämtning från exempelkatalog](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+   - Du kan ta bort exempeldata efter slutförandet med det inkluderade `reset.js`-skriptet
+
+- **StoreFront Environment**
+   - Lokal utvecklingsmiljö med Node.js
+   - Layoutprojektet Storefront klonas och konfigureras
+   - Mer information finns i [Inställningar för Storefront](../storefront.md)
 
 ## Kom så börjar vi
 
 I det här fallet arbetar du med följande:
 
-1. [!DNL Adobe Commerce Optimizer]-gränssnitt - Konfigurera nödvändiga kanaler och principer för att hantera driftsinställningar för komplexa kataloger.
+1. [!DNL Adobe Commerce Optimizer]-gränssnitt - Konfigurera katalogvyer och principer för att hantera den komplexa katalogens driftsinställning för Carvelos användningsfall.
 
-1. Commerce Storefront - Återge butiken med katalogdata som är konfigurerade i [!DNL Adobe Commerce Optimizer]-gränssnittet och konfigurationsfilerna för Commerce Storefront, `fstab.yaml` och `config.json`.
+1. Commerce Storefront - Återge butiken med exempelkatalogdata som lästs in i [!DNL Adobe Commerce Optimizer]-instansen och konfigurationsfilerna för Commerce Storefront, `fstab.yaml` och `config.json`.
+
+>[!NOTE]
+>
+> Lär dig mer om konfigurationsfiler för butiker genom att läsa avsnittet [Utforska standardmallen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) i dokumentationen för Adobe Commerce Storefront.
 
 ### ‌ viktiga uppgifter
 
 I slutet av den här artikeln ska du:
 
-- Lär dig grunderna i [!DNL Adobe Commerce Optimizer] med dess unika prestanda och skalbara katalogdatamodell.
-- Lär dig hur katalogdatamodellen sömlöst kopplas ihop med plattformsoberoende butikskomponenter som byggts av Adobe.
-- Lär dig hur du använder Adobe Commerce Optimizer kanaler och profiler för att skapa anpassade katalogvyer och dataåtkomstfilter och skickar data till en Adobe Commerce-butik som drivs av Edge Delivery.
+- Lär dig grunderna i [!DNL Adobe Commerce Optimizer] med dess prestanda och skalbara katalogdatamodell.
+- Läs om hur katalogdatamodellen integreras med plattformsoberoende butikskomponenter som byggts av Adobe.
+- Lär dig hur du använder katalogvyer och principer från Adobe Commerce Optimizer för att skapa anpassade katalogvyer och dataåtkomstfilter och skickar data till en Adobe Commerce-butik som drivs av Edge Delivery.
 
 ## Affärsscenario - Carvelo Automoble
 
@@ -74,7 +98,7 @@ Nu när du har en översikt över användningsfallet för företag kan du göra 
 
 >[!BEGINSHADEBOX]
 
-Carvelo vill sälja delar av sina tre varumärken (Aurora, Bolt och Cruz) genom de olika återförsäljarna (Akbridge, Kingsbluff och Celport). Carvelo vill se till att återförsäljarna bara har tillgång till rätt delar och priser enligt sina respektive licensavtal.
+Carvelo vill sälja delar av sina tre varumärken (Aurora, Bolt och Cruz) genom de olika återförsäljarna (Arkbridge, Kingsbluff och Celport). Carvelo vill se till att återförsäljarna bara har tillgång till rätt delar och priser enligt sina respektive licensavtal.
 
 I slutändan har Carvelo två viktiga mål:
 
@@ -83,11 +107,9 @@ I slutändan har Carvelo två viktiga mål:
 
 >[!ENDSHADEBOX]
 
-Gå till din [!DNL Adobe Commerce Optimizer]-instans nu.
+## &#x200B;1. Få åtkomst till instansen [!DNL Adobe Commerce Optimizer]
 
-## 1. Få åtkomst till instansen [!DNL Adobe Commerce Optimizer]
-
-När du har anslutit till programmet Tidig åtkomst skickar Adobe ett e-postmeddelande med en URL som ger dig åtkomst till den [!DNL Adobe Commerce Optimizer]-instans som du har fått. Den här instansen är förkonfigurerad med allt du behöver för att slutföra stegen som beskrivs i den här självstudiekursen, inklusive katalogdata som stöder Carvelo Automoble-användningsexemplet.
+Navigera till URL:en för det Commerce Optimizer-program som är förkonfigurerat med exempeldata. Du kan hitta URL:en i Commerce Cloud Manager från instansinformationen för ditt Commerce Optimizer-projekt eller hämta den från systemadministratören. (Se [Åtkomst till en instans](../get-started.md#access-an-instance).)
 
 När du startar [!DNL Adobe Commerce Optimizer] ser du följande:
 
@@ -95,17 +117,17 @@ När du startar [!DNL Adobe Commerce Optimizer] ser du följande:
 
 >[!NOTE]
 >
->Läs artikeln [overview](../overview.md) om du vill veta mer om de olika delarna som utgör användargränssnittet i [!DNL Adobe Commerce Optimizer].
+>Läs artikeln [overview](../overview.md) om du vill veta mer om viktiga komponenter i användargränssnittet i [!DNL Adobe Commerce Optimizer].
 
-I den vänstra navigeringen expanderar du avsnittet **[!UICONTROL Catalog]** och klickar på **[!UICONTROL Channels]**. Observera att återförsäljarna Arkbridge och Kingsbluff redan har skapat kanaler:
+I den vänstra navigeringen expanderar du avsnittet _Store setup_ och klickar på **[!UICONTROL Catalog views]**. Observera att återförsäljarna av Arkbridge och Kingsbluff redan har katalogvyer:
 
-![Förkonfigurerade kanaler](../assets/existing-channels-list.png)
+![Befintliga katalogvyer har konfigurerats för exempeldata](../assets/existing-channels-list.png)
 
 >[!NOTE]
 >
->Du kan för tillfället ignorera den **globala**-kanalen.
+>Du kan ignorera katalogvyn **Global** för tillfället.
 
-Klicka på informationsikonen för att granska kanalinformation.
+Klicka på informationsikonen om du vill visa information om katalogvyn.
 
 Arkbridge har följande policyer:
 
@@ -121,9 +143,9 @@ Kingsbluff har följande policyer:
 - East Coast Inc-varumärken
 - Kingsbluff - delkategorier
 
-I nästa avsnitt skapar du en kanal och profiler för Celport-återförsäljaren.
+I nästa avsnitt skapar du en katalogvy och principer för Celport-återförsäljaren.
 
-## 2. Skapa en policy och kanal
+## &#x200B;2. Skapa en policy- och katalogvy
 
 Carvelos handelschef måste skapa en ny butik för en återförsäljare som heter *Celport* som tillhör företaget *East Coast Inc*. Celport säljer bromsar och suspensioner för varumärkena Bolt och Cruz.
 
@@ -132,10 +154,10 @@ Carvelos handelschef måste skapa en ny butik för en återförsäljare som hete
 Med [!DNL Adobe Commerce Optimizer] kan e-handelshanteraren:
 
 1. Skapa en ny policy som heter *Celport part categories* för Celport så att bara broms- och suspensionsdelar säljs.
-1. Skapa en ny kanal för Celport-butiken.
+1. Skapa en ny katalogvy för Celport-butiken.
 
-   I den här kanalen används din nya policy *Celport part-kategorier* och befintliga *East Coast Inc-varumärken* för att säkerställa att Celport bara kan sälja de Bolt- och Cruz-varumärken som en del av avtalet med East Coast Inc. Celport-kanalen använder prisboken `east_coast_inc` för att stödja produktprisscheman som är anpassade till varumärkeslicensavtal.
-1. Uppdatera butikskonfigurationen för e-handel så att den använder data från den Celport-kanal som du skapade.
+   I den här katalogvyn används din nya policy *Celport part-kategorier* och befintliga *East Coast Inc-varumärken* för att se till att Celport bara kan sälja varumärken som Bolt och Cruz som en del av avtalet med East Coast Inc. I Celport-katalogvyn används prisboken `east_coast_inc` för att stödja produktprisscheman som är anpassade till varumärkeslicensavtal.
+1. Uppdatera konfigurationen för e-handelslager så att data från katalogvyn i Celport som du har skapat används.
 
 I slutet av det här avsnittet kommer Celport att vara igång och redo att sälja Carvelos produkter.
 
@@ -143,9 +165,9 @@ I slutet av det här avsnittet kommer Celport att vara igång och redo att sälj
 
 Låt oss skapa en ny policy som kallas *Celport-delkategorier* för att filtrera SKU:er som Celport-återförsäljaren säljer, som innehåller broms- och suspensionsdelar.
 
-1. I den vänstra navigeringen expanderar du avsnittet **[!UICONTROL Catalog]** och klickar på **[!UICONTROL Policies]**.
+1. Utöka avsnittet _Store setup_ i den vänstra listen och klicka på **[!UICONTROL Policies]**.
 
-1. Klicka på **[!UICONTROL Add Policy]**.
+1. Klicka på **[!UICONTROL Create Policy]**.
 
    En ny sida visas där profilinformationen läggs till.
 
@@ -168,7 +190,7 @@ Låt oss skapa en ny policy som kallas *Celport-delkategorier* för att filtrera
    >
    >Kontrollera att det attributnamn du anger exakt matchar SKU-attributnamnet i katalogen.
 
-   Mer information om skillnaden mellan en STATIC- och TRIGGER-värdekälla finns i [värdekälltyper](../catalog/policies.md#value-source-types).
+   Mer information om skillnaden mellan en STATIC- och TRIGGER-värdekälla finns i [värdekälltyper](../setup/policies.md#value-source-types).
 
 1. Klicka på **[!UICONTROL Save]** i dialogrutan **[!UICONTROL Filter details]**.
 
@@ -184,49 +206,59 @@ Låt oss skapa en ny policy som kallas *Celport-delkategorier* för att filtrera
 
    Din nya princip för *Delkategorier för att exportera* visas i listan.
 
-### Skapa en kanal
+**Så här verifierar du att det här steget har slutförts korrekt:**
 
-Skapa en ny kanal för återförsäljaren av *Celport* och länka följande profiler: *East Coast Inc-varumärken* och *Celport Part Categories*.
+- Profilen visas i principlistan
+- Principstatusen visas som aktiverad (grön indikator)
+- Filterinformationen visar &quot;part_category IN (bromsar, suspension)&quot;
+- Principnamnet är &quot;Celport Part Categories&quot;
 
-1. I den vänstra navigeringen expanderar du avsnittet **[!UICONTROL Catalog]** och klickar på **[!UICONTROL Channels]**.
+### Skapa en katalogvy
 
-   ![Kanaler](../assets/channels.png)
+Skapa en ny katalogvy för *Celport*-återförsäljaren och länka följande profiler: *East Coast Inc-varumärken* och *Celport Part Categories*.
 
-   Observera de befintliga kanalerna: *Arkbridge*, *Kingsbluff* och *Global*.
+1. Utöka avsnittet _Store setup_ i den vänstra listen och klicka på **[!UICONTROL Catalog views]**.
 
-   ![Sidan Befintliga kanaler](../assets/existing-channels-list.png)
+   Observera de befintliga katalogvyerna: *Arkbridge*, *Kingsbluff* och *Global*.
 
-1. Klicka på **[!UICONTROL Add Channel]**.
+   ![Sidan Befintliga katalogvyer](../assets/existing-channels-list.png)
 
-1. Fyll i kanalinformation:
+1. Klicka på **[!UICONTROL Add catalog view]**.
+
+1. Fyll i katalogvyinformation:
 
    - **Namn** = *Cirkapp*
-   - **Omfång** = *en-US* (tryck på Retur)
+   - **Katalogkällor** = *sv-SE* (träffcenter)
    - **Profiler** (använd listruta) = *East Coast Inc-varumärken*; *Exportera delkategorier*; *Märke*; *Modell*                          
+1. Klicka på **[!UICONTROL Add]** för att skapa katalogvyn.
 
-1. Klicka på **[!UICONTROL Add]** för att skapa kanalen.
+   Sidan Katalog visar uppdateras för att visa den nya katalogvyn.
 
-   Sidan Kanaler uppdateras för att visa den nya kanalen.
-
-   ![Uppdaterad kanallista](../assets/updated-channels-list.png)
+   ![Uppdaterad lista över katalogvyer](../assets/updated-catalog-view-list.png)
 
    >[!NOTE]
    >
-   >Om knappen **[!UICONTROL Add]** inte är blå kontrollerar du att omfånget är markerat genom att placera markören i avsnittet **[!UICONTROL Scopes]** och trycka på **enter**.
+   >Om knappen **[!UICONTROL Add]** inte är blå kontrollerar du att katalogkällan är markerad genom att placera markören i avsnittet **[!UICONTROL Catalog sources]** och trycka på **enter**.
 
-1. Hämta CellPort-kanal-ID:t.
+1. Hämta ID:t för katalogvyn i Celport.
 
-   Klicka på informationsikonen för Celport-kanalen på sidan **Kanaler**.
+   Klicka på informationsikonen för vyn för att exportera katalog på sidan **Katalogvyer**.
 
-   ![Exportera kanal-ID](../assets/celport-channel-id.png)
+   ![Koppla från katalogvy-ID](../assets/celport-channel-id.png)
 
-   Kopiera och spara kanal-ID:t. Du behöver detta ID när du uppdaterar butikskonfigurationen för att kunna leverera data till din nya Celport-katalog.
+   Kopiera och spara katalogvyns ID. Du behöver detta ID när du uppdaterar butikskonfigurationen för att kunna leverera data till din nya Celport-katalog.
 
-När du har skapat Celport-kanalen och associerade profiler är nästa steg att konfigurera storefront för att skapa din nya Celport-katalog.
+   **Så här verifierar du att det här steget har slutförts korrekt:**
+   - Katalogvyns namn är &quot;Celport&quot;
+   - Katalogvyn visar fyra associerade principer
+   - Katalogvyns ID visas och kan kopieras
+   - Katalogkällan visar &quot;en-US&quot;
 
-## 3. Uppdatera din butik
+När du har skapat katalogvyn och tillhörande profiler är nästa steg att konfigurera butiken så att den använder din nya Celport-katalog.
 
-Den sista delen av den här självstudien är att uppdatera butiken som [du redan har skapat](#prerequisite) för att leverera data till den nya Celport-katalogen. I det här avsnittet ersätter du channel ID:t i konfigurationsfilen för butiken med channel ID:t för Celport.
+## &#x200B;3. Uppdatera din butik
+
+Den sista delen av den här självstudien är att uppdatera butiken som [du redan har skapat](#prerequisite) för att leverera data till den nya Celport-katalogen. I det här avsnittet ersätter du katalogvyns ID i konfigurationsfilen för butiken med katalogvyns ID för Celport.
 
 1. I den lokala utvecklingsmiljön öppnar du den mapp där du klonade GitHub-databasen med konfigurationsfilerna för lagerplatserna.
 
@@ -242,10 +274,9 @@ Den sista delen av den här självstudien är att uppdatera butiken som [du reda
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-channel-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
-            "ac-environment-id": "Fwus6kdpvYCmeEdcCX7PZg",
+            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-price-book-id": "west_coast_inc",
-            "ac-scope-locale": "en-US"
+            "ac-source-locale": "en-US"
            }
          },
          "analytics": {
@@ -264,25 +295,63 @@ Den sista delen av den här självstudien är att uppdatera butiken som [du reda
    }
    ```
 
-   Observera att kanalhuvudet innehåller följande rader:
+   Observera att följande värden finns i katalogvyhuvudet:
 
-   - `ac-channel-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
-   - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
+   - `commerce-endpoint`: `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
+   - `ac-catalog-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id`: `"west_coast_inc"`
+   - `ac-source-locale`: `"en-US"`
 
-   +++
+1. I värdet `commerce-endpoint` ersätter du klientorganisations-ID:t i URL:en med URL:en för din [!DNL Adobe Commerce Optimizer]-instans.
 
-1. Ersätt värdet `ac-channel-id` med det Celerport-kanal-ID som du kopierade tidigare.
-1. Ersätt värdet `ac-environment-id` med klientorganisations-ID:t för din [!DNL Adobe Commerce Optimizer]-instans. Du kan hitta ID:t i e-postmeddelandet om introduktion för programmet för tidig åtkomst, eller genom att kontakta din Adobe-kontorepresentant.
+   Du hittar klient-ID:t i URL:en för Commerce Optimizer-gränssnittet. I följande URL är till exempel klient-ID `XDevkG9W6UbwgQmPn995r3`.
 
-   >[!IMPORTANT]
-   >
-   >Kontrollera att värdet `commerce-endpoint` matchar GraphQL-slutpunkten för din [!DNL Adobe Commerce Optimizer]-instans. Detta anges i ditt välkomstmeddelande.
+   ```text
+   https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
+   ```
+
+1. Ersätt `ac-catalog-view-id`-värdet med det ID för katalogvyn som du kopierade tidigare.
 
 1. Ersätt värdet `ac-price-book-id` med `"east_coast_inc"`.
+
+   När du har gjort dessa ändringar bör `config.json`-filen se ut ungefär så här, med platshållarna `ACO-tenant-id` och `celport-catalog-view-id` ersatta med dina värden:
+
+   ```json
+   {
+     "public": {
+        "default": {
+        "commerce-core-endpoint": "https://www.aemshop.net/graphql",
+        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
+        "headers": {
+            "cs": {
+                "ac-catalog-view-id": "{{celport-catalog-view-id}}",
+                "ac-price-book-id": "east_coast_inc",
+                "ac-source-locale": "en-US"
+              }
+            },
+            "analytics": {
+                "base-currency-code": "USD",
+                "environment": "Production",
+                "store-id": 1,
+                "store-name": "ACO Demo",
+                "store-url": "https://www.aemshop.net",
+                "store-view-id": 1,
+                "store-view-name": "Default Store View",
+                "website-id": 1,
+                "website-name": "Main Website"
+             }
+         }
+     }
+   }
+   ```
+
 1. Spara filen.
 
-När du sparar ändringarna uppdaterar du katalogkonfigurationen så att den använder Carvelo-kanalen, som har konfigurerats att endast sälja broms- och suspensionsdelar.
+   När du sparar ändringarna uppdaterar du katalogkonfigurationen så att den använder Carvelo-katalogvyn, som har konfigurerats att endast sälja broms- och suspensionsdelar.
+
+## &#x200B;4. Förhandsgranska butiken
+
+Nu när du har uppdaterat butikskonfigurationen så att den använder katalogvyn i Celport kan du förhandsgranska butiken för att se hur den återger katalogdata.
 
 1. Starta butiken för att visa den Celport-specifika katalogupplevelse som har skapats i din storefront-konfiguration.
 
@@ -292,29 +361,29 @@ När du sparar ändringarna uppdaterar du katalogkonfigurationen så att den anv
       npm start
       ```
 
-   Webbläsaren öppnas för den lokala utvecklingsförhandsgranskningen på `http://localhost:3000`.
+      Webbläsaren öppnas för den lokala utvecklingsförhandsgranskningen på `http://localhost:3000`.
 
-   Om kommandot misslyckas eller om webbläsaren inte öppnas går du igenom [instruktionerna för lokal utveckling](../storefront.md) i installationsavsnittet för Storefront.
+      Om kommandot misslyckas eller om webbläsaren inte öppnas går du igenom [instruktionerna för lokal utveckling](../storefront.md) i installationsavsnittet för Storefront.
 
-   1. Sök efter `brakes` i webbläsaren och tryck på **Retur**.
+1. Sök efter `brakes` i webbläsaren och tryck på **Retur**.
 
-      Lagerfronten uppdateras för att visa sidan med produktlistan med bromsdelarna.
+   Lagerfronten uppdateras för att visa sidan med produktlistan med bromsdelarna.
 
    ![Bromsar produktlistsidan](../assets/brakes-listing-page.png)
 
    Klicka på en bild av en bromsdel för att visa produktinformationen med prisinformation och notera produktprisinformationen.
 
-1. Sök nu efter `tires`, som är en annan delkategori som är tillgänglig i användningsfalldata för din [!DNL Adobe Commerce Optimizer]-instans.
+1. Sök efter `tires`, som är en annan delkategori som är tillgänglig i användningsfalldata för din [!DNL Adobe Commerce Optimizer]-instans.
 
    ![Konfiguration för Storefront med felaktiga rubriker](../assets/storefront-configuration-with-incorrect-headers.png)
 
-   Observera att inga resultat returneras. Detta beror på att Celport-kanalen har konfigurerats att endast sälja broms- och upphängningsdelar.
+   Observera att inga resultat returneras. Detta beror på att Celport-katalogvyn har konfigurerats så att endast broms- och upphängningsdelar säljs.
 
 1. Experimentera med att uppdatera konfigurationsfilen för butiken (`config.json`).
 
-   1. Ändra värdena för `ac-channel-id` och `ac-price-book`.
+   1. Ändra värdena för `ac-catalog-view-id` och `ac-price-book`.
 
-      Du kan till exempel ändra kanal-ID:t till Kingsbluff-kanalen och prisbokens ID till `east_coast_inc`. Du kan se vilka kategorier som är tillgängliga för Kingsbluff genom att granska principen för *Kingsbluff-delen*.
+   Du kan till exempel ändra katalogvyns ID till Kingsbluff-katalogvyn och prisbokens ID till `east_coast_inc`. Du kan se vilka kategorier som är tillgängliga för Kingsbluff genom att granska principen för *Kingsbluff-delen*.
 
    1. Spara filen.
 
@@ -322,14 +391,67 @@ När du sparar ändringarna uppdaterar du katalogkonfigurationen så att den anv
 
    1. Förhandsgranska ändringarna i webbläsaren genom att använda sökfunktionen för att hitta däckdelar.
 
-      Lägg märke till de olika tillgängliga deltyperna och observera priserna som tilldelats Kingsbluff-kanalen.
+      Lägg märke till de olika tillgängliga deltyperna och observera priserna som tilldelats katalogvyn Kingsbluff.
 
-      Genom att ändra rubrikvärden i konfigurationsfilen för butiken och utforska den uppdaterade butiken kan du se hur enkelt det är att uppdatera katalogvyn och datafiltren för att anpassa butiksupplevelsen.
+   Experimenten visar på flexibiliteten i Adobe Commerce Optimizer - du kan snabbt växla mellan olika katalogvyer och prisböcker och skapa anpassade shoppingupplevelser för olika målgrupper utan att behöva duplicera katalogdata.
 
-## Så ja!
+## Felsökning
 
-I den här självstudiekursen lärde du dig hur [!DNL Adobe Commerce Optimizer] kan hjälpa dig att ordna din katalog så att den matchar dina återförsäljningsåtgärder med en enda baskatalog. Du lärde dig också att skapa en butik som drivs av Edge Delivery Services.
+Om du stöter på problem under kursen kan du prova med följande lösningar:
 
-## Vart ska du gå härifrån?
+### Problem med att skapa profiler
 
-Mer information om hur du kan använda produktidentifiering och rekommendationer för att anpassa shoppingupplevelsen för dina kunder finns i [försäljningsöversikten](../merchandising/overview.md).
+**Problem:** Knappen Spara är inte aktiv
+
+- **Lösning:** Kontrollera att principnamnet har angetts och att alla obligatoriska fält har fyllts i
+
+**Problem:** Filtret fungerar inte som förväntat
+
+- **Lösning:** Kontrollera att attributnamnet exakt matchar SKU-attributet i din katalog
+
+### Problem i katalogvyn
+
+**Problem:** Katalogvyn visas inte i listan
+
+- **Lösning:** Kontrollera att alla associerade principer är aktiverade och korrekt konfigurerade
+
+**Problem:** Knappen Lägg till är inte blå
+
+- **Lösning:** Kontrollera att katalogkällan är markerad genom att placera markören i fältet och trycka på Retur
+
+### Konfigurationsproblem för Storefront
+
+**Problem:** Storefront läses inte in
+
+- **Lösning:** Kontrollera att ditt klient-ID och katalogvisnings-ID är korrekt angivna i filen config.json
+
+**Problem:** Inga produkter visas
+
+- **Lösning:** Kontrollera att prisbokens ID matchar ett som finns i din Adobe Commerce Optimizer-instans
+
+**Problem:** Sökningen returnerar inga resultat
+
+- **Lösning:** Bekräfta att katalogvyprinciperna tillåter den sökta produktkategorin
+
+Mer hjälp finns i [Adobe Commerce Optimizer-dokumentationen](../overview.md) eller kontakta Adobe support.
+
+## Sammanfattning
+
+I den här självstudiekursen kan du:
+
+- Skapade en ny policy för att filtrera produktkategorier för Celport-återförsäljaren
+- Ställ in en katalogvy med flera profiler för att styra produktsynlighet
+- Konfigurerade en butik för att använda den nya katalogvyn
+- Verifierade konfigurationen genom att testa produktsynlighet och priser
+
+## Nästa steg
+
+Så här fortsätter du lära dig om Adobe Commerce Optimizer:
+
+- Utforska [försäljningsfunktionerna](../merchandising/overview.md) för att anpassa shoppingupplevelsen
+- Läs om [avancerade principkonfigurationer](../setup/policies.md)
+- Konfigurera [ytterligare katalogvyer](../setup/catalog-view.md) för andra leverantörer
+- Granska [API-dokumentationen](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) för programmatisk kataloghantering
+- Lär dig hur du konfigurerar instickskomponenter för din Edge Delivery Services-butik för att skapa anpassade butiksupplevelser för produktupptäckt, rekommendationer och andra butiksfunktioner. Se [dokumentationen för Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
+
+
