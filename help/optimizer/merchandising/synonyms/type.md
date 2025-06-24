@@ -29,7 +29,7 @@ En envägssynonym är en delmängd av ett nyckelord, men med en mer specifik bet
 
 ## Beteende för synonym med flera ord
 
-För synonymer med flera ord betraktas synonymen som en fras av [!DNL Adobe Commerce Optimizer]. Om du till exempel skapar en tvåvägssynonym **matrumstabell** ![Tvåvägsväljare](../../assets/btn-two-way.png) **kökstabell** ![Tvåvägsväljare](../../assets/btn-two-way.png) **matningstabell** söker [!DNL Adobe Commerce Optimizer] igenom alla fält som är inställda på sökbara för förekomsten av **matrumstabell** eller **3}kökstabell** eller **matbord**.
+För synonymer med flera ord betraktas synonymen som en fras av [!DNL Adobe Commerce Optimizer]. Om du till exempel skapar en tvåvägssynonym **matrumstabell** ![Tvåvägsväljare](../../assets/btn-two-way.png) **kökstabell** ![Tvåvägsväljare](../../assets/btn-two-way.png) **matningstabell** söker [!DNL Adobe Commerce Optimizer] igenom alla fält som är inställda på sökbara för förekomsten av **matrumstabell** eller **3&rbrace;kökstabell** eller **matbord**.
 
 Om ingen synonym skapas och en kund söker efter **kökstabell** söker [!DNL Adobe Commerce Optimizer] efter termerna var som helst i de sökbara fälten, även mellan olika fält, till exempel **tabell** i namnfältet och **kök** i meta-nyckelordet.
 
