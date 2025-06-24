@@ -2,7 +2,7 @@
 title: Migrera till  [!DNL Adobe Commerce as a Cloud Service]
 description: Lär dig hur du migrerar till  [!DNL Adobe Commerce as a Cloud Service].
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Architect
 source-git-commit: 506873780783e26841943a4b43dbc955c73f6f62
 workflow-type: tm+mt
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 **Viktiga skillnader**
 
-* [!BADGE PaaS endast]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} **PaaS (aktuell)**: Merchant hanterar programkod, uppgraderingar, patchering och infrastrukturkonfiguration i Adobe värdmiljö. [Delad ansvarsmodell](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) för tjänster (MySQL, Elasticsearch med flera).
-* [!BADGE SaaS endast]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} **SaaS (ny - [!DNL Adobe Commerce as a Cloud Service])**: Adobe hanterar kärnprogrammet, infrastrukturen och uppdateringarna fullt ut. Handläggarna fokuserar på anpassning via utökningspunkter (API:er, App Builder, UI SDK:er). Programkoden är låst.
+* [!BADGE PaaS endast]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} **PaaS (aktuell)**: Merchant hanterar programkod, uppgraderingar, patchering och infrastrukturkonfiguration i Adobe värdmiljö. [Delad ansvarsmodell](https://experienceleague.adobe.com/sv/docs/commerce-operations/security-and-compliance/shared-responsibility) för tjänster (MySQL, Elasticsearch med flera).
+* [!BADGE SaaS endast]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} **SaaS (ny - [!DNL Adobe Commerce as a Cloud Service])**: Adobe hanterar kärnprogrammet, infrastrukturen och uppdateringarna fullt ut. Handläggarna fokuserar på anpassning via utökningspunkter (API:er, App Builder, UI SDK:er). Programkoden är låst.
 
 **Arkitekturkonsekvenser**
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 **Nya verktyg och koncept**
 * [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) och [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
 * Självbetjäning med [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ## Migreringssökvägar
@@ -166,7 +166,7 @@ Det här alternativet är ett övergångssteg som bygger på en befintlig integr
 
 * **Synkronisering av katalogdata**: Kontrollera att din Adobe Commerce PaaS-instans fortsätter att synkronisera produkt- och katalogdata med din befintliga Adobe Commerce Catalog SaaS-tjänst. Detta är vanligtvis beroende av etablerade anslutningar eller moduler i din PaaS-instans. Catalog SaaS-tjänsten är fortfarande den auktoritativa källan för sök- och säljfunktioner och hämtar data från din PaaS-server.
 * **API-nät för optimering**: Även om den headless storefront (på Edge Delivery Services) och andra tjänster kan förbruka data direkt från Catalog SaaS-tjänsten rekommenderar Adobe att du använder API Mesh (i App Builder). API Mesh kan kombinera API:er från Catalog SaaS-tjänsten med andra nödvändiga API:er från din PaaS-backend (t.ex. inventeringskontroller i realtid från transaktionsdatabasen eller anpassade produktattribut som inte helt replikerats till Catalog SaaS-tjänsten) till en enda högpresterande GraphQL-slutpunkt. Detta möjliggör även centraliserad cachelagring, autentisering och svarsomvandling.
-* **Integrera Live Search och produktrekommendationer**: Konfigurera SaaS-tjänster för Live-sökning och produktrekommendationer till [att importera katalogdata](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) direkt från din befintliga SaaS-tjänst för Adobe Commerce Catalog, som i sin tur fylls i av din AppaS-backend.
+* **Integrera Live Search och produktrekommendationer**: Konfigurera SaaS-tjänster för Live-sökning och produktrekommendationer till [att importera katalogdata](https://experienceleague.adobe.com/sv/docs/commerce/live-search/install#configure-the-data) direkt från din befintliga SaaS-tjänst för Adobe Commerce Catalog, som i sin tur fylls i av din AppaS-backend.
 
 **Fördel**: Detta ger en snabbare väg till en headless Store och avancerade SaaS-försäljningsfunktioner genom att utnyttja en befintlig och fungerande Catalog SaaS-tjänst och dess integrering med din PaaS-backend. Den behåller emellertid beroendet av PaaS-serverdelen för den primära katalogdatakällan och tillhandahåller inte de sammanställningsfunktioner för flera källor som är inbyggda i den nya sammanställningsbara katalogdatamodellen. Det här alternativet är en giltig språngbräda mot en mer heltäckande sammansättningsbar arkitektur.
 
