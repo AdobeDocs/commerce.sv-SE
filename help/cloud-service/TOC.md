@@ -4,9 +4,9 @@ user-guide-description: Den här guiden innehåller detaljerade anvisningar om h
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: c820fa2995486027a1c048da21dc9db6f9cbb85c
+source-git-commit: 3f3d87585378d334d90c9dc1bdcb67a9cd00eff6
 workflow-type: tm+mt
-source-wordcount: '33'
+source-wordcount: '38'
 ht-degree: 0%
 
 ---
@@ -22,5 +22,7 @@ ht-degree: 0%
 - [Resurshantering](assets-management.md)
 - [Användningsexempel](use-cases.md)
 - [Delat ansvar](shared-responsibility.md)
-- [Migrering](migration.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
+- Migrering {#migration}
+   - [Ökning](migration/overview.md)
+   - [Migreringsverktyg för massdata](migration/bulk-data.md)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
