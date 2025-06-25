@@ -226,7 +226,7 @@ Du behöver följande information för att kunna uppdatera koden för skyltplatt
 
    Mer information finns i [dokumentationen för Sidekick-biblioteket](https://www.aem.live/docs/sidekick-library).
 
-+++
+   +++
 
 1. Uppdatera nyckelvärdena för `url` med värdena för din GitHub-databas.
 
@@ -266,7 +266,7 @@ Du behöver följande information för att kunna uppdatera koden för skyltplatt
    }
    ```
 
-+++
+   +++
 
 1. Spara filen.
 
