@@ -3,121 +3,188 @@ title: Kom igång
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
+source-git-commit: 036e04a02edadf4b8a48fc38e784d9dde734ba45
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
 
 # Kom igång
 
-I den här artikeln får du lära dig hur du kommer igång med [!DNL Adobe Commerce Optimizer]. Den här guiden fokuserar på handlares och administratörers roller, men innehåller även kortfattade uppgifter på hög nivå som en utvecklare skulle utföra. Mer information om utvecklarspecifikt innehåll finns i [utvecklardokumentationen](https://developer-stage.adobe.com/commerce/services/composable-catalog/).
+Den här guiden hjälper dig att konfigurera [!DNL Adobe Commerce Optimizer] från början till slut. Den här guiden täcker alla roller, men mer information om utvecklarspecifikt innehåll finns i [utvecklardokumentationen](https://developer.adobe.com/commerce/services/optimizer/).
 
-## Vilken är din roll?
+## Förutsättningar
 
-[!DNL Adobe Commerce Optimizer] har konfigurerats och omfattar vanligtvis följande teammedlemmar:
+Kontrollera att du har:
 
-- Administratör
-- Utvecklare
-- Merchandiser
+- **Adobe Experience Cloud-konto** med [!DNL Adobe Commerce Optimizer] berättiganden
+- **Organisationsadministratörsåtkomst** för att skapa instanser och hantera användare
+- **GitHub-konto** (för inläsning av exempeldata och utveckling av butiker)
+- **Grundläggande förståelse** av e-handelsbegrepp
 
-Varje teammedlem har sina egna roller och ansvarsområden enligt följande tabell:
+## Snabbstartsguide
 
-| Roll(er) | Uppgift |
-|---|---|
-| Administratör | Använd Admin Console för att skapa &#x200B;, användargrupper, användare och utvecklare. |
-|  | Skapa en ny [!DNL Adobe Commerce Optimizer]-instans i Commerce Cloud Manager. &#x200B; |
-|  | Konfigurera principer och katalogvyer. |
-| Utvecklare | Använd Developer Console för att skapa ett projekt, ge utvecklare API-åtkomst och installera nödvändiga program och anpassningar. |
-|  | Anslut till ditt back office-system (kundvagn, utcheckning) med API Mesh och App Builder &#x200B;. |
-|  | Infoga katalogdata från dina befintliga e-handelslösningar med API-&#x200B; för Merchandising Services-datainmatning |
-|  | Konfigurera din butik |
-| Merchandiser | Ställ in &#x200B; för produktupptäckt. |
-|  | Ställ in produktrekommendationer. |
+Så här kör du [!DNL Adobe Commerce Optimizer]-miljön:
 
-Varje roll spelar en viktig roll för att du ska kunna komma igång med och starta din [!DNL Adobe Commerce Optimizer]-miljö. I följande diagram visas ett arbetsflöde från början till slut för varje roll i organisationen:
+### Steg 1. Skapa en instans
+
+1. Logga in på [Adobe Experience Cloud](https://experience.adobe.com/).
+1. Navigera till **Commerce** > **Commerce Cloud Manager**.
+1. Klicka på **Lägg till instans** > **Commerce Optimizer**.
+
+   ![Skapa instans](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
+
+1. Konfigurera instansinställningar:
+   - **Namn**: Beskrivande namn (till exempel &quot;Min företagssandlåda&quot;)
+   - **Beskrivning**: En kort beskrivning av syftet
+   - **Region**: Välj önskad region
+   - **Miljötyp**: Börja med en **sandlådemiljö** för testning
+
+1. Klicka på **Lägg till instans**.
+
+   Cloud Manager uppdaterar och inkluderar din nya instans. Mer information om hur du kommer åt och hanterar den finns i [Hantera en instans](#manage-an-instance).
+
+>[!NOTE]
+>
+>Sandlådeinstanser är begränsade till Nordamerika. Du kan inte ändra regionen efter att den har skapats.
+
+### Steg 2. Konfigurera din miljö
+
+När du har skapat instansen:
+
+1. [Hantera din instans](#manage-an-instance) från Commerce Cloud Manager.
+1. Ställ in katalogvyer och principer med hjälp av guiden [Katalogvy](./setup/catalog-view.md).
+1. Konfigurera användaråtkomst med hjälp av [handboken för användarhantering](./user-management.md).
+
+### Steg 3. Lägg till exempeldata (valfritt)
+
+Följ instruktionerna för [Läs in exempeldata](#add-sample-data) om du vill testa och lära dig mer.
+
+## Rollbaserade arbetsflöden
+
+Installationen och hanteringen av [!DNL Adobe Commerce Optimizer] bygger på tre nyckelroller. Varje roll har specifika uppgifter och ansvarsområden:
 
 ![Arbetsflöde på hög nivå](./assets/high-level-workflow.png){zoomable="yes"}
 
-### Administratör
+### Administratörsuppgifter
 
-Administratörer ansvarar för att konfigurera instanser, hantera användare, grupper och berättiganden för din organisation.
+Administratörer hanterar instanser, användare och organisationsinställningar.
 
-- **[Få tillgång till Adobe Admin Console](https://helpx.adobe.com/se/enterprise/admin-guide.html)** - Hantera Adobe-berättiganden i hela organisationen. Mer information om hur du eller organisationens produktadministratör eller systemadministratör kan lägga till användare i produkten [!DNL Adobe Commerce Optimizer] finns i [användarhantering](./user-management.md).
+| Uppgift | Beskrivning | Länk |
+|---|---|---|
+| **Hantera användare** | Lägga till användare, utvecklare och administratörer | [Användarhantering](./user-management.md) |
+| **Skapa instanser** | Konfigurera sandbox- och produktionsmiljöer | [Skapa instans](#create-an-instance) |
+| **Konfigurera åtkomst** | Ställ in katalogvyer och principer | [Katalogvyer](./setup/catalog-view.md) |
 
-- **Skapa en instans** - [!DNL Adobe Commerce Optimizer] instanser använder ett kreditbaserat system. Du kan skapa flera sandbox- och Production-instanser där varje instans kräver en motsvarande kredit. Hur många krediter du har från början beror på prenumerationen. [Läs mer](#create-an-instance).
+### Utvecklaruppgifter
 
-- **Åtkomst till en instans** - När du har skapat en instans kan du komma åt den från [!UICONTROL Commerce Cloud Manager]. [Läs mer](#access-an-instance).
+Utvecklarna hanterar teknisk implementering och dataintegrering, inklusive plattformsarkitekturuppgifter.
 
-- **Konfigurera katalogvyer och principer** - Lär dig hur du [definierar katalogvyer och principer](./setup/catalog-view.md). Katalogen innehåller inte bara dina produktdata, utan även din affärsstruktur.
+| Uppgift | Beskrivning | Länk |
+|---|---|---|
+| **Öppna Developer Console** | Skapa projekt och generera autentiseringsuppgifter | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
+| **Importera katalogdata** | Importera produktdata från befintliga system | [API för datainmatning](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) |
+| **Konfigurera Storefront** | Konfigurera Edge Delivery Services store | [Inställningar för Storefront](./storefront.md) |
 
-### Utvecklare
+### Handläggaruppgifter
 
-Utvecklare skapar projekt och autentiseringsuppgifter, installerar tillägg, importerar katalogdata och utför allmänna plattformsarkitekturuppgifter. Mer information om utvecklarspecifikt innehåll finns i [utvecklardokumentationen](https://developer-stage.adobe.com/commerce/services/composable-catalog/).
+Handläggarna optimerar och personaliserar shoppingupplevelsen genom produktupptäckt och rekommendationer. De använder också kunddata och analyser för att fatta strategiska beslut om produktplacering, priser och kampanjer i butiken.
 
-- **Använd Developer Console** - Använd [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) för att skapa ett projekt för [!DNL Adobe Commerce Optimizer], generera åtkomsttoken och installera nödvändiga program och anpassningar.
+| Uppgift | Beskrivning | Länk |
+|---|---|---|
+| **Produktidentifiering** | Konfigurera sökning och filtrering | [Merchandising - översikt](./merchandising/overview.md) |
+| **Rekommendationer** | Konfigurera AI-baserade produktrekommendationer | [Produktrekommendationer](./merchandising/recommendations/overview.md) |
+| **Prestandaspårning** | Övervaka framgångsmått | [Resultatvärden](./manage-results/success-metrics.md) |
 
-- **Ingest catalog data** - Läs [API:t för datainhämtning](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) om du vill veta hur du kan importera katalogdata till [!DNL Adobe Commerce Optimizer].
+## Hantera en instans
 
-  Katalogdata som är inkapslade visas på sidan [datasynkronisering](./setup/data-sync.md).
+1. Logga in på [Adobe Experience Cloud](https://experience.adobe.com/).
 
-- **Konfigurera butiken** - Innan du ställer in butiken måste du först skapa en instans, vilket är en uppgift som vanligtvis utförs av organisationens [administratör](#administrator). När din instans har skapats är du redo att fortsätta [konfigurera](./storefront.md) din Commerce Storefront med Edge Delivery Services.
+1. Öppna Commerce Cloud Manager:
+   - Klicka på **Commerce** under **Snabbåtkomst**.
+   - Visa tillgängliga instanser.
 
-### Merchandiser
+1. Få åtkomst till din instans:
 
-Försäljaren använder kunddata och analyser för att fatta strategiska beslut om produktplacering, priser och kampanjer i butiken, samtidigt som man optimerar shoppingupplevelserna genom produktupptäckt och rekommendationer.
+   Klicka på instansnamnet för att öppna programmet [!DNL Adobe Commerce Optimizer].
 
-- **Konfigurera produktidentifiering och rekommendationer** - Lär dig hur du [skapar personaliserade upplevelser](./merchandising/overview.md) för dina kunder genom produktupptäckt och rekommendationer.
+1. Hämta instansinformation:
+   - Klicka på informationsikonen bredvid instansnamnet.
+   - Observera GraphQL-slutpunkten, katalogtjänstslutpunkten för datainmatning och instans-ID (kallas även `tenant ID`).
 
-## Skapa en instans
+   ![Instansinformation](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
-1. Logga in på ditt [Adobe Experience Cloud](https://experience.adobe.com/)-konto.
+   Information om slutpunkt och instans-ID (tenant-ID) krävs för integrering med klientprogram och backend-system. URL:en för åtkomst till programmet [!DNL Adobe Commerce Optimizer] anges också här.
 
-1. Under [!UICONTROL Quick access] klickar du på [!UICONTROL **Commerce**] för att öppna [!UICONTROL Commerce Cloud Manager].
+   Alla Adobe Commerce Optimizer-användare har inte tillgång till Cloud Manager och instansinformationen. Åtkomsten beror på vilken roll och vilka behörigheter som tilldelats användarkontot. Om du inte har åtkomst kontaktar du organisationens administratör för att få information om instansen.
 
-   [!UICONTROL Commerce Cloud Manager] visar en lista med [!DNL Adobe Commerce] instanser som är tillgängliga i din Adobe IMS-organisation, inklusive båda instanser som har etablerats för [!DNL Adobe Commerce Optimizer] och [!DNL Adobe Commerce as a Cloud Service].
+1. Redigera instansnamn och beskrivning:
+   - Klicka på ikonen **Redigera** bredvid ett instansnamn.
+   - Uppdatera namn och beskrivning efter behov.
+   - Klicka på **Spara**.
 
-1. Klicka på [!UICONTROL **Lägg till instans**] i skärmens övre högra hörn.
+   Du kan också använda sök- och filteralternativen för att snabbt hitta specifika instanser.
 
-   ![Skapa instans](./assets/create-aco-instance.png){width="100%" align="center" zoomable="yes"}
+## Lägg till exempeldata
 
-1. Välj [!UICONTROL **Commerce Optimizer**].
+Adobe tillhandahåller en GitHub-databas med exempeldata och verktyg som hjälper dig att lära dig och testa [!DNL Adobe Commerce Optimizer]-funktioner.
+Exempeldata baseras på [Carvelo-affärsscenariot](./use-case/admin-use-case.md) och innehåller:
 
-1. Ange ett **namn** och **beskrivning** för din instans.
+- Produktkatalog med fordonsdelar
+- Flera prislistor och prissättningsscenarier
+- Katalogvyer och policyer för olika återförsäljare
+- Komplett arbetsflödesexempel från början till slut
 
-1. Markera regionen där du vill att instansen ska vara värd.
+**Läs in exempeldata:**
 
-   >[!NOTE]
-   >
-   >När du har skapat en instans kan du inte ändra regionen.
+1. Gå till GitHub-databasen:
+   - Besök [databasen för datainmatning i exempelkatalog](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+   - Följ instruktionerna i databasens README-fil.
 
-1. Välj en av följande [!UICONTROL **miljötyper**] för din instans:
+2. Kör intaget:
+   - Använd de medföljande skripten för att läsa in exempeldata i Adobe Commerce Optimizer staging-miljö.
+   - Kontrollera att data visas på [datasynkroniseringssidan](./setup/data-sync.md).
 
-   - [!UICONTROL **Sandbox**] - Perfekt för design- och testningsändamål. Du bör påbörja din [!DNL Adobe Commerce Optimizer]-resa med sandlådemiljön.
-   - [!UICONTROL **Produktion**] - För livebutiker och kundorienterade webbplatser.
+3. Rensa (valfritt):
 
-   >[!NOTE]
-   >
-   >Sandlådeinstanser är för närvarande begränsade till Nordamerika.
+   Ta bort exempeldata med skriptet `reset.js` som ingår i källkoden för exempeldatainläsaren.
 
-1. Klicka på [!UICONTROL **Lägg till instans**].
+## Nästa steg
 
-   Den nya instansen är nu tillgänglig i Cloud Manager.
+När installationen är klar:
 
-1. Om du vill visa instansinformation - inklusive slutpunkterna för GraphQL- och katalogtjänsten, URL:en för åtkomst till Adobe Commerce Optimizer-programmet och instans-ID:t (klientorganisations-ID) - klickar du på informationsikonen bredvid instansnamnet.
+1. Konfigurera din butik:
+   - Konfigurera [Edge Delivery Services storefront](./storefront.md)
+   - Anslut till katalogdata
 
-   ![Skapa instans](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
+1. Se Carvelos exempel:
+   - Följ arbetsflödet [från början till slut](./use-case/admin-use-case.md)
+   - Öva med verkliga scenarier
 
-## Åtkomst till en instans
+1. Konfigurera marknadsföring:
+   - Konfigurera [produktidentifiering](./merchandising/overview.md)
+   - Skapa [rekommendationer](./merchandising/recommendations/overview.md)
 
-1. Logga in på ditt [Adobe Experience Cloud](https://experience.adobe.com/)-konto.
+1. Bildskärmsprestanda:
+   - Spåra [framgångsmått](./manage-results/success-metrics.md)
+   - Analysera [sökprestanda](./manage-results/search-performance.md)
 
-1. Under [!UICONTROL Quick access] klickar du på [!UICONTROL **Commerce**] för att öppna [!UICONTROL Commerce Cloud Manager].
+## Felsökning
 
-   [!UICONTROL Commerce Cloud Manager] visar en lista med instanser som är tillgängliga i din Adobe IMS-organisation.
+### Vanliga problem
 
-1. Klicka på instansnamnet för att öppna programmet [!UICONTROL Commerce Optimizer] som är associerat med en instans.
+| Problem | Lösning |
+|---|---|
+| **Kan inte skapa en instans** | Kontrollera att du har [!DNL Adobe Commerce Optimizer] berättiganden och administratörsbehörigheter. |
+| **Instansen visas inte** | Kontrollera din Adobe IMS-organisation och uppdatera sidan. |
+| **Det går inte att komma åt instansen** | Se till att du läggs till som användare i Admin Console. |
+| **Exempeldata läses inte in** | Verifiera dina instansreferenser och API-slutpunkter. |
 
+### Få hjälp
 
+- **Resurser för utvecklare**: [Dokumentation för utvecklare](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
+- **Storefront-resurser**: [Commerce Storefront Documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
