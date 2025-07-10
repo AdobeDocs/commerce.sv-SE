@@ -3,9 +3,10 @@ title: Katalogkortstillägg
 description: Återge priser från Commerce Services med hjälp av katalogadaptern
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: e42101fa-9c30-482c-a649-44dc35376abb
+source-git-commit: 74f6cb64724194651c4eeb538c0c69142b01ac5d
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Du kan aktivera prisindexering på nytt i Commerce genom att ta bort eller inakt
 ## Krav
 
 - Adobe Commerce 2.4.4+
-- Ha någon av följande Commerce-tjänster installerade:
+- Adobe Commerce-miljön måste ha någon av följande Commerce-tjänster aktiverade och konfigurerade:
 
    - [Live Search](../live-search/install.md)
    - [Produktrekommendationer](../product-recommendations/install-configure.md)
@@ -55,7 +56,7 @@ Använd den här metoden för att installera [!DNL Catalog Adapter] för en Comm
 
    >[!NOTE]
    >
-   >Mer information om att hantera Commerce projektmiljöer lokalt finns i [Hantera grenar med CLI](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/cli-branches) i _Adobe Commerce on Cloud Infrastructure User Guide_.
+   >Mer information om att hantera Commerce projektmiljöer lokalt finns i [Hantera grenar med CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) i _Adobe Commerce on Cloud Infrastructure User Guide_.
 
 1. Kolla in miljögrenen för att uppdatera med hjälp av Adobe Commerce Cloud CLI.
 
@@ -85,7 +86,7 @@ Använd den här metoden för att installera [!DNL Catalog Adapter] för en Comm
    git push origin <branch-name>
    ```
 
-   När uppdateringarna skickas till molnmiljön initieras [Commerce molndistributionsprocess](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/process) för att ändringarna ska tillämpas. Kontrollera distributionsstatusen från [distributionsloggen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   När uppdateringarna skickas till molnmiljön initieras [Commerce molndistributionsprocess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) för att ändringarna ska tillämpas. Kontrollera distributionsstatusen från [distributionsloggen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Lokal]
 
@@ -166,4 +167,3 @@ Nedan följer några vanliga `[!DNL Catalog Adapter]`-scenarier.
 - Ingen användning av Adobe Commerce standardproduktprisindexerare
 
 1. Installera modulen `magento/module-price-indexer-disabler` från paketet [!DNL Catalog Adapter].
-

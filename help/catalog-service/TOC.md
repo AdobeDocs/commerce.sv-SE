@@ -4,9 +4,9 @@ user-guide-description: Den här guiden innehåller detaljerade anvisningar om h
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 2c3a67698927ab9a9840c49a5e46497e4111a7cc
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '48'
 ht-degree: 10%
 
 ---
@@ -15,12 +15,13 @@ ht-degree: 10%
 
 - [Översikt över användarhandbok](guide-overview.md)
 - [Introduktion till  [!DNL Catalog Service]](overview.md)
-- [Onboarding och installation](installation.md)
+- [Installation](installation.md)
+- [Kom igång med  [!DNL Catalog Service]](get-started.md)
 - [Hämta katalogdata](graphql-queries.md)
 - Integrera med andra program {#integration}
    - [Katalogtjänst och API-nät](mesh.md)
    - [Användningsfall: Visa taxerade priser](taxes.md)
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 
