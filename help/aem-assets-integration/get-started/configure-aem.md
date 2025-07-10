@@ -122,13 +122,13 @@ Gränssnittskomponenten för produktdata läggs till automatiskt baserat på mal
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Valfritt. Om du automatiskt vill synkronisera godkända Commerce-resurser när de överförs till AEM Assets-miljön anger du standardvärdet för fältet _[!UICONTROL Review Status]_på fliken `Basic` till `approved`.
+1. Valfritt. Om du automatiskt vill synkronisera godkända Commerce-resurser när de överförs till AEM Assets-miljön anger du standardvärdet för fältet _[!UICONTROL Review Status]_&#x200B;på fliken `Basic` till `approved`.
 
 1. Spara uppdateringen.
 
 #### Använda metadataprofilen i Commerce resurskällmapp
 
-1. På sidan [!UICONTROL  Metadata Profiles] väljer du Commerce integreringsprofil.
+1. På sidan [!UICONTROL &#x200B; Metadata Profiles] väljer du Commerce integreringsprofil.
 
 1. Välj **[!UICONTROL Apply Metadata Profiles to Folders]** på åtgärdsmenyn.
 
