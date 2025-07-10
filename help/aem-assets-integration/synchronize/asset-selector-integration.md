@@ -20,11 +20,11 @@ När integreringen av **AEM Resursväljare** har konfigurerats kan marknadsföra
 
 * Hantera kategoribilder utan problem och säkerställ att de är anpassade efter riktlinjer för varumärken och kampanjer.
 * [!BADGE PaaS endast]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."} Tilldela resurser direkt i Page Builder för visuellt avancerat innehåll.
-* [!BADGE SaaS endast]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} Tilldela Assets direkt i Commerce Storefront från Edge Delivery Services för visuellt avancerat innehåll.
+* [!BADGE SaaS endast]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} Tilldela Assets direkt i Commerce Storefront från Edge Delivery Services för visuellt avancerat innehåll.
 
 >[!NOTE]
 >
-> AEM Resursväljare är en komponent i AEM som utgör en integrerad komponent för redigering av AEM Assets. Mer information om den här komponenten finns i [Micro-Front Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} i *AEM as a Cloud Service användarhandbok*.
+> AEM Resursväljare är en komponent i AEM som utgör en integrerad komponent för redigering av AEM Assets. Mer information om den här komponenten finns i [Micro-Front Asset Selector](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} i *AEM as a Cloud Service användarhandbok*.
 
 ## Viktiga fördelar
 

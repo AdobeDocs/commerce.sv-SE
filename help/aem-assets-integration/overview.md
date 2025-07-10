@@ -34,11 +34,11 @@ För att kunna utnyttja den här integreringen med produktvisuella lösningar el
 
 >[!TAB Produktbilder]
 
-[!BADGE SaaS-licenser endast]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} Aktiva licenser för Adobe Commerce, produktvisningar som drivs av AEM Assets och [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) (dessa licenser finns medföljande [!DNL Adobe Commerce as a Cloud Service] och [!DNL Adobe Commerce Optimizer]).
+[!BADGE SaaS-licenser endast]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} Aktiva licenser för Adobe Commerce, produktvisningar som drivs av AEM Assets och [AEM Dynamic Media](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) (dessa licenser finns medföljande [!DNL Adobe Commerce as a Cloud Service] och [!DNL Adobe Commerce Optimizer]).
 
 >[!TAB AEM Assets]
 
-[!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} Aktiva licenser för Adobe Commerce, Adobe Experience Manager Assets och [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
+[!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} Aktiva licenser för Adobe Commerce, Adobe Experience Manager Assets och [AEM Dynamic Media](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
 
 [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."} Adobe Commerce 2.4.5+
 
@@ -46,11 +46,11 @@ För att kunna utnyttja den här integreringen med produktvisuella lösningar el
 
 * Disposition 2.x
 
-[!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} Adobe Experience Manager etableras med [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview)
+[!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} Adobe Experience Manager etableras med [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/overview)
 
 >[!ENDTABS]
 
-Den Adobe Commerce-användare som konfigurerar integreringen måste ha tillgång till den [IMS-organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) där AEM Assets-projektet etableras.
+Den Adobe Commerce-användare som konfigurerar integreringen måste ha tillgång till den [IMS-organisation](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) där AEM Assets-projektet etableras.
 
 >[!BEGINSHADEBOX]
 
@@ -62,7 +62,7 @@ Den Adobe Commerce-användare som konfigurerar integreringen måste ha tillgång
 
 ![check](assets/icon-check.png) **Adobe Managed Support Model** - Hjälp och felsökning hanteras direkt av Adobe, vilket ger sinnesfrid och smidig problemlösning.
 
-![kontrollera](assets/icon-check.png) **Adobe Storefront Builder-funktioner**-Med DAM-lösningen (Digital Asset Management) kan du använda resurser som bilder, videor och andra media i [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals).
+![kontrollera](assets/icon-check.png) **Adobe Storefront Builder-funktioner**-Med DAM-lösningen (Digital Asset Management) kan du använda resurser som bilder, videor och andra media i [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=sv-SE#userlabs-commerce-genai-product-visuals).
 
 >[!ENDSHADEBOX]
 
@@ -82,4 +82,4 @@ Att möjliggöra Commerce-integrering med Experience Manager Assets är en trest
 
 ## Support
 
-Om du behöver information eller har frågor som inte ingår i den här guiden kontaktar du din AEM Assets Integration-säljare eller skapar en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) för att få ytterligare hjälp.
+Om du behöver information eller har frågor som inte ingår i den här guiden kontaktar du din AEM Assets Integration-säljare eller skapar en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#submit-ticket) för att få ytterligare hjälp.
