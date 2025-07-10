@@ -22,6 +22,6 @@ ht-degree: 10%
    - [Katalogtjänst och API-nät](mesh.md)
    - [Användningsfall: Visa taxerade priser](taxes.md)
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
 
 

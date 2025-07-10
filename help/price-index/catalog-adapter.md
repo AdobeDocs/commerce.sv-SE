@@ -56,7 +56,7 @@ Använd den här metoden för att installera [!DNL Catalog Adapter] för en Comm
 
    >[!NOTE]
    >
-   >Mer information om att hantera Commerce projektmiljöer lokalt finns i [Hantera grenar med CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) i _Adobe Commerce on Cloud Infrastructure User Guide_.
+   >Mer information om att hantera Commerce projektmiljöer lokalt finns i [Hantera grenar med CLI](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/cli-branches) i _Adobe Commerce on Cloud Infrastructure User Guide_.
 
 1. Kolla in miljögrenen för att uppdatera med hjälp av Adobe Commerce Cloud CLI.
 
@@ -86,7 +86,7 @@ Använd den här metoden för att installera [!DNL Catalog Adapter] för en Comm
    git push origin <branch-name>
    ```
 
-   När uppdateringarna skickas till molnmiljön initieras [Commerce molndistributionsprocess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) för att ändringarna ska tillämpas. Kontrollera distributionsstatusen från [distributionsloggen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   När uppdateringarna skickas till molnmiljön initieras [Commerce molndistributionsprocess](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/process) för att ändringarna ska tillämpas. Kontrollera distributionsstatusen från [distributionsloggen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Lokal]
 

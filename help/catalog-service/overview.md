@@ -125,7 +125,7 @@ Katalogtjänsten säkerställer korrekta prisuppdateringar och beräkningar geno
 
 Implementeringsprocessen omfattar:
 
-1. [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} **[Installera och konfigurera katalogtjänsten](installation.md)** - Installera och konfigurera katalogtjänsttillägget och konfigurera SaaS-anslutningen med [!DNL Commerce Services Connector].
+1. [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} **[Installera och konfigurera katalogtjänsten](installation.md)** - Installera och konfigurera katalogtjänsttillägget och konfigurera SaaS-anslutningen med [!DNL Commerce Services Connector].
 2. **Uppdatera butikskod**: Integrera katalogtjänster med GraphQL-frågor i klientorganisationen.
 3. **Flödesfrågor**: Alla katalogtjänstfrågor skickas via GraphQL-gatewayen (URL tillhandahålls vid introduktion)
 4. **Övervaka och felsöka datasynkronisering**: Verifiera förbättrade prestanda och övervakningsresultat
