@@ -2,9 +2,9 @@
 title: Lägg till regler
 description: Lär dig hur du skapar regler för sökmarknadsföring.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ För att skapa en regel är det första steget att använda regelredigeraren fö
 ## Lägg till en regel
 
 1. Gå till **Markering** > SEO &amp; Search > **[!DNL Live Search]** i Admin.
-1. Ange **scopet** för att identifiera [butiksvyn](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE#scope-settings) där regeln gäller.
+1. Ange **scopet** för att identifiera [butiksvyn](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där regeln gäller.
 1. Klicka på arbetsytan **Sök efter marknadsföring**.
 1. Klicka på **Lägg till regel** för att starta regelredigeraren.
 
@@ -101,6 +101,10 @@ Välj typ av strategi för regeln. Fönstret **Testa regeln** visar det förvän
    1. På sidan **Attributinformation** > **Egenskaper för Storefront** anger du att sökvikten ska vara mindre än eller lika med `5`.
 
       ![Produkt - sökvikt](assets/set-search-weight.png)
+
+>[!NOTE]
+>
+>Sökupplevelsen i storefront påverkas av flera konfigurationer som fungerar ihop, t.ex. facets, synonymer och regler för sökning/kategoriförsäljning, vilket kan leda till resultat som skiljer sig från dem som visas när du testar enskilda konfigurationer i Admin. Administratörstestning isolerar specifika konfigurationsområden, men butiken använder alla relevanta konfigurationer tillsammans, vilket ger ett mer komplext och realistiskt sökresultat.
 
 ## Manuell rankning
 

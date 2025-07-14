@@ -1,9 +1,10 @@
 ---
 title: Inställningar
 description: Konfigurera inställningar för tjänsten  [!DNL Live Search] .
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 6387a365-7e23-4023-95ac-27908164d81c
+source-git-commit: 70ff444afbe7ddf41e966e479e03975a02f4e10f
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 
 1. Gå till **Marknadsföring** > *SEO &amp; Search* > **[!DNL Live Search]** i Admin.
 1. Gör följande på arbetsytan **Inställningar** under *Prisfaktablad*:
-   * Ange **antalet markeringar** eller prisgrupperingar som ska vara tillgängliga. Upp till 50 prisgrupperingar kan definieras.
+   * Ange **antalet markeringar** eller prisgrupperingar som ska vara tillgängliga. Med [!DNL Live Search] 4.4.0 kan du definiera upp till 100 prisgrupperingar. I tidigare versioner var det tillåtet med 50 prisgrupperingar.
    * Ange värdet **Intervall** eller prisintervallet för varje grupp. Maxvärdet är 40 000 000.
 1. Klicka på **Spara**.
 
@@ -34,7 +35,7 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 
 | Fält | Beskrivning |
 |--- |--- |
-| Antal markeringar | Anger antalet prisintervallgrupperingar som kan användas som sökfilter i butiken. Standardvärde: 8, maximalt värde: 50 |
+| Antal markeringar | Anger antalet prisintervallgrupperingar som kan användas som sökfilter i butiken. Standardvärde: 8, maximalt värde: 100 (från och med [!DNL Live Search] 4.4.0) |
 | Intervallvärde | Anger prisintervallen för varje grupp. Fem markeringar med ett intervallvärde på 20 skapar till exempel fem grupperingar av 0-20, 20-40, 40-60, 60-80 och >80. Standardvärde: 5, maximalt värde: 40 000 000 |
 
 ## Språk
