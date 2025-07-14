@@ -274,7 +274,7 @@ _20 mars 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Korrigera](../assets/fix.svg) Felet&quot;Det gick inte att hämta produktalternativdata&quot; som kunde inträffa vid katalogexport har åtgärdats.
-![Korrigera](../assets/fix.svg) Valutasymbolen i kolumnen _Intäkter_ på kontrollpanelen _[!DNL Product Recommendations]_återspeglar nu korrekt den konfigurerade basvalutan.
+![Korrigera](../assets/fix.svg) Valutasymbolen i kolumnen _Intäkter_ på kontrollpanelen _[!DNL Product Recommendations]_&#x200B;återspeglar nu korrekt den konfigurerade basvalutan.
 
 ### 3.0.4 of magento/product-recommendations
 
