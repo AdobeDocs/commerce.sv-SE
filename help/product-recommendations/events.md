@@ -90,7 +90,7 @@ Händelseinsamlaren [Adobe Commerce Storefront](https://developer.adobe.com/comm
 
 Även om produktrekommendationsmätvärden är optimerade för Luma store-fronts fungerar de även med andra storefront-implementeringar:
 
-- [Edge Delivery Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [Edge Delivery Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=sv-SE)
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - [Anpassad överordnad (React, Vue JS)](headless.md)
 
@@ -140,4 +140,4 @@ I den här tabellen beskrivs de händelser som används av varje rekommendations
 
 >[!NOTE]
 >
->Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.
+>Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=sv-SE) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.
