@@ -3,9 +3,9 @@ title: Samla in data
 description: Lär dig hur händelser samlar in data för  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
+source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ Händelseinsamlaren [Adobe Commerce Storefront](https://developer.adobe.com/comm
 | `rec-click` | Köparen klickar på en produkt i rekommendationsenheten. |
 | `view` | Skickas när rekommendationsenheten blir minst 50 procent visningsbar, t.ex. genom att rulla nedåt på sidan. Om en rekommendationsenhet till exempel har två rader skickas en `view`-händelse när en rad plus en pixel på den andra raden blir synlig för kunden. Om användaren rullar sidan uppåt och nedåt flera gånger skickas händelsen `view` lika många gånger som användaren ser hela rekommendationsenheten igen på sidan. |
 
->[!NOTE]
->
->Produktrekommendationsstatistik är optimerad för Luma storefront. Om din storefront implementeras med PWA Studio finns mer information i [PWA-dokumentationen](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Om du använder en anpassad klientteknik som React eller Vue JS, ska du lära dig hur du integrerar [produktrekommendationer i en headless](headless.md) -miljö.
+Även om produktrekommendationsmätvärden är optimerade för Luma store-fronts fungerar de även med andra storefront-implementeringar:
+
+- [Edge Delivery Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
+- [Anpassad överordnad (React, Vue JS)](headless.md)
 
 #### Nödvändiga instrumentpanelshändelser
 
@@ -138,4 +140,4 @@ I den här tabellen beskrivs de händelser som används av varje rekommendations
 
 >[!NOTE]
 >
->Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=sv-SE) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.
+>Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.
