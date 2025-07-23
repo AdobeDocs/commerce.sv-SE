@@ -2,7 +2,7 @@
 title: Installation
 description: Lär dig hur du installerar  [!DNL Catalog Service]
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
 source-git-commit: 1cb6443e79e0e3d813550f9b619b3a0f641cd989
 workflow-type: tm+mt
 source-wordcount: '754'
@@ -16,7 +16,7 @@ Installera katalogtjänsten om du vill begära och ta emot produktdata från en 
 
 >[!NOTE]
 >
->Om din Commerce-instans använder Live Search eller produktrekommendationer installeras eller uppdateras katalogtjänsten automatiskt när du registrerar eller uppgraderar dessa tjänster. Mer information finns i installationsanvisningarna för [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install) och [Produktrekommendationer](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure).
+>Om din Commerce-instans använder Live Search eller produktrekommendationer installeras eller uppdateras katalogtjänsten automatiskt när du registrerar eller uppgraderar dessa tjänster. Mer information finns i installationsanvisningarna för [Live Search](https://experienceleague.adobe.com/sv/docs/commerce/live-search/install) och [Produktrekommendationer](https://experienceleague.adobe.com/sv/docs/commerce/product-recommendations/getting-started/install-configure).
 
 
 ## Systemkrav
@@ -41,7 +41,7 @@ Installera katalogtjänsten om du vill begära och ta emot produktdata från en 
 
 Alla Commerce-testinstanser använder sandlådeslutpunkten.
 
-Utför alla inläsningstester på sandlådeslutpunkten. Innan du börjar läsa in testningen skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) så att tjänstgruppen kan förutse den extra servertrafiken.
+Utför alla inläsningstester på sandlådeslutpunkten. Innan du börjar läsa in testningen skickar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#submit-ticket) så att tjänstgruppen kan förutse den extra servertrafiken.
 
 ## Installation och konfiguration
 
@@ -57,7 +57,7 @@ Följande steg krävs för att komma igång med [!DNL Catalog Service] för Adob
 
 **Förutsättning**
 
-- Åtkomst till [repo.magento.com](https://repo.magento.com) för att installera tillägget. Om du vill ha nyckelgenerering och de nödvändiga rättigheterna kan du läsa [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Information om molninstallationer finns i [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- Åtkomst till [repo.magento.com](https://repo.magento.com) för att installera tillägget. Om du vill ha nyckelgenerering och de nödvändiga rättigheterna kan du läsa [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Information om molninstallationer finns i [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
 - Åtkomst till kommandoraden på Adobe Commerce-programservern.
 
@@ -75,7 +75,7 @@ Använd den här metoden för att installera [!DNL Catalog Service] för en Comm
 
    >[!NOTE]
    >
-   >Mer information om att hantera Commerce projektmiljöer lokalt finns i [Hantera grenar med CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) i _Adobe Commerce on Cloud Infrastructure User Guide_.
+   >Mer information om att hantera Commerce projektmiljöer lokalt finns i [Hantera grenar med CLI](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/cli-branches) i _Adobe Commerce on Cloud Infrastructure User Guide_.
 
 1. Kolla in miljögrenen för att uppdatera med hjälp av Adobe Commerce Cloud CLI.
 
@@ -103,7 +103,7 @@ Använd den här metoden för att installera [!DNL Catalog Service] för en Comm
    git push origin <branch-name>
    ```
 
-   När uppdateringarna skickas till molnmiljön initieras [Commerce molndistributionsprocess](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) för att ändringarna ska tillämpas. Kontrollera distributionsstatusen från [distributionsloggen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   När uppdateringarna skickas till molnmiljön initieras [Commerce molndistributionsprocess](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/process) för att ändringarna ska tillämpas. Kontrollera distributionsstatusen från [distributionsloggen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Lokal]
 
@@ -143,11 +143,11 @@ Använd den här metoden för att installera [!DNL Catalog Service] för en loka
 
 När du har installerat [!DNL Catalog Service] utför du följande åtgärder för att integrera katalogtjänsten med din Adobe Commerce-instans. Integreringen möjliggör datasynkronisering och kommunikation mellan Commerce-instansen, katalogtjänsten och andra stödtjänster. Datasynkronisering hanteras av [SaaS-tillägget för dataexport](../data-export/overview.md).
 
-1. Konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) genom att ange API-nycklar och välja ett SaaS-dataminne.
+1. Konfigurera [Commerce Services Connector](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/integration-services/saas) genom att ange API-nycklar och välja ett SaaS-dataminne.
 
    Installation av Commerce Services Connector är en engångsprocess som krävs för att använda Adobe Commerce tjänster som Catalog Service, Live Search och Product Recommendations. Om du redan har konfigurerat anslutningen för en annan tjänst hoppar du över det här steget.
 
-1. Utför en inledande datasynkronisering från [Dashboard för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+1. Utför en inledande datasynkronisering från [Dashboard för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
    Den inledande synkroniseringen kan ta från några minuter till timmar beroende på katalogstorleken. Du kan övervaka synkroniseringsstatusen från kontrollpanelen för datahantering. Efter den första synkroniseringen exporterar katalogen produktdata fortlöpande för att hålla tjänsterna uppdaterade.
 
@@ -157,10 +157,10 @@ När du har installerat [!DNL Catalog Service] utför du följande åtgärder f�
 
 Så här ser du till att katalogexporten körs som den ska:
 
-- [Bekräfta att seriejobben körs](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
-- Verifiera att indexerarna körs från [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) eller genom att använda Commerce CLI-kommandot `bin/magento indexer:info`.
+- [Bekräfta att seriejobben körs](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- Verifiera att indexerarna körs från [Admin](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management) eller genom att använda Commerce CLI-kommandot `bin/magento indexer:info`.
 - Kontrollera att indexerarna `Catalog Attributes Feed, Product Feed, Product Overrides Feed` och `Product Variant Feed` är inställda på `Update by Schedule`.
 
 ### Övervaka och felsöka datasynkronisering
 
-Från Commerce Admin kan du övervaka synkroniseringsprocessen med [Dashboard för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Använd [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) och loggar för att hantera och felsöka processen.
+Från Commerce Admin kan du övervaka synkroniseringsprocessen med [Dashboard för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard). Använd [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) och loggar för att hantera och felsöka processen.
