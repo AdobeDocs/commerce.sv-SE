@@ -3,10 +3,11 @@ title: Handläggaren Storefront och katalogadministratören - från början till
 description: Lär dig hur du använder  [!DNL Adobe Commerce Optimizer] för att hantera din katalog med hjälp av katalogvyer och principer och hur du konfigurerar din butik baserat på din katalogkonfiguration.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2158'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Innan du börjar den här självstudiekursen måste du se till att du har följa
 - **Användarbehörigheter**
    - Administratörsåtkomst till Adobe Admin Console
    - Se [Användarhantering](../user-management.md) för kontokonfiguration
-   - Om du inte har åtkomst kontaktar du Adobe eller fyller i formuläret [Tidig åtkomst till program](https://experienceleague.adobe.com/go/aco-early-access-program)
+   - Om du inte har tillgång till tjänsten kontaktar du Adobe.
 
 - **Exempeldata**
    - Carvelo Automomobile-katalogdata som har lästs in i din instans
@@ -54,7 +55,7 @@ I det här fallet arbetar du med följande:
 
 >[!NOTE]
 >
-> Lär dig mer om konfigurationsfiler för butiker genom att läsa avsnittet [Utforska standardmallen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=sv-SE) i dokumentationen för Adobe Commerce Storefront.
+> Lär dig mer om konfigurationsfiler för butiker genom att läsa avsnittet [Utforska standardmallen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) i dokumentationen för Adobe Commerce Storefront.
 
 ### ‌ viktiga uppgifter
 
@@ -127,7 +128,7 @@ I den vänstra navigeringen expanderar du avsnittet _Store setup_ och klickar p�
 >
 >Du kan ignorera katalogvyn **Global** för tillfället.
 
-Klicka på informationsikonen om du vill visa information om katalogvyn.
+Klicka på informationsikonen om du vill granska katalogvyinformationen.
 
 Arkbridge har följande policyer:
 
@@ -192,7 +193,7 @@ Låt oss skapa en ny policy som kallas *Celport-delkategorier* för att filtrera
 
    Mer information om skillnaden mellan en STATIC- och TRIGGER-värdekälla finns i [värdekälltyper](../setup/policies.md#value-source-types).
 
-1. Klicka på **[!UICONTROL Save]** i dialogrutan **[!UICONTROL Filter details]**.
+1. Klicka på **[!UICONTROL Filter details]** i dialogrutan **[!UICONTROL Save]**.
 
 1. Om du vill aktivera filtret som du nyss skapade klickar du på åtgärdspunkterna (...) och väljer **Aktivera**.
 
@@ -228,17 +229,13 @@ Skapa en ny katalogvy för *Celport*-återförsäljaren och länka följande pro
 1. Fyll i katalogvyinformation:
 
    - **Namn** = *Cirkapp*
-   - **Katalogkällor** = *sv-SE* (träffcenter)
+   - **Katalogkällor** = *en-US*
    - **Profiler** (använd listruta) = *East Coast Inc-varumärken*; *Exportera delkategorier*; *Märke*; *Modell*                          
 1. Klicka på **[!UICONTROL Add]** för att skapa katalogvyn.
 
    Sidan Katalog visar uppdateras för att visa den nya katalogvyn.
 
    ![Uppdaterad lista över katalogvyer](../assets/updated-catalog-view-list.png)
-
-   >[!NOTE]
-   >
-   >Om knappen **[!UICONTROL Add]** inte är blå kontrollerar du att katalogkällan är markerad genom att placera markören i avsnittet **[!UICONTROL Catalog sources]** och trycka på **enter**.
 
 1. Hämta ID:t för katalogvyn i Celport.
 
@@ -415,10 +412,6 @@ Om du stöter på problem under kursen kan du prova med följande lösningar:
 
 - **Lösning:** Kontrollera att alla associerade principer är aktiverade och korrekt konfigurerade
 
-**Problem:** Knappen Lägg till är inte blå
-
-- **Lösning:** Kontrollera att katalogkällan är markerad genom att placera markören i fältet och trycka på Retur
-
 ### Konfigurationsproblem för Storefront
 
 **Problem:** Storefront läses inte in
@@ -427,7 +420,7 @@ Om du stöter på problem under kursen kan du prova med följande lösningar:
 
 **Problem:** Inga produkter visas
 
-- **Lösning:** Kontrollera att prisbokens ID matchar ett som finns i din Adobe Commerce Optimizer-instans
+- **Lösning:** Kontrollera att prisbokens ID matchar det som finns i din Adobe Commerce Optimizer-instans
 
 **Problem:** Sökningen returnerar inga resultat
 
@@ -451,7 +444,5 @@ Så här fortsätter du lära dig om Adobe Commerce Optimizer:
 - Utforska [försäljningsfunktionerna](../merchandising/overview.md) för att anpassa shoppingupplevelsen
 - Läs om [avancerade principkonfigurationer](../setup/policies.md)
 - Konfigurera [ytterligare katalogvyer](../setup/catalog-view.md) för andra leverantörer
-- Granska [API-dokumentationen](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) för programmatisk kataloghantering
-- Lär dig hur du konfigurerar instickskomponenter för din Edge Delivery Services-butik för att skapa anpassade butiksupplevelser för produktupptäckt, rekommendationer och andra butiksfunktioner. Se [dokumentationen för Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=sv-SE)
-
-
+- Granska [API-dokumentationen](https://developer.adobe.com/commerce/services/optimizer/) för programmatisk kataloghantering
+- Lär dig hur du konfigurerar instickskomponenter för din Edge Delivery Services-butik för att skapa anpassade butiksupplevelser för produktupptäckt, rekommendationer och andra butiksfunktioner. Se [dokumentationen för Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

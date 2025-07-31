@@ -3,11 +3,11 @@ title: Katalogvy
 description: Lär dig vilka katalogvyer som är och hur du skapar dem för att ordna din produktkatalog efter affärsstruktur, principer och priser.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: f67a5327b742338655b0f7ffa4076a174219f711
+source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Innan du skapar en katalogvy bör du kontrollera att:
 
 - [Skapade profiler](policies.md) för att definiera produktfilter
 
-- [Ställ in prisböcker](pricebooks.md) för priser
+- [Inlästa prisböcker](pricebooks.md) för priser
 
 1. Gå till _Store setup_ på den vänstra menyn och klicka på **[!UICONTROL Catalog views]**.
 
@@ -49,14 +49,16 @@ Innan du skapar en katalogvy bör du kontrollera att:
 1. Konfigurera information om katalogvyn:
 
    - **Namn** - Ange namnet på katalogvyn, till exempel `Celport`. &#x200B;
-   - **Katalogkällor** - Lägg till katalogkällan (nationella inställningar), till exempel `en-US`. Tryck på **Retur**.
+   - **Katalogkällor** - Välj katalogkälla (nationella inställningar), till exempel `en-US`.
    - **Profiler** - Använd listrutan för att välja relevanta profiler. Exempel: &quot;Varumärke&quot;, &quot;Modell&quot;. &#x200B;Kontrollera att du redan [har skapat en princip](policies.md).
 
 1. Välj den prisbok som du vill länka till katalogvyn.
 
-1. Klicka på **[!UICONTROL Add]** om du vill skapa katalogvyn med den länkade prisboken och de länkade profilerna.
+   - **Använd alla tillgängliga prisböcker**-Det här alternativet hämtar prisdata från alla tillgängliga prisböcker.
+   - **Tillåt endast valda prisböcker**-Det här alternativet visar dialogrutan **Lägg till tillåtna prisböcker** där du kan välja vilken prisbok som ska användas för katalogvyn.
+   - **Inaktivera pris**-Det här alternativet är inte tillgängligt just nu.
 
-   Om knappen **[!UICONTROL Add]** inte är aktiv kontrollerar du att katalogkällan har lagts till korrekt genom att placera markören i fältet Katalogkällor och trycka på **enter**. &#x200B;
+1. Klicka på **[!UICONTROL Add]** om du vill skapa katalogvyn med de länkade prisböckerna och profilerna.
 
 Sidan Katalog visar uppdateringar för att visa den nya katalogvyn. &#x200B;
 
@@ -71,7 +73,7 @@ Katalogvyer är en del av Merchandising Services-ramverket som ersätter webbpla
 ### Så här fungerar det
 
 **1. Inmatning av data**
-Katalogdata från PIM, ERP och andra system hämtas in i ramverket för marknadsföringstjänster. Varje SKU innehåller språkinformation och produktattribut som mappas till katalogvyer, policyer och språkområden. Mer information om dataöverföring finns i [utvecklardokumentationen](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Katalogdata från PIM, ERP och andra system hämtas in i ramverket för marknadsföringstjänster. Varje SKU innehåller språkinformation och produktattribut som mappas till katalogvyer, policyer och språkområden. Mer information om dataöverföring finns i [utvecklardokumentationen](https://developer.adobe.com/commerce/services/optimizer/).
 
 **2. Enhetlig baskatalog**
 Inkapslade data skapar en enhetlig baskatalog i dataredjan för katalogtjänsten. Med denna enda källa slipper ni datatypsbyte mellan olika affärsenheter.
@@ -80,7 +82,7 @@ Inkapslade data skapar en enhetlig baskatalog i dataredjan för katalogtjänsten
 Flera katalogvyer representerar olika affärsenheter (t.ex.&quot;Texas Retail&quot;,&quot;Texas Retail Seasonal&quot;). Språk, profiler och prisböcker kan delas mellan olika katalogvyer för ökad flexibilitet.
 
 **4. Flerkanalsleverans**
-Filtrerade katalogdata levereras till olika destinationer som Edge Delivery Services butiker, marknadsplatser, annonsplattformar och anpassade mikrobutiker. Mer information om leverans av katalogdata finns i [utvecklardokumentationen](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Filtrerade katalogdata levereras till olika destinationer som Edge Delivery Services butiker, marknadsplatser, annonsplattformar och anpassade mikrobutiker. Mer information om leverans av katalogdata finns i [utvecklardokumentationen](https://developer.adobe.com/commerce/services/optimizer/).
 
 ### Nyckelkomponenter
 
@@ -126,4 +128,4 @@ Filtrerade katalogdata levereras till olika destinationer som Edge Delivery Serv
 
 >[!INFO]
 >
->Mer information om inmatning och leverans av katalogdata finns i [utvecklardokumentationen](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+>Mer information om inmatning och leverans av katalogdata finns i [utvecklardokumentationen](https://developer.adobe.com/commerce/services/optimizer/).

@@ -3,11 +3,11 @@ title: Kom igång
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 036e04a02edadf4b8a48fc38e784d9dde734ba45
+source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,11 @@ Handläggarna optimerar och personaliserar shoppingupplevelsen genom produktuppt
 
 1. Få åtkomst till din instans:
 
-   Klicka på instansnamnet för att öppna programmet [!DNL Adobe Commerce Optimizer].
+   Klicka på instansnamnet för att öppna programmet [!DNL Adobe Commerce Optimizer]. I programmet kan du växla mellan olika [!DNL Adobe Commerce Optimizer] instanser med hjälp av listrutan högst upp på sidan:
+
+   ![Instansväxlare](./assets/context-switcher.png){zoomable="yes"}
+
+   Alla förekomster som visas tillhör samma organisation. Du kan växla mellan instanser för att visa data och inställningar för var och en av dem, till exempel mellan sandlådor och produktionsmiljöer.
 
 1. Hämta instansinformation:
    - Klicka på informationsikonen bredvid instansnamnet.
@@ -186,5 +190,5 @@ När installationen är klar:
 ### Få hjälp
 
 - **Resurser för utvecklare**: [Dokumentation för utvecklare](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Storefront-resurser**: [Commerce Storefront Documentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
-- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview)
+- **Storefront-resurser**: [Commerce Storefront Documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
