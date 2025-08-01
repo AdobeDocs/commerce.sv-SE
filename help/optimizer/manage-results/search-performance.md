@@ -1,8 +1,9 @@
 ---
 title: Sökprestanda
 description: På sidan Sökprestanda får du insikt i de söktermer som kunderna använder.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 0%
@@ -51,7 +52,7 @@ I följande avsnitt beskrivs strategier som du kan använda för att förbättra
 Det finns flera viktiga faktorer som avgör sökresultatens relevans och effektivitet:
 
 - Välstrukturerade produktdata säkerställer att sökalgoritmer effektivt kan matcha produkter mot frågor. Produktdata av låg kvalitet leder till mindre relevanta sökresultat. Så här påverkar du er marknadsföringsstrategi direkt:
-   - Ställ in rätt [attribut som sökbara](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) med motsvarande vikt.
+   - Ställ in rätt [attribut som sökbara](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) med motsvarande vikt.
    - Se till att data i dessa attribut är relevanta.
 - En väldesignad sökupplevelse skapar förtroende hos kunderna och ser till att de hittar det de behöver.
 - Sökreglerna är avgörande eftersom de kan öka synligheten för vissa produkter baserat på popularitet, nya kunder, kampanjkriterier eller andra marknadsföringsstrategier för att uppfylla era affärskrav.
@@ -97,7 +98,7 @@ Om du vill optimera sökfunktionen använder du [synonymer och stavningar](../me
 
 ## Förbättra relevansen i sökresultatet
 
-Om du vill förbättra sökresultatets relevans implementerar du [sökregler](../merchandising/rules/overview.md) och använder produktmetadata för att säkerställa att korrekta och detaljerade [attribut är sökbara](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata).
+Om du vill förbättra sökresultatets relevans implementerar du [sökregler](../merchandising/rules/overview.md) och använder produktmetadata för att säkerställa att korrekta och detaljerade [attribut är sökbara](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
 
 ### Bilder
 
@@ -109,7 +110,7 @@ Se till att de underordnade produkterna för konfigurerbara produkter har bilder
 
 ### Använd produktmetadata
 
-Kontrollera att korrekta och detaljerade [attribut för produkten har konfigurerats som sökbara](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata). Observera att SKU-, namn- och kategoriattribut som standard är sökbara och inte kan uteslutas från sökningen. För bästa resultat ska du inte använda blanksteg i dina SKU:er.
+Kontrollera att korrekta och detaljerade [attribut för produkten har konfigurerats som sökbara](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Observera att SKU-, namn- och kategoriattribut som standard är sökbara och inte kan uteslutas från sökningen. För bästa resultat ska du inte använda blanksteg i dina SKU:er.
 
 Om du vill öka sökrelevansen tilldelar du en vikt till varje sökbart attribut. Attribut med högre vikt bör visas högre i sökresultatet. Sorteringen efter relevans påverkas av flera kriterier, t.ex. sökvikt. Det innebär att attribut med lägre sökvikt ibland kan ha större relevans än attribut med högre sökvikt. Andra villkor kan vara antalet matchningar i ett givet attribut, positionen för det sökord som hittats och den övergripande textstrukturen före och efter ett sökord.
 
@@ -117,8 +118,8 @@ Se till att varje produkt har relevant innehåll inom varje sökbart attribut. D
 
 Läs mer om produktattribut för sökning:
 
-- [Ange attribut som sökbara](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)
-- [Tilldela bredd till attribut](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata)
+- [Ange attribut som sökbara](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
+- [Tilldela bredd till attribut](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## Fältbeskrivningar
 

@@ -1,10 +1,11 @@
 ---
 title: Skapa och hantera regler
 description: Lär dig hur du skapar och hanterar försäljningsregler.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -88,7 +89,9 @@ Välj typ av strategi för regeln. Fönstret **Testa regeln** visar det förvän
 #### Caveats
 
 - Apostrofer och citattecken i frågor kan leda till vissa mindre problem med rankning och relevans på vissa språk.
-- För att den intelligenta rankningen ska fungera på rätt sätt måste **sökvikten** för alla [produktattribut](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) som används för sökning eller filtrering (facets) vara `5` eller mindre.
+- För att den intelligenta rankningen ska fungera på rätt sätt måste **sökvikten** för alla attribut som används för sökning eller filtrering (facets) vara `5` eller mindre.
+
+Mer information om hur du anger sökvikter finns i [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/).
 
 ### Manuell rankning
 

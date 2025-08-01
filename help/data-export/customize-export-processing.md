@@ -2,9 +2,10 @@
 title: Förbättra prestanda vid export av SaaS-data
 description: Lär dig hur du förbättrar SaaS-dataexportprestanda för Commerce Services genom att använda dataexportläge med flera trådar.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Tänk på att noggrann planering, inklusive beräkning av datavolym och synkroni
 
 >[!NOTE]
 >
->Adobe rekommenderar att du är försiktig när du använder flertrådsbearbetning. Funktionen är en funktion för tidig åtkomst som fortfarande förbättras. Om du konfigurerar flertrådning för snabbare prestanda kan du utlösa säkerhetsutkast för Adobe Commerce Services som ingår för att förhindra felanvändning av systemet vid dataöverföring. Dessa skyddsräcken hindrar även användare från att utlösa synkroniseringsändringar som kan överbelasta systemet. När skyddsräcken aktiveras blockeras förfrågningar och systemet returnerar 429 fel. Om du råkar ut för dessa fel justerar du konfigurationen och skickar in en supportanmälan för att få hjälp.
+>Adobe rekommenderar att du är försiktig när du använder flertrådsbearbetning. Om du konfigurerar flertrådning för snabbare prestanda kan du utlösa säkerhetsutkast för Adobe Commerce Services som ingår för att förhindra felanvändning av systemet vid dataöverföring. Dessa skyddsräcken hindrar även användare från att utlösa synkroniseringsändringar som kan överbelasta systemet. När skyddsräcken aktiveras blockeras förfrågningar och systemet returnerar 429 fel. Om du råkar ut för dessa fel justerar du konfigurationen och skickar in en supportanmälan för att få hjälp.
 
 ## Konfigurera multi-threading
 
@@ -63,7 +64,7 @@ De alternativ som anges på kommandoraden åsidosätter den dataexportkonfigurat
 
 Om du vill bearbeta alla dataexportåtgärder med hjälp av multi-threading kan systemintegratörer eller utvecklare ändra antalet trådar och batchstorleken för varje feed i Commerce-programkonfigurationen.
 
-Dessa ändringar kan tillämpas genom att lägga till anpassade värden i [systemavsnittet](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) i konfigurationsfilen, `app/etc/config.php`.
+Dessa ändringar kan tillämpas genom att lägga till anpassade värden i [systemavsnittet](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) i konfigurationsfilen, `app/etc/config.php`.
 
 **Exempel: Konfigurera flertrådning för produkter och priser**
 

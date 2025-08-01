@@ -3,11 +3,11 @@ title: Kom igång
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
+source-git-commit: b0ce0a399e89baaeabe87c53d069df866378f8c8
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Utvecklarna hanterar teknisk implementering och dataintegrering, inklusive platt
 | Uppgift | Beskrivning | Länk |
 |---|---|---|
 | **Öppna Developer Console** | Skapa projekt och generera autentiseringsuppgifter | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **Importera katalogdata** | Importera produktdata från befintliga system | [API för datainmatning](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) |
+| **Importera katalogdata** | Importera produktdata från befintliga system | [API för datainmatning](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
 | **Konfigurera Storefront** | Konfigurera Edge Delivery Services store | [Inställningar för Storefront](./storefront.md) |
 
 ### Handläggaruppgifter
@@ -143,14 +143,14 @@ Exempeldata baseras på [Carvelo-affärsscenariot](./use-case/admin-use-case.md)
 
 **Läs in exempeldata:**
 
-1. Gå till GitHub-databasen:
-   - Besök [databasen för datainmatning i exempelkatalog](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+1. Åtkomst till GitHub-databasen [Sample Catalog Data Inghit](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion).
 
-1. Följ instruktionerna i databasens README-fil.
+1. Följ instruktionerna i databasens README-fil för att utföra följande åtgärder:
 
-   - Konfigurera och kör datainmatningen
-   - Konfigurera katalogprinciper och vyer med exempeldata
-   - Rensa exempeldata (valfritt)
+   - Konfigurera din miljö
+   - Slutför dataöverföringsprocessen
+   - Skapa katalogvyer och principer med exempeldata
+   - Verifiera datainmatningen genom att kontrollera katalogtjänstdata på sidan [Datasynkronisering](./setup/data-sync.md)
 
 ## Nästa steg
 
@@ -185,6 +185,6 @@ När installationen är klar:
 
 ### Få hjälp
 
-- **Resurser för utvecklare**: [Dokumentation för utvecklare](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Storefront-resurser**: [Commerce Storefront Documentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
-- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview)
+- **Resurser för utvecklare**: [Dokumentation för utvecklare](https://developer.adobe.com/commerce/services/optimizer/)
+- **Storefront-resurser**: [Commerce Storefront Documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

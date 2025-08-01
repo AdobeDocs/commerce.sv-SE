@@ -3,11 +3,11 @@ title: Prisböcker
 description: Lär dig hur du hanterar prisböcker i  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 513ed97442bfffe74d64f4eb0484cfa8f25b5ecc
+source-git-commit: 502d8d21ff052f4ecb212176459b38ce51f85dfc
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Med prisböcker kan du definiera produktpriser för en katalogkälla i olika kun
 
 Basprisboken definierar valutan för sig själv och alla dess underordnade prisböcker. Underordnade prisböcker ärver den här valutan och kan inte åsidosätta den.
 
-Läs [utvecklardokumentationen](https://developer.adobe.com/commerce/services/reference/rest/) om du vill veta mer om hur du skapar, uppdaterar och tar bort prisböcker [!DNL Adobe Commerce Optimizer] med hjälp av prisbokens API.
+Läs [utvecklardokumentationen](https://developer.adobe.com/commerce/services/reference/rest/) om du vill veta mer om hur du skapar, uppdaterar och tar bort prisböcker för [!DNL Adobe Commerce Optimizer] med hjälp av prisbokens API.
 
 ## Viktiga begrepp
 

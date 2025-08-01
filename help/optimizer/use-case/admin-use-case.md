@@ -3,9 +3,9 @@ title: Handläggaren Storefront och katalogadministratören - från början till
 description: Lär dig hur du använder  [!DNL Adobe Commerce Optimizer] för att hantera din katalog med hjälp av katalogvyer och principer och hur du konfigurerar din butik baserat på din katalogkonfiguration.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
+source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
 workflow-type: tm+mt
 source-wordcount: '2158'
 ht-degree: 0%
@@ -55,7 +55,7 @@ I det här fallet arbetar du med följande:
 
 >[!NOTE]
 >
-> Lär dig mer om konfigurationsfiler för butiker genom att läsa avsnittet [Utforska standardmallen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=sv-SE) i dokumentationen för Adobe Commerce Storefront.
+> Lär dig mer om konfigurationsfiler för butiker genom att läsa avsnittet [Utforska standardmallen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) i dokumentationen för Adobe Commerce Storefront.
 
 ### ‌ viktiga uppgifter
 
@@ -271,7 +271,7 @@ Den sista delen av den här självstudien är att uppdatera butiken som [du reda
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
+            "ac-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-price-book-id": "west_coast_inc",
             "ac-source-locale": "en-US"
            }
@@ -295,7 +295,7 @@ Den sista delen av den här självstudien är att uppdatera butiken som [du reda
    Observera att följande värden finns i katalogvyhuvudet:
 
    - `commerce-endpoint`: `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
-   - `ac-catalog-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
+   - `ac-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id`: `"west_coast_inc"`
    - `ac-source-locale`: `"en-US"`
 
@@ -307,7 +307,7 @@ Den sista delen av den här självstudien är att uppdatera butiken som [du reda
    https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
    ```
 
-1. Ersätt `ac-catalog-view-id`-värdet med det ID för katalogvyn som du kopierade tidigare.
+1. Ersätt `ac-view-id`-värdet med det ID för katalogvyn som du kopierade tidigare.
 
 1. Ersätt värdet `ac-price-book-id` med `"east_coast_inc"`.
 
@@ -321,7 +321,7 @@ Den sista delen av den här självstudien är att uppdatera butiken som [du reda
         "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
         "headers": {
             "cs": {
-                "ac-catalog-view-id": "{{celport-catalog-view-id}}",
+                "ac-view-id": "{{celport-catalog-view-id}}",
                 "ac-price-book-id": "east_coast_inc",
                 "ac-source-locale": "en-US"
               }
@@ -378,7 +378,7 @@ Nu när du har uppdaterat butikskonfigurationen så att den använder katalogvyn
 
 1. Experimentera med att uppdatera konfigurationsfilen för butiken (`config.json`).
 
-   1. Ändra värdena för `ac-catalog-view-id` och `ac-price-book`.
+   1. Ändra värdena för `ac-view-id` och `ac-price-book`.
 
    Du kan till exempel ändra katalogvyns ID till Kingsbluff-katalogvyn och prisbokens ID till `east_coast_inc`. Du kan se vilka kategorier som är tillgängliga för Kingsbluff genom att granska principen för *Kingsbluff-delen*.
 
@@ -445,4 +445,4 @@ Så här fortsätter du lära dig om Adobe Commerce Optimizer:
 - Läs om [avancerade principkonfigurationer](../setup/policies.md)
 - Konfigurera [ytterligare katalogvyer](../setup/catalog-view.md) för andra leverantörer
 - Granska [API-dokumentationen](https://developer.adobe.com/commerce/services/optimizer/) för programmatisk kataloghantering
-- Lär dig hur du konfigurerar instickskomponenter för din Edge Delivery Services-butik för att skapa anpassade butiksupplevelser för produktupptäckt, rekommendationer och andra butiksfunktioner. Se [dokumentationen för Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=sv-SE)
+- Lär dig hur du konfigurerar instickskomponenter för din Edge Delivery Services-butik för att skapa anpassade butiksupplevelser för produktupptäckt, rekommendationer och andra butiksfunktioner. Se [dokumentationen för Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

@@ -1,10 +1,11 @@
 ---
 title: Skapa och hantera ansikten
 description: Lär dig hur du lägger till och hanterar ansikten i  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -25,9 +26,9 @@ Alla filterbara produktattribut kan användas som en fasett. Med ansikten kan ku
 
    Fasetten läggs till längst ned i listan *Dynamiska aspekter* och knappen *Publiceringsändringar* blir tillgänglig.
 
-1. Om det inte går att hitta den aspekt du vill lägga till kontrollerar du att [product attribute](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) har följande uppsättning:
+1. Om det inte går att hitta den aspekt du vill lägga till använder du [Metadata API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) för att ställa in `searchable` -parametern:
 
-   - `searchable` = `Yes`
+   `"searchable": true`
 
    Fasetten blir tillgänglig i butiken nästa gång katalogen synkroniseras med [!DNL Adobe Commerce Optimizer]. Om ansiktet inte är tillgängligt efter två timmar kan du läsa [datasynkronisering](../../setup/data-sync.md).
 

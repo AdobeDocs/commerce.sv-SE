@@ -1,10 +1,11 @@
 ---
 title: Översikt över ansikten
 description: Lär dig mer om aspekter i [!DNL Adobe Commerce Optimizer] och hur de förbättrar sökresultaten.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -29,12 +30,14 @@ Akettaggregering utförs enligt följande: Om butiken har tre aspekter (kategori
 
 ## Standardattributvärden
 
-Följande [produktattribut](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) används av [!DNL Adobe Commerce Optimizer] och aktiveras som standard.
+Följande produktattribut används av [!DNL Adobe Commerce Optimizer] och aktiveras som standard.
 
 | Egenskap | Beskrivning | Attribut |
 |---|---|---|
 | Sorterbar | Används för sortering i produktlista | `price` |
 | Sökbart | Använd i sökning | `price` <br />`sku`<br />`name` |
+
+Se [API:t för datainmatningsmetadata](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) om du vill veta mer om produktattribut och deras egenskaper.
 
 ## Standardegenskaper för icke-systemattribut
 
