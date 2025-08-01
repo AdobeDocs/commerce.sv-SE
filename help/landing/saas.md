@@ -84,7 +84,7 @@ För [!DNL Product Recommendations] innehåller SaaS-datautrymmet katalog- och b
 >[!WARNING]
 >
 > Använd **SaaS-datautrymmet för produktion** endast i din [!DNL Commerce]-produktionsinstallation för att undvika datakollisioner. Annars riskerar du att förorena data från produktionsplatsen med testdata, vilket orsakar förseningar i driftsättningen. Produktionsproduktdata kan till exempel skrivas över av misstag från mellanlagringsdata, som mellanlagrings-URL:er.
-> > Om detta skulle inträffa [skickar ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) en supportförfrågan för att begära datarensning.
+> &#x200B;> Om detta skulle inträffa [skickar ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) en supportförfrågan för att begära datarensning.
 
 Om du inte hittar LiveSearch-konfigurationsfält på Admin Panel kontrollerar du att du har angett rätt SaaS API-nyckel.  Se till att du har lagt till SaaS-nyckeln för produktion när du konfigurerar produktionsdataområdet och att du har lagt till mellanlagringsnyckeln när du konfigurerar mellanlagringsdataområdet. Om du konfigurerar fel nyckel är inte SaaS-tjänster, som LiveSearch, tillgängliga i Adobe Commerce-miljön.
 
@@ -116,7 +116,7 @@ Om du vill välja eller skapa ett SaaS-projekt begär du API-nyckeln [!DNL Comme
 
    Om du inte ser avsnittet **[!UICONTROL Commerce Services Connector]** i [!DNL Commerce]-konfigurationen installerar du [!DNL Commerce]-modulerna för den [[!DNL Commerce] tjänst](#availableservices) du vill använda. Kontrollera även att paketet `magento/module-services-id` är installerat.
 
-1. Klistra in dina nyckelvärden i avsnitten _[!UICONTROL Sandbox API Keys]_och_[!UICONTROL Production API Keys]_.
+1. Klistra in dina nyckelvärden i avsnitten _[!UICONTROL Sandbox API Keys]_&#x200B;och&#x200B;_[!UICONTROL Production API Keys]_.
 
    - Privata nycklar måste innehålla `----BEGIN PRIVATE KEY---` i början av nyckeln och `----END PRIVATE KEY----` i slutet av nyckeln.
    - Om du inte har någon kopia av de faktiska nycklarna ber du kontoägaren om dem och kopplar sedan värdena till konfigurationen.
