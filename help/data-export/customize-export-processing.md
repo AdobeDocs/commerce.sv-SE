@@ -1,18 +1,18 @@
 ---
 title: Förbättra prestanda vid export av SaaS-data
-description: Lär dig hur du förbättrar SaaS-dataexportprestanda för Commerce Services genom att använda dataexportläge med flera trådar.
+description: Lär dig förbättra SaaS-dataexportprestanda för Commerce Services genom att använda ett dataexportläge med flera trådar.
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: 9b28da0bf861a266e9d679ba59470f46d9a89c1c
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
 # Förbättra prestanda vid export av SaaS-data
 
-**Exportläge för flertrådsdata** snabbar upp exportprocessen genom att dela upp flödesuppgifter i grupper och bearbeta dem parallellt.
+**Exportläget för flertrådsdata** snabbar upp exportprocessen genom att dela in feed-data i grupper och bearbeta dem samtidigt.
 
 Utvecklare eller systemintegratörer kan förbättra prestanda genom att använda dataexportläget med flera trådar i stället för standardläget med en tråd. I entrådsläge finns det ingen parallellisering av feedbackprocessen. På grund av standardgränserna är dessutom alla klienter begränsade till att endast använda en tråd. I de flesta fall krävs ingen anpassning av konfigurationen.
 
@@ -64,7 +64,7 @@ De alternativ som anges på kommandoraden åsidosätter den dataexportkonfigurat
 
 Om du vill bearbeta alla dataexportåtgärder med hjälp av multi-threading kan systemintegratörer eller utvecklare ändra antalet trådar och batchstorleken för varje feed i Commerce-programkonfigurationen.
 
-Dessa ändringar kan tillämpas genom att lägga till anpassade värden i [systemavsnittet](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) i konfigurationsfilen, `app/etc/config.php`.
+Dessa ändringar kan tillämpas genom att lägga till anpassade värden i [systemavsnittet](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) i konfigurationsfilen, `app/etc/config.php`.
 
 **Exempel: Konfigurera flertrådning för produkter och priser**
 
