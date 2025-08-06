@@ -274,7 +274,7 @@ Adobe Commerce Generate Variations använder generativ AI för att automatisera 
 
 1. Välj en innehållsvariant och klicka på [!UICONTROL **Generera bild**].
 
-1. Välj [!UICONTROL **Bredbild (16**])[!UICONTROL **i listrutan :9Bildstorlek**].
+1. Välj [!UICONTROL **Bredbild (16**]) [!UICONTROL **i listrutan :9Bildstorlek**].
 
 1. Välj [!UICONTROL **Foto**] i listrutan [!UICONTROL **Innehållstyp**].
 
