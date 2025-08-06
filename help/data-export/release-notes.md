@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
+source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Bland uppdateringarna finns:
 >SaaS-tillägget för dataexport är en samling moduler som installeras automatiskt med Live Search, Produktrekommendationer och katalogtjänsten. Du kan kontrollera vilken version som är installerad på datorn med Composer. I vissa fall kanske du vill uppgradera dataexporttillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 103.4.8 Utgåva
+
+![Ny](../assets/new.svg) har lagt till information om nivåpris i prisflödet. <!--MDEE-1070-->
+![ Korrigera ](../assets/fix.svg) Tillägget för dataexport exporterar nu korrekt webbplatsomfattande paketpriser, vilket säkerställer att butikspriserna återspeglar korrekta värden baserade på konfigurationen &quot;Katalogens prisomfång&quot;.<!--MDEE-1115-->
+![ Korrigera ](../assets/fix.svg) Tidigare synkroniserades produkter med felaktig `lowStock=true` status när Inventory management (Inventory management med flera källor) med tröskelkonfiguration användes. Det här problemet har åtgärdats för att säkerställa korrekt rapportering av låga lagernivåer.<!--MDEE-1113-->
 
 ## 103.4.7 Utgåva
 
