@@ -1,18 +1,23 @@
 ---
-title: Lägg till anpassade orderattribut
+title: Lägg till anpassade attribut i order
 description: Lär dig hur du lägger till anpassade orderattribut i dina back office-data och skickar dessa attribut till Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
+source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '602'
 ht-degree: 2%
 
 ---
 
-# Lägg till anpassade orderattribut
+# Lägg till anpassade attribut i order
 
 I den här artikeln får du lära dig hur du lägger till anpassade attribut till back office-händelser. Med anpassade attribut kan ni samla in omfattande datainsikter för att förbättra analysen och ytterligare skapa personaliserade upplevelser för era kunder.
+
+>[!NOTE]
+>
+>Lär dig hur du kan [lägga till anpassade identiteter](custom-identities.md) i profiler.
 
 Anpassade attribut stöds på två nivåer:
 
@@ -118,7 +123,7 @@ Skapa en `et_schema.xml`-fil som definierar de tjänster som används för beroe
 
 ## Steg 6: Skapa en katalog för PHP-filerna
 
-Skapa en katalog med namnet `Module/Provider` på samma nivå som katalogen `etc`. Den här katalogen innehåller `OrderCustomAttributes`- och `OrderItemCustomAttributes` PHP-filerna.
+Skapa en katalog med namnet `etc` på samma nivå som katalogen `Module/Provider`. Den här katalogen innehåller `OrderCustomAttributes`- och `OrderItemCustomAttributes` PHP-filerna.
 
 ## Steg 7: Definiera OrderCustomAttributes
 
@@ -292,7 +297,7 @@ class OrderItemCustomAttribute
 
 ## Steg 9: Skapa en katalog för productContext-filen
 
-Skapa en katalog med namnet `Plugin/Module` på samma nivå som katalogen `etc`. Den här katalogen innehåller filen `ProductContext.php`.
+Skapa en katalog med namnet `etc` på samma nivå som katalogen `Plugin/Module`. Den här katalogen innehåller filen `ProductContext.php`.
 
 ## Steg 10: Definiera klassen ProductContext
 
@@ -325,7 +330,7 @@ class ProductContext
 
 ## Steg 1: Registrera modulen
 
-Skapa en `registration.php`-fil som registrerar modulen på samma nivå som katalogen `etc`. Exempel:
+Skapa en `etc`-fil som registrerar modulen på samma nivå som katalogen `registration.php`. Exempel:
 
 ```php
 <?php>
@@ -344,7 +349,7 @@ ComponentRegistrar::register(
 
 Om du vill vara säker på att de nya attributen för anpassad ordning kan importeras av ditt [!DNL Commerce]-schema i Experience Platform, måste du utöka schemat så att det omfattar dessa anpassade fält.
 
-Om du vill lära dig hur du utökar ett befintligt XDM-schema så att det inkluderar dessa anpassade fält kan du läsa artikeln [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) i Experience Platform-dokumentationen. Fältet Klient-ID genereras dynamiskt, men fältstrukturen ska likna exemplet i Experience Platform-dokumentationen.
+Om du vill lära dig hur du utökar ett befintligt XDM-schema så att det inkluderar dessa anpassade fält kan du läsa artikeln [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) i Experience Platform-dokumentationen. Fältet Klient-ID genereras dynamiskt, men fältstrukturen ska likna exemplet i Experience Platform-dokumentationen.
 
 >[!IMPORTANT]
 >
