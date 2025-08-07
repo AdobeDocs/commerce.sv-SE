@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Nedan visas de Commerce beteendehändelser som är tillgängliga när du installerar tillägget [!DNL Data Connection]. De data som dessa händelser samlar in skickas till Adobe Experience Platform. Du kan också skapa [anpassade händelser](custom-events.md) för att samla in ytterligare data som inte anges i kartongen.
 
-Förutom de data som samlas in av följande händelser, får du även [andra data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) från Adobe Experience Platform Web SDK.
+Förutom de data som samlas in av följande händelser, får du även [andra data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=sv-SE) från Adobe Experience Platform Web SDK.
 
 Beteendehändelserna samlar in anonyma beteendedata från era kunder när de surfar på er webbplats. Ni kan använda de data som dessa event samlar in för att skapa kampanjer och kampanjer som riktar sig till en viss uppsättning kunder.
 
 >[!NOTE]
 >
->Alla beteendehändelser inkluderar fältet [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), som innehåller kundens e-postadress, när den är tillgänglig, och ECID.
+>Alla beteendehändelser inkluderar fältet [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=sv-SE), som innehåller kundens e-postadress, när den är tillgänglig, och ECID.
 
 ## Storefront-händelser
 
@@ -39,7 +39,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productListAdds` | Anger om en produkt har lagts till i en kundvagn. Värdet `1` anger att en produkt har lagts till. |
@@ -73,7 +73,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productListOpens` | Anger om en vagn skapades. Värdet `1` anger att en vagn skapades. |
@@ -107,7 +107,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productListRemovals` | Anger om en produkt har tagits bort från kundvagnen. Värdet `1` anger att en produkt har tagits bort från kundvagnen. |
@@ -141,7 +141,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productListViews` | Anger om en produktlista har visats. |
@@ -177,7 +177,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `web.webPageDetails.pageViews` | Anger om en sida har lästs in. En `value` av `1` anger att sidan lästes in. |
@@ -202,7 +202,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productViews` | Anger om produkten visades. |
@@ -235,7 +235,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.checkouts` | Anger om en åtgärd inträffade under utcheckningsprocessen. |
@@ -269,7 +269,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.purchases` | Anger om en order har godkänts. |
@@ -329,7 +329,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | En enskild aktör, kontakt eller ägare. |
@@ -362,7 +362,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `userAccount` | Anger information om lojalitet, inställningar, inloggningsprocesser och andra kontoinställningar. |
@@ -389,7 +389,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | En enskild aktör, kontakt eller ägare. |
@@ -422,7 +422,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | En enskild aktör, kontakt eller ägare. |
@@ -461,7 +461,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `searchRequest` | Anger om en sökbegäran har skickats. |
@@ -498,7 +498,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `searchResponse` | Anger om ett söksvar har tagits emot. |
@@ -520,7 +520,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 ![B2B för Adobe Commerce](../assets/b2b.svg) För B2B-handlare måste du [installera](install.md#install-the-b2b-extension) tillägget `experience-platform-connector-b2b` för att få åtkomst till de här händelserna.
 
-B2B-händelserna innehåller information om [rekvisitionslistan](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html), till exempel om en rekvisitionslista skapades, lades till eller togs bort från. Genom att spåra händelser som är specifika för rekvisitionslistor kan ni se vilka produkter era kunder köper ofta och skapa kampanjer baserade på dessa data.
+B2B-händelserna innehåller information om [rekvisitionslistan](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=sv-SE), till exempel om en rekvisitionslista skapades, lades till eller togs bort från. Genom att spåra händelser som är specifika för rekvisitionslistor kan ni se vilka produkter era kunder köper ofta och skapa kampanjer baserade på dessa data.
 
 ### createRequisitionList
 
@@ -534,7 +534,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requisitionListOpens` | Anger initiering av en ny rekvisitionslista. |
@@ -560,7 +560,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requisitionListAdds` | Anger tillägg av en eller flera produkter i en rekvisitionslista. |
@@ -596,7 +596,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requsitionListRemovals` | Anger borttagning av en eller flera produkter från en rekvisitionslista. |
@@ -632,7 +632,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Fält | Beskrivning |
 |---|---|
-| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Innehåller information om datakällan för data. Både `_id` och `_type` innehåller [namnområdesvärden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=sv-SE). |
 | `channel._id` | Kanalens unika identifierare, till exempel `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifierar kanaldatakällan, till exempel `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requisitionListDeletes` | Anger att en rekvisitionslista har tagits bort. |

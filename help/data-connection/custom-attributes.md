@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 Om du vill vara säker på att de nya attributen för anpassad ordning kan importeras av ditt [!DNL Commerce]-schema i Experience Platform, måste du utöka schemat så att det omfattar dessa anpassade fält.
 
-Om du vill lära dig hur du utökar ett befintligt XDM-schema så att det inkluderar dessa anpassade fält kan du läsa artikeln [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) i Experience Platform-dokumentationen. Fältet Klient-ID genereras dynamiskt, men fältstrukturen ska likna exemplet i Experience Platform-dokumentationen.
+Om du vill lära dig hur du utökar ett befintligt XDM-schema så att det inkluderar dessa anpassade fält kan du läsa artikeln [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) i Experience Platform-dokumentationen. Fältet Klient-ID genereras dynamiskt, men fältstrukturen ska likna exemplet i Experience Platform-dokumentationen.
 
 >[!IMPORTANT]
 >

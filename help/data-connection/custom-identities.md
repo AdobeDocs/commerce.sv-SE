@@ -37,7 +37,7 @@ Innan du implementerar anpassade identitetsattribut bör du kontrollera att:
 ## Steg 1: Konfigurera Experience Platform-schema
 
 1. Logga in på Adobe Experience Platform och välj ditt Commerce-schema.
-1. [Lägg till anpassade identitetsfält](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) på rotnivå:
+1. [Lägg till anpassade identitetsfält](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) på rotnivå:
    - `hashedPID` (sträng) - hash för primär identitet
    - `hashedSID` (sträng) - hash för sekundär identitet
    - `primaryID` (sträng) - fältnamn för primär identitet
