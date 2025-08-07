@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Anpassad automatisk matchning
 
-Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) inte är anpassad efter dina specifika affärskrav väljer du det anpassade matchningsalternativet. Det här alternativet stöder användningen av [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) för att utveckla ett anpassat matchningsprogram som hanterar komplex matchningslogik, eller resurser från ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
+Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) inte är anpassad efter dina specifika affärskrav väljer du det anpassade matchningsalternativet. Det här alternativet stöder användningen av [Adobe Developer App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) för att utveckla ett anpassat matchningsprogram som hanterar komplex matchningslogik, eller resurser från ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
 
 ## Konfigurera anpassad automatisk matchning
 
@@ -24,7 +24,7 @@ Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) in
 
 ## API-slutpunkter för anpassad matchning
 
-När du skapar ett anpassat matchningsprogram med [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} måste följande slutpunkter visas:
+När du skapar ett anpassat matchningsprogram med [App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} måste följande slutpunkter visas:
 
 * **App Builder-resurs till produkt-URL**-slutpunkt
 * **App Builder-produkt till resurs-URL** slutpunkt
@@ -149,7 +149,7 @@ Parametern `asset_matches` innehåller följande attribut:
 | Attribut | Datatyp | Beskrivning |
 | --- | --- | --- |
 | `asset_id` | Sträng | Representerar det uppdaterade resurs-ID:t. |
-| `asset_roles` | Sträng | Returnerar alla tillgängliga resursroller. Använder [Commerce-resursroller som stöds](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) som `thumbnail`, `image`, `small_image` och `swatch_image`. |
+| `asset_roles` | Sträng | Returnerar alla tillgängliga resursroller. Använder [Commerce-resursroller som stöds](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) som `thumbnail`, `image`, `small_image` och `swatch_image`. |
 | `asset_format` | Sträng | Tillhandahåller de tillgängliga formaten för resursen. Möjliga värden är `image` och `video`. |
 | `asset_position` | Sträng | Visar tillgångens position. |
 
