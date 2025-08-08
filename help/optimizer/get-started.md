@@ -3,11 +3,11 @@ title: Kom igång
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: b0ce0a399e89baaeabe87c53d069df866378f8c8
+source-git-commit: ee11900f0ddf77a8cb7df7d5ae378924bdf1f2d7
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Kontrollera att du har:
 
 - **Adobe Experience Cloud-konto** med [!DNL Adobe Commerce Optimizer] berättiganden
 - **Organisationsadministratörsåtkomst** för att skapa instanser och hantera användare
-- **GitHub-konto** (för inläsning av exempeldata och utveckling av butiker)
+- **GitHub-konto** för inläsning av exempeldata och butiksutveckling
 - **Grundläggande förståelse** av e-handelsbegrepp
 
 ## Snabbstartsguide
@@ -76,6 +76,7 @@ Administratörer hanterar instanser, användare och organisationsinställningar.
 |---|---|---|
 | **Hantera användare** | Lägga till användare, utvecklare och administratörer | [Användarhantering](./user-management.md) |
 | **Skapa instanser** | Konfigurera sandbox- och produktionsmiljöer | [Skapa instans](#create-an-instance) |
+| **Hantera instanser** | Kontrollera status, uppdatera instansnamn och beskrivning och hämta nyckel-URL:er för program- och API-åtkomst | [Hantera instanser](#manage-instances) |
 | **Konfigurera åtkomst** | Ställ in katalogvyer och principer | [Katalogvyer](./setup/catalog-view.md) |
 
 ### Utvecklaruppgifter
@@ -98,38 +99,63 @@ Handläggarna optimerar och personaliserar shoppingupplevelsen genom produktuppt
 | **Rekommendationer** | Konfigurera AI-baserade produktrekommendationer | [Produktrekommendationer](./merchandising/recommendations/overview.md) |
 | **Prestandaspårning** | Övervaka framgångsmått | [Resultatvärden](./manage-results/success-metrics.md) |
 
-## Hantera en instans
+## Hantera instanser
+
+Hantera instanser från Commerce Cloud Manager.
+
+>[!NOTE]
+>
+>Alla Adobe Commerce Optimizer-användare har inte tillgång till Cloud Manager. Åtkomsten beror på vilken roll och vilka behörigheter som tilldelats användarkontot.
 
 1. Logga in på [Adobe Experience Cloud](https://experience.adobe.com/).
 
 1. Öppna Commerce Cloud Manager:
+
    - Klicka på **Commerce** under **Snabbåtkomst**.
    - Visa tillgängliga instanser.
 
-1. Få åtkomst till din instans:
+### Söka efter och filtrera instanser
 
-   Klicka på instansnamnet för att öppna programmet [!DNL Adobe Commerce Optimizer]. I programmet kan du växla mellan olika [!DNL Adobe Commerce Optimizer] instanser med hjälp av listrutan högst upp på sidan:
+När du har loggat in visas alla Commerce produktinstanser som är tillgängliga i organisationen på kontrollpanelen.
+Produktkolumnen anger vilket Commerce-program instansen är avsedd för.
+
+Använd alternativen för filter och sökning för att snabbt hitta specifika instanser. Du kan söka efter data som har skapats, region, skapats av, produkttyp, miljö och status.
+
+### Åtkomst till programmet [!DNL Adobe Commerce Optimizer]
+
+När appen är öppen kan du enkelt växla mellan miljöer som sandlåda och produktion för att visa data och inställningar för var och en av dem utan att gå tillbaka till Commerce Cloud Manager.
+
+1. Öppna programmet [!DNL Adobe Commerce Optimizer] genom att klicka på instansnamnet i Commerce Cloud Manager.
+
+1. Växla mellan [!DNL Adobe Commerce Optimizer] instanser utan att lämna programmet.
+
+   I den nedrullningsbara listan visas alla Optimizer-instanser som är tillgängliga i organisationen. Markera instansen som ska visas.
 
    ![Instansväxlare](./assets/context-switcher.png){zoomable="yes"}
 
-   Alla förekomster som visas tillhör samma organisation. Du kan växla mellan instanser för att visa data och inställningar för var och en av dem, till exempel mellan sandlådor och produktionsmiljöer.
+### Hämta instansinformation**
 
-1. Hämta instansinformation:
-   - Klicka på informationsikonen bredvid instansnamnet.
-   - Observera GraphQL-slutpunkten, katalogtjänstslutpunkten för datainmatning och instans-ID (kallas även `tenant ID`).
+Visa instansinformationen genom att klicka på informationsikonen bredvid instansnamnet.
 
-   ![Instansinformation](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![Instansinformation](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
-   Information om slutpunkt och instans-ID (tenant-ID) krävs för integrering med klientprogram och backend-system. URL:en för åtkomst till programmet [!DNL Adobe Commerce Optimizer] anges också här.
+Observera följande viktiga information:
 
-   Alla Adobe Commerce Optimizer-användare har inte tillgång till Cloud Manager och instansinformationen. Åtkomsten beror på vilken roll och vilka behörigheter som tilldelats användarkontot. Om du inte har åtkomst kontaktar du organisationens administratör för att få information om instansen.
+- **GraphQL-slutpunkt** om du vill hämta Commerce-katalogdata med API:t för marknadsföring
+- **Katalogtjänstslutpunkt** för datainmatning med REST API
+- **Commerce Optimizer URL** för att komma åt programmet [!DNL Adobe Commerce Optimizer]
+- **Instans-ID** är det unika klient-ID som identifierar instansen
 
-1. Redigera instansnamn och beskrivning:
-   - Klicka på ikonen **Redigera** bredvid ett instansnamn.
-   - Uppdatera namn och beskrivning efter behov.
-   - Klicka på **Spara**.
+Information om slutpunkt och instans-ID krävs för att konfigurera API-åtkomst och integrera med klientprogram och backend-system.
+Om du inte har tillgång till instansinformationen kontaktar du organisationens administratör för att få fram värdena.
 
-   Du kan också använda sök- och filteralternativen för att snabbt hitta specifika instanser.
+### Redigera instansnamn och beskrivning
+
+Uppdatera instansnamnet och beskrivningen efter behov.
+
+1. Klicka på ikonen **Redigera** bredvid ett instansnamn.
+1. Uppdatera **instansnamnet** och **beskrivningen** efter behov.
+1. Klicka på **Spara**.
 
 ## Lägg till exempeldata
 
@@ -186,5 +212,5 @@ När installationen är klar:
 ### Få hjälp
 
 - **Resurser för utvecklare**: [Dokumentation för utvecklare](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront-resurser**: [Commerce Storefront Documentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
-- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview)
+- **Storefront-resurser**: [Commerce Storefront Documentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
