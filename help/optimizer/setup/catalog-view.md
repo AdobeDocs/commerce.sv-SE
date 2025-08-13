@@ -3,11 +3,11 @@ title: Katalogvy
 description: Lär dig vilka katalogvyer som är och hur du skapar dem för att ordna din produktkatalog efter affärsstruktur, principer och priser.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
+source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,43 @@ Innan du skapar en katalogvy bör du kontrollera att:
 Sidan Katalog visar uppdateringar för att visa den nya katalogvyn. &#x200B;
 
 När du har utfört de här stegen är katalogvyn nu konfigurerad för att visa produkter och priser baserat på de valda källorna och profilerna.
+
+## Hantera katalogvy
+
+Följ dessa anvisningar för att uppdatera eller visa egenskaperna för befintliga katalogvyer.
+
+### Redigera katalogvy
+
+1. På arbetsytan för *katalogvyer* letar du reda på katalogvyn i det rutnät som du vill redigera och klickar på **..** för att öppna åtgärdsmenyn.
+1. Klicka på **Redigera** för att öppna katalogvyredigeraren.
+1. Uppdatera namn, katalogkällor, principer och prisboksinformation efter behov.
+1. Spara ändringarna.
+
+### Ta bort katalogvy
+
+1. I arbetsytan för *katalogvyer* letar du reda på katalogvyn i det rutnät som du vill redigera och klickar på **..** för att öppna åtgärdsmenyn.
+1. Klicka på **Ta bort**.
+
+   När bekräftelsedialogrutan visas klickar du på **[!UICONTROL Delete]**.
+
+### Visa detaljer
+
+Med det här alternativet kan du snabbt se alla katalogens visningsparametrar, medan du arbetar i *katalogvytabellen*.
+
+På arbetsytan för *katalogvyer* letar du reda på katalogvyn i det rutnät som du vill redigera och klickar på ![informationsikonen](../assets/info-icon.png).
+
+![Information om katalogvyn](../assets/catalog-view-details.png)
+
+Härifrån kan du se konfigurationsinformation för katalogvyn, som:
+
+- Visa ID
+- Namn
+- Katalogkällor
+- Profiler
+- Skapad den
+- Ändrade data
+
+En del av dessa konfigurationsinställningar behövs när du konfigurerar butiken eller använder API:t för datainhämtning.
 
 ## Arkitektur - översikt
 
