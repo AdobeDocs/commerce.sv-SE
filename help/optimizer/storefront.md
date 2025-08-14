@@ -19,7 +19,7 @@ Den här självstudiekursen innehåller detaljerade anvisningar för hur du konf
 >[!TIP]
 >
 >Snabbspåra konfigurationsprocessen i butiken genom att använda verktyget Skapa webbplats för att konfigurera lagringskatalogen och dokumentets redigeringsmiljö
->>automatiskt. Sedan kan du använda dessa instruktioner för att förstå hur butiken skapades och lära dig mer om de komponenter som är tillgängliga för dig.
+>&#x200B;>automatiskt. Sedan kan du använda dessa instruktioner för att förstå hur butiken skapades och lära dig mer om de komponenter som är tillgängliga för dig.
 
 ## Förutsättningar
 
