@@ -3,11 +3,11 @@ title: Kom igång
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 87fbd979b0660af1bf3a8786eb1e1f5f79cea043
+source-git-commit: 5cb7dc4d2bd1b9bd43d4a858e4814ca803a49027
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -119,11 +119,13 @@ Hantera instanser från Commerce Cloud Manager.
 När du har loggat in visas alla Commerce produktinstanser som är tillgängliga i organisationen på kontrollpanelen.
 Produktkolumnen anger vilket Commerce-program instansen är avsedd för.
 
-Använd alternativen för filter och sökning för att snabbt hitta specifika instanser. Du kan söka efter data som har skapats, region, skapats av, produkttyp, miljö och status.
+![Instanssökning och filter](./assets/search-filter-instances.png){zoomable="yes"}
+
+Använd verktygen Filter och Sök för att snabbt hitta specifika instanser per skapat datum, region, skapare, produkttyp, miljö eller status.
 
 ### Åtkomst till programmet [!DNL Adobe Commerce Optimizer]
 
-När appen är öppen kan du enkelt växla mellan miljöer som sandlåda och produktion för att visa data och inställningar för var och en av dem utan att gå tillbaka till Commerce Cloud Manager.
+När appen är öppen växlar du enkelt mellan miljöer som sandlådor och produktion för att visa data och inställningar för var och en utan att behöva gå tillbaka till Commerce Cloud Manager.
 
 1. Öppna programmet [!DNL Adobe Commerce Optimizer] genom att klicka på instansnamnet i Commerce Cloud Manager.
 
@@ -146,8 +148,11 @@ Observera följande viktiga information:
 - **Commerce Optimizer URL** för att komma åt programmet [!DNL Adobe Commerce Optimizer]
 - **Instans-ID** är det unika klient-ID som identifierar instansen
 
-Information om slutpunkt och instans-ID krävs för att konfigurera API-åtkomst och integrera med klientprogram och backend-system.
-Om du inte har tillgång till instansinformationen kontaktar du organisationens administratör för att få fram värdena.
+Om du är utvecklare behöver du dessa uppgifter för att konfigurera utvecklingsmiljön och ansluta till [!DNL Adobe Commerce Optimizer] API:er.
+
+>[!NOTE]
+>
+>Du måste ha nödvändig behörighet i din Adobe IMS-organisation för att få tillgång till instansinformationen. Om du inte ser instansinformationen eller inte kan komma åt programmet kontaktar du organisationens administratör.
 
 ### Redigera instansnamn och beskrivning
 
@@ -212,6 +217,6 @@ När installationen är klar:
 ### Få hjälp
 
 - **Resurser för utvecklare**: [Dokumentation för utvecklare](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront Resources**: [Commerce storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
-- **Självstudiekurser**: [Commerce Optimizer självstudiekurser](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview)
+- **Storefront Resources**: [Commerce storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Självstudiekurser**: [Commerce Optimizer självstudiekurser](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

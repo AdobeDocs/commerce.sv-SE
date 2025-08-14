@@ -2,29 +2,30 @@
 title: Konfigurera din butik
 description: Lär dig hur du konfigurerar din  [!DNL Adobe Commerce Optimizer] butik.
 role: Developer
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 7ff78711972cbd73fc75f7523d8ac734081dbe10
+source-git-commit: 475706df971e75091ee72e89d64088fa56aec4dd
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # Konfigurera din butik
 
->[!NOTE]
+Den här självstudiekursen innehåller detaljerade anvisningar för hur du konfigurerar och använder [Adobe Commerce Storefront från Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) för att skapa en prestanda, skalbar och säker Commerce Storefront som drivs av data från din [!DNL Adobe Commerce Optimizer] -instans.
+
+
+>[!TIP]
 >
->I den här dokumentationen beskrivs en produkt vid utveckling av tidig åtkomst och den återspeglar inte alla funktioner som är avsedda för allmän tillgänglighet.
-
-I den här självstudiekursen visas hur du konfigurerar och använder [Adobe Commerce Storefront från Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE) för att skapa en prestanda, skalbar och säker Commerce Storefront som drivs av data från din [!DNL Adobe Commerce Optimizer]-instans.
-
+>Snabbspåra konfigurationsprocessen i butiken genom att använda verktyget Skapa webbplats för att konfigurera lagringskatalogen och dokumentets redigeringsmiljö
+>>automatiskt. Sedan kan du använda dessa instruktioner för att förstå hur butiken skapades och lära dig mer om de komponenter som är tillgängliga för dig.
 
 ## Förutsättningar
 
 * Se till att du har ett GitHub-konto (github.com) som kan skapa databaser och är konfigurerat för lokal utveckling.
 
-* Lär dig mer om begreppen och arbetsflödet för att utveckla Commerce-butiker på Adobe Edge Delivery Services genom att läsa [Översikt](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=sv-SE) i dokumentationen för Adobe Commerce Storefront.
+* Lär dig mer om begreppen och arbetsflödet för att utveckla Commerce-butiker på Adobe Edge Delivery Services genom att läsa [Översikt](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) i dokumentationen för Adobe Commerce Storefront.
 * Konfigurera utvecklingsmiljön
 
 
@@ -60,7 +61,7 @@ Installera Node Version Manager (NVM) och den nödvändiga Node.js-versionen (22
 
 >[!TIP]
 >
->Ytterligare resurser för att utöka och anpassa din [!DNL Adobe Commerce Optimizer]-lösning finns tillgängliga via [App Builder för Adobe Commerce](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) och [API Mesh för Adobe Developer App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Kontakta din Adobe-representant om du vill ha information om åtkomst och användning.
+>Ytterligare resurser för att utöka och anpassa din [!DNL Adobe Commerce Optimizer]-lösning finns tillgängliga via [App Builder för Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) och [API Mesh för Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Kontakta din Adobe-representant om du vill ha information om åtkomst och användning.
 
 #### Installera Sidekick
 
@@ -68,7 +69,7 @@ Installera Sidekick webbläsartillägg om du vill redigera, förhandsgranska och
 
 ## Skapa en butik
 
-I butiken som du skapar för ditt [!DNL Adobe Commerce Optimizer]-projekt används en anpassad version av Adobe Commerce på Edge Delivery Services Storefront-mallsidan. Mallen är en uppsättning filer och mappar som utgör en startpunkt för utveckling av butiker. Den här installationsprocessen skiljer sig från standardkonfigurationsprocessen för en [Adobe Commerce på Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE).
+I butiken som du skapar för ditt [!DNL Adobe Commerce Optimizer]-projekt används en anpassad version av Adobe Commerce på Edge Delivery Services Storefront-mallsidan. Mallen är en uppsättning filer och mappar som utgör en startpunkt för utveckling av butiker. Den här installationsprocessen skiljer sig från standardkonfigurationsprocessen för en [Adobe Commerce på Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 >[!NOTE]
 >
@@ -107,7 +108,6 @@ Skapa en GitHub-databas för webbplatsens mallkod för butiken med hjälp av mal
 1. Fyll i konfigurationsformuläret med följande information:
 
    * **Databasmall**—`hlxsites/aem-boilerplate-commerce` (standard).
-   * **Inkludera alla grenar** - Välj alternativet att inkludera alla grenar.
    * **Ägare** - Din organisation eller ditt konto (krävs).
    * **Databasnamn** - Ett unikt namn för din nya repo (krävs).
    * **Beskrivning** - En kort beskrivning av ditt svar (valfritt).
@@ -145,12 +145,6 @@ Du behöver följande information för att kunna uppdatera koden för skyltplatt
 
 1. Öppna databasen i din terminal eller IDE.
 
-1. Kolla in grenen `aco`
-
-   ```bash
-   git checkout aco
-   ```
-
 1. Skapa konfigurationsfilen genom att kopiera filen `default-fstab.yaml` till `fstab.yaml`.
 
    ```bash
@@ -159,7 +153,7 @@ Du behöver följande information för att kunna uppdatera koden för skyltplatt
 
 1. Uppdatera monteringspunkten i butikskonfigurationsfilen så att den pekar på innehålls-URL:en.
 
-   1. Öppna konfigurationsfilen [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE#vocabulary).
+   1. Öppna konfigurationsfilen [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary).
 
       ```yaml
       mountpoints:
@@ -192,47 +186,39 @@ Du behöver följande information för att kunna uppdatera koden för skyltplatt
 >
 >Kontrollera att du har installerat [Sidekick-tillägget](https://www.aem.live/docs/sidekick#installation) i webbläsaren.
 
-1. Öppna filen `tools/sidekick/config.json`.
+1. Skapa en ny katalog `tools/sidekick`.
+
+   ```shell
+   mkdir tools/sidekick
+   ```
+
+1. Kopiera filen `demo-sidekick.json` i rotkatalogen till katalogen `tools/sidekick` och byt namn på den till `config.json`.
+
+   ```shell
+   cp demo-sidekick.json tools/sidekick/config.json
+   ```
+
+1. Anpassa Sidekick-konfigurationen för din webbplats.
+
+   Redigera filen `tools/sidekick/` i katalogen `config.json`.
 
    +++Sidekick konfigurationsfil
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/{{org}}/{{site}}{{pathname}}"
    }
    ```
 
-   Mer information finns i [dokumentationen för Sidekick-biblioteket](https://www.aem.live/docs/sidekick-library).
-
-   +++
-
 1. Uppdatera nyckelvärdena för `url` med värdena för din GitHub-databas.
 
-   * Ersätt strängen `{ORG}` med organisationen eller användarnamnet för din databas.
+   * Ersätt strängen `{{ORG}}` med organisationen eller användarnamnet för din databas.
 
-   * Ersätt strängen `{SITE}` med databasnamnet
+   * Ersätt strängen `{{SITE}}` med databasnamnet.
+
+   * Variabeln `pathname` fylls i av systemet.
 
    +++Exempel på uppdaterad konfigurationsfil
 
@@ -240,29 +226,9 @@ Du behöver följande information för att kunna uppdatera koden för skyltplatt
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/aco-storefront/early-adopter{{pathname}}"
    }
    ```
 
@@ -284,8 +250,8 @@ Om du vill använda den anpassade mallkoden för butiksskylt skriver du över ko
 
    ```bash
    git status
-   On branch aco
-   Your branch is up to date with 'origin/aco'.
+   On branch main
+   Your branch is up to date with 'origin/main'.
    
    Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
@@ -293,16 +259,16 @@ Om du vill använda den anpassade mallkoden för butiksskylt skriver du över ko
         modified:   tools/sidekick/config.json
    ```
 
-1. Genomför ändringarna i grenen `aco`.
+1. Verkställ ändringarna.
 
    ```bash
    git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
    ```
 
-1. Skriv över standardmallen i grenen `main` med ändringarna i grenen `aco`.
+1. Använd ändringarna.
 
    ```bash
-   git push origin aco:main -f
+   git push
    ```
 
 ### Steg 5: Lägg till appen AEM Code Sync
@@ -327,7 +293,7 @@ Anslut databasen till Edge Delivery-tjänsten genom att lägga till appen AEM Co
 
 Skapa och initiera ditt butiksinnehåll i dokumentredigeringsmiljön på `https://da.live` med hjälp av verktyget Platsskapare. Det här verktyget importerar exempelinnehållet till dokumentförfattarmiljön och slutför innehållsförhandsgranskningen och publiceringsprocessen för alla dokument i exempelinnehållet. Exempelinnehållet innehåller sidlayouter, banderoller, etiketter och andra element som fyller i butiken.
 
-1. Öppna [webbplatsskaparverktyget](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
+1. Öppna [webbplatsskaparverktyget](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
 
 1. Konfigurera din databas:
 
@@ -474,4 +440,4 @@ Se [Handboken för Storefront och katalogadministratören från början till slu
 
 >[!MORELIKETHIS]
 >
-> Läs [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE) om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med komponenterna i Commerce Front och backend-data.
+> Läs [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med komponenterna i Commerce Front och backend-data.
