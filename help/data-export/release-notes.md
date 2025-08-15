@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
+source-git-commit: 0722458a67a945b13d2cb27d8848d58d909aea35
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Bland uppdateringarna finns:
 >SaaS-tillägget för dataexport är en samling moduler som installeras automatiskt med Live Search, Produktrekommendationer och katalogtjänsten. Du kan kontrollera vilken version som är installerad på datorn med Composer. I vissa fall kanske du vill uppgradera dataexporttillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 103.4.8 Utgåva
+
+![Korrigera](../assets/fix.svg) Ett problem där produktprisfeeds inte genererades om när en produkt togs bort eller när produktens SKU ändrades har korrigerats.<!--MDEE-1125-->
+![ Korrigera ](../assets/fix.svg) Förbättrad bearbetning av produktuppdateringar för att säkerställa att ändringarna återspeglas korrekt när du uppdaterar en nyskapad produkt med samma SKU som en tidigare borttagen produkt. Produktsynkroniseringen använder nu uppdaterade produkt-ID:n korrekt, vilket ger korrekt och tillförlitlig dataexport.<!--MDEE-1126-->
+![ Åtgärda ](../assets/fix.svg) Ett problem där katalogtjänsten kunde returnera inaktuella variantdata för konfigurerbara produkter genom att säkerställa att produktuppdateringshändelser publiceras efter attributborttagningar har åtgärdats.<!--MDEE-1127-->
 
 ## 103.4.8 Utgåva
 
