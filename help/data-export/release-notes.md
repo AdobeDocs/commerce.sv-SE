@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 0722458a67a945b13d2cb27d8848d58d909aea35
+source-git-commit: fa3900de75ae36a3efccc7791b6345875b46148f
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1523'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,12 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
-## 103.4.8 Utgåva
+## 103.4.10 Utgåva
+
+![Korrigera](../assets/fix.svg) Ett problem har korrigerats där fel typ (`text` i stället för `OBJECT`) returnerades för vissa dynamiskt skapade attribut. Nu returneras alltid rätt typinformation, vilket eliminerar behovet av manuell omsynkronisering eller tillfälliga lösningar.<!--MDEE-1131-->
+![ Korrigera ](../assets/fix.svg) Ett problem där insamling av produktdata under partiell synkronisering kunde misslyckas på grund av fel i LowStock-lagerprovidern har åtgärdats. Med den här korrigeringen exporteras produktdata på ett tillförlitligt sätt och inga produkt-ID:n hoppas över på grund av fel relaterade till LowStock.<!--MDEE-1132-->
+
+## 103.4.9 Utgåva
 
 ![Korrigera](../assets/fix.svg) Ett problem där produktprisfeeds inte genererades om när en produkt togs bort eller när produktens SKU ändrades har korrigerats.<!--MDEE-1125-->
 ![ Korrigera ](../assets/fix.svg) Förbättrad bearbetning av produktuppdateringar för att säkerställa att ändringarna återspeglas korrekt när du uppdaterar en nyskapad produkt med samma SKU som en tidigare borttagen produkt. Produktsynkroniseringen använder nu uppdaterade produkt-ID:n korrekt, vilket ger korrekt och tillförlitlig dataexport.<!--MDEE-1126-->
