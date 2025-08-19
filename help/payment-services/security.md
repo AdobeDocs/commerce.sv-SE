@@ -3,10 +3,10 @@ title: Säkerhet och efterlevnad
 description: Granska säkerhets- och efterlevnadskrav för er webbplats.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=sv-SE
-source-git-commit: 9f7690ae325853b9b4a590b3d1cd538909a26462
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ Säkerhet är mycket viktigt i [!DNL Payment Services] och ingen privat eller PC
 
 [!DNL Adobe Commerce] och [!DNL Magento Open Source] innehåller stöd för flera säkerhetsfunktioner.
 
-Se [Säkerhet](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/security){target="_blank"} i huvudanvändarhandboken för att läsa om bästa säkerhetspraxis och lära dig hur du hanterar administratörssessioner och autentiseringsuppgifter, implementerar CAPTCHA och hanterar webbplatsbegränsningar.
+Se [Säkerhet](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} i huvudanvändarhandboken för att läsa om bästa säkerhetspraxis och lära dig hur du hanterar administratörssessioner och autentiseringsuppgifter, implementerar CAPTCHA och hanterar webbplatsbegränsningar.
 
 ## PCI-kompatibilitet
 
 Betalkortsbranschen (PCI) har fastställt en uppsättning krav för företag som tar emot betalningar via kreditkort via Internet. Förutom att upprätthålla en säker miljö är handlare som hanterar kundens kreditkortsinformation ansvariga för att följa vissa standardriktlinjer.
 
-Mer information finns i [Riktlinjer för PCI-kompatibilitet](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}.
+Mer information finns i [Riktlinjer för PCI-kompatibilitet](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}.
 
 Handlare kan fylla i ett [självutvärderingsfrågeformulär (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, som är ett självvalideringsverktyg för att utvärdera säkerheten för kortinnehavardata.
 
@@ -39,7 +39,7 @@ PCI 3-D Secure (3DS) möjliggör autentisering av köpare med kreditkortsutfärd
 
 [!UICONTROL Payment Services] tillhandahåller 3DS-funktioner som gör det möjligt för handlare att följa EU-regler och skydda kunder och handlare från bedräglig aktivitet i sina butiker.
 
-Om du är handlare inom EU eller Storbritannien där 3DS-kompatibilitet krävs, måste du manuellt aktivera 3DS (det är `Off` som standard) i [Inställningar](settings.md#credit-card-fields).
+Om du handlar inom EU eller Storbritannien där 3DS-kompatibilitet krävs, måste du manuellt aktivera 3DS (det är `Off` som standard) i [konfigurationsadministratören](configure-admin.md#credit-card-fields).
 
 >[!IMPORTANT]
 >
@@ -49,7 +49,7 @@ Order som handlaren/butikspersonalen lägger åt köparen är inte konfigurerade
 
 >[!MORELIKETHIS]
 >
-> * Mer information finns i [3DS i inställningarna](settings.md#3ds).
+> * Mer information finns i [3DS i inställningarna](configure-admin.md#3ds).
 > * Mer information om specifika kreditkort för 3DS-testning finns i [test cards](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) i dokumentationen för PayPal-utvecklare.
 
 ### Kortsäkring

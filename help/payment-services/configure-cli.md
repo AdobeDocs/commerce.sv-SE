@@ -5,8 +5,8 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration, Paas
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Mer information om data som används i [!DNL Payment Services]-rapportering finn
 
 ### Konfigurera kron på [!DNL Magento Open Source]
 
-Om du vill använda ett `BY SCHEDULE`-indexläge på [!DNL Magento Open Source] måste du konfigurera cron. Se [Konfigurera och kör cron](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
+Om du vill använda ett `BY SCHEDULE`-indexläge på [!DNL Magento Open Source] måste du konfigurera cron. Se [Konfigurera och kör cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 ### Ange indexerare
 
@@ -49,13 +49,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Om du inte anger några indexerare i kommandot uppdateras alla indexerare till samma värde. Om du vill ändra en specifik indexerare måste du ange den i kommandot.
 
-Mer information om hur du ändrar läget för en indexerare manuellt finns i [Konfigurera indexerare](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} i utvecklardokumentationen. Mer information om hur du ändrar det i Admin finns i [Indexhantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} i användarhandboken.
+Mer information om hur du ändrar läget för en indexerare manuellt finns i [Konfigurera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} i utvecklardokumentationen. Mer information om hur du ändrar det i Admin finns i [Indexhantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} i användarhandboken.
 
 ### Indexera om data manuellt
 
-Du kan indexera om data manuellt i stället för att vänta på att det ska hända automatiskt. Mer information finns i [Indexera om](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} i [Hantera index](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}.
+Du kan indexera om data manuellt i stället för att vänta på att det ska hända automatiskt. Mer information finns i [Indexera om](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} i [Hantera index](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}.
 
-När läget `BY SCHEDULE` är inställt spåras ändrade entiteter och cron-jobbet uppdaterar indexvärdet för dem baserat på ett angivet schema. Se [Kör cron från kommandoraden](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) i [Konfigurera och kör cron](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) om du vill veta hur du manuellt aktiverar indexering med hjälp av cron-jobb.
+När läget `BY SCHEDULE` är inställt spåras ändrade entiteter och cron-jobbet uppdaterar indexvärdet för dem baserat på ett angivet schema. Se [Kör cron från kommandoraden](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) i [Konfigurera och kör cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) om du vill veta hur du manuellt aktiverar indexering med hjälp av cron-jobb.
 
 ### Skicka omindexerade data till betalningstjänsten
 
@@ -89,11 +89,11 @@ Alla data som behövs för rapporterna skickas automatiskt till [!DNL Payment Se
 bin/magento cron:run --group payment_services_data_export
 ```
 
-Mer information om omindexering och indexering finns i avsnittet [Hantera indexerare](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers) i utvecklardokumentationen.
+Mer information om omindexering och indexering finns i avsnittet [Hantera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) i utvecklardokumentationen.
 
 ## Konfigurera scope via CLI
 
-[!DNL Payment Services] tillåter handlare att använda [flera PayPal-konton](settings.md#use-multiple-paypal-accounts). Nu kan ni ändra omfång för dessa konton via CLI.
+[!DNL Payment Services] tillåter handlare att använda [flera PayPal-konton](configure-admin.md#use-multiple-paypal-accounts). Nu kan ni ändra omfång för dessa konton via CLI.
 
 Om du vill ange omfånget till nivån `website` kör du:
 

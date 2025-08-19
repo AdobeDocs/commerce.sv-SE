@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,22 @@ Se [Aktivera [!DNL Payment Services] för produktion](../payment-services/produc
 
 ## [!UICONTROL Digital Wallets]
 
+### [!DNL Fastlane]-knapp
+
+[!DNL Fastlane] erbjuder ett snabbt, säkert och problemfritt sätt att betala online. Under en **gästutcheckning** kan du på ett säkert sätt lagra ditt kort och leveransinformation för ännu snabbare inköp i framtiden.
+
+* **Direktåtkomst för verifierade kunder**: Identifiera miljontals återkommande kunder och aktivera smidiga betalningar på några sekunder.
+* **Öka intäkterna**: Förbättra konverterings- och auktoriseringsnivåerna med fler slutförda inköp.
+* **Snabba upp utcheckningen**: Minska friktionen med en säker, lösenordslös inloggningsupplevelse.
+
+När [!DNL Fastlane] är aktiverat är alternativet [!UICONTROL Credit Card Fields] inaktiverat som standard.
+
+>[!NOTE]
+>
+> Fastlane stöds för närvarande bara för handlare i USA. Därför stöds inte [!UICONTROL 3D Secure authentication] för närvarande.
+
+Mer information finns i avsnittet [Fastlane av PayPal](https://www.paypal.com/us/fastlane){target=_blank}.
+
 ### [!DNL Apple Pay]-knapp
 
 Med [!DNL Apple Pay] kan handlare tillhandahålla en säker och smidig utcheckningsupplevelse i Safari (för upp till 99 domäner per handlarkonto), vilket kan öka konverteringarna. Knappen [!DNL Apple Pay] fyller automatiskt i information om lagrade betalningar, kontaktuppgifter och leveranser från kundernas iOS- eller macOS-enheter, vilket ger en snabb, enkel utcheckning.
@@ -55,9 +71,9 @@ När det här alternativet är aktiverat visas knappen [!DNL Apple Pay] på prod
 
 >[!NOTE]
 >
->  Verifieringscertifikatet för domänen Apple Pay ingår redan i koden för betaltjänster. Kontrollera att sökvägen `/.well-known/apple-developer-merchantid-domain-association` returnerar en 200-svarskod. Mer information om **Apple Pay Domain-verifieringscertifikatet** finns i [dokumentationen för PayPal-utvecklare om hur du integrerar med Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file).
+>  Verifieringscertifikatet för domänen Apple Pay ingår redan i koden för betaltjänster. Kontrollera att sökvägen `/.well-known/apple-developer-merchantid-domain-association` returnerar en 200-svarskod. Mer information om [Apple Pay Domain-verifieringscertifikatet](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) finns i **dokumentationen för PayPal-utvecklare om hur du integrerar med Apple Pay**.
 
-Mer information finns i [Inställningar](settings.md#apple-pay).
+Mer information finns i [Inställningar](configure-admin.md#apple-pay).
 
 ### [!DNL Google Pay]-knapp
 
@@ -79,7 +95,7 @@ När det här alternativet är aktiverat visas knappen [!DNL Google Pay] på pro
 
 ![PayPal-knapp](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Du kan konfigurera [!UICONTROL PayPal payment buttons] i butikskonfigurationen eller startsidan för [!DNL Payment Services]. Mer information finns i [Inställningar](settings.md#payment-buttons).
+Du kan konfigurera [!UICONTROL PayPal payment buttons] i butikskonfigurationen eller startsidan för [!DNL Payment Services].
 
 Lär dig mer om tillgängligheten för betalningsmetoder per land i PayPals [dokumentation om betalningsmetoder](https://developer.paypal.com/docs/checkout/payment-methods/).
 
@@ -109,9 +125,15 @@ Erbjud dina kunder kortfristiga räntefria betalningar och andra finansieringsal
 
 Knappen [!DNL Pay Later] visas på produktsidan, i minikundvagnen, i kundvagnen och i kassan.
 
-Mer information om erbjudandet om Betala senare finns i [PayPals Betala senare erbjuder dokumentation](https://developer.paypal.com/docs/checkout/pay-later/us/). Använd listrutan **Land eller region** för att välja ett område av intresse.
+Mer information om [Pay Later Senare-erbjudanden](https://developer.paypal.com/docs/checkout/pay-later/us/) finns i dokumentationen för PayPal Developer. Använd listrutan **Land eller region** för att välja ett område av intresse.
 
-Lär dig hur du inaktiverar eller aktiverar meddelandet [!DNL Pay Later] genom att uppdatera konfigurationen för [Inställningar](settings.md#payment-buttons).
+Lär dig hur du inaktiverar eller aktiverar meddelandet [!DNL Pay Later] genom att uppdatera konfigurationen för [Inställningar](configure-admin.md#pay-later-button).
+
+##### Valfritt. Konfigurera Betala senare meddelanden
+
+**Konfigurera meddelanden** för [Betala senare](configure-admin.md#pay-later-button) tillåter handlare att ändra standardstilarna för det här betalningsalternativet. Om du ställer in **[!UICONTROL Display Pay Later Message]** på `Yes` i [ Settings](configure-admin.md#pay-later-button) -konfigurationen visas en spärrknapp för **[!UICONTROL Configure Messaging]** så att du kan ställa in stilarna för **[!UICONTROL PayPal Pay Later messaging]**.
+
+![Betala senare meddelanden](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
 ### Använd endast PayPal-betalningsknappar
 
@@ -125,16 +147,16 @@ På så sätt kan du:
 
 Om du vill **hämta betalningar med _only_ PayPal-betalningsknappar (_inte_ betalningsalternativet PayPal-kreditkort)**:
 
-1. Kontrollera att din butik är [i produktionsläge](settings.md#enable-payment-services).
-1. [Konfigurera önskade PayPal-betalningsknappar](settings.md#payment-buttons) i Inställningar.
-1. Stäng av _Av_, alternativet **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** i avsnittet _[!UICONTROL Payment buttons]_.
+1. Kontrollera att din butik är [i produktionsläge](configure-admin.md#enable-payment-services).
+1. [Konfigurera önskade PayPal-betalningsknappar](configure-admin.md#payment-buttons) i Inställningar.
+1. Stäng av _Av_, alternativet **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** i avsnittet _[!UICONTROL Payment buttons]_.
 
 Så här **tar du emot betalningar med din befintliga kreditkortsleverantör _och_ betalningsknappar för PayPal**:
 
-1. Kontrollera att din butik är [i produktionsläge](settings.md#enable-payment-services).
-1. [Konfigurera önskade PayPal-betalningsknappar](settings.md#payment-buttons).
-1. Stäng av _Av_, alternativet **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** i avsnittet _[!UICONTROL Payment buttons]_.
-1. Aktivera alternativet _Av_ **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** i avsnittet _[!UICONTROL Credit card fields]_&#x200B;och använd ditt [befintliga kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=sv-SE#payments).
+1. Kontrollera att din butik är [i produktionsläge](configure-admin.md#enable-payment-services).
+1. [Konfigurera önskade PayPal-betalningsknappar](configure-admin.md#payment-buttons).
+1. Stäng av _Av_, alternativet **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** i avsnittet _[!UICONTROL Payment buttons]_.
+1. Aktivera alternativet _Av_ **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** i avsnittet _[!UICONTROL Credit card fields]_och använd ditt [befintliga kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Utcheckningsalternativ
 

@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] innehåller en hemvy med all nödvändig information för att börja konfigurera och använda tillägget.
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** på sidofältet _Admin_:
+1. Gå till _>_ på sidofältet **[!UICONTROL Sales]** Admin **[!UICONTROL Payment Services]**:
 
    ![Hemvy](assets/home-view.png){width="700" zoomable="yes"}
 
@@ -46,4 +46,4 @@ ht-degree: 0%
 
 ## Inställningar
 
-Klicka på **[!UICONTROL Settings]** i hemvyn. Mer information finns i [Inställningar](settings.md).
+Klicka på **[!UICONTROL Settings]** i hemvyn. Mer information finns i [[!DNL Payment Services] konfiguration](configure-admin.md).

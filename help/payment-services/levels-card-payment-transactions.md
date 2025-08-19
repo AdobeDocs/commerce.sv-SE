@@ -4,9 +4,9 @@ description: Bearbetningsnivåer för kortbetalningar inom  [!DNL Payment Servic
 role: Admin
 feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Bearbetning på nivå 2 och nivå 3
 
 [!DNL Payment Services] har avancerade kortbearbetningsfunktioner som hjälper handlarna att optimera sina betalningstransaktioner och sänka utbytesavgifterna. Det finns tre nivåer av kortbearbetning tillgängliga, var och en med olika krav på transaktionsdata.
+
+>[!CAUTION]
+>
+> [Fastlane](payments-options.md#fastlane-button)-order innehåller inte data på Nivå 2/Nivå 3, radartiklar och beloppsuppdelning.
 
 ## Uppgiftskrav per bearbetningsnivå
 

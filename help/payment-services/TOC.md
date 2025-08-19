@@ -5,9 +5,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,8 @@ ht-degree: 0%
    - [Aktivera för produktion](production.md)
 - Konfigurera [!DNL Payment Services] {#configure}
    - [[!DNL Payment Services] - startsida](payments-home.md)
-   - [Inställningar för [!DNL Payment Services]](settings.md)
+   - [[!DNL Payment Services]-konfiguration](configure-admin.md)
    - [Konfiguration av kommandorad](configure-cli.md)
-   - [Äldre konfiguration](configure-admin.md)
    - [Testa och validera](test-validate.md)
 - Betalningar och utcheckning {#payments-checkout}
    - [Betalningsalternativ](payments-options.md)
@@ -50,4 +49,4 @@ ht-degree: 0%
 - Säkerhet och efterlevnad {#security-compliance}
    - [Säkerhet](security.md)
    - [Skydd mot bedrägeri](fraud-protection.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=sv-SE)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
