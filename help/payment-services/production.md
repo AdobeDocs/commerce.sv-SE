@@ -29,8 +29,8 @@ När du har [konfigurerat dina Commerce-tjänster](connect.md#configure-commerce
 
    Du dirigeras till inställningsområdet i hemvyn med de relevanta alternativen utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services]-alternativen som [betalningsmetod](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
-1. I _[!UICONTROL General Configuration]_anger du **[!UICONTROL Enable]**till `Yes`.
-1. Ange **[!UICONTROL Payment Action]** för både _[!UICONTROL Credit Card Fields]_och_[!UICONTROL PayPal payment buttons]_ till något av följande:
+1. I _[!UICONTROL General Configuration]_&#x200B;anger du **[!UICONTROL Enable]**&#x200B;till `Yes`.
+1. Ange **[!UICONTROL Payment Action]** för både _[!UICONTROL Credit Card Fields]_&#x200B;och&#x200B;_[!UICONTROL PayPal payment buttons]_ till något av följande:
 
    | Inställning | Beskrivning |
    |---|---|
@@ -105,7 +105,7 @@ När landet har valts:
 
 1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** på sidlisten Admin
 
-   Knappen _[!UICONTROL Live onboarding]_visas inte längre och du ser textrutan [!UICONTROL Live payments pending].
+   Knappen _[!UICONTROL Live onboarding]_&#x200B;visas inte längre och du ser textrutan [!UICONTROL Live payments pending].
 
    I den textrutan kan du också bli ombedd att bekräfta din e-postadress hos PayPal för att slutföra introduktionen.
 
@@ -155,7 +155,7 @@ Aktivera direktbetalningar:
 
 1. Gå till _>_ på sidofältet **[!UICONTROL Sales]** Admin **[!UICONTROL Payment Services]**.
 1. Klicka på **[!UICONTROL Settings]** längst upp till höger på sidan på Hem. Mer information finns i [Hem](payments-home.md).
-1. I avsnittet _[!UICONTROL General Configuration]_ställer du in **[!UICONTROL Payment mode]**på `Production`.
+1. I avsnittet _[!UICONTROL General Configuration]_&#x200B;ställer du in **[!UICONTROL Payment mode]**&#x200B;på `Production`.
 1. Klicka på **[!UICONTROL Save]**.
 1. [Rensa cachen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
