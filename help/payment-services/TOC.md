@@ -49,4 +49,4 @@ ht-degree: 0%
 - Säkerhet och efterlevnad {#security-compliance}
    - [Säkerhet](security.md)
    - [Skydd mot bedrägeri](fraud-protection.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=sv-SE)

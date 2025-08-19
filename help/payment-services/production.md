@@ -27,7 +27,7 @@ När du har [konfigurerat dina Commerce-tjänster](connect.md#configure-commerce
 
    Det här alternativet är synligt om du ännu inte har konfigurerat [!DNL Payment Services] som betalningsmetod för en eller flera av dina webbplatser.
 
-   Du dirigeras till inställningsområdet i hemvyn med de relevanta alternativen utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services]-alternativen som [betalningsmetod](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
+   Du dirigeras till inställningsområdet i hemvyn med de relevanta alternativen utökade (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), där du kan aktivera [!DNL Payment Services]-alternativen som [betalningsmetod](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
 1. I _[!UICONTROL General Configuration]_&#x200B;anger du **[!UICONTROL Enable]**&#x200B;till `Yes`.
 1. Ange **[!UICONTROL Payment Action]** för både _[!UICONTROL Credit Card Fields]_&#x200B;och&#x200B;_[!UICONTROL PayPal payment buttons]_ till något av följande:
@@ -43,7 +43,7 @@ När du har [konfigurerat dina Commerce-tjänster](connect.md#configure-commerce
 
 1. Klicka på **[!UICONTROL Save]**.
 1. Klicka på **[!UICONTROL Go to Payment Services]** om du vill gå tillbaka till startsidan för [!DNL Payment Services].
-1. [Rensa cachen](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
+1. [Rensa cachen](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=sv-SE).
 
    Rensning bör göras efter varje konfigurationsändring.
 
@@ -157,7 +157,7 @@ Aktivera direktbetalningar:
 1. Klicka på **[!UICONTROL Settings]** längst upp till höger på sidan på Hem. Mer information finns i [Hem](payments-home.md).
 1. I avsnittet _[!UICONTROL General Configuration]_&#x200B;ställer du in **[!UICONTROL Payment mode]**&#x200B;på `Production`.
 1. Klicka på **[!UICONTROL Save]**.
-1. [Rensa cachen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
+1. [Rensa cachen](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >
