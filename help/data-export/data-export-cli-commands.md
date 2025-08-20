@@ -16,7 +16,7 @@ Med kommandot `saas:resync` i paketet `magento/saas-export` kan du hantera datas
 Adobe rekommenderar inte att du använder kommandot `saas:resync` regelbundet. Vanliga scenarier för kommandot är:
 
 - Inledande synkronisering
-- Synkronisera data till ett nytt datautrymme efter ändring av [SaaS-dataområdes-ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
+- Synkronisera data till ett nytt datautrymme efter ändring av [SaaS-dataområdes-ID](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/services/saas)
 - Felsökning
 
 Övervaka synkroniseringsåtgärder i filen `var/log/saas-export.log`.
