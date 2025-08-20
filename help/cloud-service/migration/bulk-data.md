@@ -1,10 +1,10 @@
 ---
 title: Migreringsverktyg för massdata
 description: Lär dig hur du använder verktyget för datamigrering (Bulk Data Migration) för att migrera data från din befintliga Adobe Commerce på molninstansen till  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Architect
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 8bf8eb58aa9c1ae965f4bbf5a2987fb22f004769
+source-git-commit: 131d3bdb7e6ef2622236ddf08f306639396d6ffa
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 0%
@@ -39,8 +39,8 @@ I följande avsnitt beskrivs dessa steg i detalj.
 
 Följande massdatamigreringsverktyg är tillgängliga:
 
-- **Q3 2025** - Skicka en supportanmälan om du vill komma åt migreringsverktyget för gruppdata.
-- **Q3 2025** - Migreringsverktyget för gruppdata kommer att vara öppet och kan nås från den här sidan.
+- **Q4 2025** - Skicka en supportanmälan om du vill komma åt migreringsverktyget för gruppdata.
+- **Q4 2025** - Migreringsverktyget för gruppdata kommer att vara öppet och kan nås från den här sidan.
 
 ## Skapa målmiljö
 
