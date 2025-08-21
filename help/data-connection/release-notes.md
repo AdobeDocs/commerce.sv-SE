@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för tillägget  [!DNL Data Connection] från Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 43020e33ce57861cf586ace12a0832b24c23872d
+source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1257'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,15 @@ Versionsinformationen innehåller uppdateringar av tillägget [!DNL Data Connect
 
 Funktionsändringar och korrigeringar som rör tillägg som används av tillägget [!DNL Data Connection] finns i **Tjänsteuppdateringar som stöds**.
 
-Läs [Kommande releaser](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/planning/schedule) om du vill veta mer om releasescheman och support.
+Läs [Kommande releaser](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) om du vill veta mer om releasescheman och support.
 
-Läs utvecklardokumentationen för att [lära dig vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/product-availability).
+Läs utvecklardokumentationen för att [lära dig vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Uppdateringar av tjänster som stöds
 
 I versionsinformationen beskrivs funktionsändringar och korrigeringar som rör tillägg som används av tillägget [!DNL Data Connection].
 
-+++Supported service updates
++++Uppdateringar av tjänster som stöds
 
 _7 augusti 2025_
 
@@ -46,12 +46,12 @@ _2 augusti 2024_
 
 _24 januari 2024_
 
-![Nytt](../assets/new.svg) - Tillägget `data-services-b2b` har uppdaterats för att inkludera en ny rekvisitionshändelse med namnet [deleteRequisitionList](events.md#deleterequisitionlist) för B2B-handlare.
+![Nytt](../assets/new.svg) - Tillägget `data-services-b2b` har uppdaterats så att det innehåller en ny rekvisitionshändelse med namnet `deleteRequisitionList` för B2B-handlare.
 
 _16 november 2023_
 
 ![Korrigera](../assets/fix.svg) - Korrigerade ett problem där ett felmeddelande felaktigt visades när du gjorde en beställning med flera leveransadresser.
-![Korrigera](../assets/fix.svg) - Korrigerade ett fel i [productPageView](events.md#productpageview) -händelsen där `productListItems.priceTotal`-händelsefältet inte konverterade priset efter växling av valutan i butiksvyn.
+![Korrigera](../assets/fix.svg) - Korrigerade ett fel i `productPageView`-händelsen där `productListItems.priceTotal`-händelsefältet inte konverterade priset efter växling av valutan i butiksvyn.
 ![Korrigera](../assets/fix.svg) - Korrigerade ett fel i händelsefältet `productListItems` där valutakoden inte uppdaterades när handlaren växlade till butiksvyn.
 
 _10 oktober 2023_
@@ -59,11 +59,11 @@ _10 oktober 2023_
 ![Nytt](../assets/new.svg) - Nya händelser för orderstatus har lagts till: [Orderfakturerad](events-backoffice.md#orderinvoiced), [Returinitierad orderartikel](events-backoffice.md#orderitemsreturninitiated) och [Returnerad orderartikel slutförd](events-backoffice.md#orderitemreturncompleted).
 ![Korrigera](../assets/fix.svg) - Korrigerade ett problem där ändringar av valutakonfigurationen inte återspeglades i händelserna efter att cachen uppdaterades.
 ![Korrigera](../assets/fix.svg) - Ett fel har korrigerats när orderbekräftelsemeddelandet inte visas om asynkron orderplacering är aktiverad.
-![Nytt](../assets/new.svg) - Data har lagts till i händelsen [addToRequisitionList](events.md#addtorequisitionlist) för enkla produkter på kategorivysidan.
-![Korrigera](../assets/fix.svg) - Ett fel i `selectedOptions`-data i händelsen [addToRequisitionList](events.md#addtorequisitionlist) när produkter läggs till från orderbekräftelsesidan har korrigerats.
-![Nytt](../assets/new.svg) - Produktdata har lagts till i händelsen [addToRequisitionList](events.md#addtorequisitionlist) när produkter läggs till i rekvisitionslistan från kategorivysidan.
-![Ny](../assets/new.svg) - [addToRequisitionList](events.md#addtorequisitionlist)-händelse har lagts till när konfigurerbara produkter läggs till i rekvisitionslistan från produktvysidan.
-![Nyhet](../assets/new.svg) - [addToRequisitionList](events.md#addtorequisitionlist) och [removeFromRequisitionList](events.md#removefromrequisitionlist) har lagts till när produktkvantiteten ökas och/eller minskas från en rekvisitionslista.
+![Nytt](../assets/new.svg) - Data har lagts till i `addToRequisitionList`-händelsen för enkla produkter på kategorivysidan.
+![Korrigera](../assets/fix.svg) - Ett problem i `selectedOptions`-data i `addToRequisitionList`-händelsen när produkter läggs till från orderbekräftelsesidan har korrigerats.
+![Nytt](../assets/new.svg) - Produktdata har lagts till i `addToRequisitionList`-händelsen när produkter läggs till i rekvisitionslistan från kategorivysidan.
+![Ny](../assets/new.svg) - `addToRequisitionList`-händelse har lagts till när konfigurerbara produkter läggs till i rekvisitionslistan från produktvysidan.
+![Nytt](../assets/new.svg) - `addToRequisitionList`- och `removeFromRequisitionList`-händelser har lagts till när produktkvantiteten ökas och/eller minskas från en rekvisitionslista.
 
 _10 juni 2023_
 
@@ -141,7 +141,7 @@ _5 juni 2024_
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"} Adobe Commerce version 2.4.4 och senare
 
 ![Korrigera](../assets/fix.svg) - Ett problem har korrigerats där fel datumformat användes när en [historik synkronisering](connect-data.md#specify-order-history-date-range) initierades.
-![Korrigera](../assets/fix.svg) - Ett fel har korrigerats där händelsen [startCheckout](events.md#startcheckout) inte skickades till Adobe Commerce 2.4.7.
+![Korrigera](../assets/fix.svg) - Korrigerade ett fel där `startCheckout`-händelsen inte skickades till Adobe Commerce 2.4.7.
 
 ## 3.1.1
 

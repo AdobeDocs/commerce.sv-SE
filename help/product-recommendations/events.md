@@ -3,16 +3,18 @@ title: Samla in data
 description: Lär dig hur händelser samlar in data för  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
 
 # Samla in data
 
-När du installerar och konfigurerar SaaS-baserade Adobe Commerce-funktioner som [[!DNL Product Recommendations]](install-configure.md) eller [[!DNL Live Search]](../live-search/install.md) distribuerar modulerna beteendedatainsamling till din butik. Den här funktionen samlar in anonyma beteendedata från era kunder och driver [!DNL Product Recommendations]. Händelsen `view` används till exempel för att beräkna rekommendationstypen `Viewed this, viewed that` och händelsen `place-order` används för att beräkna rekommendationstypen `Bought this, bought that`.
+När du installerar och konfigurerar [[!DNL Product Recommendations]](install-configure.md) distribuerar modulen beteendedatainsamling till din butik. Den här funktionen samlar in anonyma beteendedata från era kunder och driver [!DNL Product Recommendations]. Händelsen `view` används till exempel för att beräkna rekommendationstypen `Viewed this, viewed that` och händelsen `place-order` används för att beräkna rekommendationstypen `Bought this, bought that`.
+
+Läs [utvecklardokumentationen](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) om du vill veta mer om de beteendedata som [!DNL Product Recommendations] -händelser samlar in.
 
 >[!NOTE]
 >
@@ -77,61 +79,6 @@ Om indatainsamlingen inte är tillräcklig återgår följande rekommendationsty
 - `Conversion (view to purchase)`
 - `Conversion (view to cart)`
 
-### Händelser
-
-Händelseinsamlaren [Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) visar alla händelser som distribuerats till din butik. I den listan finns det en delmängd av händelser som är specifika för [!DNL Product Recommendations]. Dessa händelser samlar in data när kunderna interagerar med rekommendationsenheter i butiken och styr mätvärdena för att analysera hur bra era rekommendationer fungerar.
-
-| Händelse | Beskrivning |
-| --- | --- |
-| `impression-render` | Skickas när rekommendationsenheten återges på sidan. Om en sida har två rekommendationsenheter (köpta, vy-vy) skickas två `impression-render`-händelser. Den här händelsen används för att spåra mätvärden för visningar. |
-| `rec-add-to-cart-click` | Köparen klickar på knappen **Lägg till i kundvagnen** för ett objekt i rekommendationsenheten. |
-| `rec-click` | Köparen klickar på en produkt i rekommendationsenheten. |
-| `view` | Skickas när rekommendationsenheten blir minst 50 procent visningsbar, t.ex. genom att rulla nedåt på sidan. Om en rekommendationsenhet till exempel har två rader skickas en `view`-händelse när en rad plus en pixel på den andra raden blir synlig för kunden. Om användaren rullar sidan uppåt och nedåt flera gånger skickas händelsen `view` lika många gånger som användaren ser hela rekommendationsenheten igen på sidan. |
-
-Även om produktrekommendationsmätvärden är optimerade för Luma store-fronts fungerar de även med andra storefront-implementeringar:
-
-- [Edge Delivery Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=sv-SE)
-- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
-- [Anpassad överordnad (React, Vue JS)](headless.md)
-
-#### Nödvändiga instrumentpanelshändelser
-
-Följande händelser krävs för att fylla i [[!DNL Product Recommendations] kontrollpanelen](workspace.md)
-
-| Kontrollpanelskolumn | Händelser | Kopplingsfält |
-| ---------------- | --------- | ----------- |
-| Impressions | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | `unitId` |
-| Vyer | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | `unitId` |
-| Klickningar | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click` | `unitId` |
-| Intäkter | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
-| LT intäkt | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
-| CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
-| vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
-
-Följande händelser är inte specifika för produktrekommendationer, men krävs för att Adobe Sensei ska kunna tolka kunddata korrekt:
-
-- `view`
-- `add-to-cart`
-- `place-order`
-
-#### Rekommendationstyp
-
-I den här tabellen beskrivs de händelser som används av varje rekommendationstyp.
-
-| Rekommendationstyp | Händelser | Sida |
-| --- | --- | --- |
-| Mest visade | `page-view`<br>`product-view` | Produktinformationssida |
-| Mest köpta | `page-view`<br>`place-order` | Kassa/kassa |
-| Mest tillagt i kundvagn | `page-view`<br>`add-to-cart` | Produktinformationssida<br>Produktlistsida<br>Kundlista<br>Önskad lista |
-| Visade det här, såg du att | `page-view`<br>`product-view` | Produktinformationssida |
-| En titt på det här, köpte det | Produktrecept | `page-view`<br>`product-view` | Produktinformationssida<br>Kopia/utcheckning |
-| Köpte den här, köpte den där | Produktrecept | `page-view`<br>`product-view` | Produktinformationssida |
-| Trender | `page-view`<br>`product-view` | Produktinformationssida |
-| Konvertering: Visa för köp | Produktrecept | `page-view`<br>`product-view` | Produktinformationssida |
-| Konvertering: Visa för köp | Produktrecept | `page-view`<br>`place-order` | Kassa/kassa |
-| Konvertering: Visa i kundvagn | Produktrecept | `page-view`<br>`product-view` | Produktinformationssida |
-| Konvertering: Visa i kundvagn | Produktrecept | `page-view`<br>`add-to-cart` | Produktinformationssida<br>Produktlistsida<br>Kart<br>Önskslista |
-
 #### Caveats
 
 - Annonsblockerare och sekretessinställningar kan förhindra händelser från att fångas in och kan göra så att engagemanget och intäktsmåtten [på ](workspace.md#column-descriptions) inte rapporteras tillräckligt. Dessutom kanske vissa händelser inte skickas på grund av att kunderna lämnar sidan eller nätverksproblem.
@@ -140,4 +87,4 @@ I den här tabellen beskrivs de händelser som används av varje rekommendations
 
 >[!NOTE]
 >
->Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=sv-SE) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.
+>Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.

@@ -1,9 +1,10 @@
 ---
 title: Rekommendationstyper
 description: Lär dig mer om rekommendationer som du kan distribuera till olika sidor på din webbplats.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Som en god praxis rekommenderar Adobe följande riktlinjer när du använder rek
 
 >[!NOTE]
 >
->Mer information om händelserna som beskrivs i den här artikeln finns i [events](events.md).
+>Mer information om de händelser som beskrivs i den här artikeln finns i [storefront-händelser](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) i utvecklardokumentationen.
 
 ## Personligt {#personalized}
 
@@ -111,7 +112,7 @@ Eftersom den här rekommendationstypen inte kan användas för de flesta katalog
 >
 > Rekommendationstypen _Visuell likhet_ är tillgänglig när du [installerar](install-configure.md) den som en valfri modul.
 
-1. Gå till **Marknadsföring** > _Kampanjer_ > **Produktrekommendationer** på sidofältet _Admin_ för att visa kontrollpanelen _Produktrekommendationer_.
+1. Gå till _Marknadsföring_ > **Kampanjer** > _Produktrekommendationer_ på sidofältet **Admin** för att visa kontrollpanelen _Produktrekommendationer_.
 
 1. Klicka på **Inställningar** (kugghjulsikon) för att visa sidan _Inställningar_ .
 

@@ -2,9 +2,9 @@
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 >
 >Produktrekommendationsstatistik är optimerad för Luma storefront. Om din storefront inte är Luma-baserad beror mätspårningsdata på hur du [implementerar händelsesamlingen](events.md).
 
-1. Gå till **Marknadsföring** > _Kampanjer_ > **Produktrekommendationer** på sidofältet _Admin_ för att visa arbetsytan _Produktrekommendationer_ .
+1. Gå till _Marknadsföring_ > **Kampanjer** > _Produktrekommendationer_ på sidofältet **Admin** för att visa arbetsytan _Produktrekommendationer_ .
 
-1. Ange [butiksvyn](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/setup/websites-stores-views) där du vill att rekommendationerna ska visas.
+1. Ange [butiksvyn](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) där du vill att rekommendationerna ska visas.
 
    >[!NOTE]
    >
-   > Rekommendationsenheter för Page Builder måste skapas i standardbutiksvyn, men kan användas var som helst. Mer information om hur du skapar produktrekommendationer med Page Builder finns i [Lägg till innehåll - produktrekommendationer](https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Rekommendationsenheter för Page Builder måste skapas i standardbutiksvyn, men kan användas var som helst. Mer information om hur du skapar produktrekommendationer med Page Builder finns i [Lägg till innehåll - produktrekommendationer](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Klicka på **Skapa rekommendation**.
 
@@ -38,14 +38,14 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
    >[!NOTE]
    >
-   > Produktrekommendationer stöds inte på kundvagnssidan när din butik är konfigurerad att [visa kundvagnssidan omedelbart efter att en produkt lagts till i kundvagnen](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Produktrekommendationer stöds inte på kundvagnssidan när din butik är konfigurerad att [visa kundvagnssidan omedelbart efter att en produkt lagts till i kundvagnen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Hemsida
    * Kategori
    * Produktinformation
    * Kundvagn
    * Bekräftelse
-   * [Page Builder](https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Du kan skapa upp till fem aktiva rekommendationsenheter för varje sidtyp och upp till 25 för Page Builder. Sidtypen är nedtonad när gränsen nås.
 
@@ -54,7 +54,7 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
 1. I avsnittet _Välj rekommendationstyp_ anger du den [typ av rekommendation](type.md) som du vill ska visas på den valda sidan. För vissa sidor är [placeringen](placement.md) av rekommendationerna begränsad till vissa typer.
 
-1. Ange den [etikett](placement.md#recommendation-labels) som är synlig för dina kunder, till exempel&quot;Top sellers&quot;, i avsnittet _Store-visningsrubrik_.
+1. Ange den _etikett_ som är synlig för dina kunder, till exempel&quot;Top sellers&quot;, i avsnittet [Store-visningsrubrik](placement.md#recommendation-labels).
 
 1. I avsnittet _Välj antal produkter_ använder du skjutreglaget för att ange hur många produkter du vill ska visas i rekommendationsenheten.
 
@@ -172,7 +172,7 @@ I följande exempel visas möjliga orsaker och lösningar till vanliga låga ber
 * **Statisk-baserad** - Låga procentsatser för de här indikatorerna kan orsakas av att katalogdata saknas för de visningsbara produkterna. Om de är lägre än förväntat kan en fullständig synkronisering åtgärda problemet.
 * **Dynamisk-baserad** - Låga procentsatser för dynamiska indikatorer kan orsakas av:
 
-   * Fält saknas i de obligatoriska [storefront-händelserna](events.md) för respektive rekommendationstyp (requestId, product context, osv.).
+   * Fält saknas i de obligatoriska [storefront-händelserna](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) för respektive rekommendationstyp (requestId, product context, osv.).
    * Låg trafik i butiken, vilket innebär att antalet beteendehändelser är lågt.
    * Det finns få beteendehändelser i olika produkter i butiken. Om till exempel bara tio procent av dina produkter visas eller köps för det mesta av tiden blir respektive beredskapsindikatorer låga.
 
