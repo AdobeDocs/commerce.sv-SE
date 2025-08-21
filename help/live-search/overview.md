@@ -35,7 +35,7 @@ På Adobe Commerce-sidan av arkitekturen finns värdtjänster för sökningen *A
 
 Med fokus på hastighet, relevans och användarvänlighet är [!DNL Live Search] en spelförändrare för både kunder och handlare. Titta på följande video och ta sedan en snabb genomgång av [!DNL Live Search] från butiken.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452573?learn=on&captions=swe)
 
 En mer ingående video om hur du använder och konfigurerar Live Search finns i avsnittet [Fullständig demonstration om  [!DNL Live Search]](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
