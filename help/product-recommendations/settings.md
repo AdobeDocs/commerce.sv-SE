@@ -2,9 +2,9 @@
 title: Inställningar
 description: Lär dig hur du ändrar källan för dina [!DNL Product Recommendations] -data och hur du aktiverar visuella rekommendationer.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -25,19 +25,19 @@ Mellanlagringsorder spelas in med mellanlagring `environmentId`. Det påverkar i
 
 Om du vill ändra källan till dina produktrekommendationer väljer du SaaS-dataområdet med de beteendedata som du vill använda. Innan du börjar bör du kontrollera att:
 
-- Datainsamlingen i Storefront måste vara [konfigurerad och aktiverad](install-configure.md) för din produktionsmiljö och [verifierad](verify.md) att beteendedata skickas till Adobe Commerce.
+- Datainsamlingen i Storefront måste vara [konfigurerad och aktiverad](install-configure.md) för din produktionsmiljö och [verifierad](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) att beteendedata skickas till Adobe Commerce.
 - Katalogen för icke-produktionsmiljö bör i princip vara densamma som din produktionskatalog. Genom att använda liknande kataloger ser du till att produktrekommendationsenheterna returnerar mycket liknande produktrekommendationsenheter.
 
 1. Logga in på Admin i din icke-produktionsmiljö i Adobe Commerce.
 
-1. Gå till **Marknadsföring** > _Kampanjer_ > **Produktrekommendationer** på sidofältet _Admin_.
+1. Gå till _Marknadsföring_ > **Kampanjer** > _Produktrekommendationer_ på sidofältet **Admin**.
 
 1. Klicka på **Inställningar**.
 
    ![inställningar för produktrekommendation](assets/settings.png)
    _Inställningar_
 
-1. Aktivera alternativet **Hämta rekommendationer från ett annat SaaS-datautrymme** i avsnittet _Rekommendationskälla_. Avsnittet _Rekommendationskälla_ visas bara i en icke-produktionsmiljö.
+1. Aktivera alternativet _Hämta rekommendationer från ett annat SaaS-datautrymme_ i avsnittet **Rekommendationskälla**. Avsnittet _Rekommendationskälla_ visas bara i en icke-produktionsmiljö.
 
    En lista över _tillgängliga SaaS-datautrymmen_ visas.
 
