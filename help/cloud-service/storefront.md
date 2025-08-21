@@ -3,7 +3,7 @@ title: Konfigurera din butik
 description: Lär dig hur du kör byggnadsverktyget för att konfigurera  [!DNL Adobe Commerce as a Cloud Service] butiken.
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: b0d492ffab2dcf5742772d02bed026e241ac43cd
 workflow-type: tm+mt
 source-wordcount: '282'
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Gör så här för att konfigurera din Adobe Commerce Storefront från Edge Delivery Services för Adobe Commerce as a Cloud Service (SaaS).
 
-Om du vill ha en mer anpassningsbar och detaljerad genomgång läser du [storefront-dokumentationen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+Om du vill ha en mer anpassningsbar och detaljerad genomgång läser du [storefront-dokumentationen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE).
 
 1. Öppna [webbplatsskaparverktyget](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -45,4 +45,4 @@ Mer information finns i följande artiklar:
 * Mer information om hur du hanterar och visar innehåll och data i butiken finns i [Uppdatera butiksinnehåll](./use-cases.md#update-storefront-content).
 * Mer information om kontextuella experimenteringsfunktioner finns i [sammanhangsberoende experimenterande](./use-cases.md#contextual-experimentation).
 * Mer information om hur du använder generativ AI för att automatisera generering av högkvalitativt innehåll finns i [Generera variationer](./use-cases.md#generate-variations).
-* Mer information om hur du uppdaterar webbplatsinnehåll och integrerar med Commerce klientkomponenter och backend-data finns i [Adobe Commerce Storefront-dokumentationen](https://experienceleague.adobe.com/developer/commerce/storefront/).
+* Mer information om hur du uppdaterar webbplatsinnehåll och integrerar med Commerce klientkomponenter och backend-data finns i [Adobe Commerce Storefront-dokumentationen](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE).
