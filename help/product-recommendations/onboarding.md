@@ -2,7 +2,7 @@
 title: Onboarding
 description: Läs om kraven och vilka plattformar som stöds i  [!DNL Product Recommendations].
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
 source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
 source-wordcount: '294'
@@ -47,7 +47,7 @@ Produktrekommendationskunder kan använda [SaaS-prisindexering](../price-index/p
 
 ### Stöd för B2B {#b2bsupport}
 
-B2B-butiker kräver ofta komplex logik som styr synlighet och pris för varje kund eller kundgrupp. [!DNL Product Recommendations] [support](release-notes.md) den här funktionen genom att använda [kategoribehörigheter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [delade kataloger](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) och [kundgruppsspecifika priser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Om du t.ex. har dolt vissa kategorier i kundsegmentet för detaljhandeln visas inte rekommendationer för produkter i dessa kategorier för en kund i det segmentet. När du definierar en delad katalog för specifika kundgrupper och företag ser kunderna rekommendationer endast för produkter de har tillgång till. Alla rekommenderade produkter återspeglar korrekt kundgruppsspecifikt pris baserat på varje kunds kundgrupp.
+B2B-butiker kräver ofta komplex logik som styr synlighet och pris för varje kund eller kundgrupp. [!DNL Product Recommendations] [support](release-notes.md) den här funktionen genom att använda [kategoribehörigheter](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=sv-SE), [delade kataloger](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=sv-SE) och [kundgruppsspecifika priser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=sv-SE). Om du t.ex. har dolt vissa kategorier i kundsegmentet för detaljhandeln visas inte rekommendationer för produkter i dessa kategorier för en kund i det segmentet. När du definierar en delad katalog för specifika kundgrupper och företag ser kunderna rekommendationer endast för produkter de har tillgång till. Alla rekommenderade produkter återspeglar korrekt kundgruppsspecifikt pris baserat på varje kunds kundgrupp.
 
 >[!NOTE]
 >
