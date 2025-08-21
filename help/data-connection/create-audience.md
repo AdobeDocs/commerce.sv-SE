@@ -79,9 +79,9 @@ Använd dessa händelsedata för att ange att målgruppen omfattar personer som 
 
    ![Skapa regel](assets/build-rule.png)
 
-   På arbetsytan **Segment Builder** kan du definiera regler och villkor för din målgrupp. &#x200B; Dessa regler och villkor baseras på händelse- och profildata från din Commerce Store och definierar de kriterier som avgör om en användare uppfyller kraven för målgruppen. Du kan t.ex. skapa en regel som omfattar användare som har visat en viss produkt eller användare som har gjort ett köp inom en viss tidsram. Läs mer om [Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) och regler och villkor.
+   På arbetsytan **Segment Builder** kan du definiera regler och villkor för din målgrupp. &#x200B; Dessa regler och villkor baseras på händelse- och profildata från din Commerce Store och definierar de kriterier som avgör om en användare uppfyller kraven för målgruppen. Du kan t.ex. skapa en regel som omfattar användare som har visat en viss produkt eller användare som har gjort ett köp inom en viss tidsram. Läs mer om [Segment Builder](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder) och regler och villkor.
 
-1. Välj fliken [Händelser](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events).
+1. Välj fliken [Händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder#events).
 
    ![Fliken Händelser](assets/audience-events-tab.png)
 
@@ -109,7 +109,7 @@ Du gör en målgrupp tillgänglig i [!DNL Commerce] genom att aktivera den för 
 
 >[!IMPORTANT]
 >
->Om du inte redan har angett [!DNL Commerce] som ett tillgängligt mål för att ta emot data kan du läsa avsnittet [Adobe [!DNL Commerce] Connection](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce) .
+>Om du inte redan har angett [!DNL Commerce] som ett tillgängligt mål för att ta emot data kan du läsa avsnittet [Adobe [!DNL Commerce] Connection](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/personalization/adobe-commerce) .
 
 1. Klicka på **Aktivera till mål** på fliken **Detaljer** för målgruppen.
 
@@ -119,7 +119,7 @@ Du gör en målgrupp tillgänglig i [!DNL Commerce] genom att aktivera den för 
 
 ## &#x200B;3. Visa målgruppen på Publikkontrollpanelen
 
-I [!DNL Commerce] kan du visa alla [aktiva](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) målgrupper som kan anpassas för din [!DNL Commerce]-instans med kontrollpanelen **Real-Time CDP Audiences** .
+I [!DNL Commerce] kan du visa alla [aktiva](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) målgrupper som kan anpassas för din [!DNL Commerce]-instans med kontrollpanelen **Real-Time CDP Audiences** .
 
 Gå till sidofältet **Admin** och gå till _>_ för att komma åt kontrollpanelen **[!UICONTROL Customers]** Real-Time CDP Audiences **[!UICONTROL Real-time CDP Audience]**.
 
@@ -132,9 +132,9 @@ På kontrollpanelen letar du efter den målgrupp du har skapat. Observera att de
 I det här avsnittet visas hur du skapar en kundprisregel baserat på din nya målgrupp.
 
 1. Bekräfta att din nya målgrupp visas på kontrollpanelen **Real-Time CDP Audiences**.
-1. [Skapa en kundprisregel](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
-1. [Ange villkoret](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) för kundvagnsprisregeln med din nya målgrupp.
-1. [Ange den åtgärd](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) som du vill ska utföras när produkten läggs till i kundvagnen.
+1. [Skapa en kundprisregel](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
+1. [Ange villkoret](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) för kundvagnsprisregeln med din nya målgrupp.
+1. [Ange den åtgärd](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) som du vill ska utföras när produkten läggs till i kundvagnen.
 1. Fortsätt att konfigurera kundvagnsprisregeln.
 1. Gå till kundvyn för din sandlådeinstans.
 1. Lägg den produkt du baserar målgruppen på i kundvagnen. Observera att kundvagnsprisregeln är aktiverad.

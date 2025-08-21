@@ -29,7 +29,7 @@ När du installerar `magento/product-recommendations module` aggregerar Adobe Se
 
    Distribuering av [!DNL Product Recommendations] kräver två huvudsakliga [datakällor](type.md): katalog och beteende. Eftersom produktion är den enda miljön där era kunders handlande fångas in och analyseras ska ni börja samla in data i produktionen så tidigt som möjligt. [Lär dig](events.md) hur Adobe Sensei utbildar maskininlärningsmodeller som ger rekommendationer av högre kvalitet. När du börjar samla in beteendedata i produktionen kan du dessutom [hämta rekommendationer](staging-environment.md#fetch-recommendations-from-production-environment-recommended) baserat på dessa produktionsdata när du arbetar i icke-produktionsmiljöer. Sedan kan ni testa och experimentera med olika rekommendationer som beräknas utifrån verkliga kunddata som samlats in i produktionen.
 
-   Om du vill distribuera datainsamling till produktion måste du [installera och konfigurera](install-configure.md) modulen [!DNL Product Recommendations] genom att ange en [API-nyckel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html).
+   Om du vill distribuera datainsamling till produktion måste du [installera och konfigurera](install-configure.md) modulen [!DNL Product Recommendations] genom att ange en [API-nyckel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=sv-SE).
 
    >[!TIP]
    >
@@ -43,7 +43,7 @@ När du installerar `magento/product-recommendations module` aggregerar Adobe Se
    >
    > Genom att anpassa mallen kan du ange din formatmall, skriva över var en rekommendationsenhet visas på en sida och så vidare.
 
-   Läs [Anpassa](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) i utvecklardokumentationen om du vill veta hur du slutför det här steget.
+   Läs [Anpassa](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=sv-SE) i utvecklardokumentationen om du vill veta hur du slutför det här steget.
 
 1. **Testa rekommendationer i din icke-produktionsmiljö**
 
