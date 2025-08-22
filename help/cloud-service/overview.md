@@ -4,10 +4,10 @@ description: Läs om de viktigaste funktionerna och fördelarna med  [!DNL Adobe
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 8fc46b0b93ac5102477f33bf2a8ae70a7acaf85d
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: 31d1f1fe784247d6db8a26f8a9e6ae0291e416b5
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -21,46 +21,34 @@ I följande tabell visas vilka produkter som fungerar som [!DNL Adobe Commerce a
 
 <table style="table-layout:auto">
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;"> ✓ </span>
-      </span>
-      <strong>Commerce Storefront</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="bock" align="center"> <strong>Commerce Storefront</strong>
     </td>
-    <td>
+    <td align="left">
       Kundgränssnitt där kunderna surfar och köper produkter
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;"> ✓ </span>
-      </span>
-      <strong>Merchandising Services</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="bock" align="center"> <strong>Merchandising Services</strong>
     </td>
-    <td>
+    <td align="left">
       Backend-tjänster som hanterar produktkataloger, priser och lager
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;"> ✓ </span>
-      </span>
-      <strong>Produktbilder</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="bock" align="center"> <strong>Produktbilder</strong>
     </td>
-    <td>
+    <td align="left">
       Digital resurshantering för produktbilder och media
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;"> ✓ </span>
-      </span>
-      <strong>Developer Platform</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="bock" align="center"> <strong>Developer Platform</strong>
     </td>
-    <td>
+    <td align="left">
       Grundläggande utvecklingsverktyg och API:er för att bygga anpassade funktioner
     </td>
   </tr>
@@ -70,7 +58,7 @@ I följande tabell visas vilka produkter som fungerar som [!DNL Adobe Commerce a
 
 I följande video visas en kort introduktion till arkitekturen [!DNL Adobe Commerce as a Cloud Service]. Bilder som illustrerar arkitekturen visas nedanför videon.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443271?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 I det här diagrammet visas dataflödet mellan [!DNL Adobe Commerce as a Cloud Service] och alla Adobe Experience Cloud-lösningar.
 
@@ -78,13 +66,13 @@ I det här diagrammet visas dataflödet mellan [!DNL Adobe Commerce as a Cloud S
 
 ## Commerce Storefront
 
-Använd Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=sv-SE) från Edge Delivery Services för att skapa avancerade upplevelser på några minuter med enkel dokumentbaserad redigering eller visuell redigering med Storefront Builder.
+Använd Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) från Edge Delivery Services för att skapa avancerade upplevelser på några minuter med enkel dokumentbaserad redigering eller visuell redigering med Storefront Builder.
 
 Commerce Storefront är helt headless med en frikopplad arkitektur som ger alla marknadsföringstjänster och data via ett GraphQL API-lager. Med denna arkitektur kan teamen utveckla sina gränser oberoende av Commerce Foundation, vilket gör det enkelt att skapa och testa nya kontaktytor med ny teknik.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] har inte stöd för Luma-butiker. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=sv-SE#existing-storefronts) för mer information om övergångar.
+>[!DNL Adobe Commerce as a Cloud Service] har inte stöd för Luma-butiker. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) för mer information om övergångar.
 
 ## Marknadsföringstjänster och betaltjänster
 
@@ -109,11 +97,11 @@ Alternativt innehåller de inbyggda funktionerna i [!DNL Adobe Commerce as a Clo
 
 Följande jämförelse hjälper dig att välja det bästa alternativet för dina behov i innehållsförsörjningskedjan:
 
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-  <tr style="border: none;">
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">Produktvisualiseringar från AEM Assets</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+<table>
+  <tr>
+    <td align="left">
+      <strong>Produktvisuella effekter från AEM Assets</strong>
+      <ul>
         <li>Integrerad, automatiserad produktbild och video Digital Asset Manager (DAM)</li>
         <li>Ändra storlek på, beskära och konvertera bilder</li>
         <li>Snabb leverans av bilder och video</li>
@@ -123,12 +111,13 @@ Följande jämförelse hjälper dig att välja det bästa alternativet för dina
         <li>Integrerad resursväljare</li>
       </ul>
     </td>
-    <td style="width: 10%; text-align: center; vertical-align: middle; font-size: 98px; color: #d32f2f; font-weight: bold;">
-      ›
+    <td align="center">
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <img src="../assets/icon-double-chevron-right.svg" alt="chevron" width="100">
     </td>
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assets</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+    <td align="left">
+      <strong>AEM Assets</strong>
+      <ul>
         <li>Alla funktioner från produktvisuella</li>
         <li>Digital Asset Manager (DAM) för fullständig marknadsföring</li>
         <li>Obegränsat antal användare (betala per användare)</li>
@@ -139,19 +128,16 @@ Följande jämförelse hjälper dig att välja det bästa alternativet för dina
           <li>Stöd för 3D-modeller och engagerande innehåll</li>
           <li>PDF support</li>
           <li>AI-baserad smart beskärning</li>
-         <li>Dynamiska bildmallar</li>
-        <li>Smart taggning</li>
-        <li>Spåra och analysera tillgångsprestanda</li>
+          <li>Dynamiska bildmallar</li>
+          <li>Smart taggning</li>
+          <li>Spåra och analysera tillgångsprestanda</li>
         </ul>
       </ul>
     </td>
   </tr>
-</table>
-
-<table style="width: 100%; margin: 20px 0;">
-  <tr>
-    <td style="background: #f5f5f5; padding: 15px; text-align: center; font-weight: bold;">
-      Integrering med Adobe är tillgängligt för enkel migrering mellan olika erbjudanden.
+    <tr>
+    <td align="center" colspan="3">
+      <strong>Integrering med Adobe är tillgängligt för enkel migrering mellan erbjudanden.</strong>
     </td>
   </tr>
 </table>
@@ -211,7 +197,7 @@ Utvecklare kan använda omfattande [GraphQL](https://developer.adobe.com/commerc
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/sv/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
