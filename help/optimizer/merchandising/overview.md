@@ -2,10 +2,11 @@
 title: Merchandising Overview
 description: Läs mer om marknadsföringsfunktioner i  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
+source-git-commit: 17d1872321e664ca58a702b0948fd5e6d2f33202
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -16,13 +17,17 @@ I det här avsnittet får du lära dig att skapa personaliserade upplevelser fö
 
 ## Produktupptäckt
 
-Produktupptäckt förbättrar sökfunktionen på webbplatsen och ger en smidig och effektiv shoppingupplevelse som maximerar konverteringsgraden. Det gör det möjligt för handlare att se till att kunderna får rätt produkter vid rätt tidpunkt.
+Produktupptäckt förser handlarna med kraftfulla verktyg för att strukturera och optimera shoppingupplevelsen, så att kunderna hittar rätt produkter snabbt och vid rätt tidpunkt. Genom att finjustera sökbeteendet kan du direkt påverka produktsynlighet, relevans och konvertering.
 
-Med produktupptäckt kan du konfigurera ansikten, regler och synonymer för att:
+Med produktupptäckt kan man
 
-- Skapa meningsfulla sökupplevelser som hjälper kunder och köpare att hitta det de vill ha med så lite ansträngning som möjligt.
-- Utnyttja den AI-baserade dynamiska Faceeting-funktionen och omrankningen av sökresultaten som svar på beteenden hos besökare.
+* **Konfigurera [facets](./facets/overview.md), [försäljningsregler](./rules/overview.md) och [synonymer](./synonyms/overview.md)** för att vägleda kunderna mot de mest relevanta produkterna med minimal friktion.
+* **Skapa intuitiva, målorienterade sökupplevelser** som speglar er marknadsföringsstrategi och säsongsprioriteringar.
+* **Använd AI-driven dynamisk Faceeting och omrangordning av resultat** för att anpassa sökresultaten i realtid baserat på kundbeteende, vilket ökar engagemanget och försäljningen.
+* **Se till att kampanjobjekt och högprioriterade objekt visas effektivt** för att matcha sökresultaten mot affärsmålen.
 
 ## Rekommendationer
 
-Rekommendationer använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av aggregerade besöksdata. När dessa data kombineras med din katalog blir upplevelsen mycket engagerande, relevant och personaliserad. Rekommendationer visas i butiken som enheter med etiketter, t.ex.&quot;Kunder som tittade på den här produkten också&quot;. Du kan skapa, hantera och distribuera rekommendationer direkt från [!DNL Adobe Commerce Optimizer].
+Rekommendationer använder artificiell intelligens och maskininlärning för att analysera aggregerat besökarbeteende och produktinteraktioner i hela butiken. Genom att kombinera dessa beteendedata med din produktkatalog levererar [!DNL Adobe Commerce Optimizer] personaliserade, relevanta produktförslag som ökar kundernas engagemang och konverteringar.
+
+Rekommendationer visas i butiken som märkta enheter, till exempel&quot;Kunder som tittade på den här produkten också&quot;. Dessa enheter kan placeras strategiskt under hela kundresan. Som handlare kan du enkelt skapa, hantera och distribuera dessa rekommendationsenheter direkt inom [!DNL Adobe Commerce Optimizer] för att stödja kampanjmål, korsförsäljningsstrategier och personaliserade upplevelser.
