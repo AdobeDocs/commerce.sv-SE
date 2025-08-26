@@ -3,16 +3,16 @@ title: Anpassad automatisk matchning
 description: Läs om hur anpassad automatisk matchning är särskilt användbar för handlare med komplex matchningslogik eller de som förlitar sig på ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ff6affa5bcc4111e14054f3f6b3ce970619ca295
+source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
 # Anpassad automatisk matchning
 
-Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) inte är anpassad efter dina specifika affärskrav väljer du det anpassade matchningsalternativet. Det här alternativet stöder användningen av [Adobe Developer App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) för att utveckla ett anpassat matchningsprogram som hanterar komplex matchningslogik, eller resurser från ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
+Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) inte är anpassad efter dina specifika affärskrav väljer du det anpassade matchningsalternativet. Det här alternativet stöder användningen av [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) för att utveckla ett anpassat matchningsprogram som hanterar komplex matchningslogik, eller resurser från ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
 
 ## Konfigurera anpassad automatisk matchning
 
@@ -24,7 +24,7 @@ Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) in
 
 ## API-slutpunkter för anpassad matchning
 
-När du skapar ett anpassat matchningsprogram med [App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} måste följande slutpunkter visas:
+När du skapar ett anpassat matchningsprogram med [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} måste följande slutpunkter visas:
 
 * **App Builder-resurs till produkt-URL**-slutpunkt
 * **App Builder-produkt till resurs-URL** slutpunkt
@@ -76,8 +76,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 | Parameter | Datatyp | Beskrivning |
 | --- | --- | --- |
-| `assetId` | Sträng | Representerar det uppdaterade resurs-ID:t |
-| `eventData` | Sträng | Returnerar datanyttolasten som är associerad med `assetId` |
+| `assetId` | Sträng | Representerar det uppdaterade resurs-ID:t. |
+| `eventData` | Sträng | Returnerar datanyttolasten som är associerad med resurs-ID:t. |
 
 **Svar**
 
@@ -136,22 +136,13 @@ exports.main = main;
 **Begäran**
 
 ```bash
-GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
+POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
 | Parameter | Datatyp | Beskrivning |
 | --- | --- | --- |
 | `productSKU` | Sträng | Representerar den uppdaterade produktens SKU. |
-| `asset_matches` | Sträng | Returnerar alla resurser som är associerade med en specifik `productSku`. |
-
-Parametern `asset_matches` innehåller följande attribut:
-
-| Attribut | Datatyp | Beskrivning |
-| --- | --- | --- |
-| `asset_id` | Sträng | Representerar det uppdaterade resurs-ID:t. |
-| `asset_roles` | Sträng | Returnerar alla tillgängliga resursroller. Använder [Commerce-resursroller som stöds](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) som `thumbnail`, `image`, `small_image` och `swatch_image`. |
-| `asset_format` | Sträng | Tillhandahåller de tillgängliga formaten för resursen. Möjliga värden är `image` och `video`. |
-| `asset_position` | Sträng | Visar tillgångens position. |
+| `eventData` | Sträng | Returnerar den datanyttolast som är associerad med produkt-SKU:n. |
 
 **Svar**
 
@@ -161,12 +152,30 @@ Parametern `asset_matches` innehåller följande attribut:
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail","image"],
+      "asset_position": 1,
+      "asset_format": image
     },
     {
       "asset_id": "{ASSET_ID_2}",
       "asset_roles": ["thumbnail"]
+      "asset_position": 2,
+      "asset_format": image     
     }
   ]
 }
 ```
+
+| Parameter | Datatyp | Beskrivning |
+| --- | --- | --- |
+| `productSKU` | Sträng | Representerar den uppdaterade produktens SKU. |
+| `asset_matches` | Sträng | Returnerar alla resurser som är associerade med en specifik produkt-SKU. |
+
+Parametern `asset_matches` innehåller följande attribut:
+
+| Attribut | Datatyp | Beskrivning |
+| --- | --- | --- |
+| `asset_id` | Sträng | Representerar det uppdaterade resurs-ID:t. |
+| `asset_roles` | Sträng | Returnerar alla tillgängliga resursroller. Använder [Commerce-resursroller som stöds](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) som `thumbnail`, `image`, `small_image` och `swatch_image`. |
+| `asset_format` | Sträng | Tillhandahåller de tillgängliga formaten för resursen. Möjliga värden är `image` och `video`. |
+| `asset_position` | Sträng | Visar tillgångens position. |
