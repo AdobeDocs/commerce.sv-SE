@@ -3,7 +3,8 @@ title: Översikt över händelser
 description: Lär dig mer om de händelser som  [!DNL Adobe Commerce Optimizer]  använder för att förbättra sökningar och rekommendationer.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
+source-git-commit: f12aff86957c2f8f1f830da6f481d28cd54e1f20
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -61,7 +62,7 @@ Den här tabellen beskriver de händelser som används av produktidentifieringss
 | Mest tillagt i kundvagn | `page-view`<br>`add-to-cart` | Produktinformationssida<br>Produktlistsida<br>Kundlista<br>Önskad lista |
 | Visade det här, såg du att | `page-view`<br>`product-view` | Produktinformationssida |
 
-### Nödvändiga instrumentpanelshändelser
+#### Nödvändiga instrumentpanelshändelser
 
 Vissa händelser krävs för att fylla i [kontrollpanelen för sökprestanda](../../manage-results/search-performance.md)
 
@@ -173,4 +174,4 @@ I den här tabellen beskrivs de händelser som används av varje rekommendations
 
 ## Support
 
-Om du märker att det finns avvikelser i data eller om rekommendationer och sökresultat inte fungerar som förväntat, [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Om du märker att det finns avvikelser i data eller om rekommendationer och sökresultat inte fungerar som förväntat, [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
