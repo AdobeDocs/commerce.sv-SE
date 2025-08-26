@@ -2,11 +2,11 @@
 title: Vad är Adobe Commerce Optimizer?
 description: Lär dig mer om  [!DNL Adobe Commerce Optimizer]  och dess huvudfunktioner.
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 877f3c377715f204904eefe3b93d796084721aa7
+source-git-commit: 69c752322b01985a2eb55de69d4736d75f6bd60a
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Med [!DNL Adobe Commerce Optimizer] kan du:
 
 I följande video visas en översikt över [!DNL Adobe Commerce Optimizer] på hög nivå:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450467?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Vem har störst nytta av [!DNL Adobe Commerce Optimizer]?
 
@@ -79,7 +79,7 @@ Definiera katalogvyer och principer. Katalogen innehåller inte bara dina produk
 
 Viktiga funktioner:
 
-- **Tredjepartskatalogimport** - Infoga katalogdata från en tredjepartskälla (din befintliga Commerce-katalog, PIM, ERP och så vidare). Katalogdata importeras direkt till lagret för marknadsföringstjänster, som är en SaaS-komponent som kallas för marknadsföringstjänster och som drivs av katalogvyer och -profiler (katalogvyer och -profiler).
+- **Tredjepartskatalogimport** - Infoga katalogdata från en tredjepartskälla (din befintliga Commerce-katalog, PIM, ERP och så vidare). Katalogdata hämtas direkt till lagret för marknadsföringstjänster, som är en SaaS-komponent som kallas för Merchandising Services och som drivs av katalogvyer och policyer.
 - **Merchandising Services som drivs av katalogvyer och principer** - Den här lösningen är grundstenen i [!DNL Adobe Commerce Optimizer]. Marknadsföringstjänster som bygger på katalogvyer och katalogprinciper är en mycket skalbar, flexibel katalogdatamodell som frigör fall av användning för flera varumärken, flera affärsenheter och flera språk. Dessa marknadsföringstjänster tillhandahåller byggstenar som handlare kan använda för att skapa och hantera kataloger i stor skala. Inom [!DNL Adobe Commerce Optimizer] kan du hantera din katalog genom att skapa katalogvyer och policyer som bäst definierar dina affärsmål. Dessutom kan handlaren tillhandahålla personaliserade upplevelser som driver trafik och engagemang med produktupptäckt, rekommendationer &#x200B; och intelligent varuexponering.
 - **Före- och efterdatamätningar** - Tillhandahåller realtidsinsikter om hur era affärsinitiativ fungerar. Du kan visa resultatet före och efter specifika KPI:er och utvärdera effekten av ändringarna och optimera för bättre resultat. Du kan exportera resultaten i en PDF.
 - **Commerce storefront från Edge Delivery** - Med Edge kan du lansera webbplatsen snabbt med fördefinierade butikskomponenter med integrerad e-handelsfunktionalitet - inklusive produktlistningssidor, produktinformationssidor, kundvagn och utcheckning.
