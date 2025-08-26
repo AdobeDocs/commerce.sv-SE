@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: fa3900de75ae36a3efccc7791b6345875b46148f
+source-git-commit: 728be19f73f19d9e229ae38fd5c171df74b963fb
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1522'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Bland uppdateringarna finns:
 
 ## 103.4.10 Utgåva
 
-![Korrigera](../assets/fix.svg) Ett problem har korrigerats där fel typ (`text` i stället för `OBJECT`) returnerades för vissa dynamiskt skapade attribut. Nu returneras alltid rätt typinformation, vilket eliminerar behovet av manuell omsynkronisering eller tillfälliga lösningar.<!--MDEE-1131-->
+![Korrigera](../assets/fix.svg) Ett problem där fel typ (`text` i stället för `OBJECT`) returnerades för vissa dynamiskt skapade attribut har korrigerats. Nu returneras alltid rätt typinformation, vilket eliminerar behovet av manuell omsynkronisering eller tillfälliga lösningar.<!--MDEE-1131-->
 ![ Korrigera ](../assets/fix.svg) Ett problem där insamling av produktdata under partiell synkronisering kunde misslyckas på grund av fel i LowStock-lagerprovidern har åtgärdats. Med den här korrigeringen exporteras produktdata på ett tillförlitligt sätt och inga produkt-ID:n hoppas över på grund av fel relaterade till LowStock.<!--MDEE-1132-->
 
 ## 103.4.9 Utgåva
