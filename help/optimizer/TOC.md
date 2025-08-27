@@ -4,9 +4,9 @@ user-guide-description: Dokumentation och resurser för  [!DNL Adobe Commerce Op
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '92'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 1%
 - [Användarhantering](user-management.md)
 - [Delat ansvar](shared-responsibility.md)
 - [Gränser och begränsningar](boundaries-limits.md)
+- [Versionsinformation](release-notes.md)
 - Hantera resultat {#manage-results}
    - [Rapporten Success Metrics](./manage-results/success-metrics.md)
    - [Sökprestanda](./manage-results/search-performance.md)

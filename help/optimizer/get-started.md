@@ -3,11 +3,11 @@ title: Kom igång
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 7a77cc79be9b6f835668b394909ea2325b642b03
+source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -38,24 +38,24 @@ Så här kör du [!DNL Adobe Commerce Optimizer]-miljön:
    ![Skapa instans](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. Konfigurera instansinställningar:
-   - **Namn**: Beskrivande namn (till exempel &quot;Min företagssandlåda&quot;)
+   - **Instansnamn**: Beskrivande namn (till exempel &quot;Min företagssandlåda&quot;)
    - **Beskrivning**: En kort beskrivning av syftet
-   - **Region**: Välj önskad region
    - **Miljötyp**: Börja med en **sandlådemiljö** för testning
+   - **Region**: Välj önskad region
 
 1. Klicka på **Lägg till instans**.
 
-   Cloud Manager uppdaterar och inkluderar din nya instans. Mer information om hur du kommer åt och hanterar den finns i [Hantera en instans](#manage-an-instance).
+   Cloud Manager uppdaterar och inkluderar din nya instans. Mer information om hur du kommer åt och hanterar den finns i [Hantera en instans](#manage-instances).
 
 >[!NOTE]
 >
->Sandlådeinstanser är begränsade till Nordamerika. Du kan inte ändra regionen efter att den har skapats.
+>Du kan bara skapa sandlådemiljöer i den nordamerikanska regionen. När en instans har skapats kan du inte ändra regionen.
 
 ### Steg 2. Konfigurera din miljö
 
 När du har skapat instansen:
 
-1. [Hantera din instans](#manage-an-instance) från Commerce Cloud Manager.
+1. [Hantera din instans](#manage-instances) från Commerce Cloud Manager.
 1. Konfigurera användaråtkomst med hjälp av [handboken för användarhantering](./user-management.md).
 
 ### Steg 3. Lägg till exempeldata (valfritt)
@@ -217,6 +217,6 @@ När installationen är klar:
 ### Få hjälp
 
 - **Resurser för utvecklare**: [Dokumentation för utvecklare](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront Resources**: [Commerce storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
-- **Självstudiekurser**: [Commerce Optimizer självstudiekurser](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview)
+- **Storefront Resources**: [Commerce storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Självstudiekurser**: [Commerce Optimizer självstudiekurser](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
