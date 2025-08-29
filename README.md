@@ -1,8 +1,8 @@
 ---
-source-git-commit: 80c4b41ceb0d8809f82db61ce9c3df6b7e1d7102
+source-git-commit: 39977196f322cac571ecdb0219f006970aff3575
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 7%
+source-wordcount: '448'
+ht-degree: 5%
 
 ---
 # Adobe Commerce tekniska dokumentation
@@ -15,13 +15,13 @@ Detta projekt har antagit [Adobe Open Source Code of Conduct](code-of-conduct.md
 
 ## Om dina bidrag till Adobe-innehåll
 
-Se [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv-SE).
+Se [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Hur du bidrar beror på vem du är och vilken typ av ändringar du vill bidra med:
 
 ### Mindre ändringar
 
-Om du bidrar med mindre uppdateringar kan du besöka artikeln och klicka på feedbackområdet som visas längst ned i artikeln, klicka på **Detaljerade feedbackalternativ** och sedan på **Föreslå en redigering** för att gå till markeringskällfilen på GitHub. Använd GitHub-gränssnittet för att göra uppdateringar. Mer information finns i den allmänna [Adobe Docs Contributor-guiden](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv-SE).
+Om du bidrar med mindre uppdateringar kan du besöka artikeln och klicka på feedbackområdet som visas längst ned i artikeln, klicka på **Detaljerade feedbackalternativ** och sedan på **Föreslå en redigering** för att gå till markeringskällfilen på GitHub. Använd GitHub-gränssnittet för att göra uppdateringar. Mer information finns i den allmänna [Adobe Docs Contributor-guiden](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Mindre korrigeringar och förtydliganden som du lämnar in för dokumentation och kodexempel i den här rapporten omfattas av Adobe användarvillkor.
 
@@ -37,7 +37,7 @@ Om du är teknikskribent, programchef eller utvecklare för en Adobe Experience 
 
 Deltagare i communityn kan använda GitHub-gränssnittet för grundläggande redigering eller förgrena rapporten för att göra större insatser.
 
-Mer information finns i [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv-SE).
+Mer information finns i [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Så här använder du Markdown för att formatera avsnittet
 
@@ -45,3 +45,31 @@ Alla artiklar i den här databasen använder den smaksatta koden GitHub. Om du i
 
 - [Grunderna för markeringar](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 - [Utskrivbart kalkylblad för markering](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+## Förimplementera kopplingar för bildoptimering
+
+Den här databasen innehåller automatiska förimplementeringskopplingar som optimerar bilder innan implementering. **Alla medverkande bör aktivera dessa kopplingar** för att säkerställa konsekvent bildoptimering och minskad databasstorlek.
+
+### Snabbinställningar
+
+När du har klonat databasen kör du:
+
+```bash
+.githooks/setup-hooks.sh
+```
+
+### Vad krokarna gör
+
+- Identifiera automatiskt mellanlagrade bildfiler (PNG, JPG, JPEG, GIF, SVG)
+- Kör `image_optim` för att komprimera och optimera bilder
+- Scenoptimerade bilder på nytt automatiskt
+- Säkerställ att alla dedikerade bilder optimeras korrekt
+
+### Fördelar
+
+- Minskad databasstorlek
+- Snabbare sidinläsning för dokumentation
+- Enhetlig bildkvalitet för alla deltagare
+- Ingen manuell optimering krävs
+
+Detaljerade installationsanvisningar, felsökning och konfiguration finns i [`.githooks/README.md`](.githooks/README.md).
