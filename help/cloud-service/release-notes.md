@@ -3,7 +3,7 @@ title: Versionsinformation för [!DNL Adobe Commerce as a Cloud Service]
 description: Läs om de senaste funktionerna och förbättringarna i  [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: 776b2a2e2db649d126fdc67639c784ad3f1be576
 workflow-type: tm+mt
 source-wordcount: '126'
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Versionsinformation
 
-Följande versionsinformation innehåller uppdateringar för [!DNL Adobe Commerce as a Cloud Service]. Versionsinformation om andra produkter finns i [Adobe Commerce Optimizer](../optimizer/release-notes.md) eller [Adobe Commerce lokalt och Adobe Commerce i molnet](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+Följande versionsinformation innehåller uppdateringar för [!DNL Adobe Commerce as a Cloud Service]. Versionsinformation om andra produkter finns i [Adobe Commerce Optimizer](../optimizer/release-notes.md) eller [Adobe Commerce lokalt och Adobe Commerce i molnet](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/notes/overview).
 
 ## Augusti 2025
 

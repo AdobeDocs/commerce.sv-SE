@@ -25,4 +25,4 @@ ht-degree: 0%
    - [Ökning](migration/overview.md)
    - [Migreringsverktyg för massdata](migration/bulk-data.md)
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
