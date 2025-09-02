@@ -3,9 +3,10 @@ title: Skapa anpassade händelser
 description: Lär dig hur du skapar anpassade händelser för att koppla dina Adobe Commerce-data till andra Adobe DX-produkter.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
+source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -76,11 +77,7 @@ Attributåsidosättningar för standardhändelser stöds endast för Experience 
 
 För alla händelser med `customContext` åsidosätter insamlaren sammanfogningsfält som angetts i relevanta kontexter med fält i `customContext`. Användbart för åsidosättningar är när en utvecklare vill återanvända och utöka kontexter som angetts av andra delar av sidan i händelser som redan stöds.
 
->[!NOTE]
->
->När du åsidosätter anpassade händelser bör händelsevidarebefordran till Experience Platform inaktiveras för den händelsetypen för att undvika dubbelräkning.
-
-Exempel:
+### Exempel
 
 Produktvy med åsidosättningar som publicerats via Adobe Commerce Events SDK:
 
@@ -131,6 +128,30 @@ I Experience Platform Edge:
   }
 }
 ```
+
+Lumabaserade butiker:
+
+Publiceringshändelser implementeras i Lumabaserade butiker. Du kan därför ange anpassade data genom att utöka `customContext`.
+
+Exempel:
+
+```javascript
+mse.context.setCustom({
+  productListItems: [
+    {
+      productCategories: [
+        {
+          categoryID: "cat_15",
+          categoryName: "summer pants",
+          categoryPath: "pants/mens/summer",
+        },
+      ],
+    },
+  ],
+});
+```
+
+Mer information om hur du hanterar anpassade data finns i [åsidosättning av anpassade händelser](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
 
 >[!NOTE]
 >
