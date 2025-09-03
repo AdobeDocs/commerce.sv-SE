@@ -23,7 +23,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Nu kan du använda verktyget <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Webbplatsskapare</a> för att konfigurera butiken utan att använda CLI.</p>
+      <td><p>Nu kan du använda verktyget <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/storefront">Webbplatsskapare</a> för att konfigurera butiken utan att använda CLI.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -45,7 +45,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Ett ämne har lagts till om hur du lägger till <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">anpassade attribut till profiler</a>.</p>
+      <td><p>Ett ämne har lagts till om hur du lägger till <a href="https://experienceleague.adobe.com/sv/docs/commerce/data-connection/customize-data/custom-identities">anpassade attribut till profiler</a>.</p>
 </td>
       <td>
         Nytt ämne
