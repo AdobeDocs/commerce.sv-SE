@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 757c1f430346ef82cba0f708cdd17580d8e6dba9
+source-git-commit: c7c9c19936ed1db8e262daaf391bd2d168b91741
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och 
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
          </a>
       </div>
       <p>
@@ -130,7 +130,7 @@ Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och 
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong> Commerce Services Connector </strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+         <strong> Commerce Services Connector </strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
          </a>
       </div>
       <p>
@@ -184,11 +184,11 @@ Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och 
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="Övervaka datasynkronisering" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong> Kontrollpanel för datahantering </strong>
          </a>
       </div>
@@ -203,3 +203,5 @@ Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och 
 >Kontrollpanelen för datahantering är tillgänglig utan extra kostnad för Commerce-handlare med produktrekommendationer v6.0.0, Live Search v4.1.0 eller Catalog Service v1.17 med aktiv licens. Handlare som använder tidigare tjänsteversioner kan använda [Katalogsynkronisering](../landing/catalog-sync.md) för att hantera och spåra datasynkronisering.
 
 {{$include /help/_includes/templated/whats-new.md}}
+
+<!-- Last updated from includes: 2025-08-29 15:18:45 -->
