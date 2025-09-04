@@ -25,4 +25,4 @@ ht-degree: 4%
    - [Lägg till produktattribut dynamiskt](add-attribute-dynamically.md)
    - [Lägg till momsklass, attributuppsättning och lagermetadata](add-tax-attribute-set-inventory-attributes.md)
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)
