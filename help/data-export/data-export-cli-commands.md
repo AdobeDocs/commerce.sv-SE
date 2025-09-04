@@ -2,7 +2,7 @@
 title: Synkronisera feeds med Commerce CLI
 description: Lär dig hur du använder kommandoradskommandon för att hantera feeds och processer för  [!DNL data export extension] for Adobe Commerce SaaS-tjänster.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 0f1d55f81cb030d218f0aa8dfa2af4dfd8f640c1
+source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Med kommandot `saas:resync` i paketet `magento/saas-export` kan du hantera datas
 Adobe rekommenderar inte att du använder kommandot `saas:resync` regelbundet. Vanliga scenarier för kommandot är:
 
 - Inledande synkronisering
-- Synkronisera data till ett nytt datautrymme efter ändring av [SaaS-dataområdes-ID](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/services/saas)
+- Synkronisera data till ett nytt datautrymme efter ändring av [SaaS-dataområdes-ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Felsökning
 
 Övervaka synkroniseringsåtgärder i filen `var/log/saas-export.log`.

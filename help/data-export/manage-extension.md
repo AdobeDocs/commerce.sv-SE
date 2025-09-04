@@ -3,7 +3,7 @@ title: '[!DNL Manage the Data Export extension]'
 description: Lär dig hur du uppgraderar  [!DNL Data Export] tillägget och tar bort eller inaktiverar dataexporttjänster som inte behövs.
 role: Admin, Developer
 exl-id: 94702995-d272-47b9-9560-198eee3250a6
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+source-git-commit: c7a08cabe07ec94e31e9f4c27448ee0862e62cf2
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Du kan uppdatera alla installerade exportmoduler för handelsdata med Composer. 
 1. Uppdatera modulen med Composer från kommandoraden:
 
    ```bash
-   composer require magento/module-saas-price:103.3.1 --with-all-dependencies
+   composer require magento/commerce-data-export:103.4.11 --with-all-dependencies
    ```
 
-Om Commerce-instansen distribueras i molninfrastrukturen ska du uppdatera tillägget från din molnprojektkatalog. Se [Uppgradera ett tillägg](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) i _Adobe Commerce on Cloud Infrastructure Guide_.
+Om Commerce-instansen distribueras i molninfrastrukturen ska du uppdatera tillägget från din molnprojektkatalog. Se [Uppgradera ett tillägg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) i _Adobe Commerce on Cloud Infrastructure Guide_.

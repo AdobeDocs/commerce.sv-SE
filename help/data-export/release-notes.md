@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 728be19f73f19d9e229ae38fd5c171df74b963fb
+source-git-commit: 6abfeca68ab67fb11493f78440e09408479e1535
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1635'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Bland uppdateringarna finns:
 >SaaS-tillägget för dataexport är en samling moduler som installeras automatiskt med Live Search, Produktrekommendationer och katalogtjänsten. Du kan kontrollera vilken version som är installerad på datorn med Composer. I vissa fall kanske du vill uppgradera dataexporttillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 103.4.11 Utgåva
+
+![Nytt](../assets/new.svg) [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+Ytterligare stöd för ytterligare produktattribut som inkluderar momsklass, attributuppsättning och lagerdata från Commerce produktkonfigurationer i produktflödet. Kunder som vill inkludera dessa attribut i produktexportflöden måste lägga till modulen Extra produktattribut i sina Adobe Commerce-projekt. Se [Lägg till momsklass, attributuppsättning och lagerattribut](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
+![ Åtgärda ](../assets/fix.svg) Ett problem som orsakade felaktig synkronisering av borttagna produktuppdateringar har åtgärdats om ett fel uppstod under ett fullständigt produktindex. Nu synkroniseras alla produktborttagningar korrekt även om ett fel inträffar under indexeringsprocessen. <!--MDEE-1144-->
 
 ## 103.4.10 Utgåva
 

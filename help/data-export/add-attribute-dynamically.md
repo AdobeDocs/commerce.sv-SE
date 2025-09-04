@@ -3,7 +3,7 @@ title: Lägg till produktattribut dynamiskt
 description: Lär dig hur du lägger till anpassade produktattribut i dataexportflödet dynamiskt under datasynkroniseringsprocessen.
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
-source-git-commit: bf45670a0bc5fb02dd229a9e3d7af7f2676c5a1f
+source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -176,3 +176,4 @@ Om du dynamiskt skapar ett anpassat produktattribut och vill använda det för v
    ```
    bin/magento saas:resync --feed=productattributes
    ```
+
