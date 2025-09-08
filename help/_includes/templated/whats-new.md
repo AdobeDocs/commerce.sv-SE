@@ -1,7 +1,7 @@
 ---
-source-git-commit: c7c9c19936ed1db8e262daaf391bd2d168b91741
+source-git-commit: c2e506277ceba1e2ebb1abaa0f3bd3065a025e41
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 0%
 ## Nyheter
 
 Den här sidan innehåller de ändringar som har gjorts under de senaste 60 dagarna. Vi utelämnar alla mindre uppdateringar, som kopieringsredigering, från den här listan.
+
+### 4 september 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beskrivning</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Dokumentation för den valfria modulen <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Extra produktattribut</a> har lagts till. När den här modulen är installerad i en Adobe Commerce-miljö exporterar dataexportprocessen automatiskt momsklass, attributuppsättning och lagermetadata från Commerce produktkonfiguration till <code class="language-plaintext highlighter-rouge">products</code>- och <code class="language-plaintext highlighter-rouge">product attributes</code>-feeds.</p>
+</td>
+      <td>
+        Nytt ämne
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a77c6bd98622488214d89a077e1dfaa8338108fd">bekräfta</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 21 augusti 2025
 
@@ -23,7 +45,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Nu kan du använda verktyget <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/storefront">Webbplatsskapare</a> för att konfigurera butiken utan att använda CLI.</p>
+      <td><p>Nu kan du använda verktyget <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Webbplatsskapare</a> för att konfigurera butiken utan att använda CLI.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -45,7 +67,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Ett ämne har lagts till om hur du lägger till <a href="https://experienceleague.adobe.com/sv/docs/commerce/data-connection/customize-data/custom-identities">anpassade attribut till profiler</a>.</p>
+      <td><p>Ett ämne har lagts till om hur du lägger till <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">anpassade attribut till profiler</a>.</p>
 </td>
       <td>
         Nytt ämne
