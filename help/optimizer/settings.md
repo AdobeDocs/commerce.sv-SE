@@ -1,8 +1,9 @@
 ---
 title: Inställningar
 description: Konfigurera inställningar för  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
+source-git-commit: 652681cc9aef416040ccd470d04bf2540fe97262
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -21,8 +22,8 @@ Inställningen **Språk** anger [!DNL Adobe Commerce Optimizer] vilket språk so
 
 Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan dem. Varje prisintervall överlappar den föregående gruppen med ett. Fem grupper med intervallet 20 skapar till exempel följande prisintervall: 0-20, 20-40, 40-60, 60-80 och >80. Om det inte finns tillräckligt många produkter i katalogen för att fylla alla definierade intervall justeras visningen av tillgängliga grupper därefter. Exempel: 0-20, 60-80, >80.
 
-1. Välj **[!UICONTROL Search]** på arbetsytan **Inställningar** och gör sedan följande under **Prisjustering**:
-   - Ange **antalet markeringar** eller prisgrupperingar som ska vara tillgängliga. Upp till 50 prisgrupperingar kan definieras.
+1. Välj **på arbetsytan** Inställningar **[!UICONTROL Search]** och gör sedan följande under **Prisjustering**:
+   - Ange **antalet markeringar** eller prisgrupperingar som ska vara tillgängliga. Upp till 100 prisgrupperingar kan definieras.
    - Ange värdet **Intervall** eller prisintervallet för varje grupp. Maxvärdet är 40 000 000.
 1. Klicka på **Spara**.
 
@@ -32,7 +33,7 @@ Du kan ange antalet prisintervallgrupper och hur prisvärden fördelas mellan de
 
 | Fält | Beskrivning |
 |--- |--- |
-| Antal markeringar | Anger antalet prisintervallgrupperingar som kan användas som sökfilter i butiken. Standardvärde: 8, maximalt värde: 50 |
+| Antal markeringar | Anger antalet prisintervallgrupperingar som kan användas som sökfilter i butiken. Standardvärde: 8, maximalt värde: 100 |
 | Intervallvärde | Anger prisintervallen för varje grupp. Fem markeringar med ett intervallvärde på 20 skapar till exempel fem grupperingar av 0-20, 20-40, 40-60, 60-80 och >80. Standardvärde: 5, maximalt värde: 40 000 000 |
 
 ## Språk
