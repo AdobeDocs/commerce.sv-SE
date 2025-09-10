@@ -1,7 +1,7 @@
 ---
-source-git-commit: 39977196f322cac571ecdb0219f006970aff3575
+source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '466'
 ht-degree: 5%
 
 ---
@@ -15,13 +15,13 @@ Detta projekt har antagit [Adobe Open Source Code of Conduct](code-of-conduct.md
 
 ## Om dina bidrag till Adobe-innehåll
 
-Se [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv-SE).
+Se [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Hur du bidrar beror på vem du är och vilken typ av ändringar du vill bidra med:
 
 ### Mindre ändringar
 
-Om du bidrar med mindre uppdateringar kan du besöka artikeln och klicka på feedbackområdet som visas längst ned i artikeln, klicka på **Detaljerade feedbackalternativ** och sedan på **Föreslå en redigering** för att gå till markeringskällfilen på GitHub. Använd GitHub-gränssnittet för att göra uppdateringar. Mer information finns i den allmänna [Adobe Docs Contributor-guiden](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv-SE).
+Om du bidrar med mindre uppdateringar kan du besöka artikeln och klicka på feedbackområdet som visas längst ned i artikeln, klicka på **Detaljerade feedbackalternativ** och sedan på **Föreslå en redigering** för att gå till markeringskällfilen på GitHub. Använd GitHub-gränssnittet för att göra uppdateringar. Mer information finns i den allmänna [Adobe Docs Contributor-guiden](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Mindre korrigeringar och förtydliganden som du lämnar in för dokumentation och kodexempel i den här rapporten omfattas av Adobe användarvillkor.
 
@@ -37,7 +37,7 @@ Om du är teknikskribent, programchef eller utvecklare för en Adobe Experience 
 
 Deltagare i communityn kan använda GitHub-gränssnittet för grundläggande redigering eller förgrena rapporten för att göra större insatser.
 
-Mer information finns i [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv-SE).
+Mer information finns i [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Så här använder du Markdown för att formatera avsnittet
 
@@ -73,3 +73,12 @@ När du har klonat databasen kör du:
 - Ingen manuell optimering krävs
 
 Detaljerade installationsanvisningar, felsökning och konfiguration finns i [`.githooks/README.md`](.githooks/README.md).
+
+## Tillgängliga uppspelningsuppgifter
+
+I den här databasen används streckuppgifter som tillhandahålls av `adobe-comdox-exl-rake-tasks` Gem. Om du vill se alla tillgängliga uppgifter kör du:
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```
