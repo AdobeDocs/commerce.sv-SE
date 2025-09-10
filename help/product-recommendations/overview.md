@@ -43,7 +43,7 @@ Med produktrekommendationer kan du:
 
 Titta på den här videon om du vill veta mer om [!DNL Product Recommendations]:
 
->[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3449962?quality=12&captions=swe)
 
 ## Lagringspolicy för katalogdata
 
