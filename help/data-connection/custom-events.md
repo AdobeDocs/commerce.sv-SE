@@ -4,9 +4,9 @@ description: Lär dig hur du skapar anpassade händelser för att koppla dina Ad
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
+source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -73,16 +73,26 @@ I Experience Platform Edge:
 
 ## Hantera händelseåsidosättningar (anpassade attribut)
 
-Attributåsidosättningar för standardhändelser stöds endast för Experience Platform. Anpassade data vidarebefordras inte till Commerce dashboards och metrics trackers.
+För alla händelser som anges med `customContext` åsidosätter eller utökar insamlaren fält i händelsens nyttolast från fälten i `custom context`. Användbart för åsidosättningar är när en utvecklare vill återanvända och utöka kontexter som angetts av andra delar av sidan i händelser som redan stöds.
 
-För alla händelser med `customContext` åsidosätter insamlaren sammanfogningsfält som angetts i relevanta kontexter med fält i `customContext`. Användbart för åsidosättningar är när en utvecklare vill återanvända och utöka kontexter som angetts av andra delar av sidan i händelser som redan stöds.
+Händelseåsidosättningar gäller endast vid vidarebefordran till Experience Platform. De tillämpas inte på Adobe Commerce- och Sensei-analyshändelser. Adobe Commerce Events Collector [README](https://github.com/adobe/commerce-events/blob/e34bcfc0deca8d5ac1f9310fc1ee4c1becf4ffbb/packages/storefront-events-collector/README.md) innehåller ytterligare information.
 
-### Exempel
+>[!NOTE]
+>
+>När du utökar `productListItems` med anpassade attribut i Experience Platform händelsenyttolaster ska du matcha produkter med SKU. Detta krav gäller inte för `product-page-view`-händelser.
 
-Produktvy med åsidosättningar som publicerats via Adobe Commerce Events SDK:
+### Användning
 
 ```javascript
-mse.publish.productPageView({
+const mse = window.magentoStorefrontEvents;
+
+mse.publish.productPageView(customCtx);
+```
+
+### Exempel 1 - lägger till `productCategories`
+
+```javascript
+magentoStorefrontEvents.publish.productPageView({
     productListItems: [
         {
             productCategories: [
@@ -97,45 +107,11 @@ mse.publish.productPageView({
 });
 ```
 
-I Experience Platform Edge:
+### Exempel 2 - lägga till anpassad kontext före publiceringshändelse
 
 ```javascript
-{
-  xdm: {
-    eventType: 'commerce.productViews',
-    identityMap: {
-      ECID: [
-        {
-          id: 'ecid1234',
-          primary: true,
-        }
-      ]
-    },
-    commerce: {
-      productViews: {
-        value : 1,
-      }
-    },
-    productListItems: [{
-        SKU: "1234",
-        name: "leora summer pants",
-        productCategories: [{
-            categoryID: "cat_15",
-            categoryName: "summer pants",
-            categoryPath: "pants/mens/summer",
-        }],
-    }],
-  }
-}
-```
+const mse = window.magentoStorefrontEvents;
 
-Lumabaserade butiker:
-
-Publiceringshändelser implementeras i Lumabaserade butiker. Du kan därför ange anpassade data genom att utöka `customContext`.
-
-Exempel:
-
-```javascript
 mse.context.setCustom({
   productListItems: [
     {
@@ -149,9 +125,56 @@ mse.context.setCustom({
     },
   ],
 });
+
+mse.publish.productPageView();
 ```
 
-Mer information om hur du hanterar anpassade data finns i [åsidosättning av anpassade händelser](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
+### Exempel 3 - den anpassade kontext som angetts i utgivaren skriver över den anpassade kontext som tidigare angetts i Adobe Client Data Layer.
+
+I det här exemplet kommer händelsen `pageView` att ha **Eget sidnamn** i fältet `web.webPageDetails.name`.
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 1'
+    },
+  },
+});
+
+mse.publish.pageView({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 2'
+    },
+  },
+});
+```
+
+### Exempel 4 - lägga till anpassad kontext till `productListItems` med händelser med flera produkter
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  productListItems: [
+    {
+      SKU: "24-WB01", //Match SKU to override correct product in event payload
+      productCategory: "Hand Bag", //Custom attribute added to event payload
+      name: "Strive Handbag (CustomName)" //Override existing attribute with custom value in event payload
+    },
+    {
+      SKU: "24-MB04",
+      productCategory: "Backpack Bag",
+      name: "Strive Backpack (CustomName)"
+    },
+  ],
+});
+
+mse.publish.shoppingCartView();
+```
 
 >[!NOTE]
 >
