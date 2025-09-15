@@ -4,9 +4,9 @@ description: Lär dig hur du skapar anpassade händelser för att koppla dina Ad
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
+source-git-commit: 4e8cf0ad3f8f94d4f59bc8d78a44f4b3e86cbc3e
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,9 @@ const mse = window.magentoStorefrontEvents;
 mse.publish.productPageView(customCtx);
 ```
 
-### Exempel 1 - lägger till `productCategories`
+### Exempel 1
+
+Det här exemplet lägger till anpassad kontext när händelsen publiceras.
 
 ```javascript
 magentoStorefrontEvents.publish.productPageView({
@@ -107,7 +109,9 @@ magentoStorefrontEvents.publish.productPageView({
 });
 ```
 
-### Exempel 2 - lägga till anpassad kontext före publiceringshändelse
+### Exempel 2
+
+I det här exemplet läggs en anpassad kontext till innan händelsen publiceras.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -129,7 +133,9 @@ mse.context.setCustom({
 mse.publish.productPageView();
 ```
 
-### Exempel 3 - den anpassade kontext som angetts i utgivaren skriver över den anpassade kontext som tidigare angetts i Adobe Client Data Layer.
+### Exempel 3
+
+I det här exemplet anges den anpassade kontexten i utgivaren och den anpassade kontext som tidigare angetts i Adobe Client Data Layer skrivs över.
 
 I det här exemplet kommer händelsen `pageView` att ha **Eget sidnamn** i fältet `web.webPageDetails.name`.
 
@@ -153,7 +159,9 @@ mse.publish.pageView({
 });
 ```
 
-### Exempel 4 - lägga till anpassad kontext till `productListItems` med händelser med flera produkter
+### Exempel 4
+
+I det här exemplet läggs anpassad kontext till i `productListItems`-händelser med flera produkter.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -174,6 +182,22 @@ mse.context.setCustom({
 });
 
 mse.publish.shoppingCartView();
+```
+
+Lumabaserade butiker:
+
+Lumabaserade butiker implementerar publiceringshändelser internt, så du kan ange anpassade data genom att utöka `customContext`.
+
+Exempel:
+
+```javascript
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name'
+    },
+  },
+});
 ```
 
 >[!NOTE]
