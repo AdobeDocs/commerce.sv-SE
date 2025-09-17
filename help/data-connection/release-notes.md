@@ -3,9 +3,9 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för tillägget  [!DNL Data Connection] från Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
+source-git-commit: 9c10aecb303dd09a85bdafa93d791d30611ec8b2
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Versionsinformationen innehåller uppdateringar av tillägget [!DNL Data Connect
 
 Funktionsändringar och korrigeringar som rör tillägg som används av tillägget [!DNL Data Connection] finns i **Tjänsteuppdateringar som stöds**.
 
-Läs [Kommande releaser](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/planning/schedule) om du vill veta mer om releasescheman och support.
+Läs [Kommande releaser](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) om du vill veta mer om releasescheman och support.
 
-Läs utvecklardokumentationen för att [lära dig vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/product-availability).
+Läs utvecklardokumentationen för att [lära dig vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Uppdateringar av tjänster som stöds
 
@@ -81,6 +81,14 @@ _12 oktober 2022_
 ![Nytt](../assets/new.svg) - Stöd har lagts till för en [AEM store](overview.md#aem-support).
 
 +++
+
+## 3.4.0
+
+_16 september 2025_
+
+[!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"} Adobe Commerce version 2.4.4 och senare
+
+![Nytt](../assets/new.svg) [!DNL Data Connection] respekterar nu fullständigt läget för begränsning av cookies genom att förhindra datainsamling och lagring i cookies/lokal lagring när begränsningar aktiveras.
 
 ## 3.3.0
 
