@@ -2,16 +2,16 @@
 title: Fasetter
 description: '[!DNL Live Search] facets använder flera dimensioner av attributvärden som sökvillkor.'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: 58252ffc7417f30b835ec1baf21a709191afd033
+source-git-commit: 31223f4196187e4960c5bec0e90aa55cc4e0ac9a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
 
 # Fasetter
 
-Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fallerad sökning liknar, men är betydligt&quot;smartare&quot; än [lagerstyrd navigering](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=sv-SE). Listan med tillgängliga filter avgörs av de [filterbara attributen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=sv-SE#filterable-attributes) för produkter som returneras i sökresultaten.
+Faceting är en metod för högpresterande filtrering som använder flera dimensioner av attributvärden som sökvillkor. Fallerad sökning liknar, men är betydligt&quot;smartare&quot; än [lagerstyrd navigering](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). Listan med tillgängliga filter avgörs av de [filterbara attributen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) för produkter som returneras i sökresultaten.
 
 [!DNL Live Search] använder `productSearch`-frågan, som returnerar faceting och andra data som är specifika för [!DNL Live Search]. Se [`productSearch` fråga ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) i utvecklardokumentationen för kodexempel.
 
@@ -23,7 +23,7 @@ Alla definierade aspekter kan användas som URL-parametrar och resultaten filtre
 
 ## Motsvarande krav
 
-Kategori- och produktattributkraven för faceting liknar de filterbara attribut som används för lagerstyrd navigering. Varje storefront-egenskap för ett attribut måste ha värdet &quot;Use in Search Results Layered Navigation&quot; inställt på &quot;Yes&quot;.
+Kategori- och produktattributkraven för faceting liknar de filterbara attribut som används för lagerstyrd navigering. Varje storefront-egenskap för ett attribut måste ha värdet &quot;Use in Search Results Layered Navigation&quot; inställt på &quot;Yes&quot;. Du kan granska och uppdatera attributkonfigurationen på menyn [!DNL Stores] > [!DNL Attribute] i Admin.
 
 >[!NOTE]
 >
@@ -37,8 +37,8 @@ Om du har ett stort antal attribut att innesluta bör du överväga att kombiner
 
 | Inställning | Beskrivning |
 |--- |--- |
-| [Inställningar för kategorivisning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=sv-SE) | Ankarpunkt - `Yes` |
-| [Attributegenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=sv-SE) | [Katalogindatatyp](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=sv-SE) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (endast widget), `Text swatch` (endast widget) |
+| [Inställningar för kategorivisning](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ankarpunkt - `Yes` |
+| [Attributegenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Katalogindatatyp](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (endast widget), `Text swatch` (endast widget) |
 | Egenskaper för attributarkiv | Använd i sökresultatnavigering i lager - `Yes` |
 
 ## Fasettaggregering
@@ -51,7 +51,7 @@ Akettaggregering utförs enligt följande: Om butiken har tre aspekter (kategori
 
 ## Standardattributvärden
 
-Följande produktattribut har [storefront-egenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=sv-SE) som används av [!DNL Live Search] och är aktiverade som standard.
+Följande produktattribut har [storefront-egenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) som används av [!DNL Live Search] och är aktiverade som standard.
 
 | Egenskap | Storefront-egenskap | Attribut |
 |---|---|---|
