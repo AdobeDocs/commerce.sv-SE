@@ -4,9 +4,9 @@ description: Den senaste versionsinformationen för  [!DNL Data Export Extension
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 4a25bcb82f98eb44c83a186caa6e5d6d664851d4
+source-git-commit: e81eded54df197c92548aae4636da0e885406b60
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,18 @@ Bland uppdateringarna finns:
 
 ## Aktuell huvudversion
 
+## 103.4.13 Utgåva
+
+![Åtgärda](../assets/fix.svg) Ett problem där produktflödesindexet återställdes när inställningarna för webbkonfigurationen redigerades har korrigerats. <!--MDEE-1154-->
+![ Åtgärda ](../assets/fix.svg) Ett problem där produktalternativ och varianter för paket kunde visas flera gånger i svaret på katalogtjänsten har åtgärdats, särskilt för produkter som tilldelats flera butiker eller webbplatser. Med den här korrigeringen returneras nu varje paketalternativ/variant endast en gång per produkt, vilket ger korrekta och enhetliga butiksskyltar för både handlare och kunder. <!--MDEE-1167-->
+
 ## 103.4.12 Utgåva
 
 ![Korrigera](../assets/fix.svg) Ett problem har korrigerats där PDP (Product Detail Page) inte visade rabatter för katalogprisregel när kundgruppspriserna var aktuella. PDP visar nu det lägsta priset korrekt.<!--MDEE-1158-->
 
 ## 103.4.11 Utgåva
 
-![Nytt](../assets/new.svg) [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+![Nytt](../assets/new.svg) [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 Ytterligare stöd för ytterligare produktattribut som inkluderar momsklass, attributuppsättning och lagerdata från Commerce produktkonfigurationer i produktflödet. Kunder som vill inkludera dessa attribut i produktexportflöden måste lägga till modulen Extra produktattribut i sina Adobe Commerce-projekt. Se [Lägg till momsklass, attributuppsättning och lagerattribut](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![ Åtgärda ](../assets/fix.svg) Ett problem som orsakade felaktig synkronisering av borttagna produktuppdateringar har åtgärdats om ett fel uppstod under ett fullständigt produktindex. Nu synkroniseras alla produktborttagningar korrekt även om ett fel inträffar under indexeringsprocessen. <!--MDEE-1144-->
 
