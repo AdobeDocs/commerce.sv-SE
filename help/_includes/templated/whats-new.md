@@ -1,7 +1,7 @@
 ---
-source-git-commit: e7e0842b0bd793d03725cdffeecff42d6faf1b1c
+source-git-commit: 32664829cb5df011796a9229fa57991ceeac7c2e
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 0%
 ## Nyheter
 
 Den här sidan innehåller de ändringar som har gjorts under de senaste 60 dagarna. Vi utelämnar alla mindre uppdateringar, som kopieringsredigering, från den här listan.
+
+### 23 september 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beskrivning</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Publicerade <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">versionsinformation</a> för Betalningstjänster v2.12.2.</p>
+</td>
+      <td>
+        Viktig uppdatering
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1e5ee370bf91d33f35585d2d64b393fede721ce6">bekräfta</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 9 september 2025
 
@@ -23,7 +45,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets-installationsinformation har lagts till på sidan <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/user-management">användarhantering</a> för Adobe Commerce as a Cloud Service.</p>
+      <td><p>AEM Assets-installationsinformation har lagts till på sidan <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">användarhantering</a> för Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -31,7 +53,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/acce1aad405e74b1171faddf7f0d6681bd0a048d">bekräfta</a></td>
     </tr>
     <tr>
-      <td><p>Rollbaserade uppgifter och arbetsflödesinformation har lagts till på sidan <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/getting-started">Komma igång</a> för Adobe Commerce as a Cloud Service</p>
+      <td><p>Rollbaserade uppgifter och arbetsflödesinformation har lagts till på sidan <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started">Komma igång</a> för Adobe Commerce as a Cloud Service</p>
 </td>
       <td>
         Nytt ämne
@@ -53,7 +75,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Dokumentation för den valfria modulen <a href="https://experienceleague.adobe.com/sv/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Extra produktattribut</a> har lagts till. När den här modulen är installerad i en Adobe Commerce-miljö exporterar dataexportprocessen automatiskt momsklass, attributuppsättning och lagermetadata från Commerce produktkonfiguration till <code class="language-plaintext highlighter-rouge">products</code>- och <code class="language-plaintext highlighter-rouge">product attributes</code>-feeds.</p>
+      <td><p>Dokumentation för den valfria modulen <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Extra produktattribut</a> har lagts till. När den här modulen är installerad i en Adobe Commerce-miljö exporterar dataexportprocessen automatiskt momsklass, attributuppsättning och lagermetadata från Commerce produktkonfiguration till <code class="language-plaintext highlighter-rouge">products</code>- och <code class="language-plaintext highlighter-rouge">product attributes</code>-feeds.</p>
 </td>
       <td>
         Nytt ämne
@@ -75,7 +97,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Nu kan du använda verktyget <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/storefront">Webbplatsskapare</a> för att konfigurera butiken utan att använda CLI.</p>
+      <td><p>Nu kan du använda verktyget <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Webbplatsskapare</a> för att konfigurera butiken utan att använda CLI.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -97,7 +119,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Ett ämne har lagts till om hur du lägger till <a href="https://experienceleague.adobe.com/sv/docs/commerce/data-connection/customize-data/custom-identities">anpassade attribut till profiler</a>.</p>
+      <td><p>Ett ämne har lagts till om hur du lägger till <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">anpassade attribut till profiler</a>.</p>
 </td>
       <td>
         Nytt ämne
