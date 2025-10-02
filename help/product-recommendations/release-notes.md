@@ -25,7 +25,7 @@ Versionsinformationen innehåller:
 ![Korrigera &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
-Läs utvecklardokumentationen för att [lära dig mer om produktsupport](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Läs utvecklardokumentationen för att [lära dig mer om produktsupport](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/product-availability).
 
 ## Uppdateringar av värdtjänster
 
@@ -130,7 +130,7 @@ _22 februari 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Nytt](../assets/new.svg) [!DNL Catalog Sync Dashboard] är nu [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search] och [!DNL Catalog Service].
+![Nytt](../assets/new.svg) [!DNL Catalog Sync Dashboard] är nu [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard). Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search] och [!DNL Catalog Service].
 ![Åtgärda](../assets/fix.svg) Ett problem som orsakade utcheckningsfel för [!DNL Product Recommendations] har korrigerats.
 
 +++5.0.0 och tidigare versioner
@@ -157,7 +157,7 @@ _20 mars 2023_
 
 ![Nytt](../assets/new.svg) Uppdaterat [!DNL Product Recommendations] med stöd för Adobe Commerce 2.4.6.
 ![Nytt](../assets/new.svg) Det här är en större version. [Redigera](install-configure.md#update) rotfilen `composer.json` för ditt projekt.
-![Nytt](../assets/new.svg) [!DNL Product Recommendations] har nu stöd för fullständiga [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)-funktioner i Commerce (tidigare Multi-Source Inventory, eller MSI).   Om du vill aktivera fullständigt stöd måste du [uppdatera](install-configure.md#update) beroendemodulen `commerce-data-export` till version 102.2.0+.
+![Nytt](../assets/new.svg) [!DNL Product Recommendations] har nu stöd för fullständiga [Inventory management](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/introduction)-funktioner i Commerce (tidigare Multi-Source Inventory, eller MSI).   Om du vill aktivera fullständigt stöd måste du [uppdatera](install-configure.md#update) beroendemodulen `commerce-data-export` till version 102.2.0+.
 
 ### 4.0.1 of magento/product-recommendations
 
@@ -194,7 +194,7 @@ _20 mars 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Nytt](../assets/new.svg) [Stöd för B2B](onboarding.md#b2bsupport) har lagts till i [!DNL Product Recommendations]
-![Nytt](../assets/new.svg) Nya feeds har lagts till i [synkronisera katalogdata](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) till Commerce Services via kommandoraden
+![Nytt](../assets/new.svg) Nya feeds har lagts till i [synkronisera katalogdata](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/data-services/catalog-sync) till Commerce Services via kommandoraden
 
 ### 3.3.3 i magento/product-recommendations
 
@@ -234,7 +234,7 @@ _20 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
-![Nytt](../assets/new.svg) har ändrat namn på Magento Services till [Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) och förbättrat användbarheten i Admin
+![Nytt](../assets/new.svg) har ändrat namn på Magento Services till [Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/integration-services/saas) och förbättrat användbarheten i Admin
 
 ### 3.2.4 of magento/product-recommendations
 
@@ -255,7 +255,7 @@ _20 mars 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Nytt](../assets/new.svg) har lagt till möjligheten att [förhandsgranska rekommendationsresultat](create.md) när den skapades. Du kan behöva uppdatera modulen till den senaste versionen.
-![Nytt](../assets/new.svg) har lagt till möjligheten att [övervaka och hantera](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) katalogsynkroniseringsprocessen från administratören.
+![Nytt](../assets/new.svg) har lagt till möjligheten att [övervaka och hantera](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/data-services/catalog-sync) katalogsynkroniseringsprocessen från administratören.
 ![Nytt](../assets/new.svg) [filter](filters.md) har lagts till för att kontrollera vilka produkter som visas i rekommendationerna.
 ![Ny](../assets/new.svg) har lagt till rekommendationstypen [Visuell likhet](type.md#visualsim).
 
@@ -269,7 +269,7 @@ _20 mars 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
-![Nytt](../assets/new.svg) har lagt till möjligheten att [synkronisera om](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) din katalog till SaaS-tjänster via kommandoraden.
+![Nytt](../assets/new.svg) har lagt till möjligheten att [synkronisera om](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/data-services/catalog-sync) din katalog till SaaS-tjänster via kommandoraden.
 ![Nytt](../assets/new.svg) Stöd har lagts till för databastabellprefix
 ![Korrigera &#x200B;](../assets/fix.svg) PHP 7.1-stödet har tagits bort
 
@@ -338,7 +338,7 @@ Det här är en större version. [Redigera](install-configure.md#update) projekt
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
-![Nytt](../assets/new.svg) stöd för Page Builder. Med integreringen i Page Builder kan du exakt och exakt placera rekommendationsenheter på valfri plats i innehåll som skapats i Page Builder. Du kan också formatera rubrikerna och rekommendationsenheterna själva. Mer information finns i [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
+![Nytt](../assets/new.svg) stöd för Page Builder. Med integreringen i Page Builder kan du exakt och exakt placera rekommendationsenheter på valfri plats i innehåll som skapats i Page Builder. Du kan också formatera rubrikerna och rekommendationsenheterna själva. Mer information finns i [Page Builder](https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/add-content/recommendations).
 
 ### 2.0.0 av magento/product-recommendations
 
@@ -353,4 +353,4 @@ Det här är en större version. [Redigera](install-configure.md#update) projekt
 Mer information om utveckling av [!DNL Product Recommendations] och [!DNL Product Recommendations]:
 
 * [Användarhandbok](overview.md)
-* [Utvecklardokumentation](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/development-overview)
+* [Utvecklardokumentation](https://experienceleague.adobe.com/sv/docs/commerce/product-recommendations/developer/development-overview)
