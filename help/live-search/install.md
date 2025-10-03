@@ -178,7 +178,7 @@ När du har verifierat indexerarna är nästa steg att [konfigurera API-nycklarn
 >
 >Följande funktion är i betaversionen. Om du vill delta i betaversionen skickar du en e-postförfrågan till [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-Den här betaversionen stöder tre nya funktioner i [`productSearch`-frågan ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
+Den här betaversionen stöder tre nya funktioner i [`productSearch`-frågan &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
 
 - **Skiktad sökning** - Sök i ett annat söksammanhang - Med den här funktionen kan du utföra upp till två söklager för dina sökfrågor. Exempel:
 
@@ -300,7 +300,7 @@ När du installerar [!DNL Live Search] 4.0.0+ aktiveras widgetar för produktlis
 
 Om du har en [!DNL Live Search]-version som är äldre än 4.0.0+ måste du aktivera produktlistwidgeten manuellt.
 
-1. Gå till *>* > **[!UICONTROL Stores]** från _[!UICONTROL Settings]_Admin **[!UICONTROL Configuration]**.
+1. Gå till *>* > **[!UICONTROL Stores]** från _[!UICONTROL Settings]_&#x200B;Admin **[!UICONTROL Configuration]**.
 1. Välj **[!UICONTROL Live Search]** under **[!UICONTROL Storefront Features]**.
 1. Ange **[!UICONTROL Enable Product Listing Widgets]** till `Yes`.
 
@@ -311,7 +311,7 @@ När du ändrar den här konfigurationen visas meddelandet `Page cache is invali
 1. Gå till sidan [Cachehantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) genom att göra något av följande:
 
    - Klicka på länken **[!UICONTROL Cache Management]** i meddelandet ovanför arbetsytan.
-   - Gå till _>_ > **[!UICONTROL System]** på sidofältet _[!UICONTROL Tools]_Admin **[!UICONTROL Cache Management]**.
+   - Gå till _>_ > **[!UICONTROL System]** på sidofältet _[!UICONTROL Tools]_&#x200B;Admin **[!UICONTROL Cache Management]**.
 
 1. Välj **Konfiguration** [!UICONTROL Cache Type] och klicka på **[!UICONTROL Flush Magento Cache]**.
 
