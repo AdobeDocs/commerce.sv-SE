@@ -206,7 +206,7 @@ Använd följande vägledning för att kontrollera vanliga problem:
 Innan du fortsätter till nästa steg kontrollerar du att din storefront fungerar som den ska genom att verifiera följande:
 
 ![Checklista](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Konfigurationsvärden matchar instansinställningarna<br>
-![ Checklista ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Startsidan för Storefront läses in utan fel <br>
+![&#x200B; Checklista &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Startsidan för Storefront läses in utan fel <br>
 ![Checklista](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Minst en produktinformationssida visar fullständig information <br>
 ![Checklista](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Sökfunktionen returnerar relevanta resultat <br>
 ![Checklista](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Produktbilder läses in korrekt <br>
