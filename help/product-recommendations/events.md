@@ -81,7 +81,7 @@ Om indatainsamlingen inte är tillräcklig återgår följande rekommendationsty
 
 #### Caveats
 
-- Annonsblockerare och sekretessinställningar kan förhindra händelser från att fångas in och kan göra så att engagemanget och intäktsmåtten [på ](workspace.md#column-descriptions) inte rapporteras tillräckligt. Dessutom kanske vissa händelser inte skickas på grund av att kunderna lämnar sidan eller nätverksproblem.
+- Annonsblockerare och sekretessinställningar kan förhindra händelser från att fångas in och kan göra så att engagemanget och intäktsmåtten [på &#x200B;](workspace.md#column-descriptions) inte rapporteras tillräckligt. Dessutom kanske vissa händelser inte skickas på grund av att kunderna lämnar sidan eller nätverksproblem.
 - [Headless-implementeringar](headless.md) måste implementera händelser för att instrumentpanelen för produktrekommendationer ska fungera.
 - För konfigurerbara produkter använder produktrekommendationer avbildningen av den överordnade produkten i rekommendationsenheten. Om den konfigurerbara produkten inte har någon angiven bild kommer rekommendationsenheten att vara tom för den specifika produkten.
 

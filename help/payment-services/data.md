@@ -26,7 +26,7 @@ ID:n är lätt tillgängliga både i detaljerna om handlaraktivitet för en utbe
 
 `invoice_id` och `custom_id` visas längst ned i handelsaktivitetsinformationen för en utbetalning:
 
-![`custom_id` i handelsaktivitetsinformation ](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
+![`custom_id` i handelsaktivitetsinformation &#x200B;](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` och `invoice_id` i informationen i PayPals webkrok:
 
@@ -79,5 +79,5 @@ ID:n är lätt tillgängliga både i detaljerna om handlaraktivitet för en utbe
 
 Mer information finns i dokumentationen för PayPals REST API:er:
 
-* [`purchase_unit` där `custom_id` och `invoice_id` finns ](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [`purchase_unit` där `custom_id` och `invoice_id` finns &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Visa orderinformation](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

@@ -17,7 +17,7 @@ Support ges för den aktuella större versionen. Versionsinformation för äldre
 Bland uppdateringarna finns:
 
 ![Nya](../assets/new.svg) nya funktioner
-![Korrigera ](../assets/fix.svg) Korrigeringar och förbättringar
+![Korrigera &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
 ## Aktuell huvudversion

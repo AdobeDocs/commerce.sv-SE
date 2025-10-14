@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Du kan anpassa [!DNL Payment Services] efter dina behov med hjälp av de praktiska konfigurationsalternativen i Admin.
 
-När du konfigurerar [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] i Admin gäller dessa konfigurationer bara för den miljö som anges i fältet _[!UICONTROL Method]_&#x200B;i_[!UICONTROL General Configuration]_. Alla ändringar du gör i konfigurationsfälten är oberoende av om du byter _[!UICONTROL Method]_-val. Om du byter metod återställs inte dina val.
+När du konfigurerar [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Magento Open Source] i Admin gäller dessa konfigurationer bara för den miljö som anges i fältet _[!UICONTROL Method]_&#x200B;i&#x200B;_[!UICONTROL General Configuration]_. Alla ändringar du gör i konfigurationsfälten är oberoende av om du byter _[!UICONTROL Method]_-val. Om du byter metod återställs inte dina val.
 
 ## Allmän konfiguration
 
@@ -24,7 +24,7 @@ Du kan aktivera [!DNL Payment Services] för din butik och din _[!UICONTROL Merc
 
 1. Gå till _>_ > **[!UICONTROL Stores]** på sidofältet _[!UICONTROL Settings]_&#x200B;Admin **[!UICONTROL Configuration]**.
 1. Expandera **[!UICONTROL Sales]** i den vänstra panelen och välj **[!UICONTROL Payment Methods]**.
-1. Ange fältet _[!UICONTROL Merchant Country]_&#x200B;i_[!UICONTROL Merchant Location]_. Om _[!UICONTROL Merchant Country]_&#x200B;inte anges används&#x200B;_[!UICONTROL Default Country]_ från den allmänna konfigurationen.
+1. Ange fältet _[!UICONTROL Merchant Country]_&#x200B;i&#x200B;_[!UICONTROL Merchant Location]_. Om _[!UICONTROL Merchant Country]_&#x200B;inte anges används&#x200B;_[!UICONTROL Default Country]_ från den allmänna konfigurationen.
 1. Expandera avsnittet _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;för att komma åt avsnittet&#x200B;_[!UICONTROL [!DNL Payment Services]]_.
 1. Expandera avsnittet _[!UICONTROL [!DNL Payment Services]]_&#x200B;i avsnittet&#x200B;_[!UICONTROL General Configuration]_.
 1. För **Aktivera** anger du det till `Yes` för att aktivera [!DNL Payment Services] för din butik.
@@ -349,7 +349,7 @@ Mer information finns i [3DS i säkerhet](security.md#3ds).
 
 I [!UICONTROL Payment Services] kan du använda flera PayPal-konton i **one**-handelskontot på webbplatsnivå. Om du till exempel har butik(er) i flera länder (som använder olika [valutor](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/currency/currency)) eller vill använda Adobe Commerce för vissa delar av din verksamhet, men inte _alla_, kan du konfigurera ditt handlarkonto så att du använder flera PayPal-konton.
 
-Mer information om hierarkin för webbplatser, butiker och vyer [ finns i ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE)Webbplats, Lagra och Vyområde.
+Mer information om hierarkin för webbplatser, butiker och vyer [&#x200B; finns i &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE)Webbplats, Lagra och Vyområde.
 
 Mer information om hur du konfigurerar scope för flera PayPal-konton via CLI finns i [Kommandoradskonfiguration](configure-cli.md#configure-scope-via-cli).
 

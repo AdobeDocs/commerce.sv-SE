@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Du kan använda tillägget [!DNL Data Connection] för att publicera och prenumerera på butikshändelser, men vissa handlare kanske redan använder en datainsamlingslösning, till exempel [Adobe Experience Platform-taggarna](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=sv-SE). För dessa handlare tillhandahåller Adobe Commerce ett alternativ för enbart publicering i tillägget [!DNL Data Connection] som använder Adobe Commerce Event SDK.
 
-![[!DNL Data Connection]-tilläggsdataflöde ](assets/tags-data-flow.png)
+![[!DNL Data Connection]-tilläggsdataflöde &#x200B;](assets/tags-data-flow.png)
 _[!DNL Data Connection]Tilläggsdataflöde med taggar_
 
 I det här avsnittet får du lära dig att mappa storefront-händelsevärdena som tillhandahålls av tillägget [!DNL Data Connection] till den Adobe Experience Platform-tagglösning som du redan använder.

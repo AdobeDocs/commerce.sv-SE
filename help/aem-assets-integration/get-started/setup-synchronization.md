@@ -28,7 +28,7 @@ Använd standardregeln *Matcha efter produktsku* för den första konfiguratione
 
 * [!BADGE PaaS endast]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."} [Installera Adobe Commerce-paket](configure-commerce.md) om du vill lägga till tillägget och generera nödvändiga autentiseringsuppgifter och anslutningar för att använda tillägget.
 
-* Följ stegen som beskrivs i avsnittet [aktivera API:t för Dynamic Media Open ](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) . Inkludera följande information för supportteamet:
+* Följ stegen som beskrivs i avsnittet [aktivera API:t för Dynamic Media Open &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) . Inkludera följande information för supportteamet:
 
    * **[!UICONTROL AEM Program ID]**
    * **[!UICONTROL Adobe Commerce URL]**

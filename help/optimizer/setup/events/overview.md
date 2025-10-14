@@ -136,7 +136,7 @@ I följande tabell visas de händelser som utlöses när kunderna interagerar me
 
 #### Nödvändiga instrumentpanelshändelser
 
-Följande händelser krävs för att fylla i kontrollpanelen [Rekommendationer ](../../manage-results/recommendation-performance.md)
+Följande händelser krävs för att fylla i kontrollpanelen [Rekommendationer &#x200B;](../../manage-results/recommendation-performance.md)
 
 | Kontrollpanelskolumn | Händelser | Kopplingsfält |
 | ---------------- | --------- | ----------- |

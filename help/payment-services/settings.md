@@ -244,7 +244,7 @@ Du kan också konfigurera alternativen för _[!UICONTROL Button style]_&#x200B;f
 
 1. [Töm cachen](#flush-the-cache).
 
-Du kan konfigurera betalningsknappsformatet [ i den äldre konfigurationen i Admin](configure-admin.md#configure-paypal-smart-buttons) eller här i [!DNL Payment Services Home]. Mer information om hur du formaterar PayPals betalningsknappar finns i [PayPals knappstilguide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/).
+Du kan konfigurera betalningsknappsformatet [&#x200B; i den äldre konfigurationen i Admin](configure-admin.md#configure-paypal-smart-buttons) eller här i [!DNL Payment Services Home]. Mer information om hur du formaterar PayPals betalningsknappar finns i [PayPals knappstilguide](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/).
 
 #### Konfigurationsalternativ
 
@@ -304,7 +304,7 @@ Mer information finns i [3DS i säkerhet](security.md#3ds).
 
 I [!UICONTROL Payment Services] kan du använda flera PayPal-konton i **one**-handelskontot på webbplatsnivå. Om du till exempel har butik(er) i flera länder (som använder olika [valutor](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/currency/currency)) eller vill använda Adobe Commerce för vissa delar av din verksamhet, men inte _alla_, kan du konfigurera ditt handlarkonto så att du använder flera PayPal-konton.
 
-Mer information om hierarkin för webbplatser, butiker och vyer [ finns i ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE)Webbplats, Lagra och Vyområde.
+Mer information om hierarkin för webbplatser, butiker och vyer [&#x200B; finns i &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE)Webbplats, Lagra och Vyområde.
 
 Mer information om hur du konfigurerar scope för flera PayPal-konton via CLI finns i [Kommandoradskonfiguration](configure-cli.md#configure-scope-via-cli).
 

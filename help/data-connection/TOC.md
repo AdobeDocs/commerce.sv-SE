@@ -20,7 +20,7 @@ ht-degree: 2%
 - [Hur Commerce tjänster hanterar sekretessförfrågningar](handle-privacy-request.md)
 - [Versionsinformation](release-notes.md)
 - Grundläggande {#fundamentals}
-   - [Installera tillägget  [!DNL Data Connection] ](install.md)
+   - [Installera tillägget  [!DNL Data Connection] &#x200B;](install.md)
    - [Anslut till Adobe Experience Platform](connect-data.md)
    - [Typer av Commerce-data](data-ingestion.md)
    - [Uppdatera händelseschema för tidsserie](update-xdm.md)

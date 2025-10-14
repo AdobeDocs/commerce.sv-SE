@@ -20,7 +20,7 @@ Egenskaper för produktattribut (metadata) bestämmer:
 
 Omfånget för attributmetadata är `website/store/store view`.
 
-Med API:t [!DNL Live Search] kan en klient sortera efter vilket produktattribut som helst som har egenskapen [ storefront](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` inställd på `Yes` i Adobe Commerce Admin. När det är aktiverat kan `Search Weight` anges för attributet.
+Med API:t [!DNL Live Search] kan en klient sortera efter vilket produktattribut som helst som har egenskapen [&#x200B; storefront](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` inställd på `Yes` i Adobe Commerce Admin. När det är aktiverat kan `Search Weight` anges för attributet.
 
 [!DNL Live Search] indexerar inte borttagna produkter eller produkter som är inställda på `Not Visible Individually`.
 
@@ -36,7 +36,7 @@ Om du vill skapa en dynamisk fråga måste söktjänsten känna till vilka attri
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
-![[!DNL Live Search] indexerar klientens sökdiagram ](assets/indexing-pipeline.svg)
+![[!DNL Live Search] indexerar klientens sökdiagram &#x200B;](assets/indexing-pipeline.svg)
 
 1. Kontrollera om säljaren har rätt till [!DNL Live Search].
 1. Hämta butiksvyer med ändringar i attributmetadata.
@@ -93,7 +93,7 @@ Med API:t [!DNL Live Search] kan en klient sortera efter ett sorterbart produkta
 
 Indexmetadata lagras i indexeringsflödet och är tillgängliga för söktjänsten.
 
-![[!DNL Live Search] API-diagram för indexmetadata ](assets/index-metadata-api.svg)
+![[!DNL Live Search] API-diagram för indexmetadata &#x200B;](assets/index-metadata-api.svg)
 
 ### Sorterbart attributarbetsflöde
 

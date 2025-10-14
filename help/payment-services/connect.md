@@ -44,7 +44,7 @@ Ett givet API-nyckelpar är giltigt för alla Commerce-tjänster i en miljö, s�
 
 Om API-nyckeln förloras måste ett nytt API-nyckelpar [genereras](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html?lang=sv-SE#generate-an-api-key-and-private-key) och [tillämpas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html?lang=sv-SE#configure-saas-project) på Commerce Services Connector-konfigurationen i Admin. Om fel nycklar är konfigurerade eller om det inte finns några i konfigurationen visas en dialogruta med kontoverifieringsfel i Betalningstjänster som meddelar dig om att kontot inte har verifierats.
 
-Visa en [lista över tillgängliga Commerce-tjänster som använder API:t ](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices).
+Visa en [lista över tillgängliga Commerce-tjänster som använder API:t &#x200B;](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices).
 
 Mer information om hur du genererar en API-nyckel för antingen sandbox- eller produktionsmiljöer finns i [Referenser](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=sv-SE#apikey).
 

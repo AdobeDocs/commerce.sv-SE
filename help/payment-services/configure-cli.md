@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Kommandoradskonfiguration
 
-När du har installerat [!DNL Payment Services] kan du enkelt konfigurera det från [ i hemmet ](payments-home.md) eller via kommandoradsgränssnittet (CLI).
+När du har installerat [!DNL Payment Services] kan du enkelt konfigurera det från [&#x200B; i hemmet &#x200B;](payments-home.md) eller via kommandoradsgränssnittet (CLI).
 
 ## Konfigurera dataexport
 

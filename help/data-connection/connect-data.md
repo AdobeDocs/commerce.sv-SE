@@ -69,7 +69,7 @@ Hämta [arbetsytans konfigurationsfil](https://developer.adobe.com/commerce/exte
    cat config/private.key | pbcopy
    ```
 
-   Mer information om filen [ finns i ](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/)JWT-autentisering (Service Account)`private.key`.
+   Mer information om filen [&#x200B; finns i &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/)JWT-autentisering (Service Account)`private.key`.
 
 1. Kopiera innehållet i filen `<workspace-name>.json` till fälten **Tjänstkonto/Autentiseringsuppgifter**, till exempel `"client_id"`, `"client_secrets"`, `"technical_account_email"`, `"technical_account_id"` o.s.v.
 
@@ -240,7 +240,7 @@ Ange datumintervallet för de historiska order som du vill skicka till Experienc
 
 1. Välj fliken **Orderhistorik**.
 
-   ![[!DNL Data Connection] Orderhistorik ](./assets/epc-order-history.png){width="700" zoomable="yes"}
+   ![[!DNL Data Connection] Orderhistorik &#x200B;](./assets/epc-order-history.png){width="700" zoomable="yes"}
 
 1. Under **Synkronisering av orderhistorik** är kryssrutan **Kopiera datauppsättnings-ID från inställningar** redan aktiverad. Detta garanterar att du använder samma datauppsättning som anges på fliken **Inställningar**.
 

@@ -84,7 +84,7 @@ För [!DNL Product Recommendations] innehåller SaaS-datautrymmet katalog- och b
 >[!WARNING]
 >
 > Använd **SaaS-datautrymmet för produktion** endast i din [!DNL Commerce]-produktionsinstallation för att undvika datakollisioner. Annars riskerar du att förorena data från produktionsplatsen med testdata, vilket orsakar förseningar i driftsättningen. Produktionsproduktdata kan till exempel skrivas över av misstag från mellanlagringsdata, som mellanlagrings-URL:er.
-> &#x200B;> Om detta skulle inträffa [skickar ](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview) en supportförfrågan för att begära datarensning.
+> &#x200B;> Om detta skulle inträffa [skickar &#x200B;](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview) en supportförfrågan för att begära datarensning.
 
 Om du inte hittar LiveSearch-konfigurationsfält på Admin Panel kontrollerar du att du har angett rätt SaaS API-nyckel.  Se till att du har lagt till SaaS-nyckeln för produktion när du konfigurerar produktionsdataområdet och att du har lagt till mellanlagringsnyckeln när du konfigurerar mellanlagringsdataområdet. Om du konfigurerar fel nyckel är inte SaaS-tjänster, som LiveSearch, tillgängliga i Adobe Commerce-miljön.
 

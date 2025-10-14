@@ -107,4 +107,4 @@ Här följer en översikt på hög nivå över hur du använder verktyget.
 >
 > [Videodemo om verktyget Importera satsvis](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > &#x200B;> [Tips, bästa praxis och begränsningar](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> &#x200B;> [Överför eller importera resurser med API:er ](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> &#x200B;> [Överför eller importera resurser med API:er &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)

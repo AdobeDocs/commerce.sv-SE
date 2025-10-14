@@ -38,7 +38,7 @@ Startprocessen för [!DNL Product Recommendations] kräver åtkomst till servern
 
 [!DNL Product Recommendations] kan läggas till på en sida som en Page Builder-innehållstyp. Information om hur du lägger till stöd för Page Builder i produktrekommendationer finns i [Installera och konfigurera](install-configure.md).
 
-Mer information om hur du lägger till [[!DNL Page Builder]  i ](page-builder.md)-innehåll finns i [!DNL Product Recommendations]Integrering[!DNL Page Builder].
+Mer information om hur du lägger till [[!DNL Page Builder]  i &#x200B;](page-builder.md)-innehåll finns i [!DNL Product Recommendations]Integrering[!DNL Page Builder].
 
 ### SaaS-prisindexering
 

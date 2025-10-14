@@ -19,7 +19,7 @@ ht-degree: 0%
 Versionsinformationen innehåller uppdateringar av tillägget [!DNL Data Connection] och innehåller:
 
 ![Nytt](../assets/new.svg) - Nya funktioner
-![Korrigera ](../assets/fix.svg) - Korrigeringar och förbättringar
+![Korrigera &#x200B;](../assets/fix.svg) - Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) - Kända fel
 
 Funktionsändringar och korrigeringar som rör tillägg som används av tillägget [!DNL Data Connection] finns i **Tjänsteuppdateringar som stöds**.
@@ -77,7 +77,7 @@ _30 mars 2023_
 
 _12 oktober 2022_
 
-![Nytt](../assets/new.svg) - Två [storefront-händelser ](events.md), `openCart` och `removeFromCart` har lagts till i Adobe Commerce Storefront Events SDK och Collector.
+![Nytt](../assets/new.svg) - Två [storefront-händelser &#x200B;](events.md), `openCart` och `removeFromCart` har lagts till i Adobe Commerce Storefront Events SDK och Collector.
 ![Nytt](../assets/new.svg) - Stöd har lagts till för en [AEM store](overview.md#aem-support).
 
 +++

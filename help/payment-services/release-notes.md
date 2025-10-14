@@ -16,7 +16,7 @@ ht-degree: 0%
 Dessa versionsinformation beskriver den första versionen av [!DNL Payment Services] och innehåller:
 
 ![Nya](../assets/new.svg) nya funktioner
-![ Åtgärdat problem ](../assets/fix.svg) Korrigeringar och förbättringar
+![&#x200B; Åtgärdat problem &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Kända fel](../assets/bug.svg)
 
 Om du vill se funktionsändringar och korrigeringar som släppts utanför den vanliga versionen av funktionen går du igenom avsnitten _Uppdateringar för värdtjänsten_.
@@ -164,7 +164,7 @@ _13 mars 2025_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- PAY-5826 --> Förbättrad tillförlitlighet för orderhantering genom att lösa ett problem som orsakade ett HTTP 500-fel när offertstatusen ändrades till `inactive`.
 
-![Ett problem har korrigerats där ](../assets/fix.svg)<!-- PAY-5849 --> orsakade undantag för decimalkvantiteter under 1. `LineItemProvider` [!DNL Payment Services] har nu bättre stöd för bråkkvantiteter.
+![Ett problem har korrigerats där &#x200B;](../assets/fix.svg)<!-- PAY-5849 --> orsakade undantag för decimalkvantiteter under 1. `LineItemProvider` [!DNL Payment Services] har nu bättre stöd för bråkkvantiteter.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- PAY-5868 --> Korrigerade ett fel på presentkortsbeloppet vid utcheckning. [!DNL Payment Services] garanterar nu korrekta värden under utcheckningsprocessen.
 
@@ -294,7 +294,7 @@ _23 april 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Korrigera](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] har nu stöd för [Adobe Commerce-riktlinjer för `--db-prefix` parameter ](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) för Adobe Commerce version 2.4.7 och senare.
+![Korrigera](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] har nu stöd för [Adobe Commerce-riktlinjer för `--db-prefix` parameter &#x200B;](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) för Adobe Commerce version 2.4.7 och senare.
 
 ## v2.4.3
 
@@ -441,7 +441,7 @@ _10 mars 2023_
 
 ![Korrigera](../assets/fix.svg)<!-- Issue PAY-4205 --> Ett problem som orsakade att det angivna leveransadressläget ersattes av läget i standardskatteinställningarna vid utcheckning med alternativet [PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=sv-SE#paypal-smart-buttons) har åtgärdats. Nu kan kunderna få sina beställningar levererade till ett annat tillstånd än det som konfigurerats som standard i handlarens skatteinställningar.
 
-![Åtgärdade](../assets/fix.svg)<!-- Issue PAY-4202 --> ett problem som hindrade kunder från att använda kortvalsfunktionen för att slutföra ett köp eller ta bort en betalningsmetod i säkert läge för en butik [med `Authorize and Capture` betalningsåtgärden ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=sv-SE#set-payment-services-as-payment-method). Tidigare uppstod ett fel av typen &quot;Provider Vault ID not found&quot; när kunden försökte använda eller ändra sina kreditkort.
+![Åtgärdade](../assets/fix.svg)<!-- Issue PAY-4202 --> ett problem som hindrade kunder från att använda kortvalsfunktionen för att slutföra ett köp eller ta bort en betalningsmetod i säkert läge för en butik [med `Authorize and Capture` betalningsåtgärden &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=sv-SE#set-payment-services-as-payment-method). Tidigare uppstod ett fel av typen &quot;Provider Vault ID not found&quot; när kunden försökte använda eller ändra sina kreditkort.
 
 ## v1.6.0
 
@@ -583,7 +583,7 @@ _31 mars 2022_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2561 --> Produkter som tagits bort tidigare visas inte i kundvagnen på sidan _Granska beställning_.
 
-![Känt fel](../assets/bug.svg)<!-- Issue PAY-2842 --> Testa kreditkortstransaktioner [ kan misslyckas med PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=sv-SE) när betalningar bearbetas i en sandlådemiljö.
+![Känt fel](../assets/bug.svg)<!-- Issue PAY-2842 --> Testa kreditkortstransaktioner [&#x200B; kan misslyckas med PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=sv-SE) när betalningar bearbetas i en sandlådemiljö.
 
 ## v1.0.0
 
@@ -607,7 +607,7 @@ _29 november 2021_
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-1443 --> Du kan enkelt [anpassa utseendet och känslan](payments-options.md) för betalningsknapparna och kreditkortsfälten för tillägget [!DNL Payment Services].
 
-![Ett känt fel](../assets/bug.svg)<!-- Issue PAY-2473 --> [Om du använder ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=sv-SE) felaktiga dispositionsnycklar under installationen av tillägget förhindrar du användaren från att [autentisera](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) med rätt `MAGEID`.
+![Ett känt fel](../assets/bug.svg)<!-- Issue PAY-2473 --> [Om du använder &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=sv-SE) felaktiga dispositionsnycklar under installationen av tillägget förhindrar du användaren från att [autentisera](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) med rätt `MAGEID`.
 
 ![Känt fel](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapporter [kanske inte synkroniseras omedelbart](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=sv-SE).
 

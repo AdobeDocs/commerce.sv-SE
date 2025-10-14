@@ -21,7 +21,7 @@ ht-degree: 0%
 - [Versionsinformation](release-notes.md)
 - Inbyggt [!DNL Payment Services] {#get-started}
    - [Översikt över introduktion](onboard.md)
-   - [Installera tillägget  [!DNL Payment Services] ](install.md)
+   - [Installera tillägget  [!DNL Payment Services] &#x200B;](install.md)
    - [Anslut instansen](connect.md)
    - [Konfigurera testsandlåda](sandbox.md)
    - [Aktivera för produktion](production.md)

@@ -134,7 +134,7 @@ De enda data som exporteras och sorteras för rapportändamål är data som anv�
 
 Även om omindexering som standard sker i läget `ON SAVE` rekommenderar vi att du indexerar i läget `BY SCHEDULE`. Indexet `BY SCHEDULE` körs med ett cron-schema på en minut och alla ändrade data visas i din orderstatusrapport inom två minuter efter dataändringen. Denna schemalagda omindexering hjälper dig att minska eventuella påfrestningar i din butik, särskilt om du har ett stort antal inkommande order, eftersom den inträffar enligt ett schema (inte efter varje beställning).
 
-Du kan ändra indexläget -`ON SAVE` eller `BY SCHEDULE` -[ - i Admin](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Du kan ändra indexläget -`ON SAVE` eller `BY SCHEDULE` -[&#x200B; - i Admin](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Mer information om hur du konfigurerar dataexporten finns i [Kommandoradskonfiguration](configure-cli.md#configure-data-export).
 

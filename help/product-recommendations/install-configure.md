@@ -47,7 +47,7 @@ Mer information finns i [Använda [!DNL Product Recommendations] med Page Builde
 
 ### Lägg till rekommendationstyp för visuell likhet {#vissimsupport}
 
-Rekommendationstypen _Visuell likhet_ gör att du kan distribuera en rekommendationsenhet till produktinformationssidan som visar produkter som [visuellt liknar ](type.md#visualsim) den produkt som visas. Rekommendationstypen är mest användbar när bilder och visuella aspekter av produkterna är viktiga delar av shoppingupplevelsen. Installera rekommendationstypen _Visuell likhet_ genom att köra följande kommando:
+Rekommendationstypen _Visuell likhet_ gör att du kan distribuera en rekommendationsenhet till produktinformationssidan som visar produkter som [visuellt liknar &#x200B;](type.md#visualsim) den produkt som visas. Rekommendationstypen är mest användbar när bilder och visuella aspekter av produkterna är viktiga delar av shoppingupplevelsen. Installera rekommendationstypen _Visuell likhet_ genom att köra följande kommando:
 
 ```bash
 composer require magento/module-visual-product-recommendations

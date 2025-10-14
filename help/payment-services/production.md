@@ -89,7 +89,7 @@ När landet har valts:
 
 ### Standard onboarding
 
-Det här standardintroduktionsflödet är tillgängligt för handlare i tillgängliga länder där [endast support för Express Checkout ](../payment-services/introduction.md#availability) tillhandahålls.
+Det här standardintroduktionsflödet är tillgängligt för handlare i tillgängliga länder där [endast support för Express Checkout &#x200B;](../payment-services/introduction.md#availability) tillhandahålls.
 
 När landet har valts:
 

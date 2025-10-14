@@ -24,7 +24,7 @@ Som standard har [!DNL Live Search] stöd för [omdirigering av söktermer](http
 
 ## Sidstorlek [!DNL Popover]
 
-Sidstorleken för [!DNL popover] avgör hur många rader med automatiskt slutförda produkter som kan returneras. Under Live Search-installationen ändras värdet `page_size` till det aktuella värdet för inställningen [ Katalogsökning ](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=sv-SE) - `Autocomplete Limit` .
+Sidstorleken för [!DNL popover] avgör hur många rader med automatiskt slutförda produkter som kan returneras. Under Live Search-installationen ändras värdet `page_size` till det aktuella värdet för inställningen [&#x200B; Katalogsökning &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=sv-SE) - `Autocomplete Limit` .
 
 Som standard är värdet för Katalogsökning - Gräns för automatisk komplettering satt till åtta rader (eller rader). Så här ändrar du sidstorleken för [!DNL popover]:
 
@@ -38,7 +38,7 @@ Som standard är värdet för Katalogsökning - Gräns för automatisk komplette
 
 Du kan anpassa utseendet och känslan för widgeten [!DNL Popover] så att den matchar företagets riktlinjer för varumärkesprofilering.
 
-[!DNL storefront popover] visar alltid produkten `name` och `price` och valet av fält är inte konfigurerbart. [!DNL popover]-element kan emellertid formateras med [ CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)-klasser. Följande deklarationer ändrar till exempel bakgrundsfärgen för behållaren [!DNL popover] och sidfoten.
+[!DNL storefront popover] visar alltid produkten `name` och `price` och valet av fält är inte konfigurerbart. [!DNL popover]-element kan emellertid formateras med [&#x200B; CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)-klasser. Följande deklarationer ändrar till exempel bakgrundsfärgen för behållaren [!DNL popover] och sidfoten.
 
 ```css
 .livesearch.popover-container {

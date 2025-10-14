@@ -131,7 +131,7 @@ Lär dig hur du inaktiverar eller aktiverar meddelandet [!DNL Pay Later] genom a
 
 ##### Valfritt. Konfigurera Betala senare meddelanden
 
-**Konfigurera meddelanden** för [Betala senare](configure-admin.md#pay-later-button) tillåter handlare att ändra standardstilarna för det här betalningsalternativet. Om du ställer in **[!UICONTROL Display Pay Later Message]** på `Yes` i [ Settings](configure-admin.md#pay-later-button) -konfigurationen visas en spärrknapp för **[!UICONTROL Configure Messaging]** så att du kan ställa in stilarna för **[!UICONTROL PayPal Pay Later messaging]**.
+**Konfigurera meddelanden** för [Betala senare](configure-admin.md#pay-later-button) tillåter handlare att ändra standardstilarna för det här betalningsalternativet. Om du ställer in **[!UICONTROL Display Pay Later Message]** på `Yes` i [&#x200B; Settings](configure-admin.md#pay-later-button) -konfigurationen visas en spärrknapp för **[!UICONTROL Configure Messaging]** så att du kan ställa in stilarna för **[!UICONTROL PayPal Pay Later messaging]**.
 
 ![Betala senare meddelanden](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
