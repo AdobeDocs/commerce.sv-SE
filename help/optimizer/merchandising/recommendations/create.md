@@ -1,8 +1,9 @@
 ---
 title: Skapa och hantera rekommendationer
 description: Lär dig hur du skapar och hanterar rekommendationer.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
+source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -18,7 +19,7 @@ _Rekommendationsenhet_
 
 När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](../../manage-results/recommendation-performance.md) för att mäta visningar, vyer, klick och så vidare. Tabellen Rekommendationer visar måtten för varje rekommendationsenhet så att du kan fatta välgrundade affärsbeslut.
 
-1. Gå till _Merchandising_ > **Recommendations** på sidofältet _Adobe Commerce Optimizer_ för att visa arbetsytan _Recommendations_ .
+1. Gå till _Merchandising_ > _Recommendations_ på sidofältet **Adobe Commerce Optimizer** för att visa arbetsytan _Recommendations_ .
 
 1. Klicka på **Skapa rekommendation**.
 
@@ -26,7 +27,7 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
 1. I avsnittet _Välj rekommendationstyp_ anger du önskad [typ av rekommendation](types.md) baserat på din strategi.
 
-1. Ange den [etikett](best-practice.md#recommendation-labels) som är synlig för dina kunder, till exempel&quot;Top sellers&quot;, i avsnittet _Store-visningsrubrik_.
+1. Ange den _etikett_ som är synlig för dina kunder, till exempel&quot;Top sellers&quot;, i avsnittet [Store-visningsrubrik](best-practice.md#recommendation-labels).
 
 1. I avsnittet _Välj antal produkter_ använder du skjutreglaget för att ange hur många produkter du vill ska visas i rekommendationsenheten.
 
@@ -50,7 +51,7 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
 Du kan redigera, inaktivera eller ta bort en befintlig rekommendation.
 
-1. Gå till _Merchandising_ > **Rekommendationer** på sidofältet _Adobe Commerce Optimizer_.
+1. Gå till _Merchandising_ > _Rekommendationer_ på sidofältet **Adobe Commerce Optimizer**.
 
 1. Välj den rekommendation som du vill ändra.
 
@@ -135,7 +136,7 @@ _Rekommendationstyp_
 >
 >Indikatorer kan aldrig nå 100 %.
 
-Procentvärdet för beredskapsindikatorn för rekommendationstyper som är beroende av katalogdata ändras inte särskilt mycket eftersom handlarens katalog inte ändras så ofta. Men procentvärdet för beredskapsindikatorn för rekommendationstyper som baseras på kundbeteendedata kan ändras ofta beroende på den dagliga kundaktiviteten.
+Procentvärdet för beredskapsindikatorn för rekommendationstyper som är beroende av katalogdata ändras inte särskilt mycket eftersom handlarens katalog inte ändras så ofta. Men procentandelen beredskapsindikator för rekommendationstyper som baseras på kundbeteendedata kan ändras ofta beroende på den dagliga kundaktiviteten.
 
 #### Vad du ska göra om procentvärdet för beredskapsindikatorn är lågt
 

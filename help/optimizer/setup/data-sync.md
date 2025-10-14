@@ -1,12 +1,13 @@
 ---
 title: Datasynkronisering
-description: Lär dig hur du synkroniserar katalogdata med  [!DNL Adobe Commerce Optimizer].
+description: Granska katalogdata som synkroniseras från din Commerce-datakälla till  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
+source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---

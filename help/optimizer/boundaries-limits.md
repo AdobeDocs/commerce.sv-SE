@@ -2,10 +2,11 @@
 title: Gränser och begränsningar
 description: Läs mer om gränserna och gränserna för  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 1eb95f26a196ad4e66cbc980c7f8a41cae950cb6
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Följande anger gränser och gränser för [!DNL Adobe Commerce Optimizer].
 
 ## Katalog
 
-- Den garanterade nivån för katalogintag är: 1 000 produkter/minut och 5 000 priser/minut.
+- Den garanterade andelen för katalogintaget är 1 000 produkter/minut och 5 000 priser/minut.
 - Basantalet produktuppdateringar per dag är 1 000 000.
 - Det totala antalet SKU:er som tillåts i en instans är 250 000. 
 - Det högsta antalet katalogkällor är 50.
@@ -34,11 +35,11 @@ Följande anger gränser och gränser för [!DNL Adobe Commerce Optimizer].
 - Det högsta antalet sökbara attribut är 200.
 - Det maximala antalet sorterbara attribut är 50.
 - Det högsta antalet facets är 100. Alla facets måste vara filterbara attribut.
-- Det högsta antalet alternativ som en enskild facet-katt returnerar är 100, vilket kan ökas per supportbegäran.
+- Det högsta antalet alternativ som en enskild aspekt kan returnera är 100, vilket kan ökas per supportförfrågan.
 
 ## Katalogvyer och principer
 
-- Det högsta antalet katalogvyer per klientorganisation är 1 000.
+- Högsta antal katalogvyer per klientorganisation är 1 000.
 - Det högsta antalet profiler som tilldelats en katalogvy är 10.
 - Det högsta antalet attributvärden som används i en princip är 100. 
 

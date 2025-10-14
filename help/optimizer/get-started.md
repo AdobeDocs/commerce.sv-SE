@@ -3,11 +3,11 @@ title: Kom igång
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: c27b2a8c7dffdcc5d5195cf809d5b475f3e01059
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Så här kör du [!DNL Adobe Commerce Optimizer]-miljön:
 1. Navigera till **Commerce** > **Commerce Cloud Manager**.
 1. Klicka på **Lägg till instans** > **Commerce Optimizer**.
 
-   ![Skapa instans](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
+   ![Skärmen Lägg till instans i Adobe Commerce Cloud Manager för att skapa en Commerce Optimizer-miljö](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. Konfigurera instansinställningar:
    - **Instansnamn**: Beskrivande namn (till exempel &quot;Min företagssandlåda&quot;)
@@ -66,7 +66,7 @@ Följ instruktionerna för [Läs in exempeldata](#add-sample-data) om du vill te
 
 Installationen och hanteringen av [!DNL Adobe Commerce Optimizer] bygger på tre nyckelroller. Varje roll har specifika uppgifter och ansvarsområden:
 
-![Arbetsflöde på hög nivå](./assets/high-level-workflow.png){zoomable="yes"}
+![Rollbaserat arbetsflöde för Adobe Commerce Optimizer-installation med administratörs-, utvecklings- och användaruppgifter](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### Administratörsuppgifter
 
@@ -119,7 +119,7 @@ Hantera instanser från Commerce Cloud Manager.
 När du har loggat in visas alla Commerce produktinstanser som är tillgängliga i organisationen på kontrollpanelen.
 Produktkolumnen anger vilket Commerce-program instansen är avsedd för.
 
-![Instanssökning och filter](./assets/search-filter-instances.png){zoomable="yes"}
+![Kontrollpanel med sök- och filteralternativ för produktinstanser i Adobe Commerce Cloud](./assets/search-filter-instances.png){zoomable="yes"}
 
 Använd verktygen Filter och Sök för att snabbt hitta specifika instanser per skapat datum, region, skapare, produkttyp, miljö eller status.
 
@@ -133,20 +133,20 @@ När appen är öppen växlar du enkelt mellan miljöer som sandlådor och produ
 
    I den nedrullningsbara listan visas alla Optimizer-instanser som är tillgängliga i organisationen. Markera instansen som ska visas.
 
-   ![Instansväxlare](./assets/context-switcher.png){zoomable="yes"}
+   ![Instansväljarlistrutan för val av Adobe Commerce Optimizer-miljöer](./assets/context-switcher.png){zoomable="yes"}
 
 ### Hämta instansinformation
 
 Visa instansinformationen genom att klicka på informationsikonen bredvid instansnamnet.
 
-![Instansinformation](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![Panelen med instansinformation för Adobe Commerce Optimizer som visar slutpunkter och instans-ID](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Observera följande viktiga information:
 
 - **GraphQL-slutpunkt** om du vill hämta Commerce-katalogdata med API:t för marknadsföring
 - **Katalogtjänstslutpunkt** för datainmatning med REST API
 - **Commerce Optimizer URL** för att komma åt programmet [!DNL Adobe Commerce Optimizer]
-- **Instans-ID** är det unika klient-ID som identifierar instansen
+- **Instans-ID**: det unika klient-ID som identifierar instansen
 
 Om du är utvecklare behöver du dessa uppgifter för att konfigurera utvecklingsmiljön och ansluta till [!DNL Adobe Commerce Optimizer] API:er.
 
@@ -217,6 +217,6 @@ När installationen är klar:
 ### Få hjälp
 
 - **Resurser för utvecklare**: [Dokumentation för utvecklare](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront Resources**: [Commerce storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
-- **Självstudiekurser**: [Commerce Optimizer självstudiekurser](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview)
+- **Storefront Resources**: [Commerce storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Självstudiekurser**: [Commerce Optimizer självstudiekurser](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
