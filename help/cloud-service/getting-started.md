@@ -3,8 +3,8 @@ title: Komma igång med  [!DNL Adobe Commerce as a Cloud Service]
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 061b976872fae614cf1fb3db5aaabd9ffdc5e0f9
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: 911d984efa9587c0154db3ab97f6136bf6c34166
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Välj en flik nedan om du vill visa arbetsflödesgrafik på hög nivå för mots
 
 >[!TAB Systemadministratör och handlararbetsflöde]
 
-Bilden ger en översikt på hög nivå över hur systemadministratörer och handlare får åtkomst till och hanterar [!DNL Adobe Commerce as a Cloud Service] instanser. Mer information om administratörsarbetsflöden finns i [Adobe Admin Console-handboken](https://helpx.adobe.com/se/enterprise/admin-guide.html).
+Bilden ger en översikt på hög nivå över hur systemadministratörer och handlare får åtkomst till och hanterar [!DNL Adobe Commerce as a Cloud Service] instanser. Mer information om administratörsarbetsflöden finns i [Adobe Admin Console-handboken](https://helpx.adobe.com/enterprise/admin-guide.html).
 
 ![[!DNL Adobe Commerce as a Cloud Service] handelsflödesdiagram](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -96,7 +96,6 @@ Som handlare fokuserar du på att hantera produkter, beställningar och butiksin
 | Utforska användningsexempel | Lär dig praktiska affärsscenarier och arbetsflöden | [Användningsexempel](./use-cases.md) |
 | Importera katalog | Läs om hur du importerar produktdata till plattformen | [Importera katalogen](#import-your-catalog) |
 | Få åtkomst till AEM Assets och produktbilder (tillval) | Använd Experience Manager för att börja använda AEM Assets och produktvisualer | [Använd Experience Manager-gränssnittet](./user-management.md#access-the-experience-manager-interface) |
-
 
 >[!TAB Utvecklare]
 
@@ -198,7 +197,7 @@ Som standard innehåller [!DNL Adobe Commerce as a Cloud Service] instanser inga
 
 Det finns två sätt att importera katalogen till [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/import/data-import) - Ett användarvänligt gränssnitt där du kan importera katalogdata med bara några klick.
+* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Ett användarvänligt gränssnitt där du kan importera katalogdata med bara några klick.
 * [**Importera JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - ett REST API som gör att du kan importera katalogdata programmatiskt.
 
 ### Konfigurera butiken
@@ -209,4 +208,4 @@ Nu när du har skapat en instans är du redo att [konfigurera din butik](storefr
 
 * [Versionsinformation](release-notes.md)
 * [Migreringsguide](migration/overview.md)
-* [Commerce Storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
+* [Commerce Storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
