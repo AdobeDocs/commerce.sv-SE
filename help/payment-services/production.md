@@ -131,7 +131,7 @@ Om du vill att dina butiker ska kunna publiceras begär du betalningstillstånd 
 1. Fyll i formuläret.
 1. En medlem i säljteamet kommer att kontakta dig.
 
-Du kan också begära betalningstillstånd från Adobe på [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+Du kan också begära betalningstillstånd från Adobe på [business.adobe.com](https://business.adobe.com/se/resources/payment-services.html).
 
 >[!IMPORTANT]
 >

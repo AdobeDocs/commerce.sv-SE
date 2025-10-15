@@ -23,7 +23,7 @@ Den här artikeln är avsedd för utvecklare eller systemintegratörer i ditt te
 
 ## Krav
 
-- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/se/products/magento/magento-commerce.html) 2.4.4+
 - PHP 8.1, 8.2 eller 8.3
 - [!DNL Composer]
 - Köra cron-jobb och indexerare
