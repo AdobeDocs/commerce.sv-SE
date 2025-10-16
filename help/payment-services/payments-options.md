@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ När [!DNL Fastlane] är aktiverat är alternativet [!UICONTROL Credit Card Fiel
 
 >[!NOTE]
 >
-> Fastlane stöds för närvarande bara för handlare i USA. Därför stöds inte [!UICONTROL 3D Secure authentication] för närvarande.
+> I sandlådeinstanser visar Fastlane-transaktioner inte leveransadressen i vyn Transaktionsaktivitet.
 
 Mer information finns i avsnittet [Fastlane av PayPal](https://www.paypal.com/us/fastlane){target=_blank}.
 
@@ -131,7 +131,7 @@ Lär dig hur du inaktiverar eller aktiverar meddelandet [!DNL Pay Later] genom a
 
 ##### Valfritt. Konfigurera Betala senare meddelanden
 
-**Konfigurera meddelanden** för [Betala senare](configure-admin.md#pay-later-button) tillåter handlare att ändra standardstilarna för det här betalningsalternativet. Om du ställer in **[!UICONTROL Display Pay Later Message]** på `Yes` i [&#x200B; Settings](configure-admin.md#pay-later-button) -konfigurationen visas en spärrknapp för **[!UICONTROL Configure Messaging]** så att du kan ställa in stilarna för **[!UICONTROL PayPal Pay Later messaging]**.
+**Konfigurera meddelanden** för [Betala senare](configure-admin.md#pay-later-button) tillåter handlare att ändra standardstilarna för det här betalningsalternativet. Om du ställer in **[!UICONTROL Display Pay Later Message]** på `Yes` i [ Settings](configure-admin.md#pay-later-button) -konfigurationen visas en spärrknapp för **[!UICONTROL Configure Messaging]** så att du kan ställa in stilarna för **[!UICONTROL PayPal Pay Later messaging]**.
 
 ![Betala senare meddelanden](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
@@ -156,7 +156,7 @@ Så här **tar du emot betalningar med din befintliga kreditkortsleverantör _oc
 1. Kontrollera att din butik är [i produktionsläge](configure-admin.md#enable-payment-services).
 1. [Konfigurera önskade PayPal-betalningsknappar](configure-admin.md#payment-buttons).
 1. Stäng av _Av_, alternativet **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** i avsnittet _[!UICONTROL Payment buttons]_.
-1. Aktivera alternativet _Av_ **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** i avsnittet _[!UICONTROL Credit card fields]_&#x200B;och använd ditt [befintliga kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=sv-SE#payments).
+1. Aktivera alternativet _Av_ **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** i avsnittet _[!UICONTROL Credit card fields]_och använd ditt [befintliga kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Utcheckningsalternativ
 
