@@ -2,9 +2,9 @@
 title: Rekommendationstyper
 description: Lär dig mer om rekommendationer som du kan distribuera till olika sidor på din webbplats.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,29 @@ Som en god praxis rekommenderar Adobe följande riktlinjer när du använder rek
 >
 >Mer information om de händelser som beskrivs i den här artikeln finns i [storefront-händelser](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) i utvecklardokumentationen.
 
+## Datakrav och beteende
+
+Produktrekommendationer är ett datadrivet system som bygger på beteendedata som samlats in från butiken. Kvaliteten på och antalet rekommendationer beror på hur mycket händelsedata som finns tillgängliga.
+
+>[!IMPORTANT]
+>
+>De flesta rekommendationstyper kräver tillräckliga beteendedata (t.ex. produktvyer, tilläggsuppgifter och köp) för att skapa meningsfulla resultat. Systemet behöver vanligtvis flera dagar av aktiv kundaktivitet för att kunna ta fram korrekta rekommendationer. Se [beredskapsindikatorer](create.md#readiness-indicators) för att lära dig hur webbplatstrafiken bidrar till att fylla i olika rekommendationstyper.
+
+### Vad händer med otillräckliga data
+
+När det inte finns tillräckligt med händelsedata för att generera rekommendationer kan systemet:
+
+- Returnera tomma resultat för rekommendationsenheten.
+- Utlös [rekommendationer för säkerhetskopiering](events.md#backup-recommendations), till exempel för att visa `Most viewed` produkter när personaliserade rekommendationer ännu inte är tillgängliga.
+- Visa färre produkter än [konfigurerad](create.md) i rekommendationsenheten.
+
 ## Personligt {#personalized}
 
 Dessa rekommendationstyper rekommenderar produkter som baseras på den specifika kundens beteendehistorik på er webbplats. Om en kund t.ex. tidigare har bläddrat efter en jacka eller köpt en jacka på din webbplats, kan de här rekommendationerna i princip fortsätta där de slutade och rekommendera andra kavajer eller liknande produkter.
+
+>[!NOTE]
+>
+>Personaliserade rekommendationer kräver att kunderna har en etablerad beteendehistoria. Nya besökare eller kunder utan tillräcklig interaktionshistorik kommer att se [säkerhetskopieringsrekommendationer](events.md#backup-recommendations), till exempel De flesta visade produkter, tills de genererar tillräckligt många beteendesignaler på din webbplats.
 
 | Typ | Beskrivning |
 |---|---|
@@ -48,6 +68,8 @@ Dessa rekommendationstyper är sociala bevis som hjälper kunderna att hitta det
 >[!NOTE]
 >
 >Rekommendationstyperna &quot;visade detta, visade att&quot;, &quot;såg det här, köpte det&quot; och &quot;köpte det här&quot;, använde inte enkla förekomstmått utan snarare en mer avancerad samarbetsfiltreringsalgoritm som letar efter *intressanta likheter* som inte skevas mot populära produkter. De data som används för att informera om de här rekommendationstyperna baseras på kundens samlade beteende som härrör från flera sessioner på er webbplats. Informationen baseras inte på kundbeteende som härletts från en enstaka sessionsförekomst på er webbplats. De här rekommendationstyperna hjälper kunderna att hitta närliggande produkter som kanske inte är självklara att kombinera med den produkt som visas just nu.
+>
+>Dessa rekommendationstyper kräver omfattande interaktionsdata för olika produkter för att kunna identifiera meningsfulla korrelationer. Lager med begränsad mångfald i produktkataloger eller låg trafik kan se färre rekommendationer tills tillräckliga beteendemönster uppstår.
 
 | Typ | Beskrivning |
 |---|---|
@@ -61,6 +83,10 @@ Dessa rekommendationstyper är sociala bevis som hjälper kunderna att hitta det
 
 Rekommendationstyperna rekommenderar produkter som är populäraste eller trendaste inom de senaste sju dagarna.
 
+>[!NOTE]
+>
+>Popularitetsbaserade rekommendationer kräver tillräckliga händelsedata från din butik. Om din butik är ny eller har låg trafik kan dessa rekommendationstyper returnera begränsade resultat eller inga resultat förrän tillräckliga beteendedata har samlats in. Övervaka [databeredskapsindikatorn](workspace.md) för att säkerställa optimala prestanda.
+
 | Typ | Beskrivning |
 |---|---|
 | Mest visade | Rekommenderar produkter som har visats mest genom att räkna antalet sessioner där en visningsåtgärd har utförts under de senaste sju dagarna.<br/><br/>**Var används:**<br/>- Hemsida<br/>- Kategori<br/>- Produktinformation<br/>- Kart<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Den populäraste <br/>- Trending<br/> - Populär just nu<br/>- Nyligen populära<br/> - Populära produkter inspirerade av den här produkten (PDP)<br/>- De populäraste försäljarna |
@@ -71,6 +97,10 @@ Rekommendationstyperna rekommenderar produkter som är populäraste eller trenda
 ## Högpresterande {#highperf}
 
 Rekommendationstyperna rekommenderar högpresterande produkter baserat på kriterier för framgång, som tillägg till kundvagnen eller konverteringsgrader.
+
+>[!NOTE]
+>
+>Högpresterande rekommendationstyper bygger på konverteringsdata (inköp och kundvagnsåtgärder). Nya butiker eller butiker med låga konverteringsvolymer kan behöva samla in data under 7-14 dagar innan dessa rekommendationer börjar gälla.
 
 | Typ | Beskrivning |
 |---|---|

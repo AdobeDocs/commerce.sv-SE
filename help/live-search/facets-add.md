@@ -1,7 +1,8 @@
 ---
 title: Lägg till ansikten
 description: Lär dig hur du lägger till filterbara produktattribut som  [!DNL Live Search] facets.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
+source-git-commit: 053533bc5f3f990ce8219f1e0c7c4930b28f0cd5
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -28,7 +29,7 @@ Fasetten läggs till längst ned i listan *Dynamiska ansikten* och knappen *Publ
 
 1. Om det inte går att hitta den aspekt du vill lägga till går du till **Lager** > Attribut > **Produkt** och kontrollerar att attributet har de [obligatoriska egenskaperna](facets.md) som ska användas som en egenskap. Uppdatera vid behov följande storefront-egenskaper för attributet:
 
-   * Använd i sökning - `Yes`
+   * Använd i sökning - `No`
    * Använd i sökresultatnavigering i lager - `Yes`
    * Använd i navigering i lager - `Filterable (with results)`
 
