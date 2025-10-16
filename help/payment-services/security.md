@@ -54,7 +54,7 @@ Order som handlaren eller butikspersonalen lagt åt köparen är inte konfigurer
 
 ### Kortsäkring
 
-När en kund [ valverar, eller sparar, sin kreditkortsinformation](vaulting.md) för framtida inköp i dina butiker, delas minimal kreditkortsinformation med kunden (de fyra sista siffrorna, kortets utgångsdatum och kortets varumärke). Kreditkortsinformation lagras hos betalningsförmedlaren. När ett kort upphör att gälla eller de inte längre behöver informationen sparad, kan de ta bort denna token så att informationen inte längre lagras av betalningsleverantören.
+När en kund [&#x200B; valverar, eller sparar, sin kreditkortsinformation](vaulting.md) för framtida inköp i dina butiker, delas minimal kreditkortsinformation med kunden (de fyra sista siffrorna, kortets utgångsdatum och kortets varumärke). Kreditkortsinformation lagras hos betalningsförmedlaren. När ett kort upphör att gälla eller de inte längre behöver informationen sparad, kan de ta bort denna token så att informationen inte längre lagras av betalningsleverantören.
 
 Mer information finns i [Kreditkortssäkringar](vaulting.md).
 
