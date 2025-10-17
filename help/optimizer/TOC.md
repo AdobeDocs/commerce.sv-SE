@@ -4,9 +4,9 @@ user-guide-description: Dokumentation och resurser för  [!DNL Adobe Commerce Op
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b524c75b59984ddfa63ce133a917b9891dd6719f
+source-git-commit: d788c6419831814f2a81229c2354ffc41b637873
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 - [Vad är Adobe Commerce Optimizer?](overview.md)
 - [Kom igång](get-started.md)
-- [Användarhantering](user-management.md)
+- [Hantering av användare och identitet](user-management.md)
 - [Delat ansvar](shared-responsibility.md)
 - [Gränser och begränsningar](boundaries-limits.md)
 - [Versionsinformation](release-notes.md)
@@ -30,23 +30,23 @@ ht-degree: 0%
       - [Skapa och hantera](./merchandising/recommendations/create.md)
       - [Filter](./merchandising/recommendations/filters.md)
       - [Typer](./merchandising/recommendations/types.md)
-      - [Bästa praxis](./merchandising/recommendations/best-practice.md)
+      - [God praxis](./merchandising/recommendations/best-practice.md)
    - Marknadsföringsregler {#rules}
       - [Ökning](./merchandising/rules/overview.md)
       - [Workspace](./merchandising/rules/workspace.md)
       - [Skapa och hantera](./merchandising/rules/add.md)
-      - [Bästa praxis](./merchandising/rules/best-practice.md)
+      - [God praxis](./merchandising/rules/best-practice.md)
    - Fasetter {#facets}
       - [Ökning](./merchandising/facets/overview.md)
       - [Workspace](./merchandising/facets/workspace.md)
       - [Skapa och hantera](./merchandising/facets/add.md)
       - [Typer](./merchandising/facets/type.md)
-      - [Bästa praxis](./merchandising/facets/best-practice.md)
+      - [God praxis](./merchandising/facets/best-practice.md)
    - Synonymer {#synonyms}
       - [Ökning](./merchandising/synonyms/overview.md)
       - [Skapa och hantera](./merchandising/synonyms/add.md)
       - [Typer](./merchandising/synonyms/type.md)
-      - [Bästa praxis](./merchandising/synonyms/best-practice.md)
+      - [God praxis](./merchandising/synonyms/best-practice.md)
 - Butiksinställning {#setup}
    - [Katalogvyer](./setup/catalog-view.md)
    - [Profiler](./setup/policies.md)
@@ -57,7 +57,7 @@ ht-degree: 0%
 - [Storefront](storefront.md)
 - [Inställningar](settings.md)
 - Användningsfall {#use-case}
-   - [Handläggaren Storefront och katalogadministratören - från början till slut](./use-case/admin-use-case.md)
+   - [Användningsexempel från början till slut för Storefront och katalogadministratör](./use-case/admin-use-case.md)
 - Resurser för utvecklare {#developer}
    - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
    - [REST API-referens för datainmatning](https://developer.adobe.com/commerce/services/reference/rest/)

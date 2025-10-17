@@ -1,11 +1,11 @@
 ---
-title: Användarhantering
+title: Användare och Identity Management
 description: Lär dig hur du skapar och hanterar användare och tilldelar användarroller för  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
-source-git-commit: 36a953d4fb0e1e14c7cb88a80f3b59d6fe8eb49e
+source-git-commit: b88406169191cb9d4f0d2b5ef113703f5afcd589
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ Du kan tilldela användare till någon av följande roller:
 
 - **Användare** - Användare har tillgång till användargränssnittet i [!DNL Adobe Commerce Optimizer] för att visa och hantera katalogvyer och försäljningsregler samt spåra prestandamått.
 
-- [**Utvecklare**](https://helpx.adobe.com/se/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Utvecklare har användarbehörigheter och åtkomst till Adobe Developer Console. Det innebär att de kan skapa projekt och konfigurera autentiseringsuppgifter för att använda utvecklarverktyg som [!DNL Adobe Commerce Optimizer] API:er och SDK:er tillsammans med Adobe utökningsverktyg som App Builder och API Mesh.
+- [**Utvecklare**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Utvecklare har användarbehörigheter och åtkomst till Adobe Developer Console. Det innebär att de kan skapa projekt och konfigurera autentiseringsuppgifter för att använda utvecklarverktyg som [!DNL Adobe Commerce Optimizer] API:er och SDK:er tillsammans med Adobe utökningsverktyg som App Builder och API Mesh.
 
 - **Admin** - Det finns tre olika typer av administratörsroller:
-   - [Systemadministratörer](https://helpx.adobe.com/se/enterprise/using/admin-roles.html){target="_blank"} - Systemadministratören har åtkomst till alla produkter och produktprofiler i organisationen via Adobe Admin Console.
+   - [Systemadministratörer](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - Systemadministratören har åtkomst till alla produkter och produktprofiler i organisationen via Adobe Admin Console.
    - [Produktadministratörer](#add-a-product-admin) - Produktadministratörer kan [hantera användare, roller och behörigheter för produkten](#add-users-and-admins) i [!DNL Adobe Admin Console].
    - [Administratörer för produktprofiler](#add-users-developers-and-product-profile-admins) - Administratörer för produktprofiler kan hantera användare för produkten i [!DNL Adobe Admin Console].
 
@@ -143,6 +143,9 @@ Om du vill lägga till utvecklare och produktprofiladministratörer upprepar du 
 
 Du kan lägga till flera användare effektivare med någon av följande metoder:
 
-- Använd funktionen **Lägg till användare via CSV** i Adobe Admin Console för att utföra en [massöverföring via CSV](https://helpx.adobe.com/se/enterprise/using/bulk-upload-users.html){target="_blank"}.
-- Lägg till flera användare i en roll genom att skapa en [användargrupp](https://helpx.adobe.com/se/enterprise/using/user-groups.html){target="_blank"}. Lägg sedan till [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] i användargruppen.
+- Använd funktionen **Lägg till användare via CSV** i Adobe Admin Console för att utföra en [massöverföring via CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
+- Lägg till flera användare i en roll genom att skapa en [användargrupp](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Lägg sedan till [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] i användargruppen.
 
+## Identitetshantering och konfiguration för enkel inloggning
+
+{{ims-identity-and-sso-config}}
