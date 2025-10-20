@@ -1,13 +1,13 @@
 ---
 title: AI-kodningsverktyg för tillägg
 description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-tillägg.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Architect
 hide: true
 hidefromtoc: true
-source-git-commit: e032571ba0dd8a2f71813f9e3114afa3f7d617bf
+source-git-commit: 4ee3a547aa292f3e52cf424e368c9fba12d3e4e0
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Att använda AI-kodningsverktygen ger följande fördelar:
 
 ## Förutsättningar
 
-* [Markör](https://cursor.com/download)
+* En kodningsagent, till exempel [Cursor](https://cursor.com/download)&#x200B;(recommended), [Github Copilot](https://github.com/features/copilot), [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) eller [Claude Code](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download): LTS-version
 * Pakethanteraren: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) eller [garn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): För databaskloning och versionskontroll
@@ -68,6 +68,16 @@ Konfigurationsalternativen visas i installationsprocessen. För installationspla
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
+```
+
+När du väljer kodningsagenten rekommenderar Adobe att du väljer `Cursor` för att få den bästa utvecklingsupplevelsen:
+
+```terminal
+? Which coding agent would you like to use?
+❯ Cursor
+  Copilot
+  Gemini CLI
+  Claude Code
 ```
 
 När du väljer pakethanteraren bör du använda `npm` för konsekvens:
@@ -164,7 +174,7 @@ Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser
