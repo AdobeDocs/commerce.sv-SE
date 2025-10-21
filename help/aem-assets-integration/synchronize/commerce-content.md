@@ -3,9 +3,9 @@ title: Bibehåll korrekt och relevant innehåll
 description: En e-handelsplattform är en av de viktigaste engagemangskanalerna. Genom att säkerställa smidiga uppdateringar i tillgångshanteringssystemet garanterar du att affärshistoriken alltid visar den senaste produktinformationen.
 feature: CMS, Media, Integration
 exl-id: 2c749e84-fcc4-4bf9-90b2-87438329889e
-source-git-commit: 6640635fca5c53fe4b06b9bbb3120fffc46cb0b8
+source-git-commit: 141f2291d1ead324a159053145e92ee7d4237a7d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ Genom att frikoppla framtagning av innehåll från kataloghantering får företa
 * Produktuppdateringarna är fortfarande snabba eftersom det inte tar längre tid att skapa resurser, vilket gör det enklare att hantera nya produkter.
 
 * Automatisering förbättrar effektiviteten och exaktheten och minskar felmatchningar mellan produktdata och tillhörande innehåll.
+
+>[!NOTE]
+>
+> CSV-produktimporter i PaaS och SaaS utlöser inte update-händelser. Använd API:t för katalogimport och -uppdateringar.
 
 ## Ändringar i AEM Assets livscykel
 
