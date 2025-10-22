@@ -3,7 +3,7 @@ title: Hantera resurser
 description: Använd AEM Assets Integration för Commerce för att hantera mediematerial för butiken.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 394a958250fcc9b0d9f672c1daf46a6d7c16a71d
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Kopplingen till den valda bilden kommer att lagras i Adobe Commerce som en direk
 
 >[!TIP]
 >
-> [DA.live (Document Authoring)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=sv-SE#dalive-document-authoring){target=_blank} innehåller också en resursväljare som förbättrar data.
+> [DA.live (Document Authoring)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} innehåller också en resursväljare som förbättrar data.
 
 ## Produktvideor
 
@@ -149,7 +149,7 @@ När du har konfigurerat [AEM Resursväljare](synchronize/asset-selector-integra
 
 1. Klicka på **[!UICONTROL Save]** och fortsätt.
 
-   Mer information om hur du skapar en kategori finns i [Slutför kategoriinnehållet](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) i **Commerce Catalog Management Guide**.
+   Mer information om hur du skapar en kategori finns i [Slutför kategoriinnehållet](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) i **Commerce Catalog Management Guide**.
 
 ## Uppdatera en resurs
 
@@ -157,6 +157,6 @@ När du har uppdaterat och godkänt en mediefil i AEM Assets skickas uppdatering
 
 Mer information finns i följande AEM Assets-dokumentation.
 
-* [Bearbetar digitala resurser](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Bearbetar digitala resurser](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Godkänn en resurs](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Godkänn en resurs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

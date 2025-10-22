@@ -1,10 +1,10 @@
 ---
 title: Migreringsverktyg för massdata
 description: Lär dig hur du använder verktyget för datamigrering (Bulk Data Migration) för att migrera data från din befintliga Adobe Commerce på molninstansen till  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-role: Architect
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+role: Developer
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 6396bc5f4b265e2e13328ec1af3b72c0e8e15c9a
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%

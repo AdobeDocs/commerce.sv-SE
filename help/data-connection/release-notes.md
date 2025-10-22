@@ -3,7 +3,7 @@ title: Versionsinformation
 description: Den senaste versionsinformationen för tillägget  [!DNL Data Connection] från Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 9c10aecb303dd09a85bdafa93d791d30611ec8b2
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 0%
@@ -19,14 +19,14 @@ ht-degree: 0%
 Versionsinformationen innehåller uppdateringar av tillägget [!DNL Data Connection] och innehåller:
 
 ![Nytt](../assets/new.svg) - Nya funktioner
-![Korrigera &#x200B;](../assets/fix.svg) - Korrigeringar och förbättringar
+![Korrigera ](../assets/fix.svg) - Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) - Kända fel
 
 Funktionsändringar och korrigeringar som rör tillägg som används av tillägget [!DNL Data Connection] finns i **Tjänsteuppdateringar som stöds**.
 
-Läs [Kommande releaser](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/planning/schedule) om du vill veta mer om releasescheman och support.
+Läs [Kommande releaser](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) om du vill veta mer om releasescheman och support.
 
-Läs utvecklardokumentationen för att [lära dig vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/product-availability).
+Läs utvecklardokumentationen för att [lära dig vilka Commerce-versioner som stöder den här modulen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Uppdateringar av tjänster som stöds
 
@@ -77,7 +77,7 @@ _30 mars 2023_
 
 _12 oktober 2022_
 
-![Nytt](../assets/new.svg) - Två [storefront-händelser &#x200B;](events.md), `openCart` och `removeFromCart` har lagts till i Adobe Commerce Storefront Events SDK och Collector.
+![Nytt](../assets/new.svg) - Två [storefront-händelser ](events.md), `openCart` och `removeFromCart` har lagts till i Adobe Commerce Storefront Events SDK och Collector.
 ![Nytt](../assets/new.svg) - Stöd har lagts till för en [AEM store](overview.md#aem-support).
 
 +++
@@ -123,7 +123,7 @@ _27 augusti 2024_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"} Adobe Commerce version 2.4.4 och senare
 
-![Nytt](../assets/new.svg) - Om du deltar i betaversionen kontrollerar du att `composer.json`-filen har följande på rotnivån: ` "minimum-stability": "beta"`. Lägg också till `composer require "magento/customers-connector: ^1.2.0"` för att skicka kundprofiler från din Commerce-instans till SaaS.
+![Nytt](../assets/new.svg) - Om du deltar i betaversionen kontrollerar du att `composer.json`-filen har följande på rotnivån: `"minimum-stability": "beta"`. Lägg också till `composer require "magento/customers-connector: ^1.2.0"` för att skicka kundprofiler från din Commerce-instans till SaaS.
 ![Nytt](../assets/new.svg) - Den här versionen innehåller de korrigeringar som släpptes i 3.1.1, 3.1.2, 3.1.3 och 3.1.4.
 
 ## 3.1.4
@@ -166,7 +166,7 @@ _4 mars 2024_
 
 [!BADGE Kompatibilitet]{type=Informative tooltip="Kompatibilitet"} Adobe Commerce version 2.4.4 och senare
 
-![Nytt](../assets/new.svg) - Om du deltar i betaversionen kontrollerar du att `composer.json`-filen har följande på rotnivån: ` "minimum-stability": "beta"`. Lägg också till `composer require "magento/customers-connector: ^1.2.0"` för att skicka kundprofiler från din Commerce-instans till SaaS.
+![Nytt](../assets/new.svg) - Om du deltar i betaversionen kontrollerar du att `composer.json`-filen har följande på rotnivån: `"minimum-stability": "beta"`. Lägg också till `composer require "magento/customers-connector: ^1.2.0"` för att skicka kundprofiler från din Commerce-instans till SaaS.
 ![Nytt](../assets/new.svg) - Lagt till möjlighet att [lägga till anpassade attribut](custom-attributes.md).
 ![Nytt](../assets/new.svg) - Lagt till möjlighet att [samla in och skicka profilposter](connect-data.md#send-customer-profile-data) och data till Experience Platform.
 

@@ -1,9 +1,9 @@
 ---
 title: Översikt över ansikten
 description: Lär dig mer om aspekter i [!DNL Adobe Commerce Optimizer] och hur de förbättrar sökresultaten.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -52,7 +52,7 @@ I följande tabell visas standardegenskaperna för sökning och filtrering av at
 | räntekrage | Ja |
 | färg | Ja |
 | kostnad | Ja |
-| eco_collection |
+| eco_collection |  |
 | kön | Ja |
 | tillverkare | Ja |
 | material | Ja |

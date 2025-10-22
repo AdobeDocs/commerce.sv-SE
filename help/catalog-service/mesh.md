@@ -4,7 +4,7 @@ description: '[!DNL API Mesh] för Adobe Commerce erbjuder ett sätt att integre
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
-source-git-commit: ca0b2b2a158b9a376724b30c80a6bf9a60e3d1ba
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Med API Mesh kan användare använda andra datakällor för att förbättra din 
 ### Aktivera nivåpriser
 
 I det här exemplet används API-nät för att aktivera nivåpriser i Adobe Commerce.
-Ersätt värdena `name `, `endpoint` och `x-api-key`.
+Ersätt värdena `name`, `endpoint` och `x-api-key`.
 
 ```json
 {
@@ -165,7 +165,7 @@ query {
 
 ### Hämta ett enhets-ID
 
-Det här nätet lägger till `entityId` i ProductView-gränssnittet. Ersätt värdena `name `, `endpoint` och `x-api-key`.
+Det här nätet lägger till `entityId` i ProductView-gränssnittet. Ersätt värdena `name`, `endpoint` och `x-api-key`.
 
 ```json
 {

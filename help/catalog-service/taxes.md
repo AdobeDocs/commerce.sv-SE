@@ -3,7 +3,8 @@ title: Visa taxerade priser med API-nät
 description: Använd  [!DNL API Mesh] för Adobe Commerce och katalogtjänsten om du vill visa priser inklusive moms.
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -20,8 +21,8 @@ I det här avsnittet används API Mesh för att visa produktpriser på en produk
 
 Du måste ha konfigurerade skatter för att de ska kunna visas på produktinformationssidan.
 
-1. [Ställ in momssatser](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=sv-SE).
-1. Aktivera att skatter [visas i katalogen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=sv-SE#step-1%3A-configure-catalog-prices-display-settings) och ange den till antingen `Including and Excluding Tax` eller `Including Tax`.
+1. [Ställ in momssatser](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
+1. Aktivera att skatter [visas i katalogen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) och ange den till antingen `Including and Excluding Tax` eller `Including Tax`.
 
 Kontrollera att katalogtjänsten fungerar genom att kontrollera en produktinformationssida.
 
@@ -31,7 +32,7 @@ Kontrollera att katalogtjänsten fungerar genom att kontrollera en produktinform
 
 Om det inte redan är gjort ansluter du API-nät med katalogtjänsten till din instans. Mer information finns i avsnittet [Komma igång](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) i Utvecklarhandbok för API-nät.
 
-Ersätt värdena `name `, `endpoint` och `x-api-key` i filen `mesh.json`.
+Ersätt värdena `mesh.json`, `name` och `endpoint` i filen `x-api-key`.
 
 ```json
 {

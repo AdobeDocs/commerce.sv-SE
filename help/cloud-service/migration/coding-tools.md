@@ -1,11 +1,11 @@
 ---
 title: AI-kodningsverktyg för tillägg
 description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-tillägg.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-role: Architect
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 4ee3a547aa292f3e52cf424e368c9fba12d3e4e0
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1454'
 ht-degree: 0%
@@ -174,7 +174,7 @@ Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser

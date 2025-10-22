@@ -2,10 +2,10 @@
 title: '[!DNL Adobe Commerce as a Cloud Service] - översikt'
 description: Läs om de viktigaste funktionerna och fördelarna med  [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
-role: Admin, Architect, Developer, User, Leader
+role: Admin, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: c72c2dbe15534b4b4ed6eae9a1b2b32f8ddd72cd
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 0%
@@ -58,21 +58,21 @@ I följande tabell visas vilka produkter som fungerar som [!DNL Adobe Commerce a
 
 I följande video visas en kort introduktion till arkitekturen [!DNL Adobe Commerce as a Cloud Service]. Bilder som illustrerar arkitekturen visas nedanför videon.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443271?learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 I det här diagrammet visas dataflödet mellan [!DNL Adobe Commerce as a Cloud Service] och alla Adobe Experience Cloud-lösningar.
 
-![[!DNL Adobe Commerce as a Cloud Service]-arkitekturdiagram &#x200B;](./assets/data-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service]-arkitekturdiagram ](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce Storefront
 
-Använd Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=sv-SE) från Edge Delivery Services för att skapa avancerade upplevelser på några minuter med enkel dokumentbaserad redigering eller visuell redigering med Storefront Builder.
+Använd Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) från Edge Delivery Services för att skapa avancerade upplevelser på några minuter med enkel dokumentbaserad redigering eller visuell redigering med Storefront Builder.
 
 Commerce Storefront är helt headless med en frikopplad arkitektur som ger alla marknadsföringstjänster och data via ett GraphQL API-lager. Med denna arkitektur kan teamen utveckla sina gränser oberoende av Commerce Foundation, vilket gör det enkelt att skapa och testa nya kontaktytor med ny teknik.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] har inte stöd för Luma-butiker. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=sv-SE#existing-storefronts) för mer information om övergångar.
+>[!DNL Adobe Commerce as a Cloud Service] har inte stöd för Luma-butiker. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) för mer information om övergångar.
 
 ## Marknadsföringstjänster och betaltjänster
 
@@ -197,7 +197,7 @@ Utvecklare kan använda omfattande [GraphQL](https://developer.adobe.com/commerc
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/sv/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 

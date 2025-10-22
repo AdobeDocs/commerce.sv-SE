@@ -3,8 +3,8 @@ title: Användningsexempel
 description: Lär dig hur du kan uppnå praktiska användningsfall och affärsscenarier som stöds med  [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 0%
@@ -198,7 +198,7 @@ Tänk dig ett scenario där du snabbt vill ändra bakgrunden i en produktbild. M
 
 #### Lägg till bilden i Commerce AEM Assets
 
-1. På [navigeringspanelen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) i AEM as a Cloud Service väljer du **Assets** > **Filer** > **Commerce** och klickar på resursen som du skapade i föregående avsnitt.
+1. På [navigeringspanelen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) i AEM as a Cloud Service väljer du **Assets** > **Filer** > **Commerce** och klickar på resursen som du skapade i föregående avsnitt.
 
    ![e-handelsmapp](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ Adobe Commerce Generate Variations använder generativ AI för att automatisera 
 
 ### Generera text
 
-1. Öppna din butiksplats med [Universal Editor](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Öppna din butiksplats med [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Markera det textblock som du vill redigera.
 
@@ -262,7 +262,7 @@ Adobe Commerce Generate Variations använder generativ AI för att automatisera 
 
 ### Generera innehåll och bilder
 
-1. Öppna [Generera variationer](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Öppna [Generera variationer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Välj mallen [!UICONTROL **Hero Banner**].
 
@@ -274,7 +274,7 @@ Adobe Commerce Generate Variations använder generativ AI för att automatisera 
 
 1. Välj en innehållsvariant och klicka på [!UICONTROL **Generera bild**].
 
-1. Välj [!UICONTROL **Bredbild (16**]) [!UICONTROL **i listrutan :9Bildstorlek**].
+1. Välj [!UICONTROL **Bredbild (16**])[!UICONTROL **i listrutan :9Bildstorlek**].
 
 1. Välj [!UICONTROL **Foto**] i listrutan [!UICONTROL **Innehållstyp**].
 
@@ -290,30 +290,36 @@ Adobe Commerce Generate Variations använder generativ AI för att automatisera 
 Använd följande förslag för att lösa eventuella problem du stöter på när du provar dessa självstudiekurser.
 
 * Om du behöver hjälp med kommandon eller flaggor:
+
    1. Kör `aio --help` om du vill visa alla tillgängliga kommandon och flaggor.
    1. Använd flaggan `--help` för specifika kommandon. Exempel:
       * `aio console --help`
       * `aio commerce –help`
 
 * Om du stöter på ogiltiga inloggningsproblem:
-   1. Kör `aio config clear `.
-   1. Kör `aio auth login –-force `.
+
+   1. Kör `aio config clear`.
+   1. Kör `aio auth login –-force`.
    1. Logga in i webbläsaren.
    1. Välj din profil.
    1. Växla tillbaka till terminalen för att fortsätta.
 
 * Om ditt `init`-kommando misslyckas:
+
    1. Kör `aio api-mesh delete`.
    1. Kör `aio commerce init` igen.
 
 * Om du valde fel organisation, projekt eller arbetsyta innan du kör kommandot `init`:
+
    1. Kör `aio console org select`.
    1. Kör `aio console project select`.
    1. Kör `aio console workspace select`.
 
 * Om du har en ogiltig klientorganisation:
+
    1. Avbryt den aktuella CLI-körningen genom att trycka på **Ctrl-C**.
    1. Kör `aio commerce init`.
 
 * Om en ogiltig API Mesh-installation påträffas:
+
    * Kör `aio api-mesh update mesh-config.json`.
