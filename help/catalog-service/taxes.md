@@ -21,8 +21,8 @@ I det här avsnittet används API Mesh för att visa produktpriser på en produk
 
 Du måste ha konfigurerade skatter för att de ska kunna visas på produktinformationssidan.
 
-1. [Ställ in momssatser](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
-1. Aktivera att skatter [visas i katalogen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) och ange den till antingen `Including and Excluding Tax` eller `Including Tax`.
+1. [Ställ in momssatser](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=sv-SE).
+1. Aktivera att skatter [visas i katalogen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=sv-SE#step-1%3A-configure-catalog-prices-display-settings) och ange den till antingen `Including and Excluding Tax` eller `Including Tax`.
 
 Kontrollera att katalogtjänsten fungerar genom att kontrollera en produktinformationssida.
 

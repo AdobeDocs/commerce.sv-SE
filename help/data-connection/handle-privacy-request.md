@@ -17,21 +17,21 @@ Adobe Experience Platform Privacy Service tillhandahåller ett RESTful-API och a
 
 Mer information om Privacy Service och hur du skapar och hanterar sekretessförfrågningar finns i Adobe Experience Platform dokumentation:
 
-* [Privacy Service - översikt](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
-* [Hantera sekretessjobb i Privacy Service UI](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide)
+* [Privacy Service - översikt](https://experienceleague.adobe.com/sv/docs/experience-platform/privacy/home)
+* [Hantera sekretessjobb i Privacy Service UI](https://experienceleague.adobe.com/sv/docs/experience-platform/privacy/ui/user-guide)
 
 ## Hantera individuella förfrågningar om datasekretess
 
 Du kan skicka enskilda förfrågningar för att få åtkomst till och ta bort konsumentdata från [!DNL Commerce] på två sätt:
 
-* Via **Privacy Service-gränssnittet**. Se dokumentationen [här](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
+* Via **Privacy Service-gränssnittet**. Se dokumentationen [här](https://experienceleague.adobe.com/sv/docs/experience-platform/privacy/ui/user-guide#_blank).
 * Via **Privacy Service API**. Se dokumentationen [här](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) och API-information [här](https://developer.adobe.com/experience-platform-apis/#_blank).
 
 Privacy Service stöder två typer av förfrågningar: **dataåtkomst** och **dataradering**.
 
 >[!NOTE]
 >
->Den här artikeln fokuserar på att göra sekretessförfrågningar för [!DNL Commerce]. Om du planerar att göra sekretessförfrågningar för [Platform data Lake](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy), [Real-Time Customer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) eller [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy), se deras respektive användarhandböcker. Observera att begäranden om borttagning och åtkomst måste göras till varje system för sig, eftersom en sekretessförfrågan till Commerce inte tar bort data från alla dessa system.
+>Den här artikeln fokuserar på att göra sekretessförfrågningar för [!DNL Commerce]. Om du planerar att göra sekretessförfrågningar för [Platform data Lake](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/privacy), [Real-Time Customer Profile](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/privacy) eller [Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/privacy), se deras respektive användarhandböcker. Observera att begäranden om borttagning och åtkomst måste göras till varje system för sig, eftersom en sekretessförfrågan till Commerce inte tar bort data från alla dessa system.
 
 ## Dataåtkomst
 
@@ -39,7 +39,7 @@ För **åtkomstbegäranden** anger du&quot;Commerce (Personalization)&quot; i an
 
 ## Borttagning av data
 
-För borttagningsbegäranden tar Privacy Service bort [!DNL Commerce] data som lagras i Commerce SaaS-tjänster för marknadsföringsändamål, vilket innebär att profiler och order för de registrerade inte längre skickas till Adobe marknadsföringsprogram för användning i kampanjer och kundresor. Privacy Service tar dock inte bort data i programmet [!DNL Commerce] eftersom det kan behövas för handelstransaktionsbehov. Handlare ansvarar för alla begäranden om borttagning/åtkomst av data i programmet [!DNL Commerce]. Mer information finns i [Delad ansvarssäkerhet och driftsmodell](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility).
+För borttagningsbegäranden tar Privacy Service bort [!DNL Commerce] data som lagras i Commerce SaaS-tjänster för marknadsföringsändamål, vilket innebär att profiler och order för de registrerade inte längre skickas till Adobe marknadsföringsprogram för användning i kampanjer och kundresor. Privacy Service tar dock inte bort data i programmet [!DNL Commerce] eftersom det kan behövas för handelstransaktionsbehov. Handlare ansvarar för alla begäranden om borttagning/åtkomst av data i programmet [!DNL Commerce]. Mer information finns i [Delad ansvarssäkerhet och driftsmodell](https://experienceleague.adobe.com/sv/docs/commerce-operations/security-and-compliance/shared-responsibility).
 
 [!DNL Commerce] meddelar handlare om raderingsbegäranden genom att skicka information till dem för registrerade som begär att vissa data ska tas bort.
 
@@ -50,7 +50,7 @@ För borttagningsbegäranden tar Privacy Service bort [!DNL Commerce] data som l
 Om du vill göra förfrågningar om åtkomst och borttagning av data för Adobe [!DNL Commerce] måste du ha:
 
 * ett IMS-organisations-ID
-* En identifierare för den person som du vill agera på och motsvarande namnutrymme. Mer information om identitetsnamnutrymmen i Adobe [!DNL Commerce] och Experience Platform finns i [översikten över identitetsnamnrymden](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+* En identifierare för den person som du vill agera på och motsvarande namnutrymme. Mer information om identitetsnamnutrymmen i Adobe [!DNL Commerce] och Experience Platform finns i [översikten över identitetsnamnrymden](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
 
 ### Exempel på GDPR-begäran/borttagning av åtkomst:
 
@@ -64,8 +64,8 @@ Kontrollera att kryssrutan Commerce (Personalization) är aktiverad för **bortt
 
 Om du vill skicka åtkomst- och borttagningsbegäranden via sekretess-API:t måste du autentisera och hantera behörigheter för Privacy Service:
 
-* [Autentisera och få åtkomst till Privacy Service API](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/getting-started)
-* [Hantera behörigheter för Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions)
+* [Autentisera och få åtkomst till Privacy Service API](https://experienceleague.adobe.com/sv/docs/experience-platform/privacy/api/getting-started)
+* [Hantera behörigheter för Privacy Service](https://experienceleague.adobe.com/sv/docs/experience-platform/privacy/permissions)
 
 **Obligatoriska rubriker**
 
