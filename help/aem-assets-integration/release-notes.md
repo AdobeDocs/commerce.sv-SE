@@ -15,7 +15,7 @@ ht-degree: 0%
 Denna versionsinformation beskriver den första versionen av AEM Assets Integration och innehåller:
 
 ![Nya](../assets/new.svg) nya funktioner
-![ Åtgärdat problem ](../assets/fix.svg) Korrigeringar och förbättringar
+![&#x200B; Åtgärdat problem &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Kända fel](../assets/bug.svg)
 
 Om du vill se funktionsändringar och korrigeringar som släppts utanför den vanliga versionen av funktionen går du igenom avsnitten _Uppdateringar för värdtjänsten_.
