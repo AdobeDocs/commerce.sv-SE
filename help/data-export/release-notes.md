@@ -30,7 +30,7 @@ Bland uppdateringarna finns:
 
 ## 103.4.15 Utgåva
 
-![Nytt](../assets/new.svg) Stöd för statustillägget Synkronisering av dataflöden har lagts till för att övervaka och felsöka dataöverföringar från Adobe Commerce till anslutna tjänster (katalogtjänst, Live Search och produktrekommendationer). Mer information om hur du installerar och använder det här tillägget finns i [Statusövervakning för synkronisering av dataflöden](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) i *Commerce Admin Guide*. <!--MDEE-954-->
+![Nytt](../assets/new.svg) Stöd för statustillägget Synkronisering av dataflöden har lagts till för att övervaka och felsöka dataöverföringar från Adobe Commerce till anslutna tjänster (katalogtjänst, Live Search och produktrekommendationer). Mer information om hur du installerar och använder det här tillägget finns i [Statusövervakning för synkronisering av dataflöden](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=sv-SE) i *Commerce Admin Guide*. <!--MDEE-954-->
 
 ## 103.4.14 Utgåva
 
