@@ -111,7 +111,7 @@ Det är viktigt att fastställa en genomtänkt standardregel för sökning. Din 
 - Prioritera lite produkter med högre vinstmarginaler utan att kompromissa med relevansen.
 - Markera produkter som säljs eller ingår i specialerbjudanden.
 - Ange sökregler under kampanjen eller försäljningsperioderna automatiskt genom att använda datumintervallet under kampanjperioden.
-- Skräddarsy sökresultat baserat på den enskilda kundens beteende med hjälp av [intelligent rankning](rules-add.md#intelligent-ranking), t.ex.&quot;Rekommenderas för dig&quot;,&quot;Visas bäst&quot; osv. För att skräddarsy kundernas beteende måste ni se till att eventeringen implementeras på rätt sätt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
+- Skräddarsy sökresultat baserat på den enskilda kundens beteende med hjälp av [intelligent rankning](rules-add.md#intelligent-ranking), t.ex.&quot;Rekommenderas för dig&quot;,&quot;Visas bäst&quot; osv. För att skräddarsy kundernas beteende måste ni se till att eventeringen implementeras på rätt sätt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
 
 Läs mer om sökregler:
 
@@ -177,4 +177,4 @@ Du kan använda dessa mätdata för att optimera sökfunktionen på följande s�
 - Analysera populära söktermer och produktdata för att identifiera viktiga nyckelord. Optimera dina produktsökbara attribut med dessa nyckelord för att förbättra sökrelevansen.
 - Analysera regelbundet era resultatdata för att förstå förändrade trender, kundernas preferenser och beteende, identifiera de viktigaste söktermerna och identifiera problem. Använd den här feedbackslingan för att kontinuerligt förfina och förbättra dina sökregler och produkterbjudanden
 
-Om du vill hämta korrekta data i din [!DNL Live Search]-rapport måste du se till att händelser implementeras korrekt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
+Om du vill hämta korrekta data i din [!DNL Live Search]-rapport måste du se till att händelser implementeras korrekt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
