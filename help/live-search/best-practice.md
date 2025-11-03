@@ -3,9 +3,9 @@ title: '[!DNL Live Search] metodtips'
 description: Lär dig de bästa sätten att implementera [!DNL Live Search] i din butik.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
+source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Om du vill hantera [!DNL Live Search] går du till **Marknadsföring** > *SEO &a
 
 ## Optimera sökfunktionerna
 
-I det här avsnittet får du lära dig att optimera sökfunktionen genom att använda funktioner som Autocomplete för att ge realtidsförslag som kundtyp, synonymer och stavningar för att se till att kunderna hittar produkter även om de använder olika ord, facets för att begränsa sökresultaten och sökomdirigeringar för att automatiskt dirigera om kunderna från en sökfråga till en viss sida.
+I det här avsnittet får du lära dig hur du optimerar sökfunktionen genom att använda funktioner som Autocomplete för att ge realtidsförslag som kundtyp, synonymer och stavningar för att se till att kunderna hittar produkter även om de använder olika ord, och ansikten för att begränsa sökresultaten.
 
 ### Komplettera automatiskt
 
@@ -85,24 +85,6 @@ Läs mer om ansikten:
 - [Hantera ansikten](facets-manage.md) (redigera, fästa en fasett, ta bort, publicera)
 - [Prisfakturor](settings.md#price-faceting)
 
-### Sökomdirigeringar
-
-Med omdirigering av sökningar kan du automatiskt dirigera om kunder från en sökfråga till en viss sida. Sökomdirigeringar kan förbättra kundupplevelsen och vägleda kunderna till det mest relevanta innehållet, till exempel en produktsida, kategori, landningssida eller en skräddarsydd uppsättning sökresultat. Sökomdirigeringar effektiviserar shoppingupplevelsen och ser till att kunderna hittar det de söker snabbt och effektivt.
-
-Rekommenderade användningsexempel för att konfigurera sökomdirigeringar:
-
-- **Populära produkter eller kategorier** - Omdirigera kunder till en specifik produktsida eller produktkategori när de söker efter vanliga eller populära termer. Om du till exempel söker efter&quot;iPhone&quot; kan du omdirigera till iPhone kategorisida eller en viss modellsida.
-
-- **Kampanjkampanjer** - Omdirigera relevanta söktermer till landningssidor där specialerbjudanden eller aktuella produkter markeras under kampanjevent eller försäljning.
-
-- **Varumärkessökningar** - När kunderna söker efter ett varumärke kan du dirigera om dem till varumärkets dedikerade sida där alla produkter från det varumärket listas.
-
-- **Produktavbrott** - Om en produkt avbryts kan du omdirigera sökningar efter den produkten till liknande produkter eller den nya versionen av produkten.
-
-Testa alltid sökomdirigeringar för att kontrollera att de fungerar som de ska och leder till de mest relevanta sidorna. Övervaka kontinuerligt deras prestanda och gör justeringar efter behov.
-
-Lär dig hur du [hanterar sökomdirigeringar](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search-terms).
-
 ## Förbättra relevansen i sökresultatet
 
 I det här avsnittet beskrivs hur du förbättrar sökresultatens relevans genom att implementera effektiva sökregler och använda produktmetadata för att säkerställa att korrekta och detaljerade attribut är sökbara.
@@ -129,7 +111,7 @@ Det är viktigt att fastställa en genomtänkt standardregel för sökning. Din 
 - Prioritera lite produkter med högre vinstmarginaler utan att kompromissa med relevansen.
 - Markera produkter som säljs eller ingår i specialerbjudanden.
 - Ange sökregler under kampanjen eller försäljningsperioderna automatiskt genom att använda datumintervallet under kampanjperioden.
-- Skräddarsy sökresultat baserat på den enskilda kundens beteende med hjälp av [intelligent rankning](rules-add.md#intelligent-ranking), t.ex.&quot;Rekommenderas för dig&quot;,&quot;Visas bäst&quot; osv. För att skräddarsy kundernas beteende måste ni se till att eventeringen implementeras på rätt sätt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
+- Skräddarsy sökresultat baserat på den enskilda kundens beteende med hjälp av [intelligent rankning](rules-add.md#intelligent-ranking), t.ex.&quot;Rekommenderas för dig&quot;,&quot;Visas bäst&quot; osv. För att skräddarsy kundernas beteende måste ni se till att eventeringen implementeras på rätt sätt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
 
 Läs mer om sökregler:
 
@@ -155,7 +137,7 @@ Se till att varje produkt har relevant innehåll inom varje sökbart attribut. D
 Läs mer om produktattribut för sökning:
 
 - [Ange attribut som sökbara](workspace.md#set-attributes-as-searchable)
-- [Tilldela bredd till attribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Tilldela bredd till attribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Övervaka sökresultat
 
@@ -182,7 +164,6 @@ Du kan övervaka dessa KPI:er på [!DNL Live Search] [prestandaarbetsytan](perfo
   Om du vill minska nollresultatfrekvensen kan du:
 
    - Erbjud alternativa eller relaterade söktermer, till exempel [synonymer](synonyms.md), när inga exakta träffar hittas.
-   - Ge kunderna relaterade eller alternativa förslag när sökningen inte ger några resultat genom att ange sökomdirigeringar.
    - Granska regelbundet nollresultatfrågor för att identifiera mönster och göra nödvändiga justeringar i produktkatalogen och sökinställningarna.
 
 - **Populära resultat** - Kan förbättra dina sökresultat avsevärt genom att anpassa dem till kundernas preferenser och beteenden.
@@ -196,4 +177,4 @@ Du kan använda dessa mätdata för att optimera sökfunktionen på följande s�
 - Analysera populära söktermer och produktdata för att identifiera viktiga nyckelord. Optimera dina produktsökbara attribut med dessa nyckelord för att förbättra sökrelevansen.
 - Analysera regelbundet era resultatdata för att förstå förändrade trender, kundernas preferenser och beteende, identifiera de viktigaste söktermerna och identifiera problem. Använd den här feedbackslingan för att kontinuerligt förfina och förbättra dina sökregler och produkterbjudanden
 
-Om du vill hämta korrekta data i din [!DNL Live Search]-rapport måste du se till att händelser implementeras korrekt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
+Om du vill hämta korrekta data i din [!DNL Live Search]-rapport måste du se till att händelser implementeras korrekt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.

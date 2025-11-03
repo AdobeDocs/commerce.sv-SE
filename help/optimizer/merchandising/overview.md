@@ -2,9 +2,9 @@
 title: Merchandising Overview
 description: Läs mer om marknadsföringsfunktioner i  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: 17d1872321e664ca58a702b0948fd5e6d2f33202
+source-git-commit: 5f6c7e68d330a063fbdb2fce1aeb86a08cf25a80
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%

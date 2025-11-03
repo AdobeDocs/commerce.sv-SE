@@ -1,11 +1,11 @@
 ---
 title: Sökprestanda
 description: På sidan Sökprestanda får du insikt i de söktermer som kunderna använder.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1837'
 ht-degree: 0%
 
 ---
@@ -136,3 +136,41 @@ Läs mer om produktattribut för sökning:
 | Nollresultat | Visar en lista över sökfrågor som inte returnerar några resultat och det antal gånger som används under det angivna datumintervallet. Rapportgräns: De 500 vanligaste villkoren |
 | Populära resultat | Visar namnen på de produkter som har fått flest vyer under det angivna datumintervallet. Populära resultat beräknas endast utifrån visningar och påverkas inte av antalet klick eller genererade intäkter. Rapportgräns: De 500 vanligaste villkoren |
 | Unika sökningar | Visar en lista med unika sökfrågor som används under det angivna datumintervallet. Rapportdata beräknas på samma sätt som unika data för ögonblicksbilder av sökningar. Om en kund skriver samma sökfråga två gånger, men med mer än en timmes mellanrum, betraktas sökningen som två unika sökningar. Rapportgräns: De 500 vanligaste villkoren |
+
+## Standardegenskaper för icke-systemattribut
+
+I följande tabell visas standardegenskaperna för sökning och filtrering av attribut som inte är systemattribut. Om du anger attributegenskapen *Använd i sökning* till `Yes` blir attributet sökbart i [!DNL Adobe Commerce Optimizer].
+
+| Attributkod | Sökbart |
+|--- |--- |
+| aktivitet | Ja |
+| attributes_brand | Ja |
+| varumärke | Ja |
+| klimat | Ja |
+| räntekrage | Ja |
+| färg | Ja |
+| kostnad | Ja |
+| eco_collection |  |
+| kön | Ja |
+| tillverkare | Ja |
+| material | Ja |
+| syfte | Ja |
+| strap_bag | Ja |
+| style_general | Ja |
+
+## Standardegenskaper för systemattribut
+
+I följande tabell visas standardegenskaperna för sökning och filterbarhet för systemattribut.
+
+| Attributkod | Sökbart |
+|--- |--- |
+| allow_open_amount | Ja |
+| description | Ja |
+| name | Ja |
+| pris | Ja |
+| short_description | Ja |
+| sku | Ja |
+| status | Ja |
+| tax_class_id | Ja |
+| url_key | Ja |
+| vikt | Ja |

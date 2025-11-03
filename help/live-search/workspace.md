@@ -2,9 +2,9 @@
 title: Konfigurera Live Search
 description: Arbetsytan  [!DNL Live Search] används för att konfigurera, hantera och övervaka sökprestanda.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
+source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '1990'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ Om du använder en headless-butik kan du läsa följande dokumentation för att 
 
 ### Sjukvårdskunder
 
-Om du är vårdkund och har installerat [Data Services HIPAA-tillägget](../data-connection/hipaa-readiness.md#installation), som ingår i [dataanslutningen](../data-connection/overview.md) , hämtas inte längre data för händelsen storefront som används av [!DNL Live Search]. Detta beror på att händelsedata för storefront genereras på klientsidan. Om du vill fortsätta att hämta och skicka data för butikshändelser aktiverar du händelseinsamlingen för [!DNL Live Search] igen. Mer information finns i [allmän konfiguration](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/general/general#data-services).
+Om du är vårdkund och har installerat [Data Services HIPAA-tillägget](../data-connection/hipaa-readiness.md#installation), som ingår i [dataanslutningen](../data-connection/overview.md) , hämtas inte längre data för händelsen storefront som används av [!DNL Live Search]. Detta beror på att händelsedata för storefront genereras på klientsidan. Om du vill fortsätta att hämta och skicka data för butikshändelser aktiverar du händelseinsamlingen för [!DNL Live Search] igen. Mer information finns i [allmän konfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
 
 ## Ange omfånget
 
-Inledningsvis är [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE#scope-settings) för alla [!DNL Live Search]-inställningar inställda på `Default Store View`. Om din [!DNL Commerce]-installation innehåller flera butiksvyer anger du **Scope** till den [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE) där dina facet-inställningar gäller.
+Inledningsvis är [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) för alla [!DNL Live Search]-inställningar inställda på `Default Store View`. Om din [!DNL Commerce]-installation innehåller flera butiksvyer anger du **Scope** till den [butiksvy](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) där dina facet-inställningar gäller.
 
 ## Menyalternativ
 
@@ -50,7 +50,7 @@ Inledningsvis är [scope](https://experienceleague.adobe.com/docs/commerce-admin
 
 ## Ange attribut som sökbara
 
-Granska uppsättningen med [sökbara](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=sv-SE) (`searchable=true`) produktattribut om du vill skapa målinriktade resultat. Gör attributen sökbara för att säkerställa relevans om de innehåller innehåll som har en tydlig och koncis betydelse. Undvik att använda attribut som innehåller mindre exakt, lång text, till exempel `description`, som kan minska precisionen i sökresultaten även om sökfunktionen är aktiverad som standard. Om en person t.ex. söker efter &quot;kortfilmer&quot; och det finns skjortor med en beskrivning som innehåller ordet &quot;kortärmar&quot;, kommer skjortorna att inkluderas i sökresultaten.
+Granska uppsättningen med [sökbara](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) produktattribut om du vill skapa målinriktade resultat. Gör attributen sökbara för att säkerställa relevans om de innehåller innehåll som har en tydlig och koncis betydelse. Undvik att använda attribut som innehåller mindre exakt, lång text, till exempel `description`, som kan minska precisionen i sökresultaten även om sökfunktionen är aktiverad som standard. Om en person t.ex. söker efter &quot;kortfilmer&quot; och det finns skjortor med en beskrivning som innehåller ordet &quot;kortärmar&quot;, kommer skjortorna att inkluderas i sökresultaten.
 
 Om du vill tillåta att attribut kan sökas igenom utför du följande steg:
 
@@ -58,7 +58,7 @@ Om du vill tillåta att attribut kan sökas igenom utför du följande steg:
 1. Välj det attribut som du vill ska vara sökbart, till exempel `color`.
 1. Välj **Egenskaper för Storefront** och ange **Använd i sökning** till `yes`.
 
-[!DNL Live Search] respekterar också [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=sv-SE#weighted-search) för ett produktattribut, som angetts i Adobe Commerce. Attribut med högre vikt visas högre i sökresultatet.
+[!DNL Live Search] respekterar också [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) för ett produktattribut, som angetts i Adobe Commerce. Attribut med högre vikt visas högre i sökresultatet.
 
 Följande attribut är alltid sökbara:
 
@@ -79,7 +79,7 @@ Med sökning i flera lager kan du
 - Gör det möjligt för kunderna att söka i sökresultaten.
 - Använd `startsWith` och `contains` sökindexering i det andra lagret i sökningen med lager om du vill förfina resultatet ytterligare.
 
-De avancerade sökfunktionerna implementeras via parametern `filter` i [`productSearch` query &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) med hjälp av specifika operatorer:
+De avancerade sökfunktionerna implementeras via parametern `filter` i [`productSearch` query ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) med hjälp av specifika operatorer:
 
 - **Skiktad sökning** - Sök i ett annat söksammanhang - Med den här funktionen kan du utföra upp till två söklager för dina sökfrågor. Exempel:
 
@@ -103,9 +103,9 @@ De här nya villkoren förbättrar funktionen för filtrering av sökfrågor fö
 
 #### Implementering
 
-1. I Admin anger [ett produktattribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) som sökbart.
+1. I Admin anger [ett produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) som sökbart.
 
-   Se listan med sökbara [attribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
+   Se listan med sökbara [attribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
 
 1. Ange sökfunktionen för det attributet, till exempel **Innehåller** (standard) eller **Börjar med**. Du kan ange högst sex attribut som ska aktiveras för **Innehåller** och sex attribut som ska aktiveras för **Börjar med**. Dessutom är stränglängden begränsad till högst 50 tecken för indexeringen **Innehåller**.
 
@@ -180,13 +180,9 @@ Priserna på Widget Product Listing Page och Popover konverteras till standardvi
 | Configuration > Sales > Tax > Price Display Settings > Display Product Prices in Catalog | Avgör om produktpriser som publiceras i katalogen innehåller eller exkluderar moms eller visar två versioner av priset; den ena med och den andra utan moms |  |
 | Stores > Configuration > Catalog > Storefront > Product Listing Sort By | Bestämmer sorteringsordningen i sökresultatlistan. | Gäller inte för [!DNL Live Search] [Sidwidgeten Produktlista](plp-styling.md) |
 
-### Sökvillkor
-
-[!DNL Live Search] har stöd för [omdirigering av söktermer](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=sv-SE) i implementeringar där Adobe Commerce hanterar routningen, t.ex. Luma och andra PHP-baserade teman.
-
 ## Standardattributvärden
 
-Följande produktattribut har [storefront-egenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=sv-SE) som används av [!DNL Live Search] och är aktiverade som standard.
+Följande produktattribut har [storefront-egenskaper](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) som används av [!DNL Live Search] och är aktiverade som standard.
 
 | Egenskap | Storefront-egenskap | Attribut |
 |---|---|---|
