@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Med den nya kopplingen får du tillförlitliga funktioner för datasynkronisering och den flexibilitet som krävs för att anpassa arbetsflöden efter företagets behov.
 
-En komplett videosjälvstudiekurs finns i [Lär dig mer om startsatsen för Salesforce Commerce ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+En komplett videosjälvstudiekurs finns i [Lär dig mer om startsatsen för Salesforce Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Nyckelfunktioner
 
