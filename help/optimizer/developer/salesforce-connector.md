@@ -2,9 +2,9 @@
 title: Salesforce Commerce Connector
 description: Lär dig mer om  [!DNL Commerce Optimizer SFCC Connector] som är en startpunkt för integrering av Salesforce Commerce B2C med [!DNL Adobe Commerce Optimizer] för synkronisering av katalogdata och för implementering och anpassning av kopplingen för att stödja affärsåtgärder.
 role: Admin, Developer
-source-git-commit: f3da99ec4d2c518748d0911d6cf5d2d89ab45a47
+source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 [!DNL Commerce Optimizer Salesforce Commerce Connector] bygger på Adobe App Builder-teknik och möjliggör smidig överföring och hantering av katalogdata från Salesforce Commerce Cloud B2C till [!DNL Adobe Commerce Optimizer]. Programmet överbryggar de båda plattformarna och håller produktinformation, priser och uppdateringar synkade utan att man behöver göra om plattformen.
 
 Med den nya kopplingen får du tillförlitliga funktioner för datasynkronisering och den flexibilitet som krävs för att anpassa arbetsflöden efter företagets behov.
+
+En komplett videosjälvstudiekurs finns i [Lär dig mer om startsatsen för Salesforce Commerce ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Nyckelfunktioner
 
@@ -87,7 +89,6 @@ I följande diagram visas dataflödet på hög nivå för integreringen:
 * **ACO SFCC Starter Kit App Builder-program** - Tillhandahåller serverlösa funktioner som hanterar datasynkronisering mellan SFCC och Adobe Commerce Optimizer.
 * **Anpassad SFCC-kassett** - Krävd kassett som utökar din Salesforce Commerce Cloud-instans med API:er som behövs för dataextrahering.
 * **Hanteringsgränssnitt** - Webbgränssnitt för övervakning av synkroniseringsstatus och hantering av anslutningsåtgärder.
-
 
 ### Synkroniseringsprocess
 
