@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Modulen Extra produktattribut i Adobe Commerce utökar produktdatautflöden. Den innehåller ytterligare produktattribut från Adobe Commerce produktkonfigurationer:
 
-* [Skatteklassificering](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
-* [Attributuppsättning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
-* [Lager](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
+* [Skatteklassificering](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
+* [Attributuppsättning](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
+* [Lager](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
 När modulen har installerats fungerar den automatiskt. Det hämtar och exporterar ytterligare attribut under produktsynkroniseringen. Ingen ytterligare konfiguration krävs.
 
@@ -158,7 +158,7 @@ Modulen Extra produktattribut förbättrar befintliga produktflöden. Den integr
 * [Adobe Commerce-tillägg för dataexport](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 eller senare
 * Åtkomst till [repo.magento.com](https://repo.magento.com)
 
-  Mer information om hur du skapar nycklar och får de nödvändiga rättigheterna finns i [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Information om molninstallationer finns i [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+  Mer information om hur du skapar nycklar och får de nödvändiga rättigheterna finns i [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Information om molninstallationer finns i [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Åtkomst till kommandoraden på Adobe Commerce-programservern.
 
 ### Installationssteg
@@ -171,8 +171,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 Detaljerade installationssteg finns i följande handböcker:
 
-* [Installera tillägg på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [Installera tillägget Adobe Commerce lokalt](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [Installera tillägg på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Installera tillägget Adobe Commerce lokalt](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Synkronisera produktdata
 
@@ -200,9 +200,9 @@ bin/magento saas:resync --feed=productAttributes
 
 * Kontrollera att lagerinställningarna är korrekt konfigurerade i administratören
 * Kontrollera om det finns webbplatsspecifika lageråsidosättningar
-* Kontrollera att modulen [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) fungerar som den ska
+* Kontrollera att modulen [Inventory management](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/guide-overview) fungerar som den ska
 
-Mer information finns i [Inventory management Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) i *Adobe Commerce Merchant Documentation*.
+Mer information finns i [Inventory management Guide](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/guide-overview) i *Adobe Commerce Merchant Documentation*.
 
 **Prestandaproblem:**
 
