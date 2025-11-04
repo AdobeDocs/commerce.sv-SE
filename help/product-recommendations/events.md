@@ -3,7 +3,7 @@ title: Samla in data
 description: Lär dig hur händelser samlar in data för  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: d770d4d99802f7ecf6e395518dfc9aeaac9aa130
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Läs [utvecklardokumentationen](https://developer.adobe.com/commerce/services/sh
 
 ## Sjukvårdskunder
 
-Om du är vårdkund och har installerat [Data Services HIPAA-tillägget](../data-connection/hipaa-readiness.md#installation), som ingår i [dataanslutningen](../data-connection/overview.md) , hämtas inte längre data för händelsen storefront som används av [!DNL Product Recommendations]. Detta beror på att händelsedata för storefront genereras på klientsidan. Om du vill fortsätta att hämta och skicka data för butikshändelser aktiverar du händelseinsamlingen för [!DNL Product Recommendations] igen. Mer information finns i [allmän konfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services).
+Om du är vårdkund och har installerat [Data Services HIPAA-tillägget](../data-connection/hipaa-readiness.md#installation), som ingår i [dataanslutningen](../data-connection/overview.md) , hämtas inte längre data för händelsen storefront som används av [!DNL Product Recommendations]. Detta beror på att händelsedata för storefront genereras på klientsidan. Om du vill fortsätta att hämta och skicka data för butikshändelser aktiverar du händelseinsamlingen för [!DNL Product Recommendations] igen. Mer information finns i [allmän konfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
 
 ## Datatyper och händelser
 
@@ -81,10 +81,10 @@ Om indatainsamlingen inte är tillräcklig återgår följande rekommendationsty
 
 #### Caveats
 
-- Annonsblockerare och sekretessinställningar kan förhindra händelser från att fångas in och kan göra så att engagemanget och intäktsmåtten [på &#x200B;](workspace.md#column-descriptions) inte rapporteras tillräckligt. Dessutom kanske vissa händelser inte skickas på grund av att kunderna lämnar sidan eller nätverksproblem.
+- Annonsblockerare och sekretessinställningar kan förhindra händelser från att fångas in och kan göra så att engagemanget och intäktsmåtten [på ](workspace.md#column-descriptions) inte rapporteras tillräckligt. Dessutom kanske vissa händelser inte skickas på grund av att kunderna lämnar sidan eller nätverksproblem.
 - [Headless-implementeringar](headless.md) måste implementera händelser för att instrumentpanelen för produktrekommendationer ska fungera.
 - För konfigurerbara produkter använder produktrekommendationer avbildningen av den överordnade produkten i rekommendationsenheten. Om den konfigurerbara produkten inte har någon angiven bild kommer rekommendationsenheten att vara tom för den specifika produkten.
 
 >[!NOTE]
 >
->Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=sv-SE) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.
+>Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.

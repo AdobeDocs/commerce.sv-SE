@@ -3,7 +3,7 @@ title: Lägg till momsklass, attributuppsättning och lagerattribut
 description: Lär dig hur du utökar produktflödesdata så att de innehåller attribut för skatteklassificering, attributuppsättning och avancerade lagerinställningar
 role: Admin, Developer
 badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/
-source-git-commit: 6abfeca68ab67fb11493f78440e09408479e1535
+source-git-commit: dd8f518028c9f2025606e6620fc20156fceac9ce
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Modulen Extra produktattribut i Adobe Commerce utökar produktdatautflöden. Den innehåller ytterligare produktattribut från Adobe Commerce produktkonfigurationer:
 
-* [Skatteklassificering](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
-* [Attributuppsättning](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
-* [Lager](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
+* [Skatteklassificering](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
+* [Attributuppsättning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
+* [Lager](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
 När modulen har installerats fungerar den automatiskt. Det hämtar och exporterar ytterligare attribut under produktsynkroniseringen. Ingen ytterligare konfiguration krävs.
 
@@ -158,7 +158,7 @@ Modulen Extra produktattribut förbättrar befintliga produktflöden. Den integr
 * [Adobe Commerce-tillägg för dataexport](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 eller senare
 * Åtkomst till [repo.magento.com](https://repo.magento.com)
 
-  Mer information om hur du skapar nycklar och får de nödvändiga rättigheterna finns i [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Information om molninstallationer finns i [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+  Mer information om hur du skapar nycklar och får de nödvändiga rättigheterna finns i [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Information om molninstallationer finns i [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Åtkomst till kommandoraden på Adobe Commerce-programservern.
 
 ### Installationssteg
@@ -171,8 +171,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 Detaljerade installationssteg finns i följande handböcker:
 
-* [Installera tillägg på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [Installera tillägget Adobe Commerce lokalt](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extension)
+* [Installera tillägg på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Installera tillägget Adobe Commerce lokalt](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Synkronisera produktdata
 
@@ -200,9 +200,9 @@ bin/magento saas:resync --feed=productAttributes
 
 * Kontrollera att lagerinställningarna är korrekt konfigurerade i administratören
 * Kontrollera om det finns webbplatsspecifika lageråsidosättningar
-* Kontrollera att modulen [Inventory management](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/guide-overview) fungerar som den ska
+* Kontrollera att modulen [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) fungerar som den ska
 
-Mer information finns i [Inventory management Guide](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/guide-overview) i *Adobe Commerce Merchant Documentation*.
+Mer information finns i [Inventory management Guide](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) i *Adobe Commerce Merchant Documentation*.
 
 **Prestandaproblem:**
 
