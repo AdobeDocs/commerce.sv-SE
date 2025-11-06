@@ -16,8 +16,8 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 
 ## Allmänt
 
-- Modulen [Avancerad sökning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) är inaktiverad när [!DNL Live Search] är installerat och länken Avancerad sökning i sidfoten i förgrunden har tagits bort.
-- [Nivåpris](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) stöds inte i fältet [!DNL Live Search] och i widgeten Produktlistsida.
+- Modulen [Avancerad sökning](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search) är inaktiverad när [!DNL Live Search] är installerat och länken Avancerad sökning i sidfoten i förgrunden har tagits bort.
+- [Nivåpris](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/products/pricing/product-price-tier) stöds inte i fältet [!DNL Live Search] och i widgeten Produktlistsida.
 - Produktpriserna inkluderar moms, men [!DNL Live Search] kan inte visa momsen som ett separat värde.
 - Innehållssökning (CMS-sidor och -block) stöds inte.
 - Det maximala antalet resultat som kan sidnumreras är 10 000. För att säkerställa att kunderna inte behöver använda djup sidnumrering när en kategori eller sökresultat innehåller ett stort antal produkter, kan du erbjuda användbara sätt att filtrera produkter.
@@ -29,7 +29,7 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 - Du kan filtrera resultat med hjälp av villkoren &quot;börjar med&quot; eller &quot;innehåller&quot; med vissa begränsningar som beskrivs i [utvecklardokumentationen](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
 - Du kan bara spåra prestandamått under det senaste året.
 - Om en sökfråga innehåller flera ord behandlas de som separata söktermer om de är tomma mellan orden. Använd [synonymer](./synonyms.md) om du vill ta hänsyn till sökfrågor med flera ord.
-- [!DNL Live Search] stöder inte [omdirigering av söktermer](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) internt. Implementera omdirigeringar genom att använda Fast eller någon annan anpassad konfiguration.
+- [!DNL Live Search] stöder inte [omdirigering av söktermer](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search-terms) internt. Implementera omdirigeringar genom att använda Fast eller någon annan anpassad konfiguration.
 
 ## Indexering
 
@@ -44,7 +44,7 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 ## Fasetter
 
 - I uppsättningen med definierade filterbara attribut kan du konfigurera upp till 100 attribut som fasets.
-- Inom ett facet kan högst 100 hinkar returneras. Om du behöver returnera fler än 100 bucket [skapar du en supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) så att Adobe kan analysera prestandapåverkan och avgöra om det är möjligt att öka den här gränsen för din miljö.
+- Inom ett facet kan högst 100 hinkar returneras. Om du behöver returnera fler än 100 bucket [skapar du en supportbiljett](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) så att Adobe kan analysera prestandapåverkan och avgöra om det är möjligt att öka den här gränsen för din miljö.
 - Dynamiska aspekter kan orsaka prestandaproblem i stora index och index med hög ordningstalsgrad. Om du har skapat dynamiska ansikten och observerar prestandaförsämringar eller sidor som inte läses in med timeoutfel, kan du försöka ändra dina facets till fäst för att avgöra om detta löser ditt prestandaproblem.
 - Stock-status (`quantity_and_stock_status`) stöds inte som en fasett. Du kan använda `inStock: 'true'` för att filtrera bort från Stock-produkter. Detta stöds inte i rutan i modulen `LiveSearchAdapter` när &quot;Visa utanför stockprodukter&quot; är inställt på &quot;Sant&quot; i [!DNL Commerce] Admin.
 - Datumtypsattribut stöds inte som en faktor.
@@ -80,12 +80,12 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 ## B2B- och kategoribehörigheter
 
 - Produkter visas inte om de inte har lagts till i en delad standardkatalog.
-- Så här begränsar du kundgrupper med [kategoribehörigheter](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions):
+- Så här begränsar du kundgrupper med [kategoribehörigheter](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/categories/category-permissions):
    - Produkter måste tilldelas till rotkategorin. (**Obs!** Du kan ta bort den här begränsningen genom att uppdatera tillägget SaaS-dataexport till version 103.4.0+. Se [Hantera dataexporttillägget](../data-export/manage-extension.md).
    - Kundgruppen &quot;Inte inloggad&quot; måste ha behörigheten &quot;Tillåt&quot; för bläddring.
-   - Om du vill begränsa produkter till kundgruppen Inte inloggad går du till varje kategori och anger behörigheter för varje [kundgrupp](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+   - Om du vill begränsa produkter till kundgruppen Inte inloggad går du till varje kategori och anger behörigheter för varje [kundgrupp](https://experienceleague.adobe.com/sv/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - Det finns för närvarande inget stöd för B2B med PLP-widgeten i PWA Studio. Du kan [använda API](install.md#pwa-support) för att implementera den här funktionen.
-- Kategorifacet i [!DNL Live Search] kan visa kategorier som inte kan visas för en specifik [kundgrupp](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+- Kategorifacet i [!DNL Live Search] kan visa kategorier som inte kan visas för en specifik [kundgrupp](https://experienceleague.adobe.com/sv/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - [!DNL Live Search] har stöd för upp till 1 000 kundgrupper.
 
 ## [!DNL Storefront popover]
@@ -100,8 +100,8 @@ När det gäller webbplatssökningar har Adobe Commerce fler alternativ. Granska
 
 Hjälp om hur du felsöker vanliga problem i [!DNL Live Search] finns i följande artiklar i kunskapsbasen:
 
-- [[!DNL Live Search] katalogen är inte synkroniserad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) - Tillhandahåller lösningar för när produktkatalogdata inte synkroniseras korrekt mellan din Adobe Commerce-butik och Live Search-tjänsten. I den här artikeln beskrivs hur du verifierar synkroniseringsstatus, identifierar synkroniseringsfel och löser problem med datasynkronisering.
-- [[!DNL Live Search] Instrumentpanelen och rankningen av sökresultat är felaktig](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) - Åtgärdar problem där sökresultat eller prestandamått som visas på kontrollpanelen för Live-sökning inte visas som förväntat. I den här artikeln beskrivs hur du felsöker rankningsavvikelser och inkonsekvenser mellan instrumentpanelsdata.
-- [[!DNL Live Search] facets sorteras inte i bokstavsordning](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) - Korrigerar problemet där ansiktsvärden visas i oväntad ordning i stället för i bokstavsordning. I den här artikeln beskrivs hur du konfigurerar och korrigerar beteendet för facet-sortering i butiken.
+- [[!DNL Live Search] katalogen är inte synkroniserad](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) - Tillhandahåller lösningar för när produktkatalogdata inte synkroniseras korrekt mellan din Adobe Commerce-butik och Live Search-tjänsten. I den här artikeln beskrivs hur du verifierar synkroniseringsstatus, identifierar synkroniseringsfel och löser problem med datasynkronisering.
+- [[!DNL Live Search] Instrumentpanelen och rankningen av sökresultat är felaktig](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) - Åtgärdar problem där sökresultat eller prestandamått som visas på kontrollpanelen för Live-sökning inte visas som förväntat. I den här artikeln beskrivs hur du felsöker rankningsavvikelser och inkonsekvenser mellan instrumentpanelsdata.
+- [[!DNL Live Search] facets sorteras inte i bokstavsordning](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) - Korrigerar problemet där ansiktsvärden visas i oväntad ordning i stället för i bokstavsordning. I den här artikeln beskrivs hur du konfigurerar och korrigerar beteendet för facet-sortering i butiken.
 
-Om du behöver mer hjälp kontaktar du [support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Om du behöver mer hjälp kontaktar du [support](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
