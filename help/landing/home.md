@@ -5,51 +5,46 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 8a80f803607e15163d3f75d93727a304917ef4d6
+source-git-commit: fd3857e93dbaaf7ffce97715b77ee63e8460af16
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce Services Guides
 
-Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och dataverktyg som hjälper handlare att stödja viktiga delar av sin verksamhet.
+Adobe Commerce Services har kraftfulla funktioner som gör att ni kan utöka er butiksverksamhet, effektivisera integreringar och optimera datahanteringen.
+
+## Hur ansluter Commerce till tjänsterna?
+
+Alla Commerce-tjänster ansluter till din Commerce-instans via [Commerce Services-kopplingen](saas.md).
+
+När Commerce Services-anslutningen har konfigurerats har du tillgång till följande funktioner:
+
+- [StoreFront-tjänster](#storefront-services) - AI-baserade funktioner för produktupptäckt, rekommendationer och betalningar
+- [Integreringstjänster](#integration-services) - Anslutningar till Adobe Experience Platform, AEM Assets och andra Adobe-lösningar
+
+Dessa tjänster hjälper er att öka konverteringsgraden, leverera personaliserade upplevelser och bättre utnyttja era affärsdata i hela Adobe ekosystem.
+
+![Tjänstlager](./assets/services-layer.png)
 
 >[!NOTE]
 >
 >Adobe rekommenderar att du uppgraderar till den senaste versionen av alla Commerce-tjänster som stöds. Se [versionsinformationen](release-notes-all.md).
 
-## Commerce-tjänster
+Förutom dessa funktioner finns det verktyg som gör att du kan övervaka dataflödet från din Commerce-instans till SaaS-plattformen. Dessa verktyg kan automatiskt synkronisera data och hjälpa dig att optimera prestandan. Läs mer om de tillgängliga [dataverktygen](#data-tools).
+
+## Tillgängliga tjänster
+
+>[!BEGINTABS]
+
+>[!TAB StoreFront-tjänster]
+
+Store-tjänster är en grupp AI-baserade funktioner som optimerar produktupptäckt, personaliserar kundinteraktioner och effektiviserar betalningshanteringen för att öka engagemanget och konverteringarna. Med butikstjänster kan ni förbättra shoppingupplevelsen och öka tillväxten.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
-   <td valign="top">
-      <a href="../cloud-service/overview.md">
-      <img alt="Cloud" src="../assets/icons/shopping-cart.svg" width="40">
-      </a>
-      <div>
-         <a href="../cloud-service/overview.md">
-         <strong> Commerce as a Cloud Service </strong>
-         </a>
-      </div>
-      <p>
-         <em>Skala upp verksamheten och förnya snabbare med molninfrastruktur som automatiskt anpassar sig till trafik- och orderkrav.</em>
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../optimizer/overview.md">
-      <img alt="Optimera" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-         <a href="../optimizer/overview.md">
-         <strong>Commerce Optimizer</strong>
-         </a>
-      </div>
-      <p>
-         <em>Leverera en blixtsnabb butik och öka konverteringsgraden samtidigt som du använder din befintliga handelsplattform.</em>
-      </p>
-   </td>
    <td valign="top">
       <a href="../catalog-service/overview.md">
       <img alt="Katalogdata för anslutna tjänster" src="../assets/icons/DataBook.svg" width="40">
@@ -63,8 +58,6 @@ Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och 
          <em>Ge dina kunder en optimerad produktupplevelse samtidigt som du förbättrar prestanda, skalbarhet och ökar antalet konverteringar.</em>
       </p>
    </td>
-</tr>
-<tr style="border: 0;">
    <td valign="top">
       <a href="../live-search/overview.md">
       <img alt="Sök" src="../assets/icons/Magnify.svg" width="40">
@@ -107,7 +100,9 @@ Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och 
 </tr>
 </table>
 
-## Integrationstjänster
+>[!TAB Integreringstjänster]
+
+Integreringstjänsterna avser funktioner som kopplar din Commerce-instans till andra produkter eller tjänster inom Adobe.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -117,24 +112,11 @@ Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och 
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+         <strong>[!DNL Data Connection]</strong>
          </a>
       </div>
       <p>
          <em>Utnyttja anslutningen mellan Adobe Commerce och Adobe Experience Platform-kanten för att använda Commerce-data för andra Adobe Experience Cloud-produkter, som Adobe Analytics och Adobe Target.</em>
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../landing/saas.md">
-      <img alt="ThumbsUp" src="../assets/icons/DataSetting.svg" width="40">
-      </a>
-      <div>
-          <a href="../landing/saas.md">
-         <strong> Commerce Services Connector </strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
-         </a>
-      </div>
-      <p>
-         <em>Konfigurera autentisering för säker kommunikation mellan Adobe Commerce och anslutna tjänster. För varje miljö anger du ID:t för datalagring för Commerce Services.</em>
       </p>
    </td>
    <td valign="top">
@@ -153,7 +135,9 @@ Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och 
 </tr>
 </table>
 
-## Dataverktyg
+>[!TAB Dataverktyg]
+
+Med dataverktygen kan du hantera och optimera informationsflödet mellan Commerce-instansen och anslutna tjänster. Dessa verktyg säkerställer effektiv datasynkronisering, övervakar synkroniseringsåtgärder och förbättrar prestanda genom att avlasta resurskrävande processer.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -184,11 +168,11 @@ Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och 
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Övervaka datasynkronisering" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong> Kontrollpanel för datahantering </strong>
          </a>
       </div>
@@ -201,6 +185,23 @@ Adobe tillhandahåller en samling Commerce tjänster, integreringstjänster och 
 >[!NOTE]
 >
 >Kontrollpanelen för datahantering är tillgänglig utan extra kostnad för Commerce-handlare med produktrekommendationer v6.0.0, Live Search v4.1.0 eller Catalog Service v1.17 med aktiv licens. Handlare som använder tidigare tjänsteversioner kan använda [Katalogsynkronisering](../landing/catalog-sync.md) för att hantera och spåra datasynkronisering.
+
+>[!ENDTABS]
+
+## Vilka problem kan Commerce Services lösa?
+
+Oavsett om ni vill utöka verksamheten, förbättra kundupplevelsen eller fatta datadrivna beslut erbjuder Adobe Commerce Services lösningar för vanliga utmaningar inom Commerce:
+
+| Problem | Utmaning | Lösning |
+|---------|-----------|----------|
+| Förbättra produktupptäckt och konvertering | Kunderna hittar inte det de letar efter, vilket leder till höga studsfrekvenser och förlorad försäljning. | Använd [Live Search](../live-search/overview.md) och [produktrekommendationer](../product-recommendations/overview.md) för att leverera AI-baserad sökning med typotolerans, direkt sökresultat medan du skriver, dynamisk facettering och personaliserade produktrekommendationer baserat på kundbeteende i realtid. |
+| Skapa personaliserade upplevelser i flera kanaler | Era e-handelsdata är isolerade, vilket förhindrar er från att leverera personaliserade upplevelser över alla kanaler. | Använd [Dataanslutning](../data-connection/overview.md) för att skicka beteendedata, transaktionsdata och profildata till Adobe Experience Platform. Skapa sofistikerade kundsegment, skapa övergivna kundvagnskampanjer, inrikta er på målgrupper och analysera säsongstrender under hela kundresan. |
+| Effektivisera hanteringen av digitala resurser | Att hantera produktbilder och multimedia i olika system är både tidskrävande och felbenäget. | [AEM Assets Integration](../aem-assets-integration/overview.md) ger centraliserad resurshantering genom att ansluta Adobe Commerce till ett Adobe Experience Manager Assets-projekt, vilket förenklar arbetsflödena och säkerställer enhetliga varumärkesupplevelser över alla kontaktytor. |
+| Optimera betalningshanteringen | Begränsade betalningsalternativ och dåliga betalningsupplevelser gör att kunderna blir nöjda och konverterade. | [Betalningstjänster](../payment-services/guide-overview.md) erbjuder flera betalningsmetoder, inklusive räntefria betalningar, med en enhetlig kontrollpanel för hantering av betalningar, order och fakturor. |
+| Hantera datasynkronisering i stor skala | Resursintensiv indexering gör webbplatsen långsammare och du kan inte enkelt spåra datasynkroniseringsproblem. | [SaaS-dataexport](../data-export/overview.md), [SaaS-prisindexerare](../price-index/price-indexing.md) och [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synkroniserar automatiskt katalog-, order- och lagerdata, avlastar prisberäkningar till Adobe molninfrastruktur och ger realtidssynlighet för synkroniseringsstatus. |
+| Vinn förlorade kunder och minska avkastningen | Höga kundbortfall och höga produktavkastningsnivåer påverkar lönsamheten. | Kombinera [dataanslutning](../data-connection/overview.md) med Adobe Journey Optimizer och Real-Time CDP för att identifiera returmönster, skapa återvinnningskampanjer, segmentera kunder efter beteende och skicka personaliserade återengagemangskampanjer via e-post och SMS. |
+| Fatta databaserade försäljningsbeslut | Du vet inte vilka produkter du ska marknadsföra eller när du ska göra kampanjer. | [Live Search](../live-search/overview.md) innehåller sökresultatsinsikter och säljverktyg för att få tillgång till nyckeltal, analysera söktermer och använda smarta försäljningsregler för att lyfta eller begrava produkter baserat på kundbeteende och affärsmål. |
+| Upprätthåll regelefterlevnaden med känsliga data | Ni måste hantera känsliga kunddata samtidigt som HIPAA-efterlevnaden upprätthålls. | [Dataanslutningen](../data-connection/overview.md) är HIPAA-klar, vilket gör att du kan dela backoffice-data med Experience Platform samtidigt som du upprätthåller regelefterlevnad och systematiskt hanterar sekretessförfrågningar. |
 
 {{$include /help/_includes/templated/whats-new.md}}
 
