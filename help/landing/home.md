@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: fd3857e93dbaaf7ffce97715b77ee63e8460af16
+source-git-commit: 8c2d206227d8dbac0e56bb7e687f217a3a62ddb0
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,8 @@ Alla Commerce-tjänster ansluter till din Commerce-instans via [Commerce Service
 
 När Commerce Services-anslutningen har konfigurerats har du tillgång till följande funktioner:
 
-- [StoreFront-tjänster](#storefront-services) - AI-baserade funktioner för produktupptäckt, rekommendationer och betalningar
-- [Integreringstjänster](#integration-services) - Anslutningar till Adobe Experience Platform, AEM Assets och andra Adobe-lösningar
+- **StoreFront-tjänster** - AI-baserade funktioner för produktupptäckt, rekommendationer och betalningar
+- **Integreringstjänster** - Anslutningar till Adobe Experience Platform, AEM Assets och andra Adobe-lösningar
 
 Dessa tjänster hjälper er att öka konverteringsgraden, leverera personaliserade upplevelser och bättre utnyttja era affärsdata i hela Adobe ekosystem.
 
@@ -33,7 +33,7 @@ Dessa tjänster hjälper er att öka konverteringsgraden, leverera personalisera
 >
 >Adobe rekommenderar att du uppgraderar till den senaste versionen av alla Commerce-tjänster som stöds. Se [versionsinformationen](release-notes-all.md).
 
-Förutom dessa funktioner finns det verktyg som gör att du kan övervaka dataflödet från din Commerce-instans till SaaS-plattformen. Dessa verktyg kan automatiskt synkronisera data och hjälpa dig att optimera prestandan. Läs mer om de tillgängliga [dataverktygen](#data-tools).
+Förutom dessa funktioner finns det verktyg som gör att du kan övervaka dataflödet från din Commerce-instans till SaaS-plattformen. Dessa dataverktyg kan automatiskt synkronisera data och hjälpa dig att optimera prestandan.
 
 ## Tillgängliga tjänster
 
@@ -168,11 +168,11 @@ Med dataverktygen kan du hantera och optimera informationsflödet mellan Commerc
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Övervaka datasynkronisering" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong> Kontrollpanel för datahantering </strong>
          </a>
       </div>
@@ -198,7 +198,7 @@ Oavsett om ni vill utöka verksamheten, förbättra kundupplevelsen eller fatta 
 | Skapa personaliserade upplevelser i flera kanaler | Era e-handelsdata är isolerade, vilket förhindrar er från att leverera personaliserade upplevelser över alla kanaler. | Använd [Dataanslutning](../data-connection/overview.md) för att skicka beteendedata, transaktionsdata och profildata till Adobe Experience Platform. Skapa sofistikerade kundsegment, skapa övergivna kundvagnskampanjer, inrikta er på målgrupper och analysera säsongstrender under hela kundresan. |
 | Effektivisera hanteringen av digitala resurser | Att hantera produktbilder och multimedia i olika system är både tidskrävande och felbenäget. | [AEM Assets Integration](../aem-assets-integration/overview.md) ger centraliserad resurshantering genom att ansluta Adobe Commerce till ett Adobe Experience Manager Assets-projekt, vilket förenklar arbetsflödena och säkerställer enhetliga varumärkesupplevelser över alla kontaktytor. |
 | Optimera betalningshanteringen | Begränsade betalningsalternativ och dåliga betalningsupplevelser gör att kunderna blir nöjda och konverterade. | [Betalningstjänster](../payment-services/guide-overview.md) erbjuder flera betalningsmetoder, inklusive räntefria betalningar, med en enhetlig kontrollpanel för hantering av betalningar, order och fakturor. |
-| Hantera datasynkronisering i stor skala | Resursintensiv indexering gör webbplatsen långsammare och du kan inte enkelt spåra datasynkroniseringsproblem. | [SaaS-dataexport](../data-export/overview.md), [SaaS-prisindexerare](../price-index/price-indexing.md) och [Data Management Dashboard](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synkroniserar automatiskt katalog-, order- och lagerdata, avlastar prisberäkningar till Adobe molninfrastruktur och ger realtidssynlighet för synkroniseringsstatus. |
+| Hantera datasynkronisering i stor skala | Resursintensiv indexering gör webbplatsen långsammare och du kan inte enkelt spåra datasynkroniseringsproblem. | [SaaS-dataexport](../data-export/overview.md), [SaaS-prisindexerare](../price-index/price-indexing.md) och [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synkroniserar automatiskt katalog-, order- och lagerdata, avlastar prisberäkningar till Adobe molninfrastruktur och ger realtidssynlighet för synkroniseringsstatus. |
 | Vinn förlorade kunder och minska avkastningen | Höga kundbortfall och höga produktavkastningsnivåer påverkar lönsamheten. | Kombinera [dataanslutning](../data-connection/overview.md) med Adobe Journey Optimizer och Real-Time CDP för att identifiera returmönster, skapa återvinnningskampanjer, segmentera kunder efter beteende och skicka personaliserade återengagemangskampanjer via e-post och SMS. |
 | Fatta databaserade försäljningsbeslut | Du vet inte vilka produkter du ska marknadsföra eller när du ska göra kampanjer. | [Live Search](../live-search/overview.md) innehåller sökresultatsinsikter och säljverktyg för att få tillgång till nyckeltal, analysera söktermer och använda smarta försäljningsregler för att lyfta eller begrava produkter baserat på kundbeteende och affärsmål. |
 | Upprätthåll regelefterlevnaden med känsliga data | Ni måste hantera känsliga kunddata samtidigt som HIPAA-efterlevnaden upprätthålls. | [Dataanslutningen](../data-connection/overview.md) är HIPAA-klar, vilket gör att du kan dela backoffice-data med Experience Platform samtidigt som du upprätthåller regelefterlevnad och systematiskt hanterar sekretessförfrågningar. |
