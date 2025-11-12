@@ -2,17 +2,18 @@
 title: Adobe Commerce Optimizer Connector for Commerce
 description: Lär dig hur du kopplar data från ditt molnbaserade Commerce-projekt eller lokala projekt till Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
 hidefromtoc: true
 hide: true
-source-git-commit: 5d0cfb2c389bf11f89815e7d1fbc2861a6b48962
+source-git-commit: 36cfafff243a2310a17a2c9ec8a00f10403bc133
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1552'
 ht-degree: 0%
 
 ---
 
 
-# Ökning
+# Adobe Commerce Optimizer Connector for Commerce
 
 Adobe Commerce Connector är den integreringsbrygga som synkroniserar katalog- och prisdata mellan en befintlig Adobe Commerce Cloud i molnet eller lokal distribution och Adobe Commerce Optimizer datamodell för en sammansatt katalog. Detta möjliggör funktioner som dynamisk AI-sökning, rekommendationer, snabbladdande headless-butiker, inklusive Adobe Commerce storefront på Edge Delivery Services, samt realtidsanalyser av prestanda.
 
@@ -57,15 +58,15 @@ Kopplingen möjliggör flera viktiga arbetsflöden:
 
 * Åtkomst till [repo.magento.com](https://repo.magento.com) för att hämta Commerce Connector-metapaketet med Composer.
 
-* Administratörsåtkomst till en [Adobe Commerce Optimizer-sandlådeinstans](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
+* Administratörsåtkomst till en [Adobe Commerce Optimizer-sandlådeinstans](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
 
 Adobe Commerce-användaren som konfigurerar integreringen måste ha:
 
 * Administratörsåtkomst till Adobe Commerce Admin.
 
-* [Kommandoradsåtkomst till Adobe Commerce-programservern](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Kommandoradsåtkomst till Adobe Commerce-programservern](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Utvecklaråtkomst till den [IMS-organisation](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/organizations?) där Adobe Commerce Optimizer-projektet har etablerats.
+* Utvecklaråtkomst till den [IMS-organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) där Adobe Commerce Optimizer-projektet har etablerats.
 
 ## Kom igång
 
@@ -105,9 +106,9 @@ När ändringarna har distribuerats är alternativet Commerce Optimizer Optimize
 >
 >Detaljerade installationsanvisningar för tillägg finns i följande handböcker:
 >
->[Installera tillägg på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>[Installera tillägg på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[Installera tillägget Adobe Commerce lokalt](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/extensions)
+>[Installera tillägget Adobe Commerce lokalt](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Hämta de värden som krävs för att konfigurera Commerce Optimizer-anslutningen
 
@@ -129,11 +130,11 @@ När du har skapat projektet sparar du följande värden från inloggningssidan 
 
 Spara följande värden från instansinformationen för Adobe Commerce Optimizer.
 
-* **Instans-ID—**&#x200B;Den unika identifieraren för din Adobe Commerce Optimizer-instans. Kallas även innehavar-ID.
+* **Instans-ID—**Den unika identifieraren för din Adobe Commerce Optimizer-instans. Kallas även innehavar-ID.
 
   Hämta instans-ID:t från URL:en för att komma åt din Adobe Commerce Optimizer-instans. I URL:en `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef` är till exempel instans-ID `1234567890abcdef`.
 
-* **Region—**&#x200B;Den region där din Adobe Commerce Optimizer-sandlådeinstans finns.
+* **Region—**Den region där din Adobe Commerce Optimizer-sandlådeinstans finns.
 
   Hämta regionen från Adobe Commerce Optimizer URL. I URL:en `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef` är regionen till exempel `na1`.
 
@@ -149,7 +150,7 @@ Med API-autentiseringsuppgifterna och instansinformationen som du samlade in i f
 
    ![Adobe Commerce Optimizer konfigurationssida](../assets/aco-connector-config-page.png)
 
-1. Från kommandoraden [använder du SSH](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/secure-connections) för att ansluta till Commerce mellanlagringsmiljö.
+1. Från kommandoraden [använder du SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) för att ansluta till Commerce mellanlagringsmiljö.
 
 1. Kör följande Commerce CLI-kommando för att konfigurera integreringen och ersätt platshållarvärdena med värdena för ditt Commerce Optimizer-projekt:
 
@@ -165,13 +166,13 @@ bin/magento aco:config:init --org_id=<<your_org_id>> --tenant_id=<<your_tenant_i
 
 Du kan kontrollera datasynkroniseringen både från Commerce Admin och Commerce Optimizer.
 
-* Statussidan **[Synkronisering av dataflöden](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)** visar förloppet för synkroniseringen av katalogdata från Commerce till Adobe Commerce Optimizer.
+* Statussidan **[Synkronisering av dataflöden](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)** visar förloppet för synkroniseringen av katalogdata från Commerce till Adobe Commerce Optimizer.
 
-* **[[!UICONTROL Data Sync]-sidan &#x200B;](https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/data-sync)** i Adobe Commerce Optimizer visar katalogdata som överförts från din Commerce-instans.
+* **[[!UICONTROL Data Sync]-sidan ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** i Adobe Commerce Optimizer visar katalogdata som överförts från din Commerce-instans.
 
 1. Kontrollera att katalogdata flödar från Commerce till Commerce Optimizer:
 
-   Öppna sidan [!UICONTROL Data Feed Sync Status] i Commerce Admin genom att välja [!UICONTROL System] **&#x200B; > [!UICONTROL Data Transfer] > &#x200B;** [!UICONTROL Data Feed Sync Status]**.
+   Öppna sidan [!UICONTROL Data Feed Sync Status] i Commerce Admin genom att välja [!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]**.
 
    ![Statussida för synkronisering av dataflöden med statusrapportering för feed-objekt](./assets/data-feed-sync-status.png)
 
@@ -203,19 +204,19 @@ När konfigurationen ändras blir motsvarande index ogiltiga för att utlösa å
 
 ## Konfigurera Adobe Commerce Optimizer butiker
 
-Konfigurera Adobe Commerce Optimizer butiker genom att skapa katalogvyer och principer. &#x200B; Se [Skapa katalogvyer](https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/catalog-view) i Adobe Commerce Optimizer Guide.
+Konfigurera Adobe Commerce Optimizer butiker genom att skapa katalogvyer och principer. &#x200B; Se [Skapa katalogvyer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) i Adobe Commerce Optimizer Guide.
 
 Observera att prisböcker skapas automatiskt av Adobe Commerce kundgrupper.
 
 ## Konfigurera en Commerce Storefront på Edge Delivery Services
 
-I det här avsnittet finns en översikt på hög nivå över de steg som krävs för att konfigurera din Commerce-butik. Detaljerad information finns på dokumentationswebbplatsen för [Adobe Commerce Storefront] (https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE).
+I det här avsnittet finns en översikt på hög nivå över de steg som krävs för att konfigurera din Commerce-butik. Detaljerad information finns på dokumentationswebbplatsen för [Adobe Commerce Storefront] (https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 1. Klona och distribuera Adobe Commerce Storefront-mallsidor till EDS med verktyget [Webbplatsskapare](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
-1. [Konfigurera en lokal utvecklingsmiljö](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=sv-SE#set-up-local-environment).
+1. [Konfigurera en lokal utvecklingsmiljö](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment).
 
-1. [Installera GraphQL Storefront-kompatibilitetspaket](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/?lang=sv-SE). &#x200B;
+1. [Installera GraphQL Storefront-kompatibilitetspaket](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/). &#x200B;
 
 1. [Konfigurera CORS-huvuden för Commerce-instansen i molnmiljön](#configure-cors-headers-for-commerce-instance).
 
@@ -229,7 +230,7 @@ Om du vill tillåta GraphQL-begäranden att komma från en Edge Delivery Service
 
    **Alternativ 1: Implementera en anpassad PHP-modul för Adobe Commerce Foundation för att kunna lägga till CORS-huvuden. &#x200B;**
 
-   **Alternativ 2: Installera en tredjepartsmodul för grycore/magento2-cors &#x200B;** - Se [CORS-konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/?lang=sv-SE) i dokumentationen för *Adobe Commerce Storefront* .
+   **Alternativ 2: Installera en tredjepartsmodul för grycore/magento2-cors &#x200B;** - Se [CORS-konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/) i dokumentationen för *Adobe Commerce Storefront* .
 
 1. Lägg till följande CORS-variabler i konfigurationsfilen för Commerce i molninstansen `app.yaml`:
 
@@ -242,9 +243,9 @@ I GitHub-databasen för Storefront-mallkoden uppdaterar du konfigurationsfilen f
 
 * `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`
 
-* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"` - Hämta det här värdet från [Commerce Optimizer-&#x200B; &#x200B;](https://experienceleague.adobe.com/sv/docs/commerce/optimizer/get-started#get-instance-details)
+* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"` - Hämta det här värdet från [Commerce Optimizer-&#x200B; ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started#get-instance-details)
 
-* `"AC-Environment-Id": "Customer organization ID"` - Hämta det här värdet från [Commerce molnprojekt](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/project/overview#project-overview)
+* `"AC-Environment-Id": "Customer organization ID"` - Hämta det här värdet från [Commerce molnprojekt](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview)
 
 * `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` - Hämta det här värdet från Adobe Commerce Optimizer Admin.
 
@@ -252,6 +253,6 @@ I GitHub-databasen för Storefront-mallkoden uppdaterar du konfigurationsfilen f
 
 * `"AC-Source-Locale": "Catalog source – Store View code from Commerce cloud instance"`
 
-Mer information finns i [Storefront-konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=sv-SE) i dokumentationen för *Adobe Commerce Storefront* .
+Mer information finns i [Storefront-konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/) i dokumentationen för *Adobe Commerce Storefront* .
 
 
