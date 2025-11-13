@@ -2,11 +2,11 @@
 title: Konfigurera din butik
 description: Lär dig hur du konfigurerar din  [!DNL Adobe Commerce Optimizer] butik.
 role: Developer
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: c00cb55bd7b61d6506ee8b9b81d28118c1adde00
+source-git-commit: d6d559728361f4421829f34818aa368eac407225
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -105,9 +105,9 @@ Med verktyget Site Creator kan du skapa ett helt butiksprojekt med följande kom
 
 Uppdatera din butikskonfiguration för att ansluta till din [!DNL Adobe Commerce Optimizer]-instans.
 
-1. Öppna konfigurationshanteraren med länken som du sparade tidigare:
+1. Öppna filen `config.json` i din standardkoddatabas.
 
-   `https://da.live/sheet#/<username or org>/<repo name>/config.json`
+   `https://github.com/<username or org>/<repo name>/config.json`
 
 1. Leta reda på avsnittet `cs` (katalogtjänst) i konfigurationen.
 
@@ -116,16 +116,18 @@ Uppdatera din butikskonfiguration för att ansluta till din [!DNL Adobe Commerce
    ```json
    "cs": {
       "AC-View-ID": "{catalogViewId}",
-      "AC-Environment-ID": "{tenantId}",
-      "AC-Source-Locale": "en_US"
+      "AC-Source-Locale": "en_US",
+      "AC-Price-Book-ID": "{priceBookId}"
    }
    ```
 
+   >[!NOTE]
+   >
+   >Om du vill hitta prisbokens ID kan du kontrollera [katalogvyns konfigurationsinformation](./setup/catalog-view.md) i Adobe Commerce Optimizer för att se de tilldelade prisböckerna. Om inga prisböcker har tilldelats kan du ta bort den här rubriken från konfigurationsfilen. Lägg tillbaka den när en prisbok har tilldelats katalogvyn.
+
 1. Spara konfigurationsfilen.
 
->[!NOTE]
->
->Det kan ta några minuter att sprida konfigurationsändringarna. Om du inte ser data direkt, vänta 2-3 minuter innan du felsöker.
+   Det kan ta några minuter att sprida konfigurationsändringarna. Om du inte ser data direkt, vänta 2-3 minuter innan du felsöker.
 
 ## Verifiera installationen
 
@@ -206,7 +208,7 @@ Använd följande vägledning för att kontrollera vanliga problem:
 Innan du fortsätter till nästa steg kontrollerar du att din storefront fungerar som den ska genom att verifiera följande:
 
 ![Checklista](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Konfigurationsvärden matchar instansinställningarna<br>
-![&#x200B; Checklista &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Startsidan för Storefront läses in utan fel <br>
+![ Checklista ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Startsidan för Storefront läses in utan fel <br>
 ![Checklista](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Minst en produktinformationssida visar fullständig information <br>
 ![Checklista](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Sökfunktionen returnerar relevanta resultat <br>
 ![Checklista](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Produktbilder läses in korrekt <br>
@@ -216,26 +218,26 @@ Innan du fortsätter till nästa steg kontrollerar du att din storefront fungera
 
 Om problemen kvarstår:
 
-* Granska [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
+* Granska [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Kontrollera [Adobe Commerce Optimizer utvecklarhandbok](https://developer.adobe.com/commerce/services/optimizer/)
-* Gå till [Adobe Commerce supportresurser](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview)
+* Gå till [Adobe Commerce supportresurser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
 ## Nästa steg
 
 När du har konfigurerat och verifierat din butik kan du:
 
-1. **[Installera Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=sv-SE#install-and-configure-sidekick)** - webbläsartillägg för redigering, förhandsgranskning och publicering av innehåll direkt från webbplatsen
+1. **[Installera Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** - webbläsartillägg för redigering, förhandsgranskning och publicering av innehåll direkt från webbplatsen
 
-2. **[Konfigurera en lokal utvecklingsmiljö](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=sv-SE#set-up-local-environment)** - Skapa en lokal miljö för att anpassa din butikskod och ditt innehåll
+2. **[Konfigurera en lokal utvecklingsmiljö](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - Skapa en lokal miljö för att anpassa din butikskod och ditt innehåll
 
 ### Utforska och lär dig mer
 
 * **[Slutför hela användningsexemplet](./use-case/admin-use-case.md)** - Läs mer om konfiguration och kataloghantering av butiker med [!DNL Adobe Commerce Optimizer]
 
-* **[Utforska anpassning av butiker](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=sv-SE)** - Lär dig avancerade inställningar och konfigurationsalternativ
+* **[Utforska anpassning av butiker](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** - Lär dig avancerade inställningar och konfigurationsalternativ
 
-* **[Använd Commerce-insticksprogram för att anpassa butiksupplevelsen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=sv-SE)**-Lägg till färdiga komponenter för att förbättra butiksupplevelsen
+* **[Använd Commerce-insticksprogram för att anpassa butiksupplevelsen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**-Lägg till färdiga komponenter för att förbättra butiksupplevelsen
 
 >[!MORELIKETHIS]
 >
-> Läs [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE) om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med komponenterna i Commerce Front och backend-data.
+> Läs [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med komponenterna i Commerce Front och backend-data.
