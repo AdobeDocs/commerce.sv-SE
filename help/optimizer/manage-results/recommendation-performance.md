@@ -1,10 +1,11 @@
 ---
 title: Rekommendationsprestanda
 description: Sidan Rekommendationer ger dig insikt i hur bra dina produktrekommendationer fungerar.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
+source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -27,14 +28,11 @@ Välj den [katalogvy](../setup/catalog-view.md) där dina rekommendationer gäll
 
 ## Visa en rapport
 
-Klicka på kalendern och gör något av följande:
+Klicka på **[!UICONTROL Date Range]** och välj ett av följande intervall:
 
-- Om du vill ange ett enstaka datum dubbelklickar du på datumet i kalendern.
-- Om du vill ange ett datumintervall klickar du på det första och det sista datumet i kalendern.
+![Rekommendationer, datumintervall](../assets/rec-perf-date-range.png)
 
->[!NOTE]
->
->Datumintervallet får inte vara längre än ett år.
+Rekommendationstabellen uppdateras och visar mått för det datumintervallet.
 
 ## Anpassa tabell
 
@@ -71,7 +69,7 @@ Lär dig hur du kan [skapa en ny eller hantera en befintlig](../merchandising/re
 
 | Kontroll | Beskrivning |
 |---|---|
-| ![Kalenderväljare](../assets/icon-calendar.png) | Anger det tidsintervall som används för måttberäkningar. |
+| ![Datumintervall](../assets/rec-perf-date-range.png) | Anger det tidsintervall som används för måttberäkningar. |
 | ![Kolumnväljare](../assets/icon-show-hide-columns.png) | Anger vilka kolumner som visas i tabellen Rekommendationer. |
 | Skapa rekommendation | Öppnar sidan [Skapa ny rekommendation](../merchandising/recommendations/create.md). |
 
