@@ -1,11 +1,11 @@
 ---
 title: Rekommendationsprestanda
 description: Sidan Rekommendationer ger dig insikt i hur bra dina produktrekommendationer fungerar.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
+source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,15 @@ På sidan Recommendations Performance (Rekommendationer prestanda) visas en list
 
 ![Rekommendationsprestanda](../assets/rec-performance.png){zoomable="yes"}
 
-## Välj **katalogvyn**
-
-Välj den [katalogvy](../setup/catalog-view.md) där dina rekommendationer gäller.
-
-![Katalogvy](../assets/catalog-view.png)
-
 ## Visa en rapport
 
-Klicka på **[!UICONTROL Date Range]** och välj ett av följande intervall:
+1. Välj **katalogkällan**, till exempel `en-US`, där dina rekommendationer gäller.
 
-![Rekommendationer, datumintervall](../assets/rec-perf-date-range.png)
+1. Klicka på **[!UICONTROL Date Range]** och välj ett av följande intervall:
 
-Rekommendationstabellen uppdateras och visar mått för det datumintervallet.
+   ![Rekommendationer, datumintervall](../assets/rec-perf-date-range.png)
+
+   Rekommendationstabellen uppdateras och visar mått för det datumintervallet.
 
 ## Anpassa tabell
 
@@ -46,14 +42,6 @@ Rekommendationstabellen uppdateras och visar mått för det datumintervallet.
    - Om du vill dölja en synlig kolumn klickar du på ett kolumnnamn med en bock.
 
    Tabellen uppdateras så att den endast innehåller de markerade kolumnerna.
-
-## Ange filter
-
-Klicka på filterikonen om du vill filtrera mätvärdena på arbetsytan för prestandarekommendationer.
-
-![Filtermått](../assets/rec-filters.png)
-
-Du kan konfigurera flera värden för varje filter. Se tabellen [nedan](#column-descriptions) för beskrivningar av varje filter.
 
 ## Visa detaljer
 
