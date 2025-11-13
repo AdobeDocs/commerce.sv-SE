@@ -130,11 +130,11 @@ När du har skapat projektet sparar du följande värden från inloggningssidan 
 
 Spara följande värden från instansinformationen för Adobe Commerce Optimizer.
 
-* **Instans-ID—**Den unika identifieraren för din Adobe Commerce Optimizer-instans. Kallas även innehavar-ID.
+* **Instans-ID—**&#x200B;Den unika identifieraren för din Adobe Commerce Optimizer-instans. Kallas även innehavar-ID.
 
   Hämta instans-ID:t från URL:en för att komma åt din Adobe Commerce Optimizer-instans. I URL:en `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef` är till exempel instans-ID `1234567890abcdef`.
 
-* **Region—**Den region där din Adobe Commerce Optimizer-sandlådeinstans finns.
+* **Region—**&#x200B;Den region där din Adobe Commerce Optimizer-sandlådeinstans finns.
 
   Hämta regionen från Adobe Commerce Optimizer URL. I URL:en `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef` är regionen till exempel `na1`.
 
@@ -168,11 +168,11 @@ Du kan kontrollera datasynkroniseringen både från Commerce Admin och Commerce 
 
 * Statussidan **[Synkronisering av dataflöden](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)** visar förloppet för synkroniseringen av katalogdata från Commerce till Adobe Commerce Optimizer.
 
-* **[[!UICONTROL Data Sync]-sidan ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** i Adobe Commerce Optimizer visar katalogdata som överförts från din Commerce-instans.
+* **[[!UICONTROL Data Sync]-sidan &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** i Adobe Commerce Optimizer visar katalogdata som överförts från din Commerce-instans.
 
 1. Kontrollera att katalogdata flödar från Commerce till Commerce Optimizer:
 
-   Öppna sidan [!UICONTROL Data Feed Sync Status] i Commerce Admin genom att välja [!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]**.
+   Öppna sidan [!UICONTROL Data Feed Sync Status] i Commerce Admin genom att välja [!UICONTROL System] **&#x200B; > [!UICONTROL Data Transfer] > &#x200B;** [!UICONTROL Data Feed Sync Status]**.
 
    ![Statussida för synkronisering av dataflöden med statusrapportering för feed-objekt](./assets/data-feed-sync-status.png)
 
