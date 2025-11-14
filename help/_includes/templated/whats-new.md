@@ -23,7 +23,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">versionsinformationen</a> för Payment Services v2.13.0.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/payment-services/release-notes">versionsinformationen</a> för Payment Services v2.13.0.</p>
 </td>
       <td>
         Teknisk
@@ -45,7 +45,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">versionsinformationen</a> för AEM Assets Integration version 1.2.7.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/release-notes">versionsinformationen</a> för AEM Assets Integration version 1.2.7.</p>
 </td>
       <td>
         Teknisk
@@ -67,7 +67,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Följande avsnitt har uppdaterats med information om hur du konfigurerar identitetshantering och enkel inloggning från Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User och Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: User and Identity Management</a></p>
+      <td><p>Följande avsnitt har uppdaterats med information om hur du konfigurerar identitetshantering och enkel inloggning från Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User och Identity Management</a><br />- <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: User and Identity Management</a></p>
 </td>
       <td>
         Feedback, teknisk
@@ -89,7 +89,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">steg för användarhantering</a> för att lägga till en användare.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/user-management">steg för användarhantering</a> för att lägga till en användare.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -111,7 +111,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Konfigurationsguiden <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront"> för </a>storefront har uppdaterats för Adobe Commerce Optimizer så att den innehåller instruktioner om hur du skapar ett storefront-projekt med verktyget Site Creator, anpassar butikskonfigurationen och verifierar webbplats- och katalogdata genom att kontrollera standardproduktinformationen och produktsökresultatsidorna.</p>
+      <td><p>Konfigurationsguiden <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/storefront"> för </a>storefront har uppdaterats för Adobe Commerce Optimizer så att den innehåller instruktioner om hur du skapar ett storefront-projekt med verktyget Site Creator, anpassar butikskonfigurationen och verifierar webbplats- och katalogdata genom att kontrollera standardproduktinformationen och produktsökresultatsidorna.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -133,7 +133,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Användarhantering</a> kräver nu att alla utvecklare och produktadministratörer lägger till användarrollen först.</p>
+      <td><p><a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/user-management">Användarhantering</a> kräver nu att alla utvecklare och produktadministratörer lägger till användarrollen först.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -155,7 +155,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Publicerade <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">versionsinformation</a> för Betalningstjänster v2.12.2.</p>
+      <td><p>Publicerade <a href="https://experienceleague.adobe.com/sv/docs/commerce/payment-services/release-notes">versionsinformation</a> för Betalningstjänster v2.12.2.</p>
 </td>
       <td>
         Viktig uppdatering
