@@ -1,13 +1,13 @@
 ---
 title: AI-kodningsverktyg för tillägg
 description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-tillägg.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 9382ce8f139f9d2f4ec1732c0d83b466cd54fa37
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -96,10 +96,19 @@ När du väljer pakethanteraren bör du använda `npm` för konsekvens:
 
    Följande filer läggs till på arbetsytan:
 
+   **Markör**
+
    * MCP-konfiguration: `.cursor/mcp.json`
    * Regelkatalog: `.cursor/rules/`
 
+   **Copilot**
+
+   * MCP-konfiguration: `.vscode/mcp.json`
+   * Regelkatalog: `.github/copilot-instructions.md`
+
 ## Konfiguration efter installation
+
+### Markör
 
 1. Starta om markörutvecklingsmiljön för att läsa in de nya MCP-verktygen och konfigurationen.
 
@@ -119,6 +128,45 @@ När du väljer pakethanteraren bör du använda `npm` för konsekvens:
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
    ```
+
+1. Använd följande uppmaning för att se om agenten använder MCP-servern. Om så inte är fallet ber du agenten uttryckligen att använda de tillgängliga MCP-verktygen.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
+```
+
+### Copilot
+
+1. Starta om Visual Studio Code för att läsa in de nya MCP-verktygen och konfigurationen.
+
+1. Kontrollera installationen genom att bekräfta att filen `copilot-instructions.md` finns i mappen `.github`.
+
+1. Aktivera MCP-servern:
+
+   * Öppna panelen Tillägg genom att klicka på ikonen **Tillägg** i aktivitetsfältet till vänster eller genom att använda **Cmd+Skift+X** (macOS) eller **Ctrl+Skift+X** (Windows och Linux).
+   * Klicka på **MCP-SERVRAR - INSTALLERADE**.
+   * Klicka på kugghjulsikonen bredvid **Commerce-extensibility MCP Server** och välj **Start Server** om servern stoppas.
+   * Klicka på kugghjulsikonen igen och välj **Visa utdata**.
+
+1. Kontrollera serverstatusen. `MCP:commerce-extensibility`-utdata ska matcha följande:
+
+   ```terminal
+   2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
+   2025-11-13 12:58:50.652 [info] Connection state: Starting
+   2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
+   2025-11-13 12:58:50.657 [info] Connection state: Starting
+   2025-11-13 12:58:50.657 [info] Connection state: Running
+   
+   (...)
+   
+   2025-11-13 12:58:50.753 [info] Discovered 10 tools
+   ```
+
+1. Använd följande uppmaning för att se om agenten använder MCP-servern. Om så inte är fallet ber du agenten uttryckligen att använda de tillgängliga MCP-verktygen.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+```
 
 ## Exempelfråga
 
@@ -174,7 +222,7 @@ Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser
