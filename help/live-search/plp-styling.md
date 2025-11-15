@@ -1,9 +1,10 @@
 ---
 title: Sidwidget för produktlista
 description: Aktivera och formatera  [!DNL Live Search Product Listing Page Widget]
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
+source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,15 @@ ht-degree: 0%
 
 När tjänsten [!DNL Live Search] är installerad konverteras standardsökfunktionen automatiskt till [!DNL Live Search].
 
-PLP-widgeten [!DNL Live Search] är aktiverad som standard för nya installationer. Om du uppgraderar [!DNL Live Search] och PLP-widgeten redan har inaktiverats, förblir det så.
+PLP-widgeten [!DNL Live Search] är aktiverad som standard för nya installationer.
+
+Om du uppgraderar [!DNL Live Search] och PLP-widgeten redan har inaktiverats, förblir det så. Så här aktiverar du den:
+1. Gå till Lager → Inställningar → Konfiguration i Adobe Commerce Admin.
+1. Klicka på **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]** i den vänstra navigeringen.
+1. Klicka på avsnittet [!UICONTROL Storefront Features].
+1. Ange [!UICONTROL Enable Product Listing Widget] = Ja
+1. Spara konfiguration
+1. Om du uppmanas till det tömmer du cachen (gå till System > Verktyg > Cachehantering > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
