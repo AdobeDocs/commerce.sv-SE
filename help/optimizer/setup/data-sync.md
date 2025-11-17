@@ -3,11 +3,11 @@ title: Datasynkronisering
 description: Granska katalogdata som synkroniseras från din Commerce-datakälla till  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
-source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
+source-git-commit: e2c3c8a225b2c56985ba48c7efc9ae2c2d059b2e
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -51,3 +51,8 @@ Om du inte ser specifika produkter på sidan **Datasynkronisering** måste du in
 >[!IMPORTANT]
 >
 >Den tid det tar att slutföra synkroniseringen varierar beroende på katalogstorleken och den datamängd som har uppdaterats.
+
+## Övervaka datasynkroniseringsstatus
+
+För projekt som använder Adobe Commerce som den överordnade datakällan kan du övervaka dataexportprocessen och initiera omsynkroniseringsåtgärder från statussidan [Synkronisering av dataflöden](../../data-export/data-synchronization.md) i Commerce Admin.
+
