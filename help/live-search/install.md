@@ -3,8 +3,8 @@ title: Kom igång med  [!DNL Live Search]
 description: Lär dig systemkraven och installationsstegen för  [!DNL Live Search] från Adobe Commerce.
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
-source-git-commit: bb4e82c98294c2b1646e33b715a7cedb1ce4479a
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+source-git-commit: fb947f9d3618f8604ac6cdda2fbf7ea3ca456628
 workflow-type: tm+mt
 source-wordcount: '2532'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Den här artikeln är avsedd för utvecklare eller systemintegratörer i ditt te
 
 ## Krav
 
-- [Adobe Commerce](https://business.adobe.com/se/products/magento/magento-commerce.html) 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
 - PHP 8.1, 8.2 eller 8.3
 - [!DNL Composer]
 - Köra cron-jobb och indexerare
@@ -64,7 +64,7 @@ På en hög nivå kräver introduktionen av [!DNL Live Search] att du:
 
 Följ dessa anvisningar om du installerar [!DNL Live Search] på en ny Commerce-instans.
 
-1. Bekräfta att [cron-jobb](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) och [indexerare](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management) körs.
+1. Bekräfta att [cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) och [indexerare](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) körs.
 
 1. Använd Composer för att lägga till Live Search-modulen i ditt projekt:
 
@@ -92,7 +92,7 @@ Följ dessa anvisningar om du installerar [!DNL Live Search] på en ny Commerce-
    bin/magento setup:upgrade
    ```
 
-1. Kontrollera att följande [indexerare](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management) är inställda på &quot;Update by Schedule&quot;:
+1. Kontrollera att följande [indexerare](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) är inställda på &quot;Update by Schedule&quot;:
 
    - Produktfeed
    - Produktvariantfeed
@@ -109,7 +109,7 @@ När du har verifierat indexerarna är nästa steg att [konfigurera API-nycklarn
 
 Följ dessa anvisningar om du installerar [!DNL Live Search] på en befintlig Commerce-instans.
 
-1. Bekräfta att [cron-jobb](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) och [indexerare](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management) körs.
+1. Bekräfta att [cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) och [indexerare](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) körs.
 
 1. Använd Composer för att lägga till Live Search-modulen i ditt projekt:
 
@@ -137,7 +137,7 @@ Följ dessa anvisningar om du installerar [!DNL Live Search] på en befintlig Co
    bin/magento setup:upgrade
    ```
 
-1. Kontrollera att följande [indexerare](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/index-management) är inställda på &quot;Update by Schedule&quot;:
+1. Kontrollera att följande [indexerare](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) är inställda på &quot;Update by Schedule&quot;:
 
    - Produktfeed
    - Produktvariantfeed
@@ -204,7 +204,7 @@ När du kör dessa kommandon börjar den inledande synkroniseringen av katalogda
 
 ### Övervaka synkroniseringsförlopp
 
-Använd [Instrumentpanelen för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) för att övervaka synkroniseringsförloppet. Den här instrumentpanelen ger värdefulla insikter om tillgängligheten av produktdata i din butik, så att den snabbt kan visas för kunderna.
+Använd [Instrumentpanelen för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard.md) för att övervaka synkroniseringsförloppet. Den här instrumentpanelen ger värdefulla insikter om tillgängligheten av produktdata i din butik, så att den snabbt kan visas för kunderna.
 
 ![Instrumentpanel för datahantering](assets/data-management-dashboard.png)
 
@@ -227,12 +227,12 @@ Om du vill kontrollera om katalogdata har exporterats från Adobe Commerce och s
   >
   >Om du får ett `table does not exist`-fel söker du efter poster i tabellerna `catalog_data_exporter_products` och `catalog_data_exporter_product_attributes`. De här tabellnamnen används i [!DNL Live Search] tidigare versioner än 4.2.1.
 
-- Använd [GraphQL playground](https://experienceleague.adobe.com/sv/docs/commerce/live-search/live-search-admin/graphql) med standardfrågan (se [GraphQL reference](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) för mer information) för att verifiera följande:
+- Använd [GraphQL playground](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/graphql) med standardfrågan (se [GraphQL reference](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) för mer information) för att verifiera följande:
 
    - Det returnerade antalet produkter är nästan vad du förväntar dig för butiksvyn.
    - Ansikten returneras.
 
-Mer hjälp finns i [[!DNL Live Search] katalogen har inte synkroniserats](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) i kunskapsbasen med supportfrågor.
+Mer hjälp finns i [[!DNL Live Search] katalogen har inte synkroniserats](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) i kunskapsbasen med supportfrågor.
 
 ## &#x200B;5. Konfigurera data {#configuredata}
 
@@ -244,7 +244,7 @@ När du installerar [!DNL Live Search] 4.0.0+ aktiveras widgetar för produktlis
 
 Om du har en [!DNL Live Search]-version som är äldre än 4.0.0+ måste du aktivera produktlistwidgeten manuellt.
 
-1. Gå till *>* > **[!UICONTROL Stores]** från _[!UICONTROL Settings]_&#x200B;Admin **[!UICONTROL Configuration]**.
+1. Gå till *>* > **[!UICONTROL Stores]** från _[!UICONTROL Settings]_Admin **[!UICONTROL Configuration]**.
 1. Välj **[!UICONTROL Live Search]** under **[!UICONTROL Storefront Features]**.
 1. Ange **[!UICONTROL Enable Product Listing Widgets]** till `Yes`.
 
@@ -252,10 +252,10 @@ Om du har en [!DNL Live Search]-version som är äldre än 4.0.0+ måste du akti
 
 När du ändrar den här konfigurationen visas meddelandet `Page cache is invalidated`. Du måste tömma Magento-cachen för att spara ändringarna.
 
-1. Gå till sidan [Cachehantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/cache-management) genom att göra något av följande:
+1. Gå till sidan [Cachehantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) genom att göra något av följande:
 
    - Klicka på länken **[!UICONTROL Cache Management]** i meddelandet ovanför arbetsytan.
-   - Gå till _>_ > **[!UICONTROL System]** på sidofältet _[!UICONTROL Tools]_&#x200B;Admin **[!UICONTROL Cache Management]**.
+   - Gå till _>_ > **[!UICONTROL System]** på sidofältet _[!UICONTROL Tools]_Admin **[!UICONTROL Cache Management]**.
 
 1. Välj **Konfiguration** [!UICONTROL Cache Type] och klicka på **[!UICONTROL Flush Magento Cache]**.
 
@@ -263,7 +263,7 @@ När du ändrar den här konfigurationen visas meddelandet `Page cache is invali
 
 ### Tilldela kategorier
 
-Produkter som returneras i [!DNL Live Search] måste tilldelas en [kategori](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/categories/categories). I Luma kan till exempel produkter delas in i kategorier som &quot;Män&quot;, &quot;Kvinnor&quot; och &quot;Kugghjul&quot;. Underkategorierna är också inställda för &quot;Tops&quot;, &quot;Bottom&quot; och &quot;Watches&quot;. Dessa kategoritilldelningar förbättrar granulariteten vid filtrering.
+Produkter som returneras i [!DNL Live Search] måste tilldelas en [kategori](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). I Luma kan till exempel produkter delas in i kategorier som &quot;Män&quot;, &quot;Kvinnor&quot; och &quot;Kugghjul&quot;. Underkategorierna är också inställda för &quot;Tops&quot;, &quot;Bottom&quot; och &quot;Watches&quot;. Dessa kategoritilldelningar förbättrar granulariteten vid filtrering.
 
 ## &#x200B;6. Testa anslutningen {#test}
 
@@ -347,7 +347,7 @@ Om du vill uppdatera till en huvudversion, som 3.1.1 till 4.0.0, redigerar du pr
 
 ## Avinstallerar [!DNL Live Search]
 
-Information om hur du avinstallerar [!DNL Live Search] finns i [Avinstallationsmoduler](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
+Information om hur du avinstallerar [!DNL Live Search] finns i [Avinstallationsmoduler](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
 ## [!DNL Live Search] paket
 
@@ -356,7 +356,7 @@ Tillägget [!DNL Live Search] består av följande paket:
 | Paket | Beskrivning |
 |--- |--- |
 | `module-live-search` | Gör att handlare kan konfigurera sina sökinställningar för ansikten, synonymer, frågeregler och så vidare, och ger åtkomst till en skrivskyddad GraphQL-spelningsmiljö för att testa frågor från *Admin*. |
-| `module-live-search-adapter` | Slussar sökbegäranden från butiken till tjänsten [!DNL Live Search] och återger resultaten i butiken. <br /> - Kategoribläddring - dirigerar begäranden från butiken [top navigation](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/navigation/navigation-top) till söktjänsten.<br /> - Global sökning - dirigerar begäranden från fältet [snabbsökning](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search) till tjänsten [!DNL Live Search]. Snabbsöksfältet finns i det övre högra hörnet av butikssidan. |
+| `module-live-search-adapter` | Slussar sökbegäranden från butiken till tjänsten [!DNL Live Search] och återger resultaten i butiken. <br /> - Kategoribläddring - dirigerar begäranden från butiken [top navigation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) till söktjänsten.<br /> - Global sökning - dirigerar begäranden från fältet [snabbsökning](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) till tjänsten [!DNL Live Search]. Snabbsöksfältet finns i det övre högra hörnet av butikssidan. |
 | `module-live-search-storefront-popover` | En sökfunktion som ersätter standardsnabbsökningen och returnerar data och miniatyrbilder av de översta sökresultaten. |
 
 ## [!DNL Live Search] beroenden
@@ -467,7 +467,7 @@ När [!DNL Live Search] har aktiverats synkroniserar dataexporttillägget Commer
 
 ### Inventory management
 
-[!DNL Live Search] har stöd för [Inventory management](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/introduction)-funktioner i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständigt stöd måste du [uppdatera](install.md#updating-live-search) beroendemodulen `commerce-data-export` till version 102.2.0+.
+[!DNL Live Search] har stöd för [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)-funktioner i Commerce (tidigare Multi-Source Inventory, eller MSI). Om du vill aktivera fullständigt stöd måste du [uppdatera](install.md#updating-live-search) beroendemodulen `commerce-data-export` till version 102.2.0+.
 
 [!DNL Live Search] returnerar ett booleskt meddelande som anger om en produkt är tillgänglig i Inventory management, men inte innehåller information om vilken källa som har aktien.
 
@@ -504,7 +504,7 @@ Den här modulen lägger till ytterligare kontexter i GraphQL-frågor:
 
 ### Stöd för B2B
 
-[!DNL Live Search] har stöd för [B2B-funktioner](https://experienceleague.adobe.com/sv/docs/commerce-admin/b2b/guide-overview) med ytterligare [begränsningar](boundaries-limits.md#b2b-and-category-permissions).
+[!DNL Live Search] har stöd för [B2B-funktioner](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) med ytterligare [begränsningar](boundaries-limits.md#b2b-and-category-permissions).
 
 ### PWA support
 
