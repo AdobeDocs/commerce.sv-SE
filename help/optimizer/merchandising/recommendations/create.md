@@ -1,11 +1,11 @@
 ---
 title: Skapa och hantera rekommendationer
 description: Lär dig hur du skapar och hanterar rekommendationer.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,10 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
    - **Aktivera** om du vill aktivera rekommendationsenheten på din butik.
 
 1. Kopiera rekommendation-ID när du uppmanas till det. Använd det här ID:t för att identifiera vilken rekommendationsenhet som används i rekommendationslistrutan i din Edge Delivery Services-butik.
+
+>[!NOTE]
+>
+> Du kan skapa upp till 50 aktiva rekommendationsenheter.
 
 >[!IMPORTANT]
 >
