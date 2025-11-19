@@ -2,9 +2,9 @@
 title: Skapa ny rekommendation
 description: Lär dig hur du skapar en produktrekommendationsenhet.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1505'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
 1. Gå till _Marknadsföring_ > **Kampanjer** > _Produktrekommendationer_ på sidofältet **Admin** för att visa arbetsytan _Produktrekommendationer_ .
 
-1. Ange [butiksvyn](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/setup/websites-stores-views) där du vill att rekommendationerna ska visas.
+1. Ange [butiksvyn](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) där du vill att rekommendationerna ska visas.
 
    >[!NOTE]
    >
-   > Rekommendationsenheter för Page Builder måste skapas i standardbutiksvyn, men kan användas var som helst. Mer information om hur du skapar produktrekommendationer med Page Builder finns i [Lägg till innehåll - produktrekommendationer](https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Rekommendationsenheter för Page Builder måste skapas i standardbutiksvyn, men kan användas var som helst. Mer information om hur du skapar produktrekommendationer med Page Builder finns i [Lägg till innehåll - produktrekommendationer](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Klicka på **Skapa rekommendation**.
 
@@ -38,16 +38,16 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
    >[!NOTE]
    >
-   > Produktrekommendationer stöds inte på kundvagnssidan när din butik är konfigurerad att [visa kundvagnssidan omedelbart efter att en produkt lagts till i kundvagnen](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Produktrekommendationer stöds inte på kundvagnssidan när din butik är konfigurerad att [visa kundvagnssidan omedelbart efter att en produkt lagts till i kundvagnen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Hemsida
    * Kategori
    * Produktinformation
    * Kundvagn
    * Bekräftelse
-   * [Page Builder](https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
-   Du kan skapa upp till fem aktiva rekommendationsenheter för varje sidtyp och upp till 25 för Page Builder. Sidtypen är nedtonad när gränsen nås.
+   Du kan skapa upp till 50 aktiva rekommendationsenheter för varje sidtyp. Sidtypen är nedtonad när gränsen nås.
 
    ![Rekommendationsnamn och -sida](assets/create-recommendation.png)
    _Rekommendationsnamn och sidplacering_
