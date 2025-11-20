@@ -3,7 +3,7 @@ title: '[!DNL SaaS Data Export Guide]'
 description: Lär dig hur du använder tillägget  [!DNL data export] för Adobe Commerce SaaS-tjänster som synkroniserar data mellan Adobe Commerce och anslutna Commerce-tjänster.
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: 8e3e71c7de56b367a73ab048fa13ba2cdeb55f41
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -25,9 +25,9 @@ SaaS-dataexport levereras som ett PHP-tillägg. Det har stöd för flera metoder
 
 - **Manuell synkronisering från administratören eller kommandoraden**
 
-   - Kontrollpanelen [Datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard) i Commerce Admin innehåller en grafisk vy över synkroniseringsstatusen. Du kan använda kontrollpanelen för att utföra en fullständig omsynkronisering (_fullständig synkronisering_) av alla feeds. Adobe rekommenderar dock att du bara utför en fullständig synkronisering första gången du ansluter Adobe Commerce till en Commerce-tjänst. Se [Synkroniseringsprocess](data-synchronization.md).
+   - Kontrollpanelen [Datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) i Commerce Admin innehåller en grafisk vy över synkroniseringsstatusen. Du kan använda kontrollpanelen för att utföra en fullständig omsynkronisering (_fullständig synkronisering_) av alla feeds. Adobe rekommenderar dock att du bara utför en fullständig synkronisering första gången du ansluter Adobe Commerce till en Commerce-tjänst. Se [Synkroniseringsprocess](data-synchronization.md).
 
-   - [Adobe Commerce kommandoradsverktyg](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) innehåller kommandon för att synkronisera specifika flöden och ytterligare alternativ för att anpassa flödeshantering.
+   - [Adobe Commerce kommandoradsverktyg](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) innehåller kommandon för att synkronisera specifika flöden och ytterligare alternativ för att anpassa flödeshantering.
 
 - **Automatisk synkronisering med cron-jobb**
 

@@ -3,7 +3,7 @@ title: Versionsinformation för [!DNL Catalog Service]
 description: Den senaste versionsinformationen för  [!DNL Catalog Service]  för Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 93adab667d1d8ed40c9d5668db376493bd8ae684
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Support ges för den aktuella större versionen. Versionsinformation för äldre
 Bland uppdateringarna finns:
 
 ![Nya](../assets/new.svg) nya funktioner
-![Korrigera &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
+![Korrigera ](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
 ## Aktuell huvudversion
@@ -68,7 +68,7 @@ _23 maj 2024_
 
 ![Korrigera](../assets/fix.svg) <!--DATA-5033-->Flaggan `InStock` för alternativvärden tar nu hänsyn till produktvariantens omfångsstatus `enabled` .
 
-![Korrigera](../assets/fix.svg) <!--DATA-5888-->Lägg till stöd för produktpriser som kräver stora tal (upp till 16 siffror) och större decimalprecision (upp till 4 decimaler). Om du vill tillämpa priskonfigurationsuppdateringarna på din befintliga katalog synkroniserar du om katalogdata från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard), eller genom att använda kommandoradsgränssnittet [Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+![Korrigera](../assets/fix.svg) <!--DATA-5888-->Lägg till stöd för produktpriser som kräver stora tal (upp till 16 siffror) och större decimalprecision (upp till 4 decimaler). Om du vill tillämpa priskonfigurationsuppdateringarna på din befintliga katalog synkroniserar du om katalogdata från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), eller genom att använda kommandoradsgränssnittet [Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
 
 #### Kända begränsningar
 
@@ -102,7 +102,7 @@ _22 februari 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Nytt](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=sv-SE) är nu tillgängligt. Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search] och [!DNL Catalog Service]. Stöd för den här funktionen introducerades i v3.1.0 i metapaketet `catalog-service`.
+![Nytt](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) är nu tillgängligt. Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search] och [!DNL Catalog Service]. Stöd för den här funktionen introducerades i v3.1.0 i metapaketet `catalog-service`.
 
 ### Version V1.16
 
@@ -151,7 +151,7 @@ _18 juli 2023_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Ny](../assets/new.svg) katalogtjänst har nu stöd för GraphQL-frågan [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/recommendations/) för produktrekommendationer.
+![Ny](../assets/new.svg) katalogtjänst har nu stöd för GraphQL-frågan [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) för produktrekommendationer.
 
 ### Version V1.10
 

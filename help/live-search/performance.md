@@ -1,7 +1,8 @@
 ---
 title: Prestanda
 description: ' [!DNL Live Search] Prestandaarbetsytan ger insikt i de söktermer som kunderna använder.'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 07a63df8-b981-4913-841a-7e81ec634281
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -18,7 +19,7 @@ Arbetsytan *Prestanda* ger insikt i de söktermer som kunderna använder. Inform
 
 ![Prestanda](assets/performance-unique-searches.png)
 
-Du kan även gå till [Dashboard för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=sv-SE) om du vill ha mer information om datasynkronisering.
+Du kan även gå till [Dashboard för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) om du vill ha mer information om datasynkronisering.
 
 >[!NOTE]
 >

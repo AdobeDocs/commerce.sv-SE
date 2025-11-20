@@ -3,7 +3,7 @@ title: Installera och konfigurera
 description: Lär dig hur du installerar, uppdaterar och avinstallerar  [!DNL Product Recommendations].
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
-source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -41,13 +41,13 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Genom att aktivera [!DNL Product Recommendations] i Page Builder kan du lägga till en befintlig, aktiv [rekommendationsenhet](https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/add-content/recommendations) i allt innehåll som skapas i Page Builder, till exempel sidor, block och dynamiska block.
+Genom att aktivera [!DNL Product Recommendations] i Page Builder kan du lägga till en befintlig, aktiv [rekommendationsenhet](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) i allt innehåll som skapas i Page Builder, till exempel sidor, block och dynamiska block.
 
 Mer information finns i [Använda [!DNL Product Recommendations] med Page Builder-innehåll](page-builder.md).
 
 ### Lägg till rekommendationstyp för visuell likhet {#vissimsupport}
 
-Rekommendationstypen _Visuell likhet_ gör att du kan distribuera en rekommendationsenhet till produktinformationssidan som visar produkter som [visuellt liknar &#x200B;](type.md#visualsim) den produkt som visas. Rekommendationstypen är mest användbar när bilder och visuella aspekter av produkterna är viktiga delar av shoppingupplevelsen. Installera rekommendationstypen _Visuell likhet_ genom att köra följande kommando:
+Rekommendationstypen _Visuell likhet_ gör att du kan distribuera en rekommendationsenhet till produktinformationssidan som visar produkter som [visuellt liknar ](type.md#visualsim) den produkt som visas. Rekommendationstypen är mest användbar när bilder och visuella aspekter av produkterna är viktiga delar av shoppingupplevelsen. Installera rekommendationstypen _Visuell likhet_ genom att köra följande kommando:
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -59,13 +59,13 @@ composer require magento/module-visual-product-recommendations
 
    Om du konfigurerar den här anslutningen aktiveras datasynkronisering och kommunikation mellan Commerce-instansen, katalogtjänsten och andra stödtjänster. Datasynkronisering hanteras av [SaaS-tillägget för dataexport](../data-export/overview.md).
 
-1. Om du vill vara säker på att katalogexporten kan köras korrekt kontrollerar du att [cron](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) -jobben och [indexers](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers) körs och att `Product Feed`-indexeraren är inställd på `Update by Schedule`.
+1. Om du vill vara säker på att katalogexporten kan köras korrekt kontrollerar du att [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) -jobben och [indexers](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) körs och att `Product Feed`-indexeraren är inställd på `Update by Schedule`.
 
 När du har länkat Commerce-programmet till Commerce Services och angett [SaaS-datautrymmet](../landing/saas.md#saas-configuration) påbörjas katalogsynkroniseringen. Du kan sedan [verifiera](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) att beteendedata skickas till din butik.
 
 ## Övervaka och felsöka datasynkronisering
 
-Från Commerce Admin kan du övervaka synkroniseringsprocessen med [Dashboard för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-dashboard). Använd [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) och loggar för att hantera och felsöka processen.
+Från Commerce Admin kan du övervaka synkroniseringsprocessen med [Dashboard för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Använd [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) och loggar för att hantera och felsöka processen.
 
 Du kan sedan [verifiera](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) att beteendedata skickas till din butik.
 
@@ -119,4 +119,4 @@ Om du vill tillåta produktrekommendationer via en brandvägg lägger du till `c
 
 ## Avinstallera [!DNL Product Recommendations] {#uninstall}
 
-Om det behövs kan du [avinstallera](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) produktrekommendationsmodulen.
+Om det behövs kan du [avinstallera](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) produktrekommendationsmodulen.

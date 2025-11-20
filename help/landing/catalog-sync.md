@@ -2,21 +2,21 @@
 title: Katalogsynkronisering
 description: Lär dig hur du exporterar produktdata från  [!DNL Commerce] servern till [!DNL Commerce Services].
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 99f96b93-b036-490c-8c57-40463a0de365
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
-
 # Katalogsynkronisering
 
 >[!NOTE]
 >
-> Kontrollpanelen för katalogsynkronisering är nu Dashboard för datahantering. Den nya instrumentpanelen har nu stöd för [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ och [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Kunderna kan hämta Dashboard för datahantering genom att uppdatera till den senaste versionen av någon av dessa tjänster. Läs mer om det i dokumentationen för [Dashboard för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=sv-SE). Det här avsnittet gäller även för användare som ännu inte har uppgraderat och fortfarande har kontrollpanelen för katalogsynkronisering.
+> Kontrollpanelen för katalogsynkronisering är nu Dashboard för datahantering. Den nya instrumentpanelen har nu stöd för [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ och [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Kunderna kan hämta Dashboard för datahantering genom att uppdatera till den senaste versionen av någon av dessa tjänster. Läs mer om det i dokumentationen för [Dashboard för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html). Det här avsnittet gäller även för användare som ännu inte har uppgraderat och fortfarande har kontrollpanelen för katalogsynkronisering.
 
-Adobe Commerce använder indexerare för att kompilera katalogdata till tabeller. Processen aktiveras automatiskt av [händelser](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=sv-SE#events-that-trigger-full-reindexing), till exempel en ändring av ett produktpris eller lagernivå.
+Adobe Commerce använder indexerare för att kompilera katalogdata till tabeller. Processen aktiveras automatiskt av [händelser](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing), till exempel en ändring av ett produktpris eller lagernivå.
 
 Katalogsynkroniseringstjänsten flyttar fortlöpande produktdata från en [!DNL Adobe Commerce]-instans till [!DNL Commerce Services]-plattformen för att hålla informationen uppdaterad. [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) kräver till exempel aktuell kataloginformation för att kunna returnera rekommendationer med korrekta namn, priser och tillgänglighet. Använd kontrollpanelen _Katalogsynkronisering_ för att observera och hantera synkroniseringsprocessen eller kommandoradsgränssnittet för att utlösa en katalogsynkronisering och för att indexera om produktdata för användning av [!DNL Commerce Services]. Se [Referens för kommandoradsgränssnitt](../data-export/data-export-cli-commands.md) i _Exporthandboken för SaaS-data_.
 
@@ -55,11 +55,11 @@ Om du måste initiera en omsynkronisering av katalogen innan den schemalagda tim
 >
 > Om du tvingar en omsynkronisering utlöses en omsynkronisering av hela produktkatalogen, vilket kan öka belastningen på maskinvaruresurserna.
 
-1. Välj **Inställningar** på kontrollpanelen _Katalogsynkronisering_.
+1. Välj _Inställningar_ på kontrollpanelen **Katalogsynkronisering**.
 
    Sidan _Katalogsynkroniseringsinställningar_ visas.
 
-1. Klicka på [!UICONTROL Resync] i avsnittet _Synkronisera om data_.
+1. Klicka på _i avsnittet_ Synkronisera om data[!UICONTROL Resync].
 
    [!DNL Commerce] synkroniserar katalogen under nästa schemalagda synkroniseringsfönster. Beroende på storleken på katalogen kan den här åtgärden ta lång tid.
 
