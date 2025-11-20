@@ -16,7 +16,7 @@ ht-degree: 0%
 Dessa versionsinformation beskriver den första versionen av [!DNL Payment Services] och innehåller:
 
 ![Nya](../assets/new.svg) nya funktioner
-![ Åtgärdat problem ](../assets/fix.svg) Korrigeringar och förbättringar
+![&#x200B; Åtgärdat problem &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Kända fel](../assets/bug.svg)
 
 Om du vill se funktionsändringar och korrigeringar som släppts utanför den vanliga versionen av funktionen går du igenom avsnitten _Uppdateringar för värdtjänsten_.
@@ -182,7 +182,7 @@ _13 mars 2025_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- PAY-5826 --> Förbättrad tillförlitlighet för orderhantering genom att lösa ett problem som orsakade ett HTTP 500-fel när offertstatusen ändrades till `inactive`.
 
-![Ett problem har korrigerats där ](../assets/fix.svg)<!-- PAY-5849 --> orsakade undantag för decimalkvantiteter under 1. `LineItemProvider` [!DNL Payment Services] har nu bättre stöd för bråkkvantiteter.
+![Ett problem har korrigerats där &#x200B;](../assets/fix.svg)<!-- PAY-5849 --> orsakade undantag för decimalkvantiteter under 1. `LineItemProvider` [!DNL Payment Services] har nu bättre stöd för bråkkvantiteter.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- PAY-5868 --> Korrigerade ett fel på presentkortsbeloppet vid utcheckning. [!DNL Payment Services] garanterar nu korrekta värden under utcheckningsprocessen.
 
@@ -228,7 +228,7 @@ _13 december 2024_
 
 ![Nytt](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] har nu stöd för [3D-säker autentisering med Google Pay](security.md#3ds), vilket förbättrar säkerheten för handlare och kunder under betalningstransaktioner.
 
-![Korrigera](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] ger [kunder möjlighet att spara kort direkt i sitt **Mitt konto**](vaulting.md#vaulting-without-purchase), vilket underlättar för dem och förenklar framtida utcheckningar. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms` ](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
+![Korrigera](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] ger [kunder möjlighet att spara kort direkt i sitt **Mitt konto**](vaulting.md#vaulting-without-purchase), vilket underlättar för dem och förenklar framtida utcheckningar. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
 
 ![Åtgärda](../assets/fix.svg)<!-- PAY-5762 --> Ett problem där kupongkoder inte tillämpades på ordergranskningssidan när ordern initierades från produktinformationssidan (PDP) har åtgärdats.
 
@@ -312,7 +312,7 @@ _23 april 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Korrigera](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] har nu stöd för [Adobe Commerce-riktlinjer för `--db-prefix` parameter ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) för Adobe Commerce version 2.4.7 och senare.
+![Korrigera](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] har nu stöd för [Adobe Commerce-riktlinjer för `--db-prefix` parameter &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) för Adobe Commerce version 2.4.7 och senare.
 
 ## v2.4.3
 
@@ -460,7 +460,7 @@ _10 mars 2023_
 
 ![Korrigera](../assets/fix.svg)<!-- Issue PAY-4205 --> Ett problem som orsakade att det angivna leveransadressläget ersattes av läget i standardskatteinställningarna vid utcheckning med alternativet [PayPal](payments-options.md#paypal-payment-buttons) har åtgärdats. Nu kan kunderna få sina beställningar levererade till ett annat tillstånd än det som konfigurerats som standard i handlarens skatteinställningar.
 
-![Åtgärdade](../assets/fix.svg)<!-- Issue PAY-4202 --> ett problem som hindrade kunder från att använda kortvalsfunktionen för att slutföra ett köp eller ta bort en betalningsmetod i säkert läge för en butik [med `Authorize and Capture` betalningsåtgärden ](production.md#set-payment-services-as-payment-method). Tidigare uppstod ett fel av typen &quot;Provider Vault ID not found&quot; när kunden försökte använda eller ändra sina kreditkort.
+![Åtgärdade](../assets/fix.svg)<!-- Issue PAY-4202 --> ett problem som hindrade kunder från att använda kortvalsfunktionen för att slutföra ett köp eller ta bort en betalningsmetod i säkert läge för en butik [med `Authorize and Capture` betalningsåtgärden &#x200B;](production.md#set-payment-services-as-payment-method). Tidigare uppstod ett fel av typen &quot;Provider Vault ID not found&quot; när kunden försökte använda eller ändra sina kreditkort.
 
 ## v1.6.0
 
@@ -602,7 +602,7 @@ _31 mars 2022_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue PAY-2561 --> Produkter som tagits bort tidigare visas inte i kundvagnen på sidan _Granska beställning_.
 
-![Känt fel](../assets/bug.svg)<!-- Issue PAY-2842 --> Testa kreditkortstransaktioner [ kan misslyckas med PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) när betalningar bearbetas i en sandlådemiljö.
+![Känt fel](../assets/bug.svg)<!-- Issue PAY-2842 --> Testa kreditkortstransaktioner [&#x200B; kan misslyckas med PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) när betalningar bearbetas i en sandlådemiljö.
 
 ## v1.0.0
 
@@ -626,7 +626,7 @@ _29 november 2021_
 
 ![Nytt](../assets/new.svg)<!-- Issue PAY-1443 --> Du kan enkelt [anpassa utseendet och känslan](payments-options.md) för betalningsknapparna och kreditkortsfälten för tillägget [!DNL Payment Services].
 
-![Ett känt fel](../assets/bug.svg)<!-- Issue PAY-2473 --> [Om du använder ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) felaktiga dispositionsnycklar under installationen av tillägget förhindrar du användaren från att [autentisera](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) med rätt `MAGEID`.
+![Ett känt fel](../assets/bug.svg)<!-- Issue PAY-2473 --> [Om du använder &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) felaktiga dispositionsnycklar under installationen av tillägget förhindrar du användaren från att [autentisera](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) med rätt `MAGEID`.
 
 ![Känt fel](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapporter [kanske inte synkroniseras omedelbart](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 

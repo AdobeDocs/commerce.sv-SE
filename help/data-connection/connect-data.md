@@ -121,7 +121,7 @@ Mer information om [storefront](events.md#storefront-events), [back office](even
 
 1. För att säkerställa att data för händelser på back office uppdateras baserat på ett schema enligt ett [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) -jobb, måste du ändra `Sales Orders Feed`-indexet till `Update by Schedule`.
 
-   1. Gå till _>_ > **[!UICONTROL System]** på sidofältet _[!UICONTROL Tools]_Admin **[!UICONTROL Index Management]**.
+   1. Gå till _>_ > **[!UICONTROL System]** på sidofältet _[!UICONTROL Tools]_&#x200B;Admin **[!UICONTROL Index Management]**.
 
    1. Markera kryssrutan för indexeraren `Sales Orders Feed`.
 
@@ -232,7 +232,7 @@ Ange datumintervallet för de historiska order som du vill skicka till Experienc
 
 1. Välj fliken **Orderhistorik**.
 
-   ![[!DNL Data Connection] Orderhistorik ](./assets/epc-order-history.png){width="700" zoomable="yes"}
+   ![[!DNL Data Connection] Orderhistorik &#x200B;](./assets/epc-order-history.png){width="700" zoomable="yes"}
 
 1. Under **Synkronisering av orderhistorik** är kryssrutan **Kopiera datauppsättnings-ID från inställningar** redan aktiverad. Detta garanterar att du använder samma datauppsättning som anges på fliken **Inställningar**.
 
