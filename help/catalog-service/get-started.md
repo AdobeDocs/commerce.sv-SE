@@ -18,14 +18,14 @@ När [!DNL Catalog Service] har aktiverats kan du komma åt tjänsten och använ
 
 [!DNL Catalog Service] är tillgängligt som ett GraphQL API som du kan få åtkomst till från Commerce Admin eller från ett klientprogram som stöder GraphQL-frågor. Tjänsten är tillgänglig i både SaaS- och PaaS-miljöer.
 
-[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+[!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 
 | Miljö | Slutpunkt |
 | ------------ | ----------: |
 | **Testar** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **Produktion** | `https://catalog-service.adobe.io/graphql` |
 
-[!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."}
+[!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."}
 
 | Miljö | Slutpunkt |
 | ----------- | --------:|
@@ -48,7 +48,7 @@ Mer information om hur du använder API:t för katalogtjänsten GraphQL finns i 
 
 Om du vill integrera med ett headless-lager måste du uppdatera butikskonfigurationen för att kunna kommunicera mellan butiken och [!DNL Catalog Service] för att hämta produkt- och kategoridata.
 
-Om du använder Adobe Commerce storefront i Edge Delivery Services lägger du till katalogtjänstslutpunkten i butikskonfigurationen. Mer information finns i [Edge Delivery Services-dokumentationen](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
+Om du använder Adobe Commerce storefront i Edge Delivery Services lägger du till katalogtjänstslutpunkten i butikskonfigurationen. Mer information finns i [Edge Delivery Services-dokumentationen](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=sv-SE#storefront-configuration).
 
 Om du vill ha mer information om hur du konfigurerar integreringar mellan tjänsten och backend-datakällor läser du i dokumentationen för projektkonfigurationen.
 
@@ -64,4 +64,4 @@ Avsnittet [[!DNL Catalog Service]  och API Mesh](mesh.md) innehåller informatio
 
 ## Använda Dashboard för datahantering
 
-Använd [Dashboard för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) för att övervaka datasynkronisering mellan [!DNL Catalog Service] och din Adobe Commerce-instans. Kontrollpanelen ger insikter i dataöverföringsprocessen, inklusive status för dataexport och en lista över synkroniserade produkter.
+Använd [Dashboard för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) för att övervaka datasynkronisering mellan [!DNL Catalog Service] och din Adobe Commerce-instans. Kontrollpanelen ger insikter i dataöverföringsprocessen, inklusive status för dataexport och en lista över synkroniserade produkter.

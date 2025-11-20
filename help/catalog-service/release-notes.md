@@ -68,7 +68,7 @@ _23 maj 2024_
 
 ![Korrigera](../assets/fix.svg) <!--DATA-5033-->Flaggan `InStock` för alternativvärden tar nu hänsyn till produktvariantens omfångsstatus `enabled` .
 
-![Korrigera](../assets/fix.svg) <!--DATA-5888-->Lägg till stöd för produktpriser som kräver stora tal (upp till 16 siffror) och större decimalprecision (upp till 4 decimaler). Om du vill tillämpa priskonfigurationsuppdateringarna på din befintliga katalog synkroniserar du om katalogdata från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), eller genom att använda kommandoradsgränssnittet [Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+![Korrigera](../assets/fix.svg) <!--DATA-5888-->Lägg till stöd för produktpriser som kräver stora tal (upp till 16 siffror) och större decimalprecision (upp till 4 decimaler). Om du vill tillämpa priskonfigurationsuppdateringarna på din befintliga katalog synkroniserar du om katalogdata från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), eller genom att använda kommandoradsgränssnittet [Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
 
 #### Kända begränsningar
 
@@ -102,7 +102,7 @@ _22 februari 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Nytt](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) är nu tillgängligt. Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search] och [!DNL Catalog Service]. Stöd för den här funktionen introducerades i v3.1.0 i metapaketet `catalog-service`.
+![Nytt](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=sv-SE) är nu tillgängligt. Den här förbättrade instrumentpanelen ger insikter i dataströmmar för [!DNL Product Recommendations], [!DNL Live Search] och [!DNL Catalog Service]. Stöd för den här funktionen introducerades i v3.1.0 i metapaketet `catalog-service`.
 
 ### Version V1.16
 

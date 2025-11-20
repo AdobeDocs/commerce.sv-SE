@@ -2,7 +2,7 @@
 title: Introduktion till  [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] är ett kraftfullt marknadsföringsverktyg som du kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang.'
 recommendations: noCatalog
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
 exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
 source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
@@ -27,11 +27,11 @@ Om din storefront implementeras med PWA Studio finns mer information i [PWA-doku
 
 Datainsamlingen för syftet med [!DNL Product Recommendations] innehåller ingen personligt identifierbar information (PII). Alla användaridentifierare som cookie-ID:n och IP-adresser är dessutom strikt anonymiserade. Mer information finns i [Adobe integritetspolicy](https://www.adobe.com/privacy/policy.html).
 
-[!DNL Product Recommendations]-användare kan referera till [Instrumentpanelen för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) för mer information om datasynkronisering.
+[!DNL Product Recommendations]-användare kan referera till [Instrumentpanelen för datahantering](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=sv-SE) för mer information om datasynkronisering.
 
 ## Produktrekommendationer jämfört med produktrelationer
 
-Med tanke på de ständigt föränderliga detaljerna i onlineförsäljningen är det som fungerar bäst för er butik ofta en kombination av flera nyckeltekniker. Genom att använda både [!DNL Product Recommendations] och [&#x200B; produktrelationer &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) får du större flexibilitet när du marknadsför produkter. Du kan utnyttja [!DNL Product Recommendations] som drivs av Adobe Sensei för att automatisera dina rekommendationer i stor skala. Sedan kan du utnyttja [relaterade produktregler](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) när du måste ingripa manuellt och se till att en specifik rekommendation görs till ett målkundsegment, eller när vissa affärsmål måste uppfyllas.
+Med tanke på de ständigt föränderliga detaljerna i onlineförsäljningen är det som fungerar bäst för er butik ofta en kombination av flera nyckeltekniker. Genom att använda både [!DNL Product Recommendations] och [&#x200B; produktrelationer &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html?lang=sv-SE) får du större flexibilitet när du marknadsför produkter. Du kan utnyttja [!DNL Product Recommendations] som drivs av Adobe Sensei för att automatisera dina rekommendationer i stor skala. Sedan kan du utnyttja [relaterade produktregler](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html?lang=sv-SE) när du måste ingripa manuellt och se till att en specifik rekommendation görs till ett målkundsegment, eller när vissa affärsmål måste uppfyllas.
 
 Med produktrekommendationer kan du:
 
@@ -49,4 +49,4 @@ Titta på den här videon om du vill veta mer om [!DNL Product Recommendations]:
 
 Om du inte skickar en fråga för katalogdata i testmiljön under 90 dagar i följd, ställs katalogdata in på viloläge och inga data returneras för någon fråga. Katalogdata i produktionsmiljön påverkas inte av den här principen.
 
-Om du vill återaktivera katalogdata i din testmiljö skickar [du en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) med titeln:&quot;Återaktivera [!DNL Product Recommendations]&quot; och inkluderar miljö-ID:n. Katalogdata i testmiljön bör återställas inom några timmar.
+Om du vill återaktivera katalogdata i din testmiljö skickar [du en supportförfrågan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) med titeln:&quot;Återaktivera [!DNL Product Recommendations]&quot; och inkluderar miljö-ID:n. Katalogdata i testmiljön bör återställas inom några timmar.
