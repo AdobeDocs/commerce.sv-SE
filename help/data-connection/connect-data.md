@@ -195,7 +195,7 @@ Commerce samlar redan in historiska orderdata, men det finns flera steg som du m
 
 I den här videon får du lära dig mer om historiska order. Följ sedan stegen nedan för att implementera den historiska ordersamlingen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
+>[!VIDEO](https://video.tv.adobe.com/v/3450231?captions=swe)
 
 #### Konfigurera tjänsten Ordersynkronisering
 
