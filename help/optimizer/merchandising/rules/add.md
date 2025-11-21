@@ -1,11 +1,11 @@
 ---
 title: Skapa och hantera regler
 description: Lär dig hur du skapar och hanterar försäljningsregler.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5f3bde7070857cbfd6892e5881ce0437973f0cc0
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '2103'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,33 @@ Butiksägare kan skapa följande typer av rankningsstrategier:
 - Ingen: Produkterna beställs efter relevans.
 
 Välj typ av strategi för regeln. Fönstret **Testa regeln** visar det förväntade resultatet.
+
+#### Hur smart rankning fungerar
+
+Intelligent rankning avgör den slutliga produktordningen genom att kombinera två nyckelfaktorer: **textrelevans** och **beteendesignaler**. Genom att förstå hur dessa faktorer interagerar kan du ställa in realistiska förväntningar för sökresultaten.
+
+**Bedömningskomponenter:**
+
+- **Textuell relevans**: Den dominerande faktorn i poängsättningen. Detta mäter hur väl en produkts namn, beskrivning och attribut matchar sökfrågan. Textrelevansspåret är obegränsat (har ingen specifik övre gräns) och påverkas av faktorer som:
+
+   - Hur ofta matchande ord förekommer.
+   - Längd (med ord) på produktnamn/beskrivningar.
+
+- **Beteendesignaler**: En avgränsad ökning används ovanpå textrelevansspåret. När du väljer en smart rankningsstrategi som&quot;Mest visade&quot; eller&quot;Mest köpta&quot; får produkter med högre beteendesignaler en fast förstärkning av poängen. Den här ökningen har dock en definierad gräns.
+
+**Varför den mest visade produkten kanske inte visas först:**
+
+Textuell relevans dominerar oftast rankningen eftersom poängen är obegränsade, medan beteendeförbättringar är fasta. Resultatet blir att produkter med stark text ofta matchar produkter med högre engagemangssignaler. Enbart beteendeförbättringar kanske inte kompenserar för stora luckor i textrelevansen. Intelligent rankning åtgärdar detta genom att ta hänsyn till både kvalitet och kundinteraktion, vilket förbättrar den övergripande relevansen. Kvaliteten på textmatchningen är dock fortfarande den primära drivrutinen för rankning.
+
+**Exempel:**
+
+En handlare använder den intelligenta rankningsstrategin&quot;Mest tittat&quot; och söker efter&quot;ljus&quot;. De förväntar sig att produkt-SKU YAN-K-E-512 ska visas högst upp i resultatet eftersom den har det högsta visningsantalet. Andra produkter kan dock klassificeras som högre:
+
+- **Texas Candle** (första position): Har ett kortare, renare produktnamn som skapar ett mycket högt textrelevansresultat. Även om den har färre vyer än YAN-K-E-512 är textmatchningen bättre än beteendeökningen.
+
+- **YAN-K-E-512** (undre position): Trots att den högsta vypercentilen finns i beteendedata som visas mest, genereras ett komplext SKU-baserat namn ett lägre textrelevansvärde. Den fasta beteendeökningen räcker inte till för att överbrygga det här problemet med textrelevans.
+
+Se [sökregler](./best-practice.md#tips-to-optimize-search-rules) om du vill veta mer om hur du kan förbättra produktsökningen med hjälp av regler.
 
 #### Caveats
 

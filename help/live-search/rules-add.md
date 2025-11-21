@@ -2,9 +2,9 @@
 title: Lägg till regler
 description: Lär dig hur du skapar regler för sökmarknadsföring.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
+source-git-commit: 0b8ab786bb6ec333337dc114de214b6d8e4df427
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ För att skapa en regel är det första steget att använda regelredigeraren fö
 ## Lägg till en regel
 
 1. Gå till **Markering** > SEO &amp; Search > **[!DNL Live Search]** i Admin.
-1. Ange **scopet** för att identifiera [butiksvyn](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE#scope-settings) där regeln gäller.
+1. Ange **scopet** för att identifiera [butiksvyn](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där regeln gäller.
 1. Klicka på arbetsytan **Sök efter marknadsföring**.
 1. Klicka på **Lägg till regel** för att starta regelredigeraren.
 
@@ -90,6 +90,33 @@ Butiksägare kan skapa följande typer av rankningsstrategier:
 * Ingen: Produkterna beställs efter relevans.
 
 Välj typ av strategi för regeln. Fönstret **Testa regeln** visar det förväntade resultatet.
+
+### Hur smart rankning fungerar
+
+Intelligent rankning avgör den slutliga produktordningen genom att kombinera två nyckelfaktorer: **textrelevans** och **beteendesignaler**. Genom att förstå hur dessa faktorer interagerar kan du ställa in realistiska förväntningar för sökresultaten.
+
+**Bedömningskomponenter:**
+
+* **Textuell relevans**: Den dominerande faktorn i poängsättningen. Detta mäter hur väl en produkts namn, beskrivning och attribut matchar sökfrågan. Textrelevansspåret är obegränsat (har ingen specifik övre gräns) och påverkas av faktorer som:
+
+   * Hur ofta matchande ord förekommer.
+   * Längd (med ord) på produktnamn/beskrivningar.
+
+* **Beteendesignaler**: En avgränsad ökning används ovanpå textrelevansspåret. När du väljer en smart rankningsstrategi som&quot;Mest visade&quot; eller&quot;Mest köpta&quot; får produkter med högre beteendesignaler en fast förstärkning av poängen. Den här ökningen har dock en definierad gräns.
+
+**Varför den mest visade produkten kanske inte visas först:**
+
+Textuell relevans dominerar oftast rankningen eftersom poängen är obegränsade, medan beteendeförbättringar är fasta. Resultatet blir att produkter med stark text ofta matchar produkter med högre engagemangssignaler. Enbart beteendeförbättringar kanske inte kompenserar för stora luckor i textrelevansen. Intelligent rankning åtgärdar detta genom att ta hänsyn till både kvalitet och kundinteraktion, vilket förbättrar den övergripande relevansen. Kvaliteten på textmatchningen är dock fortfarande den primära drivrutinen för rankning.
+
+**Exempel:**
+
+En handlare använder den intelligenta rankningsstrategin&quot;Mest tittat&quot; och söker efter&quot;ljus&quot;. De förväntar sig att produkt-SKU YAN-K-E-512 ska visas högst upp i resultatet eftersom den har det högsta visningsantalet. Andra produkter kan dock klassificeras som högre:
+
+* **Texas Candle** (första position): Har ett kortare, renare produktnamn som skapar ett mycket högt textrelevansresultat. Även om den har färre vyer än YAN-K-E-512 är textmatchningen bättre än beteendeökningen.
+
+* **YAN-K-E-512** (undre position): Trots att den högsta vypercentilen finns i beteendedata som visas mest, genereras ett komplext SKU-baserat namn ett lägre textrelevansvärde. Den fasta beteendeökningen räcker inte till för att överbrygga det här problemet med textrelevans.
+
+Se [sökregler](./best-practice.md#search-rules) om du vill veta mer om hur du kan förbättra produktsökningen med hjälp av regler.
 
 ### Caveats
 

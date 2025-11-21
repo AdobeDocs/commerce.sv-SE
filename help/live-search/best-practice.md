@@ -3,9 +3,9 @@ title: '[!DNL Live Search] metodtips'
 description: Lär dig de bästa sätten att implementera [!DNL Live Search] i din butik.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
+source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2201'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,8 @@ Det är viktigt att fastställa en genomtänkt standardregel för sökning. Din 
 - Prioritera lite produkter med högre vinstmarginaler utan att kompromissa med relevansen.
 - Markera produkter som säljs eller ingår i specialerbjudanden.
 - Ange sökregler under kampanjen eller försäljningsperioderna automatiskt genom att använda datumintervallet under kampanjperioden.
-- Skräddarsy sökresultat baserat på den enskilda kundens beteende med hjälp av [intelligent rankning](rules-add.md#intelligent-ranking), t.ex.&quot;Rekommenderas för dig&quot;,&quot;Visas bäst&quot; osv. För att skräddarsy kundernas beteende måste ni se till att eventeringen implementeras på rätt sätt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
+- Använd alltid panelen Testa din regel för att förhandsgranska hur din intelligenta rankningsstrategi påverkar de faktiska sökresultaten för olika frågor.
+- Skräddarsy sökresultat baserat på den enskilda kundens beteende med hjälp av [intelligent rankning](rules-add.md#intelligent-ranking), t.ex.&quot;Rekommenderas för dig&quot;,&quot;Visas bäst&quot; osv. För att skräddarsy kundernas beteende måste ni se till att eventeringen implementeras på rätt sätt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
 
 Läs mer om sökregler:
 
@@ -137,7 +138,7 @@ Se till att varje produkt har relevant innehåll inom varje sökbart attribut. D
 Läs mer om produktattribut för sökning:
 
 - [Ange attribut som sökbara](workspace.md#set-attributes-as-searchable)
-- [Tilldela bredd till attribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Tilldela bredd till attribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Övervaka sökresultat
 
@@ -177,4 +178,4 @@ Du kan använda dessa mätdata för att optimera sökfunktionen på följande s�
 - Analysera populära söktermer och produktdata för att identifiera viktiga nyckelord. Optimera dina produktsökbara attribut med dessa nyckelord för att förbättra sökrelevansen.
 - Analysera regelbundet era resultatdata för att förstå förändrade trender, kundernas preferenser och beteende, identifiera de viktigaste söktermerna och identifiera problem. Använd den här feedbackslingan för att kontinuerligt förfina och förbättra dina sökregler och produkterbjudanden
 
-Om du vill hämta korrekta data i din [!DNL Live Search]-rapport måste du se till att händelser implementeras korrekt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
+Om du vill hämta korrekta data i din [!DNL Live Search]-rapport måste du se till att händelser implementeras korrekt. För Luma-handlare finns det alltid möjlighet att eventera. För headless-implementeringar eller anpassade implementeringar måste du [implementera ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) utifrån dina specifika behov.
