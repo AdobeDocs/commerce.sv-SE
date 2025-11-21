@@ -138,7 +138,7 @@ Se till att varje produkt har relevant innehåll inom varje sökbart attribut. D
 Läs mer om produktattribut för sökning:
 
 - [Ange attribut som sökbara](workspace.md#set-attributes-as-searchable)
-- [Tilldela bredd till attribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Tilldela bredd till attribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Övervaka sökresultat
 
