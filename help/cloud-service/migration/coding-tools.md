@@ -1,13 +1,13 @@
 ---
 title: AI-kodningsverktyg för tillägg
 description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-tillägg.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 9382ce8f139f9d2f4ec1732c0d83b466cd54fa37
+source-git-commit: 0e76dee3b33ca7906b22d33d15c6c75ca1c391ef
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,16 @@ När du väljer pakethanteraren bör du använda `npm` för konsekvens:
 
    * MCP-konfiguration: `.vscode/mcp.json`
    * Regelkatalog: `.github/copilot-instructions.md`
+
+>[!NOTE]
+>
+>Innan du distribuerar ditt projekt måste du utföra följande konfigurationsåtgärder:
+>
+>* Logga in på [Adobe Developer Console](https://developer.adobe.com/console) med Adobe I/O CLI.
+>* Skapa ett App Builder-projekt (se [Projektinställningar](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Konfigurera miljövariabler i en `.env`-fil.
+>
+>Du kan slutföra dessa konfigurationssteg manuellt eller använda AI-kodningsverktygen för att få hjälp med processen. Mer information finns i [Skapa en integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/).
 
 ## Konfiguration efter installation
 
@@ -222,7 +232,7 @@ Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser
