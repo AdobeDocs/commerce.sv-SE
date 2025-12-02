@@ -1,13 +1,13 @@
 ---
 title: AI-kodningsverktyg för tillägg
 description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-tillägg.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 0e76dee3b33ca7906b22d33d15c6c75ca1c391ef
+source-git-commit: b62dafbf381eb11501c901d6e8d6ad3da972a307
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1838'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,11 @@ Att använda AI-kodningsverktygen ger följande fördelar:
 
 ## Förutsättningar
 
-* En kodningsagent, till exempel [Cursor](https://cursor.com/download)&#x200B;(recommended), [Github Copilot](https://github.com/features/copilot), [Google Gemini CLI](https://github.com/google-gemini/gemini-cli) eller [Claude Code](https://www.claude.com/product/claude-code)
+* Ett av följande kodningsagenter:
+   * [Markör](https://cursor.com/download) (rekommenderas)
+   * [Github Copilot](https://github.com/features/copilot)
+   * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
+   * [Claude Code](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download): LTS-version
 * Pakethanteraren: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) eller [garn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): För databaskloning och versionskontroll
@@ -118,6 +122,33 @@ När du väljer pakethanteraren bör du använda `npm` för konsekvens:
 
 ## Konfiguration efter installation
 
+### Logga in på [!DNL Adobe I/O CLI]
+
+När du har installerat [!DNL Adobe I/O CLI] måste du logga in när du vill använda MCP-servern.
+
+```bash
+aio auth login
+```
+
+Kör följande kommando för att verifiera att du är inloggad:
+
+```bash
+aio where
+```
+
+Om du råkar ut för problem provar du med att logga ut och logga in igen:
+
+```bash
+aio auth logout
+aio auth login
+```
+
+>[!NOTE]
+>
+>Vissa funktioner i MCP-servern fungerar utan inloggning, men tjänsten RAG (Retrieval-Augmented Generation) fungerar inte. RAG-tjänsten ger AI-kodningsagenten tillgång i realtid till den fullständiga Adobe Commerce-dokumentationsuppsättningen, så att den kan besvara frågor och generera kod baserat på Commerce nuvarande utvecklingsmetoder, API:er och arkitekturmönster.
+>
+>I en framtida version kommer RAG-tjänsten att vara tillgänglig oberoende av varandra utan att du behöver installera andra verktyg.
+
 ### Markör
 
 1. Starta om markörutvecklingsmiljön för att läsa in de nya MCP-verktygen och konfigurationen.
@@ -174,9 +205,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Använd följande uppmaning för att se om agenten använder MCP-servern. Om så inte är fallet ber du agenten uttryckligen att använda de tillgängliga MCP-verktygen.
 
-```terminal
-What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
-```
+   ```terminal
+   What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+   ```
 
 ## Exempelfråga
 
@@ -189,6 +220,14 @@ Order ID -> orderID
 Order Total -> total
 Customer Email ID -> emailID
 Payment Type -> pType
+```
+
+## Fråga om kommandon
+
+Förutom att fråga kan du använda kommandot `/search-commerce-docs` för att söka efter dokumentation i konversationer med din agent. Exempel:
+
+```text
+/search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
 ## Bästa praxis
@@ -232,7 +271,7 @@ Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser
@@ -274,6 +313,10 @@ Komplexa Adobe Commerce-tillägg omfattar ofta:
 * Testa i flera komponenter
 
 ### Använd MCP-verktyg
+
+>[!NOTE]
+>
+>Kontrollera att du är [inloggad på Adobe I/O CLI](#log-in-to-the-adobe-io-cli) innan du använder MCP-verktygen.
 
 Som standard används MCP-verktyg, men i vissa fall kan CLI-kommandon användas. Om du vill vara säker på att MCP-verktygen används, begär du dem uttryckligen i uppmaningen.
 
