@@ -29,4 +29,4 @@ ht-degree: 1%
    - [Krav för klassificeringstillägg - självstudiekurs](tutorials/tutorial-prerequisites.md)
    - [Självstudiekurs om klassificeringstillägg](tutorials/ratings-extension.md)
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
