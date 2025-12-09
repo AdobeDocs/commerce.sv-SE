@@ -1,11 +1,11 @@
 ---
 title: Skapa och hantera rekommendationer
 description: Lär dig hur du skapar och hanterar rekommendationer.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
+source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -161,11 +161,9 @@ I följande exempel visas möjliga orsaker och lösningar till vanliga låga ber
 
 ## Förhandsgranska rekommendationer
 
->[!IMPORTANT]
->
->Den här funktionen är inte tillgänglig än.
-
 Panelen _Rekommenderad produktförhandsvisning_ är alltid tillgänglig med ett urval produkter som kan visas i rekommendationsenheten när den distribueras till butiken.
+
+![Förhandsgranska rekommendationer](../../assets/rec-preview.png)
 
 Om du vill testa en rekommendation när du arbetar i en icke-produktionsmiljö kan du hämta rekommendationsdata från en annan källa. På så sätt kan handlare experimentera med regler och förhandsgranska rekommendationerna innan de distribuerar till produktionen.
 

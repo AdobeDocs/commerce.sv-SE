@@ -1,10 +1,11 @@
 ---
 title: Rekommendationsfilter
 description: Lär dig hur du använder filter för att kontrollera vilka produkter som visas i  [!DNL Adobe Commerce Optimizer] rekommendationerna.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: f6100538-23c0-4e90-9834-a895d4707282
+source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -44,10 +45,10 @@ Produktfiltren anger vilka specifika produkter som kan visas i rekommendationern
 >
 >Underordnade produkter för en konfigurerbar produkt visas inte i en rekommendationsenhet eftersom dessa underordnade produkter har synligheten _Inte synlig enskilt_.
 
-### Pris
+<!--### Price
 
-Ett filter baserat på produktpriset använder det slutliga priset för att göra jämförelsen. Slutpriset inkluderar rabatter eller specialpriser som är tillgängliga för anonyma kunder.
+A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts or special pricing available to anonymous shoppers.
 
-<!--### Attribute
+### Attribute
 
 You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.-->
