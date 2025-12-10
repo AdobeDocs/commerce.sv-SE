@@ -4,9 +4,9 @@ description: Lär dig förutsättningarna för klassificeringstilläggslabbet.
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: e153e974be1dc5ec8ff2eff8d699ce87ef6708dc
+source-git-commit: fda04de3301a305c897c34d3dd0166d50fc3c12a
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,10 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för själ
   npm install -g @adobe/aio-cli
   ```
 
-* Installera Commerce-plugin-programmet
+* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [ Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
 
   ```bash
-  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
 * Hämta en AI-assisterad IDE, t.ex. [Cursor](https://cursor.com/download) (rekommenderas), stöds även andra IDE:er, t.ex. Claude Code, Gemini CLI eller Copilot, men kan kräva ändringar i uppmaningarna och andra steg i självstudiekursen.
@@ -169,6 +169,12 @@ Kör följande kommando för att hämta arbetsytans konfigurationsfil:
 
 ```bash
 aio console workspace download workspace.json
+```
+
+Kopiera arbetsytans konfigurationsfil till katalogen `scripts`:
+
+```bash
+cp workspace.json scripts/
 ```
 
 ### Ansluta den lokala arbetsytan till fjärrarbetsytan

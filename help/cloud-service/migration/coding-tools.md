@@ -1,13 +1,13 @@
 ---
 title: AI-kodningsverktyg för tillägg
 description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-tillägg.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: f31cd10da7e3daec06a777a065c08d14d39046c5
+source-git-commit: 8f7b5536388e8f4cb1e763b430bdca8644d1da5c
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1849'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,14 @@ Att använda AI-kodningsverktygen ger följande fördelar:
    npm install -g @adobe/aio-cli
    ```
 
-1. Installera [Adobe I/O CLI Commerce-plugin](https://github.com/adobe-commerce/aio-cli-plugin-commerce):
+1. Installera följande plugin-program:
+
+   * [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
+   * [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)
+   * [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
-   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
 1. Klona startsatsen för Commerce [integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
@@ -271,7 +275,7 @@ Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser
