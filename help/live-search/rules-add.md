@@ -2,7 +2,7 @@
 title: Lägg till regler
 description: Lär dig hur du skapar regler för sökmarknadsföring.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 0b8ab786bb6ec333337dc114de214b6d8e4df427
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '2046'
 ht-degree: 0%
@@ -16,7 +16,7 @@ För att skapa en regel är det första steget att använda regelredigeraren fö
 ## Lägg till en regel
 
 1. Gå till **Markering** > SEO &amp; Search > **[!DNL Live Search]** i Admin.
-1. Ange **scopet** för att identifiera [butiksvyn](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE#scope-settings) där regeln gäller.
+1. Ange **scopet** för att identifiera [butiksvyn](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där regeln gäller.
 1. Klicka på arbetsytan **Sök efter marknadsföring**.
 1. Klicka på **Lägg till regel** för att starta regelredigeraren.
 

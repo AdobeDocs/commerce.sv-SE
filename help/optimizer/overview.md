@@ -2,9 +2,9 @@
 title: Vad är Adobe Commerce Optimizer?
 description: Lär dig mer om  [!DNL Adobe Commerce Optimizer]  och dess huvudfunktioner.
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 69c752322b01985a2eb55de69d4736d75f6bd60a
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Med [!DNL Adobe Commerce Optimizer] kan du:
 
 I följande video visas en översikt över [!DNL Adobe Commerce Optimizer] på hög nivå:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450467?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Vem har störst nytta av [!DNL Adobe Commerce Optimizer]?
 
@@ -75,7 +75,7 @@ Definiera katalogvyer och principer. Katalogen innehåller inte bara dina produk
 
 >[!ENDTABS]
 
-## Nyckelfunktioner
+## Viktiga funktioner
 
 Viktiga funktioner:
 

@@ -1,9 +1,9 @@
 ---
 title: Skapa och hantera ansikten
 description: Lär dig hur du lägger till och hanterar ansikten i  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
-source-git-commit: dc751a54c654980a29606c85cdd1cd3324973aab
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Alla filterbara produktattribut kan användas som en fasett. Med ansikten kan ku
 
 1. Klicka på **Spara** när du är klar.
 
-## Fäst/ta bort ansikten
+## Fäst/ta bort fasetter
 
 Fäststiftets färg ändras när användaren klickar på det och används för att flytta ansiktet till antingen *Fästa ansikten* eller *Dynamiska ansikten* .
 

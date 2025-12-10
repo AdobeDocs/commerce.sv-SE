@@ -2,7 +2,7 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Lär dig hur du konfigurerar, hanterar och övervakar prestandan för produktrekommendationer.
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
-source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Om du använder en headless-butik kan du läsa följande dokumentation för att 
 
 ## Ange omfånget
 
-Till att börja med är [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE) för alla rekommendationsinställningar inställda på `Default Store View`. Om din Commerce-installation innehåller flera butiksvyer anger du **Scope** till [butiksvyn](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=sv-SE#scope-settings) där dina rekommendationer gäller.
+Till att börja med är [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) för alla rekommendationsinställningar inställda på `Default Store View`. Om din Commerce-installation innehåller flera butiksvyer anger du **Scope** till [butiksvyn](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) där dina rekommendationer gäller.
 
 ## Ange datumintervall för mätvärden
 

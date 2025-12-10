@@ -1,9 +1,9 @@
 ---
 title: Sökprestanda
 description: På sidan Sökprestanda får du insikt i de söktermer som kunderna använder.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c408f3de4e3b980545a655e2f6040187f00bc571
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 0%
@@ -110,7 +110,7 @@ Se till att de underordnade produkterna för konfigurerbara produkter har bilder
 
 ### Använd produktmetadata
 
-Kontrollera att korrekta och detaljerade produktattribut för [&#x200B; har angetts som sökbara och har tilldelats en vikt på &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Observera att SKU-, namn- och kategoriattribut som standard är sökbara och inte kan uteslutas från sökningen. För bästa resultat ska du inte använda blanksteg i dina SKU:er.
+Kontrollera att korrekta och detaljerade produktattribut för [ har angetts som sökbara och har tilldelats en vikt på ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Observera att SKU-, namn- och kategoriattribut som standard är sökbara och inte kan uteslutas från sökningen. För bästa resultat ska du inte använda blanksteg i dina SKU:er.
 
 Om du vill öka sökrelevansen tilldelar du en vikt till varje sökbart attribut. Attribut med högre vikt bör visas högre i sökresultatet. Sorteringen efter relevans påverkas av flera kriterier, t.ex. sökvikt. Det innebär att attribut med lägre sökvikt ibland kan ha större relevans än attribut med högre sökvikt. Andra villkor kan vara antalet matchningar i ett givet attribut, positionen för det sökord som hittats och den övergripande textstrukturen före och efter ett sökord.
 

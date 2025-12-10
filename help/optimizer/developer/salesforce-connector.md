@@ -2,7 +2,7 @@
 title: Salesforce Commerce Connector
 description: Lär dig mer om  [!DNL Commerce Optimizer SFCC Connector] som är en startpunkt för integrering av Salesforce Commerce B2C med [!DNL Adobe Commerce Optimizer] för synkronisering av katalogdata och för implementering och anpassning av kopplingen för att stödja affärsåtgärder.
 role: Admin, Developer
-source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Med den nya kopplingen får du tillförlitliga funktioner för datasynkronisering och den flexibilitet som krävs för att anpassa arbetsflöden efter företagets behov.
 
-En komplett videosjälvstudiekurs finns i [Lär dig mer om startsatsen för Salesforce Commerce &#x200B;](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+En komplett videosjälvstudiekurs finns i [Lär dig mer om startsatsen för Salesforce Commerce ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
-## Nyckelfunktioner
+## Viktiga funktioner
 
 * **Katalogdatasynkronisering:** Skicka produktdata - inklusive varianter, prisböcker och strukturer - från Salesforce Commerce B2C till Adobe Commerce Optimizer för att hålla butiker och upplevelsedrivna program uppdaterade.
 * **Prissynkronisering:** Importera och hantera prisdata direkt från Salesforce Commerce B2C.
@@ -82,7 +82,7 @@ I följande diagram visas dataflödet på hög nivå för integreringen:
 
 ![Salesforce Commerce Connector Architecture](../assets/sfcc_starter_kit.png){zoomable="yes"}
 
-### Nyckelkomponenter
+### Viktiga komponenter
 
 [!DNL Commerce Optimizer SFCC Connector] består av flera nyckelkomponenter:
 
