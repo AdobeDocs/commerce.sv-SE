@@ -16,7 +16,7 @@ Konfigurera integreringen genom att ansluta Commerce till AEM Assets-instansen o
 
 När du har identifierat AEM Assets-projektet väljer du matchningsregel för att synkronisera resurser mellan Adobe Commerce och AEM Assets.
 
-* **[!UICONTROL Match by product SKU]** - Standardregel som matchar SKU:n i resursmetadata med [Commerce-produktens SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) för att se till att resurserna är kopplade till rätt produkter.
+* **[!UICONTROL Match by product SKU]** - Standardregel som matchar SKU:n i resursmetadata med [Commerce-produktens SKU](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/glossary#sku) för att se till att resurserna är kopplade till rätt produkter.
 
 * **[!UICONTROL Custom match]** - Matchningsregel för mer komplexa scenarier eller specifika affärskrav som kräver anpassad matchningslogik. Implementering av anpassad matchning kräver utveckling av anpassad kod i Adobe Developer App Builder för att definiera hur resurser matchas med produkter. Mer information kommer snart...
 
@@ -28,7 +28,7 @@ Använd standardregeln *Matcha efter produktsku* för den första konfiguratione
 
 * [!BADGE PaaS endast]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."} [Installera Adobe Commerce-paket](configure-commerce.md) om du vill lägga till tillägget och generera nödvändiga autentiseringsuppgifter och anslutningar för att använda tillägget.
 
-* Följ stegen som beskrivs i avsnittet [aktivera API:t för Dynamic Media Open &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) . Inkludera följande information för supportteamet:
+* Följ stegen som beskrivs i avsnittet [aktivera API:t för Dynamic Media Open &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) . Inkludera följande information för supportteamet:
 
    * **[!UICONTROL AEM Program ID]**
    * **[!UICONTROL Adobe Commerce URL]**
@@ -37,7 +37,7 @@ Använd standardregeln *Matcha efter produktsku* för den första konfiguratione
 
 ## Konfigurera anslutningen
 
-1. Hämta projekt- och miljö-ID:t för [AEM Assets Authoring Environment](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/quick-start).
+1. Hämta projekt- och miljö-ID:t för [AEM Assets Authoring Environment](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/authoring/quick-start).
 
    1. Öppna AEM Cloud Manager och välj **[!UICONTROL Assets]**.
 
@@ -72,7 +72,7 @@ Använd standardregeln *Matcha efter produktsku* för den första konfiguratione
 1. Välj en av resursmatchningsreglerna för resurssynkronisering i listrutan **[!UICONTROL Asset matching rule]**.
 
    * Välj **[!UICONTROL Match by SKU]** för [standardautomatisk matchning](../synchronize/default-match.md),
-   * Välj **[!UICONTROL Custom match]** för [anpassad automatisk matchning](../synchronize/custom-match.md) (kräver [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)).
+   * Välj **[!UICONTROL Custom match]** för [anpassad automatisk matchning](../synchronize/custom-match.md) (kräver [Adobe Developer App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)).
 
 1. Lägg till det [AEM Assets-metadatafältnamn](configure-aem.md#configure-metadata) som är definierat för Commerce-produkter-SKU:er i fältet **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` som standard.
 
@@ -99,7 +99,7 @@ Inställningen **Visualiseringsägare** avgör vilket system som skickar produkt
 
 Admin visar de tillgängliga bilderna för den ägaren, medan resten av bilderna är nedtonade och visas med en **dold** -etikett.
 
-Mer information om bildvisningsbeteende finns i avsnittet [Ange bildinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}.
+Mer information om bildvisningsbeteende finns i avsnittet [Ange bildinformation](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}.
 
 >[!TIP]
 >
@@ -115,7 +115,7 @@ Mer information om bildvisningsbeteende finns i avsnittet [Ange bildinformation]
 
 ### Valfritt. Konfigurera URL för anpassad domän
 
-Om AEM Assets as a Cloud Service-projektet har konfigurerats med ett [anpassat domännamn](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank} måste du lägga till domännamnet i Commerce Store-konfigurationen så att AEM Assets-integreringen för Commerce kan använda det.
+Om AEM Assets as a Cloud Service-projektet har konfigurerats med ett [anpassat domännamn](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank} måste du lägga till domännamnet i Commerce Store-konfigurationen så att AEM Assets-integreringen för Commerce kan använda det.
 
 1. Navigera till **[!UICONTROL Store]** > Konfiguration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
