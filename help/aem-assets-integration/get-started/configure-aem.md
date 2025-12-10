@@ -3,9 +3,9 @@ title: Konfigurera AEM Assets Project
 description: Aktivera smidig resurssynkronisering mellan Adobe Commerce och AEM Assets genom att lägga till de metadata som krävs för integreringen.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
-source-git-commit: 995fb071953ddad6cb2076207910679905bb0347
+source-git-commit: 6cd37fda03bb51a1375b0e9dc542f9e02d3c6e54
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ Mallen lägger till följande resurser i AEM Assets redigeringsmiljö:
 
 Du behöver följande resurser och behörigheter för att distribuera `commerce-assets`-paketet till AEM Assets as a Cloud Service AEM-miljön:
 
-* [Åtkomst till AEM Assets Cloud Manager program och miljöer](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) med rollerna Program och Distributionshanteraren.
+* [Åtkomst till AEM Assets Cloud Manager program och miljöer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) med rollerna Program och Distributionshanteraren.
 
-* En [lokal AEM-utvecklingsmiljö](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) som är bekant med AEM lokala utvecklingsprocess.
+* En [lokal AEM-utvecklingsmiljö](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) som är bekant med AEM lokala utvecklingsprocess.
 
-* Förstå [AEM projektstruktur](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) och hur du distribuerar anpassade innehållspaket med Cloud Manager.
+* Förstå [AEM projektstruktur](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) och hur du distribuerar anpassade innehållspaket med Cloud Manager.
 
 ### Installera paketet `commerce-assets`
 
@@ -61,11 +61,11 @@ Du behöver följande resurser och behörigheter för att distribuera `commerce-
 
 1. Hämta koden från [AEM Commerce-standardmallen](https://github.com/ankumalh/assets-commerce) från GitHub.
 
-1. Från din [lokala AEM-utvecklingsmiljö](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) installerar du den anpassade koden i din AEM Assets-miljökonfiguration som ett Maven-paket, eller genom att manuellt kopiera koden till den befintliga projektkonfigurationen.
+1. Från din [lokala AEM-utvecklingsmiljö](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) installerar du den anpassade koden i din AEM Assets-miljökonfiguration som ett Maven-paket, eller genom att manuellt kopiera koden till den befintliga projektkonfigurationen.
 
 1. Genomför ändringarna och skicka din lokala utvecklingsgren till Cloud Manager Git-databasen.
 
-1. [Distribuera din kod från AEM Cloud Manager för att uppdatera AEM-miljön](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
+1. [Distribuera din kod från AEM Cloud Manager för att uppdatera AEM-miljön](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
 ## Valfritt. Konfigurera en metadataprofil
 
@@ -122,13 +122,13 @@ Gränssnittskomponenten för produktdata läggs till automatiskt baserat på mal
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Valfritt. Om du automatiskt vill synkronisera godkända Commerce-resurser när de överförs till AEM Assets-miljön anger du standardvärdet för fältet _[!UICONTROL Review Status]_&#x200B;på fliken `Basic` till `approved`.
+1. Valfritt. Om du automatiskt vill synkronisera godkända Commerce-resurser när de överförs till AEM Assets-miljön anger du standardvärdet för fältet _[!UICONTROL Review Status]_på fliken `Basic` till `approved`.
 
 1. Spara uppdateringen.
 
 #### Använda metadataprofilen i Commerce resurskällmapp
 
-1. På sidan [!UICONTROL &#x200B; Metadata Profiles] väljer du Commerce integreringsprofil.
+1. På sidan [!UICONTROL  Metadata Profiles] väljer du Commerce integreringsprofil.
 
 1. Välj **[!UICONTROL Apply Metadata Profiles to Folders]** på åtgärdsmenyn.
 
@@ -141,3 +141,5 @@ Gränssnittskomponenten för produktdata läggs till automatiskt baserat på mal
 ## Nästa steg
 
 [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."} [Installera Adobe Commerce-paket](configure-commerce.md)
+
+**Konfigurera din Commerce Storefront** - Om du vill använda AEM Assets med Commerce Storefront som drivs av Edge Delivery Services slutför du den konfiguration som beskrivs i [EDS AEM Assets-konfigurationsavsnittet](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/).
