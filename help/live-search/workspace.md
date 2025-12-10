@@ -85,7 +85,7 @@ Med sökning i flera lager kan du
 - Gör det möjligt för kunderna att söka i sökresultaten.
 - Använd `startsWith` och `contains` sökindexering i det andra lagret i sökningen med lager om du vill förfina resultatet ytterligare.
 
-De avancerade sökfunktionerna implementeras via parametern `filter` i [`productSearch` query ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) med hjälp av specifika operatorer:
+De avancerade sökfunktionerna implementeras via parametern `filter` i [`productSearch` query &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) med hjälp av specifika operatorer:
 
 - **Skiktad sökning** - Sök i ett annat söksammanhang - Med den här funktionen kan du utföra upp till två söklager för dina sökfrågor. Exempel:
 
