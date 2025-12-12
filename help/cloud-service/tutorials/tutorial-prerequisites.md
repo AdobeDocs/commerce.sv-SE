@@ -4,7 +4,7 @@ description: Lär dig förutsättningarna för klassificeringstilläggslabbet.
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: fda04de3301a305c897c34d3dd0166d50fc3c12a
+source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -27,7 +27,7 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för själ
   npm install -g @adobe/aio-cli
   ```
 
-* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [&#x200B; Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
+* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [ Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
 
   ```bash
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
@@ -127,7 +127,7 @@ cp env.dist .env
 
 Öppna filen `.env` i en textredigerare och lägg till följande OAuth-autentiseringsuppgifter:
 
-```text
+```plain
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -143,7 +143,7 @@ Du kan kopiera dessa värden från sidan **[!UICONTROL Credential details]** i [
 
 Lägg till följande Commerce-instansinformation i din `.env`-fil:
 
-```text
+```plain
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -159,7 +159,7 @@ Så här hittar du dessa värden:
 
 Ange ett tillfälligt värde för händelseprefixet:
 
-```text
+```plain
 EVENT_PREFIX=test
 ```
 
@@ -331,7 +331,7 @@ Check that the MCP server is running correctly:
 1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
 1. Try entering a prompt like the following:
 
-   ```text
+   ```plain
    Search the storefront docs for information about slots
    ```
 

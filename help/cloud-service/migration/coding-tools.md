@@ -1,11 +1,11 @@
 ---
 title: AI-kodningsverktyg för tillägg
 description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-tillägg.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 8f7b5536388e8f4cb1e763b430bdca8644d1da5c
+source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Att använda AI-kodningsverktygen ger följande fördelar:
 
 Konfigurationsalternativen visas i installationsprocessen. För installationsplatsen väljer du Aktuell katalog för att installera verktygen på den aktuella arbetsytan:
 
-```terminal
+```plain
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
@@ -80,7 +80,7 @@ Konfigurationsalternativen visas i installationsprocessen. För installationspla
 
 När du väljer kodningsagenten rekommenderar Adobe att du väljer `Cursor` för att få den bästa utvecklingsupplevelsen:
 
-```terminal
+```plain
 ? Which coding agent would you like to use?
 ❯ Cursor
   Copilot
@@ -90,7 +90,7 @@ När du väljer kodningsagenten rekommenderar Adobe att du väljer `Cursor` för
 
 När du väljer pakethanteraren bör du använda `npm` för konsekvens:
 
-```terminal
+```plain
 ? Which package manager would you like to use?
 ❯ npm
   yarn
@@ -168,7 +168,7 @@ aio auth login
 
 1. Kontrollera serverstatusen - Commerce Extensibility MCP Server ska visas som:
 
-   ```terminal
+   ```plain
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -176,7 +176,7 @@ aio auth login
 
 1. Använd följande uppmaning för att se om agenten använder MCP-servern. Om så inte är fallet ber du agenten uttryckligen att använda de tillgängliga MCP-verktygen.
 
-```terminal
+```plain
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -195,7 +195,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Kontrollera serverstatusen. `MCP:commerce-extensibility`-utdata ska matcha följande:
 
-   ```terminal
+   ```plain
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -209,7 +209,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Använd följande uppmaning för att se om agenten använder MCP-servern. Om så inte är fallet ber du agenten uttryckligen att använda de tillgängliga MCP-verktygen.
 
-   ```terminal
+   ```plain
    What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
    ```
 
@@ -217,7 +217,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 I följande exempelfråga skapas ett tillägg som skickar meddelanden när en beställning placeras.
 
-```terminal
+```plain
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
@@ -230,7 +230,7 @@ Payment Type -> pType
 
 Förutom att fråga kan du använda kommandot `/search-commerce-docs` för att söka efter dokumentation i konversationer med din agent. Exempel:
 
-```text
+```plain
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
@@ -275,7 +275,7 @@ Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser
@@ -304,7 +304,7 @@ Följande fyrstegsprotokoll tillämpas automatiskt av regelsystemet. Verktygen b
 
 För komplex utveckling som innefattar flera runtime-åtgärder, kontaktytor eller integreringar, krävs uttryckligen att AI-verktygen skapar en detaljerad implementeringsplan. När du ser en plan på hög nivå i [fas 2](#protocol) som omfattar flera komponenter ber du om en detaljerad implementeringsplan för att dela upp den i hanterbara uppgifter:
 
-```terminal
+```plain
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -326,7 +326,7 @@ Som standard används MCP-verktyg, men i vissa fall kan CLI-kommandon användas.
 
 Om CLI-kommandon används och du vill använda MCP-verktygen i stället, ska du göra så här:
 
-```terminal
+```plain
 Use only MCP tools and not CLI commands
 ```
 
@@ -346,7 +346,7 @@ Det är viktigt att ifrågasätta den onödiga komplexitet som skapas av AI-verk
 
 När onödiga filer läggs till (`validator.js`, `transformer.js`, `sender.js`) för enkla skrivskyddade slutpunkter ska du följa följande anvisningar:
 
-```terminal
+```plain
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -402,47 +402,47 @@ Be om hjälp med testning. Verktygen kan hjälpa dig med felsökning, logganalys
 
 **Testa körningsåtgärder**:
 
-```terminal
+```plain
 Help me test the customer-created runtime action running locally
 ```
 
 **Felsökning**:
 
-```terminal
+```plain
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **Kontrollera loggar**:
 
-```terminal
+```plain
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **Skapa testnyttolaster**:
 
-```terminal
+```plain
 Generate test data for this Commerce event
 ```
 
-```terminal
+```plain
 Create a test payload for the customer_save_after event
 ```
 
 **Sök efter körningsslutpunkter**:
 
-```terminal
+```plain
 What's the URL for this deployed action?
 ```
 
 **Hantera autentisering**:
 
-```terminal
+```plain
 How do I authenticate with this external API?
 ```
 
 **Felsök**:
 
-```terminal
+```plain
 Help me debug why this action is returning 500 errors
 ```
 
@@ -477,19 +477,19 @@ Driftsätt endast ändrade åtgärder för att snabba upp utvecklingen. Detta mi
 
 Efter större förändringar kan du använda verktygen för att rensa bort överblivna händelser. Med AI-verktygen hanterar man enkelt rensningsprocessen på ett systematiskt sätt och kan effektivt identifiera överblivna åtgärder, verifiera deras status och säkert ta bort dem utan manuell åtgärd.
 
-```terminal
+```plain
 Help me identify and clean up orphaned runtime actions
 ```
 
 Begär AI-verktygen för att lista distribuerade åtgärder och identifiera oanvända åtgärder
 
-```terminal
+```plain
 List all deployed actions and identify which ones are no longer needed
 ```
 
 Låt AI-verktygen ta bort överblivna åtgärder med lämpliga kommandon
 
-```terminal
+```plain
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
