@@ -1,7 +1,7 @@
 ---
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: b65f9f15fe89a52432fda9e2e29bf96176a431d3
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 0%
 ## Nyheter
 
 Den här sidan innehåller de ändringar som har gjorts under de senaste 60 dagarna. Vi utelämnar alla mindre uppdateringar, som kopieringsredigering, från den här listan.
+
+### 9 december 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beskrivning</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Uppdatering av rekommendationsfunktionen i Commerce Optimizer-dokumentationen när <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">förhandsgranskningsfönstret</a> stöds nu.</p>
+</td>
+      <td>
+        Teknisk
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ae99230552e7466a3a384c77e1e67e0cd981de6a">bekräfta</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 20 november 2025
 
@@ -23,7 +45,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/release-notes">versionsinformationen</a> för Adobe Commerce as a Cloud Service-versionen från november.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">versionsinformationen</a> för Adobe Commerce as a Cloud Service-versionen från november.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -45,7 +67,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Dokumenterat hur Commerce Optimizer-kunder som ansluter till en Adobe Commerce-serverdel kan övervaka och felsöka datafeedexporter från statussidan för Feed Sync. Se <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/data-sync">Datasynkronisering</a> i Adobe Commerce Optimizer Guide.</p>
+      <td><p>Dokumenterat hur Commerce Optimizer-kunder som ansluter till en Adobe Commerce-serverdel kan övervaka och felsöka datafeedexporter från statussidan för Feed Sync. Se <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Datasynkronisering</a> i Adobe Commerce Optimizer Guide.</p>
 </td>
       <td>
         Teknisk
@@ -67,7 +89,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/payment-services/release-notes">versionsinformationen</a> för Payment Services v2.13.0.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">versionsinformationen</a> för Payment Services v2.13.0.</p>
 </td>
       <td>
         Teknisk
@@ -89,7 +111,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/release-notes">versionsinformationen</a> för AEM Assets Integration version 1.2.7.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">versionsinformationen</a> för AEM Assets Integration version 1.2.7.</p>
 </td>
       <td>
         Teknisk
@@ -111,7 +133,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Följande avsnitt har uppdaterats med information om hur du konfigurerar identitetshantering och enkel inloggning från Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User och Identity Management</a><br />- <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: User and Identity Management</a></p>
+      <td><p>Följande avsnitt har uppdaterats med information om hur du konfigurerar identitetshantering och enkel inloggning från Adobe Admin Console:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service User och Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer: User and Identity Management</a></p>
 </td>
       <td>
         Feedback, teknisk
@@ -133,34 +155,12 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/user-management">steg för användarhantering</a> för att lägga till en användare.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">steg för användarhantering</a> för att lägga till en användare.</p>
 </td>
       <td>
         Viktig uppdatering
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4088b88553cbdd328a55f3483b20ea073e6c78b2">bekräfta</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 13 oktober 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beskrivning</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Konfigurationsguiden <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/storefront"> för </a>storefront har uppdaterats för Adobe Commerce Optimizer så att den innehåller instruktioner om hur du skapar ett storefront-projekt med verktyget Site Creator, anpassar butikskonfigurationen och verifierar webbplats- och katalogdata genom att kontrollera standardproduktinformationen och produktsökresultatsidorna.</p>
-</td>
-      <td>
-        Viktig uppdatering
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4c2d5fc7ad0febbeef2ff0b8ee3bdec5e9b5710c">bekräfta</a></td>
     </tr>
   </tbody>
 </table>
