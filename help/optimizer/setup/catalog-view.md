@@ -38,7 +38,7 @@ I det här avsnittet skapar du en katalogvy, väljer en [policy](policies.md) oc
 
 Innan du skapar en katalogvy bör du kontrollera att:
 
-- [Principer ](policies.md) har skapats för att definiera produktfilter.
+- [Principer &#x200B;](policies.md) har skapats för att definiera produktfilter.
 
 - [Definierade kataloglager](catalog-layer.md) för att definiera varianter av dina produkter.
 
