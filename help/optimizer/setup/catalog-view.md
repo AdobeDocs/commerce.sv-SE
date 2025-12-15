@@ -3,11 +3,11 @@ title: Katalogvy
 description: Lär dig vilka katalogvyer som är och hur du skapar dem för att ordna din produktkatalog efter affärsstruktur, principer och priser.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 769aafeb261d978623e68c466888924c92632883
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,11 @@ I det här avsnittet skapar du en katalogvy, väljer en [policy](policies.md) oc
 
 Innan du skapar en katalogvy bör du kontrollera att:
 
-- [Skapade profiler](policies.md) för att definiera produktfilter
+- [Principer ](policies.md) har skapats för att definiera produktfilter.
 
-- [Inlästa prisböcker](pricebooks.md) för priser
+- [Definierade kataloglager](catalog-layer.md) för att definiera varianter av dina produkter.
+
+- [Inlästa prisböcker](pricebooks.md) för priser.
 
 1. Gå till _Store setup_ på den vänstra menyn och klicka på **[!UICONTROL Catalog views]**.
 
@@ -50,6 +52,7 @@ Innan du skapar en katalogvy bör du kontrollera att:
 
    - **Namn** - Ange namnet på katalogvyn, till exempel `Celport`. &#x200B;
    - **Katalogkällor** - Välj katalogkälla (nationella inställningar), till exempel `en-US`.
+   - **Kataloglager**-Granska kapslade lager och prioritet.
    - **Profiler** - Använd listrutan för att välja relevanta profiler. Exempel: &quot;Varumärke&quot;, &quot;Modell&quot;. &#x200B;Kontrollera att du redan [har skapat en princip](policies.md).
 
 1. Välj den prisbok som du vill länka till katalogvyn.
@@ -63,6 +66,20 @@ Innan du skapar en katalogvy bör du kontrollera att:
 Sidan Katalog visar uppdateringar för att visa den nya katalogvyn. &#x200B;
 
 När du har utfört de här stegen är katalogvyn nu konfigurerad för att visa produkter och priser baserat på de valda källorna och profilerna.
+
+## Kataloglager
+
+Med kataloglager kan du ändra produktdata i en katalogvy utan att ändra originalkälldata. Lager tillämpar ändringar på specifika produktattribut, som namn, beskrivning, bilder, länkar och metadata, genom att skapa ett lager ovanpå baskatalogen. Dina ursprungliga produktdata förblir intakta, vilket gör att du kan anpassa produkterna och återställa ändringarna när du vill.
+
+Vanliga användningsområden för kataloglager är:
+
+- **SEO-optimering** - Åsidosätt produktmetatitlar och beskrivningar baserat på AI-rekommendationer från [Sites Optimizer](../manage-results/opportunities.md)
+- **Säsongskampanjer** - Uppdatera produktnamn, beskrivningar eller bilder tillfälligt för kampanjer
+- **Regional anpassning** - Visa annan produktinformation baserat på geografisk plats eller språk
+- **A/B-testning** - Testa olika produktpresentationer för att optimera konverteringsgraden
+- **Hantering av flera varumärken** - Anpassa produktattribut för olika varumärkeskataloger
+
+Mer information om hur du skapar, hanterar och prioriterar kataloglager finns i [Kataloglager](catalog-layer.md).
 
 ## Hantera katalogvy
 
@@ -166,3 +183,9 @@ Filtrerade katalogdata levereras till olika destinationer som Edge Delivery Serv
 >[!INFO]
 >
 >Mer information om inmatning och leverans av katalogdata finns i [utvecklardokumentationen](https://developer.adobe.com/commerce/services/optimizer/).
+
+## Mer som detta
+
+- [Kataloglager](catalog-layer.md) - Lär dig hur du ändrar produktdata utan att ändra den ursprungliga källan
+- [Profiler](policies.md) - Skapa profiler för att filtrera produkter i katalogvyer
+- [Prisböcker](pricebooks.md) - Hantera prisstrukturer för olika kundsegment
