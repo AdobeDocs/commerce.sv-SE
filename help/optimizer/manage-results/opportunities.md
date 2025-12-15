@@ -1,7 +1,7 @@
 ---
 title: Möjligheter
 description: Identifiera möjligheter att öka trafik, engagemang och konverteringar genom integrering med Adobe Sites Optimizer för smarta, datadrivna webbplatsförbättringar.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: 7f7b4a3c866c453d9722b708a0ed4e1b601c8e8e
 workflow-type: tm+mt
 source-wordcount: '1349'
@@ -17,7 +17,7 @@ Sidan **Affärsmöjligheter** hjälper dig att identifiera och implementera opti
 
 ## Vad är möjligheter?
 
-[Affärsmöjligheter](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) är AI-baserade rekommendationer som hjälper handlare att identifiera och åtgärda problem som påverkar deras handelsplatsers prestanda. Dessa rekommendationer drivs av [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), en molnbaserad tjänst som analyserar och förbättrar webbplatsens prestanda.
+[Affärsmöjligheter](https://experienceleague.adobe.com/sv/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) är AI-baserade rekommendationer som hjälper handlare att identifiera och åtgärda problem som påverkar deras handelsplatsers prestanda. Dessa rekommendationer drivs av [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/sv/docs/experience-manager-sites-optimizer/content/home), en molnbaserad tjänst som analyserar och förbättrar webbplatsens prestanda.
 
 ## Viktiga funktioner
 
@@ -176,7 +176,7 @@ Framgångsmått övervakar viktiga resultatindikatorer, som produktupptäckt och
 
 ## Läs mer om Sites Optimizer
 
-Mer information om Sites Optimizer funktioner finns i [Adobe Experience Manager Sites Optimizer-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
+Mer information om Sites Optimizer funktioner finns i [Adobe Experience Manager Sites Optimizer-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-manager-sites-optimizer/content/home).
 
 Ytterligare resurser:
 
