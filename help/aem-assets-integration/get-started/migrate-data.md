@@ -3,9 +3,9 @@ title: Migrera mediefiler till AEM
 description: Migrera mediefilerna från Adobe Commerce eller en extern källa till AEM Assets DAM.
 feature: CMS, Media, Integration
 exl-id: ccb13e90-8b18-4f1e-94ce-f0dacea2f617
-source-git-commit: 995fb071953ddad6cb2076207910679905bb0347
+source-git-commit: d46526db56dad08a8f865664c92d1214bbf063d8
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ Både Adobe Commerce och Adobe Experience Manager (AEM) har inbyggda funktioner 
 | **Systemkrav** | <ul><li>AEM as a Cloud Service-miljö etablerad med AEM Assets</li><li>Tillräcklig lagringskapacitet</li><li>Nätverksbandbredd för stora filöverföringar</li></ul> |
 | **Nödvändig åtkomst och behörigheter** | <ul><li>Administratörsåtkomst till AEM Assets as a Cloud Service</li><li>Tillgång till källsystemet där mediefiler lagras (Adobe Commerce eller externt system)</li><li>Lämpliga behörigheter för åtkomst till molnlagringstjänster</li></ul> |
 | **Molnlagringskonto** | <ul><li>AWS S3 eller Azure Blob Storage-konto</li><li>Privat behållare/bucket-konfiguration</li><li>Autentiseringsuppgifter</li></ul> |
-| **Source Content** | <ul><li>Organiserade mediefiler klara för migrering</li><li>Bild- och videofiler i <a href="https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">format som stöds av AEM Assets</a>.</li><li>Rena, duplicerade resurser</li></li> |
-| **Förberedelse av metadata** | <ul><li><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">AEM Assets metadataprofil har konfigurerats för Commerce-resurser</a></li><li>Mappade metadatavärden för varje resurs</li><li>CSV-filredigerare (t.ex. Microsoft Excel)</li></ul> |
+| **Source Content** | <ul><li>Organiserade mediefiler klara för migrering</li><li>Bild- och videofiler i <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">format som stöds av AEM Assets</a>.</li><li>Rena, duplicerade resurser</li></li> |
+| **Förberedelse av metadata** | <ul><li><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">AEM Assets metadataprofil har konfigurerats för Commerce-resurser</a></li><li>Mappade metadatavärden för varje resurs</li><li>CSV-filredigerare (t.ex. Microsoft Excel)</li></ul> |
 
 ## Bästa praxis för migrering
 
@@ -44,9 +44,9 @@ Följ migreringsarbetsflödet för att exportera mediefiler från Adobe Commerce
 
 [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."}
 
-För Adobe Commerce-handlare kan modulen **Fjärrlagring** underlätta import och export av mediefiler. Med den här modulen kan företag lagra och hantera mediefiler med hjälp av fjärrlagringstjänster som AWS S3. Mer information om hur du konfigurerar fjärrlagring för din Commerce-instans finns i [Konfigurera fjärrlagring](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) i **Konfigurationshandboken för Commerce**.
+För Adobe Commerce-handlare kan modulen **Fjärrlagring** underlätta import och export av mediefiler. Med den här modulen kan företag lagra och hantera mediefiler med hjälp av fjärrlagringstjänster som AWS S3. Mer information om hur du konfigurerar fjärrlagring för din Commerce-instans finns i [Konfigurera fjärrlagring](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) i **Konfigurationshandboken för Commerce**.
 
-Om du har mediefiler lagrade utanför Adobe Commerce kan du överföra dem direkt till någon av de [datakällor](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) som stöds av AEM as a Cloud Service.
+Om du har mediefiler lagrade utanför Adobe Commerce kan du överföra dem direkt till någon av de [datakällor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) som stöds av AEM as a Cloud Service.
 
 ### Steg 2: Skapa en CSV-fil för metadatamappning
 
@@ -57,10 +57,10 @@ Ange värden för metadatafälten som ingår i [AEM Assets-metadataprofilen för
 | Metadata | Beskrivning | Värde |
 |-------|-------------|--------|
 | assetPath | Den fullständiga sökvägen där resursen ska lagras i AEM Assets-databasen.<br><br>Använd sökvägen för att skapa undermappar för att ordna Commerce-resurser, till exempel `content/dam/commerce/<brand>/<type>`. | `/content/dam/commerce/<sub-folder>/..<filename>` |
-| handel:position | Placering/ordning för resursen i produktgallerier | Flera numeriska värden avgränsade med pipe (se csv-fil) |
-| handel:isCommerce | Flagga som anger om resursen används i e-handeln | `Yes` |
-| handel:skus | SKU:er för den här resursen | Flera strängvärden avgränsade med pipe (se csv-fil) |
-| handel:roller | Roller eller typer av bilder för resursen (till exempel `thumbnail`, `main image`, `swatch`) | Flera värden avgränsade med semikolon (t.ex.&quot;miniatyrbild; bild; färgrutebild; liten_bild&quot;) |
+| commerce:positions | Placering/ordning för resursen i produktgallerier | Flera numeriska värden avgränsade med pipe (&quot;Number: multi&quot;) |
+| commerce:isCommerce | Flagga som anger om resursen används i e-handeln | `Yes` |
+| commerce:skus | SKU:er för den här resursen | Flera strängvärden avgränsade med pipe (String: multi) |
+| commerce:roles | Roller eller typer av bilder för resursen (till exempel `thumbnail`, `main image`, `swatch`) | Flera värden avgränsade med semikolon (t.ex.&quot;miniatyrbild; bild; färgrutebild; liten_bild&quot;) |
 
 +++CSV-kod
 
@@ -80,7 +80,7 @@ När du har skapat metadatamappningsfilen kan du använda verktyget för massimp
 
 Här följer en översikt på hög nivå över hur du använder verktyget.
 
-1. [Logga in i AEM Assets as a Cloud Service-redigeringsmiljö](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
+1. [Logga in i AEM Assets as a Cloud Service-redigeringsmiljö](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
 
 1. I Experience Manager-verktygsvyn väljer du **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**.
 
@@ -99,12 +99,12 @@ Här följer en översikt på hög nivå över hur du använder verktyget.
    * Valfritt. Information om MIME-typer, filstorlek och andra parametrar för att anpassa importkonfigurationen
    * Sökvägen till CSV-filen för metadatamappning som du överförde till molnlagringsinstansen.
 
-   Mer information finns i [Konfigurera verktyget Massimport](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool) i *AEM Assets as a Cloud Service-användarhandboken*.
+   Mer information finns i [Konfigurera verktyget Massimport](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool) i *AEM Assets as a Cloud Service-användarhandboken*.
 
 1. När du har sparat konfigurationen använder du verktygen för massimport för att testa och köra importåtgärden.
 
 >[!MORELIKETHIS]
 >
-> [Videodemo om verktyget Importera satsvis](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
-> &#x200B;> [Tips, bästa praxis och begränsningar](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> &#x200B;> [Överför eller importera resurser med API:er &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> [Videodemo om verktyget Importera satsvis](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> [Tips, bästa praxis och begränsningar](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> [Överför eller importera resurser med API:er ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
