@@ -1,7 +1,7 @@
 ---
 title: RAG-dokumentationstjänst
 description: Lär dig använda den AI-baserade dokumentationssöktjänsten för Adobe Commerce-utveckling.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
@@ -30,9 +30,9 @@ I följande tabell beskrivs vilken dokumentation som för närvarande är indexe
 
 | Kategori | Index | Innehåll ingår | Nyckelord |
 |-------|---------|---------|------------------------|
-| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, insticksprogram, butikskomponenter | storefront, drop-in, EDS, produktlista, utcheckning |
+| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE) | commerce-storefront-docs | Edge Delivery Services, insticksprogram, butikskomponenter | storefront, drop-in, EDS, produktlista, utcheckning |
 | [Utbyggbarhet](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, event, extensions, integreringar | webkrok, event, extension, API mesh, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce (katalog, kunder, beställningar) | katalog, produkt, kund, order, lager |
+| [Commerce](https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce (katalog, kunder, beställningar) | katalog, produkt, kund, order, lager |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, körningsåtgärder, UI-tillägg | app builder, runtime action, React Spectrum |
 
 Mer information om indexmarkering finns i [Automatisk indexmarkering](#automatic-index-selection-recommended) och [Explicit indexmarkering](#explicit-index-selection).
