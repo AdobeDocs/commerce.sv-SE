@@ -44,23 +44,23 @@ Den här paketkoden lägger till följande resurser i AEM Assets redigeringsmilj
 
 Du behöver följande resurser och behörigheter för att distribuera paketkoden `assets-commerce` till AEM Assets as a Cloud Service AEM-miljön:
 
-* [Åtkomst till AEM Assets Cloud Manager program och miljöer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) med rollerna Program och Distributionshanteraren.
+* [Åtkomst till AEM Assets Cloud Manager program och miljöer](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) med rollerna Program och Distributionshanteraren.
 
-* En [lokal AEM-utvecklingsmiljö](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) som är bekant med AEM lokala utvecklingsprocess.
+* En [lokal AEM-utvecklingsmiljö](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) som är bekant med AEM lokala utvecklingsprocess.
 
-* Förstå [AEM projektstruktur](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) och hur du distribuerar anpassade innehållspaket med Cloud Manager.
+* Förstå [AEM projektstruktur](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) och hur du distribuerar anpassade innehållspaket med Cloud Manager.
 
 ### Steg 1: Installera paketet `assets-commerce`
 
-1. Från AEM Cloud Manager kan du [skapa produktions- och mellanlagringsmiljöer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) för ditt AEM Assets-projekt, om det behövs.
+1. Från AEM Cloud Manager kan du [skapa produktions- och mellanlagringsmiljöer](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) för ditt AEM Assets-projekt, om det behövs.
 
-1. Konfigurera vid behov en [distributionspipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline).
+1. Konfigurera vid behov en [distributionspipeline](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline).
 
-1. [Klona Git-databasen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access).
+1. [Klona Git-databasen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access).
 
 1. Hämta paketkoden från [AEM Assets Commerce-databasen](https://github.com/ankumalh/assets-commerce) från GitHub.
 
-1. Från din [lokala AEM-utvecklingsmiljö](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) genom att manuellt kopiera koden till den befintliga projektkonfigurationen och ersätta alla förekomster av `<my-app>` i `filter.xml` och alla `pom.xml files` i projektet med ditt programnamn.
+1. Från din [lokala AEM-utvecklingsmiljö](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) genom att manuellt kopiera koden till den befintliga projektkonfigurationen och ersätta alla förekomster av `<my-app>` i `filter.xml` och alla `pom.xml files` i projektet med ditt programnamn.
 
    >[!NOTE]
    >
@@ -154,4 +154,4 @@ Gränssnittskomponenten för produktdata läggs till automatiskt baserat på mal
 
 * [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."} [Installera Adobe Commerce-paket](configure-commerce.md)
 
-* **Konfigurera din Commerce Storefront** - Om du vill använda AEM Assets med Commerce Storefront som drivs av Edge Delivery Services slutför du den konfiguration som beskrivs i [EDS AEM Assets-konfigurationsavsnittet](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/).
+* **Konfigurera din Commerce Storefront** - Om du vill använda AEM Assets med Commerce Storefront som drivs av Edge Delivery Services slutför du den konfiguration som beskrivs i [EDS AEM Assets-konfigurationsavsnittet](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=sv-SE).

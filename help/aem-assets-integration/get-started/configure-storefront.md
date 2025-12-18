@@ -14,4 +14,4 @@ ht-degree: 0%
 
 I AEM Assets-integreringen visas produktbilder som hanteras i AEM Assets i stället för bilder som lagras på Commerce. Integrationen ger bättre bildhanteringsfunktioner: avancerad optimering, beskärning och leverans via Adobe Content Delivery Network (CDN).
 
-Om du vill använda AEM Assets med Commerce Storefront som drivs av Edge Delivery Services, slutför du den konfiguration av butiken som beskrivs i [EDS AEM Assets-konfigurationsavsnittet](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/).
+Om du vill använda AEM Assets med Commerce Storefront som drivs av Edge Delivery Services, slutför du den konfiguration av butiken som beskrivs i [EDS AEM Assets-konfigurationsavsnittet](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=sv-SE).
