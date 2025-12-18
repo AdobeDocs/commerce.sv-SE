@@ -1,13 +1,13 @@
 ---
 title: AI-kodningsverktyg för tillägg
 description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-tillägg.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ Att använda AI-kodningsverktygen ger följande fördelar:
 * [Git](https://github.com/git-guides/install-git): För databaskloning och versionskontroll
 
 ## Installation
+
+>[!NOTE]
+>
+>Om du bara vill installera tjänsten Documentation RAG och inte hela paketet med kodningsverktyg för AI, se [Documentation RAG service](./doc-rag.md).
 
 1. Installera den senaste [Adobe I/O CLI](https://github.com/adobe/aio-cli) globalt:
 
@@ -151,7 +155,7 @@ aio auth login
 >
 >Vissa funktioner i MCP-servern fungerar utan inloggning, men tjänsten RAG (Retrieval-Augmented Generation) fungerar inte. RAG-tjänsten ger AI-kodningsagenten tillgång i realtid till den fullständiga Adobe Commerce-dokumentationsuppsättningen, så att den kan besvara frågor och generera kod baserat på Commerce nuvarande utvecklingsmetoder, API:er och arkitekturmönster.
 >
->I en framtida version kommer RAG-tjänsten att vara tillgänglig oberoende av varandra utan att du behöver installera andra verktyg.
+>Mer information om hur du installerar RAG-tjänsten oberoende av varandra finns i [Dokumentation för RAG-tjänsten](./doc-rag.md).
 
 ### Markör
 
@@ -275,7 +279,7 @@ Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser
