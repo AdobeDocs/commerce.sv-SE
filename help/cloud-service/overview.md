@@ -62,7 +62,7 @@ I följande video visas en kort introduktion till arkitekturen [!DNL Adobe Comme
 
 I det här diagrammet visas dataflödet mellan [!DNL Adobe Commerce as a Cloud Service] och alla Adobe Experience Cloud-lösningar.
 
-![[!DNL Adobe Commerce as a Cloud Service]-arkitekturdiagram ](./assets/data-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service]-arkitekturdiagram &#x200B;](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce Storefront
 
