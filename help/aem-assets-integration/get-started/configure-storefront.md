@@ -28,4 +28,4 @@ Om du vill aktivera integreringen i Commerce StoreFront som drivs av Edge Delive
 
 Commerce-insticksprogram identifierar automatiskt konfigurationen av `commerce-assets-enabled` och justerar bildhanteringen därefter.
 
-Om du vill ha mer information om hur du använder AEM Assets med Commerce Storefront från Edge Delivery Services kan du slutföra konfigurationen av Store som beskrivs i avsnittet [AEM Assets-integrering](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) i dokumentationen för *Adobe Commerce Storefront* .
+Om du vill ha mer information om hur du använder AEM Assets med Commerce Storefront från Edge Delivery Services kan du slutföra konfigurationen av Store som beskrivs i avsnittet [AEM Assets-integrering](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=sv-SE) i dokumentationen för *Adobe Commerce Storefront* .
