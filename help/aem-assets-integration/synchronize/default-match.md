@@ -42,7 +42,7 @@ När matchningsregeln **[!UICONTROL Match by product SKU]** har konfigurerats i 
    >
    > Om en resurs används för flera produkter konfigurerar du metadata för varje associerad SKU.
 
-1. På fliken `Basic` ställer du in standardvärdet för fältet _[!UICONTROL Review Status]_till `approved`.
+1. På fliken `Basic` ställer du in standardvärdet för fältet _[!UICONTROL Review Status]_&#x200B;till `approved`.
 
    ![Exempelmetadata](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
