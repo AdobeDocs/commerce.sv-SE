@@ -3,7 +3,7 @@ title: Konfigurera AEM Assets Project för stöd av Commerce-metadata
 description: Aktivera smidig resurssynkronisering mellan Adobe Commerce och AEM Assets genom att lägga till de metadata som krävs för integreringen.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
-source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
+source-git-commit: 722ff812fbc196f3a678b4cefc38e6612739bd67
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 0%
@@ -16,11 +16,11 @@ När du använder AEM Assets som ett DAM-system (Digital Asset Management) för 
 
 Följ de här stegen för att konfigurera AEM Assets-projektet med den paketkod och de metadata som krävs för att hantera Commerce-resurser från AEM redigeringsmiljö:
 
-1. [Läs mer om &#x200B;](#aem-commerce-assets-commerce-package-contents)
+1. [Läs mer om ](#aem-commerce-assets-commerce-package-contents)
 
 1. [Slutför installationsstegen för att konfigurera AEM Assets-projektet så att det stöder Commerce-metadata](#step-1-install-the-assets-commerce-package)
 
-## AEM Commerce **assets-commerce** paketinnehåll
+## AEM Commerce-paketets innehåll för mediefiler/e-handel
 
 Adobe tillhandahåller paketkoden `assets-commerce` för AEM Commerce för att lägga till resurserna Commerce-namnområde och Metadata Schema i Experience Manager Assets as a Cloud Service-miljökonfigurationen.
 
@@ -50,25 +50,25 @@ Den här paketkoden lägger till följande resurser i AEM Assets redigeringsmilj
 
 Du behöver följande resurser och behörigheter för att distribuera paketkoden `assets-commerce` till AEM Assets as a Cloud Service AEM-miljön:
 
-* [Åtkomst till AEM Assets Cloud Manager program och miljöer](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) med rollerna Program och Distributionshanteraren.
+* [Åtkomst till AEM Assets Cloud Manager program och miljöer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) med rollerna Program och Distributionshanteraren.
 
-* En [lokal AEM-utvecklingsmiljö](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) som är bekant med AEM lokala utvecklingsprocess.
+* En [lokal AEM-utvecklingsmiljö](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) som är bekant med AEM lokala utvecklingsprocess.
 
-* Förstå [AEM projektstruktur](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) och hur du distribuerar anpassade innehållspaket med Cloud Manager.
+* Förstå [AEM projektstruktur](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) och hur du distribuerar anpassade innehållspaket med Cloud Manager.
 
 * **IMS-organisations-ID** har konfigurerats för din Commerce-instans.
 
-## Steg 1: Installera paketet **assets-commerce**
+## Steg 1: Installera paketet assets-commerce
 
-1. Navigera till AEM Cloud Manager, välj ett program och [skapa produktions- och mellanlagringsmiljöer](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) som du vill integrera med Adobe Commerce.
+1. Navigera till AEM Cloud Manager, välj ett program och [skapa produktions- och mellanlagringsmiljöer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) som du vill integrera med Adobe Commerce.
 
-1. Konfigurera en [distributionspipeline](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) eller verifiera att pipelinen kan distribuera ändringar till den valda miljön.
+1. Konfigurera en [distributionspipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) eller verifiera att pipelinen kan distribuera ändringar till den valda miljön.
 
-1. [Klona Adobe hanterade Git-databas](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) för det valda programmet.
+1. [Klona Adobe hanterade Git-databas](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) för det valda programmet.
 
 1. Hämta paketkoden från [AEM Assets Commerce-databasen](https://github.com/ankumalh/assets-commerce) från GitHub.
 
-1. Kopiera manuellt den hämtade koden från din [lokala AEM-utvecklingsmiljö](https://experienceleague.adobe.com/sv/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) till den befintliga Adobe-hanterade databasen.
+1. Kopiera manuellt den hämtade koden från din [lokala AEM-utvecklingsmiljö](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) till den befintliga Adobe-hanterade databasen.
 
 1. Ersätt alla förekomster av `filter.xml` med ditt programnamn i alla `pom.xml files` och `<my-app>` för ditt projekt.
 
@@ -86,7 +86,7 @@ Du behöver följande resurser och behörigheter för att distribuera paketkoden
 
    * Produkt-SKU:er och fälten `Eligible for Commerce` visas.
 
-### Fliken **Commerce** visas inte i egenskaper
+### Fliken Commerce visas inte i egenskaper
 
 Om fliken **Commerce** inte visas i egenskaper måste du skapa en manuellt i metadataramedigeraren.
 
@@ -102,7 +102,7 @@ Om fliken **Commerce** inte visas i egenskaper måste du skapa en manuellt i met
 
 1. Dra och släpp en **kryssruta**-komponent på fliken **Commerce** och mappa den till egenskapen `commerce:isCommerce`. Ange **Ja** och **Nej** som alternativ.
 
-Om du stöter på några andra problem skapar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#submit-ticket) eller kontaktar din AEM Assets Integration-säljare för att få hjälp.
+Om du stöter på några andra problem skapar du en [supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) eller kontaktar din AEM Assets Integration-säljare för att få hjälp.
 
 ## Steg 2: Valfritt. Konfigurera en metadataprofil
 
@@ -160,13 +160,13 @@ Gränssnittskomponenten för produktdata läggs till automatiskt baserat på mal
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Valfritt. Om du automatiskt vill synkronisera godkända Commerce-resurser när de överförs till AEM Assets-miljön anger du standardvärdet för fältet _[!UICONTROL Review Status]_&#x200B;på fliken `Basic` till `approved`.
+1. Valfritt. Om du automatiskt vill synkronisera godkända Commerce-resurser när de överförs till AEM Assets-miljön anger du standardvärdet för fältet _[!UICONTROL Review Status]_på fliken `Basic` till `approved`.
 
 1. Spara uppdateringen.
 
 ### Använda metadataprofilen i Commerce resurskällmapp
 
-1. På sidan [!UICONTROL &#x200B; Metadata Profiles] väljer du Commerce integreringsprofil.
+1. På sidan [!UICONTROL  Metadata Profiles] väljer du Commerce integreringsprofil.
 
 1. Välj **[!UICONTROL Apply Metadata Profiles to Folders]** på åtgärdsmenyn.
 
@@ -180,4 +180,4 @@ Gränssnittskomponenten för produktdata läggs till automatiskt baserat på mal
 
 * [!BADGE Endast skrivbordspaket]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."} [Installera Adobe Commerce-paket](configure-commerce.md).
 
-* [!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} [Konfigurera integreringen från Commerce Admin](setup-synchronization.md).
+* [!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} [Konfigurera integreringen från Commerce Admin](setup-synchronization.md).
