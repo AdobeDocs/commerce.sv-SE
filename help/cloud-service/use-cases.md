@@ -160,7 +160,7 @@ Tänk dig ett scenario där du snabbt vill ändra bakgrunden i en produktbild. K
 
 1. Öppna [!DNL AEM Assets] genom att markera den i [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
-   ![[!DNL AEM Assets]-väljaren visar [!DNL Adobe Experience Cloud] interface ](./assets/select-aem-assets.png){width="600" zoomable="yes"}
+   ![[!DNL AEM Assets]-väljaren visar [!DNL Adobe Experience Cloud] interface &#x200B;](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
 1. Klicka på [!UICONTROL **Assets**].
 
@@ -276,7 +276,7 @@ Generate Variations för [!DNL Adobe Commerce] använder generativ AI för att a
 
 1. Välj en innehållsvariant och klicka på [!UICONTROL **Generera bild**].
 
-1. Välj [!UICONTROL **Bredbild (16**])[!UICONTROL **i listrutan :9Bildstorlek**].
+1. Välj [!UICONTROL **Bredbild (16**]) [!UICONTROL **i listrutan :9Bildstorlek**].
 
 1. Välj [!UICONTROL **Foto**] i listrutan [!UICONTROL **Innehållstyp**].
 
