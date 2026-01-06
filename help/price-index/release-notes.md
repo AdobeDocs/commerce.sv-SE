@@ -4,9 +4,10 @@ description: Den senaste versionsinformationen för  [!DNL Catalog Adapter]  fö
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
+source-git-commit: 47419e7e19611dc4a045c195f259e2126ab77372
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ De här versionsinformationen beskriver de senaste versionerna av tillägget [!D
 Bland uppdateringarna finns:
 
 ![Nya](../assets/new.svg) nya funktioner
-![Korrigera &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
+![Korrigera ](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
 
@@ -27,6 +28,10 @@ Bland uppdateringarna finns:
 >[Katalogkortstillägget](catalog-adapter.md) inaktiverar prisindexering för Adobe Commerce. Om du har installerat den kan du kontrollera vilken version som är installerad på datorn med hjälp av Composer. I vissa fall kanske du vill uppgradera katalogkortstillägget på datorn för att kunna hämta korrigeringar eller nya funktioner utan att uppdatera Commerce tjänstversion.
 
 ## Aktuell huvudversion
+
+## 1.0.10 Utgåva
+
+![Åtgärdade](../assets/fix.svg) ett problem där prisfrågor för importerade eller nyligen skapade paketprodukter kunde resultera i interna serverfel eftersom systemet försökte använda en sammanfogad SKU för sökning i stället för rätt, giltig SKU. Prisfrågor för paketprodukter använder nu rätt SKU och löser dem korrekt.<!--MDEE-1040-->
 
 ## 1.0.9 Utgåva
 
