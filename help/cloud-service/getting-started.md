@@ -29,7 +29,7 @@ ht-degree: 0%
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** - Hantera användare och roller
 * **Commerce Admin** - Hantera produkter, beställningar, kunder och butikskonfiguration
 * **[Storefront från [!DNL Edge Delivery Services]](./storefront.md)** - Skapa och anpassa en kundriktad butik med ett sammanställbart, högpresterande system som levererar exceptionell hastighet, SEO och användarupplevelse för handlare och utvecklare
-* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** - Bygg anpassade integreringar med [!DNL App Builder], tillsammans med andra utökningsverktyg som startpaketet för [integreringen ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) och [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)
+* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** - Bygg anpassade integreringar med [!DNL App Builder], tillsammans med andra utökningsverktyg som startpaketet för [integreringen &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) och [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)
 
 ## Installation och hantering
 
