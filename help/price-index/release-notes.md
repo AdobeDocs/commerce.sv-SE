@@ -19,7 +19,7 @@ De här versionsinformationen beskriver de senaste versionerna av tillägget [!D
 Bland uppdateringarna finns:
 
 ![Nya](../assets/new.svg) nya funktioner
-![Korrigera ](../assets/fix.svg) Korrigeringar och förbättringar
+![Korrigera &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
 
