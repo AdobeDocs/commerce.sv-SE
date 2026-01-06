@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: Admin
 level: Intermediate
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: 27a3ebef75b4c22c3b4c52d8a0fd378fcea7e752
 workflow-type: tm+mt
 source-wordcount: '1441'
@@ -21,9 +21,9 @@ Den här processen kräver en IMS-organisation med åtkomst till [!DNL Adobe Com
 
 >[!TIP]
 >
->Om du vill lägga till flera användare samtidigt kan du utföra en [massöverföring av en CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
+>Om du vill lägga till flera användare samtidigt kan du utföra en [massöverföring av en CSV](https://helpx.adobe.com/se/enterprise/using/bulk-upload-users.html){target="_blank"}.
 >
-> Du kan också lägga till flera användare till en roll genom att skapa en [användargrupp](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Sedan kan du lägga till [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**]-produkten i användargruppen.
+> Du kan också lägga till flera användare till en roll genom att skapa en [användargrupp](https://helpx.adobe.com/se/enterprise/using/user-groups.html){target="_blank"}. Sedan kan du lägga till [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**]-produkten i användargruppen.
 
 ## Förstå roller
 
@@ -37,13 +37,13 @@ Följande roller är tillgängliga för [!DNL Adobe Commerce as a Cloud Service]
 
   >[!TIP]
   >
-  >Om du vill begränsa åtkomsten till Commerce Admin via IP-adressen läser du [Begränsa produktåtkomst via IP-adresser](https://helpx.adobe.com/enterprise/using/ip-based-access.html){target="_blank"}.
+  >Om du vill begränsa åtkomsten till Commerce Admin via IP-adressen läser du [Begränsa produktåtkomst via IP-adresser](https://helpx.adobe.com/se/enterprise/using/ip-based-access.html){target="_blank"}.
 
-* [**Utvecklare**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Utvecklare har användarbehörigheter och läggs till i Commerce-instansen som utvecklaranvändare. De kan använda [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [konfigurera händelser](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} och [skapa webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
+* [**Utvecklare**](https://helpx.adobe.com/se/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} - Utvecklare har användarbehörigheter och läggs till i Commerce-instansen som utvecklaranvändare. De kan använda [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [konfigurera händelser](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} och [skapa webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
 * Administratörer - Det finns tre olika typer av administratörer:
-   * [Systemadministratörer](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - Systemadministratören har åtkomst till alla produkter och produktprofiler i organisationen via Admin Console.
-   * [Produktadministratörer](#add-a-product-admin) - Produktadministratörer kan [hantera användare, roller och behörigheter för produkten](#add-users) i [!DNL Adobe Admin Console] och [hantera användare i Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
+   * [Systemadministratörer](https://helpx.adobe.com/se/enterprise/using/admin-roles.html){target="_blank"} - Systemadministratören har åtkomst till alla produkter och produktprofiler i organisationen via Admin Console.
+   * [Produktadministratörer](#add-a-product-admin) - Produktadministratörer kan [hantera användare, roller och behörigheter för produkten](#add-users) i [!DNL Adobe Admin Console] och [hantera användare i Commerce Admin](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
    * [Administratörer för produktprofiler](#add-developers-and-product-profile-admins) - Administratörer för produktprofiler har inte tillgång till Adobe Commerce Admin, men kan hantera användare för produkten i [!DNL Adobe Admin Console].
 
 Mer information om behörigheter för varje roll i Adobe Commerce finns i [användarbehörigheter](#user-permissions).
@@ -223,17 +223,17 @@ Administratörer har åtkomst till alla behörigheter.
 
 Följande konfiguration krävs för [!DNL Adobe Experience Manager Assets]- och [!DNL Product Visuals powered by AEM Assets]-användare.
 
-Om ditt konto har åtkomst till [[!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) och du vill tillåta en användare att få åtkomst till de avancerade funktionerna i [[!DNL AEM Assets]](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"} tillsammans med [!DNL Adobe Commerce as a Cloud Service], slutför du följande process:
+Om ditt konto har åtkomst till [[!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service) och du vill tillåta en användare att få åtkomst till de avancerade funktionerna i [[!DNL AEM Assets]](https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/overview){target="_blank"} tillsammans med [!DNL Adobe Commerce as a Cloud Service], slutför du följande process:
 
 >[!NOTE]
 >
->Användare utan rätt behörighet för resurser kommer inte att kunna komma åt avancerade funktioner i [!DNL AEM Assets], till exempel [AI-bildgenerering](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}, [genererade varianter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"} och mer.
+>Användare utan rätt behörighet för resurser kommer inte att kunna komma åt avancerade funktioner i [!DNL AEM Assets], till exempel [AI-bildgenerering](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}, [genererade varianter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"} och mer.
 
 >[!TIP]
 >
->Om du vill lägga till flera användare samtidigt kan du utföra en [massöverföring av en CSV](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
+>Om du vill lägga till flera användare samtidigt kan du utföra en [massöverföring av en CSV](https://helpx.adobe.com/se/enterprise/using/bulk-upload-users.html){target="_blank"}.
 >
->Du kan också lägga till flera användare till en roll genom att skapa en [användargrupp](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Sedan kan du lägga till [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]-produkten i användargruppen.
+>Du kan också lägga till flera användare till en roll genom att skapa en [användargrupp](https://helpx.adobe.com/se/enterprise/using/user-groups.html){target="_blank"}. Sedan kan du lägga till [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]-produkten i användargruppen.
 
 1. Navigera till <https://adminconsole.adobe.com> och logga in med din Adobe ID.
 
@@ -260,7 +260,7 @@ Om ditt konto har åtkomst till [[!DNL Adobe Experience Manager as a Cloud Servi
 
    >[!NOTE]
    >
-   >Mer information om hur dessa behörigheter påverkar din åtkomst till [!DNL AEM Assets] finns i [Cloud Manager produktprofiler](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
+   >Mer information om hur dessa behörigheter påverkar din åtkomst till [!DNL AEM Assets] finns i [Cloud Manager produktprofiler](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}.
 
 1. Klicka på [!UICONTROL **Använd**].
 
@@ -278,18 +278,18 @@ När en användare har lagts till i [!DNL AEM Assets] kan de komma åt [!DNL Exp
 
 1. På sidan [!UICONTROL **Cloud Manager**] klickar du på [!UICONTROL **Lägg till program**] för att komma igång.
 
-1. [Skapa ett nytt program](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}.
+1. [Skapa ett nytt program](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}.
 
-1. [Skapa en ny miljö](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}.
+1. [Skapa en ny miljö](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}.
 
 1. När du har skapat miljön går du tillbaka till [Admin Console](https://adminconsole.adobe.com){target="_blank"} och väljer [!UICONTROL **Adobe Experience Manager as a Cloud Service**].
 
 1. Nu bör du se nya produktprofiler. Markera som innehåller `- author -`. Exempel: `<environment-name> - author - <program-id> - <environment-id>`.
 
-1. [Lägg till användare i produktprofilen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}.
+1. [Lägg till användare i produktprofilen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}.
 
-* [Konfigurera [!DNL AEM Assets] för stöd av Commerce-metadata](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
-* [Integrera [!DNL AEM Assets] med Commerce för resurssynkronisering](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+* [Konfigurera [!DNL AEM Assets] för stöd av Commerce-metadata](https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/get-started/configure-aem)
+* [Integrera [!DNL AEM Assets] med Commerce för resurssynkronisering](https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
 
 {{aem-assets-instance-mapping}}
 
