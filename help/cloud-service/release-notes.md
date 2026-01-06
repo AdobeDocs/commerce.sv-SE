@@ -4,7 +4,7 @@ description: Läs om de senaste funktionerna och förbättringarna i  [!DNL Adob
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Versionsinformation
 
-Följande versionsinformation innehåller uppdateringar för [!DNL Adobe Commerce as a Cloud Service]. Versionsinformation om andra produkter finns i [Adobe Commerce Optimizer](../optimizer/release-notes.md) eller [Adobe Commerce lokalt och Adobe Commerce i molnet](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+Följande versionsinformation innehåller uppdateringar för [!DNL Adobe Commerce as a Cloud Service]. Versionsinformation om andra produkter finns i [Adobe Commerce Optimizer](../optimizer/release-notes.md) eller [Adobe Commerce lokalt och Adobe Commerce i molnet](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/notes/overview).
 
 [!DNL Adobe Commerce as a Cloud Service] innehåller de senaste versionerna av marknadsföringstjänster, betaltjänster och utökningsmöjligheter. Använd följande länkar om du vill visa versionsinformationen för var och en:
 
@@ -49,6 +49,6 @@ Följande versionsinformation innehåller uppdateringar för [!DNL Adobe Commerc
 
 #### Anpassade orderattribut
 
-* Administratörsanvändare kan nu visa och redigera [anpassade orderattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) direkt från sorteringsvyn, redigeringsskärmen och skapa-skärmen på Admin-panelen. Den här förbättringen förbättrar hanteringen av anpassade orderdata som skapats via GraphQL. <!-- CEXT-5044 -->
+* Administratörsanvändare kan nu visa och redigera [anpassade orderattribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) direkt från sorteringsvyn, redigeringsskärmen och skapa-skärmen på Admin-panelen. Den här förbättringen förbättrar hanteringen av anpassade orderdata som skapats via GraphQL. <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]

@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
 source-wordcount: '1390'
@@ -200,7 +200,7 @@ Tänk dig ett scenario där du snabbt vill ändra bakgrunden i en produktbild. K
 
 #### Lägg till bilden i [!DNL Commerce AEM Assets]
 
-1. På [navigeringspanelen](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) i [!DNL AEM as a Cloud Service] väljer du [!UICONTROL **Assets**] > [!UICONTROL **Filer**] > [!UICONTROL **Commerce**] och klickar på resursen som du skapade i föregående avsnitt.
+1. På [navigeringspanelen](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) i [!DNL AEM as a Cloud Service] väljer du [!UICONTROL **Assets**] > [!UICONTROL **Filer**] > [!UICONTROL **Commerce**] och klickar på resursen som du skapade i föregående avsnitt.
 
    ![Commerce-mapp i [!DNL AEM Assets] med produktbilder](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -250,7 +250,7 @@ Generate Variations för [!DNL Adobe Commerce] använder generativ AI för att a
 
 ### Generera text
 
-1. Öppna din butiksplats med [Universal Editor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Öppna din butiksplats med [Universal Editor](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Markera det textblock som du vill redigera.
 
@@ -264,7 +264,7 @@ Generate Variations för [!DNL Adobe Commerce] använder generativ AI för att a
 
 ### Generera innehåll och bilder
 
-1. Öppna [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Öppna [[!DNL Generate Variations]](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Välj mallen [!UICONTROL **Hero Banner**].
 

@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
 source-wordcount: '1261'
@@ -60,7 +60,7 @@ Välj en flik nedan om du vill visa arbetsflödesgrafik på hög nivå för mots
 
 >[!TAB Systemadministratör och handlararbetsflöde]
 
-Bilden ger en översikt på hög nivå över hur systemadministratörer och handlare får åtkomst till och hanterar [!DNL Adobe Commerce as a Cloud Service] instanser. Mer information om administratörsarbetsflöden finns i [Adobe Admin Console-handboken](https://helpx.adobe.com/enterprise/admin-guide.html).
+Bilden ger en översikt på hög nivå över hur systemadministratörer och handlare får åtkomst till och hanterar [!DNL Adobe Commerce as a Cloud Service] instanser. Mer information om administratörsarbetsflöden finns i [Adobe Admin Console-handboken](https://helpx.adobe.com/se/enterprise/admin-guide.html).
 
 ![Systemadministratör och affärsarbetsflödesdiagram för Adobe Commerce as a Cloud Service](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -205,7 +205,7 @@ Som standard innehåller [!DNL Adobe Commerce as a Cloud Service] instanser inga
 
 Det finns två sätt att importera katalogen till [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Ett användarvänligt gränssnitt där du kan importera katalogdata med bara några klick.
+* [**Commerce Admin**](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/import/data-import) - Ett användarvänligt gränssnitt där du kan importera katalogdata med bara några klick.
 * [**Importera JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - ett REST API som gör att du kan importera katalogdata programmatiskt.
 
 ### Konfigurera butiken
@@ -216,4 +216,4 @@ Nu när du har skapat en instans är du redo att [konfigurera din butik](storefr
 
 * [Versionsinformation](release-notes.md)
 * [Migreringsguide](migration/overview.md)
-* [Commerce Storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [Commerce Storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)

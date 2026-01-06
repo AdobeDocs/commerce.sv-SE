@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
 source-wordcount: '1341'
@@ -67,13 +67,13 @@ I det här diagrammet visas dataflödet mellan [!DNL Adobe Commerce as a Cloud S
 
 ## Commerce Storefront
 
-Använd Adobe [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) från [!DNL Edge Delivery Services] för att skapa innehållsrika upplevelser på några minuter med enkel dokumentbaserad redigering eller visuell redigering med [!DNL Storefront Builder].
+Använd Adobe [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=sv-SE) från [!DNL Edge Delivery Services] för att skapa innehållsrika upplevelser på några minuter med enkel dokumentbaserad redigering eller visuell redigering med [!DNL Storefront Builder].
 
 [!DNL Commerce Storefront] är helt headless med en frikopplad arkitektur som ger alla marknadsföringstjänster och data via ett GraphQL API-lager. Med denna arkitektur kan teamen utveckla sina gränser oberoende av Commerce Foundation, vilket gör det enkelt att skapa och testa nya kontaktytor med ny teknik.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] har inte stöd för Luma-butiker. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) för mer information om övergångar.
+>[!DNL Adobe Commerce as a Cloud Service] har inte stöd för Luma-butiker. Om du migrerar från Adobe Commerce i molnet eller lokalt läser du [Befintliga butiker](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=sv-SE#existing-storefronts) för mer information om övergångar.
 
 ## Marknadsföringstjänster och betaltjänster
 
@@ -198,7 +198,7 @@ Utvecklare kan använda omfattande [GraphQL](https://developer.adobe.com/commerc
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/sv/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
