@@ -1,12 +1,14 @@
 ---
 title: Självstudiekurs om klassificeringstillägg
 description: Lär dig hur du bygger ett produktklassificeringstillägg för Adobe Commerce as a Cloud Service med hjälp av App Builder och AI-stödda utvecklingsverktyg.
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -39,7 +41,7 @@ git --version
 bash --version
 ```
 
-Om något av de föregående kommandona inte returnerar det förväntade resultatet kan du få hjälp av [förutsättningarna](tutorial-prerequisites.md).
+Om något av de föregående kommandona inte returnerar det förväntade resultatet kan du få hjälp i [kravavsnitten](tutorial-prerequisites.md).
 
 ## Tilläggsutveckling
 
@@ -47,21 +49,21 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
 
 1. Navigera till **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]** och kontrollera att `commerce-extensibility`-verktygsuppsättningen är aktiverad utan fel. Om du ser fel kan du slå av och på verktygslådan.
 
-   ![Markörinställningar](../assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![Inställningarna för markörorientering visar MCP-verktygsuppsättningen för e-handel-utbyggbarhet aktiverad](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
-   >När du arbetar med AI-stödda utvecklingsverktyg kommer det att finnas naturliga variationer i koden och svaren som genereras av agenten.
+   >När du arbetar med AI-stödda utvecklingsverktyg kan du förvänta dig naturliga variationer i koden och svaren som genereras av agenten.
    >Om du stöter på problem med koden kan du alltid be agenten att hjälpa dig felsöka den.
 
 1. Om du har lagt till någon dokumentation i markörens kontext inaktiverar du den:
 
    - Navigera till [!UICONTROL **Markören**] > [!UICONTROL **Inställningar**] > [!UICONTROL **Markörinställningar**] > [!UICONTROL **Indexering och dokument**] och ta bort all dokumentation som visas.
 
-   ![Inaktivera dokumentation](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![Markörindexering och dokumentinställningar med dokumentationslistan tom](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. Generera kod för ett produktklassificeringstillägg:
-   - Välj **agentläge** från markören i chattfönstret.
+   - Välj [!UICONTROL **agentläge**] i pekarens chattfönster.
    - Ange följande uppmaning:
 
    ```shell-session
@@ -80,9 +82,9 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
 
 1. Svara på agentens frågor så att den kan generera den bästa koden.
 
-   ![Ange uppmaning i markören](../assets/enter-prompt.png){width="600" zoomable="yes"}
+   ![Markörchattfönstret i agentläge med tilläggsfråga aktiverat](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
-   ![Agenten frågar om klargörande frågor](../assets/agent-questions.png){width="600" zoomable="yes"}
+   ![AI-agent som frågar om frågor om tilläggskrav kan klargöras](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. Använd följande exempeltext för att besvara agentens frågor för att ställa in slumpmässiga klassificeringsdata:
 
@@ -90,7 +92,7 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
-   This extension will be called directly from the storefront, no async invocation, such as events or webhooks, is required.
+   This extension is called directly from the storefront, no async invocation, such as events or webhooks, is required.
    
    Start with just the GET API for now, we will implement other CRUD operations at a later time.
    
@@ -102,7 +104,7 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
 
    Agenten skapar en `requirements.md`-fil som fungerar som källa för sanningen för implementeringen.
 
-   ![Kravfilen har skapats](../assets/requirements-file.png){width="600" zoomable="yes"}
+   ![Filen Requirements.md har skapats av AI-agenten med implementeringsinformation](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. Granska filen `requirements.md` och verifiera planen.
 
@@ -112,11 +114,11 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
 
    Agenten genererar den nödvändiga koden och ger en detaljerad sammanfattning med nästa steg.
 
-   ![Arkitekturplanering](../assets/architecture-planning.png){width="600" zoomable="yes"}
+   ![AI-agentens fas 2-arkitekturplan för klassificerings-API](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![Sammanfattning av kodgenerering](../assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![Sammanfattning av genererade kodfiler och struktur](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![Nästa steg](../assets/next-steps.png){width="600" zoomable="yes"}
+   ![AI-agenten tillhandahåller nästa steg för testning och distribution](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### Lokal testning
 
@@ -128,9 +130,9 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
 
 1. Följ agentens instruktioner och bekräfta att API:t fungerar lokalt.
 
-   ![Lokal testning](../assets/local-testing.png){width="600" zoomable="yes"}
+   ![AI-agentinstruktioner för lokal API-testning](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![Lokala testresultat](../assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![Terminalen visar lyckade testresultat för det lokala API:t med cURL](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### Distribuera tillägget
 
@@ -142,19 +144,19 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
 
    Agenten utför en bedömning av beredskapen inför driftsättningen innan den distribueras.
 
-   ![Utvärdering före distribution](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![Checklista för utvärdering av beredskap för AI-agent före distribution](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. När du är säker på utvärderingsresultaten instruerar du agenten att fortsätta med distributionen.
 
    Agenten använder MCP-verktygen för att verifiera, bygga och driftsätta automatiskt.
 
-   ![Distribution](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![Verifiering av MCP-verktygspaket och distributionsprocess](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### Efter distribution
 
 Du kan testa API:t innan du integrerar det i butiken. Agenten bör tillhandahålla platsen för den nya åtgärden och en testningsstrategi.
 
-![Testningsstrategi](../assets/testing-strategy.png){width="600" zoomable="yes"}
+![AI-agenttestningsstrategi med distribuerad åtgärds-URL och testkommandon](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 Du kan också testa API:t manuellt med cURL i en terminal:
 
@@ -162,7 +164,7 @@ Du kan också testa API:t manuellt med cURL i en terminal:
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![cURL-test](../assets/curl-test.png){width="600" zoomable="yes"}
+![Terminal som visar lyckat cURL-test av distribuerat klassificerings-API](../assets/curl-test.png){width="600" zoomable="yes"}
 
 ### Integrera med Edge Delivery Services
 
@@ -172,9 +174,9 @@ Om du vill integrera klassificerings-API:t med en [!DNL Adobe Commerce]-butik so
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![Tjänstkontrakt](../assets/create-contract.png){width="600" zoomable="yes"}
+![AI-agenten skapar tjänstekontraktfil för integrering mellan butiker](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![Information om servicekontrakt](../assets/contract.png){width="600" zoomable="yes"}
+![Kontraktmarkeringsfil för graderings-API med slutpunkts- och svarsinformation](../assets/contract.png){width="600" zoomable="yes"}
 <!-- 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
@@ -246,7 +248,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=sv-SE).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

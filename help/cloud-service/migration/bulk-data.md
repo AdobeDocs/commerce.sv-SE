@@ -1,27 +1,29 @@
 ---
 title: Migreringsverktyg för massdata
 description: Lär dig hur du använder verktyget för datamigrering (Bulk Data Migration) för att migrera data från din befintliga Adobe Commerce på molninstansen till  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+feature: Cloud
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
+level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 06bdcfbff5d376064b18bdab3945e7609075b8bc
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
 # Migreringsverktyg för massdata
 
-Migreringsverktyget för gruppdata följer en distribuerad arkitektur som möjliggör säker och effektiv datamigrering från PaaS till SaaS-miljöer. Det här verktyget är utformat för att lösningsimplementerare ska kunna migrera data från en befintlig Adobe Commerce på Cloud-instans (PaaS) till [!DNL Adobe Commerce as a Cloud Service] (SaaS). Mer information om migreringsprocessen finns i [migreringsöversikten](./overview.md).
+Migreringsverktyget för gruppdata följer en distribuerad arkitektur som möjliggör säker och effektiv datamigrering från PaaS till SaaS-miljöer. Det här verktyget hjälper lösningsimplementerare att migrera data från en befintlig Adobe Commerce på Cloud-instans (PaaS) till [!DNL Adobe Commerce as a Cloud Service] (SaaS). Mer information om migreringsprocessen finns i [migreringsöversikten](./overview.md).
 
 >[!NOTE]
 >
->Massdatamigreringsverktyget har bara stöd för migrering av förstahandsdata för kärnhandel. Anpassad datamigrering stöds för närvarande inte.
+>Massdatamigreringsverktyget har endast stöd för migrering av affärsdata från första part. Anpassad datamigrering stöds för närvarande inte.
 
 Följande bild visar arkitekturen och de viktigaste komponenterna för att använda verktyget för migrering av gruppdata.
 
-![Verktygsarkitektur för massdatamigrering](../assets/bulk-data-diagram.png)
+![Arkitektur för verktyget Datamigrering - massvis med PaaS-data till SaaS](../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ## Arbetsflöde för migrering
 
@@ -44,13 +46,13 @@ Följande massdatamigreringsverktyg är tillgängliga:
 
 ## Skapa målmiljö
 
-Solution Implementer (SI) skapar en målmiljö för migreringen. Den här miljön används för att lagra data som migreras från källinstansen.
+Solution Implementer (SI) skapar en målmiljö för migreringen. I den här miljön lagras data som migrerats från källinstansen.
 
 Först [skapar du en ny  [!DNL Adobe Commerce as a Cloud Service] (SaaS)-instans](../getting-started.md#create-an-instance).
 
 ### Konfigurera extraheringsverktyget
 
-Extraheringsverktyget används för att extrahera data från källinstansen.
+Använd extraheringsverktyget för att extrahera data från källinstansen.
 
 1. Ladda ned extraheringsverktyget från den länk du får från Adobe.
 1. Ange följande miljövariabler i extraheringsverktyget:
@@ -87,13 +89,13 @@ Kör det inläsningsdataverktyg som tillhandahålls av Adobe. Det här verktyget
 1. Generera en inläsningsplan.
 1. Kör planen och flytta data till SaaS-klientdatabasen gruppvis.
 1. Bearbeta katalogmedia och överför dem till målmiljön.
-1. Tömmer SaaS Redis-cachen och gör databasindex för klienten ogiltiga.
+1. Töm SaaS Redis-cachen och gör databasindex för klienten ogiltiga.
 
 ### Inmatning av katalogdata
 
 När data har lästs in flödar katalogdata automatiskt från SaaS-klientdatabasen till katalogtjänsten.
 
-Katalogtjänsten delar dessa data med Live Search och Produktrekommendationer. Ingen manuell åtgärd krävs för den här processen. Data kommer att finnas tillgängliga i alla tjänster när intaget är slutfört.
+Katalogtjänsten delar dessa data med Live Search och Produktrekommendationer. Ingen manuell åtgärd krävs för den här processen. Data finns tillgängliga i alla tjänster när intaget är slutfört.
 
 ### Verifiering av dataintegritet
 

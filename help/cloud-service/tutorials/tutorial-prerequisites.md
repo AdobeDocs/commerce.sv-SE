@@ -1,12 +1,14 @@
 ---
 title: Krav för klassificeringstillägg - självstudiekurs
 description: Lär dig förutsättningarna för klassificeringstilläggslabbet.
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -17,7 +19,7 @@ ht-degree: 0%
 >
 >AI-verktygen som används i den här självstudiekursen finns för närvarande i Beta och kan innehålla buggar eller andra problem.
 
-På den här sidan visas förutsättningarna och konfigurationsstegen för självstudiekurser som använder [!DNL Adobe Commerce as a Cloud Service], t.ex. självstudiekursen [för klassificeringstillägg](./ratings-extension.md).
+På den här sidan visas förutsättningarna och konfigurationsstegen för [!DNL Adobe Commerce as a Cloud Service] självstudiekurser, t.ex. [självstudiekursen för klassificeringstillägg](./ratings-extension.md).
 
 ## Krav för Adobe Commerce as a Cloud Service
 
@@ -27,7 +29,7 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för själ
   npm install -g @adobe/aio-cli
   ```
 
-* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [&#x200B; Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
+* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [ Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
 
   ```bash
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
@@ -48,15 +50,15 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för själ
 1. Ange en [!UICONTROL **projekttitel**] och [!UICONTROL **programnamn**].
 1. Kontrollera att kryssrutan **[!UICONTROL Include Runtime]** är markerad.
 
-   ![Skapa projekt med App Builder-mall](../assets/app-builder-template.png){width="600" zoomable="yes"}
+   ![Skapa Adobe Developer Console-projekt med en App Builder-mall vald](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
-1. Klicka på **Spara**.
+1. Klicka på [!UICONTROL **Spara**].
 
 #### Lägg till API:er på arbetsytan
 
 1. Klicka på arbetsytan [!UICONTROL **Stage**] och upprepa sedan följande steg för varje API.
 
-   ![API:er har lagts till på arbetsytan](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
+   ![Scenarbetsyta med alternativet Lägg till tjänst för API:er](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
 1. Klicka på [!UICONTROL **Lägg till tjänst**] och välj [!UICONTROL **API**].
 
@@ -74,7 +76,7 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för själ
 
 1. Upprepa föregående steg tills alla API:er har lagts till på arbetsytan.
 
-   ![API:er har lagts till på arbetsytan](../assets/apis-added.png){width="600" zoomable="yes"}
+   ![Workspace visar alla nödvändiga API:er som lagts till](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### Konfigurera Adobe I/O CLI
 
@@ -104,7 +106,7 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för själ
    aio console workspace select
    ```
 
-   ![CLI-konfiguration](../assets/cli-configuration.png){width="600" zoomable="yes"}
+   ![Terminal som visar Adobe I/O CLI-organisationsprojekt och val av arbetsyta](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
 ### Klona startpaketet för integrering
 
@@ -115,7 +117,7 @@ git clone https://github.com/adobe/commerce-integration-starter-kit.git extensio
 cd extension
 ```
 
-![Klona startpaket](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+![Terminal-utdata som visar Git-klonkommandot för startsatsen för Commerce-integrering](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
 
 ### Skapa en .env-fil
 
@@ -137,7 +139,7 @@ OAUTH_ORG_ID=
 
 Du kan kopiera dessa värden från sidan **[!UICONTROL Credential details]** i [Developer Console](https://developer.adobe.com/) genom att klicka på fliken **[!UICONTROL OAuth Server-to-Server]** på arbetsytan.
 
-![OAuth-autentiseringsuppgifter](../assets/oauth-credentials.png){width="600" zoomable="yes"}
+![Autentiseringssidan för OAuth Server-till-Server i Adobe Developer Console](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### Lägg till Commerce-konfigurationen
 
@@ -185,7 +187,7 @@ Länka ditt lokala projekt till den fjärranslutna arbetsytan:
 aio app use workspace.json -m
 ```
 
-![Anslut till arbetsyta](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot ](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 ### Installera AI-verktyg för tillägg
 
@@ -201,7 +203,7 @@ Uppdatera markörregelfilen och MCP-konfigurationen så att det innehåller pake
    aio commerce extensibility tools-setup
    ```
 
-   ![Installera AI-verktyg](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+   ![Terminal som visar AI-verktyg för utökningsverktyg för att konfigurera utdata](../assets/install-ai-tools.png){width="600" zoomable="yes"}
 <!--
 ## Storefront prerequisites
 

@@ -1,19 +1,21 @@
 ---
 title: Migrera till  [!DNL Adobe Commerce as a Cloud Service]
 description: Lär dig hur du migrerar till  [!DNL Adobe Commerce as a Cloud Service].
+feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+level: Intermediate
+source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
-source-wordcount: '3031'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
 
 # Migrera till [!DNL Adobe Commerce as a Cloud Service]
 
-[!DNL Adobe Commerce as a Cloud Service] innehåller en omfattande guide för utvecklare som övergår från en befintlig Adobe Commerce PaaS-implementering till det nya SaaS-erbjudandet (Adobe Commerce as a Cloud Service). Adobe Commerce as a Cloud Service innebär en betydande övergång till en helt hanterad, versionslös SaaS-modell med förbättrade prestanda, skalbarhet, förenklad drift och bättre integrering med hela Adobe Experience Cloud.
+[!DNL Adobe Commerce as a Cloud Service] innehåller en omfattande guide för utvecklare som övergår från en befintlig Adobe Commerce PaaS-implementering till det nya SaaS-erbjudandet (Adobe Commerce as a Cloud Service). Adobe Commerce as a Cloud Service utgör en avsevärd förändring till en helt hanterad, versionslös SaaS-modell som erbjuder förbättrade prestanda, skalbarhet, förenklade åtgärder och tätare integrering med den bredare [!DNL Adobe Experience Cloud].
 
 >[!NOTE]
 >
@@ -23,8 +25,8 @@ ht-degree: 0%
 
 **Viktiga skillnader**
 
-* [!BADGE PaaS endast]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} **PaaS (aktuell)**: Merchant hanterar programkod, uppgraderingar, patchering och infrastrukturkonfiguration i Adobe värdmiljö. [Delad ansvarsmodell](https://experienceleague.adobe.com/sv/docs/commerce-operations/security-and-compliance/shared-responsibility) för tjänster (MySQL, Elasticsearch med flera).
-* [!BADGE SaaS endast]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} **SaaS (ny - [!DNL Adobe Commerce as a Cloud Service])**: Adobe hanterar kärnprogrammet, infrastrukturen och uppdateringarna fullt ut. Handläggarna fokuserar på anpassning via utökningspunkter (API:er, App Builder, UI SDK:er). Programkoden är låst.
+* [!BADGE PaaS endast]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} **PaaS (aktuell)**: Merchant hanterar programkod, uppgraderingar, patchering och infrastrukturkonfiguration i Adobe värdmiljö. [Delad ansvarsmodell](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) för tjänster (MySQL, Elasticsearch med flera).
+* [!BADGE SaaS endast]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} **SaaS (ny - [!DNL Adobe Commerce as a Cloud Service])**: Adobe hanterar kärnprogrammet, infrastrukturen och uppdateringarna fullt ut. Handläggarna fokuserar på anpassning via utökningspunkter (API:er, App Builder, UI SDK:er). Programkoden är låst.
 
 **Arkitekturkonsekvenser**
 
@@ -37,7 +39,7 @@ ht-degree: 0%
 
 * [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) och [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
+* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Självbetjäning med [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ## Migreringssökvägar
@@ -50,7 +52,7 @@ Som ett alternativ till en fullständig migrering stöder [!DNL Adobe Commerce a
 
 ![inkrementell migrering](../assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer** - Med den här metoden kan du migrera iterativt genom att använda Commerce Optimizer som en övergångsfas för att flytta komplexa anpassningar och data till [!DNL Adobe Commerce as a Cloud Service] i din egen takt. Commerce Optimizer ger tillgång till Merchandising Services som drivs av Catalog Views and Policies, Commerce Storefront från Edge Delivery samt produktvisualer från AEM Assets.
+* **Commerce Optimizer** - Med den här metoden kan du migrera iterativt genom att använda Commerce Optimizer som en övergångsfas för att flytta komplexa anpassningar och data till [!DNL Adobe Commerce as a Cloud Service] i din egen takt. Commerce Optimizer ger tillgång till Merchandising Services som drivs av Catalog Views and Policies, Commerce Storefront från Edge Delivery samt [!DNL Product Visuals powered by AEM Assets].
 
 ![iterativ migrering](../assets/optimizer.png){width="600" zoomable="yes"}
 
@@ -75,7 +77,7 @@ Som framgår av tabellen kommer åtgärderna för varje migrering att bestå av:
 * **[API-nät](https://developer.adobe.com/graphql-mesh-gateway)** - Skapa ett nytt nät eller ändra det befintliga. Adobe kommer att tillhandahålla förkonfigurerade nät som hjälp i den här processen.
 * **Integrationer** - Alla integreringar måste utnyttja antingen [startsatsen för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) eller [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
 * **Anpassningar** - Alla anpassningar måste flyttas till App Builder och API Mesh.
-* **Assets Management** - All resurshantering kräver migrering. Om du redan använder AEM Assets behöver du inte migrera.
+* **Assets Management** - All resurshantering kräver migrering. Om du redan använder [!DNL AEM Assets] behöver du inte migrera.
 * **Tillägg** - Alla pågående tillägg måste återskapas som obearbetade tillägg. I slutet av 2025 kommer Adobe att ge åtkomst till våra populäraste tillägg för att minimera byggtider.
 
 ## Migreringsfaser
@@ -167,7 +169,7 @@ Det här alternativet är ett övergångssteg som bygger på en befintlig integr
 
 * **Synkronisering av katalogdata**: Kontrollera att din Adobe Commerce PaaS-instans fortsätter att synkronisera produkt- och katalogdata med din befintliga Adobe Commerce Catalog SaaS-tjänst. Detta är vanligtvis beroende av etablerade anslutningar eller moduler i din PaaS-instans. Catalog SaaS-tjänsten är fortfarande den auktoritativa källan för sök- och säljfunktioner och hämtar data från din PaaS-server.
 * **API-nät för optimering**: Även om den headless storefront (på Edge Delivery Services) och andra tjänster kan förbruka data direkt från Catalog SaaS-tjänsten rekommenderar Adobe att du använder API Mesh (i App Builder). API Mesh kan kombinera API:er från Catalog SaaS-tjänsten med andra nödvändiga API:er från din PaaS-backend (t.ex. inventeringskontroller i realtid från transaktionsdatabasen eller anpassade produktattribut som inte helt replikerats till Catalog SaaS-tjänsten) till en enda högpresterande GraphQL-slutpunkt. Detta möjliggör även centraliserad cachelagring, autentisering och svarsomvandling.
-* **Integrera Live Search och produktrekommendationer**: Konfigurera SaaS-tjänster för Live-sökning och produktrekommendationer till [att importera katalogdata](https://experienceleague.adobe.com/sv/docs/commerce/live-search/install#configure-the-data) direkt från din befintliga SaaS-tjänst för Adobe Commerce Catalog, som i sin tur fylls i av din AppaS-backend.
+* **Integrera Live Search och produktrekommendationer**: Konfigurera SaaS-tjänster för Live-sökning och produktrekommendationer till [att importera katalogdata](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) direkt från din befintliga SaaS-tjänst för Adobe Commerce Catalog, som i sin tur fylls i av din AppaS-backend.
 
 **Fördel**: Detta ger en snabbare väg till en headless Store och avancerade SaaS-försäljningsfunktioner genom att utnyttja en befintlig och fungerande Catalog SaaS-tjänst och dess integrering med din PaaS-backend. Den behåller emellertid beroendet av PaaS-serverdelen för den primära katalogdatakällan och tillhandahåller inte de sammanställningsfunktioner för flera källor som är inbyggda i den nya sammanställningsbara katalogdatamodellen. Det här alternativet är en giltig språngbräda mot en mer heltäckande sammansättningsbar arkitektur.
 
@@ -187,7 +189,7 @@ Detta är den strategiska, framtidssäkra lösningen för att utnyttja Adobe Com
 * **Katalogvy och principdefinition**: Konfigurera katalogvyer (logiska grupperingar för unik katalogpresentation, till exempel butiksvyer, regioner och B2B/B2C-segment) och definiera principer (regeluppsättningar för produktpresentation, filtrering och varuexponering) i CCDM. Detta ger dynamisk kontroll över produktsortiment och visningslogik per katalogvy.
 * **Integrera Live Search och produktrekommendationer**: När katalogdata finns i CCDM integrerar du Adobe SaaS-baserade Live Search- och produktrekommendationer-tjänster. Dessa utnyttjar Adobe Sensei AI och maskininlärningsmodeller för överlägsen sökrelevans och personaliserade rekommendationer, och använder data direkt från CCDM.
 
-**Fördel**: Genom att abstrahera kataloghantering och identifiering i CCDM och tillhörande SaaS-tjänster får du bättre prestanda, AI-drivna försäljningsfunktioner, avlastning av läsåtgärder från din gamla backend-server och en robust avskalning av den avancerade upplevelsen.
+**Fördel**: Genom att abstrahera kataloghantering och identifiering i CCDM och tillhörande SaaS-tjänster får du bättre prestanda, AI-drivna försäljningsfunktioner, avlastning av läsåtgärder från din gamla backend-server och en stabil avskalning av den översta funnel-upplevelsen.
 
 >[!ENDTABS]
 

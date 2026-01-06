@@ -1,22 +1,24 @@
 ---
 title: AI-kodningsverktyg för tillägg
 description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-tillägg.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+feature: App Builder, Cloud
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
 
 # AI-kodningsverktyg för tillägg
 
-När du migrerar till [!DNL Adobe Commerce as a Cloud Service] kan du använda AI-kodningsverktygen för att konvertera befintliga [!DNL Adobe Commerce] PHP-tillägg till [!DNL Adobe Developer App Builder] tillägg. Den kan också användas för att skapa nya [!DNL App Builder]-tillägg.
+När du migrerar till [!DNL Adobe Commerce as a Cloud Service] kan du använda AI-kodningsverktygen för att konvertera befintliga [!DNL Adobe Commerce] PHP-tillägg till [!DNL Adobe Developer App Builder] tillägg. Du kan också använda de här verktygen för att skapa nya [!DNL App Builder]-tillägg.
 
-Att använda AI-kodningsverktygen ger följande fördelar:
+AI-kodningsverktygen ger följande fördelar:
 
 * **Förbättrat utvecklingsarbetsflöde**: Integrerade Adobe Commerce-utvecklingsverktyg.
 * **AI-baserad hjälp**: Kontextmedveten kodgenerering och felsökning.
@@ -74,7 +76,7 @@ Att använda AI-kodningsverktygen ger följande fördelar:
    aio commerce extensibility tools-setup
    ```
 
-Konfigurationsalternativen visas i installationsprocessen. För installationsplatsen väljer du Aktuell katalog för att installera verktygen på den aktuella arbetsytan:
+Installationsprocessen uppmanar dig med konfigurationsalternativ. För installationsplatsen väljer du Aktuell katalog för att installera verktygen på den aktuella arbetsytan:
 
 ```shell-session
 ? Where would you like to setup the tools?
@@ -130,7 +132,7 @@ När du väljer pakethanteraren bör du använda `npm` för konsekvens:
 
 ## Konfiguration efter installation
 
-### Logga in på [!DNL Adobe I/O CLI]
+### Logga in på Adobe I/O CLI
 
 När du har installerat [!DNL Adobe I/O CLI] måste du logga in när du vill använda MCP-servern.
 
@@ -193,9 +195,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. Aktivera MCP-servern:
 
    * Öppna panelen Tillägg genom att klicka på ikonen **Tillägg** i aktivitetsfältet till vänster eller genom att använda **Cmd+Skift+X** (macOS) eller **Ctrl+Skift+X** (Windows och Linux).
-   * Klicka på **MCP-SERVRAR - INSTALLERADE**.
-   * Klicka på kugghjulsikonen bredvid **Commerce-extensibility MCP Server** och välj **Start Server** om servern stoppas.
-   * Klicka på kugghjulsikonen igen och välj **Visa utdata**.
+   * Klicka på [!UICONTROL **MCP-SERVRAR - INSTALLERADE**].
+   * Klicka på kugghjulsikonen bredvid [!UICONTROL **Commerce-extensibility MCP Server**] och välj [!UICONTROL **Start Server**] om servern stoppas.
+   * Klicka på kugghjulsikonen igen och välj [!UICONTROL **Visa utdata**].
 
 1. Kontrollera serverstatusen. `MCP:commerce-extensibility`-utdata ska matcha följande:
 
@@ -279,7 +281,7 @@ Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser
@@ -326,7 +328,7 @@ Komplexa Adobe Commerce-tillägg omfattar ofta:
 >
 >Kontrollera att du är [inloggad på Adobe I/O CLI](#log-in-to-the-adobe-io-cli) innan du använder MCP-verktygen.
 
-Som standard används MCP-verktyg, men i vissa fall kan CLI-kommandon användas. Om du vill vara säker på att MCP-verktygen används, begär du dem uttryckligen i uppmaningen.
+Som standard används MCP-verktyg, men i vissa fall kan CLI-kommandon användas. För att vara säker på att MCP-verktygen används, begär du dem uttryckligen i uppmaningen.
 
 Om CLI-kommandon används och du vill använda MCP-verktygen i stället, ska du göra så här:
 
@@ -346,7 +348,7 @@ CLI-kommandon kan användas för följande scenarier:
 
 ### Utveckling
 
-Det är viktigt att ifrågasätta den onödiga komplexitet som skapas av AI-verktygen.
+Frågar onödig komplexitet som skapats med AI-verktygen.
 
 När onödiga filer läggs till (`validator.js`, `transformer.js`, `sender.js`) för enkla skrivskyddade slutpunkter ska du följa följande anvisningar:
 
@@ -466,7 +468,7 @@ Använd följande metodtips vid distribution:
 
 #### Driftsätt stegvis
 
-Driftsätt endast ändrade åtgärder för att snabba upp utvecklingen. Detta minskar risken för att befintliga funktioner bryts och ger snabbare feedback på ändringar. Det minskar också risken för att befintliga funktioner bryts.
+Driftsätt endast ändrade åtgärder för att snabba upp utvecklingen. Detta minskar risken för att befintliga funktioner bryts och ger snabbare feedback på ändringar.
 
 * Använd MCP-verktyg för att distribuera specifika åtgärder
 
@@ -479,7 +481,7 @@ Driftsätt endast ändrade åtgärder för att snabba upp utvecklingen. Detta mi
 
 #### Rensning vid körning
 
-Efter större förändringar kan du använda verktygen för att rensa bort överblivna händelser. Med AI-verktygen hanterar man enkelt rensningsprocessen på ett systematiskt sätt och kan effektivt identifiera överblivna åtgärder, verifiera deras status och säkert ta bort dem utan manuell åtgärd.
+Efter större förändringar kan du använda verktygen för att rensa bort överblivna händelser. Låt AI-verktygen hantera rensningsprocessen systematiskt. Programmet kan effektivt identifiera överblivna åtgärder, verifiera deras status och säkert ta bort dem utan manuell åtgärd.
 
 ```shell-session
 Help me identify and clean up orphaned runtime actions
@@ -520,7 +522,7 @@ Spåra användningsmönster för token:
 
 ## Vad du ska undvika
 
-Du bör undvika följande mönster när du använder AI-kodningsverktygen:
+Undvik följande mönster när du använder AI-kodningsverktygen:
 
 * **Hoppa inte över klargörandefasen** - Se alltid till att fas 1 slutförs före implementeringen.
 * **Hoppa inte över testning efter varje funktion** - Testa stegvis, vänta inte tills allt är klart.

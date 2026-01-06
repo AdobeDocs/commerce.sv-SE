@@ -1,19 +1,21 @@
 ---
 title: Delat ansvar
 description: Lär dig mer om säkerhetsansvarsområdena för alla parter som deltar i ditt [!DNL Adobe Commerce as a Cloud Service] projekt.
+feature: Cloud, Security
 role: Admin, Architect, Leader
+level: Intermediate
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
 
 # Delat ansvar, säkerhet och operativ modell
 
-[!DNL Adobe Commerce as a Cloud Service] är en on demand-tjänst som är beroende av en säkerhetsmodell för delat ansvar och en driftsmodell. Dessa ansvarsområden delas mellan Adobe och kunderna. Varje part har ett tydligt ansvar för att skydda och köra Adobe Commerce-programmet.
+[!DNL Adobe Commerce as a Cloud Service] är en on demand-tjänst som är beroende av en säkerhetsmodell för delat ansvar och en driftsmodell. Adobe och kunderna delar detta ansvar med alla parter som har ett tydligt ansvar för att skydda och driva Adobe Commerce-programmet.
 
 >[!BEGINSHADEBOX]
 

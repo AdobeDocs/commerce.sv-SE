@@ -1,33 +1,35 @@
 ---
 title: Komma igång med  [!DNL Adobe Commerce as a Cloud Service]
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce as a Cloud Service].
+feature: Cloud, Integration
 role: Admin, Developer, User
+level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 69870bc7037bdad5a8d5fa769a06c07f8cd920aa
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1261'
 ht-degree: 0%
 
 ---
 
 # Komma igång
 
-[!DNL Adobe Commerce as a Cloud Service] tillhandahåller de flesta konfigurationer som finns i paketet. När du har slutfört några grundläggande installationsprocesser kommer din butik att vara igång på nolltid. Den här guiden hjälper dig att skapa och arbeta med en instans. Den här guiden hjälper dig även att konfigurera din organisation för att lyckas genom att se till att dina team har korrekt åtkomst till [!DNL Adobe Commerce as a Cloud Service] och de verktyg du behöver för att komma igång.
+[!DNL Adobe Commerce as a Cloud Service] tillhandahåller de flesta konfigurationer som finns i paketet. När du har slutfört några grundläggande installationsprocesser kommer din butik att vara igång på nolltid. Den här guiden hjälper dig att skapa och arbeta med en instans och hjälper dig att konfigurera organisationen för framgång. Det ser till att dina team har tillgång till [!DNL Adobe Commerce as a Cloud Service] och de verktyg du behöver för att komma igång.
 
-[!DNL Adobe Commerce as a Cloud Service] är en molnbaserad handelsplattform som ger flexibilitet, skalbarhet och effektivitet för att leverera digitala handelsupplevelser. Det här SaaS-erbjudandet är en helt hanterad, versionslös plattform som ger en sömlös uppgradering utan att man behöver göra något manuellt.
+[!DNL Adobe Commerce as a Cloud Service] är en molnbaserad handelsplattform som ger flexibilitet, skalbarhet och effektivitet för att leverera digitala handelsupplevelser. Det här SaaS-erbjudandet är en helt hanterad, versionslös plattform som ger en sömlös uppgradering utan manuell inblandning.
 
 ## Viktiga komponenter
 
 [!DNL Adobe Commerce as a Cloud Service] består av följande komponenter:
 
-* **[Adobe Experience Cloud](https://experience.adobe.com/)** - Din centrala startpunkt pekar på alla [!DNL Adobe Commerce] produkter på [experience.adobe.com](https://experience.adobe.com/)
+* **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** - Din centrala startpunkt pekar på alla [!DNL Adobe Commerce] produkter på [experience.adobe.com](https://experience.adobe.com/)
    * Klicka på [!UICONTROL **Commerce**] under [!UICONTROL **Snabbåtkomst**] för att öppna Commerce Cloud Manager
-* **[Commerce Cloud Manager](https://experience.adobe.com/#/commerce/cloud-service)** - Skapa och hantera instanser, få åtkomst till API:er och Commerce Admin
-* **[Adobe Admin Console](https://adminconsole.adobe.com/)** - Hantera användare och roller
+* **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)** - Skapa och hantera instanser, få åtkomst till API:er och din Commerce-administratör
+* **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** - Hantera användare och roller
 * **Commerce Admin** - Hantera produkter, beställningar, kunder och butikskonfiguration
-* **[Storefront från Edge Delivery Services](./storefront.md)** - Skapa och anpassa en kundriktad butik med ett sammanställbart, högpresterande system som levererar exceptionell hastighet, SEO och användarupplevelse för handlare och utvecklare
-* **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** - Skapa anpassade integreringar med App Builder, tillsammans med andra utökningsverktyg som [startsatsen för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) och [API-nät](https://developer.adobe.com/graphql-mesh-gateway/)
+* **[Storefront från [!DNL Edge Delivery Services]](./storefront.md)** - Skapa och anpassa en kundriktad butik med ett sammanställbart, högpresterande system som levererar exceptionell hastighet, SEO och användarupplevelse för handlare och utvecklare
+* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** - Bygg anpassade integreringar med [!DNL App Builder], tillsammans med andra utökningsverktyg som startpaketet för [integreringen ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) och [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)
 
 ## Installation och hantering
 
@@ -46,9 +48,9 @@ Som en kombinerad grupp måste systemadministratören, handlaren och utvecklaren
 
 Följande steg krävs för att integrera [!DNL Adobe Experience Manager Assets] eller [!DNL Product Visuals powered by AEM Assets] med [!DNL Adobe Commerce as a Cloud Service]:
 
-1. **Systemadministratör**: [Lägg till användare i produktprofilen AEM Assets och produktbilder](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
-1. **Utvecklare**: [Integrera AEM Assets och produktbilder](../aem-assets-integration/overview.md)
-1. **Handlare**: [Få tillgång till dina AEM Assets- och produktbilder](./user-management.md#access-the-experience-manager-interface)
+1. **Systemadministratör**: [Lägg till användare i  [!DNL AEM Assets] och [!DNL Product Visuals] produktprofilen](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
+1. **Utvecklare**: [Integrera [!DNL AEM Assets] och [!DNL Product Visuals]](../aem-assets-integration/overview.md)
+1. **Affärskommunikation**: [Få åtkomst till dina [!DNL AEM Assets] och [!DNL Product Visuals]](./user-management.md#access-the-experience-manager-interface)
 
 ### Rollbaserade installations- och hanteringsuppgifter
 
@@ -58,15 +60,15 @@ Välj en flik nedan om du vill visa arbetsflödesgrafik på hög nivå för mots
 
 >[!TAB Systemadministratör och handlararbetsflöde]
 
-Bilden ger en översikt på hög nivå över hur systemadministratörer och handlare får åtkomst till och hanterar [!DNL Adobe Commerce as a Cloud Service] instanser. Mer information om administratörsarbetsflöden finns i [Adobe Admin Console-handboken](https://helpx.adobe.com/se/enterprise/admin-guide.html).
+Bilden ger en översikt på hög nivå över hur systemadministratörer och handlare får åtkomst till och hanterar [!DNL Adobe Commerce as a Cloud Service] instanser. Mer information om administratörsarbetsflöden finns i [Adobe Admin Console-handboken](https://helpx.adobe.com/enterprise/admin-guide.html).
 
-![[!DNL Adobe Commerce as a Cloud Service] handelsflödesdiagram](./assets/merchant-flow.svg){zoomable="yes"}
+![Systemadministratör och affärsarbetsflödesdiagram för Adobe Commerce as a Cloud Service](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB Arbetsflöde för utvecklare]
 
 I det här diagrammet ges en översikt på hög nivå över hur utvecklare skapar integreringar för [!DNL Adobe Commerce as a Cloud Service] med App Builder. Mer information finns i [API-dokumentationen](https://developer.adobe.com/commerce/webapi/rest/).
 
-![[!DNL Adobe Commerce as a Cloud Service] utvecklarflödesdiagram](./assets/developer-flow.svg){zoomable="yes"}
+![Arbetsflödesdiagram för utvecklare för att skapa integreringar med Adobe Commerce as a Cloud Service](./assets/developer-flow.svg){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -84,7 +86,7 @@ Som systemadministratör ansvarar du för att konfigurera organisationen och han
 | Jämför funktioner | Förstå skillnaderna mellan Cloud Service och andra Adobe Commerce-erbjudanden | [Funktionsjämförelse](feature-comparison.md) |
 | Skapa en instans | Etablera sandlådor och produktionsmiljöer | [Skapa en instans](#create-an-instance) |
 | Ställ in användarhantering | Lägga till användare, tilldela roller och hantera behörigheter | [Användarhantering](user-management.md) |
-| Konfigurera AEM Assets och produktvisuella effekter (valfritt) | Lägga till användare, tilldela roller och hantera behörigheter | [Användarhantering](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
+| Konfigurera [!DNL AEM Assets] och [!DNL Product Visuals] (valfritt) | Lägga till användare, tilldela roller och hantera behörigheter | [Användarhantering](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB Merchant]
 
@@ -95,7 +97,7 @@ Som handlare fokuserar du på att hantera produkter, beställningar och butiksin
 | Åtkomst till din instans | Logga in på Commerce Admin för att hantera din butik | [Åtkomst till en instans](#access-an-instance) |
 | Utforska användningsexempel | Lär dig praktiska affärsscenarier och arbetsflöden | [Användningsexempel](./use-cases.md) |
 | Importera katalog | Läs om hur du importerar produktdata till plattformen | [Importera katalogen](#import-your-catalog) |
-| Få åtkomst till AEM Assets och produktbilder (tillval) | Använd Experience Manager för att börja använda AEM Assets och produktvisualer | [Använd Experience Manager-gränssnittet](./user-management.md#access-the-experience-manager-interface) |
+| Åtkomst [!DNL AEM Assets] och [!DNL Product Visuals] (valfritt) | Använd Experience Manager för att börja använda [!DNL AEM Assets] och [!DNL Product Visuals] | [Öppna Experience Manager-gränssnittet](./user-management.md#access-the-experience-manager-interface) |
 
 >[!TAB Utvecklare]
 
@@ -108,7 +110,7 @@ Som utvecklare måste ni veta hur ni bygger anpassade integreringar och utökar 
 | Bygg storefront | Lär dig konfigurera och anpassa Commerce Storefront | [Inställningar för Storefront](./storefront.md) |
 | Konfigurera din butik | Läs om hur du konfigurerar din butik | [Inställningar för Storefront](./storefront.md) |
 | Utforska integreringsalternativ | Läs om App Builder, API Mesh och andra utökningsverktyg som du har tillgång till | [Översikt - plattform för utvecklare](overview.md#developer-platform) |
-| Integrera AEM Assets och produktbilder (tillval) | Lär dig hur du integrerar AEM Assets- och produktvisuella effekter med Adobe Commerce | [Integrering med AEM Assets](../aem-assets-integration/overview.md) |
+| Integrera [!DNL AEM Assets] och [!DNL Product Visuals] (valfritt) | Lär dig integrera [!DNL AEM Assets] och [!DNL Product Visuals] med [!DNL Adobe Commerce] | [Integrering med AEM Assets](../aem-assets-integration/overview.md) |
 
 >[!ENDTABS]
 
@@ -132,7 +134,7 @@ I följande avsnitt beskrivs de grundläggande processer du behöver utföra fö
 
 [!DNL Adobe Commerce as a Cloud Service] instanser använder ett kreditbaserat system. Du kan skapa flera instanser, men varje instans kräver tillgängliga krediter. Hur många krediter du har från början beror på prenumerationen.
 
-1. Logga in på ditt [Adobe Experience Cloud](https://experience.adobe.com/)-konto.
+1. Logga in på ditt [[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)-konto.
 
 1. Under [!UICONTROL Quick access] klickar du på [!UICONTROL **Commerce**] för att öppna [!UICONTROL Commerce Cloud Manager].
 
@@ -140,7 +142,7 @@ I följande avsnitt beskrivs de grundläggande processer du behöver utföra fö
 
 1. Klicka på [!UICONTROL **Lägg till instans**] i skärmens övre högra hörn.
 
-   ![Skapa instans](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
+   ![Skapa instans- och instansnamnsfält i Commerce Cloud Manager](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
 
 1. Välj [!UICONTROL **Commerce as a Cloud Service**].
 
@@ -203,15 +205,15 @@ Som standard innehåller [!DNL Adobe Commerce as a Cloud Service] instanser inga
 
 Det finns två sätt att importera katalogen till [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/import/data-import) - Ett användarvänligt gränssnitt där du kan importera katalogdata med bara några klick.
+* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Ett användarvänligt gränssnitt där du kan importera katalogdata med bara några klick.
 * [**Importera JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - ett REST API som gör att du kan importera katalogdata programmatiskt.
 
 ### Konfigurera butiken
 
-Nu när du har skapat en instans är du redo att [konfigurera din butik](storefront.md) med Edge Delivery Services.
+Nu när du har skapat en instans är du redo att [konfigurera din butik](storefront.md) som drivs av [!DNL Edge Delivery Services].
 
 ## Ytterligare resurser
 
 * [Versionsinformation](release-notes.md)
 * [Migreringsguide](migration/overview.md)
-* [Commerce Storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
+* [Commerce Storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
