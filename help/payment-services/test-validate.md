@@ -3,9 +3,9 @@ title: Testa och validera
 description: Testning och validering säkerställer att  [!DNL Payment Services] funktioner fungerar som förväntat och ger de bästa betalningsalternativen för dina kunder
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,35 @@ Innan du visar [!DNL Payment Services] för [!DNL Adobe Commerce] och [!DNL Mage
 Testning av [!DNL Payment Services] i en sandlådemiljö är ett viktigt valideringssteg, även om det är en simulerad miljö som bara är ansluten till PayPal-sandlådan, inte till riktiga banker och handlare.
 
 1. Slutför en utcheckning från din butik, antingen med [Kreditkortsfält](payments-options.md#credit-card-fields) eller någon av [betalningsknapparna för PayPal](payments-options.md#paypal-smart-buttons). Mer information om hur du använder falska kreditkort för testning finns i [Testa autentiseringsuppgifter](#testing-credentials).
-1. Fånga (när din betalningsåtgärd är [inställd på `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [återbetalning](refunds.md) eller [void](voids.md) den senast slutförda ordern. Du kan också [skapa en faktura](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} för en order om betalningsåtgärden är inställd på `Authorize` i stället för `Authorize and Capture`.
+1. Fånga (när din betalningsåtgärd är [inställd på `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [återbetalning](refunds.md) eller [void](voids.md) den senast slutförda ordern. Du kan också [skapa en faktura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} för en order om betalningsåtgärden är inställd på `Authorize` i stället för `Authorize and Capture`.
 1. Visa transaktionen och annan information i [Utbetalningsrapporten](payouts.md) inom 24-48 timmar.
 1. Se information om ordern i rapporten [Status för orderbetalning](order-payment-status.md).
+
+### Testa lokala utvecklingsmiljöer
+
+Om du testar betalningsmetoderna PayPal, PayLater och Venmo i lokala utvecklingsmiljöer måste din miljö vara tillgänglig från Internet. Dessa betalningsmetoder använder ett [serverbaserat återanrop](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) som kräver att PayPal kommunicerar med din Commerce-instans för att hämta leveransalternativ och beräkna summor.
+
+>[!INFO]
+>
+>Utan en URL som är tillgänglig för Internet fungerar inte återanropet för leverans, vilket ger ett annat utcheckningsflöde än produktionen. Testa alltid med en tillgänglig URL för att säkerställa korrekta resultat.
+
+Så här visar du din lokala miljö:
+
+1. Använd en tunnlingstjänst som [ngrok](https://ngrok.com/) för att skapa en allmänt tillgänglig URL för din lokala miljö.
+
+1. Uppdatera konfigurationen för Commerce bas-URL så att den matchar ngrok-URL:
+
+   ```bash
+   bin/magento config:set web/unsecure/base_url https://your-ngrok-url.ngrok.io/
+   bin/magento config:set web/secure/base_url https://your-ngrok-url.ngrok.io/
+   bin/magento cache:flush
+   ```
+
+1. Slutför testningen med betalningsmetoderna PayPal, PayLater eller Venmo.
+
+1. Återställ den ursprungliga bas-URL-konfigurationen när testningen är klar.
+
+Om slutpunktens svarstid är mindre än 5 sekunder visas ett felmeddelande i popup-fönstret.
 
 ### Testa autentiseringsuppgifter
 
