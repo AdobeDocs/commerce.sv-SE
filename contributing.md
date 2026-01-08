@@ -19,7 +19,7 @@ du förväntas behålla den här koden. Rapportera oacceptabla beteenden till
 
 ## Handbok för Contributor
 
-Se [Contributor-handboken](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Se [Contributor-handboken](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv-SE).
 
 ## Har du en fråga?
 
@@ -54,11 +54,11 @@ Jag kan kontakta befintliga medarbetare och diskutera det.
 
 ## Säkerhetsproblem
 
-Om du vill rapportera ett säkerhetsproblem [kontaktar du våra säkerhetsexperter](https://helpx.adobe.com/security/alertus.html).
+Om du vill rapportera ett säkerhetsproblem [kontaktar du våra säkerhetsexperter](https://helpx.adobe.com/se/security/alertus.html).
 
 ## Nyheter
 
-Om dina ändringar innehåller nya ämnen, viktiga uppdateringar eller korrigeringar som behöver markeras, kan du lägga till en kort beskrivning i avsnittet [Nyheter](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) direkt från din pull-begäran.
+Om dina ändringar innehåller nya ämnen, viktiga uppdateringar eller korrigeringar som behöver markeras, kan du lägga till en kort beskrivning i avsnittet [Nyheter](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home#whats-new) direkt från din pull-begäran.
 
 Så här lägger du till en markering med nyheter:
 
@@ -102,4 +102,4 @@ Så här lägger du till en markering med nyheter:
 1. `whatsnew`-delen måste börja från `whatsnew`-taggen och vara i slutet av pull-begärandetexten.
 1. Beskrivningarna av ändringarna måste innehålla fungerande länkar. Kontrollera att länkarna är korrekta och leder till rätt avsnitt. Om ämnet är nytt kontrollerar du att länkarna fungerar efter att du har sammanfogat pull-begäran och publicerat det nya ämnet. Det går bra att åtgärda länkarna när pull-begäran har sammanfogats.
 
-Du kan till exempel söka i stängda pull-begäranden i databasen för att se hur befintliga markeringar formateras och jämföra dem med avsnittet [Nyheter](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) för att se hur de visas i dokumentationen.
+Du kan till exempel söka i stängda pull-begäranden i databasen för att se hur befintliga markeringar formateras och jämföra dem med avsnittet [Nyheter](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home#whats-new) för att se hur de visas i dokumentationen.
