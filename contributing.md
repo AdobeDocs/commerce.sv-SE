@@ -1,8 +1,8 @@
 ---
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 4ddab6bbd62a3cc7c6dff089745c1b5ef5c20f70
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 3%
+source-wordcount: '551'
+ht-degree: 1%
 
 ---
 # Bidrar
@@ -11,15 +11,15 @@ Tack för att du väljer att bidra!
 
 Nedan följer ett antal riktlinjer som du kan följa när du bidrar till projektet.
 
-## Regler för uppförande
+## Uppförandekod
 
 Detta projekt följer Adobes [uppförandekod](code-of-conduct.md). Genom att delta
 du förväntas behålla den här koden. Rapportera oacceptabla beteenden till
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Dokumentation för Contributor-handboken
+## Handbok för Contributor
 
-Se [Contributor-handboken](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=sv-SE).
+Se [Contributor-handboken](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Har du en fråga?
 
@@ -40,12 +40,10 @@ Alla inlagor ska lämnas in i form av en begäran om utlysning och behöver gran
 efter projektmedverkande. Läs dokumentationen för [GitHub-begäran](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 om du vill ha mer information om hur du skickar pull-begäranden.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Till sist följer du mallen för [pull-begäran](PULL_REQUEST_TEMPLATE.md) när
+skicka en pull-förfrågan!
 
-## Från medarbetare till committer
+## Från medverkande till committer
 
 Vi älskar bidrag från vår community! Om du vill gå ett steg längre än medverkande
 och bli en committer med fullständig skrivåtkomst och en medarbetare i projektet, måste du
@@ -56,4 +54,52 @@ Jag kan kontakta befintliga medarbetare och diskutera det.
 
 ## Säkerhetsproblem
 
-Om du vill rapportera ett säkerhetsproblem [kontaktar du våra säkerhetsexperter](https://helpx.adobe.com/se/security/alertus.html).
+Om du vill rapportera ett säkerhetsproblem [kontaktar du våra säkerhetsexperter](https://helpx.adobe.com/security/alertus.html).
+
+## Nyheter
+
+Om dina ändringar innehåller nya ämnen, viktiga uppdateringar eller korrigeringar som behöver markeras, kan du lägga till en kort beskrivning i avsnittet [Nyheter](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) direkt från din pull-begäran.
+
+Så här lägger du till en markering med nyheter:
+
+1. Inkludera taggen `whatsnew` med lämplig beskrivning i texten för pull-begäran i slutet. Beskrivningen ska innehålla kontext om ändringen och en länk till målämnet eller -avsnitten. Använd följande format (kodblockcitattecken är endast för representation, ta inte med dem i texten för pull-begäran):
+
+   ```text
+   whatsnew
+   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html).
+   ```
+
+   eller, om det finns flera ämnen:
+
+   ```text
+   whatsnew
+   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce/third-target-topic.html).
+   ```
+
+   Du kan också använda listor för flera markeringar:
+
+   ```text
+   whatsnew
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+   ```text
+   whatsnew
+   The following changes were made to the documentation:
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+1. Lägg till etiketter som anger ändringstypen. Etiketter som stöds är etiketter för varje typ av ändring, som:
+
+   - `new-topic` - för nya ämnen
+   - `major-update` - för större uppdateringar som kan innehålla betydande ändringar av innehåll, struktur eller funktionalitet
+   - `technical` - för tekniska ändringar som inte betraktas som större uppdateringar men som fortfarande kräver uppmärksamhet
+
+**Viktigt:**
+
+1. `whatsnew`-delen måste börja från `whatsnew`-taggen och vara i slutet av pull-begärandetexten.
+1. Beskrivningarna av ändringarna måste innehålla fungerande länkar. Kontrollera att länkarna är korrekta och leder till rätt avsnitt. Om ämnet är nytt kontrollerar du att länkarna fungerar efter att du har sammanfogat pull-begäran och publicerat det nya ämnet. Det går bra att åtgärda länkarna när pull-begäran har sammanfogats.
+
+Du kan till exempel söka i stängda pull-begäranden i databasen för att se hur befintliga markeringar formateras och jämföra dem med avsnittet [Nyheter](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) för att se hur de visas i dokumentationen.

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 39977196f322cac571ecdb0219f006970aff3575
+source-git-commit: e97db43bcd167acc5d537a6c53479923fd761cc9
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ bundle exec rake images:optimize path=../path/to/images
 
 ## Konfiguration
 
-Hokarna använder konfigurationsfilen `_jekyll/.image_optim` för att anpassa optimeringsinställningarna:
+Hokarna använder konfigurationsfilen `_jekyll/.image_optim.yml` för att anpassa optimeringsinställningarna:
 
 - **PNG**: Använder `advpng`, `optipng` och `pngquant`
 - **JPEG**: Använder `jhead`, `jpegoptim` och `jpegtran`
@@ -120,12 +120,12 @@ Hokarna använder konfigurationsfilen `_jekyll/.image_optim` för att anpassa op
 ### Optimeringsfel
 
 - Verifiera att `bundle install` har körts i katalogen `_jekyll`
-- Kontrollera att `image_optim` och `image_optim_pack` pärlor är installerade
-- Granska konfigurationsfilen `.image_optim`
+- Kontrollera att `adobe-comdox-exl-rake-tasks`-grammet är installerat (tillhandahåller `image_optim`)
+- Granska konfigurationsfilen `.image_optim.yml`
 
 ### Prestandaproblem
 
-- Justera antalet trådar i `_jekyll/.image_optim`
+- Justera antalet trådar i `_jekyll/.image_optim.yml`
 - Ange miljövariabeln `DEBUG=1` för detaljerad felinformation
 
 ## Så här fungerar det
