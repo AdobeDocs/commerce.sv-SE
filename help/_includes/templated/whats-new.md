@@ -23,7 +23,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Versionsinformation har lagts till för <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.16 och 103.4.17</a> samt <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter version 1.10.0</a>.</p>
+      <td><p>Versionsinformation har lagts till för <a href="https://experienceleague.adobe.com/sv/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.16 och 103.4.17</a> samt <a href="https://experienceleague.adobe.com/sv/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter version 1.10.0</a>.</p>
 </td>
       <td>
         Teknisk
@@ -45,7 +45,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">Konfigurera AEM-avsnittet</a> i dokumentationen för AEM Assets Integration har uppdaterats.</p>
+      <td><p><a href="https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">Konfigurera AEM-avsnittet</a> i dokumentationen för AEM Assets Integration har uppdaterats.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -67,7 +67,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Nya ämnen har lagts till:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities">Möjligheter</a> att dokumentera AI-baserade rekommendationer för webbplatsoptimering genom integrering med Adobe Sites Optimizer, inklusive autoupptäckt och autokorrigerade arbetsflöden för att förbättra SEO, metadata och produktdatakvaliteten.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer"> Kataloklager</a> förklarar hur du ändrar produktdata utan att ändra källdata, inklusive hantering av lagerprioritet och integrering med Sites Optimizer autokorrigeringsfunktioner.</p>
+      <td><p>Nya ämnen har lagts till:<br />- <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/manage-results/opportunities">Möjligheter</a> att dokumentera AI-baserade rekommendationer för webbplatsoptimering genom integrering med Adobe Sites Optimizer, inklusive autoupptäckt och autokorrigerade arbetsflöden för att förbättra SEO, metadata och produktdatakvaliteten.<br />- <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/catalog-layer"> Kataloklager</a> förklarar hur du ändrar produktdata utan att ändra källdata, inklusive hantering av lagerprioritet och integrering med Sites Optimizer autokorrigeringsfunktioner.</p>
 </td>
       <td>
         Viktig uppdatering, nytt ämne
@@ -89,7 +89,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdatering av rekommendationsfunktionen i Commerce Optimizer-dokumentationen när <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">förhandsgranskningsfönstret</a> stöds nu.</p>
+      <td><p>Uppdatering av rekommendationsfunktionen i Commerce Optimizer-dokumentationen när <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">förhandsgranskningsfönstret</a> stöds nu.</p>
 </td>
       <td>
         Teknisk
@@ -111,7 +111,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">versionsinformationen</a> för Adobe Commerce as a Cloud Service-versionen från november.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/release-notes">versionsinformationen</a> för Adobe Commerce as a Cloud Service-versionen från november.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -133,7 +133,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Dokumenterat hur Commerce Optimizer-kunder som ansluter till en Adobe Commerce-serverdel kan övervaka och felsöka datafeedexporter från statussidan för Feed Sync. Se <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Datasynkronisering</a> i Adobe Commerce Optimizer Guide.</p>
+      <td><p>Dokumenterat hur Commerce Optimizer-kunder som ansluter till en Adobe Commerce-serverdel kan övervaka och felsöka datafeedexporter från statussidan för Feed Sync. Se <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/data-sync">Datasynkronisering</a> i Adobe Commerce Optimizer Guide.</p>
 </td>
       <td>
         Teknisk
@@ -155,7 +155,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">versionsinformationen</a> för Payment Services v2.13.0.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/payment-services/release-notes">versionsinformationen</a> för Payment Services v2.13.0.</p>
 </td>
       <td>
         Teknisk
