@@ -1,11 +1,11 @@
 ---
 title: Skapa och hantera regler
 description: Lär dig hur du skapar och hanterar försäljningsregler.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2146'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,9 @@ Du kan också klicka på nålikonen för att fästa en produkt på dess aktuella
 
 >[!NOTE]
 >
->Du kan bara fästa produkter som returneras i frågan.
+>Du kan bara fästa produkter som visas i sökresultaten för den konfigurerade frågan och regelvillkoren.
+>
+>Produkterna måste vara indexerade, synliga, i lager och uppfylla alla regelfilter för att kunna fästas. Om en produkt inte visas i förhandsgranskningen eller resultatet för din regel har fäst den ingen effekt.
 
 Eller så kan händelser anges manuellt:
 
