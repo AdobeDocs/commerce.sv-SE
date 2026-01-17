@@ -62,7 +62,7 @@ Omvandla försändelsens spårningsnummer som finns i e-postmeddelanden från of
 
 ### Google reCAPTCHA Enterprise - support
 
-[!DNL Adobe Commerce as a Cloud Service] butiker har nu stöd för [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise). Den här funktionen ger avancerat robotskydd genom att använda adaptiv riskanalys och maskininlärning för att exakt skilja människor från automatiserade robotar. Det stärker webbplatsens säkerhet, förhindrar bedrägliga aktiviteter och minskar risken för skräppost och missbruk för att upprätthålla en säker shoppingupplevelse. <!-- CCSAAS-4242 -->
+[!DNL Adobe Commerce as a Cloud Service] butiker har nu stöd för [reCAPTCHA Enterprise](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise). Den här funktionen ger avancerat robotskydd genom att använda adaptiv riskanalys och maskininlärning för att exakt skilja människor från automatiserade robotar. Det stärker webbplatsens säkerhet, förhindrar bedrägliga aktiviteter och minskar risken för skräppost och missbruk för att upprätthålla en säker shoppingupplevelse. <!-- CCSAAS-4242 -->
 
 ### Instansspecifik administratörsåtkomst
 
