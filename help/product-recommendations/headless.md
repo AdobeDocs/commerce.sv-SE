@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Headless
 
-Du kan integrera [!DNL Product Recommendations] i ett headless-lager med antingen [ PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) eller en anpassad klientteknik, som React eller Vue JS.
+Du kan integrera [!DNL Product Recommendations] i ett headless-lager med antingen [&#x200B; PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) eller en anpassad klientteknik, som React eller Vue JS.
 
 Anpassade och headless-integratörer bör referera till dessa Luma- och PWA-instruktioner som en föreslagen implementering. Det finns många sätt att implementera produktrekommendationer i headless-lösningar och den här dokumentationen täcker inte alla scenarier. Integratörerna måste omfatta händelser, design och testning för sina implementeringar.
 
@@ -56,4 +56,4 @@ Du kan utföra båda dessa åtgärder med de tillgängliga SDK:erna enligt följ
 
 1. Använd [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) för att hämta rekommendationsenheterna på butiken. SDK returnerar nödvändiga produktdata för att kunna återge rekommendationsenheter på en sida.
 
-1. Lär dig hur du använder [`recommendations` GraphQL-frågan ](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) för att returnera information om produktrekommendationsblock för en viss SKU med mera.
+1. Lär dig hur du använder [`recommendations` GraphQL-frågan &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) för att returnera information om produktrekommendationsblock för en viss SKU med mera.

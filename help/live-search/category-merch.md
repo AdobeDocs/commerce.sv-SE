@@ -81,7 +81,7 @@ Om du tar bort en Intelligent rankning från en kategori och underkategoriarvet 
 
 En dialogruta visas som förklarar vilka ärvda underkategorier som påverkas av de ändringar du gör i en kategori på en högre nivå.
 
-![Dialogrutan för att rangordna ändringar ](assets/category_overwrite_modal.png){width="1200"}
+![Dialogrutan för att rangordna ändringar &#x200B;](assets/category_overwrite_modal.png){width="1200"}
 
 ## Skapa en kategoriregel
 
