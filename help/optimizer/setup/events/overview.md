@@ -4,7 +4,7 @@ description: Lär dig mer om de händelser som  [!DNL Adobe Commerce Optimizer] 
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Det finns två typer av data som används i rekommendationerna:
 - **Beteende** - Data från en kunds engagemang på din webbplats, t.ex. produktvyer, objekt som lagts till i en kundvagn och inköp.
 - **Katalog** - Produktmetadata som namn, pris, tillgänglighet och så vidare.
 
-Adobe Sensei samlar in beteendedata och katalogdata och skapar rekommendationer för varje rekommendationstyp. Rekommendationstjänsten distribuerar sedan dessa rekommendationer till din butik i form av en widget som innehåller den rekommenderade produkten _items_.
+Adobe AI samlar in beteendedata och katalogdata och skapar rekommendationer för varje rekommendationstyp. Rekommendationstjänsten distribuerar sedan dessa rekommendationer till din butik i form av en widget som innehåller den rekommenderade produkten _items_.
 
 Vissa rekommendationstyper använder beteendedata från era kunder för att utbilda maskininlärningsmodeller för att skapa personaliserade rekommendationer. Andra rekommendationstyper använder bara katalogdata och använder inga beteendedata. Om du snabbt vill börja använda rekommendationer på din webbplats kan du använda rekommendationstypen `More like this`.
 
@@ -86,7 +86,7 @@ Vissa rekommendationstyper använder beteendedata från era kunder för att utbi
 
 När kan du börja använda rekommendationstyper som använder beteendedata? Det beror på. Detta kallas för problemet med _kallstart_.
 
-Problemet med _kallstart_ avser den tid det tar för en modell att träna och börja gälla. För rekommendationer innebär detta att man måste vänta på att Adobe Sensei ska samla in tillräckligt med data för att utbilda sina maskininlärningsmodeller innan rekommendationsenheter distribueras på er webbplats. Ju mer data modellerna har, desto mer exakt och användbar är rekommendationerna. Eftersom datainsamling sker på en aktiv webbplats är det bäst att börja den här processen tidigt.
+Problemet med _kallstart_ avser den tid det tar för en modell att träna och börja gälla. För rekommendationer innebär detta att vänta på att Adobe AI samlar in tillräckligt med data för att utbilda sina maskininlärningsmodeller innan rekommendationsenheter distribueras på er webbplats. Ju mer data modellerna har, desto mer exakt och användbar är rekommendationerna. Eftersom datainsamling sker på en aktiv webbplats är det bäst att börja den här processen tidigt.
 
 I följande tabell visas några allmänna riktlinjer för hur lång tid det tar att samla in tillräckligt med data för varje rekommendationstyp:
 
@@ -136,7 +136,7 @@ I följande tabell visas de händelser som utlöses när kunderna interagerar me
 
 #### Nödvändiga instrumentpanelshändelser
 
-Följande händelser krävs för att fylla i kontrollpanelen [Rekommendationer &#x200B;](../../manage-results/recommendation-performance.md)
+Följande händelser krävs för att fylla i kontrollpanelen [Rekommendationer ](../../manage-results/recommendation-performance.md)
 
 | Kontrollpanelskolumn | Händelser | Kopplingsfält |
 | ---------------- | --------- | ----------- |
@@ -148,7 +148,7 @@ Följande händelser krävs för att fylla i kontrollpanelen [Rekommendationer &
 | CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 | vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 
-Följande händelser är inte specifika för Rekommendationer, men krävs för att Adobe Sensei ska tolka kunddata korrekt:
+Följande händelser är inte specifika för Rekommendationer, men krävs för att Adobe AI ska tolka kunddata korrekt:
 
 - `view`
 - `add-to-cart`
@@ -174,4 +174,4 @@ I den här tabellen beskrivs de händelser som används av varje rekommendations
 
 ## Support
 
-Om du märker att det finns avvikelser i data eller om rekommendationer och sökresultat inte fungerar som förväntat, [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Om du märker att det finns avvikelser i data eller om rekommendationer och sökresultat inte fungerar som förväntat, [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

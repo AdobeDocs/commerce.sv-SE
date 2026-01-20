@@ -1,7 +1,8 @@
 ---
 title: Produktrekommendationer Administratörsutveckling
 description: Översikt över arkitekturen och utvecklingsfunktionerna i produktrekommendationer.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 5967259e-c531-4fc7-9abd-cc18433fab33
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Produktrekommendationer Administratörsutveckling
 
-Produktrekommendationer är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang. Produktrekommendationer visas i butiken i form av enheter som&quot;kunder som tittade på den här produkten också såg&quot;,&quot;kunder som köpt den här produkten även köpte&quot;,&quot;Rekommenderas för dig&quot; och så vidare. Adobe Commerce produktrekommendationer drivs av [Adobe Sensei](https://www.adobe.com/sensei.html) som använder artificiell intelligens och maskininlärningsalgoritmer för att göra en djupgående analys av samlade kunddata. Dessa data kombineras med er Commerce-katalog och ger en engagerande, relevant och personaliserad upplevelse för kunderna.
+Produktrekommendationer är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang. Produktrekommendationer visas i butiken i form av enheter som&quot;kunder som tittade på den här produkten också såg&quot;,&quot;kunder som köpt den här produkten även köpte&quot;,&quot;Rekommenderas för dig&quot; och så vidare. Adobe Commerce produktrekommendationer drivs av [Adobe AI](https://business.adobe.com/ai.html) som använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av samlade kunddata. Dessa data kombineras med er Commerce-katalog och ger en engagerande, relevant och personaliserad upplevelse för kunderna.
 
 >[!NOTE]
 >
@@ -18,11 +19,11 @@ Produktrekommendationer är ett kraftfullt marknadsföringsverktyg som ni kan an
 
 ## Arkitektur - översikt
 
-På en hög nivå distribueras Commerce produktrekommendationer som SaaS. På Commerce-sidan finns storefront, som innehåller händelseinsamlaren och rekommendationslayoutmallen, samt serverdelen, som innehåller datatjänster, SaaS-exportmodulen och administratörsgränssnittet. Adobe Sensei underrättelsetjänster utnyttjas av SaaS.
+På en hög nivå distribueras Commerce produktrekommendationer som SaaS. På Commerce-sidan finns storefront, som innehåller händelseinsamlaren och rekommendationslayoutmallen, samt serverdelen, som innehåller datatjänster, SaaS-exportmodulen och administratörsgränssnittet. Adobe AI-underrättelsetjänster utnyttjas på SaaS-sidan.
 
 ![Arkitektur för produktrekommendationer](assets/arch-diag-sensei.svg)
 
-När rekommendationsmodulerna har installerats och konfigurerats börjar butiken samla in beteendedata. Adobe Sensei behandlar dessa beteendedata tillsammans med katalogdata och beräknar produktassociationer som används av rekommendationstjänsten. Nu kan handlaren skapa, hantera och driftsätta produktrekommendationsenheter i butiken direkt från administratörsgränssnittet.
+När rekommendationsmodulerna har installerats och konfigurerats börjar butiken samla in beteendedata. Adobe AI behandlar dessa beteendedata tillsammans med katalogdata och beräknar produktassociationer som används av rekommendationstjänsten. Nu kan handlaren skapa, hantera och driftsätta produktrekommendationsenheter i butiken direkt från administratörsgränssnittet.
 
 ## Nästa steg
 

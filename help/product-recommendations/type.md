@@ -2,7 +2,7 @@
 title: Rekommendationstyper
 description: Lär dig mer om rekommendationer som du kan distribuera till olika sidor på din webbplats.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Rekommendationstyperna rekommenderar produkter som är populäraste eller trenda
 | Mest visade | Rekommenderar produkter som har visats mest genom att räkna antalet sessioner där en visningsåtgärd har utförts under de senaste sju dagarna.<br/><br/>**Var används:**<br/>- Hemsida<br/>- Kategori<br/>- Produktinformation<br/>- Kart<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Den populäraste <br/>- Trending<br/> - Populär just nu<br/>- Nyligen populära<br/> - Populära produkter inspirerade av den här produkten (PDP)<br/>- De populäraste försäljarna |
 | Mest köpta | Rekommenderar de produkter som oftast köpts av kunder under de senaste sju dagarna.<br/><br/>**Var används:**<br/>- Hemsida<br/>- Kategori<br/> - Produktinformation<br/>- Kart<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> - Den populäraste <br/>- Trending<br/> - Populär just nu<br/>- Nyligen populära<br/> - Populära produkter inspirerade av den här produkten (PDP)<br/>- De populäraste försäljarna |
 | Mest tillagt i kundvagn | Rekommenderar produkter som oftast läggs till i varukorgar av shoppare under de senaste sju dagarna. Den här rekommendationstypen kan användas på alla sidor.<br/><br/>**Var används:**<br/>- Hemsida<br/>- Kategori<br/> - Produktinformation<br/>- Kart<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/> - Den populäraste <br/>- Trending<br/> - Populär just nu<br/>- Nyligen populära<br/> - Populära produkter inspirerade av den här produkten (PDP)<br/>- De populäraste försäljarna |
-| Trender | Rekommenderar produkter baserat på den senaste tiden för en produkts popularitet på webbplatsen.<br/><br/>Adobe Sensei samlar ihop information om surfning och köp på hela webbplatsen för att avgöra och rangordna vilka produkter som är mest populära hos era kunder. Eftersom Trending analyserar den senaste produktutvecklingen är det en effektiv rekommendationstyp för kataloger med hög omsättning. Om din katalog är mer statisk kanske den inte är lika användbar om inte målgruppens shoppingmönster är mycket varierande.<br/><br/>När det används på startsidan rekommenderar Trending produkter som nyligen är populära på hela webbplatsen. Trending visar inte produkter som är konsekvent populära, utan de som nyligen har blivit populära. Om du t.ex. har en e-postmarknadsföringskampanj som marknadsför vissa produkter ökar den popularitet som e-postmeddelandet genererar sannolikheten för att de produkter som marknadsförs klassificeras som trender.<br/><br/>**Var används:**<br/>- Hemsida<br/>- Kategori<br/> - Produktinformation<br/>- Kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Trending<br/> - Trending now<br/> - Recent trending<br/> - Hot products<br/> - Trending related products (PDP) |
+| Trender | Rekommenderar produkter baserat på den senaste tiden för en produkts popularitet på webbplatsen.<br/><br/>Adobe AI samlar in bläddrings- och inköpsdata på hela webbplatsen för att avgöra och rangordna vilka produkter som är mest populära hos era kunder. Eftersom Trending analyserar den senaste produktutvecklingen är det en effektiv rekommendationstyp för kataloger med hög omsättning. Om din katalog är mer statisk kanske den inte är lika användbar om inte målgruppens shoppingmönster är mycket varierande.<br/><br/>När det används på startsidan rekommenderar Trending produkter som nyligen är populära på hela webbplatsen. Trending visar inte produkter som är konsekvent populära, utan de som nyligen har blivit populära. Om du t.ex. har en e-postmarknadsföringskampanj som marknadsför vissa produkter ökar den popularitet som e-postmeddelandet genererar sannolikheten för att de produkter som marknadsförs klassificeras som trender.<br/><br/>**Var används:**<br/>- Hemsida<br/>- Kategori<br/> - Produktinformation<br/>- Kundvagn<br/>- Bekräftelse <br/><br/>**Föreslagna etiketter:**<br/>- Trending<br/> - Trending now<br/> - Recent trending<br/> - Hot products<br/> - Trending related products (PDP) |
 
 ## Högpresterande {#highperf}
 
@@ -124,7 +124,7 @@ Rekommendationstypen _Visuell likhet_ ger rekommendationer för andra produkter 
 - Material
 - Stil
 
-Adobe Sensei använder AI för att bearbeta och analysera bilderna i din katalog och skapa attribut som används för att fastställa visuella likheter.
+Adobe AI använder AI för att bearbeta och analysera bilderna i din katalog och skapa attribut som används för att fastställa visuella likheter.
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ Eftersom den här rekommendationstypen inte kan användas för de flesta katalog
 
    Sidan [Skapa ny rekommendation](create.md) visar nu **Visuell likhet** som en valbar rekommendationstyp när sidtypen är **Produktinformation**.
 
-När du har aktiverat visuella rekommendationer initierar Adobe Sensei bildbearbetningen. Hur lång tid det tar beror på storleken på katalogen.
+När du har aktiverat visuella rekommendationer initierar Adobe AI bildbearbetningen. Hur lång tid det tar beror på storleken på katalogen.
 
 ### Används
 

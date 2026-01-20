@@ -3,7 +3,7 @@ title: Samla in data
 description: Lär dig hur händelser samlar in data för  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: d770d4d99802f7ecf6e395518dfc9aeaac9aa130
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Läs [utvecklardokumentationen](https://developer.adobe.com/commerce/services/sh
 
 ## Sjukvårdskunder
 
-Om du är vårdkund och har installerat [Data Services HIPAA-tillägget](../data-connection/hipaa-readiness.md#installation), som ingår i [dataanslutningen](../data-connection/overview.md) , hämtas inte längre data för händelsen storefront som används av [!DNL Product Recommendations]. Detta beror på att händelsedata för storefront genereras på klientsidan. Om du vill fortsätta att hämta och skicka data för butikshändelser aktiverar du händelseinsamlingen för [!DNL Product Recommendations] igen. Mer information finns i [allmän konfiguration](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/general/general#data-services).
+Om du är vårdkund och har installerat [Data Services HIPAA-tillägget](../data-connection/hipaa-readiness.md#installation), som ingår i [dataanslutningen](../data-connection/overview.md) , hämtas inte längre data för händelsen storefront som används av [!DNL Product Recommendations]. Detta beror på att händelsedata för storefront genereras på klientsidan. Om du vill fortsätta att hämta och skicka data för butikshändelser aktiverar du händelseinsamlingen för [!DNL Product Recommendations] igen. Mer information finns i [allmän konfiguration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
 
 ## Datatyper och händelser
 
@@ -31,7 +31,7 @@ Det finns två typer av data som används i produktrekommendationer:
 - **Beteende** - Data från en kunds engagemang på din webbplats, t.ex. produktvyer, objekt som lagts till i en kundvagn och inköp.
 - **Katalog** - Produktmetadata som namn, pris, tillgänglighet och så vidare.
 
-När du installerar modulen `magento/product-recommendations` samlar Adobe Sensei in beteendedata och katalogdata och skapar produktrekommendationer för varje rekommendationstyp. Tjänsten Produktrekommendationer distribuerar sedan rekommendationerna till din butik i form av en widget som innehåller den rekommenderade produkten _items_.
+När du installerar modulen `magento/product-recommendations` samlar Adobe AI in beteendedata och katalogdata och skapar produktrekommendationer för varje rekommendationstyp. Tjänsten Produktrekommendationer distribuerar sedan rekommendationerna till din butik i form av en widget som innehåller den rekommenderade produkten _items_.
 
 Vissa rekommendationstyper använder beteendedata från era kunder för att utbilda maskininlärningsmodeller för att skapa personaliserade rekommendationer. Andra rekommendationstyper använder bara katalogdata och använder inga beteendedata. Om du snabbt vill börja använda produktrekommendationer på din webbplats kan du använda följande rekommendationstyper som bara finns i en katalog:
 
@@ -42,7 +42,7 @@ Vissa rekommendationstyper använder beteendedata från era kunder för att utbi
 
 När kan du börja använda rekommendationstyper som använder beteendedata? Det beror på. Detta kallas för problemet med _kallstart_.
 
-Problemet med _kallstart_ avser den tid det tar för en modell att träna och börja gälla. För produktrekommendationer innebär detta att man väntar på att Adobe Sensei ska samla in tillräckligt med data för att utbilda sina maskininlärningsmodeller innan rekommendationsenheter distribueras på er webbplats. Ju mer data modellerna har, desto mer exakt och användbar är rekommendationerna. Eftersom datainsamling sker på en aktiv webbplats är det bäst att starta den här processen tidigt genom att installera och konfigurera modulen `magento/production-recommendations`.
+Problemet med _kallstart_ avser den tid det tar för en modell att träna och börja gälla. För produktrekommendationer innebär detta att man väntar på att Adobe AI ska samla in tillräckligt med data för att utbilda sina maskininlärningsmodeller innan rekommendationsenheter distribueras på er webbplats. Ju mer data modellerna har, desto mer exakt och användbar är rekommendationerna. Eftersom datainsamling sker på en aktiv webbplats är det bäst att starta den här processen tidigt genom att installera och konfigurera modulen `magento/production-recommendations`.
 
 I följande tabell visas några allmänna riktlinjer för hur lång tid det tar att samla in tillräckligt med data för varje rekommendationstyp:
 
@@ -81,10 +81,10 @@ Om indatainsamlingen inte är tillräcklig återgår följande rekommendationsty
 
 #### Caveats
 
-- Annonsblockerare och sekretessinställningar kan förhindra händelser från att fångas in och kan göra så att engagemanget och intäktsmåtten [på &#x200B;](workspace.md#column-descriptions) inte rapporteras tillräckligt. Dessutom kanske vissa händelser inte skickas på grund av att kunderna lämnar sidan eller nätverksproblem.
+- Annonsblockerare och sekretessinställningar kan förhindra händelser från att fångas in och kan göra så att engagemanget och intäktsmåtten [på ](workspace.md#column-descriptions) inte rapporteras tillräckligt. Dessutom kanske vissa händelser inte skickas på grund av att kunderna lämnar sidan eller nätverksproblem.
 - [Headless-implementeringar](headless.md) måste implementera händelser för att instrumentpanelen för produktrekommendationer ska fungera.
 - För konfigurerbara produkter använder produktrekommendationer avbildningen av den överordnade produkten i rekommendationsenheten. Om den konfigurerbara produkten inte har någon angiven bild kommer rekommendationsenheten att vara tom för den specifika produkten.
 
 >[!NOTE]
 >
->Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=sv-SE) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.
+>Om [läget för cookie-begränsning](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden samtycker till att använda cookies. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.

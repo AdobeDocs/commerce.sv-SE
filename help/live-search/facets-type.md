@@ -1,7 +1,8 @@
 ---
 title: Typer av ansikten
 description: '[!DNL Live Search] facets är dynamiska och visas i filterlistan när det är relevant.'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: cd05c0c5-1028-4d66-951d-0b61c1ecc440
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 [!DNL Live Search] använder en mängd olika ansiktstyper och de visas bara i listan *Filter* när det är relevant. Listan över tillgängliga facets ändras beroende på vilka produkter som returneras. Följande egenskaper påverkar deras presentation och beteende:
 
 * Fastnålade ansikten - De vanligaste ansiktena kan fästas överst i listan. De återstående ansiktena visas i ordningen *Sorteringstyp* efter de fästa ansiktena.
-* Dynamiska aspekter - Produktattribut som [Adobe Sensei](https://www.adobe.com/sensei.html) anser vara mest relevanta för en produktuppsättning och fråga. Beräkningen tar hänsyn till attributmetadata för hela katalogen och fastställer vid frågans tidpunkt de mest relevanta aspekterna.
+* Dynamiska aspekter - Produktattribut som [Adobe AI](https://business.adobe.com/ai.html) anser vara mest relevanta för en produktuppsättning och fråga. Beräkningen tar hänsyn till attributmetadata för hela katalogen och fastställer vid frågans tidpunkt de mest relevanta aspekterna.
 
   >[!NOTE]
   >
@@ -34,7 +35,7 @@ Ansikten som återges för [!DNL Commerce]-butiken bearbetas av sökadaptern, so
 
 ### Fasettetiketter
 
-För [!DNL Commerce] butiker bestäms ansiktsetiketten av [*Attributegenskaper*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=sv-SE). För butiker med flera vyer kan ytterligare etiketter definieras under *Hantera etiketter*. För headless-implementeringar redigeras etiketter från [faceting-arbetsytan](faceting-workspace.md).
+För [!DNL Commerce] butiker bestäms ansiktsetiketten av [*Attributegenskaper*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). För butiker med flera vyer kan ytterligare etiketter definieras under *Hantera etiketter*. För headless-implementeringar redigeras etiketter från [faceting-arbetsytan](faceting-workspace.md).
 
 ### Sorteringstyp
 

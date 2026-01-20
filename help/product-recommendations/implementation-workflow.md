@@ -2,7 +2,7 @@
 title: Implementeringsarbetsflöde
 description: Lär dig hur du implementerar  [!DNL Product Recommendations]  på din butik.
 exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
-source-git-commit: a3e19940e2a3d8a240bb17703cfdd9903df311aa
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 [!DNL Product Recommendations] använder både beteendedata och katalogdata:
 
-- Beteende - Data från en kunds engagemang på er webbplats, till exempel produktvisningar, artiklar som lagts till i en kundvagn och inköp. Adobe Commerce och Adobe Sensei samlar inte in personligt identifierbar information.
+- Beteende - Data från en kunds engagemang på er webbplats, till exempel produktvisningar, artiklar som lagts till i en kundvagn och inköp. Adobe Commerce och Adobe AI samlar inte in personuppgifter.
 
 - Katalog - Produktmetadata som namn, pris och tillgänglighet.
 
-När du installerar `magento/product-recommendations module` aggregerar Adobe Sensei beteendedata och katalogdata och skapar [!DNL Product Recommendations] för varje rekommendationstyp. Tjänsten [!DNL Product Recommendations] distribuerar sedan dessa rekommendationer till din butik. Använd följande arbetsflöde för att implementera produktrekommendationer i butiken:
+När du installerar `magento/product-recommendations module` aggregerar Adobe AI beteendedata och katalogdata och skapar [!DNL Product Recommendations] för varje rekommendationstyp. Tjänsten [!DNL Product Recommendations] distribuerar sedan dessa rekommendationer till din butik. Använd följande arbetsflöde för att implementera produktrekommendationer i butiken:
 
 >[!NOTE]
 >
@@ -27,9 +27,9 @@ När du installerar `magento/product-recommendations module` aggregerar Adobe Se
 
 1. **Distribuera datainsamling till produktion**
 
-   Distribuering av [!DNL Product Recommendations] kräver två huvudsakliga [datakällor](type.md): katalog och beteende. Eftersom produktion är den enda miljön där era kunders handlande fångas in och analyseras ska ni börja samla in data i produktionen så tidigt som möjligt. [Lär dig](events.md) hur Adobe Sensei utbildar maskininlärningsmodeller som ger rekommendationer av högre kvalitet. När du börjar samla in beteendedata i produktionen kan du dessutom [hämta rekommendationer](staging-environment.md#fetch-recommendations-from-production-environment-recommended) baserat på dessa produktionsdata när du arbetar i icke-produktionsmiljöer. Sedan kan ni testa och experimentera med olika rekommendationer som beräknas utifrån verkliga kunddata som samlats in i produktionen.
+   Distribuering av [!DNL Product Recommendations] kräver två huvudsakliga [datakällor](type.md): katalog och beteende. Eftersom produktion är den enda miljön där era kunders handlande fångas in och analyseras ska ni börja samla in data i produktionen så tidigt som möjligt. [Lär dig](events.md) hur Adobe AI utbildar maskininlärningsmodeller som ger rekommendationer av högre kvalitet. När du börjar samla in beteendedata i produktionen kan du dessutom [hämta rekommendationer](staging-environment.md#fetch-recommendations-from-production-environment-recommended) baserat på dessa produktionsdata när du arbetar i icke-produktionsmiljöer. Sedan kan ni testa och experimentera med olika rekommendationer som beräknas utifrån verkliga kunddata som samlats in i produktionen.
 
-   Om du vill distribuera datainsamling till produktion måste du [installera och konfigurera](install-configure.md) modulen [!DNL Product Recommendations] genom att ange en [API-nyckel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=sv-SE).
+   Om du vill distribuera datainsamling till produktion måste du [installera och konfigurera](install-configure.md) modulen [!DNL Product Recommendations] genom att ange en [API-nyckel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -43,7 +43,7 @@ När du installerar `magento/product-recommendations module` aggregerar Adobe Se
    >
    > Genom att anpassa mallen kan du ange din formatmall, skriva över var en rekommendationsenhet visas på en sida och så vidare.
 
-   Läs [Anpassa](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=sv-SE) i utvecklardokumentationen om du vill veta hur du slutför det här steget.
+   Läs [Anpassa](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) i utvecklardokumentationen om du vill veta hur du slutför det här steget.
 
 1. **Testa rekommendationer i din icke-produktionsmiljö**
 

@@ -3,8 +3,8 @@ title: Kategorimarknadsföring
 description: Använd [!DNL Live Search] Kategorimarknadsföring för en snabbare shoppingupplevelse.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
-source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Med kategorimarknadsföring kan butiksägare tillämpa [!DNL Live Search] Intell
 
 Den här videon är en introduktion till Category Merchandising.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448855?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 Funktionen finns i Admin på **Marknadsföring** > SEO &amp; Search > **[!DNL Live Search]** > **Kategorimarknadsföring**.
 
@@ -42,7 +42,7 @@ Du kan söka efter en kategori eller underkategori i fältet Sök efter kategori
 Kategorimarknadsföring använder samma rankningstyper som med [enskilda produkter](rules-workspace.md).
 Det finns två sorteringstyper: Intelligent och Manuell.
 
-**Intelligent rankning** använder beteendedataanalys från [Adobe Sensei](https://www.adobe.com/sensei.html) för att sortera alla produkter inom valda kategorier efter en viss algoritm. När man valt en Intelligent rankning förväntas produktordningen förändras över tiden eftersom de underliggande uppgifterna analyseras om kontinuerligt av Adobe Sensei. De ledande trendprodukterna kommer till exempel att ändras automatiskt över tid när kundernas preferenser förändras.
+**Intelligent rankning** använder beteendedataanalys i bakgrunden av [Adobe AI](https://business.adobe.com/ai.html) för att sortera alla produkter inom valda kategorier efter en viss algoritm. När man väl har valt en Intelligent rankning förväntas produktordningen förändras över tiden eftersom de underliggande uppgifterna analyseras om kontinuerligt av Adobe AI. De ledande trendprodukterna kommer till exempel att ändras automatiskt över tid när kundernas preferenser förändras.
 Intelligenta rangordningsmetoder:
 
 * Mest köpta: rankar produkter efter hur ofta de köptes av kunder under de senaste sju dagarna.
@@ -81,7 +81,7 @@ Om du tar bort en Intelligent rankning från en kategori och underkategoriarvet 
 
 En dialogruta visas som förklarar vilka ärvda underkategorier som påverkas av de ändringar du gör i en kategori på en högre nivå.
 
-![Dialogrutan för att rangordna ändringar &#x200B;](assets/category_overwrite_modal.png){width="1200"}
+![Dialogrutan för att rangordna ändringar ](assets/category_overwrite_modal.png){width="1200"}
 
 ## Skapa en kategoriregel
 
