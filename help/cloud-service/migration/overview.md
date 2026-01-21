@@ -1,58 +1,58 @@
 ---
-title: Migrera till  [!DNL Adobe Commerce as a Cloud Service]
-description: Lär dig hur du migrerar till  [!DNL Adobe Commerce as a Cloud Service].
+title: Migrera till [!DNL Adobe Commerce as a Cloud Service]
+description: Lär dig hur du migrerar till [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 level: Intermediate
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+source-git-commit: af56d52f98a83310b858f82f16693f5323c1b962
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
 
 # Migrera till [!DNL Adobe Commerce as a Cloud Service]
 
-[!DNL Adobe Commerce as a Cloud Service] innehåller en omfattande guide för utvecklare som övergår från en befintlig Adobe Commerce PaaS-implementering till det nya SaaS-erbjudandet (Adobe Commerce as a Cloud Service). Adobe Commerce as a Cloud Service utgör en avsevärd förändring till en helt hanterad, versionslös SaaS-modell som erbjuder förbättrade prestanda, skalbarhet, förenklade åtgärder och tätare integrering med den bredare [!DNL Adobe Experience Cloud].
+[!DNL Adobe Commerce as a Cloud Service] innehåller en omfattande guide för utvecklare som övergår från en befintlig Adobe Commerce PaaS-implementering till det nya SaaS-erbjudandet (Adobe Commerce as a Cloud Service). Adobe Commerce som molntjänst representerar en betydande förändring mot en fullt hanterad, versionslös SaaS-modell, som erbjuder förbättrad prestanda, skalbarhet, förenklade operationer och tätare integration med den bredare [!DNL Adobe Experience Cloud].
 
 >[!NOTE]
 >
->Mer information om migreringsverktyg finns i [Migreringsverktyget för massdata](./bulk-data.md).
+>För mer information om migreringsverktyg, se [Bulk Data Migration Tool](./bulk-data.md).
 
-## Förstå skiftet - jämför PaaS och SaaS
+## Att förstå förändringen – jämföra PaaS och SaaS
 
 **Viktiga skillnader**
 
-* [!BADGE PaaS endast]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} **PaaS (aktuell)**: Merchant hanterar programkod, uppgraderingar, patchering och infrastrukturkonfiguration i Adobe värdmiljö. [Delad ansvarsmodell](https://experienceleague.adobe.com/sv/docs/commerce-operations/security-and-compliance/shared-responsibility) för tjänster (MySQL, Elasticsearch med flera).
-* [!BADGE SaaS endast]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} **SaaS (ny - [!DNL Adobe Commerce as a Cloud Service])**: Adobe hanterar kärnprogrammet, infrastrukturen och uppdateringarna fullt ut. Handläggarna fokuserar på anpassning via utökningspunkter (API:er, App Builder, UI SDK:er). Programkoden är låst.
+* [!BADGE PaaS endast]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} **PaaS (nuvarande):** Merchant hanterar applikationskod, uppgraderingar, patchar och infrastrukturkonfiguration inom Adobes hostade miljö. [Modellen för delat ansvar](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) för tjänster (MySQL, Elasticsearch och andra).
+* [!BADGE Endast]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} **SaaS SaaS (Nytt - [!DNL Adobe Commerce as a Cloud Service])**: Adobe hanterar helt kärnapplikationen, infrastrukturen och uppdateringarna. Handlare fokuserar på anpassning via utbyggbarhetspunkter (API:er, App Builder, UI-SDK:er). Kärnapplikationskoden är låst.
 
-**Arkitekturkonsekvenser**
+**Arkitektoniska implikationer**
 
-* **Versionslös plattform**: Kontinuerliga uppdateringar innebär inga fler större versionsuppgraderingar för kärnan.
-* **Mikrotjänster och API-first**: Djupt beroende av API:er för utbyggbarhet och integrering.
-* **Headless som standard (valfritt)**: Starkt stöd för fristående butiker (till exempel Commerce Storefront från Edge Delivery Services).
-* **Edge Delivery Services**: Påverkar frontendens prestanda och distribution.
+* **Versionslös plattform**: Kontinuerliga uppdateringar innebär inga större versionsuppgraderingar för kärnan.
+* **Mikrotjänster och API-först**: Djupare beroende av API:er för utbyggbarhet och integration.
+* **Headless som standard (valfritt):** Starkt stöd för frikopplade butiker (till exempel Commerce Storefront som drivs av Edge Delivery Services).
+* **Edge-leveranstjänster**: Påverkan på frontend-prestanda och distribution.
 
 **Nya verktyg och koncept**
 
-* [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) och [API-nät för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
-* [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
-* Självbetjäning med [Commerce Cloud Manager](../getting-started.md#create-an-instance)
+* [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) och [API Mesh för Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
+* [Handelsoptimerare](../../optimizer/overview.md)
+* [Kantleveranstjänster](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* Självbetjäningsprovisionering med [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
-## Migreringssökvägar
+## Migrationsvägar
 
-[!DNL Adobe Commerce as a Cloud Service] har stöd för flera migreringssökvägar, beroende på tidslinjen, butiken och anpassningar.
+[!DNL Adobe Commerce as a Cloud Service] Stöder flera migreringsvägar, beroende på din tidslinje, butik och anpassningar.
 
-Som ett alternativ till en fullständig migrering stöder [!DNL Adobe Commerce as a Cloud Service] en stegvis migrering med Commerce Optimizer eller en stegvis metod.
+Som ett alternativ till en fullständig migrering [!DNL Adobe Commerce as a Cloud Service] stödjer den en fasad migrering, med Commerce Optimizer eller en inkrementell metod.
 
-* **Inkrementell migrering** - Det här tillvägagångssättet innebär att migrera data, anpassningar och integreringar stegvis. Den här metoden är idealisk för stora handlare med många anpassningar som gradvis vill övergå sina komplexa anpassningar och data till [!DNL Adobe Commerce as a Cloud Service] i sin egen takt.
+* **Inkrementell migrering**—Detta tillvägagångssätt innebär att du migrerar dina data, anpassningar och integrationer i steg. Detta tillvägagångssätt är idealiskt för stora handlare med många anpassningar som vill gradvis överföra sina komplexa anpassningar och data till [!DNL Adobe Commerce as a Cloud Service] dem i sin egen takt.
 
-![inkrementell migrering](../assets/incremental.png){width="600" zoomable="yes"}
+![Inkrementell migration](../assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer** - Med den här metoden kan du migrera iterativt genom att använda Commerce Optimizer som en övergångsfas för att flytta komplexa anpassningar och data till [!DNL Adobe Commerce as a Cloud Service] i din egen takt. Commerce Optimizer ger tillgång till Merchandising Services som drivs av Catalog Views and Policies, Commerce Storefront från Edge Delivery samt [!DNL Product Visuals powered by AEM Assets].
+* **Commerce Optimizer**—Denna metod gör det möjligt att migrera iterativt, genom att använda Commerce Optimizer som en övergångsfas för att flytta komplexa anpassningar och data i [!DNL Adobe Commerce as a Cloud Service] din egen takt. Commerce Optimizer ger tillgång till Merchandising-tjänster drivna av katalogvyer och policyer, Commerce Storefront drivna av Edge Delivery, och [!DNL Product Visuals powered by AEM Assets].
 
 ![iterativ migrering](../assets/optimizer.png){width="600" zoomable="yes"}
 
@@ -63,28 +63,28 @@ I följande tabell visas en översikt över migreringsprocessen för olika butik
 |                    | LUMA Storefront | PWA Storefront | Commerce Storefront med Edge Delivery i botten | Headless |
 |--------------------|----------------------------------------|----------------------------------------|------------------------------------------------------|----------------------------------------|
 | Datamigrering | Obligatoriskt | Obligatoriskt | Obligatoriskt | Obligatoriskt |
-| Storefront | Migrera till Commerce Storefront från Edge Delivery | Migrera till Commerce Storefront från Edge Delivery eller underhåll | Ingen effekt | Ingen effekt |
-| API-nät | Skapa nytt nät | Skapa nytt nät eller konfigurera om befintligt nät | Skapa nytt nät eller konfigurera om befintligt nät | Skapa nytt nät eller konfigurera om befintligt nät |
-| Integreringar | Utnyttja integreringens startpaket | Utnyttja integreringens startpaket | Utnyttja integreringens startpaket | Utnyttja integreringens startpaket |
-| Anpassningar | Flytta till App Builder &amp; API Mesh | Flytta till App Builder &amp; API Mesh | Flytta till App Builder &amp; API Mesh | Flytta till App Builder &amp; API Mesh |
-| Assets Management | Migrering krävs vid användning av OOTB | Migrering krävs vid användning av OOTB | Migrering krävs vid användning av OOTB | Migrering krävs vid användning av OOTB |
-| Tillägg | Migrera till App Builder | Migrera till App Builder | Migrera till App Builder | Migrera till App Builder |
+| Storefront | Migrera till Commerce Storefront från Edge Delivery | Migrera till Commerce Storefront från Edge Delivery eller underhåll | Ingen effekt | Ingen påverkan |
+| API Mesh | Skapa nytt nät | Skapa nytt nät eller konfigurera om befintligt nät | Skapa nytt nät eller konfigurera om befintligt nät | Skapa nytt nät eller konfigurera om befintligt nät |
+| Integrationer | Startkit för integration med utnyttjande | Startkit för integration med utnyttjande | Startkit för integration med utnyttjande | Startkit för integration med utnyttjande |
+| Anpassningar | Övergång till App Builder &amp; API Mesh | Övergång till App Builder &amp; API Mesh | Övergång till App Builder &amp; API Mesh | Övergång till App Builder &amp; API Mesh |
+| Assets Management | Migrering krävs vid användning av OOTB | Migrering krävs vid användning av OOTB | Migrering krävs vid användning av OOTB | Migrering krävs om man använder OOTB |
+| Utbyggnader | Migrera till App Builder | Migrera till App Builder | Migrera till App Builder | Migrera till App Builder |
 
-Som framgår av tabellen kommer åtgärderna för varje migrering att bestå av:
+Som visas i tabellen kommer åtgärderna för varje migration att bestå av:
 
-* **Datamigrering** - Använder det tillhandahållna [migreringsverktyget](./bulk-data.md) för att migrera data från din befintliga instans till [!DNL Adobe Commerce as a Cloud Service].
-* **Storefront** - Befintliga Commerce Storefront med Edge Delivery-teknik och headless-butiker kräver inte reducering, men Luma-butiker kräver migrering till Commerce Storefront med Edge Delivery. PWA Studio butiker kan migreras till Commerce Storefront från Edge Delivery eller underhållas i sitt nuvarande skick. Adobe kommer att tillhandahålla acceleratorer för att underlätta migrering av butiker.
-* **[API-nät](https://developer.adobe.com/graphql-mesh-gateway)** - Skapa ett nytt nät eller ändra det befintliga. Adobe kommer att tillhandahålla förkonfigurerade nät som hjälp i den här processen.
-* **Integrationer** - Alla integreringar måste utnyttja antingen [startsatsen för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) eller [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
-* **Anpassningar** - Alla anpassningar måste flyttas till App Builder och API Mesh.
-* **Assets Management** - All resurshantering kräver migrering. Om du redan använder [!DNL AEM Assets] behöver du inte migrera.
-* **Tillägg** - Alla pågående tillägg måste återskapas som obearbetade tillägg. I slutet av 2025 kommer Adobe att ge åtkomst till våra populäraste tillägg för att minimera byggtider.
+* **Datamigrering**—Med hjälp av[ tillhandahållna ](./bulk-data.md)migreringsverktyg för att migrera data från din befintliga instans till [!DNL Adobe Commerce as a Cloud Service].
+* **Storefront**—Befintliga Commerce Storefronts drivna av Edge Delivery och headless butiker kräver ingen åtgärd, men Luma-butiker kräver migrering till Commerce Storefront driven av Edge Delivery. PWA Studio-butiker kan migreras till Commerce Storefront som drivs av Edge Delivery eller underhålls i sitt nuvarande skick. Adobe kommer att tillhandahålla acceleratorer för att hjälpa till med flytt av butiker.
+* **[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)**—Skapa ett nytt mesh eller modifiera det befintliga. Adobe kommer att tillhandahålla förkonfigurerade mesh för att hjälpa till med denna process.
+* **Integrationer**—Alla integrationer måste använda antingen integrationsstartpaketet[ ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)eller REST API:[[!DNL Adobe Commerce as a Cloud Service] et](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
+* **Anpassningar—** Alla anpassningar måste flyttas till App Builder och API Mesh.
+* **Tillgångsförvaltning**—All tillgångsförvaltning kräver migrering. Om du redan använder [!DNL AEM Assets], finns det inget behov av att migrera.
+* **Tillägg—** Alla tillägg under processen måste återskapas som utgående tillägg. I slutet av 2025 kommer Adobe att ge tillgång till våra mest populära tillägg för att minimera byggtider.
 
-## Migreringsfaser
+## Migrationsfaser
 
-I följande faser beskrivs de steg och överväganden som krävs för att migrera till [!DNL Adobe Commerce as a Cloud Service].
+Följande faser beskriver de nödvändiga stegen och övervägandena för att migrera till [!DNL Adobe Commerce as a Cloud Service].
 
-### Utvärdering och planering före migrationen
+### Bedömning och planering före migration
 
 Denna fas är viktig för att minimera riskerna och fastställa en tydlig migreringsväg och identifiera problem innan de uppstår.
 
@@ -120,24 +120,24 @@ Denna fas är viktig för att minimera riskerna och fastställa en tydlig migrer
 **Definiera migreringsomfång och -strategi:**
 
 * **Avfasad och migrering från en gång till en:** Utvärdera för- och nackdelar för varje tillvägagångssätt.
-* **Identifiera viktiga affärsprocesser:** Prioritera funktioner som måste migreras först, till exempel:
-   * Komplexa prisregler
+* **Identifiera kärnaffärsprocesser:** Prioritera funktioner som måste migreras först, såsom:
+   * Komplexa prissättningsregler
    * Anpassade affärsregler som tillämpas innan en order officiellt läggs eller bearbetas
    * Komplexa skatteberäkningar
    * Adressvalideringar
-   * Anpassad logik som utlöses efter att en order har placerats
-* **Headless vs. monolitisk storefront:** Beslutspunkt för ny storefront-utveckling eller anpassning av befintliga storefront.
-* **Integrationsstrategi:** Avgör hur befintliga integreringar omformas (API-nät, App Builder, direkt API).
-* **Datamigreringsstrategi:** Kontrollera om du tänker migrera med fullständiga historiska data, partiella data eller inga migrerade data.
+   * Anpassad logik triggas efter att en beställning lagts
+* **Huvudlös vs. monolitisk butik:** Beslutspunkt för ny butiksutveckling eller anpassning av befintliga butikslokaler.
+* **Integrationsstrategi:** Bestäm hur befintliga integrationer ska omplattformas (API Mesh, App Builder, direkt API).
+* **Datamigreringsstrategi:** Bestäm om du avser att migrera med fullständig historisk data, partiell data eller ingen migrerad data.
 
-**Teamberedskap och utbildning:**
+**Lagberedskap och träning:**
 
 * Bekanta dig med [!DNL Adobe Commerce as a Cloud Service] koncept, utvecklingsarbetsflöden och nya verktyg.
-* Delta i praktisk utbildning med Adobe App Builder, Edge Delivery Services och [!DNL Adobe Commerce as a Cloud Service]-distributionskanaler.
+* Gå praktisk utbildning med Adobe App Builder, Edge Delivery Services och [!DNL Adobe Commerce as a Cloud Service] distributionspipelines.
 
-**Miljöinställningar och etablering:**
+**Miljöuppsättning och provisionering:**
 
-* Etablera din [!DNL Adobe Commerce as a Cloud Service]-sandlåda och dina utvecklingsmiljöer med Commerce Cloud Manager.
+* Provisionera dina [!DNL Adobe Commerce as a Cloud Service] sandlåde- och utvecklingsmiljöer med Commerce Cloud Manager.
 
 ### Inkrementella migreringsfaser
 
@@ -147,35 +147,35 @@ Den här fasen består av kärnan i migreringen, med fokus på att anpassa kodba
 
 #### &#x200B;1. Migrera&quot;pågående&quot; anpassningar och tillägg till App Builder
 
-Detta är en avgörande fas för att uppnå en&quot;låst kärna&quot; och framtidssäkra din lösning, som är central för arkitekturfilosofin i [!DNL Adobe Commerce as a Cloud Service].
+Detta är en avgörande fas för att uppnå en &quot;låst kärna&quot; och framtidssäkra din lösning, vilket är centralt för arkitekturfilosofin [!DNL Adobe Commerce as a Cloud Service] .
 
-* **Gör komplex logik externt för App Builder**: Analysera befintliga anpassade moduler och tredjepartstillägg i din PaaS-kodbas. För komplex affärslogik, skräddarsydda integreringar eller mikrotjänster som inte kräver direkt bearbetning av Commerce-datorns kärndatamodell kan de omfaktoriseras och användas på nytt som serverlösa program i Adobe Developer App Builder.
-* **Utnyttja API-nät**: För scenarier som kräver data från flera backend-system (t.ex. din Commerce-backend, ERP, CRM och anpassade App Builder-mikrotjänster) ska du implementera ett API-nätlager i App Builder. Detta konsoliderar olika API:er till en enda, högpresterande GraphQL-slutpunkt som används av din nya butik eller andra tjänster, vilket förenklar komplex datainhämtning.
-* **Händelsedriven arkitektur**: Använd Adobe I/O Events för att utlösa App Builder-åtgärder baserat på händelser som inträffar i din PaaS-instans (t.ex. produktuppdateringar, kundregistreringar, orderstatusändringar) eller andra anslutna system. Detta främjar asynkron kommunikation, minskar åtkopplingen och förbättrar systemets motståndskraft.
+* **Externalisera komplex logik till App Builder**: Analysera befintliga anpassade moduler och tredjepartstillägg i din PaaS-kodbas. För komplex affärslogik, skräddarsydda integrationer eller mikrotjänster som inte kräver direkt, pågående manipulation av Commerce-kärndatamodellen, refaktorera och omplattform dem som serverlösa applikationer inom Adobe Developer App Builder.
+* **Utnyttja API Mesh**: För scenarier som kräver data från flera backend-system (till exempel din PaaS Commerce-backend, ERP, CRM och anpassade App Builder-mikrotjänster), implementera ett API Mesh-lager inom App Builder. Detta konsoliderar olika API:er till en enda, fungerande GraphQL-endpoint som förbrukas av din nya butik eller andra tjänster, vilket förenklar komplex datahämtning.
+* **Händelsedriven arkitektur**: Använd Adobe I/O-händelser för att trigga App Builder-åtgärder baserat på händelser som inträffar i din PaaS-instans (till exempel produktuppdateringar, kundregistreringar, ändringar i orderstatus) eller andra anslutna system. Detta främjar asynkron kommunikation, minskar tät koppling och förbättrar systemets motståndskraft.
 
-**Fördelar**: Det här steget minskar den tekniska skuld som är kopplad till djupt inbäddade anpassningar, snabbar upp övergången av din Commerce-instans till [!DNL Adobe Commerce as a Cloud Service] dramatiskt, förbättrar skalbarheten och den oberoende driftsättningen av anpassad logik samt främjar snabbare utvecklingscykler för tillägg.
+**Fördel:** Detta steg minskar avsevärt den tekniska skulden kopplad till djupt inbäddade anpassningar, påskyndar dramatiskt övergången till [!DNL Adobe Commerce as a Cloud Service]din Commerce-instans, förbättrar skalbarheten och den oberoende implementeringen av anpassad logik samt främjar snabbare utvecklingscykler för tillägg.
 
-#### &#x200B;2. Adobe SaaS-baserade Adobe Commerce marknadsföringstjänster och integrera katalogdata
+#### &#x200B;2. Införa SaaS-baserade Adobe Commerce-merchandisingtjänster och integrera katalogdata
 
-Detta är en viktig inledande integrationspunkt med två alternativ för katalogdatahantering:
+Detta är en kritisk initial integrationspunkt med två alternativ gällande katalogdatahantering:
 
 >[!BEGINTABS]
 
->[!TAB Alternativ 1 - Befintlig SaaS-tjänst för katalog]
+>[!TAB Alternativ 1 - Befintlig katalog SaaS-tjänst]
 
-**Utnyttja den befintliga SaaS-tjänsten för katalog som är integrerad med PaaS-serverdelen**
+**Utnyttja befintlig Catalog SaaS-tjänst integrerad med PaaS-backend**
 
-Det här alternativet är ett övergångssteg som bygger på en befintlig integrering där din PaaS-server fyller i en befintlig instans av Adobe Commerce SaaS-tjänsten med data från [katalogtjänsten](../../catalog-service/guide-overview.md), [direktsökning](../../live-search/overview.md) och [produktrekommendationer](../../product-recommendations/overview.md).
+Detta alternativ fungerar som ett övergångssteg, byggt på en befintlig integration där din PaaS-backend fyller en befintlig instans av Adobe Commerce SaaS-tjänsten med data från [katalogtjänsten](../../catalog-service/guide-overview.md), [live-sökning](../../live-search/overview.md) och [produktrekommendationer](../../product-recommendations/overview.md).
 
-* **Synkronisering av katalogdata**: Kontrollera att din Adobe Commerce PaaS-instans fortsätter att synkronisera produkt- och katalogdata med din befintliga Adobe Commerce Catalog SaaS-tjänst. Detta är vanligtvis beroende av etablerade anslutningar eller moduler i din PaaS-instans. Catalog SaaS-tjänsten är fortfarande den auktoritativa källan för sök- och säljfunktioner och hämtar data från din PaaS-server.
-* **API-nät för optimering**: Även om den headless storefront (på Edge Delivery Services) och andra tjänster kan förbruka data direkt från Catalog SaaS-tjänsten rekommenderar Adobe att du använder API Mesh (i App Builder). API Mesh kan kombinera API:er från Catalog SaaS-tjänsten med andra nödvändiga API:er från din PaaS-backend (t.ex. inventeringskontroller i realtid från transaktionsdatabasen eller anpassade produktattribut som inte helt replikerats till Catalog SaaS-tjänsten) till en enda högpresterande GraphQL-slutpunkt. Detta möjliggör även centraliserad cachelagring, autentisering och svarsomvandling.
-* **Integrera Live Search och produktrekommendationer**: Konfigurera SaaS-tjänster för Live-sökning och produktrekommendationer till [att importera katalogdata](https://experienceleague.adobe.com/sv/docs/commerce/live-search/install#configure-the-data) direkt från din befintliga SaaS-tjänst för Adobe Commerce Catalog, som i sin tur fylls i av din AppaS-backend.
+* **Synkronisering** av katalogdata: Se till att din Adobe Commerce PaaS-instans fortsätter att synkronisera produkt- och katalogdata till din befintliga Adobe Commerce Catalog SaaS-tjänst. Detta bygger vanligtvis på etablerade kontakter eller moduler inom din PaaS-instans. Catalog SaaS-tjänsten är fortfarande den auktoritativa källan för sök- och merchandisingfunktioner, och hämtar sin data från din PaaS-backend.
+* **API Mesh för optimering**: Medan den headless storefront (på Edge Delivery Services) och andra tjänster kan konsumera data direkt från Catalog SaaS-tjänsten, rekommenderar Adobe starkt att använda API Mesh (inom App Builder). API Mesh kan förena API:er från Catalog SaaS-tjänsten med andra nödvändiga API:er från din PaaS-backend (till exempel realtidskontroller av inventarier från transaktionsdatabasen eller anpassade produktattribut som inte är fullt replikerade till Catalog SaaS-tjänsten) till en enda, fungerande GraphQL-endpoint. Detta möjliggör också centraliserad cache, autentisering och responstransformation.
+* **Integrera Live Search och produktrekommendationer**: Konfigurera SaaS-tjänster för Live-sökning och produktrekommendationer till [att importera katalogdata](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) direkt från din befintliga SaaS-tjänst för Adobe Commerce Catalog, som i sin tur fylls i av din AppaS-backend.
 
-**Fördel**: Detta ger en snabbare väg till en headless Store och avancerade SaaS-försäljningsfunktioner genom att utnyttja en befintlig och fungerande Catalog SaaS-tjänst och dess integrering med din PaaS-backend. Den behåller emellertid beroendet av PaaS-serverdelen för den primära katalogdatakällan och tillhandahåller inte de sammanställningsfunktioner för flera källor som är inbyggda i den nya sammanställningsbara katalogdatamodellen. Det här alternativet är en giltig språngbräda mot en mer heltäckande sammansättningsbar arkitektur.
+**Fördel**: Detta ger en snabbare väg till en headless Store och avancerade SaaS-försäljningsfunktioner genom att utnyttja en befintlig och fungerande Catalog SaaS-tjänst och dess integrering med din PaaS-backend. Den behåller dock beroendet av PaaS-backend för den primära katalogdatakällan och tillhandahåller inte de multikällsaggregationsmöjligheter som är inneboende i den nya Composable Catalog Data Model. Det här alternativet är en giltig språngbräda mot en mer heltäckande sammansättningsbar arkitektur.
 
->[!TAB Alternativ 2 - Sammanställningsbar katalogdatamodell]
+>[!TAB Alternativ 2 – Komponerbar katalogdatamodell]
 
-**Använd den nya CCDM-modellen (Composable Catalog Data Model)**
+**Anta den nya Composable Catalog Data Model (CCDM)**
 
 Detta är den strategiska, framtidssäkra lösningen för att utnyttja Adobe Commerce Optimizer. CCDM erbjuder en flexibel, skalbar och enhetlig katalogtjänst som är utformad för datagenerering från flera källor och dynamisk marknadsföring.
 
@@ -202,25 +202,25 @@ När man har etablerat och anpassat data och anpassat dem externt blir fokus på
    * **Alternativ 1**: Från den befintliga katalogtjänsten SaaS (via API Mesh) för produktinformation och försäljningsregler.
    * **Alternativ 2**: Från CCDM för produktinformation och försäljningsregler.
    * Från API Mesh för alla orkestrerade data från din gamla backend-server (PaaS-instans) eller anpassade App Builder-tjänster (t.ex. realtidslager, anpassade produktattribut och lojalitetspunkter).
-* **Innehållsmigrering (AEM Services)**: Migrera befintligt statiskt innehåll (till exempel&quot;Om oss&quot;-sidor, blogginlägg och marknadsföringsbanners) till AEM Services, som driver Commerce Storefront. Utnyttja AEM funktioner för framtagning av material och se till att materialet är optimerat för Edge Delivery Services.
+* **Innehållsmigrering (AEM Services):** Migrera ditt befintliga statiska innehåll (till exempel &quot;Om oss&quot;-sidor, blogginlägg och marknadsföringsbanners) till AEM Services, som driver Commerce Storefront. Utnyttja AEM:s förmåga att skapa innehåll och se till att tillgångarna är optimerade för Edge Delivery Services.
 * **Utveckla viktiga gränssnittskomponenter**: Bygg upp viktiga användargränssnittskomponenter för produktinformationssidor (PDP), produktlistningssidor (PLP) och sidor med allmänt innehåll med Edge Delivery Services instickskomponenter och anpassade React/Vue-komponenter. Prioritera centrala handelsflöden.
 * **Integrering med befintlig kundvagn/utcheckning**: Till att börja med kommer Edge Delivery Services Store att skapa en leverans till din befintliga Adobe Commerce PaaS (eller någon annan tredjepartsplattform) för kundvagn och utcheckning. Detta innebär vanligtvis följande:
    * **Omdirigering**: Användaren omdirigeras till den gamla plattformens egna kundvagn- och utchecknings-URL:er och nödvändiga sessions- och kundvagnsidentifierare skickas.
-   * **Direkt API-interaktion** (med App Builder orchestration): Skapa anpassade gränssnittskomponenter för kundvagn och utcheckning i Edge Delivery Services som interagerar direkt med kundvagn- och utchecknings-API:erna för din PaaS-backend. Detta inbegriper ofta App Builder som en BFF (Backend-for-Front end) för att samordna samtal till flera backend-tjänster (till exempel PaaS-kundvagn, betalningsgateways och leveransräknare).
+   * **Direkt API-interaktion** (med App Builder-orkestrering): Bygga anpassade komponenter för kundvagn och utlåning inom Edge Delivery Services som interagerar direkt med din PaaS-backends kundvagn och utchecknings-API:er. Detta innebär ofta App Builder som en Backend-for-Frontend (BFF) för att orkestrera samtal till flera backend-tjänster (till exempel PaaS-vagn, betalningsgateways och fraktkalkylatorer).
 
-**Fördelar**: Levererar en blixtsnabb SEO-optimerad och mycket flexibel butiksupplevelse. Denna fas bidrar direkt till en överlägsen kundupplevelse och lägger grunden till framtida innovation.
+**Fördel**: Levererar en blixtsnabb, SEO-optimerad och mycket flexibel butiksupplevelse. Denna fas bidrar direkt till en överlägsen kundupplevelse och lägger grunden för framtida frontend-innovation.
 
-#### &#x200B;4. Datamigrering (stegvis process)
+#### &#x200B;4. Datamigrering (fasad process)
 
-Datamigrering är en kritisk och mångfacetterad process som körs samtidigt med omfaktorisering och utveckling av butiker, vilket ger enhetlighet och integritet.
+Datamigrering är en kritisk och mångfacetterad process som körs parallellt med refaktorering och utveckling av butiker, vilket säkerställer datakonsistens och integritet.
 
-* **Rensa och optimera befintliga data**: Utför omfattande datarensning, borttagning av dubbletter och validering på din befintliga PaaS-databas innan du genomför en migrering i stor skala. Detta proaktiva steg är avgörande för att minimera överföringen av gamla dataproblem och säkerställa kvaliteten på data i den nya miljön.
+* **Rensa och optimera befintlig data**: Innan någon storskalig migrering, utför omfattande datarensning, deduplicering och validering på din befintliga PaaS-databas. Detta proaktiva steg är avgörande för att minimera överföringen av äldre data och säkerställa datakvaliteten i den nya miljön.
 
 **Massdatamigreringar**
 
-Migrering av massdata innebär att du måste ta en fullständig datdump från Adobe Commerce PaaS-instansen, omvandla hela datauppsättningen och importera den till Adobe Commerce as a Cloud Service på en gång. Den här metoden används vanligtvis för den initiala datapifieringen.
+Massdatamigrering innebär att du tar en fullständig datadump från din Adobe Commerce PaaS-instans, transformerar hela datamängden och importerar den till Adobe Commerce som en molntjänst på en gång. Denna metod används vanligtvis för den initiala populationen av data.
 
-* **Verktygstillgänglighet**: Dedikerat [verktyg för massdatamigrering](./bulk-data.md) för kundanvändning för Commerce massdatamigrering från första part kommer att vara tillgängligt på begäran i mitten av juli 2025. Om kunderna behöver hjälp med att migrera data satsvis på förhand kan Adobe på deras vägnar underlätta dataöverföringen.
+* **Verktygstillgänglighet**: Dedikerat [verktyg för migrering av massdata](./bulk-data.md) för kundanvändning för Commerce massdatamigrering från första part kommer att vara tillgängligt på begäran under första kvartalet 2026. Om kunderna behöver hjälp med att migrera data satsvis på förhand kan Adobe på deras vägnar underlätta dataöverföringen.
 
 * **Process**:
    * **Fullständig dataexport**: Extrahera en fullständig datauppsättning från din Adobe Commerce PaaS-instans (till exempel produkter, kategorier, kundkonton, historiska orderdata, statiska block och sidinnehåll).
@@ -232,14 +232,14 @@ Migrering av massdata innebär att du måste ta en fullständig datdump från Ad
 
 Interaktiv datamigrering fokuserar på synkronisering av inkrementella ändringar och borttagningar från källinstansen av PaaS till de nya Cloud Service-komponenterna, vilket säkerställer att data uppdateras fram till och efter avslutningen.
 
-* **Verktygstillgänglighet**: Verktyg som är särskilt utformade för iterativ datamigrering kommer att vara tillgängliga under andra halvåret 2025.
+* **Verktygstillgänglighet**: Verktyg som är särskilt utformade för iterativ datamigrering kommer att vara tillgängliga under 2026.
 
 * **Process**:
    * **Deltaidentifiering**: Upprätta mekanismer för att identifiera ändringar (skapande, uppdateringar och borttagningar) i viktiga datauppsättningar i din PaaS-miljö sedan den senaste synkroniseringen. Detta kan omfatta registrering av ändringsdata (CDC), tidsstämpeljämförelser eller händelsebaserade utlösare.
-   * **Kontinuerlig synkronisering**: Implementera robusta mekanismer för kontinuerlig, inkrementell datasynkronisering från din PaaS-miljö till de nya Cloud Service-komponenterna (till exempel CCDM och transaktionell backend). Detta är avgörande för att upprätthålla datans aktualitet och minimera driftstoppen under en övergång.
-   * **Utnyttja händelser**: Använd Adobe I/O Events där det är möjligt för att aktivera App Builder-åtgärder för realtidsuppdateringar eller nästan realtidsuppdateringar från din PaaS-instans till de nya tjänsterna. En produktuppdatering i PaaS kan till exempel utlösa en händelse som uppdaterar motsvarande post i CCDM.
-   * **API-drivna uppdateringar**: För data som inte är händelsestyrda använder du schemalagda API-anrop (via App Builder eller andra integrationsplattformar) för att hämta ändringar från PaaS och överföra dem till de nya systemen.
-   * **Felhantering och övervakning**: Implementera robust felhantering, loggning och övervakning för alla iterativa dataledningar för att säkerställa att dataintegriteten upprätthålls under hela processen.
+   * **Kontinuerlig synkronisering**: Implementera robusta mekanismer för kontinuerlig, inkrementell datasynkronisering från din PaaS-miljö till de nya molntjänstkomponenterna (till exempel CCDM och transaktionell backend). Detta är avgörande för att bibehålla datafärskhet och minimera nedetid under cutover.
+   * **Utnyttja händelser**: Använd Adobe I/O-händelser där det är möjligt för att trigga App Builder-åtgärder för realtids- eller nästan realtidsuppdateringar från din PaaS-instans till de nya tjänsterna. Till exempel kan en produktuppdatering i PaaS utlösa en händelse som uppdaterar motsvarande post i CCDM.
+   * **API-drivna uppdateringar**: För data som inte är händelsedrivna, använd schemalagda API-anrop (via App Builder eller andra integrationsplattformar) för att hämta ändringar från PaaS och skicka dem till de nya systemen.
+   * **Felhantering och övervakning**: Implementera robust felhantering, loggning och övervakning för alla iterativa datapipelines för att säkerställa att dataintegriteten bibehålls under hela processen.
 
 ### Eftermigrering och pågående verksamhet
 
@@ -248,7 +248,7 @@ Interaktiv datamigrering fokuserar på synkronisering av inkrementella ändringa
 * Planera noggrant DNS-brytningen med minimala driftavbrott.
 * Övervaka webbplatsens hälsa och prestanda direkt efter lanseringen.
 
-**Åtgärder efter start:**
+**Operationer efter uppskjutning:**
 
 **Demonstrerar PaaS-miljön:**
 
