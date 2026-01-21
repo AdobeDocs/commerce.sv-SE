@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Verktyg för massöverföring av data
 
-Verktyget för massdatamigrering följer en distribuerad arkitektur som möjliggör säker och effektiv datamigrering från PaaS till SaaS-miljöer. Detta verktyg hjälper lösningsimplementatörer att migrera data från en befintlig Adobe Commerce on Cloud-instans (PaaS) till [!DNL Adobe Commerce as a Cloud Service] (SaaS). För mer information om migrationsprocessen, se översikten[ över ](./overview.md)migration.
+Verktyget för massdatamigrering följer en distribuerad arkitektur som möjliggör säker och effektiv datamigrering från PaaS till SaaS-miljöer. Detta verktyg hjälper lösningsimplementatörer att migrera data från en befintlig Adobe Commerce on Cloud-instans (PaaS) till [!DNL Adobe Commerce as a Cloud Service] (SaaS). För mer information om migrationsprocessen, se översikten[&#x200B; över &#x200B;](./overview.md)migration.
 
 >[!NOTE]
 >

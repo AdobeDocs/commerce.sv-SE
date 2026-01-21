@@ -72,10 +72,10 @@ I följande tabell visas en översikt över migreringsprocessen för olika butik
 
 Som visas i tabellen kommer åtgärderna för varje migration att bestå av:
 
-* **Datamigrering**—Med hjälp av[ tillhandahållna ](./bulk-data.md)migreringsverktyg för att migrera data från din befintliga instans till [!DNL Adobe Commerce as a Cloud Service].
+* **Datamigrering**—Med hjälp av[&#x200B; tillhandahållna &#x200B;](./bulk-data.md)migreringsverktyg för att migrera data från din befintliga instans till [!DNL Adobe Commerce as a Cloud Service].
 * **Storefront**—Befintliga Commerce Storefronts drivna av Edge Delivery och headless butiker kräver ingen åtgärd, men Luma-butiker kräver migrering till Commerce Storefront driven av Edge Delivery. PWA Studio-butiker kan migreras till Commerce Storefront som drivs av Edge Delivery eller underhålls i sitt nuvarande skick. Adobe kommer att tillhandahålla acceleratorer för att hjälpa till med flytt av butiker.
 * **[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)**—Skapa ett nytt mesh eller modifiera det befintliga. Adobe kommer att tillhandahålla förkonfigurerade mesh för att hjälpa till med denna process.
-* **Integrationer**—Alla integrationer måste använda antingen integrationsstartpaketet[ ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)eller REST API:[[!DNL Adobe Commerce as a Cloud Service] et](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
+* **Integrationer**—Alla integrationer måste använda antingen integrationsstartpaketet[&#x200B; &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)eller REST API:[[!DNL Adobe Commerce as a Cloud Service] et](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
 * **Anpassningar—** Alla anpassningar måste flyttas till App Builder och API Mesh.
 * **Tillgångsförvaltning**—All tillgångsförvaltning kräver migrering. Om du redan använder [!DNL AEM Assets], finns det inget behov av att migrera.
 * **Tillägg—** Alla tillägg under processen måste återskapas som utgående tillägg. I slutet av 2025 kommer Adobe att ge tillgång till våra mest populära tillägg för att minimera byggtider.
