@@ -2,11 +2,11 @@
 title: Profiler
 description: Lär dig hur du skapar och hanterar principer i  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: 845d93e367c8e2495943afe8c7d5d0a4bde990c2
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ I det här avsnittet skapar du en ny profil. Principen kan vara **STATIC** eller
    1. **Attribut** - Ange ett attribut från katalogen. Exempel: &quot;part_category&quot;. Namnet måste exakt matcha namnet på attributet i katalogen.
    1. **Operator** - Välj operatorn. Till exempel **IN**. &#x200B;
    1. **Värde Source** - Välj **STATIC**. &#x200B;
-   1. **Värde** - Ange ett värde från den attributdefinition som du tidigare angav. Ange t.ex. &quot;bromsar&quot; för att skapa ett filter för bromsdelar. &#x200B;Värdet måste matcha attributnamnet exakt.
+   1. **Värde** - Ange ett värde från den attributdefinition som du tidigare angav. Ange t.ex. &quot;bromsar&quot; för att skapa ett filter för bromsdelar.
    1. Spara värdet genom att trycka på **Enter**.
 
       Om profilen är utformad för att filtrera efter flera värden anger du varje värde separat.
