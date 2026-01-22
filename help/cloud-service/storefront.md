@@ -5,10 +5,10 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 6eda2197fde2e88292e58b2bb4fc4759f24da558
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Så här konfigurerar du [!DNL Adobe Commerce Storefront] som drivs av [!DNL Edge Delivery Services] för [!DNL Adobe Commerce as a Cloud Service] (SaaS):
 
-En mer anpassningsbar och detaljerad genomgång finns i [storefront-dokumentationen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=sv-SE).
+En mer anpassningsbar och detaljerad genomgång finns i [storefront-dokumentationen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 1. Öppna [webbplatsskaparverktyget](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -44,7 +44,8 @@ När processen är klar kan du anpassa butiken på följande sätt:
 
 Mer information finns i följande artiklar:
 
-* Mer information om hur du hanterar och visar innehåll och data i butiken finns i [Uppdatera butiksinnehåll](./use-cases.md#update-storefront-content).
-* Mer information om kontextuella experimenteringsfunktioner finns i [sammanhangsberoende experimenterande](./use-cases.md#contextual-experimentation).
-* Mer information om hur du använder generativ AI för att automatisera generering av högkvalitativt innehåll finns i [Generera variationer](./use-cases.md#generate-variations).
-* Om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med komponenter i Commerce Front och backend-data kan du läsa [[!DNL Adobe Commerce Storefront documentation]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE).
+* [Uppdaterar butiksinnehåll](./use-cases.md#update-storefront-content) - Hantera och visa innehåll och data i butiken.
+* [Sammanhangsberoende experiment](./use-cases.md#contextual-experimentation) - Skapa och hantera experiment i butiken.
+* [Generera variationer](./use-cases.md#generate-variations) - Använd generativ AI för att automatisera generering av högklassigt innehåll.
+* [Adobe Commerce Storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/) - Få detaljerad information om hur du uppdaterar webbplatsinnehåll och integrerar med Commerce klientkomponenter och backend-data.
+* [Konfigurationstjänst](https://www.aem.live/docs/config-service-setup) - Lär dig mer om hur du migrerar din butikskonfiguration från `config.json` till att använda konfigurationstjänsten, som har stöd för avancerade användningsfall som replikerad konfiguration och övertäckningar.
