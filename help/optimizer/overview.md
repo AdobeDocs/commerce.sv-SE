@@ -2,11 +2,11 @@
 title: Vad är Adobe Commerce Optimizer?
 description: Lär dig mer om  [!DNL Adobe Commerce Optimizer]  och dess huvudfunktioner.
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Med [!DNL Adobe Commerce Optimizer] kan du:
 
 I följande video visas en översikt över [!DNL Adobe Commerce Optimizer] på hög nivå:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450467?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Vem har störst nytta av [!DNL Adobe Commerce Optimizer]?
 
@@ -84,6 +84,10 @@ Viktiga funktioner:
 - **Före- och efterdatamätningar** - Tillhandahåller realtidsinsikter om hur era affärsinitiativ fungerar. Du kan visa resultatet före och efter specifika KPI:er och utvärdera effekten av ändringarna och optimera för bättre resultat. Du kan exportera resultaten i en PDF.
 - **Commerce storefront från Edge Delivery** - Med Edge kan du lansera webbplatsen snabbt med fördefinierade butikskomponenter med integrerad e-handelsfunktionalitet - inklusive produktlistningssidor, produktinformationssidor, kundvagn och utcheckning.
 - **Kundvagn och utcheckning från tredje part** - Använd API-nät och App Builder för att integrera med kundvagn- och utcheckningssystem från tredje part.
+
+>[!NOTE]
+>
+>Mer information om systemgränser och licensiering för [!DNL Adobe Commerce Optimizer]-funktioner finns i avsnittet [Gränser och gränser](boundaries-limits.md) .
 
 ## Arkitektur
 
