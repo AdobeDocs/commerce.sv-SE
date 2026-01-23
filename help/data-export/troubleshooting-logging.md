@@ -129,7 +129,7 @@ Om data saknas eller är felaktiga i Commerce Services bör du kontrollera om lo
 - Felloggen för dataexport (`commerce-data-export-errors.log`) fångar upp fel som inträffar under insamlingsfasen.
 - SaaS-exportfelloggen (`saas-export-errors.log`) fångar upp fel som inträffar under överföringsfasen.
 
-Om du ser fel som inte är relaterade till konfiguration eller tillägg från tredje part skickar du en [supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) med så mycket information som möjligt.
+Om du ser fel som inte är relaterade till konfiguration eller tillägg från tredje part skickar du en [supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) med så mycket information som möjligt.
 
 ### Lös problem med katalogsynkronisering {#resolvesync}
 
@@ -144,11 +144,11 @@ När du utlöser en omsynkronisering av data kan det ta upp till en timme innan 
 
 #### Synkronisering körs inte
 
-Om synkroniseringen inte körs enligt ett schema eller inget synkroniseras, se den här [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)-artikeln.
+Om synkroniseringen inte körs enligt ett schema eller inget synkroniseras, se den här [KnowledgeBase](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)-artikeln.
 
 #### Synkroniseringen misslyckades
 
-Om katalogsynkroniseringen har statusen **Misslyckades** skickar du en [supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Om katalogsynkroniseringen har statusen **Misslyckades** skickar du en [supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Utökad loggning
 
