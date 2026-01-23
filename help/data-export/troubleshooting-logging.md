@@ -3,7 +3,7 @@ title: Granska loggar och felsök
 description: Lär dig hur du felsöker [!DNL data export] fel med hjälp av loggarna för dataexport och saas-export.
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
+source-git-commit: a1afed7b635a2b05c5c0e0d1c9bf4a07fc5eef31
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Om du lagrar Adobe Commerce-loggar i New Relic kan du lägga till tolkningsregle
 
    - **Analysregel**
 
-     `\[%{DATA:timestamp}\] report.%{DATA:logLevel} %{GREEDYDATA:feed:json}`
+     `\[%{DATA:timestamp}\] report.%{DATA:logLevel}: %{GREEDYDATA:feed:json}`
 
 I det här exemplet läggs en regel till som gör att du kan söka efter New Relic-loggar efter en viss flödestyp, åtgärd o.s.v.
 
@@ -129,7 +129,7 @@ Om data saknas eller är felaktiga i Commerce Services bör du kontrollera om lo
 - Felloggen för dataexport (`commerce-data-export-errors.log`) fångar upp fel som inträffar under insamlingsfasen.
 - SaaS-exportfelloggen (`saas-export-errors.log`) fångar upp fel som inträffar under överföringsfasen.
 
-Om du ser fel som inte är relaterade till konfiguration eller tillägg från tredje part skickar du en [supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) med så mycket information som möjligt.
+Om du ser fel som inte är relaterade till konfiguration eller tillägg från tredje part skickar du en [supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) med så mycket information som möjligt.
 
 ### Lös problem med katalogsynkronisering {#resolvesync}
 
@@ -144,11 +144,11 @@ När du utlöser en omsynkronisering av data kan det ta upp till en timme innan 
 
 #### Synkronisering körs inte
 
-Om synkroniseringen inte körs enligt ett schema eller inget synkroniseras, se den här [KnowledgeBase](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)-artikeln.
+Om synkroniseringen inte körs enligt ett schema eller inget synkroniseras, se den här [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)-artikeln.
 
 #### Synkroniseringen misslyckades
 
-Om katalogsynkroniseringen har statusen **Misslyckades** skickar du en [supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Om katalogsynkroniseringen har statusen **Misslyckades** skickar du en [supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Utökad loggning
 
