@@ -4,9 +4,9 @@ description: Lär dig vilka data varje back office-händelse samlar in.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
-source-git-commit: 1750aee715946d3a871e021cbbee687f54d1ff09
+source-git-commit: 6ffa18a9f66b6be8cd40bda5aedc911b26fe0e1d
 workflow-type: tm+mt
-source-wordcount: '3618'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Följande visar vilka Commerce-händelser för backoffice som är tillgängliga när du installerar tillägget [!DNL Data Connection]. De data som dessa händelser samlar in skickas till Adobe Experience Platform. Du kan också skapa [anpassade händelser](custom-events.md) för att samla in ytterligare data som inte anges i kartongen.
 
-Förutom de data som samlas in av följande händelser, får du även [andra data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=sv-SE) från Adobe Experience Platform Web SDK.
+Förutom de data som samlas in av följande händelser, får du även [andra data](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) från Adobe Experience Platform Web SDK.
 
 Back office-händelser innehåller data på serversidan. Dessa data omfattar [orderstatus](#order-status), t.ex. om en order har placerats, annullerats, återbetalats, levererats eller slutförts. Data på serversidan innehåller även information om [kundprofilshändelser](#customer-profile-events), t.ex. om ett konto har skapats, uppdaterats eller tagits bort.
 
 >[!NOTE]
 >
->Alla back office-händelser innehåller fältet [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=sv-SE), som innehåller kundens e-postadress, om den är tillgänglig, och ECID.
+>Alla back office-händelser innehåller fältet [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), som innehåller kundens e-postadress, om den är tillgänglig, och ECID.
 
 ## Orderstatus
 
@@ -132,7 +132,7 @@ I följande tabell beskrivs de data som samlats in för den här händelsen.
 
 | Beskrivning | XDM-händelsenamn |
 |---|---|
-| Utlöses när en order skickas. | `commerce.backofficeOrderItemsShipped` |
+| Utlöses när en orderartikel skickas. | `commerce.backofficeOrderItemsShipped` |
 
 #### Data som samlats in från orderItemsShipped
 
@@ -408,7 +408,7 @@ Profilhändelser som hämtats från serversidan innehåller kontoinformation, so
 
 >[!NOTE]
 >
->Varje kundprofilhändelse innehåller även fältet [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=sv-SE), som innehåller det systemgenererade Commerce-kund-ID:t som primär identifierare för profilen och ett e-post-ID som används som en sekundär identifierare. [Lär dig](custom-identities.md) hur du skapar anpassade identitetsattribut för att förbättra identifieringen av kundprofiler.
+>Varje kundprofilhändelse innehåller även fältet [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), som innehåller det systemgenererade Commerce-kund-ID:t som primär identifierare för profilen och ett e-post-ID som används som en sekundär identifierare. [Lär dig](custom-identities.md) hur du skapar anpassade identitetsattribut för att förbättra identifieringen av kundprofiler.
 
 ### accountCreated
 
