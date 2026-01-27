@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1e92a2aec0429225c89e986884f5de920e6a1928
+source-git-commit: 0aa2a1cac270fd1330666d9a23a6cc201e781427
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 0%
 ## Nyheter
 
 Den här sidan innehåller de ändringar som har gjorts under de senaste 60 dagarna. Vi utelämnar alla mindre uppdateringar, som kopieringsredigering, från den här listan.
+
+### 22 januari 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beskrivning</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Uppdaterade installationsguiderna för Storefront för <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> och <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> så att de innehåller information om hur du migrerar Commerce storefront-konfigurationen för Edge Delivery Services så att den kan använda konfigurationstjänsten i stället för <code class="language-plaintext highlighter-rouge">config.json</code> -filen i standarddatabasen för butiker. Adobe rekommenderar att du använder konfigurationstjänsten för att hantera konfigurationen för butiker som distribueras på Edge Delivery Services.</p>
+</td>
+      <td>
+        Feedback, teknisk
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e1fd1f6fbfb326f4110660a6097bc73eff9e0fc6">bekräfta</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 21 januari 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beskrivning</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Versionsinformation för sandlådan har flyttats till produktion.</p>
+</td>
+      <td>
+        Viktig uppdatering
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/3b90cb8e0067089d7079ca4e21e050a5488c7dcd">bekräfta</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 20 januari 2026
 
@@ -45,7 +89,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/release-notes#latest">Versionsinformationen</a> för Adobe Commerce as a Cloud Service har uppdaterats.</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">Versionsinformationen</a> för Adobe Commerce as a Cloud Service har uppdaterats.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -67,7 +111,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Avsnittet <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/boundaries-limits">Gränser och gränser</a> för Adobe Commerce Optimizer har uppdaterats för att beskriva licensbegränsningar och systemgränser, lägga till begränsningsbeskrivningar och inkludera vägledning för kapacitetsplanering och förebyggande av prestandaproblem.</p>
+      <td><p>Avsnittet <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">Gränser och gränser</a> för Adobe Commerce Optimizer har uppdaterats för att beskriva licensbegränsningar och systemgränser, lägga till begränsningsbeskrivningar och inkludera vägledning för kapacitetsplanering och förebyggande av prestandaproblem.</p>
 </td>
       <td>
         Feedback, teknisk
@@ -89,7 +133,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Versionsinformation har lagts till för <a href="https://experienceleague.adobe.com/sv/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.16 och 103.4.17</a> samt <a href="https://experienceleague.adobe.com/sv/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter version 1.10.0</a>.</p>
+      <td><p>Versionsinformation har lagts till för <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.16 och 103.4.17</a> samt <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter version 1.10.0</a>.</p>
 </td>
       <td>
         Teknisk
@@ -111,7 +155,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">Konfigurera AEM-avsnittet</a> i dokumentationen för AEM Assets Integration har uppdaterats.</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">Konfigurera AEM-avsnittet</a> i dokumentationen för AEM Assets Integration har uppdaterats.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -133,7 +177,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Nya ämnen har lagts till:<br />- <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/manage-results/opportunities">Möjligheter</a> att dokumentera AI-baserade rekommendationer för webbplatsoptimering genom integrering med Adobe Sites Optimizer, inklusive autoupptäckt och autokorrigerade arbetsflöden för att förbättra SEO, metadata och produktdatakvaliteten.<br />- <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/catalog-layer"> Kataloklager</a> förklarar hur du ändrar produktdata utan att ändra källdata, inklusive hantering av lagerprioritet och integrering med Sites Optimizer autokorrigeringsfunktioner.</p>
+      <td><p>Nya ämnen har lagts till:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities">Möjligheter</a> att dokumentera AI-baserade rekommendationer för webbplatsoptimering genom integrering med Adobe Sites Optimizer, inklusive autoupptäckt och autokorrigerade arbetsflöden för att förbättra SEO, metadata och produktdatakvaliteten.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer"> Kataloklager</a> förklarar hur du ändrar produktdata utan att ändra källdata, inklusive hantering av lagerprioritet och integrering med Sites Optimizer autokorrigeringsfunktioner.</p>
 </td>
       <td>
         Viktig uppdatering, nytt ämne
@@ -155,7 +199,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdatering av rekommendationsfunktionen i Commerce Optimizer-dokumentationen när <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">förhandsgranskningsfönstret</a> stöds nu.</p>
+      <td><p>Uppdatering av rekommendationsfunktionen i Commerce Optimizer-dokumentationen när <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">förhandsgranskningsfönstret</a> stöds nu.</p>
 </td>
       <td>
         Teknisk
