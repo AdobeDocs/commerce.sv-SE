@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Live Search] Användarhandbok'
 user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Live Search] från Adobe Commerce.
 role: Admin
 feature: Services, Search
-source-git-commit: 2796cefcc9edf6247efdb9ad275048566e94c559
+source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '81'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,7 @@ ht-degree: 3%
    - [StoreFront-widgetar](storefront-widgets.md)
    - [Produktlistsida](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
+   - [Migrera till PLP-widget](migrate-to-plp.md)
 - Administratör {#live-search-admin}
    - [Prestanda](performance.md)
    - Fasetter {#facets}
@@ -45,4 +46,4 @@ ht-degree: 3%
    - [GraphQL](graphql.md)
    - [Inställningar](settings.md)
 - [Utvecklarhandbok](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

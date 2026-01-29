@@ -2,9 +2,9 @@
 title: Sidwidget för produktlista
 description: Aktivera och formatera  [!DNL Live Search Product Listing Page Widget]
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
-source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
+source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,14 @@ När tjänsten [!DNL Live Search] är installerad konverteras standardsökfunkti
 
 PLP-widgeten [!DNL Live Search] är aktiverad som standard för nya installationer.
 
-Om du uppgraderar [!DNL Live Search] och PLP-widgeten redan har inaktiverats, förblir det så. Så här aktiverar du den:
+Om du uppgraderar [!DNL Live Search] och PLP-widgeten redan har inaktiverats, förblir det så.
+
+>[!NOTE]
+>
+>Om du migrerar från det borttagna sökkortet finns mer information i [migreringsguiden](migrate-to-plp.md) om scenarier, förutsättningar och steg-för-steg-instruktioner.
+
+Aktivera PLP-widgeten:
+
 1. Gå till Lager → Inställningar → Konfiguration i Adobe Commerce Admin.
 1. Klicka på **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]** i den vänstra navigeringen.
 1. Klicka på avsnittet [!UICONTROL Storefront Features].
