@@ -319,7 +319,7 @@ I det här scenariot finns det ett känt fel där aktivering av PLP-widgeten kan
 
 **Alternativ 3: Ersätt GTM med Adobe Analytics**
 
-- Överväg att migrera till [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) om det är tillämpligt.
+- Överväg att migrera till [Adobe Analytics](https://business.adobe.com/se/products/adobe-analytics.html) om det är tillämpligt.
 - Kontakta kundkonstruktionsavdelningen för vägledning.
 
 **Vem du ska kontakta**: Skicka in en supportanmälan för GTM-kompatibilitetsuppdateringar eller kundteknisk hjälp.
@@ -444,7 +444,7 @@ Kontakta lämplig resurs baserat på dina specifika behov.
 - Headless- eller PWA-implementeringar
 - Anpassad händelsespårning
 
-Om du vill kontakta Adobe Support läser du [användarhandboken för hjälpcentret](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Om du vill kontakta Adobe Support läser du [användarhandboken för hjälpcentret](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ## Vanliga frågor
 

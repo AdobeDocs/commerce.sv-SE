@@ -46,4 +46,4 @@ ht-degree: 3%
    - [GraphQL](graphql.md)
    - [Inställningar](settings.md)
 - [Utvecklarhandbok](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)
