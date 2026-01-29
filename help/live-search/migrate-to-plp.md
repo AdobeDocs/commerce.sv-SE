@@ -30,7 +30,7 @@ Innan du startar migreringen:
 
 1. Säkerhetskopiera databasen och koden.
 1. Dokumentera aktuella anpassningar.
-1. Gränser och gränser [ för att kontrollera att PLP-widgeten uppfyller dina behov.](boundaries-limits.md)
+1. Gränser och gränser [&#x200B; för att kontrollera att PLP-widgeten uppfyller dina behov.](boundaries-limits.md)
 1. Schemalägg migrering under en lågtrafikperiod.
 1. Meddela berörda parter om eventuella förändringar i butikens beteende.
 
