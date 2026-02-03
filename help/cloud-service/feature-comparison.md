@@ -5,9 +5,9 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Developer, Admin, Leader
 level: Intermediate
 exl-id: c8c9a0b4-f47c-46ec-bc9d-39dee9641f59
-source-git-commit: 5e4481dfd7259a07bda58a1e945b086e9f1c1805
+source-git-commit: e8e0c9f6a14232abc1332b48df7ae8bc3b955900
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Adobe Commerce erbjuder tre driftsättningsmodeller:
 
-- [!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
-- [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} [Adobe Commerce i molnet](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/overview) (PaaS)
-- [Adobe Commerce](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/overview) (lokal)
+- [!BADGE Endast SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
+- [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} [Adobe Commerce i molnet](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
+- [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (lokal)
 
 Jämförelsen fokuserar på skillnaderna mellan SaaS (software-as-a-service) och PaaS-modeller (platform-as-a-service). Dessa modeller ger olika nivåer av anpassning, utbyggbarhet och kontroll över er Commerce-implementering.
 
@@ -28,7 +28,7 @@ Jämförelsen fokuserar på skillnaderna mellan SaaS (software-as-a-service) och
 
 ## Funktioner för butikshantering
 
-[Commerce Admin-gränssnittet](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/guide-overview) är det primära gränssnittet för att komma åt funktioner för att hantera backend-butiksåtgärder, lager, priser, kampanjer och kundinteraktioner. [!DNL Adobe Commerce as a Cloud Service] erbjuder dock unika lösningar som ersätter några av de välkända funktionerna i [!DNL Adobe Commerce on Cloud] och lokala projekt.
+[Commerce Admin-gränssnittet](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) är det primära gränssnittet för att komma åt funktioner för att hantera backend-butiksåtgärder, lager, priser, kampanjer och kundinteraktioner. [!DNL Adobe Commerce as a Cloud Service] erbjuder dock unika lösningar som ersätter några av de välkända funktionerna i [!DNL Adobe Commerce on Cloud] och lokala projekt.
 
 I följande tabell beskrivs de funktioner och ersättningslösningar som finns i [!DNL Adobe Commerce as a Cloud Service]:
 
@@ -36,29 +36,29 @@ I följande tabell beskrivs de funktioner och ersättningslösningar som finns i
     <thead>
         <tr>
             <th>Funktion</th>
-            <th>PaaS-modellen [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}</th>
-            <th>SaaS-modellen [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast för Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (Adobe-hanterad SaaS-infrastruktur)."}</th>
+            <th>PaaS-modellen [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}</th>
+            <th>SaaS-modellen [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast för Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (Adobe-hanterad SaaS-infrastruktur)."}</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Digital resurshantering</td>
-            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Mediegalleri</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Mediegalleri</a></td>
             <td><a href="../aem-assets-integration/overview.md">Produktbilder</a></td>
         </tr>
         <tr>
             <td>Innehållshantering</td>
-            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/guide-overview">Content Management System (CMS)</a>, <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/guide-overview">Page Builder</a>, <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL-omskrivningar</a></td>
-            <td><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/?lang=sv-SE">Storefront Builder</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">Content Management System (CMS)</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">Page Builder</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL-omskrivningar</a></td>
+            <td><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">Storefront Builder</a></td>
         </tr>
         <tr>
             <td>Kataloghantering</td>
-            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/staging/content-staging">Mellanlagring av innehåll</a>, <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">Mellanlagring av innehåll</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
             <td><a href="../catalog-service/overview.md">Katalogtjänst</a></td>
         </tr>
         <tr>
             <td>Betalningar</td>
-            <td><a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/payments/payments">Betalningslösningar</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">Betalningslösningar</a></td>
             <td><a href="../payment-services/guide-overview.md">Betalningstjänster</a></td>
         </tr>
         <tr>
@@ -75,7 +75,7 @@ I följande tabell beskrivs de funktioner och ersättningslösningar som finns i
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup> Core <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/b2b/guide-overview">B2B-funktioner</a>, som företagsledning och offert, finns tillgängliga i SaaS. Branschspecifika anpassningar kan dock kräva ytterligare implementeringsåtgärder.
+                <sup>1</sup> Core <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B-funktioner</a>, som företagsledning och offert, finns tillgängliga i SaaS. Branschspecifika anpassningar kan dock kräva ytterligare implementeringsåtgärder.
             </td>
         </tr>
     </tfoot>
@@ -89,8 +89,8 @@ I följande tabell jämförs plattformsfunktioner och utökningsfunktioner för 
     <thead>
         <tr>
             <th>Funktion</th>
-            <th>PaaS-modellen [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}</th>
-            <th>SaaS-modellen [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast för Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (Adobe-hanterad SaaS-infrastruktur)."}</th>
+            <th>PaaS-modellen [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}</th>
+            <th>SaaS-modellen [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast för Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (Adobe-hanterad SaaS-infrastruktur)."}</th>
         </tr>
     </thead>
     <tbody>
@@ -170,7 +170,7 @@ I följande tabell jämförs plattformsfunktioner och utökningsfunktioner för 
         </tr>
         <tr>
             <td>App Marketplace</td>
-            <td>[[!DNL Magento Marketplace]](https://marketplace.magento.com/) (PHP-tillägg) och [[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com) för [!DNL App Builder] program (rekommenderas)</td>
+            <td>[Magento Marketplace](https://marketplace.magento.com/) (PHP-tillägg) och [Exchange Marketplace](https://commercemarketplace.adobe.com) för [!DNL App Builder] appar (rekommenderas)</td>
             <td>[!DNL App Builder] appar från [[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com)</td>
         </tr>
         <tr>
