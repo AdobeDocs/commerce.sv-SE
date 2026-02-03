@@ -1,7 +1,7 @@
 ---
 title: Skapa och hantera rekommendationer
 description: Lär dig hur du skapar och hanterar rekommendationer.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
@@ -65,7 +65,7 @@ När du har skapat en rekommendation måste du hämta dess ID för att implement
 
 1. Kopiera ID:t i avsnittet **Rekommendation-ID**.
 
-1. Använd det här ID:t för att konfigurera [rekommendationstillägget](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) i din Edge Delivery Services-butik.
+1. Använd det här ID:t för att konfigurera [rekommendationstillägget](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=sv-SE) i din Edge Delivery Services-butik.
 
 ## Hantera befintliga rekommendationer
 
