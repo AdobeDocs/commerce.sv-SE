@@ -1,11 +1,11 @@
 ---
 title: Skapa och hantera rekommendationer
 description: Lär dig hur du skapar och hanterar rekommendationer.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
    - **Aktivera** om du vill aktivera rekommendationsenheten på din butik.
 
-1. Kopiera rekommendation-ID när du uppmanas till det. Använd det här ID:t för att identifiera vilken rekommendationsenhet som används i rekommendationslistrutan i din Edge Delivery Services-butik.
+   Din rekommendation visas på arbetsytan Rekommendationer. Om du vill använda din rekommendation i din butik måste du hitta [rekommendation-ID](#get-recommendation-id).
 
 >[!NOTE]
 >
@@ -50,6 +50,22 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 >[!IMPORTANT]
 >
 >Vissa webbläsare kan blockera viktiga skript som förhindrar att rekommendationerna fungerar som de ska.
+
+## Hämta rekommendation-ID
+
+När du har skapat en rekommendation måste du hämta dess ID för att implementera rekommendationsenheten på din butik.
+
+1. Välj rekommendation på sidan **Rekommendationer**.
+
+1. Klicka på informationsikonen (![informationsikonen](../../assets/info-icon.png)) bredvid rekommendationsnamnet.
+
+   Sidan **Information om rekommendationsenhet** visas.
+
+   ![Hämta rekommendation-ID](../../assets/get-rec-id.png)
+
+1. Kopiera ID:t i avsnittet **Rekommendation-ID**.
+
+1. Använd det här ID:t för att konfigurera [rekommendationstillägget](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) i din Edge Delivery Services-butik.
 
 ## Hantera befintliga rekommendationer
 
