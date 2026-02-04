@@ -30,7 +30,7 @@ Bland uppdateringarna finns:
 
 ## 103.4.18 Utgåva
 
-![Åtgärdade](../assets/fix.svg) ett problem där objektbatchar kunde överskrida den tillåtna gränsen under uppdateringar, vilket orsakade `items_limit_exceeded` fel vid synkronisering av data till [Commerce-tjänster](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) eller [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
+![Åtgärdade](../assets/fix.svg) ett problem där objektbatchar kunde överskrida den tillåtna gränsen under uppdateringar, vilket orsakade `items_limit_exceeded` fel vid synkronisering av data till [Commerce-tjänster](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home) eller [Adobe Commerce Optimizer](https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
 ![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Förbättrad tillförlitlighet vid export av produktdata genom att lägga till logik för att registrera misslyckade objekt vid insamling av produktalternativ. <!--CCSAAS-4458-->
 
 ## 103.4.17 Utgåva   
@@ -46,7 +46,7 @@ Bland uppdateringarna finns:
 
 ## 103.4.15 Utgåva
 
-![Nytt](../assets/new.svg) Stöd för statustillägget Synkronisering av dataflöden har lagts till för att övervaka och felsöka dataöverföringar från Adobe Commerce till anslutna tjänster (katalogtjänst, Live Search och produktrekommendationer). Mer information om hur du installerar och använder det här tillägget finns i [Statusövervakning för synkronisering av dataflöden](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) i *Commerce Admin Guide*. <!--MDEE-954-->
+![Nytt](../assets/new.svg) Stöd för statustillägget Synkronisering av dataflöden har lagts till för att övervaka och felsöka dataöverföringar från Adobe Commerce till anslutna tjänster (katalogtjänst, Live Search och produktrekommendationer). Mer information om hur du installerar och använder det här tillägget finns i [Statusövervakning för synkronisering av dataflöden](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=sv-SE) i *Commerce Admin Guide*. <!--MDEE-954-->
 
 ## 103.4.14 Utgåva
 
@@ -63,7 +63,7 @@ Bland uppdateringarna finns:
 
 ## 103.4.11 Utgåva
 
-![Nytt](../assets/new.svg) [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
+![Nytt](../assets/new.svg) [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 Ytterligare stöd för ytterligare produktattribut som inkluderar momsklass, attributuppsättning och lagerdata från Commerce produktkonfigurationer i produktflödet. Kunder som vill inkludera dessa attribut i produktexportflöden måste lägga till modulen Extra produktattribut i sina Adobe Commerce-projekt. Se [Lägg till momsklass, attributuppsättning och lagerattribut](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![&#x200B; Åtgärda &#x200B;](../assets/fix.svg) Ett problem som orsakade felaktig synkronisering av borttagna produktuppdateringar har åtgärdats om ett fel uppstod under ett fullständigt produktindex. Nu synkroniseras alla produktborttagningar korrekt även om ett fel inträffar under indexeringsprocessen. <!--MDEE-1144-->
 
