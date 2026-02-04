@@ -18,7 +18,7 @@ De här versionsinformationen beskriver de senaste versionerna av tillägget [!D
 Bland uppdateringarna finns:
 
 ![Nya](../assets/new.svg) nya funktioner
-![Korrigera ](../assets/fix.svg) Korrigeringar och förbättringar
+![Korrigera &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
 
@@ -31,14 +31,14 @@ Bland uppdateringarna finns:
 ## 103.4.18 Utgåva
 
 ![Åtgärdade](../assets/fix.svg) ett problem där objektbatchar kunde överskrida den tillåtna gränsen under uppdateringar, vilket orsakade `items_limit_exceeded` fel vid synkronisering av data till [Commerce-tjänster](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) eller [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
-![ Korrigera ](../assets/fix.svg) Förbättrad tillförlitlighet vid export av produktdata genom att lägga till logik för att registrera misslyckade objekt vid insamling av produktalternativ. <!--CCSAAS-4458-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Förbättrad tillförlitlighet vid export av produktdata genom att lägga till logik för att registrera misslyckade objekt vid insamling av produktalternativ. <!--CCSAAS-4458-->
 
 ## 103.4.17 Utgåva   
 
 ![Korrigera](../assets/fix.svg) Uppdaterade dataexporttillägget (`magento/module-data-exporter`) för att ta bort `magento/module-analytics`-beroendet, vilket inte längre krävs.<!--MDEE-1260--> 
-![ Korrigera ](../assets/fix.svg) Ett problem har korrigerats där en produkts nivåpriser inte tog bort gamla värden, vilket resulterade i dubbla eller inaktuella nivåprisposter. Nu visas endast aktuella nivåpriser efter uppdateringar. <!--MDEE-1157-->  
-![ Korrigera ](../assets/fix.svg) Ett problem där produkter med priset $0 eller 100 % rabatt inte visades som kostnadsfria i butiken har åtgärdats. Priserna för butiker och varukorgar är nu enhetliga. <!--MDEE-1159-->  
-![ Korrigera ](../assets/fix.svg) Symfony 7.4 LTS-kompatibilitet har lagts till i dataexporttilläggen för att ge stöd för framtida uppgraderingar och integreringar. <!--MDEE-1272-->   
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Ett problem har korrigerats där en produkts nivåpriser inte tog bort gamla värden, vilket resulterade i dubbla eller inaktuella nivåprisposter. Nu visas endast aktuella nivåpriser efter uppdateringar. <!--MDEE-1157-->  
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Ett problem där produkter med priset $0 eller 100 % rabatt inte visades som kostnadsfria i butiken har åtgärdats. Priserna för butiker och varukorgar är nu enhetliga. <!--MDEE-1159-->  
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Symfony 7.4 LTS-kompatibilitet har lagts till i dataexporttilläggen för att ge stöd för framtida uppgraderingar och integreringar. <!--MDEE-1272-->   
 
 ## 103.4.16 Utgåva   
 
@@ -55,7 +55,7 @@ Bland uppdateringarna finns:
 ## 103.4.13 Utgåva
 
 ![Åtgärda](../assets/fix.svg) Ett problem där produktflödesindexet återställdes när inställningarna för webbkonfigurationen redigerades har korrigerats. <!--MDEE-1154-->
-![ Åtgärda ](../assets/fix.svg) Ett problem där produktalternativ och varianter för paket kunde visas flera gånger i svaret på katalogtjänsten har åtgärdats, särskilt för produkter som tilldelats flera butiker eller webbplatser. Med den här korrigeringen returneras nu varje paketalternativ/variant endast en gång per produkt, vilket ger korrekta och enhetliga butiksskyltar för både handlare och kunder. <!--MDEE-1167-->
+![&#x200B; Åtgärda &#x200B;](../assets/fix.svg) Ett problem där produktalternativ och varianter för paket kunde visas flera gånger i svaret på katalogtjänsten har åtgärdats, särskilt för produkter som tilldelats flera butiker eller webbplatser. Med den här korrigeringen returneras nu varje paketalternativ/variant endast en gång per produkt, vilket ger korrekta och enhetliga butiksskyltar för både handlare och kunder. <!--MDEE-1167-->
 
 ## 103.4.12 Utgåva
 
@@ -65,24 +65,24 @@ Bland uppdateringarna finns:
 
 ![Nytt](../assets/new.svg) [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}
 Ytterligare stöd för ytterligare produktattribut som inkluderar momsklass, attributuppsättning och lagerdata från Commerce produktkonfigurationer i produktflödet. Kunder som vill inkludera dessa attribut i produktexportflöden måste lägga till modulen Extra produktattribut i sina Adobe Commerce-projekt. Se [Lägg till momsklass, attributuppsättning och lagerattribut](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
-![ Åtgärda ](../assets/fix.svg) Ett problem som orsakade felaktig synkronisering av borttagna produktuppdateringar har åtgärdats om ett fel uppstod under ett fullständigt produktindex. Nu synkroniseras alla produktborttagningar korrekt även om ett fel inträffar under indexeringsprocessen. <!--MDEE-1144-->
+![&#x200B; Åtgärda &#x200B;](../assets/fix.svg) Ett problem som orsakade felaktig synkronisering av borttagna produktuppdateringar har åtgärdats om ett fel uppstod under ett fullständigt produktindex. Nu synkroniseras alla produktborttagningar korrekt även om ett fel inträffar under indexeringsprocessen. <!--MDEE-1144-->
 
 ## 103.4.10 Utgåva
 
 ![Korrigera](../assets/fix.svg) Ett problem där fel typ (`text` i stället för `OBJECT`) returnerades för vissa dynamiskt skapade attribut har korrigerats. Nu returneras alltid rätt typinformation, vilket eliminerar behovet av manuell omsynkronisering eller tillfälliga lösningar.<!--MDEE-1131-->
-![ Korrigera ](../assets/fix.svg) Ett problem där insamling av produktdata under partiell synkronisering kunde misslyckas på grund av fel i LowStock-lagerprovidern har åtgärdats. Med den här korrigeringen exporteras produktdata på ett tillförlitligt sätt och inga produkt-ID:n hoppas över på grund av fel relaterade till LowStock.<!--MDEE-1132-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Ett problem där insamling av produktdata under partiell synkronisering kunde misslyckas på grund av fel i LowStock-lagerprovidern har åtgärdats. Med den här korrigeringen exporteras produktdata på ett tillförlitligt sätt och inga produkt-ID:n hoppas över på grund av fel relaterade till LowStock.<!--MDEE-1132-->
 
 ## 103.4.9 Utgåva
 
 ![Korrigera](../assets/fix.svg) Ett problem där produktprisfeeds inte genererades om när en produkt togs bort eller när produktens SKU ändrades har korrigerats.<!--MDEE-1125-->
-![ Korrigera ](../assets/fix.svg) Förbättrad bearbetning av produktuppdateringar för att säkerställa att ändringarna återspeglas korrekt när du uppdaterar en nyskapad produkt med samma SKU som en tidigare borttagen produkt. Produktsynkroniseringen använder nu uppdaterade produkt-ID:n korrekt, vilket ger korrekt och tillförlitlig dataexport.<!--MDEE-1126-->
-![ Åtgärda ](../assets/fix.svg) Ett problem där katalogtjänsten kunde returnera inaktuella variantdata för konfigurerbara produkter genom att säkerställa att produktuppdateringshändelser publiceras efter attributborttagningar har åtgärdats.<!--MDEE-1127-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Förbättrad bearbetning av produktuppdateringar för att säkerställa att ändringarna återspeglas korrekt när du uppdaterar en nyskapad produkt med samma SKU som en tidigare borttagen produkt. Produktsynkroniseringen använder nu uppdaterade produkt-ID:n korrekt, vilket ger korrekt och tillförlitlig dataexport.<!--MDEE-1126-->
+![&#x200B; Åtgärda &#x200B;](../assets/fix.svg) Ett problem där katalogtjänsten kunde returnera inaktuella variantdata för konfigurerbara produkter genom att säkerställa att produktuppdateringshändelser publiceras efter attributborttagningar har åtgärdats.<!--MDEE-1127-->
 
 ## 103.4.8 Utgåva
 
 ![Ny](../assets/new.svg) har lagt till information om nivåpris i prisflödet. <!--MDEE-1070-->
-![ Korrigera ](../assets/fix.svg) Tillägget för dataexport exporterar nu korrekt webbplatsomfattande paketpriser, vilket säkerställer att butikspriserna återspeglar korrekta värden baserade på konfigurationen &quot;Katalogens prisomfång&quot;.<!--MDEE-1115-->
-![ Korrigera ](../assets/fix.svg) Tidigare synkroniserades produkter med felaktig `lowStock=true` status när Inventory management (Inventory management med flera källor) med tröskelkonfiguration användes. Det här problemet har åtgärdats för att säkerställa korrekt rapportering av låga lagernivåer.<!--MDEE-1113-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Tillägget för dataexport exporterar nu korrekt webbplatsomfattande paketpriser, vilket säkerställer att butikspriserna återspeglar korrekta värden baserade på konfigurationen &quot;Katalogens prisomfång&quot;.<!--MDEE-1115-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Tidigare synkroniserades produkter med felaktig `lowStock=true` status när Inventory management (Inventory management med flera källor) med tröskelkonfiguration användes. Det här problemet har åtgärdats för att säkerställa korrekt rapportering av låga lagernivåer.<!--MDEE-1113-->
 
 ## 103.4.7 Utgåva
 
@@ -91,20 +91,20 @@ Ytterligare stöd för ytterligare produktattribut som inkluderar momsklass, att
 ## 103.4.6 Utgåva
 
 ![Korrigera](../assets/fix.svg) Exportera Adobe Commerce nedladdningsbara produktdata med attributet `ac_downloadable` för användning med Adobe Commerce Optimizer. <!--MDEE-1043-->
-![ Åtgärda ](../assets/fix.svg) Allvarliga installationsfel för Adobe Commerce version 2.4.4. <!--MDEE-1074-->
+![&#x200B; Åtgärda &#x200B;](../assets/fix.svg) Allvarliga installationsfel för Adobe Commerce version 2.4.4. <!--MDEE-1074-->
 
 ## 103.4.5 Utgåva
 
 ![Ny](../assets/new.svg) SaaS-dataexport har nu stöd för produkttypen Adobe Commerce `giftcard`. I dataflödet exporteras presentkortsprodukter som enkla produkter med produktattributtypen `ac_giftcard`. <!--MDEE-1042-->
-![ Korrigera ](../assets/fix.svg) Förbättrad felrapportering vid dataexport. Loggarna innehåller nu mer detaljerade felmeddelanden, inklusive den ursprungliga tekniska informationen som gör det enklare att felsöka och spåra fel. <!--MDEE-1064-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Förbättrad felrapportering vid dataexport. Loggarna innehåller nu mer detaljerade felmeddelanden, inklusive den ursprungliga tekniska informationen som gör det enklare att felsöka och spåra fel. <!--MDEE-1064-->
 
 ## 103.4.4 Utgåva
 
 ![Nytt](../assets/new.svg) har lagt till ett varningsmeddelande som visas när argumentet `cleanup-feed` läggs till i CLI-kommandot `saas:resync`. Alternativet `--cleanup-feed` bör användas med försiktighet och endast i specifika scenarier som efter miljörensning eller med alternativet `--dry-run`. Om du använder den i andra fall kan det leda till dataförlust och synkroniseringsproblem. <!--MDEE-1047-->
-![ Korrigera ](../assets/fix.svg) `x-request-id` har lagts till från serversvaret för förbättrad spårbarhet. <!--MDEE-1041-->
-![ Korrigera ](../assets/fix.svg) Ett problem där synkroniseringsstatusen inte sparades för hela feed-batchen har korrigerats, vilket ledde till onödig omsynkronisering. <!--MDEE-1049-->
-![ Korrigera ](../assets/fix.svg) Ett fel har korrigerats där alla feeds i feed-batchen hoppades över under synkroniseringen om en feed innehöll ett fel. <!--MDEE-976-->
-![ Korrigera ](../assets/fix.svg) Stöd för dimensioner har lagts till i kategoribehörighetsindexeraren. <!--MDEE-654-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) `x-request-id` har lagts till från serversvaret för förbättrad spårbarhet. <!--MDEE-1041-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Ett problem där synkroniseringsstatusen inte sparades för hela feed-batchen har korrigerats, vilket ledde till onödig omsynkronisering. <!--MDEE-1049-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Ett fel har korrigerats där alla feeds i feed-batchen hoppades över under synkroniseringen om en feed innehöll ett fel. <!--MDEE-976-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Stöd för dimensioner har lagts till i kategoribehörighetsindexeraren. <!--MDEE-654-->
 
 ## 103.4.3 Utgåva
 
@@ -135,12 +135,12 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 ## 103.3.20 Utgåva
 
 ![Åtgärda](../assets/fix.svg) ej spårbara `BulkException` fel i `cron.log` genom att förbättra meddelanden för fel relaterade till kronijobbsfel för export av katalogdata.<!--MDEE-966-->
-![ Korrigera ](../assets/fix.svg) Förbättrade prestanda för produktsynkroniseringsprocessen på instanser med ett stort antal butiksvyer. <!--MDEE-974-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Förbättrade prestanda för produktsynkroniseringsprocessen på instanser med ett stort antal butiksvyer. <!--MDEE-974-->
 
 ## 103.3.19 Utgåva
 
 ![Korrigera](../assets/fix.svg) Uppdaterade tillägget för dataexport för att förbättra utbyggbarheten för feeds. <!--MDEE-936-->
-![ Korrigera ](../assets/fix.svg) Dataexportprocessorn verifierar nu indexerarens status före en fullständig omsynkronisering för att undvika oavsiktlig dataförlust i flödestabellen.
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Dataexportprocessorn verifierar nu indexerarens status före en fullständig omsynkronisering för att undvika oavsiktlig dataförlust i flödestabellen.
 
 ## 103.3.18 Utgåva
 
@@ -157,9 +157,9 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 ## 103.3.15 Utgåva
 
 ![Korrigera](../assets/fix.svg) Säkerställde stabil funktion för integreringstester på äldre konfigurationer. <!--MDEE-869-->
-![ Korrigera ](../assets/fix.svg) Sluta sprida alternativ för onödiga attribut. <!--MDEE-882-->
-![ Korrigera ](../assets/fix.svg) Felmeddelandet som skickades till dataexportloggen när serialisering av data misslyckades har åtgärdats. <!--MDEE-913-->
-![ Korrigera ](../assets/fix.svg) Förbättrade tillförlitligheten för enkla produktuppdateringar med extra testtäckning. <!--MDEE-886-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Sluta sprida alternativ för onödiga attribut. <!--MDEE-882-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Felmeddelandet som skickades till dataexportloggen när serialisering av data misslyckades har åtgärdats. <!--MDEE-913-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Förbättrade tillförlitligheten för enkla produktuppdateringar med extra testtäckning. <!--MDEE-886-->
 
 ## 103.3.14 Utgåva
 
@@ -176,12 +176,12 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 ## 103.3.11 Utgåva
 
 ![Korrigera](../assets/fix.svg) Dataexporttjänsten skickar nu specialprisdata för paketprodukter som en procentandel, vilket korrigerar en tidigare utgåva där den skickades som ett slutligt pris. <!--MDEE-854-->
-![ Korrigera ](../assets/fix.svg) Monolog-implementeringen har uppdaterats för kompatibilitet med Monolog 3. <!--MDEE-858-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Monolog-implementeringen har uppdaterats för kompatibilitet med Monolog 3. <!--MDEE-858-->
 
 ## 103.3.10 Utgåva
 
 ![Korrigera](../assets/fix.svg) Flera lagringsgranskningsfiltreringar har korrigerats för den anpassade produktalternativfeeden. <!--MDEE-842-->
-![ Korrigera ](../assets/fix.svg) Ogiltiga feeds skickas inte om förrän flödets hash-värde har ändrats.<!--MDEE-848-->
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Ogiltiga feeds skickas inte om förrän flödets hash-värde har ändrats.<!--MDEE-848-->
 
 ## 103.3.9 Utgåva
 
@@ -190,8 +190,8 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 ## 103.3.8 Release
 
 ![Åtgärda](../assets/fix.svg) Inaktiverade konfigurationsalternativ exporteras inte längre som aktiva alternativ.<!--MDEE-812-->
-![ Korrigera ](../assets/fix.svg) Alternativ och värden uppdateras nu för en konfigurerbar produkt när ändringar görs i en underordnad produkt. <!--MDEE-835-->
-![ Nytt ](../assets/new.svg) Förbättrade möjligheten att inkludera ytterligare systemattributdata i produktattributsflödet.
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Alternativ och värden uppdateras nu för en konfigurerbar produkt när ändringar görs i en underordnad produkt. <!--MDEE-835-->
+![&#x200B; Nytt &#x200B;](../assets/new.svg) Förbättrade möjligheten att inkludera ytterligare systemattributdata i produktattributsflödet.
 
 ## 103.3.7 Utgåva
 
