@@ -3,16 +3,16 @@ title: Anpassad automatisk matchning
 description: Läs om hur anpassad automatisk matchning är särskilt användbar för handlare med komplex matchningslogik eller de som förlitar sig på ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
+source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
 # Anpassad automatisk matchning
 
-Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) inte är anpassad efter dina specifika affärskrav väljer du det anpassade matchningsalternativet. Det här alternativet stöder användningen av [Adobe Developer App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) för att utveckla ett anpassat matchningsprogram som hanterar komplex matchningslogik, eller resurser från ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
+Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) inte är anpassad efter dina specifika affärskrav väljer du det anpassade matchningsalternativet. Det här alternativet stöder användningen av [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) för att utveckla ett anpassat matchningsprogram som hanterar komplex matchningslogik, eller resurser från ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
 
 ## Konfigurera anpassad automatisk matchning
 
@@ -22,9 +22,99 @@ Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) in
 
 1. När du väljer den här matchande regeln visar Admin ytterligare fält för att konfigurera **slutpunkterna** och de nödvändiga **autentiseringsparametrarna** för den anpassade matchningslogiken.
 
+### workspace.json
+
+I fältet **[!UICONTROL Adobe I/O Workspace Configuration]** finns ett smidigt sätt att konfigurera din anpassade matchare genom att importera konfigurationsfilen för App Builder `workspace.json`.
+
+Du kan hämta filen `workspace.json` från [Adobe Developer Console](https://developer.adobe.com/console). Filen innehåller alla autentiseringsuppgifter och konfigurationsinformation för din App Builder-arbetsyta.
+
++++Exempel `workspace.json`
+
+```json
+{
+  "project": {
+    "id": "project_id",
+    "name": "project_name",
+    "title": "title_name",
+    "org": {
+      "id": "id",
+      "name": "Organization_name",
+      "ims_org_id": "ims_id"
+    },
+    "workspace": {
+      "id": "workspace_id",
+      "name": "workspace_name_id",
+      "title": "workspace_title_id",
+      "action_url": "https://action_url.net",
+      "app_url": "https://app_url.net",
+      "details": {
+        "credentials": [
+          {
+            "id": "credential_id",
+            "name": "credential_name_id",
+            "integration_type": "oauth_server_to_server",
+            "oauth_server_to_server": {
+              "client_id": "client_id",
+              "client_secrets": ["secret"],
+              "technical_account_email": "xx@technical_account_email.com",
+              "technical_account_id": "technical_account_id",
+              "scopes": [
+                "AdobeID",
+                "openid",
+                "read_organizations",
+                "additional_info.projectedProductContext",
+                "additional_info.roles",
+                "adobeio_api",
+                "read_client_secret",
+                "manage_client_secrets"
+              ]
+            }
+          }
+        ],
+        "services": [
+          {
+            "code": "AdobeIOManagementAPISDK",
+            "name": "I/O Management API"
+          }
+        ],
+        "runtime": {
+          "namespaces": [
+            {
+              "name": "namespace_name",
+              "auth": "example_auth"
+            }
+          ]
+        },
+        "events": {
+          "registrations": []
+        },
+        "mesh": {}
+      }
+    }
+  }
+}
+```
+
++++
+
+1. Dra och släpp din `workspace.json`-fil från ditt App Builder-projekt till fältet **[!UICONTROL Adobe I/O Workspace Configuration]**. Du kan också klicka för att bläddra och markera filen.
+
+![Workspace-konfiguration](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+
+1. Systemet automatiskt:
+
+   * Validerar JSON-strukturen
+   * Extraherar och fyller i OAuth-autentiseringsuppgifter
+   * Hämtar tillgängliga körningsåtgärder för arbetsytan
+   * Fyller i listrutealternativ för fälten **[!UICONTROL Product to Asset URL]** och **[!UICONTROL Asset to Product URL]**
+
+1. Välj lämpliga körningsåtgärder i listrutorna för varje flöde.
+
+1. Klicka på **[!UICONTROL Save Config]**.
+
 ## API-slutpunkter för anpassad matchning
 
-När du skapar ett anpassat matchningsprogram med [App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} måste följande slutpunkter visas:
+När du skapar ett anpassat matchningsprogram med [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} måste följande slutpunkter visas:
 
 * **App Builder-resurs till produkt-URL**-slutpunkt
 * **App Builder-produkt till resurs-URL** slutpunkt
@@ -176,6 +266,6 @@ Parametern `asset_matches` innehåller följande attribut:
 | Attribut | Datatyp | Beskrivning |
 | --- | --- | --- |
 | `asset_id` | Sträng | Representerar det uppdaterade resurs-ID:t. |
-| `asset_roles` | Sträng | Returnerar alla tillgängliga resursroller. Använder [Commerce-resursroller som stöds](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) som `thumbnail`, `image`, `small_image` och `swatch_image`. |
+| `asset_roles` | Sträng | Returnerar alla tillgängliga resursroller. Använder [Commerce-resursroller som stöds](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) som `thumbnail`, `image`, `small_image` och `swatch_image`. |
 | `asset_format` | Sträng | Tillhandahåller de tillgängliga formaten för resursen. Möjliga värden är `image` och `video`. |
 | `asset_position` | Sträng | Visar tillgångens position. |
