@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Product Recommendations] Användarhandbok'
 user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder [!DNL Product Recommendations] från Adobe Commerce.
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
+source-git-commit: 1b10163c39d9f309afd24aa2e808a57e069258f8
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '59'
 ht-degree: 8%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 8%
 - [Översikt över användarhandbok](guide-overview.md)
 - [Introduktion till  [!DNL Product Recommendations]](overview.md)
 - [Versionsinformation](release-notes.md)
+- [Gränser och begränsningar](boundaries-limits.md)
 - Kom igång {#getting-started}
    - [Onboarding](onboarding.md)
    - [Implementeringsarbetsflöde](implementation-workflow.md)
@@ -35,4 +36,4 @@ ht-degree: 8%
    - [Samla in data](events.md)
    - [Anpassa](customize.md)
    - [Hantera cookie-begränsningar](setting-cookie.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

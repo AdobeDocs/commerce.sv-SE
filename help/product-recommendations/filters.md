@@ -2,9 +2,9 @@
 title: Filterprodukter
 description: Definiera villkor som antingen inkluderar eller utesluter produkter från att användas som rekommendationer.
 exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
-source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
+source-git-commit: 1b10163c39d9f309afd24aa2e808a57e069258f8
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Kategorifältet visar kategorier som tillhör den aktuella butiksgranskningen.
 
 >[!NOTE]
 >
->För B2B-handlare följer kategorifiltret de [kundspecifika produktkategorier](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=sv-SE) som du har konfigurerat.
+>För B2B-handlare följer kategorifiltret de [kundspecifika produktkategorier](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) som du har konfigurerat.
 
 Adobe Commerce rekommenderar att du använder följande kategorifilterkonfiguration när du distribuerar rekommendationer till dina sidtyper:
 
@@ -78,11 +78,11 @@ Filtrerar produkter baserat på synlighet, till exempel: _Katalog_, _Sök_ eller
 
 ### Pris
 
-Ett filter baserat på produktpriset använder det slutliga priset för att göra jämförelsen. Slutpriset inkluderar rabatter eller specialpriser som är tillgängliga för anonyma kunder. För B2B-handlare återspeglar det pris som visas de [kundspecifika grupppriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=sv-SE) som du har konfigurerat.
+Ett filter baserat på produktpriset använder det slutliga priset för att göra jämförelsen. Slutpriset inkluderar alla rabatter som anonyma kunder kan få. För B2B-handlare återspeglar det pris som visas de [kundspecifika grupppriser](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) som du har konfigurerat.
 
 ### Lagerstatus
 
 Följande exkluderingsfilter kan användas för att filtrera produkter baserat på lagerstatus:
 
 - Slut på lager - (endast undantag) Exkluderar produkter som inte finns i lager.
-- Låga lagernivåer - (endast undantag) Exkluderar produkter med låga lagernivåer. Låg lagerstatus baseras på värdet _Endast X vänster tröskelvärde_ i [lagerkonfigurationen](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=sv-SE).
+- Låga lagernivåer - (endast undantag) Exkluderar produkter med låga lagernivåer. Låg lagerstatus baseras på värdet _Endast X vänster tröskelvärde_ i [lagerkonfigurationen](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
