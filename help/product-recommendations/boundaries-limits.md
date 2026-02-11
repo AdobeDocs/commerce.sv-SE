@@ -17,10 +17,10 @@ Granska följande gränser och begränsningar för att säkerställa att [!DNL P
 
 - **Produkttyper** - De produkttyper som stöds är bland annat _simple_, _configurable_, _virtual_, _downloadable_ och _presentcard_. _Paket_, _grupperad_ och anpassade produkttyper stöds inte. Om din katalog innehåller ett stort antal produkttyper som inte stöds kan du förvänta dig ett lågt [beredskapsläge](create.md#readiness-indicators). Se [Filtrera efter produkttyp](filters.md#type).
 - **SKU:er med blanksteg** - SKU:er som innehåller blanksteg kan minska rekommendationens relevans och bör undvikas när det är möjligt.
-- **Kundsida** - Produktrekommendationer stöds inte på kundvagnssidan när din butik är konfigurerad att [visa kundvagnssidan omedelbart efter att en produkt har lagts till i kundvagnen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Se [Skapa rekommendationer](create.md).
+- **Kundsida** - Produktrekommendationer stöds inte på kundvagnssidan när din butik är konfigurerad att [visa kundvagnssidan omedelbart efter att en produkt har lagts till i kundvagnen](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Se [Skapa rekommendationer](create.md).
 - **Underordnade produkter** - Underordnade produkter för en konfigurerbar produkt (synlighet _Inte synlig enskilt_) visas inte i en rekommendationsenhet. Endast den konfigurerbara (överordnade) produkten kan visas. Se [Filtrera produkter](filters.md#product).
 - **Inaktiverade eller osynliga produkter** - Produkter som är inaktiverade eller inte synliga individuellt kan aldrig visas i rekommendationer och kan inte väljas i produktfilter.
-- **Specialpriser** - [Specialpriser](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) med start- och slutdatum stöds inte i rekommendationsenheter. En produkt med ett specialpris kan visas i rekommendationer, men enheten visar inte specialpriset, startdatumet eller slutdatumet. Kunderna ser det ordinarie priset (eller andra prisuppgifter från din katalog/prisfeed) tills de öppnar produktsidan.
+- **Specialpriser** - [Specialpriser](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/products/pricing/product-price-special) med start- och slutdatum stöds inte i rekommendationsenheter. En produkt med ett specialpris kan visas i rekommendationer, men enheten visar inte specialpriset, startdatumet eller slutdatumet. Kunderna ser det ordinarie priset (eller andra prisuppgifter från din katalog/prisfeed) tills de öppnar produktsidan.
 
 ## Rekommendationsenheter
 
@@ -63,4 +63,4 @@ Granska följande gränser och begränsningar för att säkerställa att [!DNL P
 
 ## Felsökning
 
-Om du vill ha hjälp med katalogsynkronisering, visning av rekommendationer eller andra vanliga problem kan du söka i [Commerce Knowledge Base](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) eller kontakta [support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Om du vill ha hjälp med katalogsynkronisering, visning av rekommendationer eller andra vanliga problem kan du söka i [Commerce Knowledge Base](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview) eller kontakta [support](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
