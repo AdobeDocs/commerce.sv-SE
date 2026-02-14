@@ -42,7 +42,7 @@ Du kan söka efter en kategori eller underkategori i fältet Sök efter kategori
 Kategorimarknadsföring använder samma rankningstyper som med [enskilda produkter](rules-workspace.md).
 Det finns två sorteringstyper: Intelligent och Manuell.
 
-**Intelligent rankning** använder beteendedataanalys i bakgrunden av [Adobe AI](https://business.adobe.com/ai.html) för att sortera alla produkter inom valda kategorier efter en viss algoritm. När man väl har valt en Intelligent rankning förväntas produktordningen förändras över tiden eftersom de underliggande uppgifterna analyseras om kontinuerligt av Adobe AI. De ledande trendprodukterna kommer till exempel att ändras automatiskt över tid när kundernas preferenser förändras.
+**Intelligent rankning** använder beteendedataanalys i bakgrunden av [Adobe AI](https://business.adobe.com/se/ai.html) för att sortera alla produkter inom valda kategorier efter en viss algoritm. När man väl har valt en Intelligent rankning förväntas produktordningen förändras över tiden eftersom de underliggande uppgifterna analyseras om kontinuerligt av Adobe AI. De ledande trendprodukterna kommer till exempel att ändras automatiskt över tid när kundernas preferenser förändras.
 Intelligenta rangordningsmetoder:
 
 * Mest köpta: rankar produkter efter hur ofta de köptes av kunder under de senaste sju dagarna.

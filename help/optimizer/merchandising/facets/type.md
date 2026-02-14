@@ -15,7 +15,7 @@ ht-degree: 0%
 [!DNL Adobe Commerce Optimizer] använder en mängd olika ansiktstyper och de visas bara i listan *Filter* när det är relevant. Listan över tillgängliga facets ändras beroende på vilka produkter som returneras. Följande egenskaper påverkar deras presentation och beteende:
 
 - Fastnålade ansikten - De vanligaste ansiktena kan fästas överst i listan. De återstående ansiktena visas i ordningen *Sorteringstyp* efter de fästa ansiktena.
-- Dynamiska aspekter - Produktattribut som [Adobe AI](https://business.adobe.com/ai.html) anser vara mest relevanta för en produktuppsättning och fråga. Beräkningen tar hänsyn till attributmetadata för hela katalogen och fastställer vid frågans tidpunkt de mest relevanta aspekterna.
+- Dynamiska aspekter - Produktattribut som [Adobe AI](https://business.adobe.com/se/ai.html) anser vara mest relevanta för en produktuppsättning och fråga. Beräkningen tar hänsyn till attributmetadata för hela katalogen och fastställer vid frågans tidpunkt de mest relevanta aspekterna.
 - Prisfaktorer - Returprodukter efter prisintervall. Du kan ange antalet markeringar och prisintervallet på arbetsytan [*Inställningar*](../../settings.md).
 
 ## Fasettetiketter

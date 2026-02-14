@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Produktrekommendationer Administratörsutveckling
 
-Produktrekommendationer är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang. Produktrekommendationer visas i butiken i form av enheter som&quot;kunder som tittade på den här produkten också såg&quot;,&quot;kunder som köpt den här produkten även köpte&quot;,&quot;Rekommenderas för dig&quot; och så vidare. Adobe Commerce produktrekommendationer drivs av [Adobe AI](https://business.adobe.com/ai.html) som använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av samlade kunddata. Dessa data kombineras med er Commerce-katalog och ger en engagerande, relevant och personaliserad upplevelse för kunderna.
+Produktrekommendationer är ett kraftfullt marknadsföringsverktyg som ni kan använda för att öka konverteringarna, öka intäkterna och stimulera kundernas engagemang. Produktrekommendationer visas i butiken i form av enheter som&quot;kunder som tittade på den här produkten också såg&quot;,&quot;kunder som köpt den här produkten även köpte&quot;,&quot;Rekommenderas för dig&quot; och så vidare. Adobe Commerce produktrekommendationer drivs av [Adobe AI](https://business.adobe.com/se/ai.html) som använder artificiell intelligens och maskininlärningsalgoritmer för att utföra en djupgående analys av samlade kunddata. Dessa data kombineras med er Commerce-katalog och ger en engagerande, relevant och personaliserad upplevelse för kunderna.
 
 >[!NOTE]
 >
