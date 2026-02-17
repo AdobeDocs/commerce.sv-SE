@@ -4,9 +4,9 @@ description: Snabba upp Adobe Commerce Store med  [!DNL Catalog Service]  - ett 
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: e582bff6ee8ee7c4213f04bdab984efa94333fb6
+source-git-commit: 4f3f8accd653dbee6fec45c065f55ff04b17bd2d
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ De omfattande vymodelldata som tillhandahålls av [!DNL Catalog Service] innehå
 
 
 ## Arkitektur - översikt
+
+>[!NOTE]
+>
+>Om du implementerar katalogen med hjälp av den sammanställningsbara katalogen med Adobe Commerce Optimizer eller Adobe Commerce Optimizer Connector läser du [Adobe Commerce Optimizer Guide](../optimizer/overview.md#architecture) och Merchandising Services Developer Guide.
 
 [!DNL Catalog Service] använder [GraphQL](https://graphql.org/) för att begära och ta emot katalogdata, inklusive produkter, produktattribut, lager och priser. GraphQL är ett frågespråk som en klientklient använder för att kommunicera med API:t som definierats på en serverdel som Adobe Commerce. GraphQL är ett populärt kommunikationssätt eftersom det är lätt och gör att en systemintegratör kan ange innehåll och ordning för varje svar.
 
@@ -125,7 +129,7 @@ Katalogtjänsten säkerställer korrekta prisuppdateringar och beräkningar geno
 
 Implementeringsprocessen omfattar:
 
-1. [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} **[Installera och konfigurera katalogtjänsten](installation.md)** - Installera och konfigurera katalogtjänsttillägget och konfigurera SaaS-anslutningen med [!DNL Commerce Services Connector].
+1. [!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."} **[Installera och konfigurera katalogtjänsten](installation.md)** - Installera och konfigurera katalogtjänsttillägget och konfigurera SaaS-anslutningen med [!DNL Commerce Services Connector].
 2. **Uppdatera butikskod**: Integrera katalogtjänster med GraphQL-frågor i klientorganisationen.
 3. **Flödesfrågor**: Alla katalogtjänstfrågor skickas via GraphQL-gatewayen (URL tillhandahålls vid introduktion)
 4. **Övervaka och felsöka datasynkronisering**: Verifiera förbättrade prestanda och övervakningsresultat
