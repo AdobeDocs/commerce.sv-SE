@@ -3,16 +3,16 @@ title: Anpassad automatisk matchning
 description: Läs om hur anpassad automatisk matchning är särskilt användbar för handlare med komplex matchningslogik eller de som förlitar sig på ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
+source-git-commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 0%
+source-wordcount: '546'
+ht-degree: 1%
 
 ---
 
 # Anpassad automatisk matchning
 
-Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) inte är anpassad efter dina specifika affärskrav väljer du det anpassade matchningsalternativet. Det här alternativet stöder användningen av [Adobe Developer App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) för att utveckla ett anpassat matchningsprogram som hanterar komplex matchningslogik, eller resurser från ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
+Om standardstrategin för automatisk matchning (**OTB automatisk matchning**) inte är anpassad efter dina specifika affärskrav väljer du det anpassade matchningsalternativet. Det här alternativet stöder användningen av [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) för att utveckla ett anpassat matchningsprogram som hanterar komplex matchningslogik, eller resurser från ett tredjepartssystem som inte kan fylla i metadata i AEM Assets.
 
 ## Konfigurera anpassad automatisk matchning
 
@@ -114,7 +114,7 @@ Du kan hämta filen `workspace.json` från [Adobe Developer Console](https://dev
 
 ## API-slutpunkter för anpassad matchning
 
-När du skapar ett anpassat matchningsprogram med [App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} måste följande slutpunkter visas:
+När du skapar ett anpassat matchningsprogram med [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} måste följande slutpunkter visas:
 
 * **App Builder-resurs till produkt-URL**-slutpunkt
 * **App Builder-produkt till resurs-URL** slutpunkt
@@ -125,7 +125,7 @@ Den här slutpunkten hämtar listan med SKU:er som är associerade med en given 
 
 #### Exempel på användning
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -140,8 +140,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             asset_id: params.assetId,
             product_matches: [
@@ -150,7 +153,8 @@ async function main(params) {
                     asset_roles: ["thumbnail", "image", "swatch_image", "small_image"],
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -160,7 +164,7 @@ exports.main = main;
 
 **Begäran**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-product
 ```
 
@@ -171,21 +175,28 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 **Svar**
 
-```bash
+```json
 {
   "asset_id": "{ASSET_ID}",
   "product_matches": [
     {
       "product_sku": "{PRODUCT_SKU_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail", "image"]
     },
     {
       "product_sku": "{PRODUCT_SKU_2}",
       "asset_roles": ["thumbnail"]
     }
-  ]
+  ],
+  "skip": false
 }
 ```
+
+| Parameter | Datatyp | Beskrivning |
+| --- | --- | --- |
+| `asset_id` | Sträng | Det resurs-ID som matchas. |
+| `product_matches` | Array | Lista över produkter som är associerade med tillgången. |
+| `skip` | Boolean | (Valfritt) När `true` inträffar, hoppar regelmotorn över synkronisering för den här resursen (ingen produktmappningsuppdatering). När `false` eller utelämnas körs normal bearbetning. Se [Hoppa över synkroniseringsbearbetning](#skip-sync-processing). |
 
 ### App Builder product to asset URL endpoint
 
@@ -193,7 +204,7 @@ Den här slutpunkten hämtar listan över resurser som är associerade med en gi
 
 #### Exempel på användning
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -204,8 +215,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             product_sku: params.productSku,
             asset_matches: [
@@ -215,7 +229,8 @@ async function main(params) {
                     asset_format: "image", // can be "image" or "video"
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -225,7 +240,7 @@ exports.main = main;
 
 **Begäran**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
@@ -236,36 +251,44 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 **Svar**
 
-```bash
+```json
 {
   "product_sku": "{PRODUCT_SKU}",
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"],
+      "asset_roles": ["thumbnail", "image"],
       "asset_position": 1,
-      "asset_format": image
+      "asset_format": "image"
     },
     {
       "asset_id": "{ASSET_ID_2}",
-      "asset_roles": ["thumbnail"]
+      "asset_roles": ["thumbnail"],
       "asset_position": 2,
-      "asset_format": image     
+      "asset_format": "image"
     }
-  ]
+  ],
+  "skip": false
 }
 ```
 
 | Parameter | Datatyp | Beskrivning |
 | --- | --- | --- |
-| `productSKU` | Sträng | Representerar den uppdaterade produktens SKU. |
-| `asset_matches` | Sträng | Returnerar alla resurser som är associerade med en specifik produkt-SKU. |
+| `product_sku` | Sträng | Produkt-SKU som matchas. |
+| `asset_matches` | Array | Lista över resurser som är associerade med produkten. |
+| `skip` | Boolean | (Valfritt) När `true` inträffar, hoppar regelmotorn över synkronisering för den här produkten (ingen resursmappningsuppdatering). När `false` eller utelämnas körs normal bearbetning. Se [Hoppa över synkroniseringsbearbetning](#skip-sync-processing). |
 
 Parametern `asset_matches` innehåller följande attribut:
 
 | Attribut | Datatyp | Beskrivning |
 | --- | --- | --- |
-| `asset_id` | Sträng | Representerar det uppdaterade resurs-ID:t. |
-| `asset_roles` | Sträng | Returnerar alla tillgängliga resursroller. Använder [Commerce-resursroller som stöds](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) som `thumbnail`, `image`, `small_image` och `swatch_image`. |
-| `asset_format` | Sträng | Tillhandahåller de tillgängliga formaten för resursen. Möjliga värden är `image` och `video`. |
-| `asset_position` | Sträng | Visar tillgångens position. |
+| `asset_id` | Sträng | Resurs-ID. |
+| `asset_roles` | Array | Resursroller. Använder [Commerce-resursroller som stöds](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) som `thumbnail`, `image`, `small_image` och `swatch_image`. |
+| `asset_format` | Sträng | Resursformatet. Möjliga värden är `image` och `video`. |
+| `asset_position` | Nummer | Positionen för resursen i produktgalleriet. |
+
+## Hoppa över synkroniseringsbearbetning
+
+Parametern `skip` gör att din anpassade matchare kan kringgå synkroniseringsbearbetning för specifika resurser eller produkter.
+
+När ditt App Builder-program returnerar `"skip": true` i svaret skickar regelmotorn inte uppdateringar eller tar bort API-begäranden till Commerce för den resursen eller produkten. Optimeringen minskar onödiga API-anrop och förbättrar prestandan.
