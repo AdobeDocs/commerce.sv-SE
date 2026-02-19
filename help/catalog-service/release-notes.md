@@ -26,7 +26,7 @@ Versionsinformationen innehåller de senaste uppdateringarna av Commerce Catalog
 Uppdateringar kategoriseras efter typ:
 
 ![Nya](../assets/new.svg) nya funktioner
-![Korrigera ](../assets/fix.svg) Korrigeringar och förbättringar
+![Korrigera &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
 Stöd finns för den senaste versionen. Versionsinformation för äldre versioner finns med som referens.
