@@ -3,9 +3,9 @@ title: Versionsinformation om AEM Assets Integration
 description: Läs versionsinformationen för information om alla AEM Assets Integration-utgåvor.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: 56f31a320411c28d267dfd677d36e5ec04f6f2d8
+source-git-commit: d59c9d179018318d7a0ab1685d8e9e172eefa3ed
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 Versionsinformationen beskriver alla versioner av AEM Assets Integration och innehåller:
 
 ![Nya](../assets/new.svg) nya funktioner
-![&#x200B; Åtgärdat problem &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
+![ Åtgärdat problem ](../assets/fix.svg) Korrigeringar och förbättringar
 ![Kända fel](../assets/bug.svg)
 
 Om du vill se funktionsändringar och korrigeringar som släppts utanför den vanliga versionen av funktionen går du igenom avsnitten _Uppdateringar för värdtjänsten_.
 
-Läs mer om kommande releaser, produktsupport och vilka Adobe Commerce-versioner som stöder tillägget AEM Assets Integration i Adobe Commerce [Releasedatum](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/planning/schedule) och [Produkttillgänglighet](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/product-availability) .
+Läs mer om kommande releaser, produktsupport och vilka Adobe Commerce-versioner som stöder tillägget AEM Assets Integration i Adobe Commerce [Releasedatum](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) och [Produkttillgänglighet](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) .
 
 ## Uppdateringar av värdtjänster
 
@@ -30,7 +30,7 @@ I versionsinformationen beskrivs funktionsändringar och korrigeringar som har g
 
 _11 september 2025_
 
-![Nytt problem](../assets/new.svg) Uppdaterade [anpassade automatiska matchningsslutpunkter](https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} med ett nytt `asset_matches`-attribut.
+![Nytt problem](../assets/new.svg) Uppdaterade [anpassade automatiska matchningsslutpunkter](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} med ett nytt `asset_matches`-attribut.
 
 _11 februari 2025_
 
@@ -38,13 +38,21 @@ _11 februari 2025_
 
 +++
 
+## v1.3.0
+
+_17 februari 2026_
+
+[!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.5 och senare.
+
+![Nytt problem](../assets/new.svg)<!-- Issue ACCS-169 --> Fälten **[!UICONTROL Program ID]** och **[!UICONTROL Environment ID]** fylls nu i automatiskt som listrutor baserat på användarens IMS-session. Detta eliminerar manuell inmatning och minskar konfigurationsfelen. Om du vill använda den här funktionen måste användaren ha en roll i [AEM-leveranslagret](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank} och ett giltigt [IMS-klient-ID ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#configure-the-connection){target=_blank} konfigurerat för resursväljaren.
+
 ## v1.2.14
 
 _13 februari 2026_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.5 och senare.
 
-![Korrigerat problem](../assets/fix.svg)<!-- Issue ACCS-171 --> Korrigerade ett [anpassat matchningsproblem](https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/synchronize/custom-match) där listrutan för körningsåtgärder visade osparade arbetsytedata efter sidinläsningen.
+![Korrigerat problem](../assets/fix.svg)<!-- Issue ACCS-171 --> Korrigerade ett [anpassat matchningsproblem](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match) där listrutan för körningsåtgärder visade osparade arbetsytedata efter sidinläsningen.
 
 ## v1.2.13
 
@@ -52,7 +60,7 @@ _10 februari 2026_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.5 och senare.
 
-![Nytt problem](../assets/new.svg)<!-- Issue ACCS-171 --> har lagt till ett **[!UICONTROL Adobe I/O Workspace Configuration]**-fält som förenklar konfigurationen av [anpassad matchning](https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}. Merchants kan nu överföra sin App Builder `workspace.json`-fil för att automatiskt fylla i OAuth-autentiseringsuppgifter och slutpunkter för körningsåtgärd.
+![Nytt problem](../assets/new.svg)<!-- Issue ACCS-171 --> har lagt till ett **[!UICONTROL Adobe I/O Workspace Configuration]**-fält som förenklar konfigurationen av [anpassad matchning](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}. Merchants kan nu överföra sin App Builder `workspace.json`-fil för att automatiskt fylla i OAuth-autentiseringsuppgifter och slutpunkter för körningsåtgärd.
 
 ## v1.2.12
 
@@ -114,7 +122,7 @@ _17 oktober 2025_
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue ACAP-1155 --> Förbättrad övergripande stabilitet för anpassade attribut. Anpassade attribut uppdateras nu korrekt när asynkrona API:er används.
 
-![Ett problem har korrigerats](../assets/fix.svg)<!-- Issue ACAP-1074 -->. Nu misslyckas inte synkroniseringen av [produkt-resurs](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank} när en baslänk-URL har definierats.
+![Ett problem har korrigerats](../assets/fix.svg)<!-- Issue ACAP-1074 -->. Nu misslyckas inte synkroniseringen av [produkt-resurs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank} när en baslänk-URL har definierats.
 
 ## v1.2.3
 
@@ -138,9 +146,9 @@ _7 augusti 2025_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.5 och senare.
 
-![Nytt problem](../assets/new.svg)<!-- Issue ACAP-1018 --> Nu kan handlare välja källa för bild- och medieresurser genom att välja en [visualiseringsägare](https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank} när de konfigurerar Assets-integreringen från administratören.
+![Nytt problem](../assets/new.svg)<!-- Issue ACAP-1018 --> Nu kan handlare välja källa för bild- och medieresurser genom att välja en [visualiseringsägare](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank} när de konfigurerar Assets-integreringen från administratören.
 
-![Nytt problem](../assets/new.svg)<!-- Issue ACAP-1078 --> Uppdaterade [anpassade automatiska matchningsslutpunkter](https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} med ett nytt `asset_matches`-attribut. Med den här ändringen kan du implementera din egen matchande logik för att returnera alla resurser som är associerade med en specifik `productSku`.
+![Nytt problem](../assets/new.svg)<!-- Issue ACAP-1078 --> Uppdaterade [anpassade automatiska matchningsslutpunkter](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} med ett nytt `asset_matches`-attribut. Med den här ändringen kan du implementera din egen matchande logik för att returnera alla resurser som är associerade med en specifik `productSku`.
 
 ## v1.1.2
 
@@ -156,7 +164,7 @@ _23 april 2025_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.5 och senare.
 
-![Nytt problem](../assets/new.svg)<!-- Issue ACAP-955 --> Nu kan en [anpassad domän-URL](https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) användas i stället för AEM-leverans-URL. Om en handlare anger ett **anpassat domännamn** på sin AEM-kontrollpanel måste du lägga till den här **anpassade domän-URL:en** i Commerce.
+![Nytt problem](../assets/new.svg)<!-- Issue ACAP-955 --> Nu kan en [anpassad domän-URL](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) användas i stället för AEM-leverans-URL. Om en handlare anger ett **anpassat domännamn** på sin AEM-kontrollpanel måste du lägga till den här **anpassade domän-URL:en** i Commerce.
 
 ![Korrigerat problem](../assets/fix.svg)<!-- Issue ACAP-987 --> Förbättrade övergripande loggar för AEM Assets-synkroniseringsprocesser.
 
@@ -166,7 +174,7 @@ _12 mars 2025_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.5 och senare.
 
-![Nytt problem](../assets/new.svg)<!-- Issue ACAP-xx --> Nu krävs [Assets-väljarens IMS-klient-ID](https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/get-started/setup-synchronization) av Assets-väljaren för att aktivera mappning av AEM Assets-bilder med produktkategorier och Page Builder-genererat innehåll.
+![Nytt problem](../assets/new.svg)<!-- Issue ACAP-xx --> Nu krävs [Assets-väljarens IMS-klient-ID](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization) av Assets-väljaren för att aktivera mappning av AEM Assets-bilder med produktkategorier och Page Builder-genererat innehåll.
 
 ## v1.0.20
 
