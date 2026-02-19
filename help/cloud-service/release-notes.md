@@ -5,7 +5,7 @@ feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 source-git-commit: 0c9040d3047bd854d027cc86cfd0c8630732718d
 workflow-type: tm+mt
@@ -20,7 +20,7 @@ Följande versionsinformation innehåller uppdateringar för [!DNL Adobe Commerc
 
 >[!NOTE]
 >
->Om du använder Adobe Commerce lokalt eller Adobe Commerce i molninfrastrukturen kan du läsa [Adobe Commerce versionsinformation](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+>Om du använder Adobe Commerce lokalt eller Adobe Commerce i molninfrastrukturen kan du läsa [Adobe Commerce versionsinformation](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/notes/overview).
 
 ## Februari 2026 - utgåva nr 2 {#latest}
 
@@ -65,15 +65,15 @@ Följande förbättringar har gjorts i [!DNL Commerce Admin]:
 
 * [Leveranswebbhollösningar](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload) har förbättrats och innehåller anpassade attribut för leveransadress. Den här ändringen gör det möjligt för handlare att implementera anpassade leveransmetoder. <!-- ACCS-235 -->
 
-* Åtkomst till administratörsrapporter har lagts till, inklusive rapporter för [kunder](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports), [marknadsföring](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports), [produkter](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports) och [försäljning](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports). <!-- CCSAAS-3085 -->
+* Åtkomst till administratörsrapporter har lagts till, inklusive rapporter för [kunder](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/customer-reports), [marknadsföring](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/marketing-reports), [produkter](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/product-reports) och [försäljning](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/sales-reports). <!-- CCSAAS-3085 -->
 
 >[!NOTE]
 >
->Rapporter som inte är tillgängliga i [!DNL Adobe Commerce as a Cloud Service] är endast märkta som PaaS ([!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}).
+>Rapporter som inte är tillgängliga i [!DNL Adobe Commerce as a Cloud Service] är endast märkta som PaaS ([!BADGE Endast PaaS]{type=Informative url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."}).
 
 ### Hämta anpassade fakturabelopp via REST API
 
-Faktura-API:t har nu stöd för [anpassade fångstmängder](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) med tilläggsattribut. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+Faktura-API:t har nu stöd för [anpassade fångstmängder](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) med tilläggsattribut. <!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 >[!NOTE]
 >
@@ -113,28 +113,28 @@ Följande objekt släpptes till produktionsmiljöer för [!DNL Adobe Commerce as
 
 Följande ändringar har gjorts i komponenter för B2B-insticksprogram:
 
-* [!DNL Commerce Storefront on Edge Delivery Services] innehåller nu [komponenter för B2B-släppning](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). Följande B2B-tillägg är nu tillgängliga:
+* [!DNL Commerce Storefront on Edge Delivery Services] innehåller nu [komponenter för B2B-släppning](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=sv-SE). Följande B2B-tillägg är nu tillgängliga:
 
-   * **[Företagshantering](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** - Aktiverar hantering av företagsprofiler och rollbaserade behörigheter för Adobe Commerce-butiker.
-   * **[Företagsväljare](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - Tillhandahåller en UI-komponent som användare kan växla mellan flera företag som de är associerade med.
-   * **[Inköpsorder](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Hanterar arbetsflöden för inköpsorder, godkännanderegler och inköpsorderhistorik för B2B-transaktioner.
-   * **[Offerthantering](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** - Aktiverar överlåtbara offerter för B2B-kunder med arbetsflöden för anbudsförfrågan, förhandling och godkännande.
-   * **[Rekvisitionslistor](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** - Tillhandahåller verktyg för att skapa och hantera rekvisitionslistor för upprepade köp och bulkbeställning.
+   * **[Företagshantering](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=sv-SE)** - Aktiverar hantering av företagsprofiler och rollbaserade behörigheter för Adobe Commerce-butiker.
+   * **[Företagsväljare](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=sv-SE)** - Tillhandahåller en UI-komponent som användare kan växla mellan flera företag som de är associerade med.
+   * **[Inköpsorder](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=sv-SE)** - Hanterar arbetsflöden för inköpsorder, godkännanderegler och inköpsorderhistorik för B2B-transaktioner.
+   * **[Offerthantering](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=sv-SE)** - Aktiverar överlåtbara offerter för B2B-kunder med arbetsflöden för anbudsförfrågan, förhandling och godkännande.
+   * **[Rekvisitionslistor](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=sv-SE)** - Tillhandahåller verktyg för att skapa och hantera rekvisitionslistor för upprepade köp och bulkbeställning.
 
 * Lanserade B2B Store-kompatibilitetspaketet. Det här paketet förbättrar GraphQL-schemat för [!DNL Adobe Commerce] B2B för att förbättra utvecklingen på B2B-system.
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=sv-SE). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/?lang=sv-SE). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
 
 ### Klickbara länkar till externa leveransspår
 
-Omvandla försändelsens spårningsnummer som finns i e-postmeddelanden från oformaterad text till klickbara länkar genom att [aktivera anpassade spårnings-URL:er](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls). Den här funktionen stöds för USPS, UPS, FedEx och DHL. <!-- See PR #716 in commerce-admin -->
+Omvandla försändelsens spårningsnummer som finns i e-postmeddelanden från oformaterad text till klickbara länkar genom att [aktivera anpassade spårnings-URL:er](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls). Den här funktionen stöds för USPS, UPS, FedEx och DHL. <!-- See PR #716 in commerce-admin -->
 
 ### Google reCAPTCHA Enterprise - support
 
-[!DNL Adobe Commerce as a Cloud Service] butiker har nu stöd för [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise). Den här funktionen ger avancerat robotskydd genom att använda adaptiv riskanalys och maskininlärning för att exakt skilja människor från automatiserade robotar. Det stärker webbplatsens säkerhet, förhindrar bedrägliga aktiviteter och minskar risken för skräppost och missbruk för att upprätthålla en säker shoppingupplevelse. <!-- CCSAAS-4242 -->
+[!DNL Adobe Commerce as a Cloud Service] butiker har nu stöd för [reCAPTCHA Enterprise](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise). Den här funktionen ger avancerat robotskydd genom att använda adaptiv riskanalys och maskininlärning för att exakt skilja människor från automatiserade robotar. Det stärker webbplatsens säkerhet, förhindrar bedrägliga aktiviteter och minskar risken för skräppost och missbruk för att upprätthålla en säker shoppingupplevelse. <!-- CCSAAS-4242 -->
 
 ### Instansspecifik administratörsåtkomst
 
@@ -150,7 +150,7 @@ Genom att använda [!DNL App Builder] kan du få djupare synlighet i [!DNL Adobe
 
 ### Priser för kataloger
 
-Du kan nu kombinera nivåindelade prisrabatter med katalogregelrabatter med hjälp av [katalogprisregler](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). Tack vare den här förbättringen kan ni skapa mer dynamiska och konkurrenskraftiga prissättningsstrategier och belöna massinköp samtidigt som ni lägger på kampanjrabatter. Resultatet är större flexibilitet för att locka kunder, öka ordervärdet och driva konverteringar.<!-- See PR #708 in commerce-admin -->
+Du kan nu kombinera nivåindelade prisrabatter med katalogregelrabatter med hjälp av [katalogprisregler](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). Tack vare den här förbättringen kan ni skapa mer dynamiska och konkurrenskraftiga prissättningsstrategier och belöna massinköp samtidigt som ni lägger på kampanjrabatter. Resultatet är större flexibilitet för att locka kunder, öka ordervärdet och driva konverteringar.<!-- See PR #708 in commerce-admin -->
 
 ### Förbättringar och felkorrigeringar
 
@@ -190,6 +190,6 @@ Följande valda förbättringar, optimeringar och felkorrigeringar ingår i den 
 
 #### Anpassade orderattribut
 
-* Administratörsanvändare kan nu visa och redigera [anpassade orderattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) direkt från sorteringsvyn, redigeringsskärmen och skapa-skärmen på Admin-panelen. Den här förbättringen förbättrar hanteringen av anpassade orderdata som skapats via GraphQL. <!-- CEXT-5044 -->
+* Administratörsanvändare kan nu visa och redigera [anpassade orderattribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) direkt från sorteringsvyn, redigeringsskärmen och skapa-skärmen på Admin-panelen. Den här förbättringen förbättrar hanteringen av anpassade orderdata som skapats via GraphQL. <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]

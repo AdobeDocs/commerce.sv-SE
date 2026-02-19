@@ -32,4 +32,4 @@ ht-degree: 6%
    - [GraphQL-schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API-schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
