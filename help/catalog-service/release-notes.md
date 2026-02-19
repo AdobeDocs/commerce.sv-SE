@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: Den senaste versionsinformationen för  [!DNL Catalog Service]  för Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: 7b05da07d185c5495642037c6ef3b7ff5fcaa8e6
+source-git-commit: 9ba7a964243c616cc7e40fb180a855b839cd4597
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2252'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,18 @@ Versionsinformationen innehåller de senaste uppdateringarna av Commerce Catalog
 Uppdateringar kategoriseras efter typ:
 
 ![Nya](../assets/new.svg) nya funktioner
-![Korrigera &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
+![Korrigera ](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
 Stöd finns för den senaste versionen. Versionsinformation för äldre versioner finns med som referens.
 
 ## Katalogtjänsten Storefront
+
+### v1.48-utgåvan
+
+_19 februari 2025_
+
+![Nytt](../assets/new.svg) Frågan `categoryTree` i GraphQL API returnerar nu kategoribeskrivningar, bilder och SEO-metataggar. Den här uppdateringen innehåller de data som utvecklare av butiker behöver för att visa kategoribilder och förbättra sökmotoroptimeringen med korrekta metatitlar, beskrivningar och nyckelord. Stöds endast för Commerce-implementeringar som använder datamodellen [för sammansatta kataloger](https://developer.adobe.com/commerce/services/optimizer/) för headless-butiker&lt;<!--DATA-6933-->
 
 ### Version v1.47
 
@@ -105,7 +111,7 @@ _3 november 2025_
 - Kontrollera fältnivååsidosättningar med lagermasker
 - Stöd för förstklassiga, säsongsrelaterade och mobiloptimerade innehållslager
 
-  Lager hämtas med den befintliga `products`-frågan, används på serversidan från begärandehuvuden och inga schemaändringar krävs. Se [Kataloglager](https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/catalog-layer) i _Adobe Commerce Optimizer Guide_.
+  Lager hämtas med den befintliga `products`-frågan, används på serversidan från begärandehuvuden och inga schemaändringar krävs. Se [Kataloglager](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) i _Adobe Commerce Optimizer Guide_.
 
 ![Korrigera](../assets/fix.svg) Grupperade produkter kan nu efterfrågas när den överordnade inte har några priser. Underordnade produkter returnerar sina egna synlighetsroller.<!--DATA-6779-->
 
@@ -216,7 +222,7 @@ _15 juli 2025_
 
 _20 juni 2025_
 
-![Ny](../assets/new.svg) **Hierarkisk prisbokskonfiguration** - Korrekta prisintervall för överordnade/underordnade prisböcker. Beräkningar respekterar hierarkin och ärvda regler. Minskar prissättningsfel när flera prisböcker är kopplade. Endast Adobe Commerce Optimizer. Se [Prisböcker](https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/pricebooks).
+![Ny](../assets/new.svg) **Hierarkisk prisbokskonfiguration** - Korrekta prisintervall för överordnade/underordnade prisböcker. Beräkningar respekterar hierarkin och ärvda regler. Minskar prissättningsfel när flera prisböcker är kopplade. Endast Adobe Commerce Optimizer. Se [Prisböcker](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nytt](../assets/new.svg) **Skiftlägeskänsliga tangenter** - Nyckelsökningar i frågor är nu skiftlägeskänsliga, vilket minskar antalet fel som beror på tangentförskjutning. <!--DATA-6494, DCAT-2495-->
 
@@ -345,7 +351,7 @@ _23 maj 2024_
 
 ![Korrigera](../assets/fix.svg) <!--DATA-5033-->Flaggan `InStock` för alternativvärden respekterar nu produktvariantens omfångsstatus `enabled` .
 
-![Korrigera](../assets/fix.svg) <!--DATA-5888-->Stöd för produktpriser med upp till 16 siffror och 4 decimaler har lagts till. Synkronisera om från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) eller [CLI](../landing/catalog-sync.md#command-line-interface) för att tillämpa uppdateringar.
+![Korrigera](../assets/fix.svg) <!--DATA-5888-->Stöd för produktpriser med upp till 16 siffror och 4 decimaler har lagts till. Synkronisera om från [kontrollpanelen för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) eller [CLI](../landing/catalog-sync.md#command-line-interface) för att tillämpa uppdateringar.
 
 #### Kända begränsningar
 
@@ -379,7 +385,7 @@ _22 februari 2024_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Nytt](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=sv-SE) är nu tillgängligt för dataströmmar (produktrekommendationer, Live Search, katalogtjänst). Kräver `catalog-service` metapaket v3.1.0+.
+![Nytt](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) är nu tillgängligt för dataströmmar (produktrekommendationer, Live Search, katalogtjänst). Kräver `catalog-service` metapaket v3.1.0+.
 
 ### Version v1.16
 
