@@ -1,22 +1,22 @@
 ---
-title: AI-kodningsverktyg för tillägg
-description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-tillägg.
+title: Verktyg för AI-kodningsutvecklare för Adobe Commerce App Builder
+description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-program.
 feature: App Builder, Cloud
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
+source-git-commit: 5d4726f7191f74507524667555ab46838bb2407a
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2098'
 ht-degree: 0%
 
 ---
 
-# AI-kodningsverktyg för tillägg
+# Verktyg för AI-kodningsutvecklare för Adobe Commerce App Builder
 
-När du migrerar till [!DNL Adobe Commerce as a Cloud Service] kan du använda AI-kodningsverktygen för att konvertera befintliga [!DNL Adobe Commerce] PHP-tillägg till [!DNL Adobe Developer App Builder] tillägg. Du kan också använda de här verktygen för att skapa nya [!DNL App Builder]-tillägg.
+När du migrerar till [!DNL Adobe Commerce as a Cloud Service] kan du använda AI-kodningsverktygen för att konvertera befintliga [!DNL Adobe Commerce] PHP-tillägg till [!DNL Adobe Developer App Builder]-program. Du kan också använda de här verktygen för att skapa nya [!DNL App Builder]-program.
 
 AI-kodningsverktygen ger följande fördelar:
 
@@ -25,10 +25,26 @@ AI-kodningsverktygen ger följande fördelar:
 * **Commerce-specifika funktioner**: Specialiserade verktyg för Adobe Commerce App Builder-utveckling.
 * **Automatiska arbetsflöden**: Effektivare utvecklings- och distributionsprocesser.
 
+Genom att installera AI-kodningsverktygen får du tillgång till:
+
+* Regler - En Adobe Commerce- och App Builder-specifik regeluppsättning som är utformad för att vägleda och informera programutvecklingen.
+* Developer MCP Server
+* App Builder MCP Server
+
+## Uppdaterar till den senaste versionen
+
+När du har [installerat utvecklingsverktyget för AI-kodning](#installation) kan du uppdatera till den senaste versionen genom att köra följande kommando:
+
+```bash
+aio commerce extensibility tools-setup
+```
+
+Verktygen uppdateras till den senaste versionen.
+
 ## Förutsättningar
 
 * Ett av följande kodningsagenter:
-   * [Markör](https://cursor.com/download) (rekommenderas)
+   * [Markör](https://cursor.com/download)
    * [Github Copilot](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Claude Code](https://www.claude.com/product/claude-code)
@@ -84,7 +100,7 @@ Installationsprocessen uppmanar dig med konfigurationsalternativ. För installat
   New directory
 ```
 
-När du väljer kodningsagenten rekommenderar Adobe att du väljer `Cursor` för att få den bästa utvecklingsupplevelsen:
+Välj den kodningsagent du vill använda:
 
 ```shell-session
 ? Which coding agent would you like to use?
@@ -221,10 +237,10 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## Exempelfråga
 
-I följande exempelfråga skapas ett tillägg som skickar meddelanden när en beställning placeras.
+I följande exempelfråga skapas ett program som skickar meddelanden när en beställning placeras.
 
 ```shell-session
-Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
+Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
 Order Total -> total
@@ -281,14 +297,14 @@ Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser
 
 * **Beprövade mönster**: Startpaket innehåller Adobe bästa praxis och arkitektoniska beslut
 * **Snabbare utveckling**: Minskar tiden för mallplåt och konfiguration
-* **Konsekvens**: Ser till att tillägget följer etablerade konventioner
+* **Konsekvens**: Ser till att programmet följer etablerade konventioner
 * **Underhållbarhet**: Enklare att underhålla och uppdatera när du följer standardmönster
 * **Dokumentation**: Startpaket innehåller exempel och dokumentation
 * **Community-stöd**: Det är enklare att få hjälp när du använder standardstrategier
@@ -297,7 +313,7 @@ Se följande resurser för att komma igång:
 
 ### Protokoll
 
-Följande fyrstegsprotokoll tillämpas automatiskt av regelsystemet. Verktygen bör följa detta protokoll automatiskt när tillägg utvecklas:
+Följande fyrstegsprotokoll tillämpas automatiskt av regelsystemet. Verktygen bör följa detta protokoll automatiskt när de utvecklar program:
 
 * Fas 1: Analys och förtydligande av kraven
    * Lämna fullständiga svar när ni får frågan om hur ni ska klargöra frågorna.
@@ -314,7 +330,7 @@ För komplex utveckling som innefattar flera runtime-åtgärder, kontaktytor ell
 Create a detailed implementation plan for this complex development.
 ```
 
-Komplexa Adobe Commerce-tillägg omfattar ofta:
+Komplexa Adobe Commerce-program omfattar ofta:
 
 * Flera körningsåtgärder
 * Händelsekonfiguration över flera kontaktytor
@@ -529,3 +545,31 @@ Undvik följande mönster när du använder AI-kodningsverktygen:
 * **Komplexitet behöver inte läggas till utan rotorsaksanalys** - Fråga om onödiga filtillägg och begär en korrekt utredning.
 * **Deklarera inte lyckade utan riktig datatestning** - Testa alltid med verkliga data, inte bara kantfall.
 * **Glöm inte rensning vid körning** - Rensa alltid bort överblivna åtgärder efter större ändringar.
+
+## Ge feedback
+
+Utvecklare som är intresserade av att lämna feedback om AI-kodningsverktygen kan använda kommandot `/feedback`.
+
+Med det här kommandot kan du ge feedback och skicka loggar till Adobe. Alla loggar du skickar saneras för att ta bort privat eller personlig information.
+
+>[!TIP]
+>
+>Användarupplevelsen varierar något beroende på vilken IDE du använder. Följande process beskriver upplevelsen i Cursor.
+
+1. Skriv `/feedback` i din agent och välj kommandot `commerce-extensibility/feedback`.
+
+1. Ge din feedback för verktygen i fältet **Feedback** som visas högst upp i IDE och tryck på **Retur** .
+
+   ![Kommandoinmatningsfält för feedback från pekare](../assets/feedback-response.png){width="600" zoomable="yes"}
+
+1. I fältet **Spara lokalt** skriver du antingen `yes` eller `no` och trycker på **Retur** för att ange om du vill spara en lokal kopia av loggarna.
+
+   ![Kommandot för markörfeedback sparar lokalt fält](../assets/feedback-save.png){width="600" zoomable="yes"}
+
+   Om du har valt **Ja** kan du granska loggarna i mappen `chats` när du har skickat din feedback.
+
+1. Kommandot `commerce-extensibility/feedback` visas i agentens chattinmatningsfält. Tryck på **Enter** eller klicka på **Skicka** för att skicka din feedback till Adobe.
+
+>[!NOTE]
+>
+>Om du inte ser kommandot `/feedback` kan du behöva [uppdatera till den senaste versionen](#updating-to-the-latest-version).
