@@ -22,7 +22,7 @@ Support ges för den senaste versionen. Versionsinformation för äldre versione
 Versionsinformationen innehåller:
 
 ![Nya](../assets/new.svg) nya funktioner
-![Korrigera ](../assets/fix.svg) Korrigeringar och förbättringar
+![Korrigera &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
 Läs utvecklardokumentationen för att [lära dig mer om produktsupport](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
@@ -68,7 +68,7 @@ _28 januari 2026_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.4 och senare
 
-![Nytt](../assets/new.svg) tillagt beroende på kontrollpanelen för statusövervakning av dataflödessynkronisering[. ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) På den här kontrollpanelen kan du visa realtidsinsikter om hälsa och prestanda för dataexportflöden som överför produkt- och kategoridata från Commerce till externa tjänster som produktrekommendationer.
+![Nytt](../assets/new.svg) tillagt beroende på kontrollpanelen för statusövervakning av dataflödessynkronisering[. &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) På den här kontrollpanelen kan du visa realtidsinsikter om hälsa och prestanda för dataexportflöden som överför produkt- och kategoridata från Commerce till externa tjänster som produktrekommendationer.
 
 ### Tidigare versioner
 
@@ -252,7 +252,7 @@ _20 mars 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Korrigera](../assets/fix.svg) Ett modalt JavaScript-fel har korrigerats
-![Korrigera ](../assets/fix.svg) Ett problem där Fastly&#39;s Web Application Firewall (WAF) blockerade en cookie på ett felaktigt sätt har åtgärdats
+![Korrigera &#x200B;](../assets/fix.svg) Ett problem där Fastly&#39;s Web Application Firewall (WAF) blockerade en cookie på ett felaktigt sätt har åtgärdats
 
 ### 3.2.5 of magento/product-recommendations
 
@@ -295,7 +295,7 @@ _20 mars 2023_
 
 ![Nytt](../assets/new.svg) har lagt till möjligheten att [synkronisera om](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) din katalog till SaaS-tjänster via kommandoraden.
 ![Nytt](../assets/new.svg) Stöd har lagts till för databastabellprefix
-![Korrigera ](../assets/fix.svg) PHP 7.1-stödet har tagits bort
+![Korrigera &#x200B;](../assets/fix.svg) PHP 7.1-stödet har tagits bort
 
 ### 3.0.8 of magento/product-recommendations
 
@@ -320,7 +320,7 @@ _20 mars 2023_
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.x och senare
 
 ![Korrigera](../assets/fix.svg) Felet&quot;Det gick inte att hämta produktalternativdata&quot; som kunde inträffa vid katalogexport har åtgärdats.
-![Korrigera](../assets/fix.svg) Valutasymbolen i kolumnen _Intäkter_ på kontrollpanelen _[!DNL Product Recommendations]_återspeglar nu korrekt den konfigurerade basvalutan.
+![Korrigera](../assets/fix.svg) Valutasymbolen i kolumnen _Intäkter_ på kontrollpanelen _[!DNL Product Recommendations]_&#x200B;återspeglar nu korrekt den konfigurerade basvalutan.
 
 ### 3.0.4 of magento/product-recommendations
 
@@ -356,7 +356,7 @@ Det här är en större version. [Redigera](install-configure.md#update) projekt
 ![Nytt](../assets/new.svg) Hämta [!DNL Product Recommendations] från alternativa SaaS-datautrymmen. Detta gör att du kan använda [!DNL Product Recommendations] som beräknas i din produktmiljö i andra icke-produktionsmiljöer. [Växling av SaaS-datautrymmen](settings.md) beskriver den här funktionen ytterligare.
 
 ![Korrigera](../assets/fix.svg) Ett problem där utcheckning hämtades för kunder som använde Block Origin har korrigerats
-![Korrigera ](../assets/fix.svg) Ett problem med att skicka ovidkommande tilläggshändelser i kundvagnen har korrigerats
+![Korrigera &#x200B;](../assets/fix.svg) Ett problem med att skicka ovidkommande tilläggshändelser i kundvagnen har korrigerats
 
 ### 1.0.3 av magento/module-page-builder-product-recommendations for Page Builder
 
