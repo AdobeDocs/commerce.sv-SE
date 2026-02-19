@@ -15,7 +15,7 @@ ht-degree: 0%
 Versionsinformationen beskriver alla versioner av AEM Assets Integration och innehåller:
 
 ![Nya](../assets/new.svg) nya funktioner
-![ Åtgärdat problem ](../assets/fix.svg) Korrigeringar och förbättringar
+![&#x200B; Åtgärdat problem &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Kända fel](../assets/bug.svg)
 
 Om du vill se funktionsändringar och korrigeringar som släppts utanför den vanliga versionen av funktionen går du igenom avsnitten _Uppdateringar för värdtjänsten_.
@@ -44,7 +44,7 @@ _17 februari 2026_
 
 [!BADGE Stöds]{type=Informative tooltip="Stöds"} Adobe Commerce version 2.4.5 och senare.
 
-![Nytt problem](../assets/new.svg)<!-- Issue ACCS-169 --> Fälten **[!UICONTROL Program ID]** och **[!UICONTROL Environment ID]** fylls nu i automatiskt som listrutor baserat på användarens IMS-session. Detta eliminerar manuell inmatning och minskar konfigurationsfelen. Om du vill använda den här funktionen måste användaren ha en roll i [AEM-leveranslagret](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank} och ett giltigt [IMS-klient-ID ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#configure-the-connection){target=_blank} konfigurerat för resursväljaren.
+![Nytt problem](../assets/new.svg)<!-- Issue ACCS-169 --> Fälten **[!UICONTROL Program ID]** och **[!UICONTROL Environment ID]** fylls nu i automatiskt som listrutor baserat på användarens IMS-session. Detta eliminerar manuell inmatning och minskar konfigurationsfelen. Om du vill använda den här funktionen måste användaren ha en roll i [AEM-leveranslagret](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank} och ett giltigt [IMS-klient-ID &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#configure-the-connection){target=_blank} konfigurerat för resursväljaren.
 
 ## v1.2.14
 
