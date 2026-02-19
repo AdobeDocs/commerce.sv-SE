@@ -184,7 +184,7 @@ Följande valda förbättringar, optimeringar och felkorrigeringar ingår i den 
 
 * `POST /V1/customers`- och `PUT /V1/customers/{customerId}`-slutpunkterna har lagts till i [REST API](https://developer.adobe.com/commerce/webapi/rest/reference/) för att skapa och uppdatera kunder. Dessa slutpunkter kräver IMS-auktorisering. <!-- CCSAAS-3112 -->
 
-* [`exchangeOtpForCustomerToken`-mutationen ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) har lagts till, vilket kräver en kunds e-postadress och engångslösenord (OTP) och tar emot en kundtoken i utbyte. Denna mutation används vanligtvis i scenarier där en kund måste autentisera med hjälp av en engångslösenord som skickas till deras e-post eller telefon.
+* [`exchangeOtpForCustomerToken`-mutationen &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) har lagts till, vilket kräver en kunds e-postadress och engångslösenord (OTP) och tar emot en kundtoken i utbyte. Denna mutation används vanligtvis i scenarier där en kund måste autentisera med hjälp av en engångslösenord som skickas till deras e-post eller telefon.
 
 * Om en adress som definieras i konfigurationsskärmen [!UICONTROL **Store Email Addresses**] i Admin innehåller ett värde som slutar med `example.com`, skickar inte Commerce e-post till den här adressen. Systemet loggar i stället att e-postmeddelandet inte skickades.  <!-- CCSAAS-3533 -->
 
