@@ -16,7 +16,7 @@ Konfigurera integreringen genom att ansluta Commerce till AEM Assets-instansen o
 
 När du har identifierat AEM Assets-projektet väljer du matchningsregel för att synkronisera resurser mellan Adobe Commerce och AEM Assets.
 
-* **[!UICONTROL Match by product SKU]** - Standardregel som matchar SKU:n i resursmetadata med [Commerce-produktens SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) för att se till att resurserna är kopplade till rätt produkter.
+* **[!UICONTROL Match by product SKU]** - Standardregel som matchar SKU:n i resursmetadata med [Commerce-produktens SKU](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/glossary#sku) för att se till att resurserna är kopplade till rätt produkter.
 
 * **[!UICONTROL Custom match]** - Matchningsregel för mer komplexa scenarier eller specifika affärskrav som kräver anpassad matchningslogik. Implementering av anpassad matchning kräver utveckling av anpassad kod i Adobe Developer App Builder för att definiera hur resurser matchas med produkter. Mer information kommer snart...
 
@@ -48,9 +48,9 @@ IMS-autentisering är aktiverat som standard. Lägg till användaren i produktpr
 
 [!BADGE Endast PaaS]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."}
 
-1. [Aktivera Adobe IMS för Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank} genom att följa instruktionerna i *Commerce Admin Guide*.
+1. [Aktivera Adobe IMS för Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=sv-SE){target=_blank} genom att följa instruktionerna i *Commerce Admin Guide*.
 
-1. [Öppna en supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) för att begära ett anpassat IMS-klient-ID för resursväljaren.
+1. [Öppna en supportbiljett](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) för att begära ett anpassat IMS-klient-ID för resursväljaren.
 
 1. Lägg till användaren i produktprofilen **AEM Assets DM OpenAPI Users - leverans** i [Adobe Admin Console](https://adminconsole.adobe.com/) för att ge åtkomst till AEM Assets leveransskikt.
 
@@ -89,7 +89,7 @@ IMS-autentisering är aktiverat som standard. Lägg till användaren i produktpr
 1. Välj en av resursmatchningsreglerna för resurssynkronisering i listrutan **[!UICONTROL Asset matching rule]**.
 
    * Välj **[!UICONTROL Match by SKU]** för [standardautomatisk matchning](../synchronize/default-match.md),
-   * Välj **[!UICONTROL Custom match]** för [anpassad automatisk matchning](../synchronize/custom-match.md) (kräver [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)).
+   * Välj **[!UICONTROL Custom match]** för [anpassad automatisk matchning](../synchronize/custom-match.md) (kräver [Adobe Developer App Builder](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)).
 
 1. Lägg till det [AEM Assets-metadatafältnamn](configure-aem.md#configure-metadata) som är definierat för Commerce-produkter-SKU:er i fältet **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` som standard.
 
@@ -117,7 +117,7 @@ Inställningen **Visualiseringsägare** avgör vilket system som skickar produkt
 
 Admin visar de tillgängliga bilderna för den ägaren, medan resten av bilderna är nedtonade och visas med en **dold** -etikett.
 
-Mer information om bildvisningsbeteende finns i avsnittet [Ange bildinformation](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}.
+Mer information om bildvisningsbeteende finns i avsnittet [Ange bildinformation](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}.
 
 >[!TIP]
 >
@@ -133,7 +133,7 @@ Mer information om bildvisningsbeteende finns i avsnittet [Ange bildinformation]
 
 ### Valfritt. Konfigurera URL för anpassad domän
 
-Om AEM Assets as a Cloud Service-projektet har konfigurerats med ett [anpassat domännamn](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank} måste du lägga till domännamnet i Commerce Store-konfigurationen så att AEM Assets-integreringen för Commerce kan använda det.
+Om AEM Assets as a Cloud Service-projektet har konfigurerats med ett [anpassat domännamn](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank} måste du lägga till domännamnet i Commerce Store-konfigurationen så att AEM Assets-integreringen för Commerce kan använda det.
 
 1. Navigera till **[!UICONTROL Store]** > Konfiguration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
@@ -145,7 +145,7 @@ Om AEM Assets as a Cloud Service-projektet har konfigurerats med ett [anpassat d
 
 ## Nästa steg
 
-* **Konfigurera din Commerce Storefront** - Om du vill använda AEM Assets med Commerce Storefront som drivs av Edge Delivery Services slutför du den konfiguration som beskrivs i avsnittet [AEM Assets-integrering](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) i *dokumentationen för Adobe Commerce Storefront*.
+* **Konfigurera din Commerce Storefront** - Om du vill använda AEM Assets med Commerce Storefront som drivs av Edge Delivery Services slutför du den konfiguration som beskrivs i avsnittet [AEM Assets-integrering](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=sv-SE) i *dokumentationen för Adobe Commerce Storefront*.
 
 * Konfigurera [matchande regler](../synchronize/default-match.md) mellan Adobe Commerce och AEM Assets-integreringen.
 
