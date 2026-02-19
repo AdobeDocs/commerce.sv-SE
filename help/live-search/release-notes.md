@@ -18,7 +18,7 @@ Support ges för den senaste versionen. Versionsinformation för äldre versione
 Bland uppdateringarna finns:
 
 ![Nya](../assets/new.svg) nya funktioner
-![Korrigera ](../assets/fix.svg) Korrigeringar och förbättringar
+![Korrigera &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Fel](../assets/bug.svg) Kända fel
 
 ## Uppdateringar av värdtjänster
@@ -57,7 +57,7 @@ _19 september 2024_
 
 _4 september 2024_
 
-![Korrigera](../assets/fix.svg) Ökade det maximala antalet bucklar som kan returneras [ inom en facet](boundaries-limits.md#facets) till 100.
+![Korrigera](../assets/fix.svg) Ökade det maximala antalet bucklar som kan returneras [&#x200B; inom en facet](boundaries-limits.md#facets) till 100.
 
 _7 augusti 2024_
 
@@ -268,7 +268,7 @@ _15 september 2023_
 ![Nya](../assets/new.svg) -användare kan nu söka efter kategorinamn när de lägger till en regel
 ![Nytt](../assets/new.svg) I kategoriträdvyn kan användare nu visa vilken kategori som har regler.
 ![Ny](../assets/new.svg) kategoriförhandsvisning visar bara den valda kategorin.
-![Med komponenterna ](../assets/new.svg) AEM CIF [Positionwidget](https://github.com/adobe/aem-cif-guides-venia/pull/319) och [PLP-widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) kan AEM webbplatser dra nytta av [!DNL Live Search].
+![Med komponenterna &#x200B;](../assets/new.svg) AEM CIF [Positionwidget](https://github.com/adobe/aem-cif-guides-venia/pull/319) och [PLP-widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) kan AEM webbplatser dra nytta av [!DNL Live Search].
 
 #### Uppdateringar
 
@@ -279,8 +279,8 @@ _15 september 2023_
 - 14 dagar
 - 30 dagar
 ![Åtgärda](../assets/fix.svg) händelser (Öka/Fäst/Bränn/Dölj) har bytt namn till Manuell rankning
-![Korrigera ](../assets/fix.svg) rankningstyp har bytt namn till Intelligent ranking
-![Korrigera ](../assets/fix.svg) Mindre felkorrigeringar
+![Korrigera &#x200B;](../assets/fix.svg) rankningstyp har bytt namn till Intelligent ranking
+![Korrigera &#x200B;](../assets/fix.svg) Mindre felkorrigeringar
 
 ### [!DNL Live Search] 3.1.0
 
@@ -290,7 +290,7 @@ _1 september 2023_
 
 #### Uppdateringar
 
-![Korrigera](../assets/fix.svg) Produktlistwidgeten har uppdaterats för att använda [katalogtjänstens API ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/).
+![Korrigera](../assets/fix.svg) Produktlistwidgeten har uppdaterats för att använda [katalogtjänstens API &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/).
 
 ### [!DNL Live Search] 3.0.2
 
@@ -333,7 +333,7 @@ _14 mars 2023_
 ![Nytt](../assets/new.svg) [Widgeten Produktlistsida](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
 ![Nytt](../assets/new.svg) [Kategorifiltreringsalternativ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
 ![Nytt](../assets/new.svg) har lagt till möjligheten att dra och släppa för att skapa Fäst-händelser
-![Nya ](../assets/new.svg) Fäst-åtgärder:
+![Nya &#x200B;](../assets/new.svg) Fäst-åtgärder:
 - Fäst på plats - Fäst knappen för att skapa Fäst-händelse med ett klick
 - Fäst överst - Placerar produkten på första plats
 - Fäst längst ned - Placerar produkten längst ned i resultaten
@@ -344,7 +344,7 @@ _14 mars 2023_
 #### Uppdateringar
 
 ![Korrigera](../assets/fix.svg) Konfigurera regler sorterar nu positioner automatiskt
-![Korrigera ](../assets/fix.svg) Om du tar bort en befintlig händelse uppdateras nu förhandsvisningen
+![Korrigera &#x200B;](../assets/fix.svg) Om du tar bort en befintlig händelse uppdateras nu förhandsvisningen
 ![Åtgärda](../assets/fix.svg) Regler utan händelser kan sparas
 ![Korrigera](../assets/fix.svg) Ta bort funktionsväljaren Välj typ
 ![Korrigera](../assets/fix.svg) Ny redigeringsstatus för osparade regler har lagts till
@@ -352,12 +352,12 @@ _14 mars 2023_
 #### Korrigeringar
 
 ![Korrigera](../assets/fix.svg) Serverfel har korrigerats när en oavslutad händelse inträffar när filen sparades
-![Korrigera ](../assets/fix.svg) En korrekt borttagning av en specifik händelse när det finns flera händelser har åtgärdats
+![Korrigera &#x200B;](../assets/fix.svg) En korrekt borttagning av en specifik händelse när det finns flera händelser har åtgärdats
 ![Åtgärda](../assets/fix.svg) Den befintliga regelhändelsen som inte uppdateras när en ny händelse har lagts till har åtgärdats
-![Korrigera ](../assets/fix.svg) Korrigerad vid andra&quot;Redigera&quot;-klickning från detaljer, [!DNL Live Search] sidan måste läsas in igen
+![Korrigera &#x200B;](../assets/fix.svg) Korrigerad vid andra&quot;Redigera&quot;-klickning från detaljer, [!DNL Live Search] sidan måste läsas in igen
 ![Korrigera](../assets/fix.svg) synonymer: Ett problem har korrigerats när en användare klickade bort från indata, men det gick inte att returnera fokus till fältet
-![ Åtgärda ](../assets/fix.svg) Andra mindre felkorrigeringar och prestandauppdateringar
-![Fel ](../assets/bug.svg) - Rankning med &quot;Rekommenderas för dig&quot; stöds bara i Live Search-widgetarna. Det stöds inte med standardsökfunktionerna för Luma och PWA.
+![&#x200B; Åtgärda &#x200B;](../assets/fix.svg) Andra mindre felkorrigeringar och prestandauppdateringar
+![Fel &#x200B;](../assets/bug.svg) - Rankning med &quot;Rekommenderas för dig&quot; stöds bara i Live Search-widgetarna. Det stöds inte med standardsökfunktionerna för Luma och PWA.
 ![Fel](../assets/bug.svg) - Egna prisattributsaspekter återges inte korrekt i Luma, men API:t filtrerar dem korrekt.
 
 Merchants måste uppgradera tilläggsversionen [!DNL Live Search] >= 3.0.1 för att få tillgång till dessa funktioner.
@@ -439,11 +439,11 @@ Befintliga [!DNL Live Search]-installationer måste uppgraderas till [!DNL Live 
 ![Nytt](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) visar föreslagna produkter och miniatyrbilder av de bästa sökresultaten som typfrågor för shoppare i sökrutan.
 ![Ny](../assets/new.svg) Commerce *Admin*-session förblir öppen under utökad inaktivitet på tangentbordet
 ![Nytt](../assets/new.svg) [!DNL Live Search] aktiveras automatiskt efter introduktionen
-![ Korrigera ](../assets/fix.svg) Inledande indexeringstid är mindre än en timme
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Inledande indexeringstid är mindre än en timme
 ![Korrigera](../assets/fix.svg) stegvisa produktuppdateringar nära realtid (efter installation och installation)
-![ Korrigera ](../assets/fix.svg) Sorterbara kolumner i synonymredigeraren
-![ Korrigera ](../assets/fix.svg) [!DNL Live Search] genererar inte längre ett fel om sökvillkoren innehåller ett tomt sorteringsordningsvärde
-![Korrigera ](../assets/fix.svg) Intervallfiltrering fungerar inte längre om attributkoder innehåller strängarna &quot;to&quot; eller &quot;from&quot;
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) Sorterbara kolumner i synonymredigeraren
+![&#x200B; Korrigera &#x200B;](../assets/fix.svg) [!DNL Live Search] genererar inte längre ett fel om sökvillkoren innehåller ett tomt sorteringsordningsvärde
+![Korrigera &#x200B;](../assets/fix.svg) Intervallfiltrering fungerar inte längre om attributkoder innehåller strängarna &quot;to&quot; eller &quot;from&quot;
 
 ### [!DNL Live Search] 1.1.0
 
