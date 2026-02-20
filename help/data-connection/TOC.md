@@ -4,23 +4,23 @@ user-guide-description: Den här guiden innehåller detaljerade anvisningar om h
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
-source-git-commit: d079ba51ede5272059fa6ac9d4176d484266ba21
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+source-git-commit: 60a8e8f5cedff0c6fa56c563807b9604e3ae1d21
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 2%
+source-wordcount: '138'
+ht-degree: 1%
 
 ---
 
 
 # [!DNL Data Connection]-tillägg för Adobe Commerce {#data-connection}
 
-- [Översikt över användarhandbok](overview.md)
+- [[!DNL Data Connection] - introduktion](overview.md)
 - [HIPAA-beredskap för Commerce Services](hipaa-readiness.md)
 - [Hur Commerce tjänster hanterar sekretessförfrågningar](handle-privacy-request.md)
 - [Versionsinformation](release-notes.md)
 - Grundläggande {#fundamentals}
-   - [Installera tillägget  [!DNL Data Connection] &#x200B;](install.md)
+   - [Installera tillägget  [!DNL Data Connection] ](install.md)
    - [Anslut till Adobe Experience Platform](connect-data.md)
    - [Typer av Commerce-data](data-ingestion.md)
    - [Uppdatera händelseschema för tidsserie](update-xdm.md)
@@ -38,4 +38,4 @@ ht-degree: 2%
 - Användningsexempel {#use-cases}
    - [Använd Adobe Journey Optimizer för att skicka ett övergivet kundvagnsmeddelande](using-ajo.md)
    - [Skapa en publik i Real-Time CDP med Commerce Event Data](create-audience.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=sv-SE)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
