@@ -2,14 +2,12 @@
 title: Verktyg för AI-kodningsutvecklare för Adobe Commerce App Builder
 description: Lär dig hur du använder AI-verktygen för att skapa Commerce App Builder-program.
 feature: App Builder, Cloud
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 5d4726f7191f74507524667555ab46838bb2407a
+source-git-commit: 4e3f593ead4b0e32bdf474498421b20475dcbe52
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -27,7 +25,7 @@ AI-kodningsverktygen ger följande fördelar:
 
 Genom att installera AI-kodningsverktygen får du tillgång till:
 
-* Regler - En Adobe Commerce- och App Builder-specifik regeluppsättning som är utformad för att vägleda och informera programutvecklingen.
+* Kompetens - En Adobe Commerce- och App Builder-specifik färdighetsuppsättning som är utformad för att vägleda och informera programutvecklingen.
 * Developer MCP Server
 * App Builder MCP Server
 
@@ -43,11 +41,16 @@ Verktygen uppdateras till den senaste versionen.
 
 ## Förutsättningar
 
-* Ett av följande kodningsagenter:
+* Alla kodningsagenter som stöder [agentfärdigheter](https://agentskills.io/home#adoption), till exempel:
+
    * [Markör](https://cursor.com/download)
-   * [Github Copilot](https://github.com/features/copilot)
-   * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Claude Code](https://www.claude.com/product/claude-code)
+   * [GitHub Copilot](https://github.com/features/copilot)
+   * [Windsurf](https://windsurf.com)
+   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+   * [OpenAI-kod](https://openai.com/index/introducing-codex/)
+   * [Rad](https://cline.bot)
+
 * [Node.js](https://nodejs.org/en/download): LTS-version
 * Pakethanteraren: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) eller [garn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): För databaskloning och versionskontroll
@@ -74,11 +77,19 @@ Verktygen uppdateras till den senaste versionen.
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
-1. Klona startsatsen för Commerce [integration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
+1. Klona något av följande:
 
-   ```bash
-   git clone git@github.com:adobe/commerce-integration-starter-kit.git
-   ```
+   * Commerce [integreringsstartkit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) - för att skapa integration med andra avdelningar.
+
+     ```bash
+     git clone git@github.com:adobe/commerce-integration-starter-kit.git
+     ```
+
+   * Commerce [startpaket för utcheckning](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/) för att skapa eller utöka utcheckningsupplevelsen, inklusive betalningar, frakt och skatter.
+
+     ```bash
+     git clone git@github.com:adobe/commerce-checkout-starter-kit.git
+     ```
 
 1. Gå till startpaketkatalogen:
 
@@ -92,49 +103,45 @@ Verktygen uppdateras till den senaste versionen.
    aio commerce extensibility tools-setup
    ```
 
-Installationsprocessen uppmanar dig med konfigurationsalternativ. För installationsplatsen väljer du Aktuell katalog för att installera verktygen på den aktuella arbetsytan:
+   Installationsprocessen uppmanar dig med konfigurationsalternativ. Följ anvisningarna för att slutföra installationen. Verktygen installeras i den valda katalogen.
 
-```shell-session
-? Where would you like to setup the tools?
-❯ Current directory
-  New directory
-```
+   * Välj det startpaket som du vill använda för ditt projekt.
 
-Välj den kodningsagent du vill använda:
+     ```shell-session
+     ? Which starter kit would you like to use?
+     ❯ Integration starter kit
+        Checkout starter kit
+     ```
 
-```shell-session
-? Which coding agent would you like to use?
-❯ Cursor
-  Copilot
-  Gemini CLI
-  Claude Code
-```
+   * Välj den kodningsagent du vill använda. Mer än 40 kodningsagenter stöds, men om du inte ser din favoritagent kan du använda alternativet `Other` för att installera kunskaper för alla kodningsagenter. I dokumentationen för kodningsagenten finns instruktioner om hur du konfigurerar kunskaperna.
 
-När du väljer pakethanteraren bör du använda `npm` för konsekvens:
+     ```shell-session
+     ? Which coding agent would you like to install skills for?
+     ❯ Cursor
+        Claude Code
+        GithubCopilot
+        Windsurf
+        Gemini CLI
+        OpenAI Codex
+        Cline
+        ...
+     ```
 
-```shell-session
-? Which package manager would you like to use?
-❯ npm
-  yarn
-```
+   * Installationsprogrammet identifierar om du har installerat NPM eller Garn och gör rätt val automatiskt. Om du inte har installerat någon av dem uppmanas du att välja en pakethanterare. Adobe rekommenderar att du använder `npm` för att få en konsekvent inställning:
+
+     ```shell-session
+     ? Which package manager would you like to use?
+     ❯ npm
+        yarn
+     ```
 
 1. När kodningsverktygen har installerats konfigureras följande under installationen:
 
    * MCP-serverintegration för Adobe Commerce-utveckling
-   * Markörens IDE-regler för förbättrad utvecklingsupplevelse
+   * [Agentfärdigheter](#skills) för förbättrad utvecklingsupplevelse
    * Commerce-specifika utvecklingsverktyg och arbetsflöden
 
-   Följande filer läggs till på arbetsytan:
-
-   **Markör**
-
-   * MCP-konfiguration: `.cursor/mcp.json`
-   * Regelkatalog: `.cursor/rules/`
-
-   **Copilot**
-
-   * MCP-konfiguration: `.vscode/mcp.json`
-   * Regelkatalog: `.github/copilot-instructions.md`
+   Kunskaps- och MCP-verktygen är nu installerade. Om du inte ser kunskaperna och MCP-verktygen startar du om kodningsagenten.
 
 >[!NOTE]
 >
@@ -179,7 +186,7 @@ aio auth login
 
 1. Starta om markörutvecklingsmiljön för att läsa in de nya MCP-verktygen och konfigurationen.
 
-1. Kontrollera installationen genom att bekräfta att reglerna finns i mappen `.cursor/rules/`.
+1. Verifiera installationen genom att bekräfta att det finns kunskaper i mappen `.cursor/skills/`.
 
 1. Aktivera MCP-servern:
 
@@ -198,9 +205,9 @@ aio auth login
 
 1. Använd följande uppmaning för att se om agenten använder MCP-servern. Om så inte är fallet ber du agenten uttryckligen att använda de tillgängliga MCP-verktygen.
 
-```shell-session
-What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
-```
+   ```shell-session
+   What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
+   ```
 
 ### Copilot
 
@@ -237,7 +244,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## Exempelfråga
 
-I följande exempelfråga skapas ett program som skickar meddelanden när en beställning placeras.
+I följande exempelfråga används startsatsen för integrering för att skapa ett program som skickar meddelanden när en beställning görs.
 
 ```shell-session
 Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
@@ -248,6 +255,19 @@ Customer Email ID -> emailID
 Payment Type -> pType
 ```
 
+I följande exempelfråga används startsatsen för utcheckning för att skapa ett program med anpassade leveransmetoder.
+
+```shell-session
+Implement an Adobe Commerce SaaS application that provides custom shipping methods.
+The extension should:
+1. Return shipping options based on the destination postal code
+2. If postal code is in California, add an "Express California" option for $15
+3. If postal code is outside US, add an "International Standard" option for $25
+4. The carrier code should be "MYSHIP"
+```
+
+
+
 ## Fråga om kommandon
 
 Förutom att fråga kan du använda kommandot `/search-commerce-docs` för att söka efter dokumentation i konversationer med din agent. Exempel:
@@ -256,9 +276,31 @@ Förutom att fråga kan du använda kommandot `/search-commerce-docs` för att s
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
+## Kompetens
+
+Kunskaperna anropas automatiskt när du chattar med din kodningsagent, men du kan även anropa dem manuellt med följande kommandon:
+
+* `/architect` - Designar arkitektur för Adobe Commerce-tillägg med [!DNL App Builder] och det valda startpaketet. Använd när du planerar integreringar, väljer händelser, utformar dataflöden eller fattar arkitektoniska beslut.
+* `/developer` - Implementerar Adobe Commerce-tillägg efter [!DNL App Builder] mönster och filstrukturen. Använd detta när du genererar kod, uppdaterar konfigurationsfiler eller implementerar körningsåtgärder.
+* `/devops-engineer` - Distribuerar och kör [!DNL App Builder] tillägg. Använd detta när du distribuerar program, konfigurerar miljöer, felsöker installationsproblem, konfigurerar CI/CD eller åtgärdar introduktionsfel.
+* `/product-manager` - Samlar in dokumentkrav för Adobe Commerce-tillägg. Använd när du startar ett nytt projekt, definierar acceptanskriterier, förtydligar affärsmål eller skapar `REQUIREMENTS.md`-dokumentation.
+* `/technical-writer` - Skapar omfattande dokumentation för [!DNL App Builder]-program. Använd när du skriver `README.md`, användarhandböcker, API-dokumentation, ändringsloggar eller säkerställer att dokumentationen är fullständig.
+* `/tester` - Skapar omfattande tester för [!DNL App Builder] program. Använd när du skriver enhetstester, integrationstester, validerar säkerheten eller säkerställer kodkvalitet och täckning.
+* `/tutor` (experimentellt) - Undervisar [!DNL Adobe Commerce] programutvecklingskoncept med tydliga förklaringar och exempel. Använd när du lär dig [!DNL App Builder], förstår händelser eller behöver vägledning om utvecklingsmönster.
+
 ## Bästa praxis
 
 Adobe rekommenderar att du följer följande metodtips när du använder AI-kodningsverktygen:
+
+### Planeringsläge
+
+När du chattar med din kodningsagent bör du välja läget **Planera** för att skapa en detaljerad implementeringsplan för ditt projekt.
+
+Metoden för att välja **Planera**-läge varierar beroende på vilken agent du använder. Instruktioner finns i agentens dokumentation. Exempel:
+
+* [Markör](https://cursor.com/docs/agent/modes)
+* [Claude Code](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
+* [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
 
 ### Checklista
 
@@ -296,8 +338,9 @@ På så sätt kan du också utnyttja Adobe mallar och bygga vidare på beprövad
 Se följande resurser för att komma igång:
 
 * [Startpaket för integrering](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
+* [Startpaket för utcheckning](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce startkit-mallar](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events startmallar](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder exempelprogram](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Därför bör du använda dessa resurser
@@ -313,7 +356,7 @@ Se följande resurser för att komma igång:
 
 ### Protokoll
 
-Följande fyrstegsprotokoll tillämpas automatiskt av regelsystemet. Verktygen bör följa detta protokoll automatiskt när de utvecklar program:
+Följande fyrfasprotokoll används automatiskt av de installerade kunskaperna. Verktygen bör följa detta protokoll automatiskt när de utvecklar program:
 
 * Fas 1: Analys och förtydligande av kraven
    * Lämna fullständiga svar när ni får frågan om hur ni ska klargöra frågorna.

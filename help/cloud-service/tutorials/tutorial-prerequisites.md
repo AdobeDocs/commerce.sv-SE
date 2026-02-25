@@ -1,25 +1,19 @@
 ---
-title: Krav för klassificeringstillägg - självstudiekurs
+title: Förutsättningar
 description: Lär dig förutsättningarna för klassificeringstilläggslabbet.
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
+source-git-commit: 68e34cecbc1b16194ccc2e0296c2d66f37855b7c
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
 
-# Krav för klasstillägg - självstudiekurs (Beta)
+# Förutsättningar
 
->[!NOTE]
->
->AI-verktygen som används i den här självstudiekursen finns för närvarande i Beta och kan innehålla buggar eller andra problem.
-
-På den här sidan visas förutsättningarna och konfigurationsstegen för [!DNL Adobe Commerce as a Cloud Service] självstudiekurser, t.ex. [självstudiekursen för klassificeringstillägg](./ratings-extension.md).
+På den här sidan visas förutsättningarna och konfigurationsstegen för [!DNL Adobe Commerce as a Cloud Service]-självstudiekurser, t.ex. [självstudiekursen för klassificeringstillägg](./ratings-extension.md) och [självstudiekursen för leveransmetodtillägg](./shipping-method-extension.md).
 
 ## Krav för Adobe Commerce as a Cloud Service
 
@@ -29,7 +23,7 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för [!DNL
   npm install -g @adobe/aio-cli
   ```
 
-* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [&#x200B; Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
+* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [ Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
 
   ```bash
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
@@ -108,16 +102,27 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för [!DNL
 
    ![Terminal som visar Adobe I/O CLI-organisationsprojekt och val av arbetsyta](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
-### Klona startpaketet för integrering
+### Klona startkit
 
-Klona Commerce startpaket för integrering och förbered ditt projekt:
+Klona en av följande Commerce startkit-databaser för det tillägg du håller på att bygga och förbereda ditt projekt:
+
+Startpaket för integrering:
 
 ```bash
 git clone https://github.com/adobe/commerce-integration-starter-kit.git extension
 cd extension
 ```
 
-![Terminal-utdata som visar Git-klonkommandot för startsatsen för Commerce-integrering](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+Startpaket för kassan:
+
+```bash
+git clone https://github.com/adobe/commerce-checkout-starter-kit.git extension
+cd extension
+```
+
+>[!BEGINTABS]
+
+>[!TAB Startpaket för integrering]
 
 ### Skapa en .env-fil
 
@@ -187,11 +192,28 @@ Länka ditt lokala projekt till den fjärranslutna arbetsytan:
 aio app use workspace.json -m
 ```
 
-![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot &#x200B;](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot ](../assets/connect-workspace.png){width="600" zoomable="yes"}
+
+>[!TAB Startpaket för utcheckning]
+
+### Ansluta den lokala arbetsytan till fjärrarbetsytan
+
+Länka det lokala projektet till fjärrarbetsytan. Kör från projektets rot (mappen `extension`):
+
+```bash
+aio app use --merge
+```
+
+När du uppmanas till det väljer du det alternativ som använder den organisation, det projekt och den arbetsyta du valde när du konfigurerade Adobe I/O CLI. Detta skriver arbetsytans konfiguration i programmet så att den arbetsytan används vid distributionen och den lokala utvecklingen.
+
+![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot ](../assets/connect-workspace.png){width="600" zoomable="yes"}
+
+>[!ENDTABS]
 
 ### Installera AI-verktyg för tillägg
 
-Uppdatera markörregelfilen och MCP-konfigurationen så att det innehåller paketet `commerce-extensibility-tools`.
+Den här processen skapar MCP-konfigurationen (`.<agent>/mcp.json`), kompetenskatalogen (`.<agent>/skills/`) och lägger till `AGENTS.md` i projektets rot. Du uppmanas att välja ett startpaket, en kodningsagent och en pakethanterare.
+
 
 1. Konfigurera AI-stödda utvecklingsverktyg i mappen `extension` med följande kommandon:
 
@@ -204,6 +226,15 @@ Uppdatera markörregelfilen och MCP-konfigurationen så att det innehåller pake
    ```
 
    ![Terminal som visar AI-verktyg för utökningsverktyg för att konfigurera utdata](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+
+1. När installationen är klar startar du om kodningsagenten så att den kan läsa in de nya MCP-verktygen och -kunskaperna. Commerce App Builder-verktygen finns nu i din miljö.
+
+   >[!NOTE]
+   >
+   >Om du ser ett varningsmeddelande om att inga kunskaper hittades för startpaketet gick något fel. Det beror ofta på att konfigurationen kördes i en annan mapp än där startsatsen klonades. Kör `aio commerce extensibility tools-setup` från mappen `extension` (startkit-projektroten) och välj rätt startkit när du uppmanas till detta.
+
+   ![Terminal som visar konfiguration av AI-utökningsverktyg med utcheckningsstartsverktyget valt](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
+
 <!--
 ## Storefront prerequisites
 

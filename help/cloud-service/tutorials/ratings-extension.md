@@ -4,20 +4,14 @@ description: Lär dig hur du bygger ett produktklassificeringstillägg för Adob
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
+source-git-commit: fb3595284761e9478c819150c27d06631de67e18
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
 
-# Självstudiekurs om klassificeringstillägg (Beta)
-
->[!NOTE]
->
->AI-verktygen som används i den här självstudiekursen finns för närvarande i Beta och kan innehålla buggar eller andra problem.
+# Självstudiekurs om klassificeringstillägg
 
 Den här självstudiekursen vägleder dig genom att skapa ett produktklassificeringstillägg för [!DNL Adobe Commerce as a Cloud Service] med [!DNL Adobe App Builder] och AI-stödda utvecklingsverktyg.
 
@@ -41,7 +35,7 @@ git --version
 bash --version
 ```
 
-Om något av de föregående kommandona inte returnerar det förväntade resultatet kan du få hjälp i [kravavsnitten](tutorial-prerequisites.md).
+Om något av de föregående kommandona inte returnerar det förväntade resultatet kan du få hjälp i [kravavsnitten](./tutorial-prerequisites.md).
 
 ## Tilläggsutveckling
 
@@ -248,7 +242,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=sv-SE).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
