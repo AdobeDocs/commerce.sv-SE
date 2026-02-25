@@ -23,7 +23,7 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för [!DNL
   npm install -g @adobe/aio-cli
   ```
 
-* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [ Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
+* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [&#x200B; Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
 
   ```bash
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
@@ -192,7 +192,7 @@ Länka ditt lokala projekt till den fjärranslutna arbetsytan:
 aio app use workspace.json -m
 ```
 
-![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot ](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot &#x200B;](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 >[!TAB Startpaket för utcheckning]
 
@@ -206,7 +206,7 @@ aio app use --merge
 
 När du uppmanas till det väljer du det alternativ som använder den organisation, det projekt och den arbetsyta du valde när du konfigurerade Adobe I/O CLI. Detta skriver arbetsytans konfiguration i programmet så att den arbetsytan används vid distributionen och den lokala utvecklingen.
 
-![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot ](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot &#x200B;](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 >[!ENDTABS]
 
