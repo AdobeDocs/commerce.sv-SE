@@ -1,123 +1,127 @@
 ---
-title: Verktyg för massdatamigrering
-description: Lär dig hur du använder Bulk Data Migration Tool för att migrera data från din befintliga Adobe Commerce on Cloud-instans till [!DNL Adobe Commerce as a Cloud Service].
+title: Migreringsverktyg för massdata
+description: Lär dig hur du använder verktyget för datamigrering (Bulk Data Migration) för att migrera data från din befintliga Adobe Commerce på molninstansen till  [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce som molntjänst och Adobe Commerce Optimizer-projekt (Adobe-hanterad SaaS-infrastruktur)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: e582ce85b58b57922a8cdd63dbe32bd0f08c64f9
+source-git-commit: 66bb62e1288f034fa246056dbec43c0104803451
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
 
-# Verktyg för massöverföring av data
+# Migreringsverktyg för massdata
 
-Verktyget för massdatamigrering följer en distribuerad arkitektur som möjliggör säker och effektiv datamigrering från PaaS till SaaS-miljöer. Detta verktyg hjälper lösningsimplementatörer att migrera data från en befintlig Adobe Commerce on Cloud-instans (PaaS) till [!DNL Adobe Commerce as a Cloud Service] (SaaS). För mer information om migrationsprocessen, se översikten[&#x200B; över &#x200B;](./overview.md)migration.
+Migreringsverktyget för gruppdata följer en distribuerad arkitektur som möjliggör säker och effektiv datamigrering från PaaS till SaaS-miljöer. Det här verktyget hjälper lösningsimplementerare att migrera data från en befintlig Adobe Commerce på Cloud-instans (PaaS) till [!DNL Adobe Commerce as a Cloud Service] (SaaS). Mer information om migreringsprocessen finns i [migreringsöversikten](./overview.md).
 
 >[!NOTE]
 >
->Verktyget för bulkdatamigrering stödjer migrering av kärndata från förstapartshandeln enbart. Anpassad datamigrering stöds för närvarande inte.
+>Massdatamigreringsverktyget har endast stöd för migrering av affärsdata från första part. Anpassad datamigrering stöds för närvarande inte.
 
-Följande bild visar arkitekturen och nyckelkomponenterna för användning av verktyget för massöverföring av data.
+Följande bild visar arkitekturen och de viktigaste komponenterna för att använda verktyget för migrering av gruppdata.
 
-![Arkitekturdiagram för Bulk Data Migration Tool som visar PaaS till SaaS-dataflöde](../assets/bulk-data-diagram.png){zoomable="yes"}
+![Arkitektur för verktyget Datamigrering - massvis med PaaS-data till SaaS](../assets/bulk-data-diagram.png){zoomable="yes"}
 
-## Migreringsarbetsflöde
+## Arbetsflöde för migrering
 
-Arbetsflödet för massöverföring av data består av följande steg:
+Arbetsflödet för massdatamigrering består av följande steg:
 
-1. Skapa en ny miljö för din migration.
-1. Kopiera dina data från ditt gamla system.
-1. Flytta din data till det nya systemet.
-1. Gör din produktkatalog tillgänglig i det nya systemet.
-1. Bekräfta att dina data migrerades korrekt.
+1. Konfigurera en ny miljö för din migrering.
+1. Kopiera data från ditt gamla system.
+1. Flytta era data till det nya systemet.
+1. Gör produktkatalogen tillgänglig i det nya systemet.
+1. Bekräfta att dina data har migrerats korrekt.
 
-Följande avsnitt beskriver dessa steg i detalj.
+I följande avsnitt beskrivs dessa steg i detalj.
 
-## Få tillgång till bulkdatamigreringsverktyget
+## Få åtkomst till verktyget för massdatamigrering
 
-Tillgängligheten för bulkdatamigreringsverktyget är följande:
+Följande massdatamigreringsverktyg är tillgängliga:
 
-- **Q1 2026** (ännu inte tillgängligt) - Efter den initiala lanseringen av bulkdatamigreringsverktyget kommer du att kunna komma åt det genom att skicka in ett supportärende.
-- **Q1 2026** (ännu inte tillgängligt) - Efter den offentliga lanseringen av verktyget för massdatamigrering kommer det att vara tillgängligt från denna sida.
+- **Q1 2026** (ännu inte tillgängligt) - Efter den första versionen av migreringsverktyget för gruppdata kan du komma åt det genom att skicka en supportanmälan.
+- **Q1 2026** (ännu inte tillgängligt) - Efter den offentliga versionen av verktyget för migrering av gruppdata kommer det att vara tillgängligt från den här sidan.
 
 ## Skapa målmiljö
 
-Lösningsimplementatören (SI) skapar en målmiljö för migreringen. Denna miljö lagrar data som migrerats från källinstansen.
+Solution Implementer (SI) skapar en målmiljö för migreringen. I den här miljön lagras data som migrerats från källinstansen.
 
-Först, [skapa en ny [!DNL Adobe Commerce as a Cloud Service]  (SaaS)-instans](../getting-started.md#create-an-instance).
+Först [skapar du en ny  [!DNL Adobe Commerce as a Cloud Service] (SaaS)-instans](../getting-started.md#create-an-instance).
 
-### Konfigurera extraktionsverktyg
+### Konfigurera extraheringsverktyget
 
-Använd extraktionsverktyget för att extrahera data från källinstansen.
+Använd extraheringsverktyget för att extrahera data från källinstansen.
 
-1. Ladda ner extraktionsverktyget från länken som Adobe tillhandahåller.
-1. Sätt följande miljövariabler i extraktionsverktyget:
-   - Anslutningsdetaljer till din befintliga MySQL-databas
-   - Mål-tenant-ID:t för din [!DNL Adobe Commerce as a Cloud Service] instans
-   - Dina IMS-meriter, inklusive:
+1. Ladda ned extraheringsverktyget från den länk du får från Adobe.
+1. Ange följande miljövariabler i extraheringsverktyget:
+   - Anslutningsinformation till din befintliga MySQL-databas
+   - Målklient-ID för din [!DNL Adobe Commerce as a Cloud Service]-instans
+   - Dina IMS-autentiseringsuppgifter, inklusive:
       - Klient-ID
       - Klienthemlighet
-      - IMS-sikten
-      - IMS URL – Bas-URL:en. Till exempel, `https://ims-na1.adobelogin.com/`.
-      - IMS organisations-ID
+      - IMS-scope
+      - IMS URL - Bas-URL. Exempel: `https://ims-na1.adobelogin.com/`.
+      - ID för IMS-organisation
 
-   För IMS-scopes och andra värden, välj din OAuth-typ i **avsnittet Credentials** i ditt projekt i [Adobe Developer Console](https://developer.adobe.com/console/). Mer information finns i `.example.env` filen som ingår i extraktionsverktyget.
+   För IMS-omfång och andra värden väljer du OAuth-typen i avsnittet **Credentials** i ditt projekt i [Adobe Developer Console](https://developer.adobe.com/console/). Mer information finns i filen `.example.env` som ingår i extraheringsverktyget.
 
 ### Extrahera data
 
-Innan extraktionsverktyget körs måste lösningsimplementatören etablera en SSH-tunnel till PaaS-databasen med hjälp av:
+Innan extraheringsverktyget körs måste den som implementerar lösningen upprätta en SSH-tunnel till PaaS-databasen med:
 
 ```bash
 magento-cloud tunnel:open
 ```
 
-Kör sedan extraktionsverktyget, som kommer:
+Kör sedan extraheringsverktyget som:
 
-1. Koppla upp dig till PaaS-databasen, analysera dess schema och jämför det med detaljerna i SaaS-hyresgästschemat.
-1. Generera en extraktions- och transformationsplan baserad på de gemensamma schemaelementen mellan PaaS och SaaS.
-1. Extrahera data med Catalog Data Management Service (CDMS).
+1. Anslut till PaaS-databasen, analysera dess schema och jämför det med SaaS-klientens schemainformation.
+1. Generera en extraherings- och omvandlingsplan baserad på de vanliga schemaelementen mellan PaaS och SaaS.
+1. Extrahera data med hjälp av katalogdatahanteringstjänsten (CDMS).
 
-### Lastdata
+### Läs in data
 
-Kör verktyget för att ladda data som tillhandahålls av Adobe. Detta verktyg kommer:
+Kör det inläsningsdataverktyg som tillhandahålls av Adobe. Det här verktyget kommer att:
 
-1. Koppla upp dig mot SaaS-hyresgästdatabasen med ett migreringskonto.
-1. Skapa en laddningsplan.
-1. Genomför planen och flytta data i batcher till SaaS-hyresgästdatabasen.
-1. Bearbeta katalogmedia och överför det till målmiljön.
-1. Töm SaaS Redis-cachen och ogiltigförklara databasindex för hyresgästen.
+1. Anslut till SaaS-klientdatabasen med ett migreringskonto.
+1. Generera en inläsningsplan.
+1. Kör planen och flytta data till SaaS-klientdatabasen gruppvis.
+1. Bearbeta katalogmedia och överför dem till målmiljön.
+1. Töm SaaS Redis-cachen och gör databasindex för klienten ogiltiga.
 
-### Katalogdatainsamling
+### Inmatning av katalogdata
 
-Efter att datan laddats flödar katalogdata automatiskt från SaaS-hyresgästdatabasen till Katalogtjänsten.
+När data har lästs in flödar katalogdata automatiskt från SaaS-klientdatabasen till katalogtjänsten.
 
-Katalogtjänsten delar denna data med Live Search och Produktrekommendationer. Ingen manuell intervention krävs för denna process. Datan finns tillgänglig i alla tjänster när insamlingen är klar.
+Katalogtjänsten delar dessa data med Live Search och Produktrekommendationer. Ingen manuell åtgärd krävs för den här processen. Data finns tillgängliga i alla tjänster när intaget är slutfört.
+
+>[!IMPORTANT]
+>
+>Konfigurationsinställningarna importeras inte automatiskt. Innan du börjar med datamigreringsprocessen bör du tänka på dina aktuella kataloginställningar i [!DNL Commerce Admin]. Implementera sedan samma konfiguration i målmiljön [!DNL Adobe Commerce as a Cloud Service].
 
 ### Verifiering av dataintegritet
 
-Efter migreringen utför CDMS följande automatiska dataintegritetskontroller för att säkerställa noggrannheten och fullständigheten hos de migrerade datan:
+Efter migreringen utför CDMS följande automatiska dataintegritetskontroller för att säkerställa att migrerade data är korrekta och fullständiga:
 
 **API-baserad verifiering**
 
-Under verifieringen jämför CDMS REST- och GraphQL API-svar från tidigare körda frågor med motsvarande poster från målinstansen. Eventuella avvikelser är synliga i migrationsstatusen.
+Under verifieringen jämför CDMS REST- och GraphQL API-svar från tidigare körda frågor med motsvarande poster från målinstansen. Eventuella avvikelser visas i migreringsstatusen.
 
 **Verifiering på databasnivå**
 
 Under verifieringen räknar CDMS antalet extraherade poster och jämför det antalet med mängden inlästa poster.
 
-**On-demand-verifiering (valfritt)**
+**Verifiering på begäran (valfritt)**
 
-Du kan också manuellt utlösa omfattande verifiering av alla systemposter:
+Du kan också manuellt aktivera omfattande verifiering av alla systemposter:
 
 >[!NOTE]
 >
->Denna process är resurskrävande och bör endast användas i sandlådemiljöer.
+>Den här processen är resursintensiv och bör bara användas i sandlådemiljöer.
 
-Den fullständiga verifieringen inkluderar:
+Fullständig verifiering innefattar:
 
 - Fullständig API-baserad verifiering med alla förextraherade REST- och GraphQL API-svar
-- Detaljerad rapport över eventuella inkonsekvenser som hittats
+- Detaljerad rapport om eventuella inkonsekvenser som hittats
