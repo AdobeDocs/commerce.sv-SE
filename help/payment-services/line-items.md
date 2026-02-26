@@ -25,13 +25,13 @@ Den här informationen är användbar för kundservice, orderhantering och korre
 
 Radobjekt aktiveras som standard för [!DNL Payment Services]. Konfigurera:
 
-1. Navigera till _>_ > **[!UICONTROL Stores]** på sidofältet _[!UICONTROL Settings]_Admin **[!UICONTROL Configuration]**.
+1. Navigera till _>_ > **[!UICONTROL Stores]** på sidofältet _[!UICONTROL Settings]_&#x200B;Admin **[!UICONTROL Configuration]**.
 
 1. Gå till **[!UICONTROL Sales]** och välj **[!UICONTROL Payment Methods]**.
 
 1. Expandera avsnittet _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Expandera avsnittet _[!UICONTROL Payment Services]_i avsnittet_[!UICONTROL Line Items]_.
+1. Expandera avsnittet _[!UICONTROL Payment Services]_&#x200B;i avsnittet&#x200B;_[!UICONTROL Line Items]_.
 
 1. För **[!UICONTROL Line Items Enabled]** väljer du `Yes` om du vill aktivera (standard) eller `No` om du vill inaktivera radobjekt.
 
@@ -77,7 +77,7 @@ Objektet `unit_amount` innehåller följande attribut:
 
 | Attribut | Datatyp | Beskrivning |
 | --- | --- | --- |
-| `currency_code` | Sträng! | Den [ISO-4217-valutakod ](https://developer.paypal.com/api/rest/reference/currency-codes/) med tre tecken som identifierar valutan. |
+| `currency_code` | Sträng! | Den [ISO-4217-valutakod &#x200B;](https://developer.paypal.com/api/rest/reference/currency-codes/) med tre tecken som identifierar valutan. |
 | `value` | Sträng! | Anger artikelns värde. `currency_code` avgör antalet decimaler som krävs, om sådana finns. |
 
 ### `tax` attribut
@@ -86,7 +86,7 @@ Objektet `tax` innehåller följande attribut:
 
 | Attribut | Datatyp | Beskrivning |
 | --- | --- | --- |
-| `currency_code` | Sträng! | Den [ISO-4217-valutakod ](https://developer.paypal.com/api/rest/reference/currency-codes/) med tre tecken som identifierar valutan. |
+| `currency_code` | Sträng! | Den [ISO-4217-valutakod &#x200B;](https://developer.paypal.com/api/rest/reference/currency-codes/) med tre tecken som identifierar valutan. |
 | `value` | Sträng! | Anger artikelns värde. Beroende på varje `currency_code` för det antal decimaler som krävs. |
 
 ### `upc` attribut
@@ -149,7 +149,7 @@ Mer information om de här fälten och deras begränsningar finns i [dokumentati
 
 ## Hantera radartiklar
 
-Adobe Commerce [beräknar moms baserat på det totala beloppet för varje rad ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, vilket kan orsaka avrundningsproblem om flera kvantiteter av samma artikel beställs eller om taxinkluderade priser visas i katalogen. I sådana fall kan den totala kvantiteten delas upp i två rader, men kvantiteten motsvarar den totala beställda artikeln.
+Adobe Commerce [beräknar moms baserat på det totala beloppet för varje rad &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, vilket kan orsaka avrundningsproblem om flera kvantiteter av samma artikel beställs eller om taxinkluderade priser visas i katalogen. I sådana fall kan den totala kvantiteten delas upp i två rader, men kvantiteten motsvarar den totala beställda artikeln.
 
 > Exempel på radobjekt med avrundningsproblem i kontrollpanelen för handlare
 
