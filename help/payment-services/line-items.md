@@ -4,10 +4,10 @@ description: Lär dig mer om radobjekt för  [!DNL Payment Services]  och hur du
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 0%
+source-wordcount: '651'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,29 @@ Radobjekt för [!DNL Payment Services] är de objekt som ingår i en order. De h
 
 Den här informationen är användbar för kundservice, orderhantering och korrekt fakturering.
 
-Den här funktionen är aktiverad som standard för [!DNL Payment Services]. Så här visar du radobjekt:
+## Konfigurera radartiklar
+
+Radobjekt aktiveras som standard för [!DNL Payment Services]. Konfigurera:
+
+1. Navigera till _>_ > **[!UICONTROL Stores]** på sidofältet _[!UICONTROL Settings]_Admin **[!UICONTROL Configuration]**.
+
+1. Gå till **[!UICONTROL Sales]** och välj **[!UICONTROL Payment Methods]**.
+
+1. Expandera avsnittet _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
+
+1. Expandera avsnittet _[!UICONTROL Payment Services]_i avsnittet_[!UICONTROL Line Items]_.
+
+1. För **[!UICONTROL Line Items Enabled]** väljer du `Yes` om du vill aktivera (standard) eller `No` om du vill inaktivera radobjekt.
+
+1. Klicka på **[!UICONTROL Save Config]** om du vill spara ändringarna.
+
+>[!IMPORTANT]
+>
+> Om du har tillägg från tredje part som lägger till anpassade avgifter (till exempel hanteringsavgifter) i dina order kan du behöva inaktivera radartiklar. [!DNL Payment Services] beräknar radobjekt baserat på Commerce standardkomponenter (artiklar, moms, frakt och rabatter). Tredjepartsavgifter som inte känns igen av [!DNL Payment Services] kan orsaka en felmatchning mellan radartikelsumman och ordersumman, vilket kan förhindra att utcheckningen slutförs.
+
+## Visa radartiklar
+
+Så här visar du radobjekt:
 
 1. Navigera till din [PayPal-kontrollpanel](https://www.paypal.com/merchant/){target=_blank}.
 
@@ -55,7 +77,7 @@ Objektet `unit_amount` innehåller följande attribut:
 
 | Attribut | Datatyp | Beskrivning |
 | --- | --- | --- |
-| `currency_code` | Sträng! | Den [ISO-4217-valutakod &#x200B;](https://developer.paypal.com/api/rest/reference/currency-codes/) med tre tecken som identifierar valutan. |
+| `currency_code` | Sträng! | Den [ISO-4217-valutakod ](https://developer.paypal.com/api/rest/reference/currency-codes/) med tre tecken som identifierar valutan. |
 | `value` | Sträng! | Anger artikelns värde. `currency_code` avgör antalet decimaler som krävs, om sådana finns. |
 
 ### `tax` attribut
@@ -64,7 +86,7 @@ Objektet `tax` innehåller följande attribut:
 
 | Attribut | Datatyp | Beskrivning |
 | --- | --- | --- |
-| `currency_code` | Sträng! | Den [ISO-4217-valutakod &#x200B;](https://developer.paypal.com/api/rest/reference/currency-codes/) med tre tecken som identifierar valutan. |
+| `currency_code` | Sträng! | Den [ISO-4217-valutakod ](https://developer.paypal.com/api/rest/reference/currency-codes/) med tre tecken som identifierar valutan. |
 | `value` | Sträng! | Anger artikelns värde. Beroende på varje `currency_code` för det antal decimaler som krävs. |
 
 ### `upc` attribut
@@ -127,7 +149,7 @@ Mer information om de här fälten och deras begränsningar finns i [dokumentati
 
 ## Hantera radartiklar
 
-Adobe Commerce [beräknar moms baserat på det totala beloppet för varje rad &#x200B;](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, vilket kan orsaka avrundningsproblem om flera kvantiteter av samma artikel beställs eller om taxinkluderade priser visas i katalogen. I sådana fall kan den totala kvantiteten delas upp i två rader, men kvantiteten motsvarar den totala beställda artikeln.
+Adobe Commerce [beräknar moms baserat på det totala beloppet för varje rad ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, vilket kan orsaka avrundningsproblem om flera kvantiteter av samma artikel beställs eller om taxinkluderade priser visas i katalogen. I sådana fall kan den totala kvantiteten delas upp i två rader, men kvantiteten motsvarar den totala beställda artikeln.
 
 > Exempel på radobjekt med avrundningsproblem i kontrollpanelen för handlare
 

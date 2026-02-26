@@ -3,10 +3,10 @@ title: Konfigurera testsandlådan
 description: Använd ett PayPal-sandlådekonto om du vill använda  [!DNL Payment Services]  i testläge.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 0%
+source-wordcount: '743'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Så här slutför du introduktionen av sandlådor:
       Om du skapade ett PayPal-sandlådekonto under PayPal-introduktionsprocessen i sandlådan måste du [återställa din introduktionssandlåda](#reset-your-sandbox-account) eftersom du inte kan verifiera din e-post.
 
    1. Välj **[!UICONTROL Business]** som kontotyp och klicka på **[!UICONTROL Create]**.
-   1. Klicka i avsnittet _[!UICONTROL Sandbox Accounts]_&#x200B;på de tre punkterna i kolumnen&#x200B;_[!UICONTROL Manage accounts]_ för sandlådekontot som du skapade.
+   1. Klicka i avsnittet _[!UICONTROL Sandbox Accounts]_på de tre punkterna i kolumnen_[!UICONTROL Manage accounts]_ för sandlådekontot som du skapade.
    1. Klicka på **[!UICONTROL View/edit account]**.
 
       ![PayPal - Visa/redigera sandlådekonto](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -79,6 +79,32 @@ Den här funktionen är `off` som standard. När du aktiverar det kan butiksadmi
 >[!IMPORTANT]
 >
 >Den här inställningen gäller inte andra utcheckningsflöden.
+
+## Köparens land
+
+I produktionen använder PayPal köparens geolokalisering för att avgöra vilka betalningsmetoder som är tillgängliga i utchecknings- och expressflöden. Eftersom sandlådeläget inte stöder geopositionering använder du **köparens landskonfiguration** för att simulera köparens plats och kontrollera vilka betalningsmetoder som återges.
+
+Den här inställningen är användbar för testning av regionspecifika betalningsmetoder som Venmo (endast USA), Pay Later (USA och Storbritannien) eller [Local Payment Methods](payments-options.md#local-payment-methods) (Europa) utan att ha ett VPN.
+
+Så här konfigurerar du köparens land:
+
+1. Navigera till _>_ > **[!UICONTROL Stores]** på sidofältet _[!UICONTROL Settings]_Admin **[!UICONTROL Configuration]**.
+
+1. Expandera **[!UICONTROL Sales]** i den vänstra panelen och välj **[!UICONTROL Payment Methods]**.
+
+1. Expandera avsnittet _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
+
+1. Expandera avsnittet _[!UICONTROL Payment Services]_i avsnittet_[!UICONTROL General Configuration]_.
+
+1. Ange **[!UICONTROL Method]** till `Sandbox`.
+
+1. Välj önskat land i listrutan **[!UICONTROL Buyer's country]**.
+
+1. Klicka på **[!UICONTROL Save Config]** om du vill spara ändringarna.
+
+>[!NOTE]
+>
+>Inställningen **[!UICONTROL Buyer's country]** visas bara när metoden är inställd på `Sandbox`. Detta påverkar inte produktionsmiljöer.
 
 ## Testa i sandlådemiljö
 

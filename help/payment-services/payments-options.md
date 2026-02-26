@@ -3,9 +3,9 @@ title: Betalningsalternativ
 description: Ange betalningsalternativen för att anpassa de metoder som är tillgängliga för dina butikskunder.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1728'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Lär dig hur du inaktiverar eller aktiverar meddelandet [!DNL Pay Later] genom a
 
 ##### Valfritt. Konfigurera Betala senare meddelanden
 
-**Konfigurera meddelanden** för [Betala senare](configure-admin.md#pay-later-button) tillåter handlare att ändra standardstilarna för det här betalningsalternativet. Om du ställer in **[!UICONTROL Display Pay Later Message]** på `Yes` i [&#x200B; Settings](configure-admin.md#pay-later-button) -konfigurationen visas en spärrknapp för **[!UICONTROL Configure Messaging]** så att du kan ställa in stilarna för **[!UICONTROL PayPal Pay Later messaging]**.
+**Konfigurera meddelanden** för [Betala senare](configure-admin.md#pay-later-button) tillåter handlare att ändra standardstilarna för det här betalningsalternativet. Om du ställer in **[!UICONTROL Display Pay Later Message]** på `Yes` i [ Settings](configure-admin.md#pay-later-button) -konfigurationen visas en spärrknapp för **[!UICONTROL Configure Messaging]** så att du kan ställa in stilarna för **[!UICONTROL PayPal Pay Later messaging]**.
 
 ![Betala senare meddelanden](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
@@ -166,7 +166,44 @@ Så här **tar du emot betalningar med din befintliga kreditkortsleverantör _oc
 1. Kontrollera att din butik är [i produktionsläge](configure-admin.md#enable-payment-services).
 1. [Konfigurera önskade PayPal-betalningsknappar](configure-admin.md#payment-buttons).
 1. Stäng av _Av_, alternativet **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** i avsnittet _[!UICONTROL Payment buttons]_.
-1. Aktivera alternativet _Av_ **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** i avsnittet _[!UICONTROL Credit card fields]_&#x200B;och använd ditt [befintliga kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=sv-SE#payments).
+1. Aktivera alternativet _Av_ **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** i avsnittet _[!UICONTROL Credit card fields]_och använd ditt [befintliga kreditkortsleverantörskonto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
+## Lokala betalningsmetoder
+
+Lokala betalningsmetoder (LPM) ger stöd för regionspecifika och lokala betalningsmetoder, som banköverföringar och lokaliserade betalningslösningar, tillsammans med befintliga kortbaserade alternativ. Marknadsförare kan aktivera eller inaktivera tillgängliga LPM:er direkt i Commerce-konfigurationen. LPM utökar Adobe betalningsfunktioner, stöder marknadens behov i Europa, förbättrar lokaliseringen av checkout och bidrar till ökad konvertering, användning av handlare och nöjdare köpare.
+
+Tillgängliga LPM:er är:
+
+| Betalningssätt | Länder | Valuta |
+|----------------|-----------|----------|
+| Bancontact | Belgien | EUR |
+| BLIK | Polen | PLN |
+| eps | Österrike | EUR |
+| iDEAL | Nederländerna | EUR |
+| MyBank | Italien | EUR |
+| Przelewy24 | Polen | EUR, zloty |
+
+LPM visas för kunderna baserat på deras faktureringsadress och webbplatsens basvaluta. En betalningsmetod visas bara när båda villkoren matchar betalningsmetodens krav.
+
+Mer information finns i [Konfiguration av lokala betalningsmetoder](configure-admin.md#local-payment-methods).
+
+## Knappar för Express-utcheckning
+
+För att underlätta en snabbare utcheckning finns alternativ för expressbetalning i början av utcheckningsflödet. Kunder kan slutföra sitt köp med PayPal, PayPal Pay Later, Venmo, Apple Pay eller Google Pay.
+
+När du har aktiverat expresschackknappar visas de i början av utcheckningsprocessen, vilket ger en snabbare köpväg för kunder som föredrar digitala plånboksbetalningsmetoder.
+
+Om du vill aktivera Express Checkout-knappar konfigurerar du varje betalningsmetod individuellt:
+
+* **PayPal och Betala senare**: Aktivera **[!UICONTROL Show buttons at start of checkout]** i inställningarna för [PayPal-betalningsknappar](configure-admin.md#paypal-payment-buttons).
+
+* **Apple Pay**: Aktivera **[!UICONTROL Show Apple Pay at start of checkout]** i inställningarna för [Apple Pay](configure-admin.md#apple-pay).
+
+* **Google Pay**: Aktivera **[!UICONTROL Show Google Pay at start of checkout]** i inställningarna för [Google Pay](configure-admin.md#google-pay).
+
+>[!NOTE]
+>
+>Betalningsmetoden är tillgänglig beroende av var köparen befinner sig. Använd konfigurationen för [köparens land](sandbox.md#buyers-country) för att simulera olika regioner för sandlådetestning. Venmo är till exempel bara tillgängligt i USA. Pay Later finns i USA och Storbritannien.
 
 ## Utcheckningsalternativ
 
