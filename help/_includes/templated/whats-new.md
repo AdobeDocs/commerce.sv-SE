@@ -1,7 +1,7 @@
 ---
-source-git-commit: 6223e2d990232beac1eb04ff7c6c6a94eecfe1b6
+source-git-commit: 196babe5fb26d95947d90850e5fdfc59c66279ff
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '803'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,80 @@ ht-degree: 2%
 ## Nyheter
 
 Den här sidan innehåller de ändringar som har gjorts under de senaste 60 dagarna. Vi utelämnar alla mindre uppdateringar, som kopieringsredigering, från den här listan.
+
+### 26 februari 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beskrivning</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion">Migreringsverktyget för massdata</a> har uppdaterats med ett viktigt meddelande om att katalogkonfigurationen inte importeras automatiskt.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1ac84e8f10f61a6b8f995f348d4872773d2890e8">bekräfta</a></td>
+    </tr>
+    <tr>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Betalningstjänster</a> med versionsdokumentation v2.14.0, inklusive alternativa betalningsmetoder (APM) för europeiska marknader, Express-utcheckningsknappar och Buyer's Country sandbox configuration.</p>
+</td>
+      <td>
+        Viktig uppdatering, nytt ämne
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6727102c54e0ac81df289ecd66ec61156662b8b9">bekräfta</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 25 februari 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beskrivning</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/coding-tools">Verktyget för AI-kodningsutvecklare för Adobe Commerce App Builder</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension">självstudiekursen om klassificeringstillägg</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/shipping-method-extension">självstudiekursen om leveransmetodtillägg</a> och <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">förutsättningarna för självstudiekursen</a> finns nu tillgängliga.</p>
+</td>
+      <td>
+        Nytt ämne
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/508a6b330b240b1038d2a9705a017d540816cc95">bekräfta</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 24 februari 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beskrivning</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">versionsinformationen</a> för Adobe Commerce as a Cloud Service med den senaste versionen till produktionsmiljöer.</p>
+</td>
+      <td>
+        Viktig uppdatering
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0c13760783ee8d492eed6e2c989153ded5afa47">bekräfta</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 19 februari 2026
 
@@ -23,7 +97,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/overview">AEM Assets Integration - översikt</a> har uppdaterats med en ny självstudievideo för användare av Adobe Commerce as a Cloud Service (ACCS).</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview">AEM Assets Integration - översikt</a> har uppdaterats med en ny självstudievideo för användare av Adobe Commerce as a Cloud Service (ACCS).</p>
 </td>
       <td>
         Feedback, större uppdatering
@@ -31,7 +105,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1cef99b8284aef05e34ab8ca65b776492ec5bee7">bekräfta</a></td>
     </tr>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/release-notes">versionsinformationen </a> för Adobe Commerce as a Cloud Service med den senaste sandlådeversionen.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">versionsinformationen </a> för Adobe Commerce as a Cloud Service med den senaste sandlådeversionen.</p>
 </td>
       <td>
         Feedback, större uppdatering
@@ -53,7 +127,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/synchronize/custom-match">Anpassad automatisk matchning</a> har uppdaterats med stöd för synkroniseringsparametern <code class="language-plaintext highlighter-rouge">skip</code>, vilket gör att anpassade matchare kan kringgå synkroniseringsbearbetningen när mappningar inte har ändrats.</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Anpassad automatisk matchning</a> har uppdaterats med stöd för synkroniseringsparametern <code class="language-plaintext highlighter-rouge">skip</code>, vilket gör att anpassade matchare kan kringgå synkroniseringsbearbetningen när mappningar inte har ändrats.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -75,7 +149,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Större uppdatering av <a href="https://experienceleague.adobe.com/sv/docs/commerce/catalog-service/release-notes">Versionsinformation för katalogtjänst</a>: omstrukturerad intro, tillagda versioner av tjänsten Storefront Catalog v1.46-v1.36 och GA, utökade funktionsbeskrivningar med GraphQL-exempel (attributfiltrering, nivåpriser, produktlager, rekommendationerByUnitIds med mera) och justerad tidigare versioner med aktuell formatering och länkar.</p>
+      <td><p>Större uppdatering av <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Versionsinformation för katalogtjänst</a>: omstrukturerad intro, tillagda versioner av tjänsten Storefront Catalog v1.46-v1.36 och GA, utökade funktionsbeskrivningar med GraphQL-exempel (attributfiltrering, nivåpriser, produktlager, rekommendationerByUnitIds med mera) och justerad tidigare versioner med aktuell formatering och länkar.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -97,7 +171,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Förbättrar AEM Assets Integration-dokumentationen genom att klarlägga kraven och lägga till <a href="https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/get-started/migrate-data">CLI-kommandodokumentation för metadataexport</a>.</p>
+      <td><p>Förbättrar AEM Assets Integration-dokumentationen genom att klarlägga kraven och lägga till <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/migrate-data">CLI-kommandodokumentation för metadataexport</a>.</p>
 </td>
       <td>
         Feedback
@@ -119,7 +193,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/sv/docs/commerce/product-recommendations/boundaries-limits">Gränser och gränser </a> har lagts till för produktrekommendationer, dokumentation av vilka produkttyper som stöds, specialprisbegränsningar, enhets- och filterbegränsningar, beteenden för förhandsgranskning/API/cookie samt relaterade begränsningar.</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits">Gränser och gränser </a> har lagts till för produktrekommendationer, dokumentation av vilka produkttyper som stöds, specialprisbegränsningar, enhets- och filterbegränsningar, beteenden för förhandsgranskning/API/cookie samt relaterade begränsningar.</p>
 </td>
       <td>
         Feedback, nytt ämne
@@ -127,7 +201,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2b850e32660f1a8540bb6a024f3617994b6c13f6">bekräfta</a></td>
     </tr>
     <tr>
-      <td><p>Förbättrade v2.12.0 PAY-6227-posten för att länka till det nya <a href="https://experienceleague.adobe.com/sv/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons">serverbaserade återanropet</a> och klargjorde hur den här funktionen möjliggör en snabbare utcheckningsprocess.</p>
+      <td><p>Förbättrade v2.12.0 PAY-6227-posten för att länka till det nya <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons">serverbaserade återanropet</a> och klargjorde hur den här funktionen möjliggör en snabbare utcheckningsprocess.</p>
 </td>
       <td>
         Feedback
@@ -149,7 +223,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/release-notes">versionsinformation</a> för Adobe Commerce as a Cloud Service för februari-versionen till produktion.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">versionsinformation</a> för Adobe Commerce as a Cloud Service för februari-versionen till produktion.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -171,7 +245,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets Integration v1.2.13 lägger till <a href="https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace Configuration</a> för anpassad matchningsinställning. Du kan överföra din App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> för automatisk validering och extrahering av autentiseringsuppgifter, eller konfigurera manuellt. Se <a href="https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/release-notes">versionsinformationen</a> för v1.2.13 och den uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/aem-assets-integration/synchronize/custom-match">anpassade matchningsguiden</a>.</p>
+      <td><p>AEM Assets Integration v1.2.13 lägger till <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace Configuration</a> för anpassad matchningsinställning. Du kan överföra din App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> för automatisk validering och extrahering av autentiseringsuppgifter, eller konfigurera manuellt. Se <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">versionsinformationen</a> för v1.2.13 och den uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">anpassade matchningsguiden</a>.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -193,7 +267,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Versionsinformation har lagts till för <a href="https://experienceleague.adobe.com/sv/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.19</a>.</p>
+      <td><p>Versionsinformation har lagts till för <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.19</a>.</p>
 </td>
       <td>
         Teknisk
@@ -215,7 +289,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/release-notes">versionsinformationen för Adobe Commerce as a Cloud Service</a> för sandlådeversionen från februari 2026.</p>
+      <td><p>Uppdaterade <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">versionsinformationen för Adobe Commerce as a Cloud Service</a> för sandlådeversionen från februari 2026.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -237,7 +311,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Versionsinformation har lagts till för <a href="https://experienceleague.adobe.com/sv/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.18</a>.</p>
+      <td><p>Versionsinformation har lagts till för <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.18</a>.</p>
 </td>
       <td>
         Teknisk
@@ -259,7 +333,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Dokumenterade hur Commerce-kunder kan övervaka och felsöka datafeedexporter från statussidan Feed Sync i Commerce Admin. Se <a href="https://experienceleague.adobe.com/sv/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">Visa och hantera synkroniseringsprocessen</a> i Dataexportguiden.</p>
+      <td><p>Dokumenterade hur Commerce-kunder kan övervaka och felsöka datafeedexporter från statussidan Feed Sync i Commerce Admin. Se <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">Visa och hantera synkroniseringsprocessen</a> i Dataexportguiden.</p>
 </td>
       <td>
         Teknisk
@@ -281,7 +355,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Ytterligare information har lagts till på sidan <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/feature-comparison">funktionsjämförelse</a>, inklusive ny infrastruktur, driftskapacitet och marknadsplatsinformation.</p>
+      <td><p>Ytterligare information har lagts till på sidan <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison">funktionsjämförelse</a>, inklusive ny infrastruktur, driftskapacitet och marknadsplatsinformation.</p>
 </td>
       <td>
         Feedback
@@ -303,7 +377,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/sv/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Migrering från sökadapter till PLP-widget</a> har lagts till med detaljerade migreringsscenarier, stegvisa procedurer, rollbaserad vägledning och felsökning för kunder som går över från det inaktuella sökkortet.</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Migrering från sökadapter till PLP-widget</a> har lagts till med detaljerade migreringsscenarier, stegvisa procedurer, rollbaserad vägledning och felsökning för kunder som går över från det inaktuella sökkortet.</p>
 </td>
       <td>
         Feedback, större uppdatering, nytt ämne
@@ -325,7 +399,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Uppdaterade installationsguiderna för Storefront för <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> och <a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> så att de innehåller information om hur du migrerar Commerce storefront-konfigurationen för Edge Delivery Services så att den kan använda konfigurationstjänsten i stället för <code class="language-plaintext highlighter-rouge">config.json</code> -filen i standarddatabasen för butiker. Adobe rekommenderar att du använder konfigurationstjänsten för att hantera konfigurationen för butiker som distribueras på Edge Delivery Services.</p>
+      <td><p>Uppdaterade installationsguiderna för Storefront för <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> och <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> så att de innehåller information om hur du migrerar Commerce storefront-konfigurationen för Edge Delivery Services så att den kan använda konfigurationstjänsten i stället för <code class="language-plaintext highlighter-rouge">config.json</code> -filen i standarddatabasen för butiker. Adobe rekommenderar att du använder konfigurationstjänsten för att hantera konfigurationen för butiker som distribueras på Edge Delivery Services.</p>
 </td>
       <td>
         Feedback, teknisk
@@ -391,7 +465,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/sv/docs/commerce/cloud-service/release-notes#latest">Versionsinformationen</a> för Adobe Commerce as a Cloud Service har uppdaterats.</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">Versionsinformationen</a> för Adobe Commerce as a Cloud Service har uppdaterats.</p>
 </td>
       <td>
         Viktig uppdatering
@@ -413,7 +487,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Avsnittet <a href="https://experienceleague.adobe.com/sv/docs/commerce/optimizer/boundaries-limits">Gränser och gränser</a> för Adobe Commerce Optimizer har uppdaterats för att beskriva licensbegränsningar och systemgränser, lägga till begränsningsbeskrivningar och inkludera vägledning för kapacitetsplanering och förebyggande av prestandaproblem.</p>
+      <td><p>Avsnittet <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">Gränser och gränser</a> för Adobe Commerce Optimizer har uppdaterats för att beskriva licensbegränsningar och systemgränser, lägga till begränsningsbeskrivningar och inkludera vägledning för kapacitetsplanering och förebyggande av prestandaproblem.</p>
 </td>
       <td>
         Feedback, teknisk
@@ -435,7 +509,7 @@ Den här sidan innehåller de ändringar som har gjorts under de senaste 60 daga
   </thead>
   <tbody>
     <tr>
-      <td><p>Versionsinformation har lagts till för <a href="https://experienceleague.adobe.com/sv/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.16 och 103.4.17</a> samt <a href="https://experienceleague.adobe.com/sv/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter version 1.10.0</a>.</p>
+      <td><p>Versionsinformation har lagts till för <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export version 103.4.16 och 103.4.17</a> samt <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter version 1.10.0</a>.</p>
 </td>
       <td>
         Teknisk
