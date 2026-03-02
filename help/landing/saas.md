@@ -4,10 +4,10 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 feature: Services, Saas
 role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+source-git-commit: 17bca82c7d84a86fe1cba16af02a07c4fa0d2af9
 workflow-type: tm+mt
-source-wordcount: '1537'
+source-wordcount: '1505'
 ht-degree: 0%
 
 ---
@@ -16,18 +16,14 @@ ht-degree: 0%
 
 Vissa Adobe Commerce- och Magento Open Source-funktioner drivs av [!DNL Commerce Services] och distribueras som SaaS (programvara som tjänst). Om du vill använda de här tjänsterna måste du ansluta [!DNL Commerce]-instansen med API-nycklar för produktion och sandlåda och ange datautrymmet i [konfigurationen](#saas-configuration). Du behöver bara konfigurera anslutningen en gång för varje instans.
 
-Om du inte är licensägare måste du skaffa Commerce API-nycklarna från den person eller det team som äger Commerce-licensen för din butik.
-
->[!NOTE]
->
->API-nycklarna kan bara genereras av licensägaren. Det finns ingen funktion för delad åtkomst som gör att andra användare kan generera dem.
+Endast [!DNL Commerce]-licensägaren kan generera dessa API-nycklar. Om du inte är licensägare kan du begära nycklarna från den person eller det team som äger Commerce-licensen för din butik.
 
 ## Tillgängliga tjänster {#availableservices}
 
 I följande lista visas de [!DNL Commerce]-funktioner som du kan komma åt via [!DNL Commerce Services Connector]:
 
 | Tjänst | Tillgänglighet |
-| ---|--- |
+| --- | --- |
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) med Adobe AI | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) med Adobe AI | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/guide-overview.md) | Adobe Commerce och Magento Open Source |
@@ -44,16 +40,15 @@ I följande avsnitt beskrivs dessa element mer ingående.
 
 ## Referenser {#apikey}
 
-Produktions- och sandbox-API-nycklarna genereras från [!DNL Commerce]-kontot för [licensägaren](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/start/onboarding). Commerce-kontot identifieras av ett unikt [!DNL Commerce]-ID (MageID). Licensägaren för handlarens organisation kan generera API-nycklar för tjänster som produktrekommendationer eller Live Search så länge som kontot är i gott skick.
+Produktions- och sandbox-API-nycklarna genereras från [!DNL Commerce]-kontot för [licensägaren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding). Commerce-kontot identifieras av ett unikt [!DNL Commerce]-ID (MageID). Licensägaren för handlarens organisation kan generera API-nycklar för tjänster som produktrekommendationer eller Live Search så länge som kontot är i gott skick.
 
-Nycklarna kan delas på behovsbasis med systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer för licenshavarens räkning. Utvecklare som har beviljats [!DNL Shared Access] av licensägaren kan inte generera nycklarna för deras räkning, även om handlarens organisation finns i listrutan [!DNL Switch Accounts] för deras konto.
+Nycklarna kan delas på behovsbasis med systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer för licenshavarens räkning. Utvecklare som har beviljats [!DNL Shared Access] av licensägaren kan inte generera nycklarna för licensägarens räkning även om handlarens organisation finns i listrutan [!DNL Switch Accounts] för deras konto.
 
-Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commerce Services]. Om du är en lösningsintegratör bör signeraren av partnerkontraktet [!DNL Commerce] generera API-nycklarna.
+Dessutom är lösningsintegratörer berättigade att använda [!DNL Commerce Services]. Om du är en lösningsintegratör bör signeraren av partnerkontraktet [!DNL Commerce] generera API-nycklarna.
 
->[!NOTE]
->Nyckelidentifierarna *Production* och *Sandbox* refererar inte till din miljö. Du använder samma uppsättning API-nycklar för var och en av dina miljöer, till exempel lokala miljöer, utvecklings-, mellanlagrings- eller produktionsmiljöer.
->
->Licensägaren är vanligtvis den primära kontakten på Adobe Commerce-kontot och är inte alltid densamma som Adobe Commerce projektägare i molninfrastrukturprojektet.
+Nyckelidentifierarna *Produktion* och *Sandbox* avser SaaS-datautrymmesmiljöer där [!DNL Commerce Services] lagrar data (inte dina Adobe Commerce-miljöer). Du kan använda samma uppsättning API-nycklar i Adobe Commerce-miljöer för lokal utveckling, mellanlagring och produktion. Det viktiga är att du klistrar in rätt nyckelpar för den datamängd du konfigurerar.
+
+Licensägaren är vanligtvis den primära kontakten på Adobe Commerce-kontot och är inte alltid densamma som Adobe Commerce projektägare i molninfrastrukturprojektet.
 
 ### Generera API-nycklar för produktion och sandlåda {#genapikey}
 
@@ -63,19 +58,15 @@ Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commer
 
 1. Välj _Produktion_ eller **Sandbox** på menyn **Miljö**.
 
-   >[!NOTE]
-   >
-   >*Produktion* och *Sandlåda* hänvisar till datautrymmesmiljöer där data lagras i Adobe SaaS backend-system. Det avser inte e-handelsmiljö(er) där du kommer att använda nycklarna.
-
 1. Ange ett namn i avsnittet _API-nycklar_ och klicka på **Lägg till ny** för att öppna dialogrutan för att hämta den nya nyckeln.
 
    ![Hämta privat nyckel](assets/download-api-private-key.png)
 
    >[!WARNING]
    >
-   > Den här dialogrutan är den enda möjligheten att kopiera eller hämta dina nycklar.
+   > Du kan bara kopiera eller hämta den privata nyckeln en gång. Lagra den säkert.
 
-1. Klicka på **Hämta** och sedan på **Avbryt**.
+1. Klicka på **Hämta** för att spara den privata nyckeln och stäng sedan dialogrutan.
 
 1. Upprepa stegen ovan för varje miljö (produktion och sandlåda).
 
@@ -85,71 +76,70 @@ Dessutom är lösningsintegratörer även berättigade att använda [!DNL Commer
 
 [!DNL Commerce] instanser måste konfigureras med ett SaaS-projekt och ett SaaS-datautrymme så att [!DNL Commerce Services] kan skicka data till rätt plats. Ett SaaS-projekt grupperar alla SaaS-datautrymmen. SaaS-datamallarna används för att samla in och lagra data som gör att [!DNL Commerce Services] kan arbeta. Vissa av dessa data kan exporteras från instansen [!DNL Commerce] och vissa kan samlas in från shoppingbeteendet i butiken. Dessa data lagras sedan för att skydda molnlagringen.
 
-För [!DNL Product Recommendations] innehåller SaaS-datautrymmet katalog- och beteendedata. Du kan peka en [!DNL Commerce]-instans mot ett SaaS-datautrymme genom att [markera den](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/services/saas) i [!DNL Commerce]-konfigurationen.
+För [!DNL Product Recommendations] innehåller SaaS-datautrymmet katalog- och beteendedata. Du kan peka en [!DNL Commerce]-instans mot ett SaaS-datautrymme genom att [markera den](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) i [!DNL Commerce]-konfigurationen.
 
 >[!WARNING]
 >
-> Använd **SaaS-datautrymmet för produktion** endast i din [!DNL Commerce]-produktionsinstallation för att undvika datakollisioner. Annars riskerar du att förorena data från produktionsplatsen med testdata, vilket orsakar förseningar i driftsättningen. Produktionsproduktdata kan till exempel skrivas över av misstag från mellanlagringsdata, som mellanlagrings-URL:er.
-> Om detta skulle inträffa [skickar &#x200B;](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview) en supportförfrågan för att begära datarensning.
+> Använd endast ditt **SaaS-datautrymme för produktion** med din [!DNL Commerce]-produktionsinstallation. Om du använder den i icke-produktionsmiljöer kan du blanda testdata och livedata (till exempel testnings-URL:er eller testkatalogdata). Om detta händer [skickar du en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) för att begära datarensning.
 
-Om du inte hittar LiveSearch-konfigurationsfält på Admin Panel kontrollerar du att du har angett rätt SaaS API-nyckel.  Se till att du har lagt till SaaS-nyckeln för produktion när du konfigurerar produktionsdataområdet och att du har lagt till mellanlagringsnyckeln när du konfigurerar mellanlagringsdataområdet. Om du konfigurerar fel nyckel är inte SaaS-tjänster, som LiveSearch, tillgängliga i Adobe Commerce-miljön.
+Om du inte kan hitta konfigurationsfälten för Live Search i Admin kontrollerar du att du har angett rätt API-nyckelpar för den datamängd du har valt (produktionsdatamallar använder produktionsnycklar, medan testdatamallar använder sandlådenycklar). Om du konfigurerar felaktiga nycklar är inte SaaS-tjänster som Live Search tillgängliga i den Adobe Commerce-miljön.
+
+### Ta bort en API-nyckel {#delapikey}
+
+>[!WARNING]
+>
+>Om du tar bort en nyckel som fortfarande används avbryts de anslutna tjänsterna omedelbart.
+
+Generera och lagra en ersättningsnyckel på ett säkert sätt innan du tar bort en API-nyckel. Uppdatera alla integreringar så att de använder den nya nyckeln och bekräfta att beroende tjänster fungerar som förväntat.
+
+Klicka på **[!UICONTROL Delete]** på API-nyckeln som ska tas bort. Bekräfta åtgärden för att permanent ta bort nyckeln när du uppmanas till detta.
 
 ### Etablering av SaaS-datautrymme
 
 Alla Adobe Commerce-handlare har tillgång till ett produktionsdatautrymme och två testdatamallar per SaaS-projekt.
 
-Du kan använda testdatautrymmen i alla icke-produktionsmiljöer så länge du inte använder samma datautrymme i flera miljöer samtidigt. Om du vill använda testdataområdet i en annan miljö utför du en rensning av data innan du markerar och konfigurerar dataområdet i den miljön.
+Du kan använda testdatamallarna i icke-produktionsmiljöer, men undvika att använda samma dataminne i flera miljöer samtidigt. Om du vill flytta ett testdatautrymme till en annan miljö utför du en datarensning innan du väljer och konfigurerar det i den nya miljön.
 
-För Adobe Commerce Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support). Om du bara har en mellanlagringsmiljö och behöver ytterligare testdatamallar har du följande alternativ:
+För Adobe Commerce Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support). Om du bara har en mellanlagringsmiljö och behöver ytterligare testdatamallar har du följande alternativ:
 
-- Kontakta Customer Success-teamet eller en utsedd Customer Success Manager för att begära en extra mellanlagringsmiljö.
+- Kontakta Customer Success-teamet eller en utsedd Customer Success Manager för att begära en extra staging-miljö.
 
-- [Skicka en supportförfrågan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support) om du vill begära det ytterligare testdatautrymmet och ange affärsjusteringen för det extra datautrymmet. Denna begäran måste godkännas.
+- [Skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support) om du vill begära ytterligare testdatautrymme och ange affärsjusteringen för det extra dataområdet. Denna begäran måste godkännas.
 
-Magento Open Source-kunder som använder Adobe Payment Services kan också beställa ytterligare ett datautrymme. Kontakta betalningsteamet om du vill ha förhandsgodkännande av ytterligare datautrymme innan du skickar en [supportförfrågan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support) för att begära testdatautrymmet.
+Magento Open Source-kunder som använder Adobe Payment Services kan också beställa ytterligare ett datautrymme. Kontakta betalningsteamet om du vill ha förhandsgodkännande av ytterligare datautrymme innan du skickar en [supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support) för att begära testdatautrymmet.
 
-Kunder som äger flera Cloud-projekt eller lokala (live/produktion) installationer kan också begära ytterligare produktions- och testdatamallar för varje projekt eller instans genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support).
+Kunder som äger flera Cloud-projekt eller lokala (live/produktion) installationer kan också begära ytterligare produktions- och testdatamallar för varje projekt eller instans genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support).
 
 ### Välja eller skapa ett SaaS-projekt {#createsaasenv}
 
-Om du vill välja eller skapa ett SaaS-projekt begär du API-nyckeln [!DNL Commerce] från [!DNL Commerce]-licensägaren för din butik:
-
->[!NOTE]
->
-> Om du inte ser avsnittet **[!UICONTROL Commerce Services Connector]** i konfigurationen [!DNL Commerce] måste du installera modulerna [!DNL Commerce] för den [[!DNL Commerce] tjänst](#availableservices) du vill använda.
+Om du vill välja eller skapa ett SaaS-projekt begär du API-nycklarna [!DNL Commerce] från [!DNL Commerce]-licensägaren för din butik:
 
 1. Gå till _System_ > Tjänster > **Commerce Services Connector** på sidofältet **Admin**.
 
-   Om du inte ser avsnittet **[!UICONTROL Commerce Services Connector]** i [!DNL Commerce]-konfigurationen installerar du [!DNL Commerce]-modulerna för den [[!DNL Commerce] tjänst](#availableservices) du vill använda. Kontrollera även att paketet `magento/module-services-id` är installerat.
+   Om du inte ser avsnittet **[!UICONTROL Commerce Services Connector]** installerar du [!DNL Commerce]-modulerna för den [[!DNL Commerce] tjänst](#availableservices) som du vill använda och kontrollerar att paketet `magento/module-services-id` är installerat.
 
-1. Klistra in dina nyckelvärden i avsnitten _[!UICONTROL Sandbox API Keys]_&#x200B;och&#x200B;_[!UICONTROL Production API Keys]_.
+1. Klistra in dina nyckelvärden i avsnitten _[!UICONTROL Sandbox API Keys]_och_[!UICONTROL Production API Keys]_.
 
-   - Privata nycklar måste innehålla `----BEGIN PRIVATE KEY---` i början av nyckeln och `----END PRIVATE KEY----` i slutet av nyckeln.
-   - Om du inte har någon kopia av de faktiska nycklarna ber du kontoägaren om dem och kopplar sedan värdena till konfigurationen.
+   - Privata nycklar måste innehålla `-----BEGIN PRIVATE KEY-----` i början av nyckeln och `-----END PRIVATE KEY-----` i slutet av nyckeln.
+   - Om du inte har någon kopia av de faktiska nycklarna ber du licensägaren om dem och kopplar sedan värdena till konfigurationen.
 
-   >[!WARNING]
-   >
-   > Om du lägger till nyckelvärden genom att fråga en säkerhetskopia eller ögonblicksbild av en databas och klistra in värdena i konfigurationen, tillämpas ytterligare ett krypteringslager och nycklarna fungerar inte.
+   Klistra inte in nyckelvärden som kopierats från en säkerhetskopia eller ögonblicksbild av en databas. När konfigurationen sparas används ytterligare ett krypteringslager och nycklarna fungerar inte.
 
 1. Klicka på **Spara**.
 
-Alla SaaS-projekt som är associerade med dina nycklar visas i fältet **Projekt** i avsnittet **SaaS-identifierare** .
+   Alla SaaS-projekt som är associerade med dina nycklar visas i fältet **Projekt** i avsnittet **SaaS-identifierare** .
 
 1. Om det inte finns några SaaS-projekt klickar du på **Skapa projekt**. Ange sedan ett namn för SaaS-projektet i fältet **Projekt** .
 
->[!NOTE]
->
->Undvik förvirring genom att inte använda en specifik Commerce-tjänst som namn för ditt projekt, till exempel *Live Search*, *Produktrekommendationer* eller *Dataanslutning*.  Om din licens inte har etablerats för flera SaaS-projekt kan du använda samma SaaS-projekt för flera tjänster.
+   Undvik förvirring genom att inte använda en specifik Commerce-tjänst som namn för ditt projekt (till exempel *Live Search*, *Produktrekommendationer* eller *Dataanslutning*). Om din licens inte har etablerats för flera SaaS-projekt kan du använda samma SaaS-projekt för flera tjänster.
 
 1. Välj det **datautrymme** som ska användas för den aktuella konfigurationen av [!DNL Commerce]-arkivet.
 
->[!NOTE]
->
->Om du har olika instanser att integrera med Commerce Services [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) för att begära ett nytt SaaS-projekt för varje ytterligare instans. När stödet har skapat SaaS-projektet konfigurerar du integreringen av Commerce Services för instansen med samma API-nyckel och väljer det nya SaaS-projektet för datamängden.
+   Om du har olika instanser att integrera med Commerce Services [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) för att begära ett nytt SaaS-projekt för varje ytterligare instans. När supporten har skapat SaaS-projektet konfigurerar du integreringen för instansen med samma API-nycklar och väljer det nya SaaS-projektet för datamängden.
 
 >[!WARNING]
 >
-> Om du genererar nya nycklar i API-portalavsnittet för Mitt konto ska du omedelbart uppdatera API-nycklarna i Admin-konfigurationen. Om du genererar nya nycklar och inte uppdaterar dem i Admin, fungerar inte längre dina SaaS-tillägg och du förlorar värdefulla data.
+> Om du genererar nya nycklar i API-portalen ska du omedelbart uppdatera API-nycklarna i Admin-konfigurationen. Om administratören fortfarande använder gamla nycklar slutar dina SaaS-tillägg att fungera och datainsamlingen avbryts.
 
 Om du vill ändra namn på ditt SaaS-projekt eller din datautrymme klickar du på **Byt namn** bredvid ett av dem. Om du ändrar namnet påverkas inte tjänsten eftersom namnet bara är en etikett som hjälper dig att identifiera och skilja mellan projekt och datautrymme.
 
@@ -159,4 +149,4 @@ Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform log
 
 ## SaaS-dataexport
 
-När din [!DNL Commerce]-instans har anslutit till [!DNL Commerce Services] exporterar SaaS-dataexportprocessen Commerce-data från din [!DNL Commerce]-server till [!DNL Commerce SaaS Services] så att den kan synkroniseras med anslutna Commerce-tjänster. I Admin kan du kontrollera synkroniseringsstatus med [kontrollpanelen för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Mer information finns i [Exportguiden för SaaS-data](../data-export/overview.md).
+När din [!DNL Commerce]-instans har anslutit till [!DNL Commerce Services] exporterar SaaS-dataexportprocessen Commerce-data från din [!DNL Commerce]-server till [!DNL Commerce SaaS Services] så att den kan synkroniseras med anslutna Commerce-tjänster. I Admin kan du kontrollera synkroniseringsstatus med [kontrollpanelen för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Mer information finns i [Exportguiden för SaaS-data](../data-export/overview.md).
