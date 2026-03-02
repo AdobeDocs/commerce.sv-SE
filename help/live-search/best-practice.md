@@ -209,7 +209,7 @@ Om sökresultaten känns slumpmässiga eller irrelevanta kan du använda den hä
 Läs mer om produktattribut för sökning:
 
 - [Ange attribut som sökbara](workspace.md#set-attributes-as-searchable)
-- [Tilldela bredd till attribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Tilldela bredd till attribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Övervaka sökresultat
 
