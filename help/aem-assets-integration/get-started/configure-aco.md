@@ -39,7 +39,7 @@ Innan du konfigurerar integreringen bör du kontrollera att du har:
 
 ## Onboarding
 
-Om du vill integrera AEM Assets-integrering med [!DNL Commerce Optimizer] måste du [skapa en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Om du vill integrera AEM Assets-integrering med [!DNL Commerce Optimizer] måste du [skapa en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Adobe Support använder informationen i din biljett för att registrera din klient hos Assets Integration Service och konfigurera integreringen.
 
@@ -115,7 +115,7 @@ Resursen måste ha statusen **Approved** för att datasynkroniseringen ska kunna
 
 >[!CAUTION]
 >
-> Tilldela lagret `AEM-Assets` till din [katalogvy](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Om lagret inte är tilldelat kan produktbilddata skrivas över oväntat.
+> Tilldela lagret `AEM-Assets` till din [katalogvy](https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/catalog-view). Om lagret inte är tilldelat kan produktbilddata skrivas över oväntat.
 
 ## Synkronisering
 

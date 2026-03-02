@@ -28,4 +28,4 @@ ht-degree: 4%
    - [Anpassad automatisk matchning](synchronize/custom-match.md)
    - [Manuellt urval av tillgångar](synchronize/asset-selector-integration.md)
 - [Medietyper och användningsfall](manage-assets.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
