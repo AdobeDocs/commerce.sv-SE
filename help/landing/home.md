@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 6f11ad00aed7642c44aeaf384f4433e9522b6bf0
+source-git-commit: fd7ee8757758d63f0fadf284657e4756f878102f
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -168,11 +168,11 @@ Med dataverktygen kan du hantera och optimera informationsflödet mellan Commerc
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Övervaka datasynkronisering" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong> Kontrollpanel för datahantering </strong>
          </a>
       </div>
@@ -198,10 +198,29 @@ Oavsett om ni vill utöka verksamheten, förbättra kundupplevelsen eller fatta 
 | Skapa personaliserade upplevelser i flera kanaler | Era e-handelsdata är isolerade, vilket förhindrar er från att leverera personaliserade upplevelser över alla kanaler. | Använd [Dataanslutning](../data-connection/overview.md) för att skicka beteendedata, transaktionsdata och profildata till Adobe Experience Platform. Skapa sofistikerade kundsegment, skapa övergivna kundvagnskampanjer, inrikta er på målgrupper och analysera säsongstrender under hela kundresan. |
 | Effektivisera hanteringen av digitala resurser | Att hantera produktbilder och multimedia i olika system är både tidskrävande och felbenäget. | [AEM Assets Integration](../aem-assets-integration/overview.md) ger centraliserad resurshantering genom att ansluta Adobe Commerce till ett Adobe Experience Manager Assets-projekt, vilket förenklar arbetsflödena och säkerställer enhetliga varumärkesupplevelser över alla kontaktytor. |
 | Optimera betalningshanteringen | Begränsade betalningsalternativ och dåliga betalningsupplevelser gör att kunderna blir nöjda och konverterade. | [Betalningstjänster](../payment-services/guide-overview.md) erbjuder flera betalningsmetoder, inklusive räntefria betalningar, med en enhetlig kontrollpanel för hantering av betalningar, order och fakturor. |
-| Hantera datasynkronisering i stor skala | Resursintensiv indexering gör webbplatsen långsammare och du kan inte enkelt spåra datasynkroniseringsproblem. | [SaaS-dataexport](../data-export/overview.md), [SaaS-prisindexerare](../price-index/price-indexing.md) och [Data Management Dashboard](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synkroniserar automatiskt katalog-, order- och lagerdata, avlastar prisberäkningar till Adobe molninfrastruktur och ger realtidssynlighet för synkroniseringsstatus. |
+| Hantera datasynkronisering i stor skala | Resursintensiv indexering gör webbplatsen långsammare och du kan inte enkelt spåra datasynkroniseringsproblem. | [SaaS-dataexport](../data-export/overview.md), [SaaS-prisindexerare](../price-index/price-indexing.md) och [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synkroniserar automatiskt katalog-, order- och lagerdata, avlastar prisberäkningar till Adobe molninfrastruktur och ger realtidssynlighet för synkroniseringsstatus. |
 | Vinn förlorade kunder och minska avkastningen | Höga kundbortfall och höga produktavkastningsnivåer påverkar lönsamheten. | Kombinera [dataanslutning](../data-connection/overview.md) med Adobe Journey Optimizer och Real-Time CDP för att identifiera returmönster, skapa återvinnningskampanjer, segmentera kunder efter beteende och skicka personaliserade återengagemangskampanjer via e-post och SMS. |
 | Fatta databaserade försäljningsbeslut | Du vet inte vilka produkter du ska marknadsföra eller när du ska göra kampanjer. | [Live Search](../live-search/overview.md) innehåller sökresultatsinsikter och säljverktyg för att få tillgång till nyckeltal, analysera söktermer och använda smarta försäljningsregler för att lyfta eller begrava produkter baserat på kundbeteende och affärsmål. |
 | Upprätthåll regelefterlevnaden med känsliga data | Ni måste hantera känsliga kunddata samtidigt som HIPAA-efterlevnaden upprätthålls. | [Dataanslutningen](../data-connection/overview.md) är HIPAA-klar, vilket gör att du kan dela backoffice-data med Experience Platform samtidigt som du upprätthåller regelefterlevnad och systematiskt hanterar sekretessförfrågningar. |
+
+## Hur Commerce Services samverkar
+
+Adobe Commerce Services bygger på en enhetlig plattform. När du använder flera tjänster kan du dra nytta av:
+
+- **Enhetlig dataregling** - Produkt-, prissättnings- och lagerdata synkroniseras automatiskt för alla tjänster, vilket eliminerar behovet av dubblerad datainmatning eller anpassade integreringar.
+- **Realtidspersonalisering** - Kundbeteenden från sökning, surfning och inköp ger smarta rekommendationer och rankning i hela butiken.
+- **Konsekvent integrering mellan butiker** - Oavsett om du använder Commerce storefront från Edge Delivery Services, PWA Studio eller headless-implementeringar fungerar samma plugin-program och API:er sömlöst på alla plattformar.
+- **Stöd för flera butiker och flera språk** - Alla tjänster respekterar automatiskt dina butiksvyer, kundsegment och katalogkonfigurationer för B2B utan ytterligare konfiguration.
+- **Detaljrik produktbild** - När du integrerar med AEM Assets visas optimerade produktbilder på ett enhetligt sätt i sökresultat, produktsidor och rekommendationer.
+- **Anslutna kunddata** - Använd Dataanslutning för att dela shoppingbeteenden med Adobe Experience Platform, Real-Time CDP och Journey Optimizer, vilket möjliggör kanalövergripande personalisering och kampanjoptimering.
+
+När en kund t.ex. söker efter en produkt med Live Search, lägger till den i kundvagnen efter att ha visat en produktrekommendation och slutför köpet med Payment Services, flödar all den här aktiviteten smidigt genom den enhetliga dataredningen. Dessa beteendedata ger bättre sökresultat och mer relevanta rekommendationer för framtida kunder.
+
+>[!NOTE]
+>
+>Du måste konfigurera insamling av händelsedata för att aktivera beteendedelning av data mellan tjänster. Se [Konfigurera Commerce-tjänster](saas.md#saas-configuration) för installationsanvisningar.
+
+Varje tjänst kan användas oberoende av varandra, men genom att kombinera den skapar du en mer intelligent och personaliserad shoppingupplevelse.
 
 {{$include /help/_includes/templated/whats-new.md}}
 

@@ -4,10 +4,10 @@ description: Lär dig hur du integrerar din Adobe Commerce- eller Magento Open S
 feature: Services, Saas
 role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
-source-git-commit: 17bca82c7d84a86fe1cba16af02a07c4fa0d2af9
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+source-git-commit: a1e7da7e4c49967e2975dfa133e246490bcff732
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ I följande avsnitt beskrivs dessa element mer ingående.
 
 ## Referenser {#apikey}
 
-Produktions- och sandbox-API-nycklarna genereras från [!DNL Commerce]-kontot för [licensägaren](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/start/onboarding). Commerce-kontot identifieras av ett unikt [!DNL Commerce]-ID (MageID). Licensägaren för handlarens organisation kan generera API-nycklar för tjänster som produktrekommendationer eller Live Search så länge som kontot är i gott skick.
+Produktions- och sandbox-API-nycklarna genereras från [!DNL Commerce]-kontot för [licensägaren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding). Commerce-kontot identifieras av ett unikt [!DNL Commerce]-ID (MageID). Licensägaren för handlarens organisation kan generera API-nycklar för tjänster som produktrekommendationer eller Live Search så länge som kontot är i gott skick.
 
 Nycklarna kan delas på behovsbasis med systemintegratören eller utvecklingsteamet som hanterar projekt och miljöer för licenshavarens räkning. Utvecklare som har beviljats [!DNL Shared Access] av licensägaren kan inte generera nycklarna för licensägarens räkning även om handlarens organisation finns i listrutan [!DNL Switch Accounts] för deras konto.
 
@@ -76,11 +76,11 @@ Licensägaren är vanligtvis den primära kontakten på Adobe Commerce-kontot oc
 
 [!DNL Commerce] instanser måste konfigureras med ett SaaS-projekt och ett SaaS-datautrymme så att [!DNL Commerce Services] kan skicka data till rätt plats. Ett SaaS-projekt grupperar alla SaaS-datautrymmen. SaaS-datamallarna används för att samla in och lagra data som gör att [!DNL Commerce Services] kan arbeta. Vissa av dessa data kan exporteras från instansen [!DNL Commerce] och vissa kan samlas in från shoppingbeteendet i butiken. Dessa data lagras sedan för att skydda molnlagringen.
 
-För [!DNL Product Recommendations] innehåller SaaS-datautrymmet katalog- och beteendedata. Du kan peka en [!DNL Commerce]-instans mot ett SaaS-datautrymme genom att [markera den](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/services/saas) i [!DNL Commerce]-konfigurationen.
+För [!DNL Product Recommendations] och [!DNL Live Search] innehåller SaaS-datautrymmet katalog- och beteendedata. Du kan peka en [!DNL Commerce]-instans mot ett SaaS-datautrymme genom att [markera den](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) i [!DNL Commerce]-konfigurationen.
 
 >[!WARNING]
 >
-> Använd endast ditt **SaaS-datautrymme för produktion** med din [!DNL Commerce]-produktionsinstallation. Om du använder den i icke-produktionsmiljöer kan du blanda testdata och livedata (till exempel testnings-URL:er eller testkatalogdata). Om detta händer [skickar du en supportförfrågan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview) för att begära datarensning.
+> Använd endast ditt **SaaS-datautrymme för produktion** med din [!DNL Commerce]-produktionsinstallation. Om du använder den i icke-produktionsmiljöer kan du blanda testdata och livedata (till exempel testnings-URL:er eller testkatalogdata). Om detta händer [skickar du en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) för att begära datarensning.
 
 Om du inte kan hitta konfigurationsfälten för Live Search i Admin kontrollerar du att du har angett rätt API-nyckelpar för den datamängd du har valt (produktionsdatamallar använder produktionsnycklar, medan testdatamallar använder sandlådenycklar). Om du konfigurerar felaktiga nycklar är inte SaaS-tjänster som Live Search tillgängliga i den Adobe Commerce-miljön.
 
@@ -92,6 +92,8 @@ Om du inte kan hitta konfigurationsfälten för Live Search i Admin kontrollerar
 
 Generera och lagra en ersättningsnyckel på ett säkert sätt innan du tar bort en API-nyckel. Uppdatera alla integreringar så att de använder den nya nyckeln och bekräfta att beroende tjänster fungerar som förväntat.
 
+Om du inte ser **[!DNL Live Search]** konfigurationsfält på Admin Panel kontrollerar du att du har angett rätt SaaS API-nyckel för den miljön. Använd SaaS-nyckeln för produktion för produktionsdatautrymmet och mellanlagringsnyckeln för mellanlagringsdatautrymmet. Om fel nyckel har konfigurerats är SaaS-tjänster (inklusive **[!DNL Live Search]**) inte tillgängliga i din Adobe Commerce-miljö.
+
 Klicka på **[!UICONTROL Delete]** på API-nyckeln som ska tas bort. Bekräfta åtgärden för att permanent ta bort nyckeln när du uppmanas till detta.
 
 ### Etablering av SaaS-datautrymme
@@ -100,15 +102,15 @@ Alla Adobe Commerce-handlare har tillgång till ett produktionsdatautrymme och t
 
 Du kan använda testdatamallarna i icke-produktionsmiljöer, men undvika att använda samma dataminne i flera miljöer samtidigt. Om du vill flytta ett testdatautrymme till en annan miljö utför du en datarensning innan du väljer och konfigurerar det i den nya miljön.
 
-För Adobe Commerce Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support). Om du bara har en mellanlagringsmiljö och behöver ytterligare testdatamallar har du följande alternativ:
+För Adobe Commerce Cloud Pro-projekt med flera mellanlagringsmiljöer kan du begära ytterligare testdatamallar för varje mellanlagringsmiljö genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support). Om du bara har en mellanlagringsmiljö och behöver ytterligare testdatamallar har du följande alternativ:
 
 - Kontakta Customer Success-teamet eller en utsedd Customer Success Manager för att begära en extra staging-miljö.
 
-- [Skicka en supportförfrågan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support) om du vill begära ytterligare testdatautrymme och ange affärsjusteringen för det extra dataområdet. Denna begäran måste godkännas.
+- [Skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support) om du vill begära ytterligare testdatautrymme och ange affärsjusteringen för det extra dataområdet. Denna begäran måste godkännas.
 
-Magento Open Source-kunder som använder Adobe Payment Services kan också beställa ytterligare ett datautrymme. Kontakta betalningsteamet om du vill ha förhandsgodkännande av ytterligare datautrymme innan du skickar en [supportförfrågan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support) för att begära testdatautrymmet.
+Magento Open Source-kunder som använder Adobe Payment Services kan också beställa ytterligare ett datautrymme. Kontakta betalningsteamet om du vill ha förhandsgodkännande av ytterligare datautrymme innan du skickar en [supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support) för att begära testdatautrymmet.
 
-Kunder som äger flera Cloud-projekt eller lokala (live/produktion) installationer kan också begära ytterligare produktions- och testdatamallar för varje projekt eller instans genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support).
+Kunder som äger flera Cloud-projekt eller lokala (live/produktion) installationer kan också begära ytterligare produktions- och testdatamallar för varje projekt eller instans genom att [skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support).
 
 ### Välja eller skapa ett SaaS-projekt {#createsaasenv}
 
@@ -118,7 +120,7 @@ Om du vill välja eller skapa ett SaaS-projekt begär du API-nycklarna [!DNL Com
 
    Om du inte ser avsnittet **[!UICONTROL Commerce Services Connector]** installerar du [!DNL Commerce]-modulerna för den [[!DNL Commerce] tjänst](#availableservices) som du vill använda och kontrollerar att paketet `magento/module-services-id` är installerat.
 
-1. Klistra in dina nyckelvärden i avsnitten _[!UICONTROL Sandbox API Keys]_&#x200B;och&#x200B;_[!UICONTROL Production API Keys]_.
+1. Klistra in dina nyckelvärden i avsnitten _[!UICONTROL Sandbox API Keys]_och_[!UICONTROL Production API Keys]_.
 
    - Privata nycklar måste innehålla `-----BEGIN PRIVATE KEY-----` i början av nyckeln och `-----END PRIVATE KEY-----` i slutet av nyckeln.
    - Om du inte har någon kopia av de faktiska nycklarna ber du licensägaren om dem och kopplar sedan värdena till konfigurationen.
@@ -135,7 +137,7 @@ Om du vill välja eller skapa ett SaaS-projekt begär du API-nycklarna [!DNL Com
 
 1. Välj det **datautrymme** som ska användas för den aktuella konfigurationen av [!DNL Commerce]-arkivet.
 
-   Om du har olika instanser att integrera med Commerce Services [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) för att begära ett nytt SaaS-projekt för varje ytterligare instans. När supporten har skapat SaaS-projektet konfigurerar du integreringen för instansen med samma API-nycklar och väljer det nya SaaS-projektet för datamängden.
+   Om du har olika instanser att integrera med Commerce Services [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) för att begära ett nytt SaaS-projekt för varje ytterligare instans. När supporten har skapat SaaS-projektet konfigurerar du integreringen för instansen med samma API-nycklar och väljer det nya SaaS-projektet för datamängden.
 
 >[!WARNING]
 >
@@ -149,4 +151,4 @@ Om du vill ansluta din Adobe Commerce-instans till Adobe Experience Platform log
 
 ## SaaS-dataexport
 
-När din [!DNL Commerce]-instans har anslutit till [!DNL Commerce Services] exporterar SaaS-dataexportprocessen Commerce-data från din [!DNL Commerce]-server till [!DNL Commerce SaaS Services] så att den kan synkroniseras med anslutna Commerce-tjänster. I Admin kan du kontrollera synkroniseringsstatus med [kontrollpanelen för datahantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Mer information finns i [Exportguiden för SaaS-data](../data-export/overview.md).
+När din [!DNL Commerce]-instans har anslutit till [!DNL Commerce Services] exporterar SaaS-dataexportprocessen Commerce-data från din [!DNL Commerce]-server till [!DNL Commerce SaaS Services] så att den kan synkroniseras med anslutna Commerce-tjänster. I Admin kan du kontrollera synkroniseringsstatus med [kontrollpanelen för datahantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Mer information finns i [Exportguiden för SaaS-data](../data-export/overview.md).
