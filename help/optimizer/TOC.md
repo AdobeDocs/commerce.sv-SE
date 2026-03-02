@@ -4,10 +4,10 @@ user-guide-description: Dokumentation och resurser för  [!DNL Adobe Commerce Op
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 8ec4054a81981866b7837dfc2e89223328ccea89
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 0%
+source-wordcount: '106'
+ht-degree: 4%
 
 ---
 
@@ -51,8 +51,9 @@ ht-degree: 0%
 - Butiksinställning {#setup}
    - [Katalogvyer](./setup/catalog-view.md)
    - [Kataloglager](./setup/catalog-layer.md)
-   - [Profiler](./setup/policies.md)
+   - [Policyer](./setup/policies.md)
    - [Prisböcker](./setup/pricebooks.md)
+   - [Produktbilder](./setup/product-visuals.md)
    - [Datasynkronisering](./setup/data-sync.md)
    - Händelser {#events}
       - [Ökning](./setup/events/overview.md)

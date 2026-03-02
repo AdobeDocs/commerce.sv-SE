@@ -2,11 +2,11 @@
 title: Vad är Adobe Commerce Optimizer?
 description: Lär dig mer om  [!DNL Adobe Commerce Optimizer]  och dess huvudfunktioner.
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Med [!DNL Adobe Commerce Optimizer] kan du:
 
 I följande video visas en översikt över [!DNL Adobe Commerce Optimizer] på hög nivå:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450467?captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Vem har störst nytta av [!DNL Adobe Commerce Optimizer]?
 
@@ -33,7 +33,7 @@ I följande video visas en översikt över [!DNL Adobe Commerce Optimizer] på h
 
 - Handlare som vill behålla sitt befintliga bakomliggande handelssystem och endast omvandla butiksupplevelser.
 - Företag där ett tredjepartssystem hanterar livscykeln för kundvagn och utcheckning.
-- AEM-kunder som vill ha ett enkelt sätt att hantera sin produktkatalog från en e-handelsmotor från tredje part.
+- [AEM-kunder](setup/product-visuals.md) söker ett enkelt sätt att hantera produktkatalogen från en tredjepartsmotor för e-handel.
 
 ## Snabbdemo
 
@@ -69,6 +69,7 @@ Skapa personaliserade upplevelser för era kunder genom produktupptäckt och pro
 Definiera katalogvyer och principer. Katalogen innehåller inte bara dina produktdata, utan även din affärsstruktur. Ni kan också få värdefulla insikter om tillgängligheten av produktdata för butiken, så att de snabbt kan visas för era kunder.
 
 - **Katalogvyer** - Hjälp dig att definiera din detaljhandelsstruktur i meningsfulla affärsgrupper. Exempel: bilhandlare, dotterbolag till konglomerat av flera varumärken eller tillverkningsanläggningar för leverantörer.
+- **Kataloglager** - Ändra produktdata utan att ändra källdata. När du använder AEM Assets för produktbilder tillämpas lagret AEM-Assets med [produktbilder](setup/product-visuals.md). Mer information finns i [Kataloglager](setup/catalog-layer.md).
 - **Principer** - Dataåtkomstfilter som finns i katalogvyer. Med hjälp av profiler kan du se till att rätt innehåll skickas till rätt mål. Exempel: försäljningsställe fysiska butiker, marknadsplatser, reklamledningar (Google, Facebook, Instagram).
 - **Datasynkronisering** - Visar en översikt över synkroniseringsstatusen för produktdata som överförts från deras datakälla (PIM, ERP o.s.v.) till [!DNL Adobe Commerce Optimizer]. Produktdata visas på flikarna **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** och **[!UICONTROL Recommendations]**.
 - **Händelser** - Visar data för butikshändelser som driver produktidentifiering och rekommendationer. På sidan **Händelser** kan handlaren verifiera att de har implementerat butikshändelser korrekt och att händelser har hämtats. Handlare kan använda den här sidan för att identifiera potentiella problem och vidta åtgärder för att lösa eventuella händelseproblem.

@@ -2,10 +2,10 @@
 user-guide-title: Integreringsguide för [!DNL AEM Assets]
 user-guide-description: Omfattande information om AEM Assets Integration för Adobe Commerce- och Magento Open Source-administratörer och e-handelskommunikation.
 feature: CMS, Page Content
-source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 0%
+source-wordcount: '85'
+ht-degree: 4%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 0%
    - [Konfigurera AEM Assets-projektet som stöder Commerce-metadata](get-started/configure-aem.md)
    - [Installera Adobe Commerce-paket](get-started/configure-commerce.md)
    - [Konfigurera integreringen](get-started/setup-synchronization.md)
+   - [Konfigurera Commerce Optimizer](get-started/configure-aco.md)
    - [Konfigurera din butik](get-started/configure-storefront.md)
    - [Visa och hantera loggar](get-started/logs.md)
    - [Migrera data](get-started/migrate-data.md)
@@ -27,4 +28,4 @@ ht-degree: 0%
    - [Anpassad automatisk matchning](synchronize/custom-match.md)
    - [Manuellt urval av tillgångar](synchronize/asset-selector-integration.md)
 - [Medietyper och användningsfall](manage-assets.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

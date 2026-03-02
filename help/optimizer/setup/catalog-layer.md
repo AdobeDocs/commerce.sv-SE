@@ -3,10 +3,10 @@ title: Kataloglager
 description: Lär dig hur du med kataloglager kan ändra produktdata utan att ändra originalkälldata, så att du kan anpassa och återställa ändringar när som helst.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 4a904527af172a5e35b87410135d55484d07ad84
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ När en kund tittar på din butik kombinerar systemet dina baskatalogdata med ak
 
 1. **Fälthantering** - Olika fälttyper behandlas på olika sätt:
 
-   - **Åsidosätt fält** - Textfält som namn, beskrivning och metatitlar ersätts med de värden som definieras i lagret, där det högprioriterade lagret prioriteras.
-   - **Sammanfoga fält** - Matrisfält som bilder, länkar och attribut kombineras från flera lager, vilket ger ett enhetligt svar.
+   * **Åsidosätt fält** - Textfält som namn, beskrivning och metatitlar ersätts med de värden som definieras i lagret, där det högprioriterade lagret prioriteras.
+   * **Sammanfoga fält** - Matrisfält som bilder, länkar och attribut kombineras från flera lager, vilket ger ett enhetligt svar.
 
 1. **Prioritetsupplösning** - Ordningsfältet avgör vilket lager som har prioritet. När flera lager ändrar samma fält har lagret med det lägre ordningsnumret högre prioritet (till exempel är ordning 1 den högsta).
 
@@ -36,11 +36,50 @@ När en kund tittar på din butik kombinerar systemet dina baskatalogdata med ak
 
 Kataloglager används ofta för:
 
-- **SEO-optimering** - Åsidosätt produktmetatitlar och beskrivningar baserat på AI-rekommendationer från [Sites Optimizer](../manage-results/opportunities.md).
-- **Säsongskampanjer** - Uppdatera produktnamn, beskrivningar eller bilder tillfälligt för kampanjer utan att ändra källdata.
-- **Regional anpassning** - Visa annan produktinformation baserat på geografisk plats eller språk.
-- **A/B-testning** - Testa olika produktpresentationer för att optimera konverteringsgraden.
-- **Hantering av flera varumärken** - Anpassa produktattribut för olika varumärkeskataloger.
+* **SEO-optimering** - Åsidosätt produktmetatitlar och beskrivningar baserat på AI-rekommendationer från [Sites Optimizer](../manage-results/opportunities.md).
+* **Säsongskampanjer** - Uppdatera produktnamn, beskrivningar eller bilder tillfälligt för kampanjer utan att ändra källdata.
+* **Regional anpassning** - Visa annan produktinformation baserat på geografisk plats eller språk.
+* **A/B-testning** - Testa olika produktpresentationer för att optimera konverteringsgraden.
+* **Hantering av flera varumärken** - Anpassa produktattribut för olika varumärkeskataloger.
+* **Produktbilder** - Använd produktbilder från AEM Assets som ett lager ovanpå din baskatalog.
+
+## AEM-Assets-lager
+
+När du aktiverar [produktbilder](product-visuals.md) skapar och hanterar AEM Assets Integration automatiskt ett kataloglager som är specifikt dedikerat till AEM Assets-innehåll. Standardlagernamnet är `AEM-Assets`, men du kan ange ett anpassat namn under [introduktionen i AEM Assets-integreringen](../../aem-assets-integration/get-started/configure-aco.md).
+
+Det här lagret innehåller produktbilder som har synkroniserats från AEM Assets. Precis som andra kataloglager fylls den i via [API:t för produktlager](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. Assets Integration Service omvandlar metadata och URL:er för AEM-resurser till API-format och skickar data automatiskt när materialet godkänns i AEM Assets.
+
+Integreringen stöder en källa per klientorganisation (en språkinställning + ett lager).
+
+>[!CAUTION]
+>
+> Tilldela lagret AEM-Assets till katalogvyn. Om lagret inte är tilldelat kan produktbilddata skrivas över oväntat.
+
+### Så här fungerar lagret AEM-Assets
+
+1. **Automatisk generering**: Lagret skapas när AEM Assets-integreringen har konfigurerats för din [!DNL Commerce Optimizer]-instans.
+
+1. **Bildsynkronisering**: När resurser har godkänts i AEM Assets transformerar Assets Integration Service objektdata och uppdaterar `AEM-Assets` -lagret via API:t för produktlager.
+
+1. **Lagertilldelning**: Tilldela lagret `AEM-Assets` till katalogvyer där du vill att AEM Assets-bilder ska visas.
+
+### Tilldela lagret AEM-Assets till en katalogvy
+
+Så här visar du AEM Assets-bilder i din butik:
+
+1. Navigera till _Store-konfigurationen_ och klicka på **[!UICONTROL Catalog views]**.
+
+1. Markera katalogvyn där du vill använda lagret.
+
+1. Leta reda på lagret **AEM-Assets** i kataloglageravsnittet.
+
+1. Aktivera lagret för att aktivera det för den här katalogvyn.
+
+1. Klicka på **[!UICONTROL Save]** för att tillämpa ändringarna.
+
+När de har tilldelats storefront-API:erna (Catalog Service, Live Search, Product Recommendations och Storefront GraphQL API) returneras både baskatalogbilder och AEM Assets-bilder för produkter.
+
+Mer information om hur du konfigurerar produktvisningar finns i [Produktvisningar med AEM Assets](product-visuals.md).
 
 ## Lägga till ett kataloglager via dataöverföring
 
@@ -52,8 +91,8 @@ Du kan lägga till kataloglager i dina produkter under dataöverföringsprocesse
 
 **Förutsättningar:**
 
-- API-autentiseringsuppgifter med behörighet att komma åt datainmatningstjänsten
-- SKU:er som redan finns i baskatalogen
+* API-autentiseringsuppgifter med behörighet att komma åt datainmatningstjänsten
+* SKU:er som redan finns i baskatalogen
 
 **Steg:**
 
@@ -63,7 +102,7 @@ Du kan lägga till kataloglager i dina produkter under dataöverföringsprocesse
 
 1. Kontrollera att lagret har importerats genom att kontrollera katalogvykonfigurationen.
 
-Detaljerade API-specifikationer och exempel på nyttolast finns i [Produktlager](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) i utvecklardokumentationen.
+Detaljerade API-specifikationer och exempel på nyttolast finns i [Produktlager](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank} i utvecklardokumentationen.
 
 ## Lägga till ett kataloglager manuellt i användargränssnittet
 
@@ -91,10 +130,10 @@ Med katalogvygränssnittet kan du skapa och hantera lager manuellt, vilket är s
 
 1. Konfigurera lageregenskaperna:
 
-   - **Lagernamn** - Ange ett beskrivande namn som identifierar syftet med lagret.
-   - **Produkter** - Välj de produkter som det här lagret gäller för.
-   - **Attribut** - Välj vilka produktattribut du vill ändra (namn, beskrivning, bilder, metataggar och så vidare).
-   - **Värden** - Ange de nya värdena för varje markerat attribut.
+   * **Lagernamn** - Ange ett beskrivande namn som identifierar syftet med lagret.
+   * **Produkter** - Välj de produkter som det här lagret gäller för.
+   * **Attribut** - Välj vilka produktattribut du vill ändra (namn, beskrivning, bilder, metataggar och så vidare).
+   * **Värden** - Ange de nya värdena för varje markerat attribut.
 
 1. Klicka på **Spara** för att skapa lagret.
 
@@ -134,14 +173,14 @@ Du kan aktivera eller inaktivera kataloglager utan att ta bort dem, så att du k
 
 1. Klicka på aktiveringsalternativet för att aktivera eller inaktivera lagret.
 
-   - **Aktiv** - Lagret används på produktdata.
-   - **Inaktiv** - Lagret bevaras men tillämpas inte på produktdata.
+   * **Aktiv** - Lagret används på produktdata.
+   * **Inaktiv** - Lagret bevaras men tillämpas inte på produktdata.
 
 1. Ändringen träder i kraft direkt i butiken.
 
 **Så här tar du bort ett lager:**
 
-Använd API:t för datainmatning för att [ta bort ett kataloglager](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers).
+Använd API:t för datainmatning för att [ta bort ett kataloglager](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers){target=_blank}.
 
 ## Hantera lagerprioriteringar
 
@@ -149,11 +188,11 @@ Den ordning som lager tillämpas i avgör vilka värden som visas i butiken när
 
 **Förstå prioritetsordning:**
 
-- Varje lager tilldelas ett ordernummer (1, 2, 3 och så vidare)
-- Ordning 1 har högst prioritet och åsidosätter alla andra lager
-- När flera lager ändrar samma fält har det lägre ordningsnumret företräde
-- Prioriteten gäller endast för åsidosättningsfält (namn, beskrivning, meta-taggar)
-- Sammanfoga fält (bilder, länkar, attribut) kombinerar data från alla lager
+* Varje lager tilldelas ett ordernummer (1, 2, 3 och så vidare)
+* Ordning 1 har högst prioritet och åsidosätter alla andra lager
+* När flera lager ändrar samma fält har det lägre ordningsnumret företräde
+* Prioriteten gäller endast för åsidosättningsfält (namn, beskrivning, meta-taggar)
+* Sammanfoga fält (bilder, länkar, attribut) kombinerar data från alla lager
 
 **Så här ändrar du ordning på lagerprioriteter:**
 
@@ -177,19 +216,20 @@ Den ordning som lager tillämpas i avgör vilka värden som visas i butiken när
 
 Följ de här rekommendationerna när du arbetar med kataloglager:
 
-- **Använd beskrivande namn** - Namnge lager tydligt för att indikera deras syfte (till exempel&quot;Semesterkampanj 2025&quot; eller&quot;SEO-optimering - produktsidor&quot;).
+* **Använd beskrivande namn** - Namnge lager tydligt för att indikera deras syfte (till exempel&quot;Semesterkampanj 2025&quot; eller&quot;SEO-optimering - produktsidor&quot;).
 
-- **Begränsa lager** - Systemet har stöd för flera lager, men för många kan påverka prestanda. Konsolidera lager när det är möjligt.
+* **Begränsa lager** - Systemet har stöd för flera lager, men för många kan påverka prestanda. Konsolidera lager när det är möjligt.
 
 <!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
-- **Logik för dokumentprioritet** - Håll reda på vilka lager som ska prioriteras för att undvika oavsiktliga åsidosättningar.
+* **Logik för dokumentprioritet** - Håll reda på vilka lager som ska prioriteras för att undvika oavsiktliga åsidosättningar.
 
-- **Granska Sites Optimizer-lager** - När du använder autokorrigering från Sites Optimizer skapas lager med högsta prioritet. Tänk på detta när du lägger till manuella lager som kan åsidosätta AI-rekommendationerna. Läs mer om hur du använder [Sites Optimizer](../manage-results/opportunities.md).
+* **Granska Sites Optimizer-lager** - När du använder autokorrigering från Sites Optimizer skapas lager med högsta prioritet. Tänk på detta när du lägger till manuella lager som kan åsidosätta AI-rekommendationerna. Läs mer om hur du använder [Sites Optimizer](../manage-results/opportunities.md).
 
-- **Bildskärmsprestanda** - Om produktsidan läses in långsamt kan du granska lagerkonfigurationen och överväga att konsolidera lager.
+* **Bildskärmsprestanda** - Om produktsidan läses in långsamt kan du granska lagerkonfigurationen och överväga att konsolidera lager.
 
 ## Mer som detta
 
-- [Katalogvyer](catalog-view.md) - Konfigurera katalogvyer för olika butiker
-- [Möjligheter](../manage-results/opportunities.md) - Lär dig mer om AI-baserad optimering med kataloglager
+* [Katalogvyer](catalog-view.md) - Konfigurera katalogvyer för olika butiker
+* [Produktbilder](product-visuals.md) - Använd AEM Assets för produktbilder
+* [Möjligheter](../manage-results/opportunities.md) - Lär dig mer om AI-baserad optimering med kataloglager
