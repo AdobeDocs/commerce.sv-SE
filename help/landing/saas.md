@@ -118,7 +118,7 @@ Om du vill välja eller skapa ett SaaS-projekt begär du API-nycklarna [!DNL Com
 
    Om du inte ser avsnittet **[!UICONTROL Commerce Services Connector]** installerar du [!DNL Commerce]-modulerna för den [[!DNL Commerce] tjänst](#availableservices) som du vill använda och kontrollerar att paketet `magento/module-services-id` är installerat.
 
-1. Klistra in dina nyckelvärden i avsnitten _[!UICONTROL Sandbox API Keys]_och_[!UICONTROL Production API Keys]_.
+1. Klistra in dina nyckelvärden i avsnitten _[!UICONTROL Sandbox API Keys]_&#x200B;och&#x200B;_[!UICONTROL Production API Keys]_.
 
    - Privata nycklar måste innehålla `-----BEGIN PRIVATE KEY-----` i början av nyckeln och `-----END PRIVATE KEY-----` i slutet av nyckeln.
    - Om du inte har någon kopia av de faktiska nycklarna ber du licensägaren om dem och kopplar sedan värdena till konfigurationen.
