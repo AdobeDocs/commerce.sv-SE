@@ -160,7 +160,7 @@ Med API-autentiseringsuppgifterna och instansinformationen som du samlade in i f
 
 1. I Commerce Admin väljer du **[!UICONTROL Adobe Commerce Optimizer]** för att visa konfigurationssidan med instruktioner.
 
-   ![[!DNL Adobe Commerce Optimizer] konfigurationssida ](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
+   ![[!DNL Adobe Commerce Optimizer] konfigurationssida &#x200B;](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
 1. Från kommandoraden [använder du SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) för att ansluta till Commerce mellanlagringsmiljö.
 

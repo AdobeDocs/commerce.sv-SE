@@ -14,7 +14,7 @@ ht-degree: 0%
 De här versionsinformationen beskriver alla releaser för [!DNL Adobe Commerce Optimizer Connector] och innehåller:
 
 ![Nya](../assets/new.svg) nya funktioner
-![ Åtgärdat problem ](../assets/fix.svg) Korrigeringar och förbättringar
+![&#x200B; Åtgärdat problem &#x200B;](../assets/fix.svg) Korrigeringar och förbättringar
 ![Kända fel](../assets/bug.svg)
 
 ## v1.0.9
