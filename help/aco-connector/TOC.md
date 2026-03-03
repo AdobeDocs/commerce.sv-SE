@@ -1,15 +1,16 @@
 ---
-user-guide-title: Integreringsguide för [!DNL AEM Assets]
-user-guide-description: Omfattande information om AEM Assets Integration för Adobe Commerce- och Magento Open Source-administratörer och e-handelskommunikation.
-feature: CMS, Page Content
-source-git-commit: 1931e269ef3166312d1c5f59897f8fdf4994e90c
+user-guide-title: Integreringshandbok för [!DNL Adobe Commerce Optimizer Connector]
+user-guide-description: Konfigurera Adobe Commerce Optimizer Connector för att exportera katalogdata och optimera leveransen till Edge Delivery Services Store med Commerce Optimizer och GraphQL.
+source-git-commit: 380d2c91a17a3e6b84d435774de1b05ada7d3a52
 workflow-type: tm+mt
-source-wordcount: '25'
-ht-degree: 0%
+source-wordcount: '36'
+ht-degree: 5%
 
 ---
 
 
-# Adobe Commerce Optimizer Connector {#aco-commerce-optimizer-connector}
+# Adobe Commerce Optimizer Connector {#aco-optimizer-connector}
 
-- [Ökning](overview.md)
+- [Commerce Optimizer Connector](overview.md)
+- [Kom igång](get-started.md)
+- [Versionsinformation](release-notes.md)
