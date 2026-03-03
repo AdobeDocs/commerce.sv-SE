@@ -2,7 +2,7 @@
 title: Kom igång med Adobe Commerce Optimizer Connector
 description: Lär dig hur du installerar och konfigurerar kopplingen, anpassar exportkonfigurationen, ansluter till Adobe Commerce Optimizer och övervakar status för datasynkronisering.
 feature: Personalization, Integration, Configuration
-badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
+badgePaas: label="Endast PaaS" type="Informative" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur) och lokala projekt."
 source-git-commit: 79a422b1de81b33c68078af5c082e84d3dfe5bec
 workflow-type: tm+mt
 source-wordcount: '1093'
@@ -26,15 +26,15 @@ Installera och konfigurera Commerce Optimizer Connector för att synkronisera di
 
 * Åtkomst till [repo.magento.com](https://repo.magento.com) för att hämta Commerce Connector-metapaketet med Composer.
 
-* Administratörsåtkomst till en [Adobe Commerce Optimizer-sandlådeinstans](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
+* Administratörsåtkomst till en [Adobe Commerce Optimizer-sandlådeinstans](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
 
 Adobe Commerce-användaren som konfigurerar integreringen måste ha:
 
 * Administratörsåtkomst till Adobe Commerce Admin.
 
-* [Kommandoradsåtkomst till Adobe Commerce-programservern](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Kommandoradsåtkomst till Adobe Commerce-programservern](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Utvecklaråtkomst till den [IMS-organisation](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?) där [!DNL Adobe Commerce Optimizer]-projektet har etablerats.
+* Utvecklaråtkomst till den [IMS-organisation](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/organizations?) där [!DNL Adobe Commerce Optimizer]-projektet har etablerats.
 
 >[!BEGINSHADEBOX]
 
@@ -47,7 +47,7 @@ Om du har något av följande tillägg installerat avinstallerar du dem innan du
 * Adobe Commerce Catalog Service (`magento/catalog-service`, `magento/catalog-service-installer`)
 * Instrumentpanel för datahantering (`magento-catalog-sync-admin`)
 
-Data som är kopplade till dessa tillägg är fortfarande tillgängliga i Commerce-databasen. Den exporteras dock inte till [!DNL Adobe Commerce Optimizer] när anslutningen är aktiverad. Om du vill implementera de sök- och säljfunktioner som ingår i dessa tillägg efter att du har aktiverat Connector konfigurerar du dem från [[!DNL Adobe Commerce Optimizer] administratörsgränssnittet](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour).
+Data som är kopplade till dessa tillägg är fortfarande tillgängliga i Commerce-databasen. Den exporteras dock inte till [!DNL Adobe Commerce Optimizer] när anslutningen är aktiverad. Om du vill implementera de sök- och säljfunktioner som ingår i dessa tillägg efter att du har aktiverat Connector konfigurerar du dem från [[!DNL Adobe Commerce Optimizer] administratörsgränssnittet](https://experienceleague.adobe.com/sv/docs/commerce/optimizer/overview#quick-tour).
 
 >[!ENDSHADEBOX]
 
@@ -86,9 +86,9 @@ När distributionen är klar är Commerce Optimizer-alternativet tillgängligt p
 >
 >Detaljerade installationsanvisningar för tillägg finns i följande handböcker:
 >
->[Installera tillägg på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>[Installera tillägg på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[Installera tillägg på Adobe Commerce lokalt](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+>[Installera tillägg på Adobe Commerce lokalt](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ### Hämta nödvändig anslutningsinformation
 
@@ -162,7 +162,7 @@ Med API-autentiseringsuppgifterna och instansinformationen som du samlade in i f
 
    ![[!DNL Adobe Commerce Optimizer] konfigurationssida &#x200B;](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. Från kommandoraden [använder du SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) för att ansluta till Commerce mellanlagringsmiljö.
+1. Från kommandoraden [använder du SSH](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/secure-connections) för att ansluta till Commerce mellanlagringsmiljö.
 
 1. Kör följande Commerce CLI-kommando för att konfigurera integreringen och ersätt platshållarvärdena med värdena för ditt Commerce Optimizer-projekt:
 
@@ -206,6 +206,6 @@ När du har aktiverat integreringen startar datasynkroniseringen automatiskt. Be
 
 1. **[Konfigurera en Commerce Storefront på Edge Delivery Services](#set-up-a-commerce-storefront-on-edge-delivery-services)**
 
-   Följ [Storefront-installationsdokumentationen](https://experienceleague.adobe.com/developer/commerce/storefront/setup/) för att ansluta din butik till instansen [!DNL Adobe Commerce Optimizer] och börja leverera personaliserade e-handelsupplevelser.
+   Följ [Storefront-installationsdokumentationen](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=sv-SE) för att ansluta din butik till instansen [!DNL Adobe Commerce Optimizer] och börja leverera personaliserade e-handelsupplevelser.
 
 
