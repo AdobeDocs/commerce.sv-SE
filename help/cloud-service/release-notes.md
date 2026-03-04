@@ -48,7 +48,7 @@ Begränsningen för antalet webbplatser, butiker och butiksvyer var tidigare beg
 
 ### Anpassa butiksautentiseringsmeddelanden med strukturerade felkoder
 
-[`generateCustomerToken` GraphQL-mutationen ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} returnerar nu inskrivna felkoder tillsammans med felmeddelanden, vilket gör att butiker kan visa specifika gränssnittsmeddelanden per felorsak. Tillgängliga felkoder är: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` och `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
+[`generateCustomerToken` GraphQL-mutationen &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} returnerar nu inskrivna felkoder tillsammans med felmeddelanden, vilket gör att butiker kan visa specifika gränssnittsmeddelanden per felorsak. Tillgängliga felkoder är: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` och `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
 
 ### Skicka automatiska e-postpåminnelser för inaktivitet i kundvagn och önskelista
 
@@ -240,7 +240,7 @@ Följande valda förbättringar, optimeringar och felkorrigeringar ingår i den 
 
 * `POST /V1/customers`- och `PUT /V1/customers/{customerId}`-slutpunkterna har lagts till i [REST API](https://developer.adobe.com/commerce/webapi/rest/reference/) för att skapa och uppdatera kunder. Dessa slutpunkter kräver IMS-auktorisering. <!-- CCSAAS-3112 -->
 
-* [`exchangeOtpForCustomerToken`-mutationen ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) har lagts till, vilket kräver en kunds e-postadress och engångslösenord (OTP) och tar emot en kundtoken i utbyte. Denna mutation används vanligtvis i scenarier där en kund måste autentisera med hjälp av en engångslösenord som skickas till deras e-post eller telefon.
+* [`exchangeOtpForCustomerToken`-mutationen &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) har lagts till, vilket kräver en kunds e-postadress och engångslösenord (OTP) och tar emot en kundtoken i utbyte. Denna mutation används vanligtvis i scenarier där en kund måste autentisera med hjälp av en engångslösenord som skickas till deras e-post eller telefon.
 
 * Om en adress som definieras i konfigurationsskärmen [!UICONTROL **Store Email Addresses**] i Admin innehåller ett värde som slutar med `example.com`, skickar inte Commerce e-post till den här adressen. Systemet loggar i stället att e-postmeddelandet inte skickades.  <!-- CCSAAS-3533 -->
 
