@@ -110,7 +110,7 @@ Se till att de underordnade produkterna för konfigurerbara produkter har bilder
 
 ### Använd produktmetadata
 
-Kontrollera att korrekta och detaljerade produktattribut för [ har angetts som sökbara och har tilldelats en vikt på ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Observera att SKU-, namn- och kategoriattribut som standard är sökbara och inte kan uteslutas från sökningen. För bästa resultat ska du inte använda blanksteg i dina SKU:er.
+Kontrollera att korrekta och detaljerade produktattribut för [&#x200B; har angetts som sökbara och har tilldelats en vikt på &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Observera att SKU-, namn- och kategoriattribut som standard är sökbara och inte kan uteslutas från sökningen. För bästa resultat ska du inte använda blanksteg i dina SKU:er.
 
 Om du vill öka sökrelevansen tilldelar du en vikt till varje sökbart attribut. Attribut med högre vikt bör visas högre i sökresultatet. Sorteringen efter relevans påverkas av flera kriterier, t.ex. sökvikt. Det innebär att attribut med lägre sökvikt ibland kan ha större relevans än attribut med högre sökvikt. Andra villkor kan vara antalet matchningar i ett givet attribut, positionen för det sökord som hittats och den övergripande textstrukturen före och efter ett sökord.
 

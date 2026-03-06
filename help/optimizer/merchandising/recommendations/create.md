@@ -19,7 +19,7 @@ _Rekommendationsenhet_
 
 När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](../../manage-results/recommendation-performance.md) för att mäta visningar, vyer, klick och så vidare. Tabellen Rekommendationer visar måtten för varje rekommendationsenhet så att du kan fatta välgrundade affärsbeslut.
 
-1. Gå till _[!DNL Adobe Commerce Optimizer]_Merchandising_ > _Recommendations **på sidofältet**för att visa arbetsytan_ Recommendations _.
+1. Gå till _[!DNL Adobe Commerce Optimizer]_&#x200B;Merchandising_ > _Recommendations **på sidofältet**&#x200B;för att visa arbetsytan_ Recommendations _.
 
 1. I fältet **Katalogvy** väljer du den katalogvy där du vill att rekommendationen ska vara tillgänglig. Läs mer om [att använda katalogvyer för rekommendationer](../../manage-results/recommendation-performance.md#select-catalog-view).
 
@@ -103,7 +103,7 @@ När du har skapat en rekommendation måste du hämta dess ID för att implement
 
 Du kan redigera, inaktivera eller ta bort en befintlig rekommendation.
 
-1. Gå till _[!DNL Adobe Commerce Optimizer]_Merchandising_ > _Rekommendationer **på sidofältet**.
+1. Gå till _[!DNL Adobe Commerce Optimizer]_&#x200B;Merchandising_ > _Rekommendationer **på sidofältet**.
 
 1. Välj den rekommendation som du vill ändra.
 

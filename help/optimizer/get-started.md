@@ -66,7 +66,7 @@ Följ instruktionerna för [Läs in exempeldata](#add-sample-data) om du vill te
 
 Installationen och hanteringen av [!DNL Adobe Commerce Optimizer] bygger på tre nyckelroller. Varje roll har specifika uppgifter och ansvarsområden:
 
-![Rollbaserat arbetsflöde för installationen av [!DNL Adobe Commerce Optimizer] med uppgifter för administratör, utvecklare och användare ](./assets/high-level-workflow.png){zoomable="yes"}
+![Rollbaserat arbetsflöde för installationen av [!DNL Adobe Commerce Optimizer] med uppgifter för administratör, utvecklare och användare &#x200B;](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### Administratörsuppgifter
 
@@ -133,13 +133,13 @@ När appen är öppen växlar du enkelt mellan miljöer som sandlådor och produ
 
    I den nedrullningsbara listan visas alla Optimizer-instanser som är tillgängliga i organisationen. Markera instansen som ska visas.
 
-   ![Instansväljarlistrutan för val av [!DNL Adobe Commerce Optimizer] miljöer ](./assets/context-switcher.png){zoomable="yes"}
+   ![Instansväljarlistrutan för val av [!DNL Adobe Commerce Optimizer] miljöer &#x200B;](./assets/context-switcher.png){zoomable="yes"}
 
 ### Hämta instansinformation
 
 Visa instansinformationen genom att klicka på informationsikonen bredvid instansnamnet.
 
-Panelen ![[!DNL Adobe Commerce Optimizer] instansinformation som visar slutpunkter och instans-ID ](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+Panelen ![[!DNL Adobe Commerce Optimizer] instansinformation som visar slutpunkter och instans-ID &#x200B;](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Observera följande viktiga information:
 
