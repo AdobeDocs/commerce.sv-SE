@@ -1,11 +1,11 @@
 ---
 title: Framgångsmått
 description: Framgångsmått ger insikt i nyckelresultatmåtten för din [!DNL Adobe Commerce Optimizer] butik.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
-source-git-commit: 4e85d70dc1b099a5b40a807a76ca589aa9a28f07
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '2599'
+source-wordcount: '2594'
 ht-degree: 0%
 
 ---
@@ -149,7 +149,7 @@ Total Revenue = Sum of (Product Base Price × Quantity) for all completed orders
 
 - Alla slutförda order under det valda datumintervallet.
 - Basproduktpriser multiplicerat med inköpta kvantiteter.
-- Intäkter från alla försäljningskanaler som spåras av Commerce Optimizer.
+- Intäkter från alla försäljningskanaler som spåras av [!DNL Adobe Commerce Optimizer].
 
 **Viktiga anteckningar:**
 

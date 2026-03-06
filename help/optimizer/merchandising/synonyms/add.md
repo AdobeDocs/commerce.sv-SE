@@ -1,25 +1,25 @@
 ---
 title: Skapa och hantera synonymer
 description: Lär dig hur du skapar och hanterar synonymer till  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # Skapa synonymer
 
-Öka kundengagemanget genom att lägga till en egen strukturerad lista med [!DNL Adobe Commerce Optimizer] synonymer. Du kan lägga till upp till 200 synonymer per butik.
+Öka kundengagemanget genom att lägga till en egen strukturerad lista med [!DNL Adobe Commerce Optimizer] synonymer. Du kan lägga till upp till 200 synonymer per katalogkälla.
 
 ![Synonym Workspace](../../assets/synonym-workspace.png)
 
 ## Steg 1: Lägg till en synonym
 
 1. Gå till _Merchandising_ > **Synonymer** från den vänstra listen.
-1. Klicka på knappen **[!UICONTROL Add synonyms]**.
+1. Klicka på knappen **[!UICONTROL Create synonyms]**.
 
 ## Steg 2: Definiera synonymen efter typ
 
@@ -27,31 +27,25 @@ Följ instruktionerna för den [typ av synonym](type.md) som du vill skapa.
 
 ### Tvåvägssynonym
 
-1. Acceptera standardalternativet **Tvåvägs**.
-
-   ![Lägg till tvåvägssynonym](../../assets/synonym-add-two-way.png)
-
 1. Ange termen eller frasen **Nyckelord** som ska matchas.
 1. Ange den/de **uttryck** som du vill lägga till som synonymer för nyckelordet. Avgränsa flera termer med komma.
 I det här exemplet är nyckelordet som ska matchas&quot;byxor&quot; och uppsättningen expansionstermer är&quot;byxor, slackar&quot;.
 
-   ![Exempel på dubbelriktad synonym](../../assets/synonym-add-two-way-example.png)
+   ![Tvåvägssynonym](../../assets/synonym-add-two-way.png)
 
 1. Klicka på **Spara** när du är klar.
 
    Synonymuppsättningen visas i listan med en dubbelriktad pil mellan varje term, vilket betyder att termerna är utbytbara.
 
-   ![Tvåvägssynonym](../../assets/synonym-two-way.png)
+   ![Exempel på dubbelriktad synonym](../../assets/synonym-add-two-way-example.png)
 
 ### Envägssynonym
 
 1. Klicka på synonytypen **Envägs**.
 
-   ![Lägg till envägssynonym](../../assets/synonym-add-one-way.png)
-
 1. Ange villkoren **Nyckelord** och **Utökning**. Avgränsa flera termer med komma.
 
-   ![Exempel på envägssynonym](../../assets/synonym-add-one-way-example.png)
+   ![Envägssynonym](../../assets/synonym-add-one-way.png)
 
    I det här exemplet är nyckelordet &quot;byxor&quot; och de ensidiga expansionstermerna &quot;capris, peddle-pushers&quot; är en delmängd av &quot;byxor&quot;, men med en specifik betydelse.
 
@@ -59,7 +53,7 @@ I det här exemplet är nyckelordet som ska matchas&quot;byxor&quot; och uppsät
 
    Synonymuppsättningen visas i listan med en enkelriktad pil som pekar från expanderingsvillkoren till nyckelordet för att ange att termerna är deluppsättningar av nyckelordet. Ett plustecken avgränsar varje expansionsterm.
 
-   ![Envägssynonym](../../assets/synonym-one-way.png)
+   ![Exempel på envägssynonym](../../assets/synonym-add-one-way-example.png)
 
 ## Steg 3: Publicera ändringar
 

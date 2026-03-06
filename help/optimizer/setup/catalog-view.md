@@ -3,11 +3,11 @@ title: Katalogvy
 description: Lär dig vilka katalogvyer som är och hur du skapar dem för att ordna din produktkatalog efter affärsstruktur, principer och priser.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 769aafeb261d978623e68c466888924c92632883
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Katalogvyer för marknadsföringstjänster
 
-Katalogvyer utgör grunden för Adobe Commerce Optimizer Merchandising Services, vilket gör att du kan ordna din produktkatalog efter affärsstruktur, policyer och priser. Denna flexibla datamodell stöder scenarier med flera varumärken, affärsenheter och flerspråkiga lösningar samtidigt som effektiviteten bibehålls.
+Katalogvyer utgör grunden för [!DNL Adobe Commerce Optimizer] Merchandising Services, vilket gör att du kan ordna din produktkatalog efter affärsstruktur, principer och priser. Denna flexibla datamodell stöder scenarier med flera varumärken, affärsenheter och flerspråkiga lösningar samtidigt som effektiviteten bibehålls.
 
 ## Vad är katalogvyer?
 
@@ -32,13 +32,23 @@ Se katalogvyer som olika linser som kunderna kan använda för att se katalogen.
 - En regional katalogvy kan visa produkter och priser som är specifika för ett geografiskt område
 - En varumärkeskatalogvy kan visa endast produkter från ett visst varumärke
 
+### Katalogvy kontra katalogkälla
+
+Nedan förklaras skillnaden mellan en katalogvy och en katalogkälla:
+
+- **Katalogvy** - En konfigurerad vy av katalogen för ett specifikt affärsbehov. När du skapar en katalogvy väljer du vilken katalogkälla (eller språkinställning) som ska användas och lägger sedan till [profiler](policies.md) för att filtrera vilka produkter som visas och länkar [prisböcker](pricebooks.md) för att styra priset. En enda katalogkälla kan driva många katalogvyer (till exempel en `en-US`-källa med separata katalogvyer för olika varumärken eller regioner). Tänk på en katalogvy som *hur* du exponerar data för en butiks-, kanal- eller målgrupp.
+
+- **Katalogkälla** - Den underliggande datakontexten som tillhandahåller produktinformation. En katalogkälla är vanligtvis en språkinställning (till exempel `en-US`, `fr-CA`) eller ett externt system som PIM eller ERP. [!DNL Adobe Commerce Optimizer] importerar produktdata från en eller flera katalogkällor till en enhetlig baskatalog. Tänk på en katalogkälla som *var* råkatalogdata kommer från.
+
+Sammanfattningsvis är **katalogkällan** den datakontext du hämtar från, medan **katalogvyn** är den filtrerade, prissatta och ordnade kontext du presenterar för kunder eller kanaler.
+
 ## Skapa en katalogvy
 
 I det här avsnittet skapar du en katalogvy, väljer en [policy](policies.md) och en [prisbok](pricebooks.md).
 
 Innan du skapar en katalogvy bör du kontrollera att:
 
-- [Principer &#x200B;](policies.md) har skapats för att definiera produktfilter.
+- [Principer ](policies.md) har skapats för att definiera produktfilter.
 
 - [Definierade kataloglager](catalog-layer.md) för att definiera varianter av dina produkter.
 
@@ -66,6 +76,14 @@ Innan du skapar en katalogvy bör du kontrollera att:
 Sidan Katalog visar uppdateringar för att visa den nya katalogvyn. &#x200B;
 
 När du har utfört de här stegen är katalogvyn nu konfigurerad för att visa produkter och priser baserat på de valda källorna och profilerna.
+
+### Ange katalogvyer för rekommendationer och regler för produktupptäckt
+
+>[!IMPORTANT]
+>
+>Den här funktionen är för närvarande i betaversion.
+
+Du kan ange en katalogvy när du [skapar rekommendationsenheter](../merchandising/recommendations/create.md) eller [försäljningsregler](../merchandising/rules/add.md).
 
 ## Kataloglager
 
@@ -112,7 +130,7 @@ Härifrån kan du se konfigurationsinformation för katalogvyn, som:
 - Visa ID
 - Namn
 - Katalogkällor
-- Profiler
+- Policyer
 - Skapad den
 - Ändrade data
 

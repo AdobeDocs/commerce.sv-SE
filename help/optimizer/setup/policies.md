@@ -1,17 +1,17 @@
 ---
-title: Profiler
+title: Policyer
 description: Lär dig hur du skapar och hanterar principer i  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
 
-# Profiler
+# Policyer
 
 Principer är dataåtkomstfilter i katalogvyer som ytterligare förfinar data som levereras till varje katalogvy. Profiler säkerställer att rätt innehåll skickas till rätt mål. Exempel: försäljningsställe fysiska butiker, marknadsplatser, reklamledningar (Google, Facebook, Instagram).
 

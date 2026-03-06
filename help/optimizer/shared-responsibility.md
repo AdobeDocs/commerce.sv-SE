@@ -2,10 +2,11 @@
 title: Delat ansvar
 description: Lär dig mer om säkerhetsansvarsområdena för alla parter som deltar i ditt [!DNL Adobe Commerce Optimizer] projekt.
 role: Admin, Architect, Leader
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 7c407bfc2becfb0ba6babe5958bcb790c178f406
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
+exl-id: 9e09790f-832d-43ab-b2df-6389ad52b43d
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -43,12 +44,12 @@ I följande sammanfattande tabeller används RACI-modellen för att visa säkerh
 | Stöd för backend CDN | RA |  |
 | Hämta en DNS-provider för serverdel | RA | |
 | Etablera produktions- och sandlådemiljöer | A | R |
-| Åtkomst till Dynamics för Adobe Commerce Optimizer | R | C |
+| Öppnar Dynamics för [!DNL Adobe Commerce Optimizer] | R | C |
 | Lösning av kundsäkerhetsproblem | RA | I |
 | Lösning av CDN-säkerhetsproblem i serverdelen | RA | |
 | Hjälp Adobe med säkerhetsforskning (inskannade dokument/revisioner) | RA | |
 | Utföra PCI ASV-skanningar | RA | I |
-| Reparera Adobe Commerce Optimizer infrastruktur PCI-skanningar | R | |
+| Åtgärdar PCI-skanningar för [!DNL Adobe Commerce Optimizer]-infrastruktur | R | |
 | Hantera operativsystems- och plattformshemligheter | RA | |
 | Övervaka säkerhetsloggar för serverdel | RA | |
 | Kontrollera kundsupport och -åtkomst | A | R |
@@ -56,5 +57,5 @@ I följande sammanfattande tabeller används RACI-modellen för att visa säkerh
 | Årlig testning och dokumentation av katastrofåterställningsplanen | RA | |
 | Felsökning och isolering av problem | R | R |
 | Stöd för felsökning i rätt tid och isoleringsprocess för problem | R | R |
-| Installera uppdateringar och patchar till Adobe Commerce Optimizer | RA | I |
-| Adobe Commerce Optimizer programkvalitet | RA | |
+| Installerar uppdateringar och korrigeringar för [!DNL Adobe Commerce Optimizer] | RA | I |
+| Kärnkvalitet för [!DNL Adobe Commerce Optimizer]-program | RA | |

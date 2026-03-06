@@ -3,11 +3,11 @@ title: Datasynkronisering
 description: Granska katalogdata som synkroniseras från din Commerce-datakälla till  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
-source-git-commit: e2c3c8a225b2c56985ba48c7efc9ae2c2d059b2e
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Sidan **Datasynkronisering** innehåller följande fält:
 | [!DNL Catalog Service] | Visar den senaste synkroniseringsuppdateringen, det totala antalet mottagna produkter, ett sökfält och en tabell över synkroniserade produkter för [!DNL Catalog Service]. |
 | Produktidentifiering | Visar den senaste synkroniseringsuppdateringen, det totala antalet mottagna produkter, ett sökfält och en tabell över synkroniserade produkter för sökning. |
 | Rekommendationer | Visar den senaste synkroniseringsuppdateringen, det totala antalet mottagna produkter, ett sökfält och en tabell över synkroniserade produkter för rekommendationer. |
-| Produkter som tagits emot under de senaste tre timmarna | Visar antalet produkter som har överförts från katalogkällan till Adobe Commerce Optimizer under de senaste tre timmarna. Om du gör ovanliga uppdateringar av katalogen är det här värdet ofta noll. |
-| Totalt antal produkter i katalog | Återger det totala antalet katalogprodukter som är tillgängliga för Adobe Commerce Optimizer. |
-| Synkroniserade produkter | Innehåller information om de produkter som synkroniseras med Adobe Commerce Optimizer. Som standard sorteras den här tabellen efter&quot;Senast uppdaterad&quot;. Om du vill hitta en viss produkt använder du fältet **[!UICONTROL Search by Name or SKU]**. |
+| Produkter som tagits emot under de senaste tre timmarna | Visar antalet produkter som har överförts från katalogkällan till [!DNL Adobe Commerce Optimizer] under de senaste tre timmarna. Om du gör ovanliga uppdateringar av katalogen är det här värdet ofta noll. |
+| Totalt antal produkter i katalog | Återspeglar det totala antalet katalogprodukter som är tillgängliga för [!DNL Adobe Commerce Optimizer]. |
+| Synkroniserade produkter | Visar information om de produkter som synkroniseras med [!DNL Adobe Commerce Optimizer]. Som standard sorteras den här tabellen efter&quot;Senast uppdaterad&quot;. Om du vill hitta en viss produkt använder du fältet **[!UICONTROL Search by Name or SKU]**. |
 
 ## Lista över synkroniserade produkter
 

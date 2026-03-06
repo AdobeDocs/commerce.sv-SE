@@ -1,11 +1,11 @@
 ---
 title: Skapa och hantera regler
 description: Lär dig hur du skapar och hanterar försäljningsregler.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2219'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ För att skapa en regel är det första steget att använda regelredigeraren fö
 ## Skapa en regel
 
 1. Gå till _Merchandising_ > **Merchandising Rules** i den vänstra listen.
-1. Klicka på **Skapa regel** för att starta regelredigeraren.
+1. (Valfritt) Använd listrutan **Katalogvy** för att välja katalogvyn där regeln ska användas. Regeln som du skapar omfattar den valda vyn (eller alla katalogvyer om **Alla vyer** är markerat). Se [Välja katalogvy](workspace.md#select-catalog-view) för hur omfång i katalogvyn fungerar.
+
+   >[!IMPORTANT]
+   >
+   >Den här funktionen är för närvarande i betaversion.
+
+1. Klicka på **[!UICONTROL Create rule]** för att starta regelredigeraren.
 
 ![Skapa regel](../../assets/create-rule.png)
 
@@ -165,7 +171,7 @@ Eller så kan händelser anges manuellt:
 
 ## Redigera, visa och ta bort regler
 
-Följ de här instruktionerna för att uppdatera egenskaperna för befintliga regler.
+Följ de här instruktionerna för att uppdatera egenskaperna för befintliga regler. Du kan inte ändra katalogvyn (omfånget) för en regel efter att den har skapats. Omfånget anges när du skapar regeln. Se [Välj katalogvy](workspace.md#select-catalog-view).
 
 ### Redigera regel
 

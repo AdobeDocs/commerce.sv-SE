@@ -1,11 +1,11 @@
 ---
 title: Skapa och hantera rekommendationer
 description: Lär dig hur du skapar och hanterar rekommendationer.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
+source-git-commit: 3d748e83e07a16e58c0c55f12a6c0ad40bbfdead
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,17 @@ _Rekommendationsenhet_
 
 När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](../../manage-results/recommendation-performance.md) för att mäta visningar, vyer, klick och så vidare. Tabellen Rekommendationer visar måtten för varje rekommendationsenhet så att du kan fatta välgrundade affärsbeslut.
 
-1. Gå till _Merchandising_ > _Recommendations_ på sidofältet **Adobe Commerce Optimizer** för att visa arbetsytan _Recommendations_ .
+1. Gå till _[!DNL Adobe Commerce Optimizer]_Merchandising_ > _Recommendations **på sidofältet**för att visa arbetsytan_ Recommendations _.
+
+1. I fältet **Katalogvy** väljer du den katalogvy där du vill att rekommendationen ska vara tillgänglig. Läs mer om [att använda katalogvyer för rekommendationer](../../manage-results/recommendation-performance.md#select-catalog-view).
+
+   >[!IMPORTANT]
+   >
+   >Den här funktionen är för närvarande i betaversion.
 
 1. Klicka på **Skapa rekommendation**.
+
+   Rekommendationen som du skapar är tillgänglig i den katalogvy som du valde tidigare.
 
 1. I avsnittet _Namnge din rekommendation_ anger du ett beskrivande namn för intern referens, till exempel `Home page most popular`.
 
@@ -35,6 +43,8 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
 1. (Valfritt) I avsnittet _Filter_ använder [du filter](filters.md) för att kontrollera vilka produkter som visas i rekommendationsenheten.
 
+1. Använd panelen _Rekommenderad produktförhandsvisning_ för att bättre förstå hur filter påverkar vilka produkter som visas i rekommendationsenheten. Läs mer om hur du [förhandsgranskar rekommendationer](#preview-recommendations).
+
 1. När du är klar klickar du på något av följande:
 
    - **Spara som utkast** om du vill redigera rekommendationsenheten senare. Du kan inte ändra rekommendationstypen för en rekommendationsenhet i ett utkasttillstånd.
@@ -45,11 +55,33 @@ När du aktiverar rekommendationsenheten börjar Adobe Commerce [samla in data](
 
 >[!NOTE]
 >
-> Du kan skapa upp till 50 aktiva rekommendationsenheter.
+>Du kan skapa upp till 50 aktiva rekommendationsenheter. Mer information finns i [Gränser och gränser](../../boundaries-limits.md).
 
 >[!IMPORTANT]
 >
 >Vissa webbläsare kan blockera viktiga skript som förhindrar att rekommendationerna fungerar som de ska.
+
+## Förhandsgranska rekommendationer
+
+Panelen _Rekommenderad produktförhandsvisning_ är alltid tillgänglig med ett urval produkter som kan visas i rekommendationsenheten när den distribueras till butiken.
+
+![Förhandsgranska rekommendationer](../../assets/rec-preview.png)
+
+Om du vill testa en rekommendation när du arbetar i en icke-produktionsmiljö kan du hämta rekommendationsdata från en annan källa. På så sätt kan handlare experimentera med regler och förhandsgranska rekommendationerna innan de distribuerar till produktionen.
+
+| Fält | Beskrivning |
+|---|---|
+| Katalogvy |
+| Namn | Produktens namn. |
+| SKU | Den lagerhållningsenhet som tilldelats produkten |
+| Pris | Produktens pris. |
+| Resultattyp | Primär - Anger att det finns tillräckligt med utbildningsdata insamlade för att visa en rekommendation.<br />Säkerhetskopiering - Anger att det inte finns tillräckligt med utbildningsdata insamlade så en rekommendation för säkerhetskopiering används för att fylla platsen. Gå till [Beteendedata](../../setup/events/overview.md) om du vill veta mer om maskininlärningsmodeller och rekommendationer för säkerhetskopiering. |
+
+När du skapar rekommendationsenheten kan du experimentera med rekommendationstypen och filtren för att få omedelbar feedback i realtid om de produkter som kommer att ingå. När du börjar förstå vilka produkter som visas kan du konfigurera rekommendationsenheten så att den uppfyller dina affärsbehov.
+
+[!DNL Adobe Commerce Optimizer] [filters](filters.md) rekommendationer för att undvika att dubblettprodukter visas när flera rekommendationsenheter distribueras på en sida. Det innebär att de produkter som visas på förhandsvisningspanelen kan skilja sig från de som visas i butiken.
+
+För konfigurationer för flera butiker, flera språk eller flera varumärken kan du konfigurera om varje rekommendation ska gälla för alla katalogvyer (globala) eller för en enskild [katalogvy](../../setup/catalog-view.md). Läs mer om hur du [ställer in katalogvyn](../../manage-results/recommendation-performance.md#select-catalog-view) när du arbetar med rekommendationer.
 
 ## Hämta rekommendation-ID
 
@@ -65,13 +97,13 @@ När du har skapat en rekommendation måste du hämta dess ID för att implement
 
 1. Kopiera ID:t i avsnittet **Rekommendation-ID**.
 
-1. Använd det här ID:t för att konfigurera [rekommendationstillägget](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=sv-SE) i din Edge Delivery Services-butik.
+1. Använd det här ID:t för att konfigurera [rekommendationstillägget](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) i din Edge Delivery Services-butik.
 
 ## Hantera befintliga rekommendationer
 
 Du kan redigera, inaktivera eller ta bort en befintlig rekommendation.
 
-1. Gå till _Merchandising_ > _Rekommendationer_ på sidofältet **Adobe Commerce Optimizer**.
+1. Gå till _[!DNL Adobe Commerce Optimizer]_Merchandising_ > _Rekommendationer **på sidofältet**.
 
 1. Välj den rekommendation som du vill ändra.
 
@@ -84,13 +116,13 @@ Du kan redigera, inaktivera eller ta bort en befintlig rekommendation.
    - Antal produkter
    - Filtrera produkter
 
-   Du kan inte ändra rekommendationstypen.
+   Du kan inte ändra rekommendationstypen eller katalogvyn. Katalogvyn anges när du skapar rekommendationen. Mer information finns i [Välj katalogvy](../../manage-results/recommendation-performance.md#select-catalog-view).
 
 1. När du är klar klickar du på **Spara ändringar**.
 
 ## Beredskapsindikatorer
 
-Beredskapsindikatorer visar vilka rekommendationstyper som fungerar bäst utifrån tillgängliga katalog- och beteendedata. Du kan också använda beredskapsindikatorer för att avgöra om du har problem med [händelsesamlingen](../../setup/events/overview.md) eller om du inte har tillräckligt med trafik för att fylla i rekommendationstypen.
+Beredskapsindikatorer visar vilka rekommendationstyper som fungerar bäst utifrån tillgängliga katalog- och beteendedata. De kan också hjälpa dig att identifiera potentiella problem med [händelsesamlingen](../../setup/events/overview.md) eller avgöra om en rekommendationstyp inte får tillräckligt med trafik för att generera resultat.
 
 Beredskapsindikatorer kategoriseras i antingen [statisk-baserad](#static-based) eller [dynamisk-baserad](#dynamic-based). Statisk användning av endast katalogdata, medan dynamiska beteendedata från era kunder används. Dessa beteendedata används för att [utbilda maskininlärningsmodeller](../../setup/events/overview.md) för att skapa personaliserade rekommendationer och för att beräkna deras beredskapspoäng.
 
@@ -100,7 +132,7 @@ Beredskapsindikatorerna är en indikation på hur mycket modellen är utbildad. 
 
 Procentsatsen för beredskapsindikatorn härleds från en beräkning som anger hur många produkter som kan rekommenderas beroende på rekommendationstypen. Statistik tillämpas på produkter baserat på katalogens totala storlek, volymen för interaktioner (till exempel vyer, klick, tillägg i varukorgar) och andelen SKU:er som registrerar dessa händelser inom ett visst tidsfönster. Vid högtrafik under högsäsong kan beredskapsindikatorerna till exempel visa högre värden än vid normal volym.
 
-Som ett resultat av dessa variabler kan procentvärdet för beredskapsindikatorn variera. Detta förklarar varför du kanske ser att rekommendationstyper kommer in och ut som&quot;klara för driftsättning&quot;.
+Som ett resultat av dessa variabler kan procentvärdet för beredskapsindikatorn variera. Den här fluktuationen förklarar varför du kanske kan se att rekommendationstyper kommer in och ut när det gäller att vara&quot;klara för driftsättning&quot;.
 
 Beredskapsindikatorer beräknas utifrån några faktorer:
 
@@ -109,7 +141,7 @@ Beredskapsindikatorer beräknas utifrån några faktorer:
 
 Baserat på ovanstående faktorer beräknas ett beredskapsvärde och visas enligt följande:
 
-- 75 % eller mer innebär att de rekommendationer som föreslås för den rekommendationstypen är mycket relevanta.
+- 75 % eller mer betyder att de rekommendationer som föreslås för den rekommendationstypen är mycket relevanta.
 - Minst 50 % betyder att de rekommendationer som föreslås för den rekommendationstypen är mindre relevanta.
 - Mindre än 50 % betyder att de rekommendationer som föreslås för den rekommendationstypen kanske inte är relevanta. I det här fallet används [rekommendationer för säkerhetskopiering](../../setup/events/overview.md#backuprecs).
 
@@ -156,9 +188,9 @@ _Rekommendationstyp_
 >
 >Indikatorer kan aldrig nå 100 %.
 
-Procentvärdet för beredskapsindikatorn för rekommendationstyper som är beroende av katalogdata ändras inte särskilt mycket eftersom handlarens katalog inte ändras så ofta. Men procentandelen beredskapsindikator för rekommendationstyper som baseras på kundbeteendedata kan ändras ofta beroende på den dagliga kundaktiviteten.
+Beredskapsindikatorn för rekommendationstyper som är beroende av katalogdata ändras inte särskilt mycket eftersom handlarens katalog sällan ändras. Men beredskapsindikatorn för rekommendationstyper som baseras på kundbeteendedata kan ändras ofta beroende på den dagliga kundaktiviteten.
 
-#### Vad du ska göra om procentvärdet för beredskapsindikatorn är lågt
+#### Vad du ska göra om beredskapsindikatorn är låg
 
 En låg beredskapsprocent anger att det inte finns många produkter i katalogen som kan inkluderas i rekommendationerna för den här rekommendationstypen. Detta innebär att det är mycket troligt att [säkerhetskopieringsrekommendationer](../../setup/events/overview.md#backuprecs) returneras om du distribuerar den här rekommendationstypen ändå.
 
@@ -172,24 +204,5 @@ I följande exempel visas möjliga orsaker och lösningar till vanliga låga ber
 - **Dynamisk-baserad** - Låga procentsatser för dynamiska indikatorer kan orsakas av:
 
    - Fält saknas i de obligatoriska [storefront-händelserna](../../setup/events/overview.md) för respektive rekommendationstyp (requestId, product context, osv.).
-   - Låg trafik i butiken, vilket innebär att antalet beteendehändelser är lågt.
-   - Det finns få beteendehändelser i olika produkter i butiken. Om till exempel bara tio procent av dina produkter visas eller köps för det mesta av tiden blir respektive beredskapsindikatorer låga.
-
-## Förhandsgranska rekommendationer
-
-Panelen _Rekommenderad produktförhandsvisning_ är alltid tillgänglig med ett urval produkter som kan visas i rekommendationsenheten när den distribueras till butiken.
-
-![Förhandsgranska rekommendationer](../../assets/rec-preview.png)
-
-Om du vill testa en rekommendation när du arbetar i en icke-produktionsmiljö kan du hämta rekommendationsdata från en annan källa. På så sätt kan handlare experimentera med regler och förhandsgranska rekommendationerna innan de distribuerar till produktionen.
-
-| Fält | Beskrivning |
-|---|---|
-| Namn | Produktens namn. |
-| SKU | Den lagerhållningsenhet som tilldelats produkten |
-| Pris | Produktens pris. |
-| Resultattyp | Primär - anger att det finns tillräckligt med utbildningsdata för att visa en rekommendation.<br />Säkerhetskopiering - indikerar att det inte finns tillräckligt med utbildningsdata insamlade så en rekommendation för säkerhetskopiering används för att fylla platsen. Gå till [Beteendedata](../../setup/events/overview.md) om du vill veta mer om maskininlärningsmodeller och rekommendationer för säkerhetskopiering. |
-
-När du skapar rekommendationsenheten kan du experimentera med rekommendationstypen och filtren för att få omedelbar feedback i realtid om de produkter som kommer att ingå. När du börjar förstå vilka produkter som visas kan du konfigurera rekommendationsenheten så att den uppfyller dina affärsbehov.
-
-[!DNL Adobe Commerce Optimizer] [filters](filters.md) rekommendationer för att undvika att dubblettprodukter visas när flera rekommendationsenheter distribueras på en sida. Det innebär att de produkter som visas på förhandsvisningspanelen kan skilja sig från de som visas i butiken.
+   - Låg trafik till butiken så att antalet beteendehändelser är lågt.
+   - Det finns få beteendehändelser i olika produkter i butiken. Om till exempel bara tio procent av dina produkter visas eller köps för det mesta av tiden är respektive beredskapsindikatorer låga.

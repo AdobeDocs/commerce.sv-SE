@@ -3,11 +3,11 @@ title: Kom igång
 description: Lär dig hur du kommer igång med  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: c27b2a8c7dffdcc5d5195cf809d5b475f3e01059
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Följ instruktionerna för [Läs in exempeldata](#add-sample-data) om du vill te
 
 Installationen och hanteringen av [!DNL Adobe Commerce Optimizer] bygger på tre nyckelroller. Varje roll har specifika uppgifter och ansvarsområden:
 
-![Rollbaserat arbetsflöde för Adobe Commerce Optimizer-installation med administratörs-, utvecklings- och användaruppgifter](./assets/high-level-workflow.png){zoomable="yes"}
+![Rollbaserat arbetsflöde för installationen av [!DNL Adobe Commerce Optimizer] med uppgifter för administratör, utvecklare och användare ](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### Administratörsuppgifter
 
@@ -105,7 +105,7 @@ Hantera instanser från Commerce Cloud Manager.
 
 >[!NOTE]
 >
->Alla Adobe Commerce Optimizer-användare har inte tillgång till Cloud Manager. Åtkomsten beror på vilken roll och vilka behörigheter som tilldelats användarkontot.
+>Alla [!DNL Adobe Commerce Optimizer]-användare har inte åtkomst till Cloud Manager. Åtkomsten beror på vilken roll och vilka behörigheter som tilldelats användarkontot.
 
 1. Logga in på [Adobe Experience Cloud](https://experience.adobe.com/).
 
@@ -133,13 +133,13 @@ När appen är öppen växlar du enkelt mellan miljöer som sandlådor och produ
 
    I den nedrullningsbara listan visas alla Optimizer-instanser som är tillgängliga i organisationen. Markera instansen som ska visas.
 
-   ![Instansväljarlistrutan för val av Adobe Commerce Optimizer-miljöer](./assets/context-switcher.png){zoomable="yes"}
+   ![Instansväljarlistrutan för val av [!DNL Adobe Commerce Optimizer] miljöer ](./assets/context-switcher.png){zoomable="yes"}
 
 ### Hämta instansinformation
 
 Visa instansinformationen genom att klicka på informationsikonen bredvid instansnamnet.
 
-![Panelen med instansinformation för Adobe Commerce Optimizer som visar slutpunkter och instans-ID](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+Panelen ![[!DNL Adobe Commerce Optimizer] instansinformation som visar slutpunkter och instans-ID ](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Observera följande viktiga information:
 
@@ -217,6 +217,6 @@ När installationen är klar:
 ### Få hjälp
 
 - **Resurser för utvecklare**: [Dokumentation för utvecklare](https://developer.adobe.com/commerce/services/optimizer/)
-- **Storefront Resources**: [Commerce storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
-- **Självstudiekurser**: [Commerce Optimizer självstudiekurser](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview)
+- **Storefront Resources**: [Commerce storefront-dokumentation](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Självstudiekurser**: [Commerce Optimizer självstudiekurser](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Support**: [Adobe Commerce supportresurser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

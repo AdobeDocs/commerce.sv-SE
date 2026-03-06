@@ -1,11 +1,11 @@
 ---
 title: Översikt över ansikten
 description: Lär dig mer om aspekter i [!DNL Adobe Commerce Optimizer] och hur de förbättrar sökresultaten.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
-source-git-commit: b786a8675625dc969b9542b4b4f716de5342c1af
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Med sökning i flera lager kan du
 - Gör det möjligt för kunderna att söka i sökresultaten.
 - Använd `startsWith` och `contains` sökindexering i det andra lagret i sökningen med lager om du vill förfina resultatet ytterligare.
 
-De avancerade sökfunktionerna implementeras via parametern `filter` i [`productSearch` query &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) med hjälp av specifika operatorer:
+De avancerade sökfunktionerna implementeras via parametern `filter` i [`productSearch` query ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) med hjälp av specifika operatorer:
 
 - **Skiktad sökning** - Sök i ett annat söksammanhang - Med den här funktionen kan du utföra upp till två söklager för dina sökfrågor. Exempel:
 

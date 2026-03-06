@@ -3,11 +3,11 @@ title: Handläggaren Storefront och katalogadministratören - från början till
 description: Lär dig hur du använder  [!DNL Adobe Commerce Optimizer] för att hantera din katalog med hjälp av katalogvyer och principer och hur du konfigurerar din butik baserat på din katalogkonfiguration.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2161'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Det här användningsexemplet är utformat för administratörer och utvecklare 
 
 Innan du börjar den här självstudiekursen måste du se till att du har följande krav:
 
-- **Adobe Commerce Optimizer Instance**
+- **[!DNL Adobe Commerce Optimizer]instans**
    - Åtkomst till en testinstans i Cloud Manager
    - Se [Kom igång](../get-started.md) för installationsanvisningar
 
@@ -55,7 +55,7 @@ I det här fallet arbetar du med följande:
 
 >[!NOTE]
 >
-> Lär dig mer om konfigurationsfiler för butiker genom att läsa avsnittet [Utforska standardmallen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=sv-SE) i dokumentationen för Adobe Commerce Storefront.
+> Lär dig mer om konfigurationsfiler för butiker genom att läsa avsnittet [Utforska standardmallen](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) i dokumentationen för Adobe Commerce Storefront.
 
 ### ‌ viktiga uppgifter
 
@@ -63,7 +63,7 @@ I slutet av den här artikeln ska du:
 
 - Lär dig grunderna i [!DNL Adobe Commerce Optimizer] med dess prestanda och skalbara katalogdatamodell.
 - Läs om hur katalogdatamodellen integreras med plattformsoberoende butikskomponenter som byggts av Adobe.
-- Lär dig hur du använder katalogvyer och principer från Adobe Commerce Optimizer för att skapa anpassade katalogvyer och dataåtkomstfilter och skickar data till en Adobe Commerce-butik som drivs av Edge Delivery.
+- Lär dig hur du använder [!DNL Adobe Commerce Optimizer] katalogvyer och principer för att skapa anpassade katalogvyer och dataåtkomstfilter och skicka data till en Adobe Commerce-butik som drivs av Edge Delivery.
 
 ## Affärsscenario - Carvelo Automoble
 
@@ -126,7 +126,7 @@ I den vänstra navigeringen expanderar du avsnittet _Store setup_ och klickar p�
 
 >[!NOTE]
 >
->Du kan ignorera katalogvyn **Global** för tillfället.
+>Du kan ignorera katalogvyn **Alla vyer** för tillfället.
 
 Klicka på informationsikonen om du vill granska katalogvyinformationen.
 
@@ -221,7 +221,7 @@ Skapa en ny katalogvy för *Celport*-återförsäljaren och länka följande pro
 
 1. Utöka avsnittet _Store setup_ i den vänstra listen och klicka på **[!UICONTROL Catalog views]**.
 
-   Observera de befintliga katalogvyerna: *Arkbridge*, *Kingsbluff* och *Global*.
+   Observera de befintliga katalogvyerna: *Arkbridge*, *Kingsbluff* och *Alla vyer*.
 
    ![Sidan Befintliga katalogvyer](../assets/existing-channels-list.png)
 
@@ -392,7 +392,7 @@ Nu när du har uppdaterat butikskonfigurationen så att den använder katalogvyn
 
       Lägg märke till de olika tillgängliga deltyperna och observera priserna som tilldelats katalogvyn Kingsbluff.
 
-   Experimenten visar på flexibiliteten i Adobe Commerce Optimizer - du kan snabbt växla mellan olika katalogvyer och prisböcker och skapa anpassade shoppingupplevelser för olika målgrupper utan att behöva duplicera katalogdata.
+   Experimenten visar på flexibiliteten hos [!DNL Adobe Commerce Optimizer] - du kan snabbt växla mellan olika katalogvyer och prisböcker för att skapa anpassade shoppingupplevelser för olika målgrupper utan att behöva duplicera katalogdata.
 
 ## Felsökning
 
@@ -422,13 +422,13 @@ Om du stöter på problem under kursen kan du prova med följande lösningar:
 
 **Problem:** Inga produkter visas
 
-- **Lösning:** Kontrollera att prisbokens ID matchar det som finns i din Adobe Commerce Optimizer-instans
+- **Lösning:** Kontrollera att prisbokens ID matchar det som finns i din [!DNL Adobe Commerce Optimizer]-instans
 
 **Problem:** Sökningen returnerar inga resultat
 
 - **Lösning:** Bekräfta att katalogvyprinciperna tillåter den sökta produktkategorin
 
-Mer hjälp finns i [Adobe Commerce Optimizer-dokumentationen](../overview.md) eller kontakta Adobe support.
+Mer hjälp finns i [[!DNL Adobe Commerce Optimizer] dokumentationen](../overview.md) eller kontakta Adobe support.
 
 ## Sammanfattning
 
@@ -441,10 +441,10 @@ I den här självstudiekursen kan du:
 
 ## Nästa steg
 
-Så här fortsätter du lära dig om Adobe Commerce Optimizer:
+Så här fortsätter du lära dig om [!DNL Adobe Commerce Optimizer]:
 
 - Utforska [försäljningsfunktionerna](../merchandising/overview.md) för att anpassa shoppingupplevelsen
 - Läs om [avancerade principkonfigurationer](../setup/policies.md)
 - Konfigurera [ytterligare katalogvyer](../setup/catalog-view.md) för andra leverantörer
 - Granska [API-dokumentationen](https://developer.adobe.com/commerce/services/optimizer/) för programmatisk kataloghantering
-- Lär dig hur du konfigurerar instickskomponenter för din Edge Delivery Services-butik för att skapa anpassade butiksupplevelser för produktupptäckt, rekommendationer och andra butiksfunktioner. Se [dokumentationen för Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=sv-SE)
+- Lär dig hur du konfigurerar instickskomponenter för din Edge Delivery Services-butik för att skapa anpassade butiksupplevelser för produktupptäckt, rekommendationer och andra butiksfunktioner. Se [dokumentationen för Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

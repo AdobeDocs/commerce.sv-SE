@@ -1,10 +1,10 @@
 ---
 title: Möjligheter
 description: Identifiera möjligheter att öka trafik, engagemang och konverteringar genom integrering med Adobe Sites Optimizer för smarta, datadrivna webbplatsförbättringar.
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
-source-git-commit: 7f7b4a3c866c453d9722b708a0ed4e1b601c8e8e
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast för  [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1342'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Sidan **Affärsmöjligheter** hjälper dig att identifiera och implementera opti
 
 ## Vad är möjligheter?
 
-[Affärsmöjligheter](https://experienceleague.adobe.com/sv/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) är AI-baserade rekommendationer som hjälper handlare att identifiera och åtgärda problem som påverkar deras handelsplatsers prestanda. Dessa rekommendationer drivs av [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/sv/docs/experience-manager-sites-optimizer/content/home), en molnbaserad tjänst som analyserar och förbättrar webbplatsens prestanda.
+[Affärsmöjligheter](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) är AI-baserade rekommendationer som hjälper handlare att identifiera och åtgärda problem som påverkar deras handelsplatsers prestanda. Dessa rekommendationer drivs av [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), en molnbaserad tjänst som analyserar och förbättrar webbplatsens prestanda.
 
 ## Viktiga funktioner
 
@@ -28,7 +28,7 @@ Sidan **Affärsmöjligheter** hjälper dig att identifiera och implementera opti
 
 ## Kom igång
 
-Om du vill aktivera säljprojekt i Commerce Optimizer kontaktar du din Customer Success Manager (CSM). Det finns säljprojekt med Adobe Sites Optimizer-licensen **Ultima**.
+Om du vill aktivera affärsmöjligheter i [!DNL Adobe Commerce Optimizer] kontaktar du din CSM (Customer Success Manager). Det finns säljprojekt med Adobe Sites Optimizer-licensen **Ultima**.
 
 ## Snabbdemo
 
@@ -96,7 +96,7 @@ I följande lista visas vilka typer av affärsmöjligheter som stöds:
 
 Kontrollera följande innan du använder automatisk korrigering:
 
-- Din produktkatalog är helt inkapslad i Commerce Optimizer.
+- Din produktkatalog är helt inkapslad i [!DNL Adobe Commerce Optimizer].
 - Affärsmöjlighetstypen stöder automatisk korrigering (vissa optimeringstyper kräver manuell implementering).
 - Du har tillräcklig behörighet för att skapa och hantera kataloglager.
 
@@ -176,7 +176,7 @@ Framgångsmått övervakar viktiga resultatindikatorer, som produktupptäckt och
 
 ## Läs mer om Sites Optimizer
 
-Mer information om Sites Optimizer funktioner finns i [Adobe Experience Manager Sites Optimizer-dokumentationen](https://experienceleague.adobe.com/sv/docs/experience-manager-sites-optimizer/content/home).
+Mer information om Sites Optimizer funktioner finns i [Adobe Experience Manager Sites Optimizer-dokumentationen](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
 
 Ytterligare resurser:
 

@@ -2,11 +2,11 @@
 title: Gränser och gränser
 description: Förstå [!DNL Adobe Commerce Optimizer] gränser och gränser för att planera kapacitet och förebygga prestandaproblem.
 role: Admin, Developer
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1320'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Din användning måste ligga inom dessa gränser. Överskridande av dem kan orsa
 
 Licensgränserna kan höjas genom köp av de licenspaket som beskrivs i avsnittet [Licensbegränsningar och systemgränser](#license-limits-and-system-boundaries) eller genom förhandling om anpassad licensiering för unika användningsfall. Kontakta er kontorepresentant på Adobe för att diskutera era behov.
 
-Kontakta [Adobe Support](https://experienceleague.adobe.com/home?lang=sv-SE#support) om du har frågor om systemgränser.
+Kontakta [Adobe Support](https://experienceleague.adobe.com/home?lang=en#support) om du har frågor om systemgränser.
 
 ## Förhindra prestandaproblem
 
@@ -73,7 +73,7 @@ I följande tabeller sammanfattas licensgränserna och systemgränserna per funk
 | **Funktion** | **Beskrivning** | **Basallokering** | **Kan utökas?** |
 | --- | --- | --- | --- |
 | Produktvisuella effekter för avancerade användare | Licensierad användare med full digital resurshantering, inklusive AI-verktyg, Adobe Express/Firefly-integreringar och Content Hub-delning, hantering av grundläggande DAM-uppgifter och avancerade molnbaserade funktioner för optimal effektivitet. | 2 | Ja<p>Uppgradera till AEM Assets licens</p> |
-| Användare av produktvisuellt samarbete | Få åtkomst till och arbeta med material genom integreringen med AEM Commerce, skapa och redigera innehåll med Adobe Express och Firefly och - om det är aktiverat - utnyttja godkänt material via Content Hub-portalen. | 2 | Ja<p>Uppgradera till AEM Assets licens</p> |
+| Användare av produktvisuellt samarbete | Få åtkomst till och arbeta med material genom AEM Commerce integrering, skapa och redigera innehåll med Adobe Express och Firefly och - om det är aktiverat - utnyttja godkänt material via Content Hub-portalen. | 2 | Ja<p>Uppgradera till AEM Assets licens</p> |
 | Lagring av produktbilder | Allokerat lagringsutrymme för resurser | 1 TB lagring | Nej |
 | Dynamisk medieanvändning | Beaktande av dynamiska mediebehandlingsåtgärder som omfattar:<ul><li>Bildleverans</li><li>Smart bildbehandling</li><li>Videoleverans</li></ul><p>Mer information finns i *Beräkna dynamisk medieanvändning* nedan. | Baserat på GMV<p>Minsta tilldelning: 5 miljoner operationer/månad</p> | Ja<ul><li>Inköpslicens för ytterligare operationer</li><li>Uppgradera till AEM Assets licens</li></ul> |
 | Videoleverans | Erbjudande för leverans eller nedladdning av video | 300 videor, 1 minut per video | Ja<p>Uppgradera till AEM Assets licens</p> |
@@ -84,12 +84,12 @@ I följande tabeller sammanfattas licensgränserna och systemgränserna per funk
 
 >[!NOTE]
 >
->**Power Users** har åtkomst till Adobe Express direkt eller inifrån Adobe Commerce Optimizer. **Medarbetare-användare** kan komma åt Adobe Express-programmet direkt. Användning styrs av [Adobe Express med Firefly produktspecifika licensvillkor](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
+>**Power Users** har åtkomst till Adobe Express direkt eller inifrån [!DNL Adobe Commerce Optimizer]. **Medarbetare-användare** kan komma åt Adobe Express-programmet direkt. Användning styrs av [Adobe Express med Firefly produktspecifika licensvillkor](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
 
 
 >[!BEGINSHADEBOX &quot;Beräkna användning av dynamiska media&quot;]
 
-Dynamic Media-användningen spårar API-förfrågningar som kommer in i produktvisualiseringskomponenterna i Adobe Commerce Optimizer för att underlätta en av följande åtgärder:
+Dynamic Media-användningen spårar API-förfrågningar som kommer in i komponenterna för produktvisuella effekter i [!DNL Adobe Commerce Optimizer] för att underlätta en av följande åtgärder:
 
 - **Bildleverans förbrukar en dynamisk medieåtgärd** för varje förekomst av följande:
    - **grundläggande bildomformning** för en digital resurs, till exempel åtgärder för att ändra storlek, skala, formatkonvertering, komprimering eller beskärning.
@@ -124,7 +124,7 @@ Basallokeringen för katalogbutiksfunktioner baseras på GMV-nivån. Tabellen an
 
 >[!NOTE]
 >
->För bildgenerering krävs en Adobe Firefly-licens som har tilldelats samma IMS-organisation som Adobe Commerce Optimizer.
+>För bildgenerering krävs en Adobe Firefly-licens som har tilldelats samma IMS-organisation som [!DNL Adobe Commerce Optimizer].
 
 
 ### Produktupptäckt
@@ -137,7 +137,7 @@ Basallokeringen för katalogbutiksfunktioner baseras på GMV-nivån. Tabellen an
 | Sorterbara attribut | Antalet produktegenskaper som kan konfigureras för att bestämma ordningen för sökresultatvärden | 50 | Nej |
 | Sidnumreringsdjup för sökning | Högsta antal produkter som är tillgängliga genom sidnumrering (t.ex. sidan 100 × 100 produkter/sida) | 10 kB | Nej |
 | Fasetter | Antalet filterbara produktattribut (som varumärke, färg, storlek, pris) som kan konfigureras för att hjälpa kunderna att förfina sökresultaten och bläddra bland kategorier | 100<p>Måste vara filterbara attribut</p> | Nej |
-| Alternativ per aspekt | Antalet filterbara produktattributvärden (som&quot;Red&quot;,&quot;Blue&quot; för Color;&quot;Small&quot;,&quot;Medium&quot; för Size) som kunderna kan välja från en lista | 100 | Ja<p>Kan öka via supportförfrågan</p> |
+| Alternativ per aspekt | Antalet filterbara produktattributvärden (som&quot;Red&quot;,&quot;Blue&quot; för Color;&quot;Small&quot;,&quot;Medium&quot; för Size) som kunderna kan välja från en lista | 1000 | Nej |
 
 {style="table-layout:auto"}
 
@@ -156,7 +156,7 @@ Följande funktioner är tillgängliga för produktrekommendationer. Vissa funkt
 
 | **Funktion** | **Beskrivning** | **Basallokering** | **Kan utökas?** | **Anteckningar** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Kapacitet för molnbaserade tillägg och integreringar | Baserat på GMV-nivån<p>Minimiallokering: 1 paket/år</p> | Ja<p>Lägg till ytterligare paket</p> | För definierade gränser per paket, se:<ul><li>[App Builder produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-developer-app-builder.html) för definierade begränsningar per paket.</li><li>[Systeminställningar och begränsningar](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) i *App Builder Runtime Guides*.</li><li>[Lagringskrav för App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Kapacitet för molnbaserade tillägg och integreringar | Baserat på GMV-nivån<p>Minimiallokering: 1 paket/år</p> | Ja<p>Lägg till ytterligare paket</p> | För definierade gränser per paket, se:<ul><li>[App Builder produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) för definierade begränsningar per paket.</li><li>[Systeminställningar och begränsningar](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) i *App Builder Runtime Guides*.</li><li>[Lagringskrav för App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -164,7 +164,7 @@ Följande funktioner är tillgängliga för produktrekommendationer. Vissa funkt
 
 Ask your Adobe representative for a list of available packages to determine which most closely matches your project
 
-To accurately size your Adobe Commerce Optimizer solution, follow these steps:
+To accurately size your [!DNL Adobe Commerce Optimizer] solution, follow these steps:
 
 1. Review the available packages, and start with a package that most closely matches your requirements.
 1. Review the capabilities and metrics to ensure they align with your business requirements.
