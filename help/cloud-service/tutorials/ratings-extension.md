@@ -1,12 +1,15 @@
 ---
 title: Självstudiekurs om klassificeringstillägg
 description: Lär dig hur du bygger ett produktklassificeringstillägg för Adobe Commerce as a Cloud Service med hjälp av App Builder och AI-stödda utvecklingsverktyg.
+solution: Commerce
 feature: App Builder, Cloud
+feature-set: Commerce
 role: Developer
 level: Intermediate
-source-git-commit: fb3595284761e9478c819150c27d06631de67e18
+type: Tutorial
+source-git-commit: 33ba97fd6766c9d11baea74170a7119d72e06379
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '1701'
 ht-degree: 0%
 
 ---
@@ -50,15 +53,15 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
    >När du arbetar med AI-stödda utvecklingsverktyg kan du förvänta dig naturliga variationer i koden och svaren som genereras av agenten.
    >Om du stöter på problem med koden kan du alltid be agenten att hjälpa dig felsöka den.
 
-1. Om du har lagt till någon dokumentation i markörens kontext inaktiverar du den:
+1. Inaktivera all dokumentation i markörens sammanhang:
 
-   - Navigera till [!UICONTROL **Markören**] > [!UICONTROL **Inställningar**] > [!UICONTROL **Markörinställningar**] > [!UICONTROL **Indexering och dokument**] och ta bort all dokumentation som visas.
+   * Navigera till **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Indexing & Docs]** och ta bort all dokumentation som visas.
 
    ![Markörindexering och dokumentinställningar med dokumentationslistan tom](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. Generera kod för ett produktklassificeringstillägg:
-   - Välj [!UICONTROL **agentläge**] i pekarens chattfönster.
-   - Ange följande uppmaning:
+   * Välj **[!UICONTROL Agent]**-läge i markörchattfönstret.
+   * Ange följande uppmaning:
 
    ```shell-session
    Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
@@ -103,7 +106,9 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
 1. Granska filen `requirements.md` och verifiera planen.
 
    Om allt ser korrekt ut instruerar du agenten att gå till **Fas 2 - Arkitekturplanering**.
+
 1. Se arkitekturplanen.
+
 1. Instruera agenten att fortsätta med kodgenerering.
 
    Agenten genererar den nödvändiga koden och ger en detaljerad sammanfattning med nästa steg.
@@ -114,7 +119,9 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
 
    ![AI-agenten tillhandahåller nästa steg för testning och distribution](../assets/next-steps.png){width="600" zoomable="yes"}
 
-### Lokal testning
+### Testa tillägget lokalt
+
+Följande steg beskriver hur du verifierar att tillägget fungerar innan du distribuerar det.
 
 1. Be agenten att hjälpa dig att testa koden lokalt.
 
@@ -129,6 +136,8 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
    ![Terminalen visar lyckade testresultat för det lokala API:t med cURL](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### Distribuera tillägget
+
+Distribuera tillägget till [!DNL Adobe I/O Runtime] med agenten.
 
 1. När du har verifierat den genererade koden distribuerar du tillägget med följande uppmaning:
 
@@ -146,9 +155,9 @@ I det här avsnittet får du hjälp med att utveckla ett klassificeringstillägg
 
    ![Verifiering av MCP-verktygspaket och distributionsprocess](../assets/deployment-process.png){width="600" zoomable="yes"}
 
-### Efter distribution
+### Verifiera distributionen
 
-Du kan testa API:t innan du integrerar det i butiken. Agenten bör tillhandahålla platsen för den nya åtgärden och en testningsstrategi.
+Testa API:t innan du integrerar det i butiken. Agenten bör tillhandahålla platsen för den nya åtgärden och en testningsstrategi.
 
 ![AI-agenttestningsstrategi med distribuerad åtgärds-URL och testkommandon](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
@@ -171,139 +180,193 @@ Create a service contract for the ratings api that I can pass on to the storefro
 ![AI-agenten skapar tjänstekontraktfil för integrering mellan butiker](../assets/create-contract.png){width="600" zoomable="yes"}
 
 ![Kontraktmarkeringsfil för graderings-API med slutpunkts- och svarsinformation](../assets/contract.png){width="600" zoomable="yes"}
-<!-- 
-Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
+
+Återgå till terminalen och kör följande kommando i mappen `extension` för att kopiera kontraktsfilen till mappen `storefront`:
 
 ```bash
 cp RATINGS_API_CONTRACT.md ../storefront
-``` -->
+```
 
-### Nästa steg
+## Anslut till butiken
 
-Nu när du har ett avtal för betygs-API kan du börja bygga delen av betygstillägget för butiken (frontend).
-
-<!-- 
-## Connect to the storefront
-
-This section teaches you how to implement real storefront features and communicate effectively with AI agents when working with [!DNL Adobe Commerce] dropins and [!DNL Edge Delivery Services].
+I det här avsnittet får du hjälp med att implementera storefront-delen av klassificeringstillägget med [!DNL Edge Delivery Services] och AI-stödda utvecklingsverktyg.
 
 >[!NOTE]
 >
->The prompts provided are starting points. Although you can use them without modification, consider having a natural conversation with the agent.
+>De uppmaningar som ges är startpunkter. Även om du kan använda dem utan ändringar bör du överväga att föra en naturlig konversation med agenten.
 >
->When working with AI-assisted development tools, there are always natural variations in the code and responses generated by the agent.
+>När du arbetar med AI-stödda utvecklingsverktyg finns det alltid naturliga variationer i koden och svaren som genereras av agenten.
 >
->If you encounter any issues with your code, ask the agent to help you debug it.
+>Om du råkar ut för problem med koden ber du agenten att hjälpa dig felsöka den.
 
-### Ratings stars and review count implementation
+### Krav för Storefront
 
-1. Navigate to the `storefront` folder:
+Kontrollera att du har följande innan du startar integreringen av butiken:
+
+* Ett butiksprojekt som är anslutet till din [!DNL Commerce]-instans
+* Commerce storefront AI-verktyg [installerade med CLI](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+
+### Konfigurera arbetsytan för lagerfront
+
+Förbered din lokala butiksmiljö för utveckling.
+
+1. Navigera till mappen `storefront`:
 
    ```bash
    cd storefront
    ```
 
-1. Open the storefront folder in a new Cursor window.
+1. Öppna mappen storefront i ett nytt markörfönster.
 
-    Alternatively, if you have the [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installed, open the window by using the following command in your terminal:
+   Om du har [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installerat kan du öppna fönstret med följande kommando i terminalen:
 
    ```bash
    cursor .
    ```
 
-1. Start the local development server:
+1. Starta den lokala utvecklingsservern:
 
    ```bash
    npm run start
    ```
 
-1. In a browser, navigate to the Apparel page:
+1. Navigera till en produktsida i en webbläsare:
 
    ```shell-session
-   http://localhost:3000/apparel
+   http://localhost:3000/products/llama-plush-shortie/adb336
    ```
 
-1. Observe the boilerplate storefront UI layout and note the lack of visual product ratings.
+1. Observera informationssidan (PDP) för framsidan av standardbutiksprodukter och notera att det inte finns några visuella produktbetyg.
 
-1. Use the following prompt with your agent:
+### Integrera API:t för omdömen
+
+Använd agenten för att integrera klassificerings-API:t i butikens produktinformationssida.
+
+1. Använd följande uppmaning till din agent:
 
    ```shell-session
-   Implement product ratings in the storefront.
-
-   Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations.
-
-   Use the dropin slot system where available.
-
-   Use @RATINGS_API_CONTRACT.md to understand how to use the ratings API.
+   Integrate the ratings API into the PDP to show star ratings and a review count for products. Here's the service contract: @RATINGS_API_CONTRACT.md
    ```
 
-1. Observe the changes in the codebase, and watch the Apparel page for updates.
+1. Agenten utvärderar uppgiftens komplexitet och anropar ett fasat arbetsflöde. Under **fas 1 (kravinsamling)** skapar agenten ett kravdokument och frågar om klargörande frågor som:
 
-   You should see the following changes in your development environment and browser:
+   * Var på PDP ska omdömen visas?
+   * Bör detta vara ett nytt fristående block eller en platsanpassning inuti den befintliga PDP-instickskomponenten?
+   * Vad är reservvärdet om API:t inte är tillgängligt eller inte returnerar några data?
+   * Ska graderingar även visas på PLP (produktlista) eller endast PDP?
+   * Finns det några designspecifikationer eller dummies?
 
-   * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=sv-SE).
-   * Stars display with proper fill proportions based on mock rating values.
+   Svara på de här frågorna baserat på dina projektbehov. Agenten uppdaterar kravdokumentet och markerar fasen som slutförd.
 
-![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+1. Under **fas 2 (arkitekturplanering)** undersöker agenten dokumentation och din kodbas innan han föreslår en arkitektur. Förvänta dig att agenten ska:
 
-## Tutorial recap
+   * Sök i [!DNL Commerce]-dokumentationen efter PDP-insticksbehållare, fack och händelsenyttolaster.
+   * Sök igenom katalogen `blocks` och mappen `scripts/initializers/` efter befintlig PDP-relaterad kod.
+   * Utforska TypeScript-definitioner för tillgängliga behållare och platskontextformer.
 
-Here is a summary of the topics covered in this tutorial:
+   Agenten presenterar sedan arkitekturalternativ som:
 
-* **Feature implementation**: How to describe new functionality to an AI agent.
-* **Iterative changes**: Making quick modifications to existing code.
-* **Complex UI components**: Building interactive features with visual references.
-* **Dropin integration**: Working with [!DNL Adobe Commerce] dropin containers and slots.
-* **Component reusability**: Creating shared components used across multiple blocks.
+   * **Alternativ A:** Anpassa en befintlig PDP-insticksplats för att mata in klassificeringar nära produkttiteln - en lättare touch som är uppgraderingsvänlig.
+   * **Alternativ B:** Skapa ett nytt fristående `product-ratings` -block som hämtar från API:t oberoende av varandra - flexiblare och frikopplat.
+   * **Alternativ C:** Skapa ett nytt block som även lyssnar på PDP-släppningshändelser för produktens SKU - en hybridmetod.
 
-## Next steps
+   Planen innehåller även information om API-integrering, prestandaöverväganden (lazy loading, caching), säkerhet (indatasanitifiering) och en testmetod.
 
-For further experimentation with this tutorial, use the following suggestions to further customize your ratings extension, or create your own modifications:
+   Granska arkitekturplanen och instruera agenten att fortsätta.
 
-### Change the star colors
+1. Under **fas 3 (implementeringsmetod)** ber agenten dig välja mellan:
 
-Use the following prompt to your agent:
+   * **Alternativ A:** Granska en detaljerad implementeringsplan före kodgenerering (se alla filer, mönster och kodstrukturen först).
+   * **Alternativ B:** Fortsätt direkt till kodgenerering.
+
+   Välj önskat tillvägagångssätt.
+
+1. Under **fas 4 (implementering)** genererar agenten kod baserat på den valda arkitekturen. Beroende på hur man arbetar använder agenten flera specialkunskaper:
+
+   * **Innehållsmodellering:** Om ett nytt block behövs utformar agenten en designvänlig innehållsstruktur, till exempel en konfigurationstabell med API-slutpunkts-URL:en.
+   * **Blockutveckling:** Agenten skapar blockfiler enligt [!DNL Edge Delivery Services] konventioner, inklusive JavaScript-dekorationsfunktioner, CSS-format med omfång, ARIA-etiketter för tillgänglighet samt inläsning och felhantering.
+   * **Anpassning av insticksprogram:** Om arkitekturen använder anpassning av kortplats importerar agenten rätt behållare, använder en verifierad kortplats nära produkttiteln och prenumererar på produktdatahändelser för aktuell SKU.
+
+   Se koden som genereras och ställ frågor eller omdirigera agenten efter behov. Agenten skapar en sammanfattning av produktionsberedskapen när kodgenereringen är klar.
+
+1. Under **fas 4.5 (testning)** erbjuder agenten att testa implementeringen. Om du godkänner det:
+
+   * Skapar en lokal testsida med rätt skript och format.
+   * Startar en utvecklingsserver.
+   * Kör webbläsarbaserad verifiering för visuell återgivning, interaktivitet, responsivt beteende, tillgänglighet och prestanda.
+   * Skapar en strukturerad testrapport med resultaten.
+
+   Följ med i webbläsaren för att bekräfta beteendet och rapportera eventuella problem.
+
+1. Observera ändringarna i kodbasen och se efter om produktsidan innehåller uppdateringar.
+
+   Du bör se följande ändringar i utvecklingsmiljön och webbläsaren:
+
+   * En produktklassificeringskomponent skapas automatiskt.
+   * Komponenten är integrerad i PDP med [in-platser](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) eller som ett fristående block, beroende på vald arkitektur.
+   * Stjärnor visas med rätt fyllningsproportioner baserat på klassificeringsvärden från ditt API.
+
+   ![Produktinformationssida med stjärngraderingar som är integrerade under produkttiteln](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+
+## Självstudiekurs
+
+Här följer en sammanfattning av ämnen som ingår i kursen:
+
+* **Tilläggsutveckling:** Lär dig att beskriva nya funktioner för en AI-agent och generera ett fungerande REST API med [!DNL App Builder].
+* **Lokal testning och distribution:** Testa API:t lokalt och distribuera det med MCP-verktygslådan.
+* **Tjänstkontrakt:** Skapa API-kontrakt som förenar serverdelstillägg och butiksimplementeringar.
+* **Avfasad integrering av butiker:** Arbeta genom krav, arkitektur och implementering med hjälp av AI-stödda kunskaper.
+* **Insticksintegrering:** Arbeta med [!DNL Adobe Commerce] insticksbehållare och fack.
+* **Återanvändbarhet av komponent:** Skapar delade komponenter som används i flera block.
+
+## Nästa steg
+
+Använd följande förslag för att anpassa ditt klassificeringstillägg eller skapa egna ändringar:
+
+### Ändra stjärnfärgerna
+
+Använd följande uppmaning till din agent:
 
 ```shell-session
 Change the star fill color to red.
 ```
 
-**Expected outcome:**
+**Förväntat resultat:**
 
-The stars are changed to red.
+Stjärnorna ändras till rött.
 
-![Red Star Colors](../assets/red-star-colors.png){width="600" zoomable="yes"}
+![Produktomdömen visas med röd stjärnfyllningsfärg](../assets/red-star-colors.png){width="600" zoomable="yes"}
 
-### Add rating distribution modal
+### Lägg till en modal klassificeringsdistribution
 
-The following steps show how the agent handles complex UI features with visual references.
+Följande steg visar hur agenten hanterar komplexa gränssnittsfunktioner med visuella referenser.
 
-1. **Before starting:** Save the following mock image and paste it into the chat with your storefront agent.
+1. **Innan du startar:** Spara följande modellbild och klistra in den i chatten med din storefront-agent.
 
-   ![Rating Distribution Mockup](../assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
+   ![Mockup med klassificeringsfördelning efter stjärnnivå](../assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
 
-1. Follow these steps to create the ratings distribution modal using the reference image as a guide:
+1. Följ de här stegen för att skapa klassificeringsdistributionen modal med hjälp av referensbilden som vägledning:
 
-   * Update the API to return additional data representing the ratings distribution.
-   * Update the API Contract.
-   * Update the contact in the storefront codebase.
-   * Ask the storefront agent to use the reference image and updated API Contract to add the ratings distribution to the PDP page.
+   * Uppdatera API:t för att returnera ytterligare data som representerar klassificeringsdistributionen.
+   * Uppdatera API-kontraktet.
+   * Uppdatera kontraktet i butikskodbasen.
+   * Be storefront-agenten att använda referensbilden och det uppdaterade API-kontraktet för att lägga till klassificeringsdistributionen på PDP-sidan.
 
-1. Observe the following changes in the codebase, and watch the Apparel page for updates:
+1. Observera följande ändringar i kodbasen och se efter om produktsidan innehåller uppdateringar:
 
-   * How the agent interprets the visual mockup
-   * Whether it uses appropriate HTML structure for accessibility
-   * How it handles the positioning and interaction states
+   * Hur agenten tolkar den visuella dummyn
+   * Om lämplig HTML-struktur används för tillgänglighet
+   * Så här hanterar det lägena för placering och interaktion
 
-#### Troubleshooting
+#### Felsöka den modala distributionen
 
-* If the modal does not appear, check the browser console for errors.
-* If positioning is off, ask the agent to fix it using the following format:
+Om modalen inte fungerar som förväntat kan du prova följande:
 
-   ```shell-session
-   adjust the modal position to be...
-   ```
+* Om spärren inte visas kontrollerar du om webbläsarkonsolen innehåller fel.
+* Om positionering är inaktiverad ber du agenten att åtgärda den med följande format:
 
-![Rating Distribution Modal](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}
- -->
+  ```shell-session
+  adjust the modal position to be...
+  ```
+
+![Modal som visar detaljerad graderingsfördelning med staplar på stjärnnivå](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}

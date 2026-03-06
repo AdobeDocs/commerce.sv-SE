@@ -1,12 +1,15 @@
 ---
-title: Förutsättningar
-description: Lär dig förutsättningarna för klassificeringstilläggslabbet.
+title: Förutsättningar för självstudiekurser
+description: Lär dig mer om förutsättningarna och installationsstegen för självstudiekurser för Adobe Commerce as a Cloud Service, inklusive verktyg för tillägg och butiksutveckling.
+solution: Commerce
 feature: App Builder, Cloud
+feature-set: Commerce
 role: Developer
 level: Intermediate
-source-git-commit: 68e34cecbc1b16194ccc2e0296c2d66f37855b7c
+type: Tutorial
+source-git-commit: 1848c9dda4a1976e1bccb4d1f9d5a2e21540fc0b
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -15,7 +18,30 @@ ht-degree: 0%
 
 På den här sidan visas förutsättningarna och konfigurationsstegen för [!DNL Adobe Commerce as a Cloud Service]-självstudiekurser, t.ex. [självstudiekursen för klassificeringstillägg](./ratings-extension.md) och [självstudiekursen för leveransmetodtillägg](./shipping-method-extension.md).
 
-## Krav för Adobe Commerce as a Cloud Service
+## Allmänna krav
+
+Följande verktyg krävs för både tillägg och butiksutveckling i den här självstudiekursen.
+
+* [!DNL Node.js] (version `22.x.x`) och npm (`9.0.0` eller senare): Verifiera installationen med följande kommando:
+
+  ```bash
+  node --version
+  npm --version
+  ```
+
+* Installera [Git](https://git-scm.com) - Verifiera installationen:
+
+  ```bash
+  git --version
+  ```
+
+* Bash-skal
+   * macOS/Linux: Ingen installation krävs
+   * Windows: Använd [Git Bash](https://git-scm.com/install) eller [Windows Subsystem för Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+
+* Hämta en AI-assisterad IDE, till exempel [Markör](https://cursor.com/download) (rekommenderas). Även andra utvecklingsmiljöer, som Claude Code, Gemini CLI och Copilot, stöds, men kan kräva ändringar av instruktioner och andra steg i självstudiekursen.
+
+## Krav för [!DNL Adobe Commerce as a Cloud Service]
 
 * Installera [!DNL Adobe I/O CLI]
 
@@ -23,56 +49,62 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för [!DNL
   npm install -g @adobe/aio-cli
   ```
 
-* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [&#x200B; Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
+* Installera plugin-programmen [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [ Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) och [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
 
   ```bash
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-* Hämta en AI-assisterad IDE, t.ex. [Cursor](https://cursor.com/download) (rekommenderas), stöds även andra IDE:er, t.ex. Claude Code, Gemini CLI eller Copilot, men kan kräva ändringar i uppmaningarna och andra steg i självstudiekursen.
-
 ### Krav för Adobe Developer Console
+
+Konfigurera ett projekt i Adobe Developer Console med de nödvändiga API:erna och autentiseringsuppgifterna.
 
 1. Gå till [Adobe Developer Console](https://developer.adobe.com/console){target="_blank"}.
 1. Logga in med din e-postadress och ditt lösenord.
 
 #### Skapa ett nytt projekt
 
+Skapa ett App Builder-projekt i Adobe Developer Console som värd för ditt tillägg.
+
 1. Navigera till [Adobe Developer Console](https://developer.adobe.com/).
-1. Klicka på [!UICONTROL **Skapa projekt från en mall**].
-1. Välj mallen [!UICONTROL **App Builder**].
-1. Ange en [!UICONTROL **projekttitel**] och [!UICONTROL **programnamn**].
+1. Klicka på **[!UICONTROL Create project from a template]**.
+1. Välj mallen **[!UICONTROL App Builder]**.
+1. Ange **[!UICONTROL Project Title]** och **[!UICONTROL App Name]**.
 1. Kontrollera att kryssrutan **[!UICONTROL Include Runtime]** är markerad.
 
    ![Skapa Adobe Developer Console-projekt med en App Builder-mall vald](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
-1. Klicka på [!UICONTROL **Spara**].
+1. Klicka på **[!UICONTROL Save]**.
 
 #### Lägg till API:er på arbetsytan
 
-1. Klicka på arbetsytan [!UICONTROL **Stage**] och upprepa sedan följande steg för varje API.
+Lägg till nödvändiga API:er på scenarbetsytan för händelsehantering och integrering med Commerce.
+
+1. Klicka på arbetsytan **[!UICONTROL Stage]** och upprepa sedan följande steg för varje API.
 
    ![Scenarbetsyta med alternativet Lägg till tjänst för API:er](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
-1. Klicka på [!UICONTROL **Lägg till tjänst**] och välj [!UICONTROL **API**].
+1. Klicka på **[!UICONTROL Add Service]** och välj **[!UICONTROL API]**.
 
-1. Välj någon av följande API:er. Du måste upprepa den här processen för varje API som anges nedan:
+1. Välj någon av följande API:er. Upprepa den här processen för varje API som visas nedan:
 
-   * [!UICONTROL **Adobe Services**]-filter:
-      * [!UICONTROL **API för I/O-hantering**]
-      * [!UICONTROL **I/O-händelser**] API
-   * [!UICONTROL **Experience Cloud**]-filter:
-      * [!UICONTROL **Adobe I/O Events för Adobe Commerce**] API
+   * **[!UICONTROL Adobe Services]**-filter:
+      * **[!UICONTROL I/O Management API]**
+      * API för **[!UICONTROL I/O Events]**
+   * **[!UICONTROL Experience Cloud]**-filter:
+      * API för **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
 
-1. Klicka på [!UICONTROL **Nästa**].
+1. Klicka på **[!UICONTROL Next]**.
 
-1. Klicka på&#x200B;[!UICONTROL **Spara konfigurerat API**].
+1. Klicka på **[!UICONTROL Save configured API]**.
 
-1. Upprepa föregående steg tills alla API:er har lagts till på arbetsytan.
+1. Upprepa föregående steg tills du lägger till alla API:er på arbetsytan.
 
    ![Workspace visar alla nödvändiga API:er som lagts till](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### Konfigurera Adobe I/O CLI
+
+Anslut [!DNL Adobe I/O CLI] till din organisation, ditt projekt och din arbetsyta.
 
 1. Rensa befintlig konfiguration:
 
@@ -80,7 +112,7 @@ På den här sidan visas förutsättningarna och konfigurationsstegen för [!DNL
    aio config clear
    ```
 
-   Logga in med [!DNL Adobe I/O CLI]:
+1. Logga in med [!DNL Adobe I/O CLI]:
 
    ```bash
    aio auth login -f
@@ -134,7 +166,7 @@ cp env.dist .env
 
 Öppna filen `.env` i en textredigerare och lägg till följande OAuth-autentiseringsuppgifter:
 
-```shell-session
+```bash
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -142,7 +174,7 @@ OAUTH_TECHNICAL_ACCOUNT_EMAIL=
 OAUTH_ORG_ID=
 ```
 
-Du kan kopiera dessa värden från sidan **[!UICONTROL Credential details]** i [Developer Console](https://developer.adobe.com/) genom att klicka på fliken **[!UICONTROL OAuth Server-to-Server]** på arbetsytan.
+Kopiera dessa värden från sidan **[!UICONTROL Credential details]** i [Developer Console](https://developer.adobe.com/) genom att klicka på fliken **[!UICONTROL OAuth Server-to-Server]** på arbetsytan.
 
 ![Autentiseringssidan för OAuth Server-till-Server i Adobe Developer Console](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
@@ -150,7 +182,7 @@ Du kan kopiera dessa värden från sidan **[!UICONTROL Credential details]** i [
 
 Lägg till följande Commerce-instansinformation i din `.env`-fil:
 
-```shell-session
+```bash
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -166,11 +198,11 @@ Så här hittar du dessa värden:
 
 Ange ett tillfälligt värde för händelseprefixet:
 
-```shell-session
+```bash
 EVENT_PREFIX=test
 ```
 
-### Hämta arbetsytekonfiguration
+### Hämta arbetsytans konfiguration
 
 Kör följande kommando för att hämta arbetsytans konfigurationsfil:
 
@@ -192,7 +224,7 @@ Länka ditt lokala projekt till den fjärranslutna arbetsytan:
 aio app use workspace.json -m
 ```
 
-![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot &#x200B;](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot ](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 >[!TAB Startpaket för utcheckning]
 
@@ -206,11 +238,11 @@ aio app use --merge
 
 När du uppmanas till det väljer du det alternativ som använder den organisation, det projekt och den arbetsyta du valde när du konfigurerade Adobe I/O CLI. Detta skriver arbetsytans konfiguration i programmet så att den arbetsytan används vid distributionen och den lokala utvecklingen.
 
-![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot &#x200B;](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![Terminalen visar en lyckad arbetsyteanslutning med AIR-appkommandot ](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 >[!ENDTABS]
 
-### Installera AI-verktyg för tillägg
+### Installera AI-verktygen för utökningsbarhet
 
 Den här processen skapar MCP-konfigurationen (`.<agent>/mcp.json`), kompetenskatalogen (`.<agent>/skills/`) och lägger till `AGENTS.md` i projektets rot. Du uppmanas att välja ett startpaket, en kodningsagent och en pakethanterare.
 
@@ -235,142 +267,43 @@ Den här processen skapar MCP-konfigurationen (`.<agent>/mcp.json`), kompetenska
 
    ![Terminal som visar konfiguration av AI-utökningsverktyg med utcheckningsstartsverktyget valt](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
 
-<!--
-## Storefront prerequisites
+## Krav för Storefront
 
-The following items are required to complete the [storefront](./ratings-extension.md#connect-to-the-storefront) section of [this tutorial](./ratings-extension.md) and see the product ratings in your store.
+Följande objekt krävs för att slutföra avsnittet [storefront](./ratings-extension.md#connect-to-the-storefront) i självstudiekursen [Ratings extension](./ratings-extension.md) och visa produktbetyg i din butik.
 
-* Install [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher). Verify your installation:
+* [Google Chrome](https://www.google.com/chrome/) - krävs för att testa butiken
 
-   ```bash
-   node --version
-   npm --version
-   ```
+* Ett butiksprojekt som är anslutet till din [!DNL Commerce]-instans. Om du inte har något storefront-projekt följer du stegen i [Skapa en storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, inklusive avsnittet [Länka repo till handelsdata](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
 
-* Install [Git](https://git-scm.com) (Optional) - Required only if [cloning the repository directly](#option-a-clone-the-repository-recommended)(recommended), not needed if you [download the zip file](#option-b-download-the-zip-file). Verify your installation:
+### Klona butiksarkivet
 
-  ```bash
-  git --version
-  ```
-
-* Bash shell
-  * macOS/Linux: No installation required
-  * Windows: Use [Git Bash](https://git-scm.com/install) or [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
-
-* [Google Chrome](https://www.google.com/chrome/) - Required for testing the storefront
-
-### Get the project files
-
-You can obtain the project files using one of the following methods:
-
-#### Option A: Clone the repository (recommended)
-
-If you have [!DNL Git] installed, open your terminal and clone the repository:
+Öppna terminalen och klona databasen:
 
 ```bash
 git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
 cd storefront
 ```
 
-#### Option B: Download the zip file
+### Installera beroenden
 
-If you do not have [!DNL Git] installed:
-
-1. Download the project zip file from: [https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip](https://github.com/hlxsites/aem-boilerplate-commerce/archive/refs/heads/agentic-dev.zip)
-1. Extract the zip file to a folder on your machine.
-1. Open your terminal and navigate into the unzipped folder:
-
-   ```bash
-   cd path/to/aem-boilerplate-commerce-agentic-dev
-   ```
-
-### Install root dependencies
-
-Install the main project dependencies:
+Installera projektberoenden:
 
 ```bash
 npm install
 ```
 
-This will install all the necessary packages for the storefront application.
+### Installera storefront AI-verktygen
 
-### Install MCP server dependencies
-
-Navigate to the MCP server directory and install its dependencies:
+Konfigurera AI-stödda utvecklingsverktyg i mappen `storefront`. Kör följande kommando från roten i mallprojektet:
 
 ```bash
-cd mcp-server
-npm install
-cd ..
+aio commerce extensibility tools-setup
 ```
 
-### Configure environment variables
+Kommandot visar två instruktioner:
 
-The MCP server requires certain environment variables to connect to the RAG service.
+1. **Välj ett startpaket** - Välj **AEM-standardpaket för Commerce**.
 
-Create an `.env` file in the `mcp-server` directory:
+1. **Välj din kodningsagent** - Välj din agent i listan med agenter som stöds.
 
-```bash
-cd mcp-server
-cp env.example .env
-```
-
-Edit the `.env` file and add the following values:
-
-```env
-RAG_MODE=worker
-WORKER_RAG_URL=
-```
-
-### Enable MCP in Cursor
-
-The Model Context Protocol (MCP) server provides AI agents with access to [!DNL Adobe Commerce] Storefront documentation.
-
-#### Open Cursor MCP settings
-
-![Open Cursor MCP Settings](../assets/cursor-mcp-settings.png){width="600" zoomable="yes"}
-
-1. Open [!DNL Cursor].
-1. Navigate to **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**.
-
-#### Enable and configure MCP features
-
-The project includes an MCP configuration file at `.cursor/mcp.json`. This file should already be configured to use the local MCP server.
-
-Verify the MCP configuration:
-
-1. Ensure the "commerce-documentation-rag" server is listed and enabled
-
-The configuration should look similar to this:
-
-![MCP Configuration](../assets/mcp-configuration.png){width="600" zoomable="yes"}
-
->[!NOTE]
->
->The `start-mcp.sh` script will automatically load the environment variables from your `.env` file in the `mcp-server` directory.
-
-#### Restart Cursor
-
-After enabling MCP and configuring the server:
-
-1. Quit [!DNL Cursor] completely.
-1. Reopen [!DNL Cursor] and open the `aem-boilerplate-commerce` project.
-
-#### Verify MCP connection
-
-Check that the MCP server is running correctly:
-
-1. Open a new chat in [!DNL Cursor].
-1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
-1. Try entering a prompt like the following:
-
-   ```shell-session
-   Search the storefront docs for information about slots
-   ```
-
-If the MCP server is working, you should see relevant documentation results.
-
-![MCP Connection Verified](../assets/mcp-connection-verified.png){width="600" zoomable="yes"}
-
-If this works, you are ready to continue with the [tutorial](./ratings-extension.md).
- -->
+Kommandot installerar `@adobe-commerce/commerce-extensibility-tools`-paketet som ett dev-beroende, kopierar kunskapsfilerna till din agentes kunskapsregister och konfigurerar MCP (Model Context Protocol) så att din agent får tillgång till sökverktygen i Commerce-dokumentationen.
