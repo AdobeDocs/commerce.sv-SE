@@ -3,7 +3,7 @@ title: Produktbilder med AEM Assets
 description: Lär dig hur du använder AEM Assets för produktbilder i  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
 source-wordcount: '451'
@@ -56,7 +56,7 @@ Innan du aktiverar produktvisningar måste du kontrollera att du uppfyller [krav
 
 ## Inställningar
 
-Om du vill aktivera integreringen [skapar du en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) med dina [!DNL Commerce Optimizer]- och AEM Assets-uppgifter. Adobe Support konfigurerar integreringen och registrerar din klient hos Assets Integration Service.
+Om du vill aktivera integreringen [skapar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) med dina [!DNL Commerce Optimizer]- och AEM Assets-uppgifter. Adobe Support konfigurerar integreringen och registrerar din klient hos Assets Integration Service.
 
 Se [Konfigurera AEM Assets för Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md) för information om introduktion.
 

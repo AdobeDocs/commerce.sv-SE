@@ -1,7 +1,7 @@
 ---
 title: Synonymer
 description: Lär dig mer om de olika synonymtyperna i  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: a74e48ea-e069-4ccc-a67f-2f85be251fb5
 source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
@@ -36,4 +36,4 @@ Om ingen synonym skapas och en kund söker efter **kökstabell** söker [!DNL Ad
 
 När du har skapat en synonym ändras sökbeteendet så att det söker efter den exakta frasen **kökstabell**. Detta kan minska antalet resultat eftersom endast produkter med den exakta frasen visas.
 
-Om du vill att villkoren ska genomsökas separat som tidigare kan du [skapa en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Om efterfrågan är tillräcklig kommer [!DNL Adobe Commerce Optimizer] att överväga att lägga till den här funktionen i produkten i en framtida version.
+Om du vill att villkoren ska genomsökas separat som tidigare kan du [skapa en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Om efterfrågan är tillräcklig kommer [!DNL Adobe Commerce Optimizer] att överväga att lägga till den här funktionen i produkten i en framtida version.

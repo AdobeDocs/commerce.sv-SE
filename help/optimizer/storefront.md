@@ -2,7 +2,7 @@
 title: Konfigurera din butik
 description: Lär dig hur du konfigurerar din  [!DNL Adobe Commerce Optimizer] butik.
 role: Developer
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: c41134938f7408d062899ecaf3f63d37e1bdbca3
 workflow-type: tm+mt
@@ -57,7 +57,7 @@ Med verktyget Site Creator kan du skapa ett helt butiksprojekt med följande kom
 * **Plats**: Startsida för butiken med standardinnehåll
 * **Kod**: Databas med mallkällfiler
 * **Innehåll**: Dokumentförfattarmiljö med webbplatsinnehållsfiler
-* **Commerce Config**: [Commerce storefront-konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} för instansspecifik konfiguration
+* **Commerce Config**: [Commerce storefront-konfiguration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=sv-SE){target="_blank"} för instansspecifik konfiguration
 
 ### Steg 1: Generera ditt projekt
 
@@ -200,8 +200,8 @@ Använd följande vägledning för att kontrollera vanliga problem:
 |-------|----------|----------|
 | **Installationen av kodsynkronisering misslyckas** | Det gick inte att slutföra kodsynkroniseringsinstallationen | <ul><li>Se till att du har administratörsåtkomst till din GitHub-organisation.</li><li>Försök använda en personlig databas istället för en organisation.</li><li>Kontrollera GitHub-behörigheter och försök igen.</li></ul> |
 | **Webbplatsen läses inte in** | 404 eller anslutningsfel | <ul><li>Verifiera URL-formatet för din plats: `https://main--{SITE}--{ORG}.aem.live`</li><li>Kontrollera att appen Code Sync är korrekt installerad.</li><li>Se till att databasen är offentlig eller korrekt konfigurerad.</li></ul> |
-| **Inga produktdata visas** | På produktsidor visas platshållare eller fel | <ul><li>Verifiera dina konfigurationsvärden i `config.json`</li><li>Kontrollera sidan Datasynkronisering i instansen [!DNL Adobe Commerce Optimizer] för att bekräfta att exempelprodukterna har lästs in. Om inga produkter är tillgängliga läser du in exempeldata igen eller lägger till en produkt med [API:t för datainmatning](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Vänta några minuter tills konfigurationsändringarna har spridits.</li><li>Försök hämta produktinformationen med marknadsföringstjänsten [products query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) med samma huvuden som konfigurerats i [Commerce storefront-konfigurationen](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}. Om du kan hämta data är det troligen ett problem med katalogvykonfigurationen eller ett indexfel.</li></ul> |
-| **Sökningen returnerar inga resultat** | Tom sökresultatsida | <ul><li>Kontrollera att du kan hämta produktsökresultaten med Merchandising Services [productSearch-frågan](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) med samma huvuden som konfigurerats i [Commerce storefront-konfigurationen](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}. Om du kan hämta data är det troligen ett problem med katalogvykonfigurationen eller ett indexfel.</li><li>Bekräfta att katalogvisnings-ID:t i [Commerce StoreFront-konfigurationen](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} matchar katalogvisnings-ID:t i [!DNL Adobe Commerce Optimizer].</li><li>I [!DNL Adobe Commerce Optimizer] kontrollerar du konfigurationen för de principer, nationella inställningar och prisböcker som du använde i rubrikkonfigurationen för butiken.</li><li>Kontrollera att inställningarna för [attributmetadata](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) har angetts korrekt för sökning.</li></ul> |
+| **Inga produktdata visas** | På produktsidor visas platshållare eller fel | <ul><li>Verifiera dina konfigurationsvärden i `config.json`</li><li>Kontrollera sidan Datasynkronisering i instansen [!DNL Adobe Commerce Optimizer] för att bekräfta att exempelprodukterna har lästs in. Om inga produkter är tillgängliga läser du in exempeldata igen eller lägger till en produkt med [API:t för datainmatning](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Vänta några minuter tills konfigurationsändringarna har spridits.</li><li>Försök hämta produktinformationen med marknadsföringstjänsten [products query](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) med samma huvuden som konfigurerats i [Commerce storefront-konfigurationen](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=sv-SE){target="_blank"}. Om du kan hämta data är det troligen ett problem med katalogvykonfigurationen eller ett indexfel.</li></ul> |
+| **Sökningen returnerar inga resultat** | Tom sökresultatsida | <ul><li>Kontrollera att du kan hämta produktsökresultaten med Merchandising Services [productSearch-frågan](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) med samma huvuden som konfigurerats i [Commerce storefront-konfigurationen](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=sv-SE){target="_blank"}. Om du kan hämta data är det troligen ett problem med katalogvykonfigurationen eller ett indexfel.</li><li>Bekräfta att katalogvisnings-ID:t i [Commerce StoreFront-konfigurationen](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=sv-SE){target="_blank"} matchar katalogvisnings-ID:t i [!DNL Adobe Commerce Optimizer].</li><li>I [!DNL Adobe Commerce Optimizer] kontrollerar du konfigurationen för de principer, nationella inställningar och prisböcker som du använde i rubrikkonfigurationen för butiken.</li><li>Kontrollera att inställningarna för [attributmetadata](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) har angetts korrekt för sökning.</li></ul> |
 
 ### Checklista för validering
 
@@ -218,28 +218,28 @@ Innan du fortsätter till nästa steg kontrollerar du att din storefront fungera
 
 Om problemen kvarstår:
 
-* Granska [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* Granska [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE)
 * Kontrollera [[!DNL Adobe Commerce Optimizer] utvecklarhandboken](https://developer.adobe.com/commerce/services/optimizer/)
-* Gå till [Adobe Commerce supportresurser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+* Gå till [Adobe Commerce supportresurser](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/overview)
 
 ## Nästa steg
 
 När du har konfigurerat och verifierat din butik kan du:
 
-1. **[Installera Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)**-webbläsartillägget om du vill redigera, förhandsgranska och publicera innehåll direkt från webbplatsen.
+1. **[Installera Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=sv-SE#install-and-configure-sidekick)**-webbläsartillägget om du vill redigera, förhandsgranska och publicera innehåll direkt från webbplatsen.
 
-2. **[Konfigurera en lokal utvecklingsmiljö](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - Skapa en lokal miljö för att anpassa din butikskod och ditt innehåll.
+2. **[Konfigurera en lokal utvecklingsmiljö](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=sv-SE#set-up-local-environment)** - Skapa en lokal miljö för att anpassa din butikskod och ditt innehåll.
 
 ### Utforska och lär dig mer
 
 * **[Slutför hela användningsexemplet](./use-case/admin-use-case.md)** - Läs mer om konfiguration och kataloghantering av butiker med [!DNL Adobe Commerce Optimizer].
 
-* **[Utforska anpassning av butiker](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** - Lär dig mer om avancerade inställningar och konfigurationsalternativ.
+* **[Utforska anpassning av butiker](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=sv-SE)** - Lär dig mer om avancerade inställningar och konfigurationsalternativ.
 
-* **[Använd Commerce-insticksprogram för att anpassa butiksupplevelsen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**-Lägg till färdiga komponenter för att förbättra butiksupplevelsen.
+* **[Använd Commerce-insticksprogram för att anpassa butiksupplevelsen](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=sv-SE)**-Lägg till färdiga komponenter för att förbättra butiksupplevelsen.
 
 * **Migrera till konfigurationstjänsten för Storefront** - När du har skapat din första butik kan du migrera konfigurationen så att den använder konfigurationstjänsten som stöder avancerade användningsfall som repliklös konfiguration och övertäckningar. Mer information finns i dokumentationen för [konfigurationstjänsten](https://www.aem.live/docs/config-service-setup) i Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Läs [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med komponenterna i Commerce Front och backend-data.
+> Läs [dokumentationen för Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=sv-SE) om du vill veta mer om hur du uppdaterar webbplatsinnehåll och integrerar med komponenterna i Commerce Front och backend-data.
