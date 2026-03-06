@@ -2,11 +2,11 @@
 title: Gränser och gränser
 description: Förstå [!DNL Adobe Commerce Optimizer] gränser och gränser för att planera kapacitet och förebygga prestandaproblem.
 role: Admin, Developer
-badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
+badgeSaas: label="Endast SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och [!DNL Adobe Commerce Optimizer] projekt (SaaS-infrastruktur som hanteras av Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 42a877f5bad8bda93ec39b8ad633f6ad0ba6b4a5
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1325'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Din användning måste ligga inom dessa gränser. Överskridande av dem kan orsa
 
 Licensgränserna kan höjas genom köp av de licenspaket som beskrivs i avsnittet [Licensbegränsningar och systemgränser](#license-limits-and-system-boundaries) eller genom förhandling om anpassad licensiering för unika användningsfall. Kontakta er kontorepresentant på Adobe för att diskutera era behov.
 
-Kontakta [Adobe Support](https://experienceleague.adobe.com/home?lang=sv-SE#support) om du har frågor om systemgränser.
+Kontakta [Adobe Support](https://experienceleague.adobe.com/home?lang=en#support) om du har frågor om systemgränser.
 
 ## Förhindra prestandaproblem
 
@@ -137,7 +137,7 @@ Basallokeringen för katalogbutiksfunktioner baseras på GMV-nivån. Tabellen an
 | Sorterbara attribut | Antalet produktegenskaper som kan konfigureras för att bestämma ordningen för sökresultatvärden | 50 | Nej |
 | Sidnumreringsdjup för sökning | Högsta antal produkter som är tillgängliga genom sidnumrering (t.ex. sidan 100 × 100 produkter/sida) | 10 kB | Nej |
 | Fasetter | Antalet filterbara produktattribut (som varumärke, färg, storlek, pris) som kan konfigureras för att hjälpa kunderna att förfina sökresultaten och bläddra bland kategorier | 100<p>Måste vara filterbara attribut</p> | Nej |
-| Alternativ per aspekt | Antalet filterbara produktattributvärden (som&quot;Red&quot;,&quot;Blue&quot; för Color;&quot;Small&quot;,&quot;Medium&quot; för Size) som kunderna kan välja från en lista | 1000 | Nej |
+| Alternativ per aspekt | Antalet filterbara produktattributvärden (som&quot;Red&quot;,&quot;Blue&quot; för Color;&quot;Small&quot;,&quot;Medium&quot; för Size) som kunderna kan välja från en lista | 100 | Ja<p>Kan öka via supportförfrågan</p> |
 
 {style="table-layout:auto"}
 
@@ -156,7 +156,7 @@ Följande funktioner är tillgängliga för produktrekommendationer. Vissa funkt
 
 | **Funktion** | **Beskrivning** | **Basallokering** | **Kan utökas?** | **Anteckningar** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Kapacitet för molnbaserade tillägg och integreringar | Baserat på GMV-nivån<p>Minimiallokering: 1 paket/år</p> | Ja<p>Lägg till ytterligare paket</p> | För definierade gränser per paket, se:<ul><li>[App Builder produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/adobe-developer-app-builder.html) för definierade begränsningar per paket.</li><li>[Systeminställningar och begränsningar](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) i *App Builder Runtime Guides*.</li><li>[Lagringskrav för App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Kapacitet för molnbaserade tillägg och integreringar | Baserat på GMV-nivån<p>Minimiallokering: 1 paket/år</p> | Ja<p>Lägg till ytterligare paket</p> | För definierade gränser per paket, se:<ul><li>[App Builder produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) för definierade begränsningar per paket.</li><li>[Systeminställningar och begränsningar](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) i *App Builder Runtime Guides*.</li><li>[Lagringskrav för App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
