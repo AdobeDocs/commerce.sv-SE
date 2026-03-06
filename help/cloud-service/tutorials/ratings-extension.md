@@ -303,7 +303,7 @@ Använd agenten för att integrera klassificerings-API:t i butikens produktinfor
    Du bör se följande ändringar i utvecklingsmiljön och webbläsaren:
 
    * En produktklassificeringskomponent skapas automatiskt.
-   * Komponenten är integrerad i PDP med [in-platser](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) eller som ett fristående block, beroende på vald arkitektur.
+   * Komponenten är integrerad i PDP med [in-platser](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=sv-SE) eller som ett fristående block, beroende på vald arkitektur.
    * Stjärnor visas med rätt fyllningsproportioner baserat på klassificeringsvärden från ditt API.
 
    ![Produktinformationssida med stjärngraderingar som är integrerade under produkttiteln](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

@@ -273,7 +273,7 @@ Följande objekt krävs för att slutföra avsnittet [storefront](./ratings-exte
 
 * [Google Chrome](https://www.google.com/chrome/) - krävs för att testa butiken
 
-* Ett butiksprojekt som är anslutet till din [!DNL Commerce]-instans. Om du inte har något storefront-projekt följer du stegen i [Skapa en storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, inklusive avsnittet [Länka repo till handelsdata](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
+* Ett butiksprojekt som är anslutet till din [!DNL Commerce]-instans. Om du inte har något storefront-projekt följer du stegen i [Skapa en storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=sv-SE){target="_blank"}, inklusive avsnittet [Länka repo till handelsdata](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=sv-SE#link-repo-to-commerce-data){target="_blank"}.
 
 ### Klona butiksarkivet
 
