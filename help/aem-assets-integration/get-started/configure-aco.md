@@ -2,9 +2,9 @@
 title: Konfigurera AEM Assets för Commerce Optimizer
 description: Lär dig konfigurera AEM Assets-integrering för  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Innan du konfigurerar integreringen bör du kontrollera att du har:
 
 ## Onboarding
 
-Om du vill integrera AEM Assets-integrering med [!DNL Commerce Optimizer] måste du [skapa en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Om du vill integrera AEM Assets-integrering med [!DNL Commerce Optimizer] måste du [skapa en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 Adobe Support använder informationen i din biljett för att registrera din klient hos Assets Integration Service och konfigurera integreringen.
 
@@ -61,8 +61,6 @@ När Adobe Support har bearbetat din biljett konfigureras integreringen och din 
 När introduktionen är klar:
 
 1. **Registrering med Assets Integration Service**: Din [!DNL Commerce Optimizer]-klientorganisation har registrerats med Assets Integration Service via [!DNL Adobe Commerce Optimizer] klient-ID, AEM program-ID, AEM miljö-ID och klientorganisation.
-
-1. **Autentiseringsinställning**: Autentiseringen av IMS-tjänstens token har konfigurerats mellan [!DNL Commerce Optimizer] och Assets Integration Service för en säker kommunikation.
 
 1. **Evenemangsprenumeration**: Assets Integration Service prenumererar på:
 
@@ -115,7 +113,7 @@ Resursen måste ha statusen **Approved** för att datasynkroniseringen ska kunna
 
 >[!CAUTION]
 >
-> Tilldela lagret `AEM-Assets` till din [katalogvy](https://experienceleague.adobe.com/sv/docs/commerce/optimizer/setup/catalog-view). Om lagret inte är tilldelat kan produktbilddata skrivas över oväntat.
+> Tilldela lagret `AEM-Assets` till din [katalogvy](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Om lagret inte är tilldelat kan produktbilddata skrivas över oväntat.
 
 ## Synkronisering
 
