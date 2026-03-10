@@ -30,7 +30,7 @@ Innan du kopplar ett program måste du ha följande:
 
 I den här videon får du lära dig hur du associerar ett program med en Commerce-instans och konfigurerar inställningar.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478944)
+>[!VIDEO](https://video.tv.adobe.com/v/3478959?captions=swe)
 
 ## Associera en app
 
