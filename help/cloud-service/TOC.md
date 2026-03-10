@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Den här guiden innehåller detaljerade anvisningar om hur du använder  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 52a3e1dcc10f478677764e058ceee494b45dadd4
+source-git-commit: e15af3dc45e2acebf8f069d56c7d1a01f8757285
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 6%
+source-wordcount: '68'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 6%
 - [Komma igång](getting-started.md)
 - [Hantering av användare och identitet](user-management.md)
 - [Storefront](storefront.md)
-- [Användningsexempel](use-cases.md)
+- [Användningsfall](use-cases.md)
 - [Delat ansvar](shared-responsibility.md)
 - Migrering {#migration}
    - [Ökning](migration/overview.md)
@@ -33,5 +33,6 @@ ht-degree: 6%
 - Scheman {#schemas}
    - [GraphQL-schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API-schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+- [Videosjälvstudiekurser](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
