@@ -66,6 +66,6 @@ Vyn [!DNL App Management] visas. Här kan du associera, konfigurera och hantera 
 
 ## Installera App Builder-program
 
-Om du behöver installera en App Builder-app från Adobe Exchange (till exempel en färdig integrerings- eller Marketplace-app) kan du läsa [Installera App Builder-appar från Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} för steg-instruktioner.
+Om du behöver installera en App Builder-app från Adobe Exchange (till exempel en färdig integrerings- eller Marketplace-app) kan du läsa [Installera App Builder-appar från Adobe Exchange](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} för steg-instruktioner.
 
 När ett program har installerats och distribuerats använder du [!DNL App Management] för att [associera det med din Commerce-instans](manage-app.md#associate-an-app) och konfigurera dess inställningar.

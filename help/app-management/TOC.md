@@ -17,4 +17,4 @@ ht-degree: 0%
 - Hantera din app {#manage-app}
    - [Hantera din app](manage-app.md)
    - [Felsökning](troubleshooting.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
