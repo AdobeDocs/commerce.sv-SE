@@ -33,6 +33,6 @@ ht-degree: 8%
 - Scheman {#schemas}
    - [GraphQL-schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API-schema](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [Videosjälvstudiekurser](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Videosjälvstudiekurser](https://experienceleague.adobe.com/sv/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Versionsinformation](release-notes.md)
-- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Återgå till startsidan för Commerce Services](https://experienceleague.adobe.com/sv/docs/commerce/user-guides/home)
