@@ -3,9 +3,9 @@ title: Hantera resurser
 description: Använd AEM Assets Integration för Commerce för att hantera mediematerial för butiken.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,13 @@ Du kan hantera följande medietyper när AEM Assets-integreringen för Commerce 
 * Innehållsbilder
 * Produktvideor
 * Kategoribilder
+
+**Uppdatera produktbilder?**
+
+Produktbilder länkas via matchande regler:
+
+* Mer information om hur du lägger till eller uppdaterar produktresurser i AEM Assets (metadata, SKU-länkning, godkännande) finns i [Automatisk standardmatchning](synchronize/default-match.md).
+* Mer information om kategoribilder eller Page Builder-innehåll finns i [Manuellt urval av resurser](synchronize/asset-selector-integration.md).
 
 ## Produktbilder
 
@@ -41,13 +48,20 @@ Produktbilder hämtas automatiskt från AEM Assets baserat på förkonfigurerade
    >
    > Ett meddelande indikerar att integreringen är aktiverad, vilket gör detta till ett **skrivskyddat** -avsnitt när bildhanteringen är centraliserad i DAM.
 
+   Om du vill konfigurera produktresurser (länka bilder till SKU:er) öppnar du din AEM Assets-författarinstans och klickar på **Assets** i huvudvyn. Se [Automatisk standardmatchning](synchronize/default-match.md) för metadatakonfigurationsstegen.
+
 ### Hantera produktbilder i AEM Assets
 
 Om du vill hantera produktrelaterade bilder måste alla ändringar göras direkt i **AEM Assets**. Denna process är helt automatiserad och säkerställer att alla ändringar synkroniseras med Adobe Commerce utan att manuell åtgärd krävs.
 
+Mer information om hur du länkar resurser till produkter i AEM Assets (inklusive konfiguration och godkännande av metadata) finns i följande avsnitt:
+
+* [Automatisk standardmatchning](synchronize/default-match.md)
+* [Anpassad automatisk matchning](synchronize/custom-match.md).
+
 ### SLA för synkronisering
 
-Mer information om det här ämnet finns i [Synkronisera SLA](get-started/setup-synchronization.md#synchronization-sla).
+Mer information om synkroniseringstider finns i avsnittet [Synkronisera SLA](get-started/setup-synchronization.md#synchronization-sla).
 
 ## Innehållsbilder
 
@@ -79,7 +93,7 @@ Kopplingen till den valda bilden kommer att lagras i Adobe Commerce som en direk
 
 >[!TIP]
 >
-> [DA.live (Document Authoring)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=sv-SE#dalive-document-authoring){target=_blank} innehåller också en resursväljare som förbättrar data.
+> [DA.live (Document Authoring)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} innehåller också en resursväljare som förbättrar data.
 
 ## Produktvideor
 
@@ -119,7 +133,7 @@ Tack vare den här integreringen kan handlare enkelt hantera produktvideor på e
 
 ### SLA för synkronisering
 
-Mer information om det här ämnet finns i [Synkronisera SLA](get-started/setup-synchronization.md#synchronization-sla).
+Mer information om synkroniseringstider finns i avsnittet [Synkronisera SLA](get-started/setup-synchronization.md#synchronization-sla).
 
 ## Kategoribilder
 
@@ -149,14 +163,16 @@ När du har konfigurerat [AEM Resursväljare](synchronize/asset-selector-integra
 
 1. Klicka på **[!UICONTROL Save]** och fortsätt.
 
-   Mer information om hur du skapar en kategori finns i [Slutför kategoriinnehållet](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) i **Commerce Catalog Management Guide**.
+   Mer information om hur du skapar en kategori finns i [Slutför kategoriinnehållet](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) i **Commerce Catalog Management Guide**.
 
 ## Uppdatera en resurs
 
 När du har uppdaterat och godkänt en mediefil i AEM Assets skickas uppdateringarna automatiskt till Adobe Commerce med den automatiska matchningsfunktionen. Den här processen aktiveras vid godkännande av tillgångar. Om du vill vara säker på att alla slutliga ändringar och metadatauppdateringar ingår måste du bearbeta resursen igen innan du godkänner den.
 
-Mer information finns i följande AEM Assets-dokumentation.
+Information om arbetsflödet på Commerce-sidan för att länka resurser till produkter via metadata finns i avsnittet [Automatisk standardmatchning](synchronize/default-match.md).
 
-* [Bearbetar digitala resurser](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+Information om AEM Assets procedurer finns i följande dokumentation:
 
-* [Godkänn en resurs](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Bearbetar digitala resurser](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+
+* [Godkänn en resurs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

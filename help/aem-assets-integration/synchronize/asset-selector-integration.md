@@ -3,7 +3,7 @@ title: Manuellt urval av tillgångar
 description: Upptäck hur AEM Asset Selector som är integrerad i Commerce Admin hjälper marknadsförare och handlare att enkelt lägga till bilder från AEM Assets i Adobe Commerce och effektivisera resurshanteringen.
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-source-git-commit: 08f2fab39b4dcd46986f43598cdf2637b0bba5a7
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -20,11 +20,11 @@ När integreringen av **AEM Resursväljare** har konfigurerats kan marknadsföra
 
 * Hantera kategoribilder utan problem och säkerställ att de är anpassade efter riktlinjer för varumärken och kampanjer.
 * [!BADGE PaaS endast]{type=Informative tooltip="Gäller endast Adobe Commerce i molnprojekt (Adobe-hanterad PaaS-infrastruktur)."} Tilldela resurser direkt i Page Builder för visuellt avancerat innehåll.
-* [!BADGE SaaS endast]{type=Positive url="https://experienceleague.adobe.com/sv/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} Tilldela Assets direkt i Commerce Storefront från Edge Delivery Services för visuellt avancerat innehåll.
+* [!BADGE SaaS endast]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gäller endast Adobe Commerce as a Cloud Service- och Adobe Commerce Optimizer-projekt (SaaS-infrastruktur som hanteras av Adobe)."} Tilldela Assets direkt i Commerce Storefront från Edge Delivery Services för visuellt förbättrat innehåll.
 
 >[!NOTE]
 >
-> AEM Resursväljare är en komponent i AEM som utgör en integrerad komponent för redigering av AEM Assets. Mer information om den här komponenten finns i [Micro-Front Asset Selector](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} i *AEM as a Cloud Service användarhandbok*.
+> AEM Resursväljare är en komponent i AEM som utgör en integrerad komponent för redigering av AEM Assets. Mer information om den här komponenten finns i [Micro-Front Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} i *AEM as a Cloud Service användarhandbok*.
 
 ## Viktiga fördelar
 
